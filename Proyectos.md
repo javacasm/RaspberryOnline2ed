@@ -6,3 +6,11 @@
 ## Recursos
 
 [Proyectos para maker en TheMagPi 79](https://www.raspberrypi.org/magpi-issues/MagPi79.pdf)
+
+[Proyectos con IA](https://www.raspberrypi.org/magpi-issues/Essentials_AIY_Projects_Voice_v1.pdf)
+
+### FPGA
+
+[FPGA en la raspberry](https://groups.google.com/forum/#!topic/fpga-wars-explorando-el-lado-libre/SxnJFUrOYsk)
+
+[Instalación de NodeJS](https://ricveal.com/blog/node-js-raspberry-pi-instalacion/)
