@@ -7,3 +7,7 @@ https://www.pyimagesearch.com/2019/04/15/live-video-streaming-over-network-with-
 ## Reconocimiento de bordes
 
 https://programarfacil.com/blog/vision-artificial/detector-de-bordes-canny-opencv/
+
+## Deteccion de movimiento
+
+https://www.hackster.io/absoluteAbu/motion-detection-opencv-raspberry-pi-telegram-91fdf5
