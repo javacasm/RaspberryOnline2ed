@@ -5,6 +5,8 @@
 
 [Video portero](https://www.hackster.io/martin-mander/1986-ping-video-doorbell-30b666)
 
+[GPIO,camara contrlados por Telegram](https://www.hackster.io/idreams/control-gpio-and-pi-camera-using-raspberry-pi-telegram-app-3a776a)
+
 ## Recursos
 
 [Proyectos para maker en TheMagPi 79](https://www.raspberrypi.org/magpi-issues/MagPi79.pdf)
