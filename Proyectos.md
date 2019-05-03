@@ -3,6 +3,8 @@
 [Arcade table machine (with [retropie](./retropie.md))](https://www.raspberrypi-spy.co.uk/2017/12/building-my-raspberry-pi-ikea-arcade-table/)
 
 
+[Video portero](https://www.hackster.io/martin-mander/1986-ping-video-doorbell-30b666)
+
 ## Recursos
 
 [Proyectos para maker en TheMagPi 79](https://www.raspberrypi.org/magpi-issues/MagPi79.pdf)
