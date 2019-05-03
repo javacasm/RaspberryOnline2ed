@@ -3,3 +3,7 @@ https://www.pyimagesearch.com/2019/04/15/live-video-streaming-over-network-with-
 ## Reconocimiento de caras
 
 [Reconocimiento de caras en 25 lineas de python](https://realpython.com/face-recognition-with-python/)
+
+## Reconocimiento de bordes
+
+https://programarfacil.com/blog/vision-artificial/detector-de-bordes-canny-opencv/
