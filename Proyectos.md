@@ -2,6 +2,9 @@
 
 [Arcade table machine (with [retropie](./retropie.md))](https://www.raspberrypi-spy.co.uk/2017/12/building-my-raspberry-pi-ikea-arcade-table/)
 
+[Control de plantas via telegram](https://www.hackster.io/zenofall/community-iot-garden-using-raspberry-pi-and-telegram-bot-ef4989)
+
+[Home automation](https://www.hackster.io/ahmedibrrahim/smart-home-automation-iot-using-raspberry-pi-and-python-47fb62)
 
 [Video portero](https://www.hackster.io/martin-mander/1986-ping-video-doorbell-30b666)
 
