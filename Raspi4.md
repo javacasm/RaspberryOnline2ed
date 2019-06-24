@@ -4,7 +4,7 @@
 
 * Quad core Arm A8 de 64 bits a 1.5Ghz. Los primeros tests de velocidad dicen que 2x veces más rápida que la 3+
 
-![Test de CPU](./images/2019-06-21-15_40_11-Window.png)
+![Test de CPU](./images/2019-06-21-15_40_11-Window.webp
 
 * Compatible con OpenGL 3, con lo que esperemos que software 3D debe mejorar enormemente
 * 3 Versiones con diferente cantidad de memoria RAM 1Gb, 2Gb y 4Gb. Este aumento de memoria debe hacer que el uso mejore enormemente, sobre todo en aplicaciones pesadas como son los navegadores web
