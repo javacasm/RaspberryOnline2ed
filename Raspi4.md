@@ -10,9 +10,9 @@ Veamos algunas de sus características
 
 ![Caracteristicas](./images/pi4-labelled-99c2e8935bb3cfdb27d23f634ea98a7e.webp)
 
-* Quad core Arm A8 de 64 bits a 1.5Ghz. Los primeros tests de velocidad dicen que 2x veces más rápida que la 3+
+* Procesador Quad core ARM A8 de 64 bits a 1.5Ghz. Los primeros tests de velocidad dicen que 2x veces más rápida que la 3+
 
-![Test de CPU](./images/2019-06-21-15_40_11-Window.webp
+![Test de CPU](./images/2019-06-21-15_40_11-Window.webp)
 
 * Compatible con OpenGL 3, con lo que esperemos que software 3D debe mejorar enormemente
 * 3 Versiones con diferente cantidad de memoria RAM:  1Gb, 2Gb y 4Gb. Este aumento debe hacer que el rendimiento mejore mucho en aplicaciones pesadas como son los navegadores web 
