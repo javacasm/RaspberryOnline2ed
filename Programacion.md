@@ -1,5 +1,17 @@
 # Programación
 
+## Entornos
+
+Thonny
+
+Geany
+
+Scratch
+
+### VSCode
+
+[Instalacion](https://pimylifeup.com/raspberry-pi-visual-studio-code/?utm_content=buffer7ee25&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer)
+
 
 ## Recursos
 
