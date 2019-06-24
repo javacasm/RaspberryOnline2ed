@@ -39,7 +39,7 @@ Esas aulas de ordenadores van a echar humo...
 
 [Más detalles sobre las especificaciones y el comportamiento](https://www.raspberrypi.org/magpi/raspberry-pi-specs-benchmarks/)
 
-[Más información sobre los tests](https://www.raspberrypi.org/magpi/raspberry-pi-4-specs-benchmarks/)
+[Más información sobre los tests de rendimiento](https://www.raspberrypi.org/magpi/raspberry-pi-4-specs-benchmarks/)
 
 [Sobre el desarrollo de esta nueva versión](https://www.raspberrypi.org/magpi/eben-upton-engineering-raspberry-pi-4/)
 
