@@ -1,5 +1,7 @@
 ## Proyectos
 
+[Monitorizacion planta](https://www.raspberrypi.org/magpi/monitor-plant-growth-ai-opencv)
+
 [Cluster con raspberry pi](https://www.atareao.es/podcast/un-cluster-con-la-raspberry/)
 
 [Como apagar correctamente una Raspberry](https://kolwidi.com/blogs/blog-kolwidi/como-apagar-una-raspberry-pi-correctamente)
