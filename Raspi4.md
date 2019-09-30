@@ -44,3 +44,8 @@ Esas aulas de ordenadores van a echar humo...
 [Sobre el desarrollo de esta nueva versión](https://www.raspberrypi.org/magpi/eben-upton-engineering-raspberry-pi-4/)
 
 (Imágenes oficiales tomadas de Raspberry.org)
+
+
+Recursos
+
+https://www.raspberrypi.org/magpi-issues/MagPi85.pdf
