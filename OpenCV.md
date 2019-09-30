@@ -1,3 +1,5 @@
+Inslacion https://descubrearduino.com/opencv-en-raspberry-pi/
+
 https://www.pyimagesearch.com/2019/04/15/live-video-streaming-over-network-with-opencv-and-imagezmq/
 
 ## Reconocimiento de caras
