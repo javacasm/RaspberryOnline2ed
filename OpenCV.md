@@ -13,3 +13,7 @@ https://programarfacil.com/blog/vision-artificial/detector-de-bordes-canny-openc
 ## Deteccion de movimiento
 
 https://www.hackster.io/absoluteAbu/motion-detection-opencv-raspberry-pi-telegram-91fdf5
+
+Proyecto: varita de harry potter
+
+https://www.instructables.com/id/Real-Working-Harry-Potter-Wand-Using-Computer-Visi/
