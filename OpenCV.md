@@ -17,3 +17,5 @@ https://www.hackster.io/absoluteAbu/motion-detection-opencv-raspberry-pi-telegra
 Proyecto: varita de harry potter
 
 https://www.instructables.com/id/Real-Working-Harry-Potter-Wand-Using-Computer-Visi/
+
+[Piedra/Papel/Tijera con openCV y IA](https://www.hackster.io/310178/rock-paper-scissor-ai-e98cfa)
