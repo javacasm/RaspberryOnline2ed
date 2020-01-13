@@ -33,3 +33,6 @@
 [FPGA en la raspberry](https://groups.google.com/forum/#!topic/fpga-wars-explorando-el-lado-libre/SxnJFUrOYsk)
 
 [Instalación de NodeJS](https://ricveal.com/blog/node-js-raspberry-pi-instalacion/)
+
+## IA
+[Piedra/Papel/Tijera con openCV y IA](https://www.hackster.io/310178/rock-paper-scissor-ai-e98cfa)
