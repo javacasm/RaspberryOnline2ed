@@ -11,9 +11,11 @@ sudo apt upgrade
 
 Requsitos https://doc.owncloud.org/server/10.4/admin_manual/installation/manual_installation.html#prerequisites
 
+SEguimos las instrucxciones de la propia owncloud https://doc.owncloud.org/server/10.4/admin_manual/installation/manual_installation.html#install-the-required-packages
+
 Instalamos apache, php5, curl (Se están usando las ultimas versiones de php a día de hoy 7/5/2020)
 ```sh
-sudo apt-get install apache2 php7.3   php7.3-json php7.3-xml php7.3-gd php7.3-sqlite3 curl libcurl4  php7.3-curl php7.3-common php7.3-zip php7.3-xml php7.3-intl 
+sudo apt-get install apache2 php7.3   php7.3-json php7.3-xml php7.3-gd php7.3-sqlite3 curl libcurl4  php7.3-curl php7.3-common php7.3-zip php7.3-xml php7.3-intl php7.3-mbstring 
 ```
 Descargamos la ultima version de owncloud
 wget https://download.owncloud.org/community/owncloud-10.4.1.tar.bz2
@@ -83,12 +85,24 @@ sudo systemctl restart apache2
 ```
 
 
+
+
 Probamos a acceder
 
 http://raspi4/owncloud/
 
 
 ![firstown Cloud](./images/firstownCloud.png)
+
+Hasta este punto lo tenemos OK
+
+Vamos a ejecutar la configuración para ello le damos permisos para que el servidor pueda modificar los ficheros de configuración de a la carpeta (esto es un potencial problema de seguridad y por eso viene así por defecto)
+
+Para ello hacemos
+
+```sh
+sudo chown -R www-data:www-data /var/www/owncloud/
+```
 
 
 https://geekytheory.com/tutorial-raspberry-pi-crea-una-nube-privada-con-pydio
