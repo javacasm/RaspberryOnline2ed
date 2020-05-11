@@ -9,7 +9,7 @@ sudo apt update
 sudo apt upgrade
 ```
 
-Requsitos https://doc.owncloud.org/server/10.4/admin_manual/installation/manual_installation.html#prerequisites
+Requisitos https://doc.owncloud.org/server/10.4/admin_manual/installation/manual_installation.html#prerequisites
 
 SEguimos las instrucxciones de la propia owncloud https://doc.owncloud.org/server/10.4/admin_manual/installation/manual_installation.html#install-the-required-packages
 
