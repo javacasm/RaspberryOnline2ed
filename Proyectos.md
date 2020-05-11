@@ -1,4 +1,23 @@
+
+
 ## Proyectos
+
+Centro multimedia con Raspberry
+Tu Biblioteca desde cualquier parte del mundo
+Haz tu propia nube con Raspberry
+Arcade Machine con Raspebery
+Crea tus propios Time-lapse con Raspebery
+Aprender a programar python con Raspberry
+Aprender electrónica y robótica con Raspberry
+Robot controlado con Raspberry
+IOT con Raspberry
+Domotica sencilla con Raspberry
+Datalogger para Arduino con Raspebery
+Crea tu propio Bot de Telegram con Raspebery
+Monitoriza de jardín con Raspebery
+
+
+## Referencias
 
 [Monitorizacion planta](https://www.raspberrypi.org/magpi/monitor-plant-growth-ai-opencv)
 
