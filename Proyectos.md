@@ -5,16 +5,31 @@
 Centro multimedia con Raspberry
 Tu Biblioteca desde cualquier parte del mundo
 Haz tu propia nube con Raspberry
-Arcade Machine con Raspebery
-Crea tus propios Time-lapse con Raspebery
+Arcade Machine con Raspeberry
+###  Crea tus propios Time-lapse con Raspberry
+https://projects.raspberrypi.org/en/projects/timelapse-setup
+https://projects.raspberrypi.org/en/projects/raspberry-pi-zero-time-lapse-cam/7
+
+### Cámaras remotas
+https://projects.raspberrypi.org/en/projects/hamster-party-cam
+https://projects.raspberrypi.org/en/projects/infrared-bird-box
+
+
+### Cámara con newpixels ¿como flash?
+https://projects.raspberrypi.org/en/projects/raspberry-pi-zero-time-lapse-cam/7 
+
+### PhotoBooth
+https://projects.raspberrypi.org/en/projects/the-all-seeing-pi/8
+
+
 Aprender a programar python con Raspberry
 Aprender electrónica y robótica con Raspberry
 Robot controlado con Raspberry
 IOT con Raspberry
 Domotica sencilla con Raspberry
-Datalogger para Arduino con Raspebery
-Crea tu propio Bot de Telegram con Raspebery
-Monitoriza de jardín con Raspebery
+Datalogger para Arduino con Raspberry
+Crea tu propio Bot de Telegram con Raspberry
+Monitoriza de jardín con Raspberry
 
 
 ## Referencias
