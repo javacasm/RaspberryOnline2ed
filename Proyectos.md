@@ -32,6 +32,8 @@ Crea tu propio Bot de Telegram con Raspberry
 Monitoriza de jardín con Raspberry
 
 
+Moodle https://moodle.org/mod/forum/discuss.php?d=381325
+
 ## Referencias
 
 [Monitorizacion planta](https://www.raspberrypi.org/magpi/monitor-plant-growth-ai-opencv)
