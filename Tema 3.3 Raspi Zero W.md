@@ -6,6 +6,7 @@ configuracion consola
 
 Necesario:
 * wifi
+* IP fija: Usando configuración o con el router
 * ssh
 * contraseña
 * idioma, zona horaria y teclado
@@ -17,18 +18,35 @@ actualización
 python
 
 
+TODO: MOVER AL APARTADO CORRESPONDIENTE
+
+![CableCamaraZeroNormal.jpg](./images/CableCamaraZeroNormal.jpg)
+
+![CamaraRaspiZerojpg](./images/CamaraRaspiZero.jpg)
+
+![RaspiZeroCaja.jpg](./images/RaspiZeroCaja.jpg)
+
+![RaspiZeroCajaCerrada.jpg](./images/RaspiZeroCajaCerrada.jpg)
+
+![RaspiZeroCajaCerradaPuertos.jpg](./images/RaspiZeroCajaCerradaPuertos.jpg)
+
+![RaspiZeroAlimantacion.jpg](./images/RaspiZeroAlimantacion.jpg)
+
+https://projects.raspberrypi.org/en/projects/raspberry-pi-zero-time-lapse-cam/2
+
+
+
 
 
 ```bash
 sudo apt install python3-pip
 
-sudo python3 -m pip install python-telegram
-sudo python3 -m pip install python-telegram-bot
+pip3 install python-telegram
+pip3 install python-telegram-bot
 
 ```
 
 
 
-Usando configuración o con el router
 
 
