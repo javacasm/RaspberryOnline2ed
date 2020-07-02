@@ -1,10 +1,16 @@
-Tema 1 - Qué es Raspberry.md
-Tema 2 - Características de Raspberry.md
+# Tema 1 - Qué es Raspberry.md
+  1.1 Algo de Historia
+  1.2 Proyectos donde se usa Raspberry Pi
+# Tema 2 - Características de Raspberry.md
+  2.1 Arquitectura
+  2.2 Versiones
 # Tema 3 - Instalación de Raspberry.md
-3.2 Raspi4
-3.3 IP fija
+  3.1 Sistemas operativos disponibles
+  3.2 Instalación
+  3.2 Instalación en Raspberry Pi 4
+  3.3 Instalación en Raspberry Pi Zero W
 3.4 TFT 
-3.5 Baja alimentacion
+3.5 Problemas con Baja alimentacion
 
 
 # Tema 4 - Uso de Raspberry.md
