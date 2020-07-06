@@ -16,7 +16,9 @@ Es un SO mínimo pensado para facilitar la instalación. Arranca el sistema y no
 
 Sin duda es la mejor opción para el principiante. Además nos permite hacer un primera configuración de la red y seleccionar el idioma.
 
-### [Raspbian](https://www.raspberrypi.org/downloads/raspbian/)
+### [Raspberry Pi OS (Raspbian)](https://www.raspberrypi.org/downloads/raspbian/)
+
+(Hasta hace muy poco el sistema operativo oficial de Raspberry Pi se llamaba Raspbian, desde hace muy poco lo han renombrado como Raspberry Pi OS, por lo que puede que en alguna parte me siga refiriendo a él con ese nombre.)
 
 Es la versión para Raspberry de Debian (una de las distribuciones de Linux con mayor solera). Es el sistema operativo más usado y contiene todo lo necesario.
 
@@ -60,6 +62,6 @@ Se trata de un port de Android para Raspberry. En [este tutorial](https://www.ra
 
 Es una distribución que contiene varios emuladores de máquinas recreativas y videoconsolas y que convierten a nuestra Raspberry en un máquina de jugar 
 
-![Máquina de juegos con RAspberry Pi](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Arcade_bartop.jpg/800px-Arcade_bartop.jpg)
+![Máquina de juegos con RAspberry Pi](./images/800px-Arcade_bartop.jpg)
 
 Una vez elegida la imagen vamos a proceder a instalar
