@@ -101,9 +101,8 @@ A partir de la versión 3 de Raspberry no se puede cambiar la velocidad del proc
 
 Esta parte de la configuración es fundamental para configurar la zona horaria, el idioma (Local) y el teclado
 
+[![Vídeo de la primera configuración de Raspberry Pi](https://img.youtube.com/vi/vHs_3HmI3mc/0.jpg)](https://youtu.be/vHs_3HmI3mc)
 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/vHs_3HmI3mc" frameborder="0" allowfullscreen></iframe>
 
 [Vídeo de la primera configuración de Raspberry Pi](https://youtu.be/vHs_3HmI3mc)
 
