@@ -88,6 +88,8 @@ El micro quad core va a 900MHz  y tiene 1Gb de RAM, 4 puertos USBs. Incorporan e
 
 ![Modelo 2 B](./images/Raspberry_Pi_2_Model_B_v1.1_top_new.jpg)
 
+[![Vídeo: Versiones de Raspberry Pi](https://img.youtube.com/vi/ZBq6ZPE5r9c/0.jpg)](https://youtu.be/ZBq6ZPE5r9c)
+
 [Vídeo](https://youtu.be/ZBq6ZPE5r9c) sobre los distintos modelos/versiones de Raspberry Pi
 
 Más detalles en la [página de productos de la fundación Raspberry Pi](https://www.raspberrypi.org/products/)
