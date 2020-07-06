@@ -1,35 +1,20 @@
----
-title: Introducción al uso de Raspberry Pi
-author:
-   - Vacas Martinez, José Antonio
-date: \today
-documentclass:
-   - book
----
-\graphicspath{ {images/} }
+# Introducción al uso de Raspberry Pi
 
-\vspace*{\fill}
-\begin{center}
+<br/>
+<br/>
+<br/>
+<br/>
 
-\LARGE
-\textbf{Introducción al uso de Raspberry Pi}
-\normalsize
+![Licencia CC by SA](./images/Licencia_CC_peque.png) 
 
- José Antonio Vacas Martínez
+## by @javacasm
 
- @javacasm
+<br/>
+
+### José Antonio Vacas Martínez
 
 
-\end{center}
+### http://elCacharreo.com
 
-\vspace*{\fill}
 
-\frontmatter
-
-\dominitoc
-
-\maketitle
-
-\tableofcontents
-
-\mainmatter
+## Julio 2020
