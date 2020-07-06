@@ -15,7 +15,6 @@ La intención de los creadores de Raspberry era crear un sistema barato que nos 
 
   ![Placa beta de Raspberry Pi](./images/betaPi.png)
 
-
 Utiliza un diseño avanzado, como podemos ver en la imagen donde se ve que se ha colocado un chip encima de otro.
 
 ![Diseño avanzado](./images/EncapsuladoCPU-RAM.JPG)
@@ -23,19 +22,16 @@ Utiliza un diseño avanzado, como podemos ver en la imagen donde se ve que se ha
 Actualmente existen varios formatos, vamos a ver los más usados:
 
 * La versión más actual a día de hoy (Julio de 2020) es la [Versión 4](https://www.raspberrypi.org/products/raspberry-pi-4-model-b/) (1.5GHz quad core hasta 8Gb, USB 3.0, 2 HDMI 4K Gigabit, Wifi y bluetooth)
-
 ![Raspberry Pi versión 4](./images/Raspberry-Pi-4.jpg)
 
-* La versión [Zero](https://www.raspberrypi.org/products/pi-zero/) (1Ghz 512Mb) con un tamaño muy pequeño
-
-![Raspberry Pi Zero](./images/Raspberry-Pi-Zero-web.webp)
+* La versión [Raspberry Pi Zero](https://www.raspberrypi.org/products/pi-zero/) (1Ghz 512Mb) con un tamaño muy pequeño y un precio superreducido de 10eu
+![Raspberry Pi Zero](./images/RaspiZero.png)
 
 * [Raspberry Pi Compute Module 3+](https://www.raspberrypi.org/products/compute-module-3-plus/): es equivalente a una Rasperry pi 3 B+ pero en un formato pensado para construir ordenadores a partir de la Raspberry. Se puede adquirir con un disco interno eMMC de 8GB/16GB/32GB que sustituye a la tarjeta SD
 
 ![Raspberry_Pi_Compute_Module.png](./images/Raspberry_Pi_Compute_Module.png)
 
-Se puede integrar en Module Kit 3
-
+Se puede integrar en Module Kit 3:
 ![Raspberry-Pi-Compute-Module-Kit-3.jpg](./images/Raspberry-Pi-Compute-Module-Kit-3.jpg)
 
 Más adelante veremos muchos más detalles de esta versión y de las anteriores. 
@@ -87,8 +83,8 @@ Han sido muchas las películas y series donde han aparecido últimamente Raspber
 
   ![Raspberry en CSI Cyber](./images/RaspberryPi_on_CSI-Cyber.jpg)
 
-¿Cónoces alguna aparición más en los medios? No dudes en contárnosla.
+¿Conoces alguna aparición más en los medios? No dudes en contárnosla.
 
 ### Recursos
 
-Las imágenes de los distintos modelos de Raspbery están tomadas de la wikipedia.
+Las imágenes de los distintos modelos de Raspberry Pi están tomadas de la Wikipedia.
