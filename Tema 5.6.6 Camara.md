@@ -3,3 +3,7 @@
 
 
 http://fpaez.com/raspbery-pi-control-de-la-camara-con-python/
+
+### timeLapse
+
+scp para copiar fotos
