@@ -24,6 +24,8 @@ Para instalar un paquete determinado
 
 Vemos como en todos los comandos utilizamos la palabra "sudo" esto es debido a que se necesitan privilegios de administrador para todo lo relacionado con la actualización del sistema.
 
+[![Vídeo: Actualizar e instalar software desde terminal en Raspberry Pi](https://img.youtube.com/vi/BaVfTWFUHtU/0.jpg)](https://youtu.be/BaVfTWFUHtU)
+
 
 [Vídeo: Actualizar e instalar software desde terminal en Raspberry Pi](https://youtu.be/BaVfTWFUHtU)
 
@@ -37,6 +39,9 @@ Los diferentes componentes de la Raspberry necesitan de varios firmwares para fu
 #### Instalación de programas
 
 Además de la línea de comandos, siempre podemos instalar desde la herramienta visual "Añadir programas" en el menú Preferencias.
+
+[![Vídeo: Cómo actualizar e instalar software Raspberry Pi](https://img.youtube.com/vi/3eeIHe-NCZs/0.jpg)](https://youtu.be/3eeIHe-NCZs)
+
 
 [Vídeo: Cómo actualizar e instalar software Raspberry Pi](https://youtu.be/3eeIHe-NCZs)
 
