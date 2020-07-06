@@ -27,7 +27,6 @@ MAT:
 					$(FMAT)
 
 
-
 FAQ:
 	pandoc --latex-engine=xelatex   \
 					-V papersize:a4paper    \
@@ -42,12 +41,13 @@ FAQ:
 					--from=markdown \
 					-V papersize:a4paper \
 					--template=./LaTeX_ES.latex \
-		      -o $(S1) \
-		       Cabecera.md     \
-		      "Tema 1.0 Qué es Raspberry.md" \
-		      "Tema 1.1 Algo de Historia.md" \
-		      "Tema 1.2 Proyectos donde se usa Raspberry Pi.md" \
-		      "Tema 1.3 Documentación.md" 
+		      		-o $(S1) \
+					Cabecera.md        \
+					Cabecera_latex.md \
+					"Tema 1.0 Qué es Raspberry.md" \
+			    	"Tema 1.1 Algo de Historia.md" \
+			    	"Tema 1.2 Proyectos donde se usa Raspberry Pi.md" \
+		    		"Tema 1.3 Documentación.md" 
 
 2:
 	pandoc --latex-engine=xelatex       \
