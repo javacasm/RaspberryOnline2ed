@@ -1,14 +1,24 @@
 ## Documentación sobre Raspberry Pi
 
-Existe mucha documentación sobre Raspberry Pi, veamos alguna de ella.
+Existe mucha documentación sobre Raspberry Pi, veamos como obtener alguna de ella.
+
+### Aplicación Bookshelf
+
+![](./images/bookself.png)
+
+En las últimas versiones de Raspberry Pi OS (antes Raspian) se incluye una aplicación llamada Boolshelf que nos permite descargar y ver las publicaciones gratuitas de la Fundación Raspberry, que incluyen las revistas TheMagPi, HackSpace y Wireframe
 
 ### Revistas
 
-La principal revista (mensual) sobre Rasperry Pi es [The MagPy](https://www.raspberrypi.org/magpi/). Es una fuente de información extraordinaria, repleta de proyectos y consejos. Se puede descargar gratuitamente pero si compras la edición en papel suele traer regalos. El famoso número 40 de la revista ¡regalaban un Rasperry Pi Zero! por los 5€ que cuesta. Ni que decir tiene que se agotó rápidamente.
+La principal revista (mensual) sobre Rasperry Pi es [The Magpi](https://www.raspberrypi.org/magpi/). Es una fuente de información extraordinaria, repleta de proyectos y consejos. Se puede descargar gratuitamente pero si compras la edición en papel suele traer regalos. El famoso número 40 de la revista ¡regalaban un Rasperry Pi Zero! por los 5€ que cuesta. Ni que decir tiene que se agotó rápidamente.
 
 Puedes descargar [todos los números](https://www.raspberrypi.org/magpi/issues/) directamente.
 
-También ha creado un [libro de proyectos](https://www.raspberrypi.org/magpi/raspberry-pi-projects-book-2/)
+También hay una revista sobre proyectos makers: [HackSpace](https://hackspace.raspberrypi.org/) y otra sobre videojuegos: [WireFrame](https://wireframe.raspberrypi.org/)
+
+También han creado una colección de [libros](https://magpi.raspberrypi.org/books) algunos temáticos (sobre la cámara, programación en C, Scratch, etc.) o con proyectos.
+
+Todas estas publicaciones se pueden comprar en papel (y tienen una edición muy cuidada) a precios muy bajos, pero siempre son descargables en pdf de forma gratuita.
 
 ### Libros
 
