@@ -60,10 +60,9 @@ A la izquierda tenemos el menú de aplicaciones y a la derecha podemos pulsar so
 
 ![Configuración Wifi de Raspberry](./images/wifi2.png)
 
-En este [Vídeo](https://www.youtube.com/embed/IrjWoxWfewo) podéis ver el uso del entorno visual  Pixel de Raspberry Pi
+En este [vídeo](https://www.youtube.com/embed/IrjWoxWfewo) podéis ver el uso del entorno visual  Pixel de Raspberry Pi
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IrjWoxWfewo" frameborder="0" allowfullscreen></iframe>
-
+[![Vídeo: uso del escritorio Pixel de Raspberry Pi](https://img.youtube.com/vi/IrjWoxWfewo/0.jpg)](https://www.youtube.com/embed/IrjWoxWfewo)
 
 ## Configuración
 
@@ -135,7 +134,8 @@ En cualquier momento podemos volver a reconfigurar con
 
 	sudo raspi-config
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ERFH8AYjWxM" frameborder="0" allowfullscreen></iframe>
+[![Vídeo de la configuración desde la consola de texto de Raspberry Pi](https://img.youtube.com/vi/ERFH8AYjWxM/0.jpg)](https://www.youtube.com/embed/ERFH8AYjWxM)
+
 
 [Vídeo de la configuración desde la consola de texto de Raspberry Pi](https://www.youtube.com/embed/ERFH8AYjWxM)
 
@@ -159,13 +159,15 @@ Existen [varios emuladores](https://www.google.es/search?q=raspberry+simulator&o
 
 		qemu-system-arm.exe -M versatilepb -cpu arm1176 -hda imagen/2013-09-25-wheezy-raspbian.img -kernel kernel-qemu -m 192 -append "root=/dev/sda2"
 
-[Vídeo](http://www.youtube.com/watch?feature=player_embedded&v=QvqaNUx7-pU)
+[Vídeo del emulador](http://www.youtube.com/watch?feature=player_embedded&v=QvqaNUx7-pU)
 
-### [En ubuntu](http://www.cnx-software.com/2011/10/18/raspberry-pi-emulator-in-ubuntu-with-qemu/)
+### Emuladores en otros sistemas
 
-### [Simulando en virtualBox](https://www.raspberrypi.org/forums/viewtopic.php?f=9&t=2961)
+* Emulador [en ubuntu](http://www.cnx-software.com/2011/10/18/raspberry-pi-emulator-in-ubuntu-with-qemu/)
 
-### [Simulando el Sense Hat](https://www.raspberrypi.org/blog/sense-hat-emulator/)
+* [Simulando en virtualBox](https://www.raspberrypi.org/forums/viewtopic.php?f=9&t=2961)
+
+* [Simulando el Sense Hat](https://www.raspberrypi.org/blog/sense-hat-emulator/)
 
 ### Usando Pixel el entorno de Raspberry Pi en tu PC
 
