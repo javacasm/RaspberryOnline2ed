@@ -13,6 +13,9 @@ Si te acostumbras a usarla verás que ganas en productividad y además verás qu
 
 #### Comandos básicos:
 
+[![Vídeo: Uso del terminal y comandos Linux en Raspberry Pi](https://img.youtube.com/vi/BF0Kjb4g454/0.jpg)](https://youtu.be/BF0Kjb4g454)
+
+
 [Vídeo: Uso del terminal y comandos Linux en Raspberry Pi](https://youtu.be/BF0Kjb4g454)
 
 Como ya hemos dicho, Raspbian es una versión de [Linux](https://es.wikipedia.org/wiki/GNU/Linux), que nos más que una versión moderna del sistema operativo [Unix](https://es.wikipedia.org/wiki/Unix). Por esto tenemos acceso a los comandos de esos sistemas operativos.
@@ -101,6 +104,8 @@ Para arrancar el interface gráfico desde consola si no está arrancado usando
 Algo muy frecuente es que queramos acceder a nuestra Raspberry Pi remotamente, es decir sin un teclado ni monitor conectado directamente. Evidentemente necesitamos tener un SO instalado y habilitar el acceso remoto. Veamos algunas de las formas de hacerlo.
 
 ### SSH (vía consola)
+
+[![Vídeo: Conexión vía SSH a Raspberry Pi](https://img.youtube.com/vi/-BH3spberkc/0.jpg)](https://youtu.be/-BH3spberkc)
 
 [Vídeo: Conexión vía SSH a Raspberry Pi](https://youtu.be/-BH3spberkc)
 
@@ -222,6 +227,9 @@ Veamos cómo podemos utilizar lo aprendido...
 Hay una versión gratuita (para uso no comercial) de Worlfram  Mathematica instalada por defecto en Raspbian
 
 ![Mathematica en Raspberry Pi](./images/Mathematica.png)
+
+[![Vídeo: Trabajando con Mathematica en Raspberry](https://img.youtube.com/vi/VVHoREZ8Rc4/0.jpg)](https://youtu.be/VVHoREZ8Rc4)
+
 
 [Vídeo: Trabajando con Mathematica en Raspberry](https://youtu.be/VVHoREZ8Rc4)
 
