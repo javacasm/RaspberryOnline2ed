@@ -13,16 +13,16 @@
 * Tarjeta SD de al menos 8 GB  o más ([máximo 128Gb par la Raspberry Pi 3 y 4](https://www.raspberrypi.org/help/faqs/#sdMax)). Se recomienda de clase 10 por su velocidad. La calidad de la tarjeta es crítica, en tarjetas baratas con problemas de rendimiento nos vamos a encontrar cuelgues inesperados e incluso puede que no arranque.
 * Cable de red ethernet (no es necesario si tenemos Wifi, pero facilita la primera conexión que no requiere configuración)
 
-Y si la vas a usar como un ordenador
+Y si la vas a usar como un ordenador:
 
 * Monitor y cable HDMI (o VGA con adaptador. Existen muchos tipos de conversores, pero no todos funcionan bien con cables largos) para la 3 o cable mini-HDMI para la versió 4
 * Teclado y raton USB (mejor si es inalámbrico, porque consume menos)
 
 ## ¿Raspberry 3+ o 4? 
 
-Esa es la pregunta del millón: Las primeras unidades del último modelo 4 han salido con algunos problemas de calientamiento y no funcionan con algunas fuentes de alimentación de tipo USB-C
+Esa es la pregunta del millón: Las primeras unidades del último modelo 4 han salido con algunos problemas de calientamiento y no funcionan con algunas fuentes de alimentación de tipo USB-C. Los problemas de calentamiento se ha resuelto con actualizaciones software y es de suponer que las placas que salen de fábrica ya tienen resueltos los problemas eléctricos.
 
-Por esto, salvo que necesites una gran cantidad de procesamiento o tus aplicaciones usen mucha RAM, yo a día de hoy me esperaría para comprar la v4. Seguro que en unos meses esos problemas de diseño se resuelven y ahí si que será la mejor opción. 
+Por esto, y dada la poca diferencia de precio, salvo que encuentres una buena oferta para la Rasperry Pi 3+ yo me inclinaría por la versión 4. 
 
 ### Opcionales
 
@@ -34,11 +34,13 @@ Por esto, salvo que necesites una gran cantidad de procesamiento o tus aplicacio
 
 [¿Más carcasas?](https://www.google.es/search?q=raspberry+case&safe=off&espv=2&biw=838&bih=896&tbm=isch&tbo=u&source=univ&sa=X&ved=0CD4QsARqFQoTCP2a_r-_nMkCFci0GgodzpUMHA)
 
+[![Vídeo: Carcasas para Raspberry Pi](https://img.youtube.com/vi/RHmBmK33iuY/0.jpg)](https://youtu.be/RHmBmK33iuY)
+
 [Vídeo](https://youtu.be/RHmBmK33iuY) sobre las cajas para Raspberry Pi
 
 ### ¿Dónde encontrarlos?
 
-![Kit Raspberry Pi](http://www.electan.com/product_thumb.php?img=images/RaspberryKit2.jpg)
+![Kit Raspberry Pi](./images/kitRaspberryElectan.jpeg)
 
 
 * [www.inven.es](http://www.inven.es)
