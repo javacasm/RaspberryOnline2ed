@@ -1,100 +1,71 @@
 ## Proyectos
 
-Vamos a ver algunos proyectos donde se usa una (o varias) Raspberry Pi
+Vamos a presentar algunos proyectos donde se usa una (o varias) Raspberry Pi con el objeto de da ideas, en absoluto vamos en este punto  detalles de cómo implementarlos. Antes de eso tenemos que aprender a instalar, programar y constuir la electrónica necesaria.
+
+Sí que nos van a mostrar la gran cantidad de usos de la Raspberry Pi.
+
+Al tratarse de enlaces externos al curso, puede ocurrir que algunos enlaces no estén disponibles. En tal caso os agradezco que lo notifiquéis para corregirlos si es posible
 
 ### Enseñanza
 
-Existen [distribuciones  educativas](https://learn.adafruit.com/adafruit-raspberry-pi-educational-linux-distro)
+#### Distribuciones
 
-Podemos montar [Aulas informatica](https://www.raspberrypi.org/blog/bringing-computing-to-rural-cameroon/)
+* Occidentalis: Existen [distribuciones  educativas como Occidentalis de Adafruit](https://learn.adafruit.com/adafruit-raspberry-pi-educational-linux-distro) pensadas para aprender electrónica con la Raspberry. Actualmente la distribución oficial de Raspberry ya contiene la mayoría de las herramientas
 
+* [Coder](https://googlecreativelab.github.io/coder/): es una distribución creada por Google para usar la Raspberry como cliente/servidor para aprender programación.
+
+* [Aulas informatica](https://www.raspberrypi.org/blog/bringing-computing-to-rural-cameroon/): Unas raspberries, unos monitores, teclados y ratones reciclados y una mínima infraestructura de red permite crear unas aulas informáticas perfectas para el día.
 ![Aula con Raspberry Pi](./images/AulaPi.jpg)
 
-También podemos hacer un [servidor de aula con los contenidos de (Kahn Academy Offline)](http://www.raspberrypi.org/archives/3829?sf12291563=1)
-
-	Raspebrry 35$
-	SD 64Gb 50$
-	Wifi USB 5$
-	Caja 9$
+* Servidor de contenidos educativos: como este [servidor de aula con los contenidos de (Kahn Academy Offline)](http://www.raspberrypi.org/archives/3829?sf12291563=1). Por unos 100$ tenemos un servidor con todos los contenidos de Kahn Academy (o de wikipedia) descargados y sin necesidad de acceso a internet.
 
 ### Instrumentación de Laboratorio
 
 Añadiendo algo de hardware externo podemos utilizarlo como equipamiento de laboratorio.
 
-* Generadores de onda
-[DAC](https://learn.adafruit.com/mcp4725-12-bit-dac-with-raspberry-pi)
+* Generadores de onda: [DAC](https://learn.adafruit.com/mcp4725-12-bit-dac-with-raspberry-pi)
 
-  ![dac](https://learn.adafruit.com/system/guides/images/000/000/092/medium310/DAC_Scope.png)
+  ![dac](./images/DAC_Scope.png)
 
-* [Analizador de precuencias](https://learn.adafruit.com/freq-show-raspberry-pi-rtl-sdr-scanner)
+* [Analizador de frecuencias](https://learn.adafruit.com/freq-show-raspberry-pi-rtl-sdr-scanner)
 
-  ![analizador](https://learn.adafruit.com/system/guides/images/000/000/759/medium310/DSC00699.jpg)
+  ![analizador](./images/DSC00699.jpg)
 
 
 ### MediaCenter
 
-Uno de los usos más frecuentes es como MediaCenter, hasta existen distribuciones dedicadas a ello.
+Uno de los usos más frecuentes es como MediaCenter, hasta existen distribuciones dedicadas a ello. En próximos temas veremos en detalle cómo hacerlo nosotros mismos.
 
-[How to make a MediaCenter](https://learn.adafruit.com/raspberry-pi-as-a-media-center?view=all)
+* [How to make a MediaCenter](https://learn.adafruit.com/raspberry-pi-as-a-media-center?view=all)
 
-![Media Center with Raspberry Pi](https://learn.adafruit.com/system/assets/assets/000/005/897/medium800/raspberry_pi_xbmc_playing_music.jpg)
+![Media Center with Raspberry Pi](./images/raspberry_pi_xbmc_playing_music.jpg)
 
+* [Radio wifi](https://learn.adafruit.com/pi-wifi-radio?view=all)
 
 ### Robots
 
-![Placa para conectar Lego y Raspberry Pi](https://cdn.sparkfun.com/r/600-600/assets/8/3/6/4/0/Brick_Pi_Hookup_Guide-12.jpg)
+Raspberry auna las posibilidades de programción sencilla (usando python o Scratch) con una gran versatilidad a la hora de conectar dispositivos electrónicos.
 
-[Raspberry y Lego Minstorm](https://learn.sparkfun.com/tutorials/getting-started-with-the-brickpi?_ga=1.260570443.733603098.1443800444)
+Es por eso que la hacen ideal para crear Robots. Nosotros veremos en el último tema cómo hacer un robot desde cero:
 
+![Robot](./images/RobotTop.jpg)
 
+En este otro [tutorial explican como conectar la Raspberry con Lego Minstorm](https://learn.sparkfun.com/tutorials/getting-started-with-the-brickpi?_ga=1.260570443.733603098.1443800444)
 
-
-### [Minecraft](https://learn.adafruit.com/running-minecraft-on-a-raspberry-pi)
-
-Juega a MineCraft desde tu RaspBerry Pi
-
-![minecraft](https://cdn-learn.adafruit.com/guides/images/000/000/389/medium310/minecraft2.jpg)
-
-
-### [Kano: portátil  basado en raspberrypi](http://www.raspberrypi-spy.co.uk/2016/04/kano-computer-kit-first-impressions/)
+![Placa para conectar Lego y Raspberry Pi](./images/Brick_Pi_Hookup_Guide-12.jpg)
 
 
 
-### Cerebro de una instalación domótica
 
-[Regulación de temperatura](https://tackk.com/nightcooling)
+### Juegos
 
-## Servidor NAS
+* Juega a MineCraft desde tu RaspBerry Pi [tutorial](https://learn.adafruit.com/running-minecraft-on-a-raspberry-pi)
 
-Puedes usar tu Raspberry como [servidor de ficheros](https://www.adslzone.net/2016/08/24/convierte-cualquier-disco-duro-nas-gracias-la-raspberry-pi-3/)
+![minecraft](./images/minecraft2.jpg)
 
-![Raspberry Pi como servidor de ficheros](http://www.davidhunt.ie/wp-content/uploads/2013/01/IMG_7585.jpg)
+#### Máquina de juegos
 
-### Streaming
-
-[Radio wifi](https://learn.adafruit.com/pi-wifi-radio?view=all)
-
-
-## Data crunching: supercomputación
-
-* [Cluster de supercomputación](http://www.cyberhades.com/2014/02/19/tutorial-para-instalar-un-cluster-de-40-nodos-con-raspberry-pi/)
-
-  ![cluster](./images/PiCluster1.JPG)
-
-* [Minería de BitCoin](https://learn.adafruit.com/piminer-raspberry-pi-bitcoin-miner)
-
-  ![bitcoin](./images/bcminer1_1200.jpg)
-
-## Cámara
-
-[SnapPiCam](https://learn.adafruit.com/snappicam-raspberry-pi-camera)
-
-![snapPiCam](./images/snappy_cam.jpg)
-
-
-## Máquina de juegos
-
-Uno de los usos más frecuentas de la Raspberry es para jugar, su pequeño tamaño y su capacidad la hacen ideal.
+Uno de los usos más frecuentas de la Raspberry es para jugar, su pequeño tamaño y su capacidad la hacen ideal. Veremos más adelante que es más fácil de lo que parece montarse una.
 
 * [Mame](https://learn.adafruit.com/retro-gaming-with-raspberry-pi?view=all) (Emulador de máquinas recreativas antiguas)
 
@@ -108,34 +79,9 @@ Uno de los usos más frecuentas de la Raspberry es para jugar, su pequeño tama�
 
   ![Doom](./images/doom.png)
 
-* [Minecraft](https://learn.adafruit.com/running-minecraft-on-a-raspberry-pi)
-
-  ![minecraft](./images/minecraft.png)
-
-## Instrumentos de tortura
-
-No te asustes es sólo un [láser que se mueve aleatoriamente](https://learn.adafruit.com/raspberry-pi-wifi-controlled-cat-laser-toy?view=all)
- y que le encantará a tu gato
-
-[Cuadro diabólico](https://learn.adafruit.com/creepy-face-tracking-portrait?view=all)
-
-  ![cuadro diabólico](https://learn.adafruit.com/system/assets/assets/000/011/659/medium800/raspberry_pi_DSC00316.jpg)
-
-## Arte
-
-* [Ligth Painting](https://learn.adafruit.com/light-painting-with-raspberry-pi)
-
-  ![ligth painting](https://learn.adafruit.com/system/guides/images/000/000/086/medium310/fire.jpg)
-
-* [Iluminación con leds](https://learn.adafruit.com/neopixels-on-raspberry-pi)
-
-  ![iluminación](./images/leds.jpg)
-
-* [Cortina luminosa](https://learn.adafruit.com/1500-neopixel-led-curtain-with-raspberry-pi-fadecandy?view=all)
-
-  ![cortina](https://learn.adafruit.com/system/assets/assets/000/018/739/medium800/leds_curtain-anim.gif)
-
 ### Juegos Portables
+
+Existen muchos proyectos que aprovechan el bajo tamaño de la Raspberry para crear consolas protátiles, incluso emulando algunas de las cmás conocidas
 
 [Raspberry Pi Gameboy](https://learn.adafruit.com/pigrrl-raspberry-pi-gameboy?view=all)
 
@@ -150,13 +96,57 @@ No te asustes es sólo un [láser que se mueve aleatoriamente](https://learn.ada
 
 ![retroconsola](./images/retroconsola.jpg)
 
-## Teléfono
+
+### Ordenadores y material informático
+
+Hay varios ordenadores basados en Rasp
+
+* [Kano](http://www.raspberrypi-spy.co.uk/2016/04/kano-computer-kit-first-impressions/) es un portátil  basado en Raspberry Pi
+![kano-1366_2000.jpg](./images/kano-1366_2000.jpg)
+
+* [pi-Top](https://www.pi-top.com/) es una marca que ha desarrollado varios modelos distintos de ordenadores sobre una Raspberry Pi
+![PT-0001_1000x1000.jpg](./images/PT-0001_1000x1000.jpg)
+### Servidor NAS
+
+Puedes usar tu Raspberry como [servidor de ficheros](https://www.adslzone.net/2016/08/24/convierte-cualquier-disco-duro-nas-gracias-la-raspberry-pi-3/)
+
+![Raspberry Pi como servidor de ficheros](http://www.davidhunt.ie/wp-content/uploads/2013/01/IMG_7585.jpg)
+
+### Clusters
+
+* [Cluster de supercomputación](http://www.cyberhades.com/2014/02/19/tutorial-para-instalar-un-cluster-de-40-nodos-con-raspberry-pi/) Existen muchos proyectos donde aprovechan el bajo coste y toda la información disponible, junto con la compatibilidad con los eqipos linux para crear cluster y explorar las posibilidades de supercomputación.
+
+  ![cluster](./images/PiCluster1.JPG)
+
+* [Minería de BitCoin](https://learn.adafruit.com/piminer-raspberry-pi-bitcoin-miner), conectando unos USB específicos para minar criptomonedas podemos ganarnos unos pocos bitcoins...
+
+  ![bitcoin](./images/bcminer1_1200.jpg)
+
+* [Portable Raspberry](https://learn.adafruit.com/touch-pi-portable-raspberry-pi)
+![portable](./images/hero-face3-sm.jpg)
+
+
+* [MiniPortatil](https://learn.adafruit.com/mini-raspberry-pi-handheld-notebook-palmtop)
+![MiniPortatil con Raspberry Pi](./images/hero-pitop-sm.jpg)
+
+
+### Cerebro de una instalación domótica
+
+[Regulación de temperatura](https://tackk.com/nightcooling)
+
+### Cámara
+
+[SnapPiCam](https://learn.adafruit.com/snappicam-raspberry-pi-camera) o cómo crear un cámara con tu raspberry
+![snapPiCam](./images/snappy_cam.jpg)
+
+
+### Teléfono
 
 [RaspiPhone es un teléfono basado en Raspberry Pi](https://learn.adafruit.com/piphone-a-raspberry-pi-based-cellphone?view=all)
 
 ![phone](./images/RaspiPhone.jpg)
 
-## Coche
+### Coche
 
 [Datalogger de datos del coche](http://www.stuffaboutcode.com/2013/07/raspberry-pi-reading-car-obd-ii-data.html)
 
@@ -180,19 +170,27 @@ O volando en drone usando  [Autopilot](http://erlerobotics.com/blog/meet-the-las
 
 ![autopilot](https://pbs.twimg.com/media/CUAG0x8WoAAeHjp.jpg)
 
-## Proyectos
+### Arte
 
-* [Portable Raspberry](https://learn.adafruit.com/touch-pi-portable-raspberry-pi)
+* [Ligth Painting](https://learn.adafruit.com/light-painting-with-raspberry-pi)
 
-![portable](https://learn.adafruit.com/system/guides/images/000/000/881/medium310/hero-face3-sm.jpg)
+  ![ligth painting](./images/fire.jpg)
 
+* [Iluminación con leds](https://learn.adafruit.com/neopixels-on-raspberry-pi)
 
-* [MiniPortatil](https://learn.adafruit.com/mini-raspberry-pi-handheld-notebook-palmtop)
+  ![iluminación](./images/leds.jpg)
 
-![MiniPortatil con Raspberry Pi](https://learn.adafruit.com/system/guides/images/000/001/046/medium310/hero-pitop-sm.jpg)
+* [Cortina luminosa](https://learn.adafruit.com/1500-neopixel-led-curtain-with-raspberry-pi-fadecandy?view=all)
 
+  ![cortina](./images/leds_curtain-anim.gif)
 
-Más detalles en el libro "RP para agentes secretos"
+#### Instrumentos de tortura
+
+No te asustes es sólo un [láser que se mueve aleatoriamente](https://learn.adafruit.com/raspberry-pi-wifi-controlled-cat-laser-toy?view=all) y que le encantará a tu gato
+
+[Cuadro diabólico](https://learn.adafruit.com/creepy-face-tracking-portrait?view=all)
+
+  ![cuadro diabólico](./images/raspberry_pi_DSC00316.jpg)
 
 ### Hacking
 
