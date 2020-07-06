@@ -104,7 +104,7 @@ Es un gran avance en cuanto a prestaciones, pero conservando su esencia: un mism
 
 Veamos algunas de sus características
 
-![Caracteristicas](./images/raspi4Descripcion.png)
+![Características Raspbery Pi 4](./images/raspi4Descripcion.png)
 
 * Procesador Quad core ARM A8 de 64 bits a 1.5Ghz. Los primeros tests de velocidad dicen que 2x veces más rápida que la 3+
 ![Test de CPU](./images/TestCPU_r4.png)
