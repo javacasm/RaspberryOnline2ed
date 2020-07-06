@@ -7,7 +7,7 @@ La intención de los creadores de Raspberry era crear un sistema barato que nos 
 * Pensaron que la solución podía ser un ordenador superbarato con el que pudieran jugar, aprendiendo en el camino.
 
 * Se empezó a construir en 2006, pero era difícil con la electrónica de la época
-![Prototipo de Raspberry Pi](./images/prototipoRaspi.jpg)
+  ![Prototipo de Raspberry Pi](./images/prototipoRaspi.jpg)
 
 * En 2009 ya existía la tecnología necesaria y se creó "Raspberry Pi Fundation" administrada por Eben Upton
 
@@ -22,25 +22,34 @@ Utiliza un diseño avanzado, como podemos ver en la imagen donde se ve que se ha
 
 Actualmente existen varios formatos, vamos a ver los más usados:
 
-* La versión más actual a día de hoy (7 de Octubre de 2019) es la [Versión 4](https://www.raspberrypi.org/products/raspberry-pi-4-model-b/) (1.5GHz quad core hasta 4Gb, USB 3, Gigabit, Wifi y bluetooth)
+* La versión más actual a día de hoy (Julio de 2020) es la [Versión 4](https://www.raspberrypi.org/products/raspberry-pi-4-model-b/) (1.5GHz quad core hasta 8Gb, USB 3.0, 2 HDMI 4K Gigabit, Wifi y bluetooth)
 
 ![Raspberry Pi versión 4](./images/Raspberry-Pi-4.jpg)
 
 * La versión [Zero](https://www.raspberrypi.org/products/pi-zero/) (1Ghz 512Mb) con un tamaño muy pequeño
 
-![Raspberry Pi Zero](https://www.raspberrypi.org/app/uploads/2016/02/Raspberry-Pi-Zero-web.jpg)
+![Raspberry Pi Zero](./images/Raspberry-Pi-Zero-web.webp)
 
-Más adelante veremos muchos más detalles de esta versión y de las anteriores. No te precipites a comprarla, porque a lo mejor vale más la pena adquirar una versión algo más antigua como la 3+ 
+* [Raspberry Pi Compute Module 3+](https://www.raspberrypi.org/products/compute-module-3-plus/): es equivalente a una Rasperry pi 3 B+ pero en un formato pensado para construir ordenadores a partir de la Raspberry. Se puede adquirir con un disco interno eMMC de 8GB/16GB/32GB que sustituye a la tarjeta SD
 
+![Raspberry_Pi_Compute_Module.png](./images/Raspberry_Pi_Compute_Module.png)
 
-Puedes encontrar más detalles en la [página de la wikipedia]([Artículo de la wikipedia sobre RaspBerry Pi](https://en.wikipedia.org/wiki/Raspberry_Pi)
+Se puede integrar en Module Kit 3
+
+![Raspberry-Pi-Compute-Module-Kit-3.jpg](./images/Raspberry-Pi-Compute-Module-Kit-3.jpg)
+
+Más adelante veremos muchos más detalles de esta versión y de las anteriores. 
+
+Puedes encontrar más detalles en el [Artículo de la wikipedia sobre RaspBerry Pi](https://en.wikipedia.org/wiki/Raspberry_Pi)
 
 
 ## Raspberry Pi vs Arduino
 
 ![vs](./images/arduinovsRaspberry.jpg)
 
-Una pregunta muy frecuente es si para determinado proyecto es mejor usar Arduino o Raspberry Pi.
+Una pregunta muy frecuente es si para determinado proyecto es mejor usar Arduino o Raspberry Pi: la respuesta es sencilla, son equipos muy distintos con capacidades diferentes y generalmente son complementarios.
+
+Vamos a ver las diferencias en detalle, pero podíamos resumirlas diciendo que Raspberry es el cerebro donde Arduino hace más el papel de músculo (desde el punto de vista eléctrico).
 
 Arduino es más robusto eléctricamente: si se produce un cortocircuito entre pines o se comente un error se apagará y reseteará pero las probabilidades de romperlo son bajas. En cambio si hacemos esto mismo con una Raspberry lo más seguro es que la dejemos inservible.
 
@@ -59,7 +68,7 @@ Raspberry Pi tiene una mayor capacidad de procesamiento, lo que la hace más ade
 
 * Raspberry Pi es un entorno completo, no necesita de ningún dispositivo externo para programarse
 
-¿Son incompatibles? en absoluto lo más frecuente y es usarlas conjuntamente, conectándolos y haciendo que la Raspberry actúe como cerebro y Arduino como ejecutor.
+¿Son incompatibles? en absoluto, lo más frecuente es usarlas conjuntamente, conectándolos y haciendo que la Raspberry actúe como cerebro y Arduino como ejecutor.
 
 Vistas las diferencias entre los dos dispositivos queda claro que son perfectamente complementarios:
 
@@ -72,10 +81,14 @@ Han sido muchas las películas y series donde han aparecido últimamente Raspber
 
 * [Serie Mr. Robot](http://null-byte.wonderhowto.com/how-to/hacks-mr-robot-build-hacking-raspberry-pi-0163143/): utilizan como punto de acceso externo y para inyectar datos erróneos en el sistema de control de temperatura y así poder controlarlo.
 
-  ![Raspberry usada en Mr. Robot](http://therobotacademy.com/sites/default/files/hacks-mr-robot-build-hacking-raspberry-pi-2_0.jpg)
+  ![Raspberry usada en Mr. Robot](./images/hacks-mr-robot-build-hacking-raspberry-pi.1280x600.jpg)
 
 * CSI Cyber: lo usan como un router que les permite capturar datos de la red donde están (un parque de atracciones) y así descubren como poder controlar las atracciones.
 
   ![Raspberry en CSI Cyber](./images/RaspberryPi_on_CSI-Cyber.jpg)
 
 ¿Cónoces alguna aparición más en los medios? No dudes en contárnosla.
+
+### Recursos
+
+Las imágenes de los distintos modelos de Raspbery están tomadas de la wikipedia.
