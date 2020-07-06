@@ -1,6 +1,6 @@
 ## Arquitectura
 
-En este diagrama simplificado puedes ver la arquitectura de una Raspberry Pi 
+En este diagrama simplificado puedes ver la arquitectura de una Raspberry Pi:
 
 ![Arquitectura de la Raspberry Pi](./images/bloques.png)
 
@@ -10,9 +10,6 @@ Su tamaño es realmente pequeño: 86x57 mm
 
 A lo largo de las distintas versiones ha ido evolucionando. Veamos los dos modelos más recientes
 
-### [Raspberry Pi 3](https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/)
-
-![Bloques de la Raspberry Pi](./images/Raspberry-Pi-3.jpg)
 
 En estos dibujos esquemáticos podemos ver los distintos conectores:
 
@@ -24,3 +21,7 @@ En estos dibujos esquemáticos podemos ver los distintos conectores:
 * Conector CSI para la cámara
 * Conector DSI para un monitor específico
 * GPIO, 40 pines accesibles para utilizar como entradas y salidas. Hay que tener mucho cuidado con ellos porque están conectados directamente el microprocesador y podríamos estropearlo fácilmente.
+
+Podemos ver que la [Raspberry Pi 3](https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/) guarda una gran similitud con las versiones originales.
+
+![Bloques de la Raspberry Pi](./images/Raspberry-Pi-3.jpg)
