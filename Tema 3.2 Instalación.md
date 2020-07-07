@@ -1,11 +1,39 @@
-# Instalación
+## Instalación
+
+Desde hace poco se ha publicado una aplicación llamada Imager que permite hacer aún más sencilla la instalación del sistema operativo, encargándose de descargar, formatear y escribir la imagen del sistema directamente en la tarjeta SD
+
+![Imager](./images/Imager.png)
+
+La versión actual nos permite instalar los siguientes sistemas operativos:
+
+![Imager SOs](./images/Imager_SOs.png)
+
+Al seleccionar el sistema operativo veremos distintas opciones, como por ejemplo al seleccionar Ubuntu:
+
+![Opciones Ubuntu](./images/Images_Ubuntu.png)
+
+Donde vemos que aparecen opciones de instalar versiones de 32 o de 64 bits
+
+Podemos descargar Imager desde la página de [Descargas de Raspberrypi.org](https://www.raspberrypi.org/downloads/) donde seleccionaremos nuestro sistema operativo
+
+Una vez descargado seleccionaremos el sistema operativo que queremos usar, luego seleccionaremos la tarjeta SD donde vamos a escribir la imagen (los datos de la tarjeta se borrarán)
+
+A día de hoy Imager no permite instalar varios sistemas operativos en la misma tarjeta
+
+Al pulsar **Write** se descargará la imagen desde internet y 
+
+También podemos usar Image para formatear la tarjeta, para crear tarjetas SD capaces de recupear una instalación con problemas, para escribir imágenes que ya hemos descargado, etc.
+
+### Instalación Manual
+
+Vamos a ver cómo hacer todo el proceso manualmente para entender los pasos o por si Imager no nos permite usar esa versión de sistema operativo.
 
 ¿Qué necesitamos?
 
 * Formatear tarjeta ([Formatter4](http://www.sdcard.org/downloads/formatter_4/))
 * Descargamos la imagen del sistema que queramos desde la [página de descargas (Downloads) de la web de Raspberry.org](http://www.raspberrypi.org/downloads)
 * Si usamos una imagen tipo Noobs, basta con que descomprimamos el contenido del fichero zip en la tarjeta SD
-* Si es una imagen (fichero tipo img o iso) lo grabamos por ejempo con la herramienta multiplataforma Etcher (Windows, OsX y Linux) para instalar imagenes https://www.balena.io/etcher/
+* Si es una imagen (fichero tipo img o iso) lo grabamos con Imager o por ejemplo con la herramienta multiplataforma Etcher (Windows, OsX y Linux) para instalar imagenes https://www.balena.io/etcher/
 
 ![Etcher](./images/etcher.io.png)
 
