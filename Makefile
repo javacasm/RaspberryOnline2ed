@@ -71,7 +71,6 @@ FAQ:
 					"Tema 3.2 Instalación.md" \
 					"Tema 3.3 Raspberry Pi i4.md" \
 					"Tema 3.4 Raspberr Pi Zero W.md" \
-					"Tema 3.5 TFT.md" \
 					"Tema 3.6 Alimentación.md"
 
 4:
