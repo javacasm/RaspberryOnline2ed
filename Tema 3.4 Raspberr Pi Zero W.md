@@ -1,126 +1,53 @@
-# Setup raspberry pi Zero W consola
+## Instalación en una Raspberry Pi Zero W 
 
-instalamos raspberry pi OS lite
+Vamos a hacer una instalación ahora en una Raspberry Pi Zero W que vamos a utilizar para tomar fotos remotamente, con lo que normalmente no va a tener ni monitor, ni teclado conectados. Ello unido a su menor potencia nos va a llevar a usar una versión del SO sin escritorio visual, ni las aplicaciones asociadas.
 
-configuracion consola
-
-Necesario:
-* wifi
-* IP fija: Usando configuración o con el router
-* ssh
-* contraseña
-* idioma, zona horaria y teclado
-
-Conctado ssh
-
-camara
-actualización
-python
+Una vez conectada al Wifi, accederemos a ella vía ssh, usando terminal/consola.
 
 
-TODO: MOVER AL APARTADO CORRESPONDIENTE
+1. Instalaremos Raspberry Pi OS Lite usando Imager
+1. Inicialmente conectaremos un teclado y una pantalla HDMI para una primera configuración por consola.
+1. Colocamos la Raspberry Pi Zero W en su caja y la cerramos con cuidado
+1. Conectaremos un adaptador HDMI
+1. Conectaremos el cable adaptador USB
+1. Alimentamos con el cable USB de alimentación desde la batería  
 
-![CableCamaraZeroNormal.jpg](./images/CableCamaraZeroNormal.jpg)
-
-![CamaraRaspiZerojpg](./images/CamaraRaspiZero.jpg)
-
-![RaspiZeroCaja.jpg](./images/RaspiZeroCaja.jpg)
-
-![RaspiZeroCajaCerrada.jpg](./images/RaspiZeroCajaCerrada.jpg)
-
-![RaspiZeroCajaCerradaPuertos.jpg](./images/RaspiZeroCajaCerradaPuertos.jpg)
+Colocamos la Raspberry Pi Zero W en su caja y conectamos la alimentación y queda así de reducido
 
 ![RaspiZeroAlimantacion.jpg](./images/RaspiZeroAlimantacion.jpg)
 
-https://projects.raspberrypi.org/en/projects/raspberry-pi-zero-time-lapse-cam/2
+Ahora ya arracamos para hacer la configuración necesaria desde la consola:
 
+Configuración inical:
+* Cambiamos contraseña
+* Configuramos Wifi
+* Configuración del hostname
+* Activamos ssh
+* Cofiguramos idioma, zona horaria y teclado
 
-
-
-
-```bash
-sudo apt install python3-pip
-
-pip3 install python-telegram
-pip3 install python-telegram-bot
-
-```
-
-
-
-
-
-## acceso SSH y SCP
-
-scp pi@raspiLapse:~/proyectos/RaspiZeroLapse/code/images/* .
-
-
-## Puesta a punto de entorno de programación
-
-git clone url_repositorio.git
-
-git config --global user.name "javacasm"
-git config --global user.email "javacasm@gmail.com"
-
-
-modificamos  y subimos los cambios con 
-
-
-git add fichero_cambiado.py
-
-git commit -m "correccion del error de login" ficher.py
-
-
-Si vamos a trabajar durante bastante tiempo con github nos interesa añadir la firma ssh de la raspberry a github
-
-Para ello necesitamos crear una clave SSH en la raspberry. Siguiendo la [documentación de github](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) hacemos:
+Todo ello lo haremos usando la configuración por consola con raspi-config
 
 ```sh
-ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+sudo raspi-config
 ```
-y definimos dónde se va a guardar el fichero y si queremos ponerle cable
+### Configuración de asignación de IP fija en el router
 
+Puesto que vamos a acceder remotamente a la Raspberry, necesitamos que el router siempre nos asigne la misma dirección IP. Para ello configuraremos en la sección de DHCP la asignación de una IP dada para el MAC de nuestra Zero.
+
+Al configurar un  hostname, si nuestro router lo permite, podremos acceder también usando el nombre.
+
+### Resto de la configuración 
+
+Una vez hecho esto ya podemos conectarnos por ssh
 ```sh
-> Enter a file in which to save the key (/home/you/.ssh/id_rsa): [Press enter]
-> Enter passphrase (empty for no passphrase): [Type a passphrase]
-> Enter same passphrase again: [Type passphrase again]
+ssh pi@NombreRaspiZero
 ```
 
-(en la raspberry Zero tarda casi más de 1 minuto)
+ y configurar el resto de opciones:
 
-Ejecutamos el ssh-agent con
-
-```sh
-eval "$(ssh-agent -s)"
-```
-y añadimos la key generada
-
-```sh
-ssh-add ~/.ssh/id_rsa
-```
-
-
-mostramos por consola el fichero con 
-
-cat ~/.ssh/id_rsa.pub
-
-y lo añaidmos a nuestra cuanta github pulsando "New SSH key" in https://github.com/settings/keys
-
-Si estuvieramos en un entorno visual haríamos:
-
-Instalamos xclip (una utilidad para manejar el clipboard)
-
-```sh
-sudo apt-get install xclip
-```
-
-y copiamos la key al clipboard
-
-```sh
-xclip -sel clip < ~/.ssh/id_rsa.pub
-```
-
-Ahora ya podemos trabajar con ssh en github, lo que nos ahorra tener que escribir muchas veces nuestro usuario/password de github
+* Activamos la cámara
+* Actualización del SO
+* Instalamos los paquetes de python necesarios para nuestra aplicación
 
 
 
