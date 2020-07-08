@@ -131,6 +131,8 @@ O bien usando algún software como [Putty](http://www.chiark.greenend.org.uk/~sg
 Conviene cambiar la contraseña para evitar que cualquiera pueda acceder
 
 
+TODO: FICHERO ssh.md
+
 ### VNC
 
 VNC es un protocolo que nos permite acceder remotamente al escritorio de otra máquina.
