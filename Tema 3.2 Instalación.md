@@ -22,7 +22,12 @@ A día de hoy Imager no permite instalar varios sistemas operativos en la misma 
 
 Al pulsar **Write** se descargará la imagen desde internet y 
 
-También podemos usar Image para formatear la tarjeta, para crear tarjetas SD capaces de recupear una instalación con problemas, para escribir imágenes que ya hemos descargado, etc.
+También podemos usar Imager para formatear la tarjeta, para crear tarjetas SD capaces de recupear una instalación con problemas, para escribir imágenes que ya hemos descargado, etc.
+
+[![Vídeo: Instalación de Raspberry Pi OS usando Imager](https://img.youtube.com/vi/DDfkkG4-gq8/0.jpg)](https://youtu.be/DDfkkG4-gq8)
+
+[Vídeo: Instalación de Raspberry Pi OS usando Imager](https://youtu.be/DDfkkG4-gq8)
+
 
 ### Instalación Manual
 
