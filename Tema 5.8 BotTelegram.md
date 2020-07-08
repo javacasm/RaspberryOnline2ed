@@ -6,6 +6,13 @@
 * Envía ficheros
 * Envía imágenes
 
+PAra ver la temperatura de la raspberry 
+vcgencmd measure_temp
+
+Para ver el estado de Throttle 
+vcgencmd get_throttled
+
+
 [Bot basico que enciende un led](https://www.hackster.io/Salmanfarisvp/telegram-bot-with-raspberry-pi-f373da)
 
 [Control de plantas en la terraza](https://www.hackster.io/zenofall/community-iot-garden-using-raspberry-pi-and-telegram-bot-ef4989) https://zenofall.com/iot-robot-using-bluetooth-communication-between-raspberry-pi-and-microbit/
