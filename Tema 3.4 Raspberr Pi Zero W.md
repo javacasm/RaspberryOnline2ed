@@ -14,7 +14,7 @@ Una vez conectada al Wifi, accederemos a ella vía ssh, usando terminal/consola.
 
 Colocamos la Raspberry Pi Zero W en su caja y conectamos la alimentación y queda así de reducido
 
-![RaspiZeroAlimantacion.jpg](./images/RaspiZeroAlimantacion.jpg)
+![Raspi Zero con alimantacion](./images/RaspiZeroAlimantacion.jpg)
 
 Ahora ya arracamos para hacer la configuración necesaria desde la consola:
 
