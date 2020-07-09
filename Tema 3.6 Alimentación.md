@@ -12,7 +12,11 @@ Desde el sistema podemos ver el estado de la alimentación y de la temperatura d
 /opt/vc/bin/vcgencmd get_throttled
 ```
 
+Obtenemos un valor de:
+
+```sh
 throttled=0x0
+```
 
 Un valor de 0x0 nos dice que el estado de la alimentación  y la temperatura del sistema son aceptable.
 
@@ -32,6 +36,9 @@ Los distintos bits de **throttle** tiene distinto significado y nos sirven para 
 ```
 
 Por ejemplo si obtenemos un valor de throttle de 0x50005 en binario sería B1010000000000000101 implicaría que tenemos activos lo bits 0, 2, 16 y 18 lo quiere decir que tenemos un problema de voltaje de alimentación bajo y por ello se ha reducido la frecuencia de la CPU
+
+
+El comando **vcgencmd** nos da acceso a muchos registros/variables del sistema, como el uso de memoria o la velocidad de la CPU. En [esta página](https://www.raspberrypi.org/documentation/raspbian/applications/vcgencmd.md) están documentados.
 
 
 ### Documentación
