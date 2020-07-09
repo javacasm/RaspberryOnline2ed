@@ -53,3 +53,4 @@ sudo rpi-eeprom-update  -d -f /lib/firmware/raspberrypi/bootloader/stable/pieepr
 ### Recursos
 
 [Vídeo de Andreas Spiess: Quickie: Raspberry Pi official USB Boot now much simpler. How fast is a cheap SSD?](https://www.youtube.com/watch?v=8vC3D19e_Ac)
+
