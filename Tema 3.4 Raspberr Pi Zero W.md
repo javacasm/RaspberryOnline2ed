@@ -50,4 +50,8 @@ ssh pi@NombreRaspiZero
 * Instalamos los paquetes de python necesarios para nuestra aplicación
 
 
+[![Vídeo: Instalación y configuración desde consola de Raspberry Pi Zero W](https://img.youtube.com/vi/YIW2HbepDKg/0.jpg)](https://youtu.be/YIW2HbepDKg)
+
+[Vídeo: Instalación y configuración desde consola de Raspberry Pi Zero W](https://youtu.be/YIW2HbepDKg)
+
 
