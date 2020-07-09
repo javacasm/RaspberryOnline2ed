@@ -40,7 +40,7 @@ Vamos a ver cómo hacer todo el proceso manualmente para entender los pasos o po
 * Si usamos una imagen tipo Noobs, basta con que descomprimamos el contenido del fichero zip en la tarjeta SD
 * Si es una imagen (fichero tipo img o iso) lo grabamos con Imager o por ejemplo con la herramienta multiplataforma Etcher (Windows, OsX y Linux) para instalar imagenes https://www.balena.io/etcher/
 
-![Etcher](./images/etcher.io.png)
+	![Etcher](./images/etcher.io.png)
 
 * ¿Qué imagen usar?
 	* Empecemos con [Noobs](https://www.raspberrypi.org/blog/tag/noobs/) que nos va a permitir instalar otras imágenes.
@@ -93,9 +93,11 @@ A la izquierda tenemos el menú de aplicaciones y a la derecha podemos pulsar so
 
 ![Configuración Wifi de Raspberry](./images/wifi2.png)
 
-En este [vídeo](https://www.youtube.com/embed/IrjWoxWfewo) podéis ver el uso del entorno visual  Pixel de Raspberry Pi
 
 [![Vídeo: uso del escritorio Pixel de Raspberry Pi](https://img.youtube.com/vi/IrjWoxWfewo/0.jpg)](https://www.youtube.com/embed/IrjWoxWfewo)
+
+
+En este [vídeo](https://www.youtube.com/embed/IrjWoxWfewo) podéis ver el uso del entorno visual  Pixel de Raspberry Pi
 
 ## Configuración
 
