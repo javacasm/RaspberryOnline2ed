@@ -1,4 +1,4 @@
-## Instalació en Raspberry Pi 4
+## Instalación en Raspberry Pi 4
 
 La instalación en la Raspbery tiene algunos detalles a tener en cuenta:
 * De los 2 HDMI, el de más a la izquierda es el 0 y es el que debemos conectar sí sólo se va a usar un monitor.
@@ -13,6 +13,7 @@ Necesitaremos una tarjeta SD para la crear la imagen y copiarla al pen USB.
 
 1. Instalamos un sistema limpio en la tarjeta SD
 2. Actualizamos el SO con:
+
 
 ```sh
 sudo apt update
