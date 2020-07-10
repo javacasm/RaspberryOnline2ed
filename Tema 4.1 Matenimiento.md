@@ -7,16 +7,21 @@ Una vez instalado el sistema, necesitamos de vez en cuando actualizarlo. Veamos 
 Desde un terminal/consola tecleamos lo siguiente
 
 Para buscar cambios
-
-	sudo apt update
-
+```sh
+sudo apt update
+```
 Para instalar estos cambios
-
-	sudo apt upgrade
-
+```sh
+sudo apt upgrade
+```
 Para actualizar el sistema
-
-	sudo apt dist-upgrade
+```sh
+sudo apt dist-upgrade
+```
+Para actualizar a una nueva distribución
+```sh
+sudo apt full-upgrade
+```
 
 Para instalar un paquete determinado
 
@@ -29,12 +34,49 @@ Vemos como en todos los comandos utilizamos la palabra "sudo" esto es debido a q
 
 [Vídeo: Actualizar e instalar software desde terminal en Raspberry Pi](https://youtu.be/BaVfTWFUHtU)
 
-#### Actualización de los distintos firmware
+#### Actualización de los distintos firmwares
 
-Los diferentes componentes de la Raspberry necesitan de varios firmwares para funcionar, que también conviene tener actualizados. Podemos actualizarlos con
+Los diferentes componentes de la Raspberry necesitan de varios firmwares para funcionar, que también conviene tener actualizados. Podemos actualizarlos con:
+
+```sh
+sudo rpi-update
+```
+
+Hay que tener **cuidado con esta comando**: si actualizamos un firmware pero el sistema operativo no lo está y por tanto espera encontrar una versión anterior del firmware, podemos encontrarnos con que nuestra Raspberry se queda completamente bloqueada.
+
+#### Actualización de una versión a la siguiente
+
+Aunque es conveniente que cuando salga una nueva versión hagamos una instalación desde cero, a veces tenemos muchas aplicaciones instaladas o mucha información del usuario que nos llevaría mucho tiempo extraer y luego volver a copiar/installar. En ese caso nos podemos plantear hacer una actualización de una versión a otra.
+
+Vamos a ver un ejemplo de cómo actualizar de una versión del SO a la siguiente. En este caso particular cómo pasar de "Stretch" a "Buster".
+
+1. Modificamos la versión a la apuntan los repositorios de 'stretch' a 'buster'. Podemos hacerlo cambiando a mano el ficheros **/etc/apt/sources.list** y **/etc/apt/sources.list.d/raspi.list** o con un comando como el siguiente:
+
+```sh
+grep -rl stretch /etc/apt/ | sudo xargs sed -i 's/stretch/buster/g'
+```
+2. Actualizamos el sistema completamente:
+
+```sh
+sudo apt update
+sudo apt dist-upgrade
+sudo apt full-upgrade
+```
+3. Actualizamos los firmwares:
+
+```sh
+sudo rpi-update
+```
+
+4. Quitamos aplicaciones que ya no están en buster
+```sh
+sudo apt purge timidity lxmusic gnome-disk-utility deluge-gtk evince wicd wicd-gtk clipit usermode gucharmap gnome-system-tools pavucontrol
+```
+5. Ahora actualizamos el aspecto con la nueva configuración visual abriendo ‘Appearance Settings’ y en la pestaña ‘Defaults’ pulsamos ‘Set Defaults’ lo que debería ponernos un tamaño de fuente y de iconos acorde a la resolución usada.
 
 
-	sudo rpi-update
+##### Recursos
+[Fuente](https://www.raspberrypi.org/blog/buster-the-new-version-of-raspbian/)
 
 #### Instalación de programas
 
@@ -49,29 +91,30 @@ Además de la línea de comandos, siempre podemos instalar desde la herramienta 
 
 * Descargamos el código fuente (normalmente comprimido)
 * Lo descomprimimos con
-
-	unzip codigo_fuente.zip
-
+```sh
+unzip codigo_fuente.zip
+```
 ó
-
-	tar xvf cofigo_fuente.tgz
-
+```sh
+tar xvf cofigo_fuente.tgz
+```
 (según el formato en el que esté comprimido)
 
 Dentro del directorio del código ya descomprimido normalmente encontramos un fichero README o INSTALL que nos dará las instrucciónes, pero suelen ser muy parecidas a estas:
 
 Preparan el código para que compile en nuestro sistema y además comprueban que tengamos las herramientas y librerías necesarias con:
-
-	cmake .
-
+```sh
+cmake .
+```
 ó
-
-	configure
-
+```sh
+configure
+```
 Compila el código y generamos un ejecutable
-
-	make
-
+```sh
+make
+```
 Lo instalamos en el sistema (por eso necesitamos usar sudo)
-
-	sudo make install
+```sh
+sudo make install
+```
