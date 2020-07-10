@@ -1,9 +1,48 @@
-# Arduino
+# Instalación Arduino
 
-El que se instala desde sus repositorios es extremadamente antiguo
+Un uso muy frecuente de Raspberry es para trabajar en proyectos de electrónica o robótica donde también contamos con Arduino. Es por ello que resulta interesante tener instalado el entorno de programación de Arduino.
 
-Descargamos desde arduino.cc la versión ARM para 32bits
+Desgraciadamente la versión que se instala desde sus repositorios es extremadamente antigua, con lo que es mejor instalarlo directamente desde la web de Arduino.
+
+
+
+Descargamos desde la [página de descargas de arduino.cc](https://www.arduino.cc/en/Main/Software) la versión del [IDE de Arduino para Linux ARM para 32bits](https://www.arduino.cc/download_handler.php?f=/arduino-1.8.13-linuxarm.tar.xz)
+
+Una vez descargado extraemos el contenido con 
+
+```sh
+tar xvf Downloads/arduino-1.8.13-linuxarm.tar.xz
+```
+
+Ejecutamos **Install.sh** para crear el acceso directo de los menús y dar los permisos necesarios.
+
+Cuando termine la instalación intentamos abrir desde el menú (en el vídeo nos da un error que vemos cómo arreglar)
+
+Si queremos abrir el entorno desde consola, sólo tenemos que entrar en la correspondiente carpeta y ejecutar 
+```sh
+./arduino
+```
+
+
+[![Vídeo: Instalación del IDE de Arduino en Raspberry Pi](https://img.youtube.com/vi/-PdmFyhnQV0/0.jpg)](https://youtu.be/-PdmFyhnQV0)
+
+[Vídeo: Instalación del IDE de Arduino en Raspberry Pi](https://youtu.be/-PdmFyhnQV0)
+
+Más adelante en el curso veremos cómo utilizar Arduino junto con Raspberry en nuestros proyectos.
 
 ### Fritzing
 
-    sudo apt install fritzing
+Otra herramienta relacionada con los proyectos de robótica y electrónica es Fritzing que también podemos usar en nuestra Raspberry Pi. Para ello la instalamos con
+
+En este caso la versión disponible para Raspberry en los repositorios, aunque no es la última, sí que es bastante reciente y usable.
+
+Podemos instalarla desde la herramienta de installación de software o desde consola:
+
+```sh
+sudo apt install fritzing
+```
+
+
+[![Vídeo: Instalación de Fritzing en Raspberry Pi](https://img.youtube.com/vi/P_-ZmPEDHzs/0.jpg)](https://youtu.be/P_-ZmPEDHzs)
+
+[Vídeo: Instalación de Fritzing en Raspberry Pi](https://youtu.be/P_-ZmPEDHzs)
