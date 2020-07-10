@@ -1,7 +1,6 @@
 ## Manejando tu Raspberry Pi
 
-Como sabes es una máquina Linux, con lo que podrás manejarla igual que se maneja cualquier otra máquina Linux
-
+Como sabes Raspberry es una máquina Linux, con lo que podrás manejarla igual que se maneja cualquier otra equipo Linux.
 
 ### Consola (línea de comandos)
 
@@ -9,14 +8,9 @@ Podemos hacer casi todo desde el habitual entorno gráfico, pero también desde 
 
 Si te acostumbras a usarla verás que ganas en productividad y además verás que puedes automatizar muchas tareas. 
 
-![consola](./images/console.png)
+![Consola](./images/console.png)
 
 #### Comandos básicos:
-
-[![Vídeo: Uso del terminal y comandos Linux en Raspberry Pi](https://img.youtube.com/vi/BF0Kjb4g454/0.jpg)](https://youtu.be/BF0Kjb4g454)
-
-
-[Vídeo: Uso del terminal y comandos Linux en Raspberry Pi](https://youtu.be/BF0Kjb4g454)
 
 Como ya hemos dicho, Raspbian es una versión de [Linux](https://es.wikipedia.org/wiki/GNU/Linux), que nos más que una versión moderna del sistema operativo [Unix](https://es.wikipedia.org/wiki/Unix). Por esto tenemos acceso a los comandos de esos sistemas operativos.
 
@@ -44,6 +38,9 @@ Veamos algunos de los comandos más utilizados:
 * **man comando**: Para obtener ayuda sobre comando
 * Para hacer fichero script: añadimos los comandos, chmod u+x fichero y para ejecutarlo ./fichero
 
+[![Vídeo: Uso del terminal y comandos Linux en Raspberry Pi](https://img.youtube.com/vi/BF0Kjb4g454/0.jpg)](https://youtu.be/BF0Kjb4g454)
+
+[Vídeo: Uso del terminal y comandos Linux en Raspberry Pi](https://youtu.be/BF0Kjb4g454)
 
 #### Estructura de ficheros
 
@@ -56,7 +53,7 @@ El usuario sólo acceso a su directorio y el solo el administrador (**root**) pu
 
 ##### Algunos directorios
 
-* / raiz
+* / directorio raiz
 * /etc configuración
 * /home usuario
 * /usr programas para usuarios
@@ -66,6 +63,7 @@ El usuario sólo acceso a su directorio y el solo el administrador (**root**) pu
 * /lib librerías
 * /boot Arranque del sistema
 * /usr/bin ejecutables para usuarios
+* /media o /mnt punto de montaje de dispositivos de almacenamiento externo
 
 
 #### Usuarios
@@ -82,7 +80,9 @@ Como hay veces que un usuario necesita hacer alguna de estas tareas, por ejemplo
 
 Por ejemplo si queremos editar un fichero de la carpeta de configuración etc llamado ftab, haremos
 
-	sudo geany /etc/fstab
+```sh
+sudo geany /etc/fstab
+```
 	
 geany es el editor de ficheros de texto, y al usar "sudo" estamos pidiendo permiso para hacer algo como root
 
@@ -93,8 +93,9 @@ Nos da todo el poder del usuario administrador (**root**)
 ### Interface gráfico
 
 Para arrancar el interface gráfico desde consola si no está arrancado usando
-
-		startx
+```sh
+startx
+```
 
 
 ![startx](./images/raspX.png)
@@ -105,33 +106,83 @@ Algo muy frecuente es que queramos acceder a nuestra Raspberry Pi remotamente, e
 
 ### SSH (vía consola)
 
-[![Vídeo: Conexión vía SSH a Raspberry Pi](https://img.youtube.com/vi/-BH3spberkc/0.jpg)](https://youtu.be/-BH3spberkc)
-
-[Vídeo: Conexión vía SSH a Raspberry Pi](https://youtu.be/-BH3spberkc)
-
-SSH es el protocolo de acceso por consola
+SSH es el protocolo de acceso remoto por consola (o terminal). Se suele utilizar cuando no necesitamos (o no tenemos) entorno gráfico. Es una forma de conexión segura (usa encriptación y verificación a ambos lados) utilizada para acceder a router y otros dispositivos remotos
 
 Tenemos que activarlo en la configuración para poder acceder desde fuera.Entramos en la configuración avanzada
 
-	sudo raspi-config
+```sh
+sudo raspi-config
+```
 
 ![ssh](./images/ssh.png)
 
 Podemos hacerlo también por comandos con
 
-	sudo service ssh start
-	sudo insserv ssh
+```sh
+sudo service ssh start
+sudo insserv ssh
+```
 
-Ahora podremos conectarnos remotamente con ssh
+Ahora podremos conectarnos remotamente con ssh, desde Linux con el comando **ssh** o con otras herramientas que veremos a continuación
 
-	ssh pi@192.189.0.123
+```sh
+ssh pi@192.189.0.123
+```
 
-O bien usando algún software como [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)
+Si lo vamos a activar se recomienda cambiar la contraseña para evitar que cualquiera pueda acceder a nuestro equipo.
 
-Conviene cambiar la contraseña para evitar que cualquiera pueda acceder
+[![Vídeo: Conexión vía SSH a Raspberry Pi](https://img.youtube.com/vi/-BH3spberkc/0.jpg)](https://youtu.be/-BH3spberkc)
+
+[Vídeo: Conexión vía SSH a Raspberry Pi](https://youtu.be/-BH3spberkc)
 
 
-TODO: FICHERO ssh.md
+### Herramientas de conexión ssh
+
+Son muchas la herramientas que exiten para poder conectarnos entre equipos usando SSH, vamos a ver un par de ellas.
+
+#### Putty 
+
+
+[Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) es una herramienta opensource disponible para muchos sistemas operativos pensada para conectar remotamente con equipos usando distintos protocolos como ssh, telnet, serie, etc
+
+![Putty](./images/Putty_0.58_on_fvwm.png)
+
+Permite guardar las credenciales de cada sistema, facilitándo la conexión.
+
+#### JuiceSSH
+
+[JuiceSSH](https://play.google.com/store/apps/details?id=com.sonelli.juicessh) es una herramienta de conexión ssh para móviles y tabletas Android.
+
+También nos permite gestionar las credenciales de acceso y los diferentes equipos a los que conectarnos:
+
+![juicessh1.png](./images/juicessh1.png)
+
+El uso incluso en un móvil es más cómodo de lo que parece, puesto que permite el uso de teclas como TAB, ctrl, cursor, etc.
+
+![juicessh2.png](./images/juicessh3.png)
+
+
+[![Cliente SSH para móviles y tabletas Android: juicceSSH](https://img.youtube.com/vi/LLiZ52ss2DQ/0.jpg)](https://youtu.be/LLiZ52ss2DQ)
+
+[Cliente SSH para móviles y tabletas Android: juicceSSH](https://youtu.be/LLiZ52ss2DQ)
+
+### Automatizar conexiones
+
+Si vamos a conectarnos frecuentemente a un mismo equipo puede resultar pesado tener que poner siempre usuario y contraseña. 
+
+El protocolo ssh permite automatizarlo sin más que añadir nuestra **clave pública ssh** a la lista de host autorizados del servidor al que nos vamos a conectar, haciendo lo siguiente:
+
+1. Generar nuestra **clave pública ssh**, asociada al usuario y la máquina
+```sh
+ssh-keygen -t rsa -b 4096 -C user@email.com
+```
+2. Ahora copiamos nuestra clave pública ssh a 
+```sh
+cat ~/.ssh/id_rsa.pub | ssh username@server.address.com 'cat >> ~/.ssh/authorized_keys'
+```
+La siguiente vez que nos conectemos lo haremos sin necesidad de instroducir la clave.
+
+Como podemos ver en el último comando que hemos usado, podemos usar ssh para enviar ficheros y su contenido entre equipos. En proyecto más adelante lo usaremos bastante.
 
 ### VNC
 
@@ -139,14 +190,19 @@ VNC es un protocolo que nos permite acceder remotamente al escritorio de otra m�
 
 En las nuevas versiones de Raspbian podemos activar VNC desde la configuración (o desde raspi-config).
 
-Si no está disponible podemos instalarlo en nuestra Raspberry de manera sencilla con:
+#### VNC en equipos antiguos
 
-	sudo apt-get install tightvncserver
+Si no está disponible en nuestra instalación podemos instalarlo de manera sencilla con:
+
+```sh
+sudo apt-get install tightvncserver
+```
 
 Este software requiere que un servicio se ejecute al arrancar si queremos acceder en cualquier momento. Podemos instalarlo añadiendo la siguiente línea al archivo **/etc/rc.local**
 
-
-	su -c "/usr/bin/tightvncserver :1 -geometry 800x600 -depth 16" pi
+```sh
+su -c "/usr/bin/tightvncserver :1 -geometry 800x600 -depth 16" pi
+```
 
 ![vnc](./images/vnc.png)
 
@@ -158,7 +214,7 @@ Existen clientes de VNC para teléfonos móviles y tabletas, lo que nos da mucha
 
 La conexión por VNC nos permite acceder como si estuvieramos conectados directamente
 
-### Acceso directo
+### Conexión y acceso directo
 
 Vamos a configurar nuestra raspberry y un portátil con Ubuntu para facilitar al máximo la conexión y así no tener que utilizar muchos componentes. De esta manera podremos trastear con un kit mínimo, evitando tener que usar un teclado, ratón y sobre todo un monitor.
 
@@ -174,16 +230,17 @@ Asumiremos que tenemos conexión a internet via Wifi y utilizaremos el cable eth
 
 Comencemos editando la configuración del pc, para lo que ejecutaremos en el pc:
 
-	sudo vi /etc/network/interfaces
-
+```sh
+sudo vi /etc/network/interfaces
+```
 y dejamos el contenido del fichero (la red que se usa normalmente es las 192.168.1.x de ahí que el gateway sea 192.168.1.1 que es el real)
 
 ![Configuración inicial de la red local](http://blog.elcacharreo.com/wp-content/uploads/2013/05/paso1.png)
 
 Ahora vamos a editar la configuración de la raspberry. La forma más sencilla es editando los ficheros de configuración desde el pc, para lo que insertamos la tarjeta sd de la raspberry (obviamente con esta apagada) en el pc y ejecutamos en este:
-
-	sudo vi /media/10b4c001-2137-4418-b29e-57b7d15a6cbc/etc/network/interfaces
-
+```sh
+sudo vi /media/10b4c001-2137-4418-b29e-57b7d15a6cbc/etc/network/interfaces
+```
 Quedando el mismo:
 
 ![Configuración final de la red local](http://blog.elcacharreo.com/wp-content/uploads/2013/05/paso2.png)
@@ -195,19 +252,23 @@ Conectamos el cable ethernet entre los dos
 
 En el PC hacemos comprobamos que la tarjeta eth0 está ok y con la ip correspondiente, haciendo
 
-	ifconfig /all
-
+```sh
+ifconfig /all
+```
 Veremos que aparece el interface eth0 con ip 192.168.0.80
 
 Ahora vamos a hacer que el portátil actúe como router. Para ello ejecutamos los siguientes comandos
 
-	sudo su -
-	root@ubuntu-asus:~# echo 1 > /proc/sys/net/ipv4/ip_forward
-	root@ubuntu-asus:~# /sbin/iptables -t nat -A POSTROUTING -o wlan0 -j MASQUERADE
+```sh
+sudo su -
+root@ubuntu-asus:~# echo 1 > /proc/sys/net/ipv4/ip_forward
+root@ubuntu-asus:~# /sbin/iptables -t nat -A POSTROUTING -o wlan0 -j MASQUERADE
+```
 
 Por último editamos el fichero de configuración de DNS con
-
-	sudo vi /etc/resolv.conf
+```sh
+sudo vi /etc/resolv.conf
+```
 
 y lo dejamos así
 
@@ -215,8 +276,9 @@ y lo dejamos así
 
 
 Ahora solo falta probar que tenemos conectividad, haciendo un ping
-
-	ping 192.168.0.90
+```sh
+ping 192.168.0.90
+```
 
 Si todo es correcto ya podremos acceder via ssh o  VNC
 
@@ -240,22 +302,28 @@ Hay una versión gratuita (para uso no comercial) de Worlfram  Mathematica insta
 
 Podemos usar su cámara (la original o una USB)
 
-Usaremos un software standard de Linux: motion
+Usaremos un software standard de Linux: **motion**
 
-	sudo apt-get install motion
+```sh
+sudo apt-get install motion
+```
 
 Editamos la configuracion
 
-	sudo nano /etc/motion/motion.conf
+```sh
+sudo nano /etc/motion/motion.conf
+```
 
 ![usando motion](./images/motion.jpg)
 
 Lo arrancamos
-
-	montion -n
-
+```sh
+montion -n
+```
 
 Podremos acceder a la imagen en vivo de la cámara con
 
-	 http://rasperry_ip:8081
-	 
+```sh
+http://rasperry_ip:8081
+```
+ 
