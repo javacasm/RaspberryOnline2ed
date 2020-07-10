@@ -50,6 +50,8 @@ sudo rpi-eeprom-update  -d -f /lib/firmware/raspberrypi/bootloader/stable/pieepr
 
 [![Vídeo: Cómo arrancar Raspberry Pi 4 desde USB](https://img.youtube.com/vi/jgCfJbiEbHE/0.jpg)](https://youtu.be/jgCfJbiEbHE)
 
+En [este enlace](https://www.jeffgeerling.com/blog/2020/im-booting-my-raspberry-pi-4-usb-ssd) se ve que la mejora de rendimiento puede ser realmente importante.
+
 ### Recursos
 
 [Vídeo de Andreas Spiess: Quickie: Raspberry Pi official USB Boot now much simpler. How fast is a cheap SSD?](https://www.youtube.com/watch?v=8vC3D19e_Ac)
