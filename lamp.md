@@ -32,14 +32,14 @@ Para ver que funciona y es compatible instalaremos una instacia del conocido ges
 
 3. Cambiar la página inicial
 
-El contenido HTML del sevidor se encuentra en **/var/www/html/** y por defecto se envía el fichero **index.html**
+    El contenido HTML del sevidor se encuentra en **/var/www/html/** y por defecto se envía el fichero **index.html**
 
-![Contenido www](./images/contenidowww.png)
+    ![Contenido www](./images/contenidowww.png)
 
-Vemos que el fichero es propiedad de root, con lo que necesitamos usar sudo para modificarlo. Si controlas HTML puede modificarlo con
-```sh
-sudo geany index.html
-```
+    Vemos que el fichero es propiedad de root, con lo que necesitamos usar sudo para modificarlo. Si controlas HTML puede modificarlo con
+    ```sh
+    sudo geany index.html
+    ```
 4. Instalación de PHP
 
     Una gran parte del código que se ejecuta en el servidor web está escrito en  PHP, con lo que necesitamos instalarlo. Lo hacemo con
