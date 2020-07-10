@@ -1,5 +1,18 @@
 # Home automation
 
+
+# Domótica con Home Assistant
+
+https://learn.adafruit.com/set-up-home-assistant-with-a-raspberry-pi?view=all
+
+[Instalacion de la imagen](https://home-assistant.io/hassio/installation/) usando Balena Etcher https://www.balena.io/etcher/
+
+[Instalacion manual](https://www.home-assistant.io/docs/installation/raspberry-pi/)
+
+[Conexión con Google Assistant](https://www.home-assistant.io/addons/google_assistant/)
+
+[Getting started with Home Assistant](https://randomnerdtutorials.com/getting-started-with-home-assistant-on-raspberry-pi/#more-43192)
+
 https://www.hackster.io/ahmedibrrahim/smart-home-automation-iot-using-raspberry-pi-and-python-47fb62
 
 

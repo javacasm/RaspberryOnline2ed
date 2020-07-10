@@ -161,4 +161,5 @@ La mayoría de las plataformas tienen tutoriales detallados, y muchas de ellas c
 
 [Grafana](https://www.spainlabs.com/foros/tema-SpainLabsIoT2018-Grafana-Dashboard-Open-Source)
 
-Más adelante, cuando ya sepamos programar haremos otros ejemplos de publicación como por ejemplo vía Telegram
+Más adelante, cuando ya sepamos programar haremos otros ejemplos de publicación como por ejemplo vía Telegram.
+
