@@ -42,7 +42,6 @@ Una vez hecho esto ya podemos conectarnos por ssh
 ```sh
 ssh pi@NombreRaspiZero
 ```
-
  y configurar el resto de opciones:
 
 * Activamos la cámara
@@ -54,4 +53,6 @@ ssh pi@NombreRaspiZero
 
 [Vídeo: Instalación y configuración desde consola de Raspberry Pi Zero W](https://youtu.be/YIW2HbepDKg)
 
+En las instalaciones del OS versión "Lite", podemos hacer que por defecto se active el acceso ssh desde el inicio.
 
+PAra ello basta con crear un fichero vacío llamado **"ssh"** en directorio raíz de la tarjeta y vuelve a arrancar.
