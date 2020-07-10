@@ -1,152 +1,153 @@
-## Instalaci''on de servidor Web (LAMP)
+## Instalación de servidor Web (LAMP)
 
-Vamos a instalar un t'ipico servidor servidor LAMP: Linux, Apache, MariaDB (originariamente MySQL) & PHP que es la base de la mayor'ia de los servidor web que hay en internet.
+Vamos a instalar un típico servidor servidor LAMP: Linux, Apache, MariaDB (originariamente MySQL) & PHP que es la base de la mayoría de los servidor web que hay en internet.
 
 Para ver que funciona y es compatible instalaremos una instacia del conocido gestor de contenidos Wordpress
 
-1. Apache
+1. Instalación de Apache
 
-Vamos a instalar el servidor Web propiamente dicho. Para instalar el servidor apache 
-```sh
-sudo apt install apache2 -y
-```
-Ahora hacemos un test para ver si está bien instalado  y funcionando para lo que abriremos un navegador en la propia Raspberry a la direcci'on local http://localhost
-```
-http://localhost
-```
+    Vamos a instalar el servidor Web propiamente dicho. Para instalar el servidor apache 
+    ```sh
+    sudo apt install apache2 -y
+    ```
+    Ahora hacemos un test para ver si está bien instalado y funcionando para lo que abriremos un navegador en la propia Raspberry a la dirección local http://localhost
 
-![Test Apache](./images/TestApache.png)
+    ```
+    http://localhost
+    ```
+
+    ![Test Apache](./images/TestApache.png)
 
 2. Acceso remoto
 
-Vamos a probar ahora si podemos acceder desde otro ordenador. Para ello vamos a ver cu'al es nuestra direcci'on IP con . Ponemos en la terminal 
-```sh
-hostname -I
-```
+    Vamos a probar ahora si podemos acceder desde otro ordenador. Para ello vamos a ver cuál es nuestra dirección IP con . Ponemos en la terminal 
 
-Ahora nos conctamos con un navegador desde otro ordenadore con la ip resultante http://192.168.1.36
+    ```sh
+    hostname -I
+    ```
 
-Si todo va bien veremos la mism p'agina de antes.
+    Ahora nos conctamos con un navegador desde otro ordenadore con la ip resultante http://192.168.1.36
 
-3. Cambiar la p'agina inicial
+    Si todo va bien veremos la mism página de antes.
 
-El contenido HTML del sevidor se encuentra en **/var/www/html/** y por defecto se env'ia el fichero **index.html**
+3. Cambiar la página inicial
+
+El contenido HTML del sevidor se encuentra en **/var/www/html/** y por defecto se envía el fichero **index.html**
 
 ![Contenido www](./images/contenidowww.png)
 
 Vemos que el fichero es propiedad de root, con lo que necesitamos usar sudo para modificarlo. Si controlas HTML puede modificarlo con
-
+```sh
 sudo geany index.html
+```
+4. Instalación de PHP
 
-4. Instalaci'on de PHP
+    Una gran parte del código que se ejecuta en el servidor web está escrito en  PHP, con lo que necesitamos instalarlo. Lo hacemo con
+    ```sh
+    sudo apt install php -y
+    ```
+    Para probar que funciona vamos a crear un fichero index.php (en el directorio raiz de www)
+    ```sh
+    sudo geany index.php
+    ```
+    con el siguiente contenido:
+    ```php
+    <?php echo date('Y-m-d H:i:s'); ?>
+    </br>
+    <?php echo "hola Apache y php"; ?>
+    </br>
+    <?php phpinfo(); ?>
+    ```
+    Para probar que funciona abriremos en un navegador la página http://192.168.1.36/index.php (ahora añadimos el nombre del fichero ya que por defecto se busca el fichero index.html y de esta manera forzamos a se muestre el otro fichero)
 
-Una gran parte del c'odigo que se ejecuta en el servidor web est'a escrito en  PHP, con lo que necesitamos instalarlo. Lo hacemo con
+    Si todo va bien veremos el mensaje "hola Apache y php", la hora y fecha actual y un montón de información sobre lphp y los módulos instalados en el navegador
 
-sudo apt install php -y
+6. Instalación de la base de datos
 
-Para probar que funciona vamos a crear un fichero index.php (en el directorio raiz de www)
-
-sudo geany index.php
-
-con el siguiente contenido:
-
-<?php echo date('Y-m-d H:i:s'); ?>
-
-</br>
-
-<?php echo "hola Apache y php"; ?>
-
-</br>
-
-<?php phpinfo(); ?>
-
-Para probar que funciona abriremos en un navegador la p'agina http://192.168.1.36/index.php
-(ahora anadimos el nombre del fichero ya que por defecto se busca el fichero index.html y de esta manera forzamos a se muestre el otro fichero(
-Si todo va bien veremos el mensaje "hola Apache y php", la hora y fecha actual y un mont'on de informaci'on sobre lphp y los m'odulos instalados en el navegador
-
-6. Instalaci'on de la base de datos
-
-Vamos a instalar ahora la base de datos con el comando
-
-sudo apt-get install mariadb-server-10.3
-
-Instalamos el paquete de conexi'on php/MariaDB
-
-sudo apt install php-mysql
-
-y rearrancamos el servidor
-
-sudo service apache2 restart
-
+    Vamos a instalar ahora la base de datos con el comando
+    ```sh
+    sudo apt-get install mariadb-server-10.3
+    ```
+    Instalamos el paquete de conexión php/MariaDB
+    ```sh
+    sudo apt install php-mysql
+    ```
+    y rearrancamos el servidor
+    ```sh
+    sudo service apache2 restart
+    ```
 7. Wordpress
 
-Wordpress es uno de los gestores de contenidos de codigo abierto m'as utilizados. 
-Vamos a descargar un paquete con la 'ultima versi'on y lo vamos a poner en la carpeta de contenidos de www con
+    Wordpress es uno de los gestores de contenidos de codigo abierto más utilizados. 
+    Vamos a descargar un paquete con la 'ultima versión y lo vamos a poner en la carpeta de contenidos de www con
+    ```sh
+    sudo wget http://wordpress.org/latest.tar.gz
+    ```
+    Borramos los ficheros index.* con
+    ```sh
+    sudo rm index.*
+    ```
+    Lo descomprimimos  con
 
-sudo wget http://wordpress.org/latest.tar.gz
+    sudo tar xvf latest.tar.gz
 
-Borramos los ficheros index.* con
+    Borramos el fichero comprimdo
+    ```sh
+    sudo rm  latest.tar.gz
+    ```
+    y movemos todo el contenido a la caperta raiz del servidor
+    ```sh
+    sudo mv wordpress/* .
+    ```
+    Wordpress tiene una estructura compleja que podemos ver con el comando
+    ```sh
+    tree
+    ```
+    Por tema de seguridad todos los ficheros deben pertenecer al usuario www-data
+    ```sh
+    sudo chown -R www-data: .
+    ```
+8. Configuración de la base de datos
 
-sudo rm index.*
+    Vamos a ejecutar el asistente para la instalación segura de la base de datos
+    ```sh
+    sudo mysql_secure_installation
+    ```
+    Inicialmente no tiene contraseña pero debemos poner una
 
-Lo descomprimimos  con
+    Después contestaremos Y a todas las preguntas para una máxima seguridad
 
-sudo tar xvf latest.tar.gz
+    Ahora vamos a crear la base de datos que necesita Wordpress
+    ```sh
+    sudo mysql -uroot -p
+    ```
+    Ponemos nuestra contraseña y ahora creamos la base de datos wordpress con
 
-Borramos el fichero comprimdo
+    ```sh
+    create database wordpress;
+    GRANT ALL PRIVILEGES ON wordpress.* TO 'root'@'localhost' IDENTIFIED BY 'TUcontraseña';
+    FLUSH PRIVILEGES;
+    exit
+    ```
+    ![images/createDatabase](./images/createDatabase.png)
 
-sudo rm  latest.tar.gz
+9. Configuración de Wordpress
 
-y movemos todo el contenido a la caperta raiz del servidor
+    Volvemos a entrar con un navegador en nuestro servidor con http://localhost
 
-sudo mv wordpress/* .
+    Veremos una pagina para seleccionar el idioma
 
-Wordpress tiene una estructura compleja que podemos ver con el comando
+    ![images/wpIdioma.png](images/wpIdioma.png)
 
-tree
+    Ahora rellenamos los datos de acceso a la base de datos 
 
-Por tema de seguridad todos los ficheros deben pertenecer al usuario www-data
+    ![images/wpConfDB.png](./images/wpPerdida.png)
 
-sudo chown -R www-data: .
+    Configuramos los datos del usuario del blog
 
-8. Configuraci'on de la base de datos
 
-Vamos a ejecutar el asistente para la instalaci'on segura de la base de datos
+    ![images/wpConfDB.png](./images/wpConfBloq.png)
 
-sudo mysql_secure_installation
+    Y listo!!!
 
-Inicialmente no tiene contrasena pero debemos poner una
-
-Despu'es contestaremos Y a todas las preguntas para una m'axima seguridad
-
-Ahora vamos a crear la base de datos que necesita Wordpress
-
-sudo mysql -uroot -p
-
-Ponemos nuestra contrasena y ahora creamos la base de datos wordpress con
-
-create database wordpress;
-
-GRANT ALL PRIVILEGES ON wordpress.* TO 'root'@'localhost' IDENTIFIED BY 'TUCONTRASENA';
-
-FLUSH PRIVILEGES;
-
-exit
-
-![images/createDatabase](./images/createDatabase.png)
-
-9. Configuraci'on de Wordpress
-
-Volvemos a entrar con un navegador en nuestro servidor con http://localhost
-
-Veremos una pagina para seleccionar el idioma
-
-![images/wpIdioma.png](images/wpIdioma.png)
-
-Ahora rellenamos los datos de acceso a la base de datos 
-
-![images/wpConfDB.png](./images/wpConfDB.png)
-
-Configuramos los datos del usuario del blog
-
-Y listo!!!
+    ![wpEjemploBlog.png](./images/wpEjemploBlog.png)
