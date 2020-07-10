@@ -7,7 +7,6 @@ Dado que el uso de los típicos programas de ofimática o similares es idéntico
 Nos centraremos en los usos más típicos donde se trabaja con la consola/terminal. Es el típido uso que se hace en los sistemas Linux. La mayoría de los veremos se puede hacer en los sistemas con Linux de las distribuciones [Debian](https://www.debian.org/index.es.html) y [Ubuntu](https://www.ubuntu.com/) en los que está basado Raspbian.
 
 
-
 ## Problemas habituales
 
 Siempre podemos encontrarnos con problemas. Veamos los más frecuentes
@@ -30,6 +29,6 @@ Al menos 8Gb por sistema operativo, mejor 16Gb o más
 
 ### No se ve nada en el monitor
 
-¿Lo arrancaste con el monitor conectado? Es necesario arrancar con el monitor conectado.
+¿Lo arrancaste con el monitor conectado? Es necesario arrancar con el monitor conectado, si Raspberry no detecta ningún monitor en arranque desactiva la salida de vídeo.
 
 
