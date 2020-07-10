@@ -1,3 +1,11 @@
+## Alimentación
+
+La electrónica de las Raspberry están pensada para que se alimenten desde el puerto USB correspondiente, ahí es donde están conectadas las protecciones contra inversión de la polaridad y los fusibles.
+
+En cambio, en el diseño de la Raspberry Pi Zero sí que se contempla la posibilidad de alimenartarla con 5V desde los pines del conector GPIO, pero tenemos que tener mucho cuidado porque no tiene fusibles ni protección de inversión de polaridad con lo que si cometemos un error podemos destruirla.
+
+Más detalles sobre el tema en [este foro](https://www.raspberrypi.org/forums/viewtopic.php?t=127965)
+
 ## Problemas de alimentación
 
 Muchos problemas en los montajes con Raspberry Pi vienen de la alimentación. Dependiendo del uso, de los periféricos, de la velocidad a la que esté trabajando el procesar, el consumo varía. Si en un momento es alto, la fuente de alimentación puede no ser capaz de alimentar todo el sistema. 
