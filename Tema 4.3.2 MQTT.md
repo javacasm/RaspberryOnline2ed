@@ -1,18 +1,34 @@
 ## MQTT
 
-**MQTT** es un servicio de comunicaciones entre dispositivos sencillo y ligero. Está pensado para que pueda funcionar en equipos con poca capacidad de cálculo.
+Vamos a ver uno de los protocolos más usados en los sistemas domóticos: el MQTT.
 
-Los equipos envían y reciben mensajes que está formatos por un **Topic** que es como una etiqueta con estructura arbórea y un mensaje o contenido.
+**MQTT** es un protocolo de comunicaciones entre dispositivos sencillo y ligero. Está pensado para que pueda funcionar en equipos con poca capacidad de cálculo pero sin limitar sus características. Podemos ver todos los detalles del protocolo en [su web](https://mqtt.org/) donde se encuentran las especificaciones y versiones de software que lo implementan.
+
+Es un protocolo seguro que soporta autentificación y cifrado SSL, aunque podemos elegir no usar estas características.
+
+También implementa distintos niveles de QoS (Quality of Service) que van desde un nivel 0 sin garantía de entrega de paquetes/notificaciones hasta un nivel máximo donde se asegura que todos los paquetes se reciben.
+
+Todo ello hacen a este protocolo muy versatil y útil, capaz de funcionar entre grandes servidores y entre sistemas de microcontroladores.
+
+Los equipos conetados por **MQTT** envían y reciben mensajes que está formados por un **Topic**, que es como una etiqueta con estructura arbórea y un mensaje o contenido.
+
+Decimos que los topic tienen estructura arbórea porque podemos estructurarlos y ademas usar comodines ('+' y '#'). 
+
+Por ejemplo si decimos que estamos interesados en el topic "/MeteoSalon/#" diremos que nos interesan todos los mensajes que empiecen por "/MeteoSalon/". 
+
+Si decimos que queremos suscribirnos a los topics de la forma "/sensores/+/Temperatura" recibiremos todos los que tenga esa estructura sin importar si son "/sensores/10/temperatura" o "/sensores/9/temperatura" o cualquier otro con ese formato.
 
 Todos los participantes pueden **publicar** mensajes y/o también se pueden **suscribir** a determinados topics, de manera que reciban los mensajes con ese topic.
 
 Utiliza una arquitectura como la que se ve en la imagen, donde el sistema central actúa como **Broker**, recibiendo los mensajes de todos los equipos y notificando a aquellos que se han suscrito a topics.
 
+![mqtt-architecture.png](./images/mqtt-architecture.png)
+
+Al ser un servicio sencillo actúa como transporte en sistemas más complejos. Por ejemplo podemos hacer que un equipo se susbriba todos los topics y los guarde en una base datos. 
+
 ![Arquitectura MQTT](./images/MQTT_arquitectura.png)
 
-Al ser un servicio sencillo actúa como transporte en sistemas más complejos.
-
-Existen brokers accesibles a través de internet como por ejemplo
+Existen brokers accesibles (y gratuitos para cierto número de peticiones) a través de internet como por ejemplo el de [HiveMQ](https://www.hivemq.com/public-mqtt-broker/) o [el de Adafruit](https://io.adafruit.com/). En [esta página](https://diyprojects.io/8-online-mqtt-brokers-iot-connected-objects-cloud/#.XwoEW9_ni-g) tenemos un listado.
 
 ## Instalación en Raspberry
 
@@ -31,20 +47,11 @@ Si queremos que se arranque como servicio al iniciar la raspberry, hacemos
 sudo systemctl enable mosquitto.service
 ```
 
-
-
-Para depurar el funcionamiento de mosquitto y ver los logs cuando funciona como servicio podemos usar
-
-https://community.home-assistant.io/t/how-to-debug-mosquitto-mqtt/107709/20
-http://www.steves-internet-guide.com/mosquitto-logging/
-https://github.com/thomasnordquist/MQTT-Explorer
-
 Para publicar y recibir mensajes necesitaremos las herramientas cliente, que podemos instalar con
 
 ```sh
 sudo apt install mosquitto-clients
 ```
-
 
 Podemos suscribirnos a un tema/topic con el comando 
 
@@ -57,6 +64,8 @@ Para publicar en un "Topic" un "Mensaje" (siempre son cadenas)
 ```sh
 mosquitto_pub -h servidorMQTT -t "Topic" -m "Mensaje"
 ```
+
+Para depurar el funcionamiento de mosquitto y ver los logs cuando funciona como servicio podemos usar [MQTT-Explorer](https://github.com/thomasnordquist/MQTT-Explorer). En [esta página](https://community.home-assistant.io/t/how-to-debug-mosquitto-mqtt/107709/20) y en [esta otra](http://www.steves-internet-guide.com/mosquitto-logging/) te explican cómo hacerlo.
 
 
 
