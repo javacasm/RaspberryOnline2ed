@@ -92,6 +92,7 @@ FAQ:
 					'Tema 4.3.4 HomeAutomation.md' \
 					'Tema 4.3.5 google_assistant.md' \
 					'Tema 4.4 retropie.md' \
+					'Tema 4.5 Servidor web - LAMP.md' \
 					'Tema 4.6.0 multimedia.md' \
 					'Tema 4.6.1 kodi.md' \
 					'Tema 4.7 aulas.md' \
