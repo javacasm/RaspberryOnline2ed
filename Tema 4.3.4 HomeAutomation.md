@@ -17,3 +17,7 @@ https://www.hackster.io/ahmedibrrahim/smart-home-automation-iot-using-raspberry-
 
 
 http://mbrobotics.es/blog/homekit-raspberry-pi-2-v2/
+
+
+zigbee2mqtt Pasarele zigbee mqtt
+integraci'on con Home Assistant https://www.zigbee2mqtt.io/integration/home_assistant.html
