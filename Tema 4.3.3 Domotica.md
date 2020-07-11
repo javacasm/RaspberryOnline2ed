@@ -1,8 +1,6 @@
-
 ## Conexión con Zigbee
 
-zigbee2mqtt Pasarele zigbee mqtt
-integraci'on con Home Assistant https://www.zigbee2mqtt.io/integration/home_assistant.html
+Una vez tenemos un sistema de comunicación entre sistemas sólo necesitamos
 
 ## Recursos
 
