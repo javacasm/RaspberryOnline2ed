@@ -1,6 +1,12 @@
 # Home automation
 
 
+A medida que usando distintos equipos vemos que existen multitud de fabricantes, con un gran número de protocolos, de distintos sistemas de comunicaciones (wifi, bluetooth, RF433, infrarrojos, ...), y resulta totalmente imposible implementarlos todos.
+
+Afortunadamente existen 
+
+![internet_of_things___iot_Network_Hassio.png](./images/internet_of_things___iot_Network_Hassio.png)
+
 # Domótica con Home Assistant
 
 https://learn.adafruit.com/set-up-home-assistant-with-a-raspberry-pi?view=all
