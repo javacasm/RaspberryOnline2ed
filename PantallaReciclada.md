@@ -1,0 +1,1 @@
+También uso la pantalla de un portátil roto con un adaptador HDMI 
