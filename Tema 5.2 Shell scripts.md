@@ -18,8 +18,9 @@ Para conectarla pondremos el cable de la manera que se ve en la imagen
 
 
 Antes de poder utilizarla tenemos que activarla
-
-		sudo raspi-config
+```sh
+sudo raspi-config
+```
 
 
 ![Configuración para activar la cámara](./images/activaCamara.png)
@@ -27,21 +28,21 @@ Antes de poder utilizarla tenemos que activarla
 Necesitamos reiniciar para que arranquen adecuadamente los drivers.
 
 Podemos probarla con este comando
-
-        raspistill -v -o test.jpg
-        
+```sh
+raspistill -v -o test.jpg
+```        
 Que mostrará lo que enfoca la cámara durante 5 segundos y luego guardará una imagen en el fichero test.jpg
 
 
 Tenemos 2 aplicaciones para usar la cámara
-
-		raspistill
-
+```sh
+raspistill
+```
 
 Tomará imágenes fijas
-
-		raspivid
-
+```sh
+raspivid
+```
 grabará un vídeo
 
 ### Imágenes estáticas

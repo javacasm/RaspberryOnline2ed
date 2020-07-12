@@ -56,3 +56,21 @@ ssh pi@NombreRaspiZero
 En las instalaciones del OS versión "Lite", podemos hacer que por defecto se active el acceso ssh desde el inicio.
 
 PAra ello basta con crear un fichero vacío llamado **"ssh"** en directorio raíz de la tarjeta y vuelve a arrancar.
+
+### "Trucos" desde la consola
+
+* Podemos saber la dirección ip usando el comando **ifconfig**
+* Para saber la red wifi a la que estamos conectados usaremos **iwconfig**
+* Podemos añadir acceso a una red wifi editando el fichero wpa_suplicant con
+    ```sh
+    sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
+    ```
+    y añadiendo el siguiente texto
+    ```
+    network={
+            ssid="ssidDelaRedjazzBajo_plus"
+            psk="contraseña"
+    }
+    ```
+* Para apagar la Raspberry usaremos **sudo halt**
+* Para reiniciar **sudo reboot**
