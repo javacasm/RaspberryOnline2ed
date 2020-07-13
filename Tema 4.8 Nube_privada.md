@@ -1,24 +1,26 @@
-Onwcloud
+## Nube privada 
 
-## Usando SQLite
+Vamos a hacer una instalación de un sistema de nube privada usando OwnClowd.
 
-Actualizamos
+Vamos a instalar un versión lite que usa SQLite como base de datos. Si lo van a usar varios usuarios mejor actualizarlo a la versión con MariaDB
+
+Como es normal cctualizamos nuestro sistema
 
 ```sh
 sudo apt update
 sudo apt upgrade
 ```
 
-Requisitos https://doc.owncloud.org/server/10.4/admin_manual/installation/manual_installation.html#prerequisites
+Si nuestro sistema cumple estos [requisitos](https://doc.owncloud.org/server/10.4/admin_manual/installation/manual_installation.html#prerequisites) (básicamente pyp 7.3 y algunas exensiones) lo instalaremos siguiendo las instrucxciones de la propia [owncloud](https://doc.owncloud.org/server/10.4/admin_manual/installation/manual_installation.html#install-the-required-packages)
 
-SEguimos las instrucxciones de la propia owncloud https://doc.owncloud.org/server/10.4/admin_manual/installation/manual_installation.html#install-the-required-packages
-
-Instalamos apache, php5, curl (Se están usando las ultimas versiones de php a día de hoy 7/5/2020)
+* Instalamos apache, php5, curl (Se están usando las ultimas versiones de php a día de hoy 7/5/2020)
 ```sh
 sudo apt-get install apache2 php7.3   php7.3-json php7.3-xml php7.3-gd php7.3-sqlite3 curl libcurl4  php7.3-curl php7.3-common php7.3-zip php7.3-xml php7.3-intl php7.3-mbstring 
 ```
-Descargamos la ultima version de owncloud
+* Descargamos la ultima version de owncloud
+```sh
 wget https://download.owncloud.org/community/owncloud-10.4.1.tar.bz2
+```
 
 Descargamos el fichero md5
 ```sh
@@ -35,11 +37,11 @@ md5sum -c owncloud-10.4.1.tar.bz2.md5 <  owncloud-10.4.1.tar.bz2
 ![Check_md5_owncloud](./images/Check_md5_owncloud.png)
 
 
-Descomprimimos
+Lo descomprimimos:
 ```sh
 tar xvf owncloud-10.4.1.tar.bz2 
 ```
-copiamos el contenido en el directorio raiz del servidor apache
+y copiamos el contenido en el directorio raiz del servidor apache
 ```sh
 sudo cp -r owncloud /var/www/
 ```
@@ -85,9 +87,6 @@ sudo a2enmod mime
 sudo a2enmod unique_id 
 sudo systemctl restart apache2
 ```
-
-
-
 
 Probamos a acceder
 ```
