@@ -49,3 +49,13 @@ script de automatizaci'on Preguntar a Rocio
 Ejemplos por el mundo
 
 ## Abrir puertos router
+
+
+## TimeLapse
+
+Preparar timelapse nubes y anocher en casa
+Ejemplos cortos del ajo
+Ejemplo de las plantitas de Rosa y el movimiento del sol
+
+
+## Video de BerryBoot
