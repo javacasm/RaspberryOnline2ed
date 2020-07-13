@@ -12,3 +12,16 @@ BookServer con calibre
 sudo apt install calibre
 
 ![EbookRouter.png](./images/EbookRouter.png)
+
+
+![](./images/)
+![](./images/Calibre_preferencias.png)
+![](./images/Calibre_libros.png)
+![](./images/Calibre_Filtro_autor.png)
+![](./images/Calibre_conf.png)
+![](./images/Calibre_Conf_servidor.png)
+![](./images/Calibre_Usuarios.png)
+
+
+
+
