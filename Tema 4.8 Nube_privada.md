@@ -21,26 +21,28 @@ Descargamos la ultima version de owncloud
 wget https://download.owncloud.org/community/owncloud-10.4.1.tar.bz2
 
 Descargamos el fichero md5
-
+```sh
 wget https://download.owncloud.org/community/owncloud-10.4.1.tar.bz2.md5
-  
+```
+
 Comprobamos la integridad del fichero
 
+```sh
 md5sum -c owncloud-10.4.1.tar.bz2.md5 <  owncloud-10.4.1.tar.bz2
-
+```
 
 
 ![Check_md5_owncloud](./images/Check_md5_owncloud.png)
 
 
 Descomprimimos
-
+```sh
 tar xvf owncloud-10.4.1.tar.bz2 
-
+```
 copiamos el contenido en el directorio raiz del servidor apache
-
+```sh
 sudo cp -r owncloud /var/www/
-
+```
 
 Creamos el fichero de configuracion del sito en 
 
@@ -88,9 +90,9 @@ sudo systemctl restart apache2
 
 
 Probamos a acceder
-
+```
 http://raspi4/owncloud/
-
+```
 
 ![firstown Cloud](./images/firstownCloud.png)
 
@@ -102,6 +104,57 @@ Para ello hacemos
 
 ```sh
 sudo chown -R www-data:www-data /var/www/owncloud/
+```
+
+Volvemos a acceder a http://raspi4/owncloud y creamos la cuenta del administrador 
+
+
+![OwnCloudCrearCuenta.png](./images/OwnCloudCrearCuenta.png)
+
+Y ya lo tenemos listo
+
+![](./images/OnwCloud1st.png)
+
+![OwnCloudMovilWeb.png](./images/OwnCloudMovilWeb.png)
+
+/home/javacasm/Dropbox/Cursos/CampusVirtual/Raspberry_2ed/images/OwnClound1stConexion.png
+/home/javacasm/Dropbox/Cursos/CampusVirtual/Raspberry_2ed/images/OwnCloudSincroPCConf.png
+/home/javacasm/Dropbox/Cursos/CampusVirtual/Raspberry_2ed/images/OwnCloudSincroPC.png
+/home/javacasm/Dropbox/Cursos/CampusVirtual/Raspberry_2ed/images/OwnCloudMovilWeb.png
+
+### Instalación de clientes
+
+https://owncloud.org/download/#install-clients
+
+OwnCloudAppAndroid.png
+
+Instalación del cliente de sincronización linux
+
+```sh
+ echo 'deb http://download.opensuse.org/repositories/isv:/ownCloud:/desktop/Ubuntu_18.04/ /' | sudo tee /etc/apt/sources.list.d/isv:ownCloud:desktop.list
+ curl -fsSL https://download.opensuse.org/repositories/isv:ownCloud:desktop/Ubuntu_18.04/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/isv:ownCloud:desktop.gpg > /dev/null
+ sudo apt update
+ sudo apt install owncloud-client
+
+```
+
+
+### Acceso desde clientes
+
+Además de abrir los puertos necesarios
+
+![ConfiguracionNAT.png](./images/ConfiguracionNAT.png)
+
+![OwnCloudSeguridadDominio.png](./images/OwnCloudSeguridadDominio.png)
+
+
+En el fichero de configuración tenemos que añadir el dominio desde el que vamos a acceder
+
+```php
+'trusted_domains' => [
+	'demo.example.org',
+	'otherdomain.example.org',
+  ],
 ```
 
 
