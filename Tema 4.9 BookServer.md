@@ -20,6 +20,18 @@ Importamos nuestros libros y ya lo podemos usar...
 
 Aunque está pensado como una aplicación de escritorio también incluye un Servidor web incorporado con el que podemos acceder a los ebooks. 
 
+Podemos acceder al servidor desde cualquier ordenadore o tableta
+
+![CalibreTablet.jpg](./images/CalibreTablet.jpg)
+
+Incluso haciendo búsquedas
+
+![CalibreBuscarTAbleta.jpg](./images/CalibreBuscarTAbleta.jpg)
+
+Podemos leer directamente sin necesitad de ninguna aplicación además del navegador
+
+![CalibreLeyendoOnline.jpg](./images/CalibreLeyendoOnline.jpg)
+
 Para activarlos entramos en las preferencias:
 ![](./images/Calibre_preferencias.png)
 ![](./images/Calibre_conf.png)
