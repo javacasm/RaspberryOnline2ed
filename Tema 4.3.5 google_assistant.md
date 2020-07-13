@@ -68,6 +68,8 @@ node app.js
 ```
 6. Accedmos a la web con http://ipRaspberry:3000/led/on
 
+![GoogleAssistantLedOn.png](./images/GoogleAssistantLedOn.png)
+
 7. Ahora nos queda hacer que nuestra web sea accesible desde fuera con un servicio como [dataplicity]( https://www.dataplicity.com)
 
 8. El siguiente paso es crear en IFTTT una regla que llame a nuestra web al recibir determindo comando de Google Assistant
