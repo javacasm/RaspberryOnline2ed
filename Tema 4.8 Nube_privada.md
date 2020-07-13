@@ -115,56 +115,45 @@ Y ya lo tenemos listo
 
 ![](./images/OnwCloud1st.png)
 
-![OwnCloudMovilWeb.png](./images/OwnCloudMovilWeb.png)
-
-/home/javacasm/Dropbox/Cursos/CampusVirtual/Raspberry_2ed/images/OwnClound1stConexion.png
-/home/javacasm/Dropbox/Cursos/CampusVirtual/Raspberry_2ed/images/OwnCloudSincroPCConf.png
-/home/javacasm/Dropbox/Cursos/CampusVirtual/Raspberry_2ed/images/OwnCloudSincroPC.png
-/home/javacasm/Dropbox/Cursos/CampusVirtual/Raspberry_2ed/images/OwnCloudMovilWeb.png
-
 ### Instalación de clientes
 
-https://owncloud.org/download/#install-clients
+Ahora vamos a ver algunos de los [clientes disponibles](https://owncloud.org/download/#install-clients)
 
-OwnCloudAppAndroid.png
+* Podemos acceder desde cualquier navegador (en este caso desde un móvil)
+![OwnCloudMovilWeb.png](./images/OwnCloudMovilWeb.png)
 
-Instalación del cliente de sincronización linux
+* Existe una aplicación para sistemas Android, que es de pago
+![](./images/OwnCloudAppAndroid.png)
 
-```sh
- echo 'deb http://download.opensuse.org/repositories/isv:/ownCloud:/desktop/Ubuntu_18.04/ /' | sudo tee /etc/apt/sources.list.d/isv:ownCloud:desktop.list
- curl -fsSL https://download.opensuse.org/repositories/isv:ownCloud:desktop/Ubuntu_18.04/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/isv:ownCloud:desktop.gpg > /dev/null
- sudo apt update
- sudo apt install owncloud-client
+* Instalación del cliente para el escritorio y sincronización en linux. 
+  * Lo instalamos
+  ```sh
+  echo 'deb http://download.opensuse.org/repositories/isv:/ownCloud:/desktop/Ubuntu_18.04/ /' | sudo tee /etc/apt/sources.list.d/isv:ownCloud:desktop.list
+  curl -fsSL https://download.opensuse.org/repositories/isv:ownCloud:desktop/Ubuntu_18.04/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/isv:ownCloud:desktop.gpg > /dev/null
+  sudo apt update
+  sudo apt install owncloud-client
 
-```
+  ```
+  * Aceptamos el certificado en la primera conexión
+  ![](./images/OwnClound1stConexion.png)
+  * Configuramos las carpetas que queremos sincronizar (más adelante podemos modificarlo)
+  ![](./images/OwnCloudSincroPCConf.png)
+  * Ya tenemos sincronización entre nuestra carpeta y nuestro servidor de owncloud
+  ![](./images/OwnCloudSincroPC.png)
 
 
-### Acceso desde clientes
+### Acceso remoto desde internet
 
-Además de abrir los puertos necesarios
+Podemos configurar nuestros sitema para poder acceder a nuestros equipos desde fuera de nuestra red local. Para ello tenemos que configurar adecuadamente nuestro router
 
+* Configuramos el NAT para abrir los puertos necesarios (el 80 en este caso):
 ![ConfiguracionNAT.png](./images/ConfiguracionNAT.png)
-
+* Si intentamos acceder desde internet nos dará un error de seguridad debido a que tenemos que añadir en el fichero de configuración 'config.php' el dominio desde el que vamos a acceder
 ![OwnCloudSeguridadDominio.png](./images/OwnCloudSeguridadDominio.png)
-
-
-En el fichero de configuración tenemos que añadir el dominio desde el que vamos a acceder
-
 ```php
 'trusted_domains' => [
 	'demo.example.org',
 	'otherdomain.example.org',
   ],
 ```
-
-
-https://geekytheory.com/tutorial-raspberry-pi-crea-una-nube-privada-con-pydio
-http://www.electroensaimada.com/owncloud.html#
-
-## Usando MariaDB o MySQL
-
-
-https://computerhoy.com/noticias/tecnologia/haz-raspberry-pi-sea-nube-personal-412645
-https://blog.desdelinux.net/convierte-tu-raspberry-pi-en-una-nube-personal-con-owncloud/
-
 
