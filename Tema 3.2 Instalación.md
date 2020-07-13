@@ -174,6 +174,41 @@ En cualquier momento podemos volver a reconfigurar con
 
 [Vídeo de la configuración desde la consola de texto de Raspberry Pi](https://www.youtube.com/embed/ERFH8AYjWxM)
 
+## Otros instaladores: BerryBoot
+
+El instalador de Noobs está basado en un desarrollo previo llamado [BerryBoot](https://www.berryterminal.com/doku.php/berryboot), [proyecto opensource](https://github.com/maxnet/berryboot) que ha seguido evolucionando independientemente y que a día de hoy tiene algunas ventajas
+
+![berryboot-menu.png](./images/berryboot-menu.png)
+
+Ventajas:
+* Ocupa solo 30Mb, porque sólo es el instalador, y luego se descarga toda la imagen de internet
+* Hay muchas más opciones de SOs disponibles
+* Podemos hacer la instalación en la SD (lo que es lo habitual) o en otro dispositivo USB (para luego clonarlo en una SD) o en un dispositivo de red, para reutilizarlo
+* Lee las señales HDMI CEC de nuestro monitor y en el arranque podemos usar el mando a distancia de nuestra TV para seleccionar el SO del que queremos arrancar
+* Podemos utilizar las imágenes guardadas en un USB para hacer la instalación, siendo en este caso la instalación totalmente offline
+* Se pueden clonar imágenes de la tarjeta
+* Permite hacer backups de sistemas operativos
+* Podemos añadir otros OS a los ya instalados
+* Si no tenemos monitor instalado podemos hacer una instalación vía VNC como [nos explican aquí](https://www.berryterminal.com/doku.php/berryboot/headless_installation) sin más que añadir esta línea al fichero cmdline.txt de la tarjeta SD
+
+	```sh
+	vncinstall ipv4=192.168.88.88/255.255.255.0/192.168.88.1 
+	```
+
+	Ahora solo tenemos que arrancar un cliente VNC y apuntar a esa IP
+	Si queremos usar wifi sólo necesitamos añadir al fichero wpa_supplicant.conf de la tarjeta SD la información siguiente:
+	```
+	ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+	ap_scan=1
+
+
+	network={
+		ssid="ssid-of-accesspoint"
+		psk="wpa-password"
+	}
+	```
+
+Podemos descargar BerryBoot de [este enlace para Raspberry Pi 4](https://downloads.sourceforge.net/project/berryboot/berryboot-20200612-pi4.zip) y [de este para las versiones anteriores](https://downloads.sourceforge.net/project/berryboot/berryboot-20190612-pi0-pi1-pi2-pi3.zip)
 
 ## Simuladores
 
