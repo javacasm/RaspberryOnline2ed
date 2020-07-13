@@ -1,27 +1,61 @@
-BookServer con calibre
+## Servidor de libros electronicos (BookServer con calibre)
 
-## Tu Biblioteca desde cualquier parte del mundo
-* [Calibre](https://calibre-ebook.com/)
-* Servidor calibre
-* Acceso de usuarios
-* Abrir puertos
-* Compartir archivos
-* Backup
+Vamos a instalar un sencillo sistema que nos va a permitir acceder a tu Biblioteca de libros electrónicos desde cualquier parte del mundo:
 
-### Instalación
+Usaremos [Calibre](https://calibre-ebook.com/), un gestor de bibliotecas open source que nos permite organizar y almacenar nuestros ebooks.
+
+![](./images/Calibre_libros.png)
+
+Podemos filtrar buscando por título, autor, agrupar por colecciones, convertir entre formatos y exportar a nuestros lectores de ebooks
+
+![](./images/Calibre_Filtro_autor.png)
+
+
+La instalación no puede ser más sencilla
+```sh
 sudo apt install calibre
+```
+
+Importamos nuestros libros y ya lo podemos usar...
+
+Aunque está pensado como una aplicación de escritorio también incluye un Servidor web incorporado con el que podemos acceder a los ebooks. 
+
+Para activarlos entramos en las preferencias:
+![](./images/Calibre_preferencias.png)
+![](./images/Calibre_conf.png)
+
+Ahora en la configuración de "Compartir por la red" donde vamos a activar el sevidor, con su puerto (8080 por defecto) y si así lo queremos marcaremos la opción para se arranca cada vez que abrimos Calibre
+
+![](./images/Calibre_Conf_servidor.png)
+
+Es el momento de configurar los usuarios, a los que le podremos dar permiso o no de escritura para modificar los libros
+
+![](./images/Calibre_Usuarios.png)
+
+## Acceso desde internet
+
+Si queremos acceder desde fuera de nuestra red, configuraremos el router en la opción de NAT para el puerto usado
 
 ![EbookRouter.png](./images/EbookRouter.png)
 
+Para poder acceder remotamente sin saber nuestra IP  configuraremos un servicio de Dynamic DNS (DDNS) 
 
-![](./images/)
-![](./images/Calibre_preferencias.png)
-![](./images/Calibre_libros.png)
-![](./images/Calibre_Filtro_autor.png)
-![](./images/Calibre_conf.png)
-![](./images/Calibre_Conf_servidor.png)
-![](./images/Calibre_Usuarios.png)
+Estos son algunos proveedores gratuitos de servicios de DDNS
+
+![Free DDNS](./images/FreeDDNS.png)
+
+En mi caso usaré el servicio de NoIP
+
+![Free DDNS](./images/NoIP.png)
+
+Ahora configuramos en el router la cuenta para que automáticamente se refresque
+
+![ConfDDNS.png](./images/ConfDDNS.png)
+
+Y ya podremos acceder remotamente tras logarnos
+
+![](./images/CalibreUsuarios.jpg)
 
 
-
+![](./images/CalibreBiblioteca.jpg)
 
