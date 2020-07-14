@@ -156,13 +156,13 @@ Sí que tendremos que tener en cuenta el aislamiento, para soportar las temperat
 
 Incluso podemos llegar a lanzarla al espacio, como en el proyecto [astroPi](https://astro-pi.org/)
 
-![Montaje para llevar la Raspberry al espacio](http://cdn.arstechnica.net/wp-content/uploads/2012/12/balloon-electronics.jpg)
+![Montaje para llevar la Raspberry al espacio](./images/balloon-electronics.jpg)
 
-![Foto hecha desde el espacio con una Raspberry](http://cdn.arstechnica.net/wp-content/uploads/2012/12/balloon-shot.jpeg)
+![Foto hecha desde el espacio con una Raspberry](./images/balloon-shot.jpeg)
 
 O volando en drone usando  [Autopilot](http://erlerobotics.com/blog/meet-the-last-autopilot-for-building-robots-erle-brain-2/)
 
-![autopilot](https://pbs.twimg.com/media/CUAG0x8WoAAeHjp.jpg)
+![autopilot](./images/CUAG0x8WoAAeHjp.jpg)
 
 ### Arte
 

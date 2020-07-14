@@ -12,7 +12,7 @@ La gran ventaja a mi juicio es que todos los datos se transmiten ¡únicamente e
 
 Además nos va a permitir crear complejos script para automatizar el funcionamiento de nuestro sistema.
 
-![internet_of_things___iot_Network_Hassio.png](./images/internet_of_things___iot_Network_Hassio.png)
+![Arquitectura Home-Assystant](./images/internet_of_things___iot_Network_Hassio.png)
 
 En su propia página podemos ver [ejemplos de montajes](https://www.home-assistant.io/cookbook/)
 
@@ -39,13 +39,13 @@ Ahora configuramos nuestra cuenta, las unidades de medida, la ubicación del sis
 En este punto el sistema comenzará a descubrir algunos de los dispositivos automáticamente, otros tendremos que añadirlos manualmente pulsando el botón "+". En Home Assistant se llaman **integraciones**.
 
 
-![devices.png](./images/devices.png)
+![Dispositivos](./images/devices.png)
 
 Organizaremos los dispositivos en **Áreas** que serían el equivalente a las habitaciones
 
 El siguiente paso es crear las **automatizaciones** que son las distintas interacciones entre ellos.
 
-![new-automation.png](./images/new-automation.png)
+![Automatizaciones](./images/new-automation.png)
 
 Defineremos su nombre a qué dispositivos afecta y cual es el **trigger** o evento que dispará su ejecución. En [esta página](https://www.home-assistant.io/getting-started/automation/) puede leer mucho más sobre automatización
 
@@ -57,7 +57,7 @@ Si queremos personalizar nuestra instalación, por ejemplo usando nuestro propio
 
 ¿Y qué ocurre si nuestro dispositivo no está entre los soportados o se trata de un dispositivo DIY? pues siempre prodemos añadir en el [**Configurador** como vemos en este tutorial](https://learn.adafruit.com/set-up-home-assistant-with-a-raspberry-pi/configuration-yaml) donde tendremos que crear un fichero yaml de configuración.
 
-![internet_of_things___iot_Config7.png](./images/internet_of_things___iot_Config7.png)
+![Configuracion dispositivo DIY](./images/internet_of_things___iot_Config7.png)
 
 ### Recursos
 

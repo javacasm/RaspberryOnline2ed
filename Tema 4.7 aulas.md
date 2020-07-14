@@ -33,7 +33,7 @@ Algunas ideas para mejorar el funcionamiento:
 * El usar teclados y ratones inalámbricos tiene la ventaja de que el consumo por USB es menor 
 * Arduino y microbit funcionan perfecto, pero hasta donde yo sé Lego no está soportado
 * Uso de arranque por US: Aunque seguimos necesitando una tarjeta SD para configurar inicialmente las raspi4, ya no se usan para que arranquen en el día a día. 
-* Para mejorar el rendimiento podemos usar discos SSD con USB 3.0. Yo estoy haciendo pruebas con una versión de 128Gb de este disco https://es.aliexpress.com/item/33053472759.html?spm=a2g0s.9042311.0.0.274263c0sLwovz que me costó 25$
+* Para mejorar el rendimiento podemos usar discos SSD con USB 3.0. Yo estoy haciendo pruebas con una versión de 128Gb de [este disco](https://es.aliexpress.com/item/33053472759.html?spm=a2g0s.9042311.0.0.274263c0sLwovz) que me costó 25$
 * Si vamos a usarla en un aula de propósito general podemos incluir
 
 ## Clonado de tarjetas

@@ -22,33 +22,33 @@ Aunque está pensado como una aplicación de escritorio también incluye un Serv
 
 Podemos acceder al servidor desde cualquier ordenadore o tableta
 
-![CalibreTablet.jpg](./images/CalibreTablet.jpg)
+![Calibre wn Tablet](./images/CalibreTablet.jpg)
 
 Incluso haciendo búsquedas
 
-![CalibreBuscarTAbleta.jpg](./images/CalibreBuscarTAbleta.jpg)
+![Calibre Buscar en Tablet](./images/CalibreBuscarTAbleta.jpg)
 
 Podemos leer directamente sin necesitad de ninguna aplicación además del navegador
 
-![CalibreLeyendoOnline.jpg](./images/CalibreLeyendoOnline.jpg)
+![Calibre Leyendo Online](./images/CalibreLeyendoOnline.jpg)
 
 Para activarlos entramos en las preferencias:
-![](./images/Calibre_preferencias.png)
-![](./images/Calibre_conf.png)
+![Botón Preferencias](./images/Calibre_preferencias.png)
+![Menú preferencias](./images/Calibre_conf.png)
 
 Ahora en la configuración de "Compartir por la red" donde vamos a activar el sevidor, con su puerto (8080 por defecto) y si así lo queremos marcaremos la opción para se arranca cada vez que abrimos Calibre
 
-![](./images/Calibre_Conf_servidor.png)
+![Configuracion Servidor](./images/Calibre_Conf_servidor.png)
 
 Es el momento de configurar los usuarios, a los que le podremos dar permiso o no de escritura para modificar los libros
 
-![](./images/Calibre_Usuarios.png)
+![Gestión de usuarios](./images/Calibre_Usuarios.png)
 
 ## Acceso desde internet
 
 Si queremos acceder desde fuera de nuestra red, configuraremos el router en la opción de NAT para el puerto usado
 
-![EbookRouter.png](./images/EbookRouter.png)
+![Configuración Router](./images/EbookRouter.png)
 
 Para poder acceder remotamente sin saber nuestra IP  configuraremos un servicio de Dynamic DNS (DDNS) 
 
@@ -62,7 +62,7 @@ En mi caso usaré el servicio de NoIP
 
 Ahora configuramos en el router la cuenta para que automáticamente se refresque
 
-![ConfDDNS.png](./images/ConfDDNS.png)
+![Conf DDNS](./images/ConfDDNS.png)
 
 Y ya podremos acceder remotamente tras logarnos
 

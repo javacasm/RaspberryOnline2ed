@@ -42,7 +42,7 @@ Veamos algunos de los comandos más utilizados:
 
 [Vídeo: Uso del terminal y comandos Linux en Raspberry Pi](https://youtu.be/BF0Kjb4g454)
 
-#### Estructura de ficheros
+#### Estructura de directorios y ficheros
 
 Algunas características de sistema de fichero de linux
 

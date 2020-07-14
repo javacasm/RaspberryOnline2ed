@@ -174,11 +174,11 @@ En cualquier momento podemos volver a reconfigurar con
 
 [Vídeo de la configuración desde la consola de texto de Raspberry Pi](https://www.youtube.com/embed/ERFH8AYjWxM)
 
-## Otros instaladores: BerryBoot
+### Otros instaladores: BerryBoot
 
 El instalador de Noobs está basado en un desarrollo previo llamado [BerryBoot](https://www.berryterminal.com/doku.php/berryboot), [proyecto opensource](https://github.com/maxnet/berryboot) que ha seguido evolucionando independientemente y que a día de hoy tiene algunas ventajas
 
-![berryboot-menu.png](./images/berryboot-menu.png)
+![Menú de Berryboot](./images/berryboot-menu.png)
 
 Ventajas:
 * Ocupa solo 30Mb, porque sólo es el instalador, y luego se descarga toda la imagen de internet

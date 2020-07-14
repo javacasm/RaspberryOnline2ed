@@ -41,7 +41,7 @@ Puedes encontrar más detalles en el [Artículo de la wikipedia sobre RaspBerry 
 
 ## Raspberry Pi vs Arduino
 
-![vs](./images/arduinovsRaspberry.jpg)
+![Tamaño Arduino vs Raspberry](./images/arduinovsRaspberry.jpg)
 
 Una pregunta muy frecuente es si para determinado proyecto es mejor usar Arduino o Raspberry Pi: la respuesta es sencilla, son equipos muy distintos con capacidades diferentes y generalmente son complementarios.
 
@@ -58,7 +58,7 @@ Algunas ventajas de Arduino:
 
 Raspberry Pi tiene una mayor capacidad de procesamiento, lo que la hace más adecuada para determinadas tareas, como reconocimiento de imágenes o cálculos complejos, algo que sería impensable para Arduino.
 
-  ![vs](./images/arduinovsRaspberry.png)
+  ![Características Arduino vs Raspberry](./images/arduinovsRaspberry.png)
 
 * Raspberry Pi dispone de mayor capacidad de almacenamiento y de memoria permitiendo utilizar programación más avanzada.
 

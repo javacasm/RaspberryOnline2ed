@@ -48,6 +48,10 @@
 	Obtendremos ésto en una Raspi 3
 	
 		Raspberry Pi 3 Model B Rev 1.2
+	
+	En un Raspi 4
+
+		Raspberry Pi 4 Model B Rev 1.1
 		
 	También podemos usar ésto, que nos dará información sobre los procesadores
 

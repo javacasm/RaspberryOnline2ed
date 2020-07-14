@@ -129,7 +129,7 @@ Para ver que funciona y es compatible instalaremos una instacia del conocido ges
     FLUSH PRIVILEGES;
     exit
     ```
-    ![images/createDatabase](./images/createDatabase.png)
+    ![Crear BD](./images/createDatabase.png)
 
 9. Configuración de Wordpress
 
@@ -137,17 +137,17 @@ Para ver que funciona y es compatible instalaremos una instacia del conocido ges
 
     Veremos una pagina para seleccionar el idioma
 
-    ![images/wpIdioma.png](images/wpIdioma.png)
+    ![Idioma](images/wpIdioma.png)
 
     Ahora rellenamos los datos de acceso a la base de datos 
 
-    ![images/wpConfDB.png](./images/wpPerdida.png)
+    ![Conf DB](./images/wpPerdida.png)
 
     Configuramos los datos del usuario del blog
 
 
-    ![images/wpConfDB.png](./images/wpConfBloq.png)
+    ![Conf Blog](./images/wpConfBloq.png)
 
     Y listo!!!
 
-    ![wpEjemploBlog.png](./images/wpEjemploBlog.png)
+    ![Ejemplo Blog](./images/wpEjemploBlog.png)

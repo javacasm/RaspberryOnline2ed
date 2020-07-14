@@ -38,7 +38,7 @@ Esto cuando menos debería de preocuparnos.
 
 Esta imagen de Adafruit refleja cláramente el movimiento de nuestros datos:
 
-![internet_of_things___iot_Network_APIs.png](./images/internet_of_things___iot_Network_APIs.png)
+![Diferentes APIs en IOT](./images/internet_of_things___iot_Network_APIs.png)
 
 Por todo ello vamos a ver en primer caso cómo hacer un sencillo sistema doméstico para entender su arquitectura.
 

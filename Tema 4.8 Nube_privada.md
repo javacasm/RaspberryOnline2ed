@@ -34,7 +34,7 @@ md5sum -c owncloud-10.4.1.tar.bz2.md5 <  owncloud-10.4.1.tar.bz2
 ```
 
 
-![Check_md5_owncloud](./images/Check_md5_owncloud.png)
+![Check md5 owncloud](./images/Check_md5_owncloud.png)
 
 
 Lo descomprimimos:
@@ -93,7 +93,7 @@ Probamos a acceder
 http://raspi4/owncloud/
 ```
 
-![firstown Cloud](./images/firstownCloud.png)
+![Primer arranque ownCloud](./images/firstownCloud.png)
 
 Hasta este punto lo tenemos OK
 
@@ -108,11 +108,11 @@ sudo chown -R www-data:www-data /var/www/owncloud/
 Volvemos a acceder a http://raspi4/owncloud y creamos la cuenta del administrador 
 
 
-![OwnCloudCrearCuenta.png](./images/OwnCloudCrearCuenta.png)
+![Crear Cuenta](./images/OwnCloudCrearCuenta.png)
 
 Y ya lo tenemos listo
 
-![](./images/OnwCloud1st.png)
+![Owncloud](./images/OnwCloud1st.png)
 
 ### Instalación de clientes
 
@@ -122,10 +122,12 @@ Ahora vamos a ver algunos de los [clientes disponibles](https://owncloud.org/dow
 ![OwnCloudMovilWeb.png](./images/OwnCloudMovilWeb.png)
 
 * Existe una aplicación para sistemas Android, que es de pago
+
 ![](./images/OwnCloudAppAndroid.png)
 
 * Instalación del cliente para el escritorio y sincronización en linux. 
   * Lo instalamos
+
   ```sh
   echo 'deb http://download.opensuse.org/repositories/isv:/ownCloud:/desktop/Ubuntu_18.04/ /' | sudo tee /etc/apt/sources.list.d/isv:ownCloud:desktop.list
   curl -fsSL https://download.opensuse.org/repositories/isv:ownCloud:desktop/Ubuntu_18.04/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/isv:ownCloud:desktop.gpg > /dev/null
@@ -155,4 +157,3 @@ Podemos configurar nuestros sitema para poder acceder a nuestros equipos desde f
 	'otherdomain.example.org',
   ],
 ```
-

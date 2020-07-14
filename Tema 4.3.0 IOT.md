@@ -82,5 +82,5 @@ Veamos algunos de los proyectos en los que podríamos trabajar:
 
 ## [Arquitectura de un sistema completo IOT](https://polaridad.es/grafica-sensor-internet-de-las-cosas-iot/)
 
-![iot](https://polaridad.es/wp-content/uploads/2016/04/Esquema-presentaci%C3%B3n-datos-internet-de-las-cosas-IoT-con-JavaScript-en-una-p%C3%A1gina-web-HTML-con-JavaScript.png)
+![Arquitectura IOT](./images/ArquitecturaIOT.png)
 

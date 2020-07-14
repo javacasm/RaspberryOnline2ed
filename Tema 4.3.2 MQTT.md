@@ -22,7 +22,7 @@ Todos los participantes pueden **publicar** mensajes y/o también se pueden **su
 
 Utiliza una arquitectura como la que se ve en la imagen, donde el sistema central actúa como **Broker**, recibiendo los mensajes de todos los equipos y notificando a aquellos que se han suscrito a topics.
 
-![mqtt-architecture.png](./images/mqtt-architecture.png)
+![Arqutectura MQTT](./images/mqtt-architecture.png)
 
 Al ser un servicio sencillo actúa como transporte en sistemas más complejos. Por ejemplo podemos hacer que un equipo se susbriba todos los topics y los guarde en una base datos. 
 
@@ -124,7 +124,7 @@ Stat para confirmaciones de estados
 
 ## Recursos
 
-[Instalación de mosquito en la Raspberry)[https://randomnerdtutorials.com/how-to-install-mosquitto-broker-on-raspberry-pi/]
+[Instalación de mosquito en la Raspberry](https://randomnerdtutorials.com/how-to-install-mosquitto-broker-on-raspberry-pi/)
 
 https://randomnerdtutorials.com/micropython-mqtt-esp32-esp8266
 

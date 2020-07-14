@@ -11,7 +11,7 @@ F6="Tema 6 - Electrónica con Raspberry.md"
 S6="Tema 6 - Electrónica con Raspberry.docx"
 
 FMAT="Materiales.md"
-SMAT="Materiales necesarios.pdf"
+SMAT="Materiales necesarios.docx"
 
 DIR_PUBLICACION="./publicacion"
 
@@ -24,6 +24,7 @@ MAT:
 					--template=./LaTeX_ES.latex    \
 					-o  $(SMAT)  \
 					Cabecera.md        \
+					Cabecera_latex.md \
 					$(FMAT)
 
 
@@ -33,6 +34,7 @@ FAQ:
 					--template=./LaTeX_ES.latex    \
 					-o  $(SFAQ)  \
 					Cabecera.md        \
+					Cabecera_latex.md \
 					$(FFAQ)
 
 
@@ -86,9 +88,9 @@ FAQ:
 					"Tema 4.1.5 Usos.md" \
 					'Tema 4.2 Arduino.md' \
 					'Tema 4.3.0 IOT.md' \
-					'Tema 4.3.1 Publicacion en servicios externos.md' \
+					'Tema 4.3.1 Domotica.md' \
 					'Tema 4.3.2 MQTT.md' \
-					'Tema 4.3.3 Domotica.md' \
+					'Tema 4.3.3.1 Domotica Casera.md' \
 					'Tema 4.3.4 HomeAutomation.md' \
 					'Tema 4.3.5 google_assistant.md' \
 					'Tema 4.4 retropie.md' \
@@ -110,6 +112,7 @@ FAQ:
 					'Tema 5.1.Scratch3.md' \
 					'Tema 5.2 Shell scripts.md' \
 					'Tema 5.3 Aprender a programar python con Raspberry.md' \
+					'Tema 5.3.1 Publicacion en servicios externos.md' \
 					'Tema 5.3.5 Datalogger Arduino.md' \
 					'Tema 5.4 Sqlite.md' \
 					'Tema 5.5 BotTelegram.md' \
