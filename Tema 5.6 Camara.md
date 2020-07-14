@@ -4,6 +4,3 @@
 
 http://fpaez.com/raspbery-pi-control-de-la-camara-con-python/
 
-
-
-Cámara nuevas

@@ -7,6 +7,9 @@ Se utiliza en la web, en aplicaciones de escritorio, etc... Gran parte del inter
 Existen dos versiones de python ahora mismo: la rama 2.x y la 3.x
 Por sencillez vamos a usar la sintaxis de la rama 2.x
 
+[![Video: Python en Raspberry Pi](https://img.youtube.com/vi/Yy2oad1Xnoo/0.jpg)](https://youtu.be/Yy2oad1Xnoo)
+
+
 [Video: Python en Raspberry Pi](https://youtu.be/Yy2oad1Xnoo)
 
 Podemos utilizar varias herramientas para programar con python como Idle, Thonny un simple editor de texto o trabajar directamente sobre el intérprete python y directamente programar con él.
@@ -16,6 +19,8 @@ Podemos utilizar varias herramientas para programar con python como Idle, Thonny
 En las últimas versiones se incluye el editor Thonny, que nos permite trabajar con pyhton con facilidad
 
 ![Editor Thonny](./images/Thonny.png)
+
+También podemos programar python con Geany o incluso podemos [instalar](https://pimylifeup.com/raspberry-pi-visual-studio-code/) Visual Studio Code, el entorno de microsoft.
 
 Podemos trabajar en modo interactivo sin más que ejecutar el intérprete:
 
@@ -32,79 +37,81 @@ python3 fichero.py
 ```
 
 
-Veamos algunos ejemplos
+
+Aunque éste no pretende ser un curso sobre python, veamos algunos ejemplos:
 
 ## Operaciones numéricas y petición de datos al usuario
 
-[Código de Suma](https://github.com/javacasm/RaspberryOnline/blob/master/codigo/suma.py)
+Es sencillo crear variables, que el usuario les de valores y hacer operaciones entre ellos:
+
+[Código de Suma](https://github.com/javacasm/RaspberryOnline2ed/raw/master/codigo/suma.py)
 
 ```python
 # Programa que realiza la suma de dos valores
-a=input('numero 1 ');
-b=input('numero 2 ');
-suma = int(a) + int (b);
-print (suma);
+a = input('numero 1 ')  # pedimos el primer numero
+b = input('numero 2 ')  # pedimos el segundo numero
+suma = int(a) + int (b)  # calculamos la sumas
+print (suma)  # imprimimos su valor
 ```
 
 **Ejercicio**: cambia la operación a realizar
 
 ### Sentencias de control condicionales
 
-[Código de Bisiesto](https://github.com/javacasm/RaspberryOnline/blob/master/codigo/bisiesto.py)
+[Código de Bisiesto](https://github.com/javacasm/RaspberryOnline2ed/raw/master/codigo/bisiesto.py)
 
 ```python
 # Programa que determina si un año es o no bisiesto
-year = input('Introduzca el anio: ');
-if ((year%400)==0  or (year % 100) ==0 or (year%4)==0):
-  print
-	'Es bisiesto!!';
+year = input('Introduzca el anio: ')
+if ((year%400)==0  or (year % 100) ==0 or (year%4)==0): # la regla para saber si es bisiesto
+  print('Es bisiesto!!')
 else:
-  print 'No es bisiesto!!';
+  print ('No es bisiesto!!')
 ```
 
-[Código de días por mes](https://github.com/javacasm/RaspberryOnline/blob/master/codigo/diasMes.py)
+[Código de días por mes](https://github.com/javacasm/RaspberryOnline2ed/raw/master/codigo/diasMes.py
 
 ```python
 # Nos da los dias que tiene el mes seleccionado
-mes = input('Introduce el mes:');
-year = input('Introuce el anio:');
+mes = input('Introduce el mes:')
+year = input('Introuce el anio:')
 # Comprobamos si es entero
 if type(mes) == int:
   # Comprobamos si esta entre 1 y 12
-  if (mes>=1) and (mes<=12):
+  if (mes >= 1) and (mes <= 12):
     if mes == 2:
-      if(year%400 == 0) or (year%100 ==0) or (year %4 == 0):
-        dias = 29;
+      if(year % 400 == 0) or (year % 100 == 0) or (year % 4 == 0):
+        dias = 29
       else:
-        dias =28;
-    elif (mes==4) or (mes==6) or (mes==9) or (mes==11):
-      dias = 30;
+        dias =28
+    elif (mes == 4) or (mes == 6) or (mes == 9) or (mes == 11):
+      dias = 30
     else:
-      dias = 31;
-    print 'El mes '+str(mes) +' del anio '+str(year)+' tiene '+str(dias)+ ' dias';
+      dias = 31
+    print ('El mes '+str(mes) +' del anio '+str(year)+' tiene '+str(dias)+ ' dias')
   else:
-    print 'El mes debe ser entre 1 y 12';
+    print ('El mes debe ser entre 1 y 12')
 else:
-  print 'El mes debe ser entero';
+  print ('El mes debe ser entero')
 ```
 
 ### Sentencias de control de repetición
 
-[Código de Buscando Caracteres](https://github.com/javacasm/RaspberryOnline/blob/master/codigo/buscaCaracter.py)
+[Código de Buscando Caracteres](https://raw.githubusercontent.com/javacasm/RaspberryOnline2ed/master/codigo/buscaCaracter.py)
 
 ```python
 # Cuenta las veces que se repite un caracter en una palabra
-word= 'palabra';
-caracter = 'a';
-contador=0;
-mensaje='No se ha encontrado el caracter :('
+word= 'palabra' 
+caracter = 'a' 
+contador=0
+mensaje = 'No se ha encontrado el caracter :('
 for i in range(len(word)):
   if (word[i]==caracter):
-    mensaje='se ha encontrado el caracter!!!';
-    contador=contador+1;
+    mensaje='se ha encontrado el caracter!!!'
+    contador=contador + 1
 
-print mensaje;
-print 'Se encontrado '+str(contador)+' veces';
+print (mensaje)
+print ('Se encontrado '+str(contador)+' veces')
 ```
 
 **Ejercicio**: haz que el usuario pueda introducir la cadena donde buscar y el carácter
@@ -113,7 +120,7 @@ print 'Se encontrado '+str(contador)+' veces';
 
 Veamos un par de sencillos ejemplos sobre cómo utilizar la cámara de python
 
-Empecemos mostrando la previsualización y luego guardando una imagen
+Empecemos mostrando la previsualización y luego guardando una imagen en [este ejemplo](https://github.com/javacasm/RaspberryOnline2ed/raw/master/codigo/T5_camara_captura_imagen.py)
 
 ```python
 # Ejemplo basico de previsualizacion y captura con la camara
@@ -131,7 +138,8 @@ camera.capture('/home/pi/Desktop/image.jpg') # guarda la imagen
 camera.stop_preview() # cierra la previsualizacion
 ```
 
-Si lo que queremos es grabar vídeo, el código sería el siguiente
+Si lo que queremos es grabar vídeo, el código sería [el siguiente](https://github.com/javacasm/RaspberryOnline2ed/raw/master/codigo/T5_camara_captura_video.py)
+
 ```python
 from picamera import PiCamera
 from time import sleep
@@ -144,9 +152,9 @@ sleep(5)
 camera.stop_recording()
 camera.stop_preview()
 ```
-Mas detalles en https://projects.raspberrypi.org/en/projects/getting-started-with-picamera
+Estos ejemplos están explicados con mucho detalle en [este proyecto](https://projects.raspberrypi.org/en/projects/getting-started-with-picamera)
 
-Si entrar en muchos detalles, vamos a ver un sencillo [ejemplo](https://github.com/javacasm/RaspberryOnline/blob/master/codigo/T5_camara.py) de cómo integrar la cámara dentro de nuestro programa python
+Sin entrar en muchos detalles, vamos a ver un sencillo [ejemplo](https://github.com/javacasm/RaspberryOnline2ed/raw/master/codigo/T5_pygame_camara.py) de cómo integrar la cámara dentro de nuestro programa python usando la librería pygame
 
 ```python
 import picamera
@@ -159,38 +167,39 @@ screen = pygame.display.set_mode((0,0))
 
 # Init camera
 camera = picamera.PiCamera()
-camera.resolution = (1280, 720)
-camera.crop = (0.0, 0.0, 1.0, 1.0)
+camera.resolution = (1280, 720) # resolución de la camara
+camera.crop = (0.0, 0.0, 1.0, 1.0) #¿recortamos?
 
-x = (screen.get_width() - camera.resolution[0]) / 2
-y = (screen.get_height() - camera.resolution[1]) / 2
+x = (screen.get_width() - camera.resolution[0]) / 2 # centramos en el eje x
+y = (screen.get_height() - camera.resolution[1]) / 2 # centramos en el eje y
 
 # Init buffer
-rgb = bytearray(camera.resolution[0] * camera.resolution[1] * 3)
+rgb = bytearray(camera.resolution[0] * camera.resolution[1] * 3) # necesitamos 3 bytes por cada pixel de la camara
 
-# Main loop
+# Bucle principal
 exitFlag = True
 while(exitFlag):
-	for event in pygame.event.get():
-		if(event.type is pygame.MOUSEBUTTONDOWN or 
-		   event.type is pygame.QUIT):
-		    exitFlag = False
+    for event in pygame.event.get():
+        if(event.type is pygame.MOUSEBUTTONDOWN or 
+           event.type is pygame.QUIT):
+            exitFlag = False
+# para evitar parpadeos, se lee en una imagen y luego se copia a la pantalla
+    stream = io.BytesIO()
+    camera.capture(stream, use_video_port=True, format='rgb')
+    stream.seek(0)
+    stream.readinto(rgb) # leemos la informacion de la camara
+    stream.close()
+    img = pygame.image.frombuffer(rgb[0:
+          (camera.resolution[0] * camera.resolution[1] * 3)],
+           camera.resolution, 'RGB') # pasamos los datos leidos a una imagen
 
-	stream = io.BytesIO()
-	camera.capture(stream, use_video_port=True, format='rgb')
-	stream.seek(0)
-	stream.readinto(rgb)
-	stream.close()
-	img = pygame.image.frombuffer(rgb[0:
-		  (camera.resolution[0] * camera.resolution[1] * 3)],
-		   camera.resolution, 'RGB')
+    screen.fill(0) # ponemos el fondo de la pantalla en negro
+    if img: # si la imagen es valida la pasamos a pantalla
+        screen.blit(img, (x,y))
 
-	screen.fill(0)
-	if img:
-		screen.blit(img, (x,y))
-
-	pygame.display.update()
+    pygame.display.update() # actualizamos la pantalla
 
 camera.close()
 pygame.display.quit()
+
 ```

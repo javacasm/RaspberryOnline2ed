@@ -1,5 +1,7 @@
 ## Publicación en servicios externos
 
+Vamos a aprovechar nuestros conocimientos de python para trabajar en proyectos IOT.
+
 Existen muchos servicios externos donde podemos publicar nuestros datos y representarlos gráficamente.
 
 Estos servicios online, o en la nube como ahora se suele decir, exponen una serie de reglas para acceder a ellos.
