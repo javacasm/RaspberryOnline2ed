@@ -1,5 +1,5 @@
 # Ejemplo basico de previsualizacion y captura de video con la camara
-# captest_basico_video.py
+# T5_camara_captura_video.py
 # Mas detalles en https://projects.raspberrypi.org/en/projects/getting-started-with-picamera
 
 from picamera import PiCamera
