@@ -1,9 +1,11 @@
 # Bot de telegram
 
+Una de las funcionalidades más interesantes de Telegram es el uso de Bots, unos sencillos programas que permiten interactuar con dispositivos usando la plataforma de comunicaciones.
+
 Vamos a crear un sencillo Bot de Telegram que nos va a permitir interaccionar remotamente con nuestra Raspberry. 
 
 Ventajas de usar Bot de Telegram:
-* Nos resuelve el problema de acceso a nuestro sistema desde cualquier parte
+* Nos resuelve el problema de acceso a nuestro sistema desde cualquier punto de internet sin tener que tocar nuestro router
 * Utiliza encriptación en las comunicaciones
 * Podemos utilizar clientes de telegram en móviles, tabletas, PC, incluso desde un navegador
 * Nos proporciona un sistema de control de
@@ -30,7 +32,7 @@ pip3 install python-telegram-bot
 ```
 ### Creación de nuestro Bot
 
-Para usar un bot tenemos que darlo de alta en la red Telegram. Eso se hace "hablando" con @botfather (sí, yo también pienso que los programadores de Telegram son unos cachondos)
+Para usar un bot tenemos que darlo de alta en la red Telegram. Eso se hace[ "hablando" con @botfather](https://www.instructables.com/id/Set-up-Telegram-Bot-on-Raspberry-Pi/) (sí, yo también pienso que los programadores de Telegram son unos cachondos)
 
 ![BotFather-Icon.jpg](./images/BotFather-Icon.jpg)
 
@@ -133,6 +135,13 @@ En el proyecto de TimeLapse añadiremos la funcionalidad de enviar ficheros e im
 
 
 ### Ejemplos de Bots:
+
+En [este enlace](https://www.fwhibbit.es/controla-tu-raspberry-pi-mediante-telegram) nos explican como hacer un bot que controla
+
+* Control de una webcam (fotos, timelapse).
+* Información sobre el estado de la Raspberry (ram, hd, temperatura y cpu).
+* Envío de comandos de sistema (como en una terminal).
+* Comprobación de seguridad para restringir el acceso a ciertas partes.
 
 [Bot basico que enciende un led](https://www.hackster.io/Salmanfarisvp/telegram-bot-with-raspberry-pi-f373da)
 
