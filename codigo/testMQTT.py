@@ -24,3 +24,4 @@ while(1):
         ourClient.publish("MeteoSalon/Test", "Just Testing") # Publicamos un mensaje de teste
         last_pub = now
     time.sleep(0.1) # Esperamos 1 segundo
+    
