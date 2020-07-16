@@ -109,18 +109,19 @@ FAQ:
 					Cabecera.md        \
 					Cabecera_latex.md \
 					'Tema 5.0 Programacion.md' \
-					'Tema 5.1.Scratch3.md' \
+					'Tema 5.1.0.Scratch3.md' \
+					'Tema 5.1.5 Camara.md' \
 					'Tema 5.2 Shell scripts.md' \
 					'Tema 5.3 Aprender a programar python con Raspberry.md' \
 					'Tema 5.3.1 Publicacion en servicios externos.md' \
+					'Tema 5.3.2 MQTT y python.md' \
 					'Tema 5.3.5 Datalogger Arduino.md' \
 					'Tema 5.4 Sqlite.md' \
 					'Tema 5.5 BotTelegram.md' \
-					'Tema 5.6 Camara.md' \
+					'Tema 5.6 Camara y python.md' \
 					'Tema 5.6.1 Trabajando con github.md' \
 					'Tema 5.6.6 TimeLapse.md' \
-					'Tema 5.7 ServidorWeb.md' \
-					'Tema 5.8 ProgramacionVideojuegos.md' \
+					'Tema 5.8 PyGame y ProgramacionVideojuegos.md' 
 
 6:
 	pandoc --latex-engine=xelatex   \
