@@ -1,4 +1,10 @@
-### timeLapse
+### Grabación de Time Lapse
+
+Ya hemos visto un par de formas de crear Time Lapse:
+* Con el comando raspistill y el **-tl**
+* Usando un shell script
+
+Ahora vamos a crearlos de una forma distinta: con Python
 
 El equipo estarḉa conecta vía wifi y no tendrá conectado ningún períferico, sólo la alimentación que vendrá de adaptador USB (también podemos alimentarlo desde los pines de GPIO como ya vimos)
 
