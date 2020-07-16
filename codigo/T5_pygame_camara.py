@@ -1,3 +1,7 @@
+# Ejemplo basico de visualizacion y captura con la camara y pyGame
+# T5_pygame_captura.py
+# Mas detalles en https://projects.raspberrypi.org/en/projects/getting-started-with-picamera
+
 import picamera
 import pygame
 import io
