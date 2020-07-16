@@ -28,13 +28,6 @@ pip3 install python-telegram
 pip3 install python-telegram-bot
 
 ```
-
-Descargamos el [código base](https://github.com/javacasm/telegramBotBase) en el [zip](https://github.com/javacasm/telegramBotBase/archive/master.zip) o clonando el repositorio
-
-```sh
-git clone https://github.com/javacasm/telegramBotBase.git
-```
-
 ### Creación de nuestro Bot
 
 Para usar un bot tenemos que darlo de alta en la red Telegram. Eso se hace "hablando" con @botfather (sí, yo también pienso que los programadores de Telegram son unos cachondos)
@@ -54,26 +47,87 @@ Cuando lo tengamos definido nos va a dar token para acceder al API y la direcci�
 
 Si queremos podemos entrar en la versión web de telegram [**web.telegram.org**](http://web.telegram.org) en la máquina donde vamos a usar el bot y validamos nuestro inicio de sesión con el código que se nos enviará. De esta manera tenemos acceso al Token para poder usarlo.
 
-Vamos a empezar por el ejemplo echoBot, que repite lo que le decimos. He modificado lévemente el codigo para que en caso de que el mensaje sea "hi" conteste con un mensaje especial usando el nombre del usuario 
+Vamos a empezar por el ejemplo [echobot](https://github.com/javacasm/RaspberryOnline2ed/blob/master/codigo/echoBot.py), un ejemplo de Bot de Telegram que repite lo que le decimos. He modificado lévemente el codigo para que en caso de que el mensaje sea "hi" conteste con un mensaje especial usando el nombre del usuario 
 
-[echobot](./codigo/echobot.py)
+Ahora tenemos que **sustituir nuestro token del canal en el código** de echobot.py y lo ejecutamos con 
+```sh
+python3 echoBot.py
+```
 
+Ahora podremos conectarnos desde cualquier aplicación Telegram, bien con la URL o bien buscando el nombre de nuestro Bot
 
-Ahora tenemos que **sustituir nuestro token del canal en el código**
+### BaseBot
 
-Para copi
+He preparado un ejemplos sencillo de Bot que ya incluye la mayoría de las funcionalidades que necesitamos
 
+Descargamos el [código base](https://github.com/javacasm/telegramBotBase) en el [zip](https://github.com/javacasm/telegramBotBase/archive/master.zip) o clonando el repositorio
 
+```sh
+git clone https://github.com/javacasm/telegramBotBase.git
+```
 
+Ponemos nuestro Token en el fichero config.py y lo ejecutamos con 
+
+```sh
+python3 baseBot.py
+```
+Debemos ver en la pantalla de la consola un mensaje similar a este:
+```
+16/07/2020 13:46:00 Bienvenido al Bot de ejemplo 0.9.5
+```
+
+Ahora nos conectamos desde alguna aplicación Telegram, bien con el enlace o buscando el nombre de nuestro Bot
+
+Al escribirle no tendremos respuesta, puesto que no hemos incluido nuestro usuario como autorizado y en la consola veremos un error similar a este:
+```
+16/07/2020 13:48:44 User: Javacasm not allowed. Chat_id 31416 command: Aaa. Will be reported
+```
+
+Ahora debemos incluir este usuario en el fichero config como **ADMIN** o en la lista de **ALLOWED_USERS**
+
+Paramos el bot y lo volvemos a ejecutar.
+
+Al volver a entrar ahora debe respondernos a nuestros comandos.
+
+Si enviamos **/start** nos mostrará un teclado con los comandos posibles
 ### Añadiendo funcionalidad
 
-Vamos a añadir unos comandos básicos para nuestra Raspberry
+Vamos a ver cómo añadir comandos a nuestro Bot.
 
-PAra ver la temperatura de la raspberry 
-vcgencmd measure_temp
+Por ejemplo un comando **/Temp** pAra ver la temperatura de la raspberry. Cuando recibamos ese comando ejecutaremos **vcgencmd measure_temp** devolviendo el resultado.
 
-Para ver el estado de Throttle 
-vcgencmd get_throttled
+* Añadimos la función **executeCommand** antes de la función main
+```python
+def executeCommand(command): 
+    stream = os.popen(command) 
+    output = stream.read() 
+    return output
+
+```
+* Añadimos el código que procesa el comando **/Temp** antes del else del final de baseBot.py (cuidado con respetar el número de espacios para que quede alineado)
+```python
+            elif comando == '/Temp':
+                answer = executeCommand('/opt/vc/bin/vcgencmd measure_temp')
+                utils.myLog(answer)
+                update.message.reply_text(answer,parse_mode=telegram.ParseMode.MARKDOWN,reply_markup = user_keyboard_markup)
+            else:
+
+```
+
+* En la línea donde definimos los posibles comandos cambiamos un **/ejemplo** por **/Temp**
+```python
+user_keyboard = [['/help','/info'],['/Temp','/ejemplo2'],['/fichero']]
+```
+* En la línea de la ayuda cambiamos lo mismo
+```python
+commandList = '/help, /info, /Temp, /ejemplo2, /fichero'
+```
+* Cambiamos la versión a un valor superior para ver que estamos usando la versión adecuada
+```python
+v = '0.9.6'
+```
+
+Ejercicio: Añadir comando para ver el estado de Throttle (vcgencmd get_throttled)
 
 En el proyecto de TimeLapse añadiremos la funcionalidad de enviar ficheros e imágenes
 
