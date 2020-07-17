@@ -22,6 +22,8 @@ camera.capture('/home/pi/Desktop/image.jpg') # guarda la imagen
 camera.stop_preview() # cierra la previsualizacion
 ```
 
+Hay que recordar que dado que la cámara está conectada directamente a la GPU y la captura pasa directamente a la memoria de vídeo, la previsualización de la cámara **no se ve cuando nos conectamos por VNC**.
+
 Si lo que queremos es grabar vídeo, el código sería [el siguiente](https://github.com/javacasm/RaspberryOnline2ed/raw/master/codigo/T5_camara_captura_video.py)
 
 ```python
@@ -117,16 +119,42 @@ from time import sleep
 import random
 
 camera = PiCamera()
-efectos = ['none' , negative', 'solarize','sketch','denoise','emboss','oilpaint','hatch','gpen','pastel','watercolor','film','blur','saturation','colorswap','washedout','posterise','colorpoint','colorbalance','cartoon','deinterlace1','deinterlace2']
+efectos = ['none' , 'negative', 'solarize','sketch','denoise','emboss','oilpaint','hatch','gpen','pastel','watercolor','film','blur','saturation','colorswap','washedout','posterise','colorpoint','colorbalance','cartoon','deinterlace1','deinterlace2']
 camera.start_preview() # muestra la previsualizacion
 while True:
-    efectoUsado = efectos[ random.randint(0, len[efectos])]
+    efectoUsado = efectos[ random.randint(0, len(efectos)-1) ]
     print('Efecto ' + efectoUsado)
     camera.image_effect = efectoUsado
     sleep(5) # espera 5 segundos
     camera.capture('/home/pi/Desktop/image' + efectoUsado + '.jpg') # guarda la imagen
 camera.stop_preview() # cierra la previsualizacion
+
 ```
+
+![Efecto](./images/imagenone.jpg)
+![Efecto](./images/imageblur.jpg)
+![Efecto](./images/imagehatch.jpg)
+![Efecto](./images/imagecartoon.jpg)       
+![Efecto](./images/imagenegative.jpg)
+![Efecto](./images/imagecolorbalance.jpg)  
+![Efecto](./images/imagecolorpoint.jpg)    
+![Efecto](./images/imageoilpaint.jpg)
+![Efecto](./images/imagecolorswap.jpg)     
+![Efecto](./images/imagepastel.jpg)
+![Efecto](./images/imagedeinterlace1.jpg)  
+![Efecto](./images/imageposterise.jpg)
+![Efecto](./images/imagedeinterlace2.jpg)  
+![Efecto](./images/imagesaturation.jpg)
+![Efecto](./images/imagedenoise.jpg)       
+![Efecto](./images/imagesketch.jpg)
+![Efecto](./images/imageemboss.jpg)        
+![Efecto](./images/imagesolarize.jpg)
+![Efecto](./images/imagefilm.jpg)          
+![Efecto](./images/imagewashedout.jpg)
+![Efecto](./images/imagegpen.jpg)          
+![Efecto](./images/imagewatercolor.jpg)
+
+
 
 
 
