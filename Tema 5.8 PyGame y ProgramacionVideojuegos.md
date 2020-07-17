@@ -82,7 +82,7 @@ pygame.quit()
 
 El envento QUIT se producirá al pulsar el botón de cerrar la ventana
 
-Vamos a ver ahora cómo podemos dibujar una forma (un rectángulo) que se moverá al pulsar las teclas del curso
+Vamos a ver ahora cómo podemos dibujar una forma (un rectángulo) que se moverá al pulsar las teclas del curso. [código](https://github.com/javacasm/RaspberryOnline2ed/raw/master/codigo/Tut08_movimientoRectangulo.py)
 
 ```python
 """
@@ -180,6 +180,7 @@ miImagen = pygame.image.load('./images/python-logo.png')
 ```python
     screen.blit(miImagen,x, y)
 ```
+[código](https://github.com/javacasm/RaspberryOnline2ed/raw/master/codigo/Tut08.1_movimientoImagen.py)
 
 Ya que sabemos cómo añadir una imagen podemos añadir una imagen de fondo.
 ```python
