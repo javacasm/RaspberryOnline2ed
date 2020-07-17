@@ -7,10 +7,10 @@ from time import sleep
 import random
 
 camera = PiCamera()
-efectos = ['none' , negative', 'solarize','sketch','denoise','emboss','oilpaint','hatch','gpen','pastel','watercolor','film','blur','saturation','colorswap','washedout','posterise','colorpoint','colorbalance','cartoon','deinterlace1','deinterlace2']
+efectos = ['none' , 'negative', 'solarize','sketch','denoise','emboss','oilpaint','hatch','gpen','pastel','watercolor','film','blur','saturation','colorswap','washedout','posterise','colorpoint','colorbalance','cartoon','deinterlace1','deinterlace2']
 camera.start_preview() # muestra la previsualizacion
 while True:
-    efectoUsado = efectos[ random.randint(0, len[efectos])]
+    efectoUsado = efectos[ random.randint(0, len(efectos)-1) ]
     print('Efecto ' + efectoUsado)
     camera.image_effect = efectoUsado
     sleep(5) # espera 5 segundos
