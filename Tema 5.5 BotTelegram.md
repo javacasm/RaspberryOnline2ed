@@ -47,6 +47,8 @@ Ahora @BotFather nos irá pidiendo datos y damos un nombre (puede ser cualquier 
 
 Cuando lo tengamos definido nos va a dar token para acceder al API y la dirección para acceder al bot.
 
+Necesitaremos un API TOKEN para cada instanacia o tipo de bot que queremos tener en ejecución. Yo personalmente tengo uno por cada proyecto que tengo en funcionamiento más un par de TOKENs que uso para pruebas.
+
 Si queremos podemos entrar en la versión web de telegram [**web.telegram.org**](http://web.telegram.org) en la máquina donde vamos a usar el bot y validamos nuestro inicio de sesión con el código que se nos enviará. De esta manera tenemos acceso al Token para poder usarlo.
 
 Vamos a empezar por el ejemplo [echobot](https://github.com/javacasm/RaspberryOnline2ed/blob/master/codigo/echoBot.py), un ejemplo de Bot de Telegram que repite lo que le decimos. He modificado lévemente el codigo para que en caso de que el mensaje sea "hi" conteste con un mensaje especial usando el nombre del usuario 
@@ -60,7 +62,7 @@ Ahora podremos conectarnos desde cualquier aplicación Telegram, bien con la URL
 
 ### BaseBot
 
-He preparado un ejemplos sencillo de Bot que ya incluye la mayoría de las funcionalidades que necesitamos
+He preparado un ejemplos sencillo de Bot que ya incluye la mayoría de las funcionalidades que necesitamos en este y en los siguientes proyectos. Las dintintas funcionalidades están separadas en ficheros para así estructurar mejor nuestro código.
 
 Descargamos el [código base](https://github.com/javacasm/telegramBotBase) en el [zip](https://github.com/javacasm/telegramBotBase/archive/master.zip) o clonando el repositorio
 
@@ -85,7 +87,7 @@ Al escribirle no tendremos respuesta, puesto que no hemos incluido nuestro usuar
 16/07/2020 13:48:44 User: Javacasm not allowed. Chat_id 31416 command: Aaa. Will be reported
 ```
 
-Ahora debemos incluir este usuario en el fichero config como **ADMIN** o en la lista de **ALLOWED_USERS**
+Ahora debemos incluir este chat_id, que identifica al usuario en el fichero config como **ADMIN** o en la lista de **ALLOWED_USERS**
 
 Paramos el bot y lo volvemos a ejecutar.
 
