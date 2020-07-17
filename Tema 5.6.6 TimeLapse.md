@@ -23,13 +23,28 @@ pip3 install python-telegram
 pip3 install python-telegram-bot
 ```
 
-Descargamos el código del ejemplo, basado en los anteriores ejemplos al que le hemos añadido:
+Usaremos un código basado en los anteriores ejemplos al que le hemos añadido:
 * Medida de la temperatura de la CPU **/temp**
 * Medida del espacio en disco **/df**
 * Creamos un time lapse con el comando /TTiempoEntreImagenes, con /T0 se termina el time lapse
 * Podemos establecer un modo noche **/night** y día **/day**
 * Podemos tomar una foto con **/foto**
 * Recuperar la última foto con **/last**
+
+1. Descargamos el código del ejemplo [RaspiZeroLapse](https://github.com/javacasm/RaspiZeroLapse/archive/master.zip)
+1. Lo descomprimimos
+1. Ponemos el TOKEN que vamos a usar con este Bot en el fichero config.py
+1. Añadimos el chat_id de usario como ADMIN
+1. Cambiamos el directorio donde queremos guardar las imágenes
+1. Ejecutamos el bot con:
+```sh
+python3 timeLapseBot.py
+```
+
+Nos conectamos desde cualquier App de Telegram y lo probamos.
+
+### Puesta en marcha de un time lapse
+
 
 ### Cómo recuperar las fotos
 
