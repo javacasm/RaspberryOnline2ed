@@ -39,4 +39,4 @@ while(1):
     time.sleep(0.1) # Esperamos 1 segundo
 ```
 
-Podemos usar nuestra instancia de mosquitto y las herramientas cliente para probar su funcionamiento
+Podemos usar nuestra instancia de mosquitto y las herramientas cliente para probar su funcionamiento.
