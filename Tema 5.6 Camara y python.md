@@ -155,10 +155,8 @@ camera.stop_preview() # cierra la previsualizacion
 ![Efecto](./images/imagewatercolor.jpg)
 
 
-
-
-
-* Cambiar la ISO: al cambiar este parámetros vamos a conseguir fotos más o menos luminosas
+* Cambiar la sensibilidad con el parámetro ISO: al cambiar este parámetros vamos a conseguir fotos más o menos luminosas.
+Hay otros muchos parámetros que podemos modificar la fotografía resultante.
 
 ```python
 from picamera import PiCamera
