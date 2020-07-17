@@ -182,7 +182,21 @@ cat ~/.ssh/id_rsa.pub | ssh username@server.address.com 'cat >> ~/.ssh/authorize
 ```
 La siguiente vez que nos conectemos lo haremos sin necesidad de instroducir la clave.
 
-Como podemos ver en el último comando que hemos usado, podemos usar ssh para enviar ficheros y su contenido entre equipos. En proyecto más adelante lo usaremos bastante.
+Como podemos ver en el último comando que hemos usado, podemos usar ssh de muchas formas diferentes:
+* Para conectarnos de manera interactiva a otro ordenadore
+* Para enviar ficheros entre equipos. En proyecto más adelante lo usaremos bastante.
+* Para enviar contenido entre equipos como hemos hecho con el comando 'cat'
+* Para ejecutar comandos remotamente. Por ejemplo si hacemos
+```sh
+ssh pi@raspi4 df -h
+```
+Nos permitirá saber cómo de llenos están los discos en el ordenadore raspi4
+
+```sh
+ssh pi@raspi4 df -h
+```
+
+
 
 ### VNC
 
