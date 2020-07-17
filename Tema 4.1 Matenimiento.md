@@ -44,6 +44,8 @@ sudo rpi-update
 
 Hay que tener **cuidado con esta comando**: si actualizamos un firmware pero el sistema operativo no lo está y por tanto espera encontrar una versión anterior del firmware, podemos encontrarnos con que nuestra Raspberry se queda completamente bloqueada.
 
+Si tenemos una de las últimas versiones 
+
 #### Actualización de una versión a la siguiente
 
 Aunque es conveniente que cuando salga una nueva versión hagamos una instalación desde cero, a veces tenemos muchas aplicaciones instaladas o mucha información del usuario que nos llevaría mucho tiempo extraer y luego volver a copiar/installar. En ese caso nos podemos plantear hacer una actualización de una versión a otra.
