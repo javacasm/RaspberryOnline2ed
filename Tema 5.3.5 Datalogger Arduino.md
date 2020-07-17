@@ -219,6 +219,8 @@ Abrimos Kst y con él el fichero 'datos.txt' y lo configuramos con el separador 
 
 ![kstConfig.jpg](./images/kstConfig.jpg)
 
+Más detalles sobre la configuración de KST en [esta página](https://miscircuitos.com/using-kst-plot-visualize-data-real-time/)
+
 ### Usando más coamndos: Firmata
 
 Esta forma de controlar remotamente nuestro arduino es tan potente y está tan extendida que ya existe un estándar de comandos de control. Se llama Firmata y permite controlar totalmente Arduino incluso acceder a dispositivos conectados como sensores y servos.
@@ -256,6 +258,7 @@ print(analog_0.read())
 # Acceso a PWM
 pin3PWM = board.get_pin('d:3:p')  # Pin 3 con acceso PWM
 pin3.write(0.6)                 # Ponemos el pin al 60%
+```
 
 Más detalles en la [página de pyFirmata](https://github.com/tino/pyFirmata)
 
