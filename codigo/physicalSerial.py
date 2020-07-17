@@ -43,3 +43,4 @@ while bRunning:
             time.sleep(0.2)
     else:
         arduinoPort.write(comamnd.encode()) # Encode transforma unicode a bytes
+
