@@ -1,4 +1,4 @@
-## Publicación en servicios externos
+## Publicación de datos de IOT en servicios externos
 
 Vamos a aprovechar nuestros conocimientos de python para trabajar en proyectos IOT.
 
