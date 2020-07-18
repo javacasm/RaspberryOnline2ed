@@ -13,9 +13,9 @@ Es un entorno potente y está pensado para enseñar a programar sin la complejid
 
 ![code](./images/code.png)
 
-### Scratch en nuestra Raspberry Pi
+### Scratch en la Raspberry Pi
 
-Raspberry Pi OS trae instalado  Scratch, en las últimas versiones ya está disponible Scratch 3
+Raspberry Pi OS trae instalado  Scratch, en las últimas versiones ya está disponible Scratch 3.0
 
 [![Vídeo sobre cómo programar con Scratch en Raspberry Pi](https://img.youtube.com/vi/6veM85OpsKI/0.jpg)](https://youtu.be/6veM85OpsKI)
 
