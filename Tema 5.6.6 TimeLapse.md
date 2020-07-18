@@ -16,29 +16,31 @@ Por ello vamos a instalar Raspberry Pi OS Lite, como vimos en un capítulo anter
 
 Para conectar la cámara a la Rasperry Zero, necesitamos un cable especial que suele venir incluido con el kit.
 
-![CableCamaraZeroNormal.jpg](./images/CableCamaraZeroNormal.jpg)
+![Cable Camara Zero vs Normal](./images/CableCamaraZeroNormal.jpg)
 
 Lo conectamos de esta forma (ojo a la posición del cable )
 
-![CamaraRaspiZerojpg](./images/CamaraRaspiZero.jpg)
+![Camara Raspi Zero](./images/CamaraRaspiZero.jpg)
 
 Y lo integramos en la caja con la tapa que tiene el hueco para la cámara.
 
-![RaspiZeroCaja.jpg](./images/RaspiZeroCaja.jpg)
+![Raspi Zero Caja](./images/RaspiZeroCaja.jpg)
 
 Que queda perfectamente integrada y muy compacta
 
-![RaspiZeroCajaCerrada.jpg](./images/RaspiZeroCajaCerrada.jpg)
+![Raspi Zero Caja Cerrada](./images/RaspiZeroCajaCerrada.jpg)
 
 Ahora sólo nos falta conectar la alimentación al usb marcado como "Power"
 
-![RaspiZeroCajaCerradaPuertos.jpg](./images/RaspiZeroCajaCerradaPuertos.jpg)
+![Puertos de conexión](./images/RaspiZeroCajaCerradaPuertos.jpg)
 
 Y nos queda un equipo muy, muy compacto
 
-![RaspiZeroAlimantacion.jpg](./images/RaspiZeroAlimantacion.jpg)
+![Alimantacion Raspi Zero](./images/RaspiZeroAlimantacion.jpg)
 
 [![Vídeo: Montaje de una Raspberry Pi Zero W para realizar timeLapses](https://img.youtube.com/vi/rhzX1TbOddY/0.jpg)](https://www.youtube.com/watch?v=rhzX1TbOddY)
+
+[Vídeo: Montaje de una Raspberry Pi Zero W para realizar timeLapses](https://www.youtube.com/watch?v=rhzX1TbOddY)
 
 ### Instalación
 
