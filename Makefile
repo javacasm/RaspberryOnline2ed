@@ -127,11 +127,17 @@ FAQ:
 					-o $(S6)     \
 					Cabecera.md        \
 					'Tema 6.0 - Electrónica con Raspberry.md' \
+					'Tema 6.0.5 Cuidados.md' \
 					'Tema 6.1 GPIO.md' \
-					'TEma 6.2 electronica.md' \
-					'Tema 6.4 Hats.md' \
-					'Tema 6.5 MQTT y Leds.md'
-
+					'Tema 6.2 Sensores.md' \
+					'Tema 6.2.5 Neopixels.md' \
+					'Tema 6.3 Componentes I2C.md' \
+					'Tema 6.4 Medidas analógicas.md' \
+					'Tema 6.5 MQTT Leds y sensores.md' \
+					'Tema 6.6 motores.md' \
+					'Tema 6.7 Hats.md' \
+					'Tema 6.8 Otras librerias.md' \
+					'Tema 6.9 Conexion con arduino.md'
 					
 clean:
 	rm $(S5) $(S6) $(S1) $(S2) $(S3) $(S4) $(SFAQ)
