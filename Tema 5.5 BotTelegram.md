@@ -34,7 +34,7 @@ pip3 install python-telegram-bot
 
 Para usar un bot tenemos que darlo de alta en la red Telegram. Eso se hace[ "hablando" con @botfather](https://www.instructables.com/id/Set-up-Telegram-Bot-on-Raspberry-Pi/) (sí, yo también pienso que los programadores de Telegram son unos cachondos)
 
-![BotFather-Icon.jpg](./images/BotFather-Icon.jpg)
+![BotFather-Icon](./images/BotFather-Icon.jpg)
 
 1. Iniciamos un chat con @BotFather
 2. Solicitamos la creación de un nuevo Bot con
@@ -101,6 +101,7 @@ Vamos a ver cómo añadir comandos a nuestro Bot.
 Por ejemplo un comando **/Temp** pAra ver la temperatura de la raspberry. Cuando recibamos ese comando ejecutaremos **vcgencmd measure_temp** devolviendo el resultado.
 
 * Añadimos la función **executeCommand** antes de la función main
+
 ```python
 def executeCommand(command): 
     stream = os.popen(command) 
@@ -108,6 +109,7 @@ def executeCommand(command):
     return output
 
 ```
+
 * Añadimos el código que procesa el comando **/Temp** antes del else del final de baseBot.py (cuidado con respetar el número de espacios para que quede alineado)
 ```python
             elif comando == '/Temp':
@@ -115,6 +117,7 @@ def executeCommand(command):
                 utils.myLog(answer)
                 update.message.reply_text(answer,parse_mode=telegram.ParseMode.MARKDOWN,reply_markup = user_keyboard_markup)
             else:
+                 ....
 
 ```
 
