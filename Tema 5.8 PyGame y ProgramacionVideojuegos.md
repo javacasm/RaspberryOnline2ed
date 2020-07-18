@@ -276,7 +276,7 @@ pygame.display.quit()
 
 ## PiGame Zero
 
-![logopyGameZero.svg](./images/logopyGameZero.svg)
+![logo pyGame Zero](./images/logopyGameZero.svg)
 
 Desde hace poco ha aparecido otró módulo python, basado en Pigame, pero con el objetivo de hacer más sencillo el proceso de crealos
 
