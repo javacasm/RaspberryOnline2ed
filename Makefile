@@ -3,11 +3,8 @@ FFAQ="RasPi FAQ - Preguntas Frecuentas.md"
 S1="Tema 1 - Qué es Raspberry.docx"
 S2="Tema 2 - Características de Raspberry.docx"
 S3="Tema 3 - Instalación de Raspberry.docx"
-F4="Tema 4 - Uso de Raspberry.md"
 S4="Tema 4 - Uso de Raspberry.docx"
-F5="Tema 5 - Programación con Raspberry.md"
 S5="Tema 5 - Programación con Raspberry.docx"
-F6="Tema 6 - Electrónica con Raspberry.md"
 S6="Tema 6 - Electrónica con Raspberry.docx"
 
 FMAT="Materiales.md"
@@ -129,7 +126,12 @@ FAQ:
 					--template=./LaTeX_ES.latex    \
 					-o $(S6)     \
 					Cabecera.md        \
-					$(F6)
+					'Tema 6.0 - Electrónica con Raspberry.md' \
+					'Tema 6.1 GPIO.md' \
+					'TEma 6.2 electronica.md' \
+					'Tema 6.4 Hats.md' \
+					'Tema 6.5 MQTT y Leds.md'
+
 					
 clean:
 	rm $(S5) $(S6) $(S1) $(S2) $(S3) $(S4) $(SFAQ)
