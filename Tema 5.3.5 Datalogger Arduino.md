@@ -217,11 +217,11 @@ Mientras tengamos en program ReadArduinoData.py en ejecución, el fichero 'datos
 
 Abrimos Kst y con él el fichero 'datos.txt' y lo configuramos con el separador y el tiempo de refresco necesario para que sea actualicen los gráficos
 
-![kstConfig.jpg](./images/kstConfig.jpg)
+![Configuración de KST](./images/kstConfig.jpg)
 
 Más detalles sobre la configuración de KST en [esta página](https://miscircuitos.com/using-kst-plot-visualize-data-real-time/)
 
-### Usando más coamndos: Firmata
+### Usando más comandos: Firmata
 
 Esta forma de controlar remotamente nuestro arduino es tan potente y está tan extendida que ya existe un estándar de comandos de control. Se llama Firmata y permite controlar totalmente Arduino incluso acceder a dispositivos conectados como sensores y servos.
 
