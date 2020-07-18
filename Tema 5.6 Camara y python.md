@@ -106,7 +106,7 @@ camera.capture('/home/pi/Desktop/image.jpg') # guarda la imagen
 camera.stop_preview() # cierra la previsualizacion
 ```
 
-* Añadir efectos a la cámara: vamos a añadir algunos efectos a la imagen tomada. Estos son los [efectos disponibles](https://picamera.readthedocs.io/en/release-1.13/api_camera.html#picamera.PiCamera.image_effect): 'none' , negative', 'solarize','sketch','denoise','emboss','oilpaint','hatch','gpen','pastel','watercolor','film','blur','saturation','colorswap','washedout','posterise','colorpoint','colorbalance','cartoon','deinterlace1','deinterlace2'.
+* Añadir efectos a la cámara: vamos a añadir algunos efectos a la imagen tomada. Estos son los [efectos disponibles](https://picamera.readthedocs.io/en/release-1.13/api_camera.html#picamera.PiCamera.image_effect): 'none' , negative', 'solarize', 'sketch', 'denoise', 'emboss', 'oilpaint', 'hatch', 'gpen', 'pastel', 'watercolor', 'film', 'blur', 'saturation', 'colorswap', 'washedout', 'posterise', 'colorpoint', 'colorbalance', 'cartoon', 'deinterlace1', 'deinterlace2'.
 
 
 ```python
