@@ -171,3 +171,9 @@ https://www.hackster.io/martin-mander/focus-the-pi-high-quality-camera-with-lego
 ## Recursos
 
 [Tutoriales RandomNerd](https://randomnerdtutorials.com/?s=sqlite)
+
+
+## Dividir 4.1.4 en 
+* Acceso remoto
+* comandos unix
+* otros
