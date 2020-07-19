@@ -6,7 +6,7 @@ Veamos como podemos conectar sensores de temperatura digitales como pueden ser e
 
 Este sensor de aspecto idéntico a un transistor nos permite medir fácilmente la temperatura con un montaje mínimo:
 
-![Montaje DS18x20](./images/oneWireDS18x20.jpg)
+![Montaje DS18x20](./images/oneWireDS18x20.png)
 
 Necesitamos una resistencia de 4.7ohmios que actuará como pull-up en el montaje.
 
@@ -85,5 +85,5 @@ while True:
 
 También podíamos haber aprovechado para hacer este montaje usando [CiruitPython](https://learn.adafruit.com/circuitpython-on-raspberrypi-linux/overview) que es una variante de Micropython (la versión de python para microcontroladores), creada por Adafruit, que ha añadido objetos de más alto nivel como motor, sensor, etc.. 
 
-Para ello seguiríiamos [este tutorial](https://learn.adafruit.com/dht-humidity-sensing-on-raspberry-pi-with-gdocs-logging/python-setup)
+Para ello seguiríamos [este tutorial](https://learn.adafruit.com/dht-humidity-sensing-on-raspberry-pi-with-gdocs-logging/python-setup)
 
