@@ -36,7 +36,7 @@ Hay que tener cuidado con no equivocarse al usarlos. Para evitar errores podemos
 
 ![Etiquetas para los pines](./images/etiquetas.png)
 
-O esta otra versión del gran @pighixxx con los diferentes etiquetados [para descargar en la [orginal](https://pbs.twimg.com/media/DACXWfzXkAE--mT.jpg)
+O esta otra versión del gran @pighixxx con los diferentes etiquetados [para descargar](https://pbs.twimg.com/media/DACXWfzXkAE--mT.jpg)
 
 ![Etiquetas de @pighixxx](./images/etiquestasGPIOpighixx.jpg) 
 
@@ -77,8 +77,34 @@ Para identificar más fácilmente los pines recordad que podemos usar el truco d
 
 ## Manejo basico de los pines
 
-Vamos a hacer ahora algunos montajes básicos
+Vamos a hacer ahora algunos montajes básicos y cómo programarlos.
 
+Vuelvo a poner la descripción de los pines para tenerlos a mano (Recomiendo imprimirla)
+
+
+![Pinout Raspi 4B](./images/GPIO_raspi4b.png)
+
+Podríamos trabajar perfectamente con Scratch 3.0 que ya incluye extensiones para usar los GPIO: 
+
+![Extensiones GPIO en Scratch 3.0](./images/ExtensionesGPIOScratch.png)
+
+Extensiones que incluyen bloques para usar GPIO en Scratch. La primera de modo genera y la tercera simplificada para aprender.
+
+![Bloques Extensión GPIO Scratch](./images/BloquesExtensionGPIOScratch.png)
+
+Nosotros usaremos python, en concreto el módugo **[gpiozero](https://gpiozero.readthedocs.io/en/stable/)** que facilita enormemente el uso. Más adelante veremos que hay otras muchas librerías para usar GPIO.
+
+### Alimentación de los montajes
+
+Tenemos varios pines de 3.3V y de 5V, también varios GND
+
+![Alimentación en GPIO](./images/GPIO.png)
+(Fuente: [raspberrypi.org](https://www.raspberrypi.org/documentation/usage/gpio/))
+
+Siempre que sea posible, y salvo que no usemos más que unos pocos componentes, no deberíamos alimentar nuestros montajes de estos pines de alimentación. Siempre es mejor usar una alimentación exterior.
+
+Consumo máximo por pin GPIO: 16mA
+Consumo total de todos los GPIOs: 50mA
 
 ### Encendiendo un led
 
@@ -142,25 +168,10 @@ led.off()					# Apagamos el led
 
 Ya tenemos todo lo necesario para montar un semáforo ¿te animas?
 
-
-## GPIO
-
-Todos los pines GPIO funcionan a 3.3V
-
-![Pinout Raspi 4](./images/GPIO_rpi4.png)
-(Fuente: [pinout.xyz](https://pinout.xyz/))
-
-![Pinout Raspi 4B](./images/GPIO_raspi4b.png)
-
-Tenemos varios pines de 3.3V y de 5V, también varios GND
-
-![Alimentación en GPIO](./images/GPIO.png)
-
-(Fuente: [raspberrypi.org](https://www.raspberrypi.org/documentation/usage/gpio/))
+### Otras formas de conexión
 
 
-Hay pines que pueden funcionar de un modo especial
-
+Cómo ya hemos dicho, hay pines que pueden funcionar de un modo especial. Más adelante
 
 * PWM (pulse-width modulation)
     * Software PWM available on all pins
@@ -171,11 +182,10 @@ Hay pines que pueden funcionar de un modo especial
 * I2C: protocolo de comunicaciones con dispositivos I2C
     * Data: (GPIO2); Clock (GPIO3)
 * EEPROM Data: (GPIO0); EEPROM Clock (GPIO1)
-*Serial
+* Serial
     * TX (GPIO14); RX (GPIO15)
 
-
-Podemos ver los nombres de los pines GPIO con el comando
+En todo momento podemos ver los nombres de los pines GPIO con el comando
 
 ```sh
 pinout
@@ -183,28 +193,32 @@ pinout
 
 ![gpiozero pinout command](./images/gpiozero-pinout.png)
 
+### Brillo variable en un led: PWM
 
+Vamos a usar ahora una característica de algunos pines como es el PWM, que nos va a permitir modular la potencia que se trasmite al pin. El efecto si conectamos un led es que va a cambiar su brillo.
 
-## Alimentación
+```python
+from gpiozero import PWMLED
+from time import sleep
 
-Consumo por pin GPIO: 16mA
-Consumo total de todos los GPIOs: 50mA
+led = PWMLED(17)
 
+while True:
+    led.value = 0  # apagado
+    sleep(1)
+    led.value = 0.5  # 50% de brillo
+    sleep(1)
+    led.value = 1  # a tope e brillo
+    sleep(1)
+```
+[Código](https://github.com/javacasm/RaspberryOnline2ed/blob/master/codigo/test_led_pwm.py)
 
+(Más adelante usaremos esta característica para controlar la velocidad de rotación de un motor)
 
-## GPIO Zero: python para GPIO
+## Recursos
 
 [Tutorial GPIO Zero](https://www.raspberrypi.org/documentation/usage/gpio/python/README.md)
 
 [Referencia](https://gpiozero.readthedocs.io/)
 
-
-## Recursos
-
-[Introduction to Raspberry Pi 4 GPIO](https://itnext.io/an-introduction-to-raspberry-pi-4-gpio-and-controlling-it-with-node-js-10f2ce41af12)
-
 [GPIO Zero en ](https://www.raspberrypi.org/magpi-issues/Essentials_GPIOZero_v1.pdf)
-
-[Raspberry pi GPIO](http://mbrobotics.es/blog/raspberry-pi-gpios/)
-
-[Servidor web con flask](https://wikitic.github.io/raspberry_pi-webserver-python/)
