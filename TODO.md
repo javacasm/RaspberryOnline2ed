@@ -177,3 +177,29 @@ https://www.hackster.io/martin-mander/focus-the-pi-high-quality-camera-with-lego
 * Acceso remoto
 * comandos unix
 * otros
+
+## Opciones en /boot/config.txt
+
+## Sensores analógicos
+
+LDR
+TMP36  https://gpiozero.readthedocs.io/en/stable/recipes.html#measure-temperature-with-an-adc
+LM35
+Sensor de humedad
+Sendor de lluvia
+sensor de nivel
+sensor IR
+
+### MQTT
+
+Ejemplo de envio de datos de sensores via MQTT
+
+## Control ventilador
+
+https://github.com/javacasm/RaspberryAvanzado/blob/master/control-fan.md
+
+## boton encendido/apagado
+
+https://github.com/javacasm/RaspberryAvanzado/blob/master/Boton_encendido-apagado.md
+
+## Revisar todos los c'odigos y que tenga fichero descargable
