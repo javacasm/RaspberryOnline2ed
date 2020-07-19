@@ -2,7 +2,7 @@
 
 ## Otras Librerías
 
-Existen otras librerías que nos facilitarán el acceso a los GPIO (todas usan lenguaje python como base). Nosotros veremos algunas de ellas por motivos históricos y porque muchos proyectos las usan y conviene saber utilizalas.
+Existen otras librerías que nos facilitarán el acceso a los GPIO (todas usan lenguaje Python como base). Nosotros veremos algunas de ellas por motivos históricos y porque muchos proyectos las usan y conviene saber utilizalas.
 
 Para probarlas re-haremos algunos de los ejemplos ya vistos con estas librerías
 
