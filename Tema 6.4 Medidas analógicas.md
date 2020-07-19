@@ -10,3 +10,6 @@ Para leer valores analógicos usaremos electrónica externa, com pueden se [esta
 ![ADC](./images/adc.png)
 
 
+## Usando sensores analógicos
+
+https://projects.raspberrypi.org/en/projects/physical-computing/13
