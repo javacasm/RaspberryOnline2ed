@@ -1,17 +1,20 @@
+## Placas de extensión: Hats
 
 Si en el mundo Arduino las placas que se se conectan encima de la placa Arduino y añaden funcionalidad se denominan **"shields"**, en el mundo Raspberry se les llama **"Hats"**
 
-En esta página podemos ver algunos de ellos
+En [esta página](https://www.tomshardware.com/amp/best-picks/best-raspberry-pi-hats) podemos ver algunos de ellos.
 
 ![raspiHats-1200-80.jpg](./images/raspiHats-1200-80.jpg)
 
-https://www.tomshardware.com/amp/best-picks/best-raspberry-pi-hats
 
 ## Placas GPIO
 
-Existen muchas placas que facilitan la conexión de electrónica.
+Existen muchas de estas placas que facilitan la conexión de electrónica.
 
-[Vídeo: Cómo conectar shields a RaspBerry Pi](https://www.youtube.com/watch?v=J9ZolkLrbdg)
+[![Vídeo: Cómo conectar hats/shields a RaspBerry Pi](https://img.youtube.com/vi/J9ZolkLrbdg/0.jpg)](https://www.youtube.com/watch?v=J9ZolkLrbdg)
+
+
+[Vídeo: Cómo conectar hats/shields a RaspBerry Pi](https://www.youtube.com/watch?v=J9ZolkLrbdg)
 
 ### Clobber
 
@@ -27,7 +30,10 @@ Existen muchas placas que facilitan la conexión de electrónica.
 Son simples adaptadores que nos facilitan la vida permitiendo conectar de manera sencilla con las placas de prototipo
 
 
-[Vídeo: Conectando electrónica a Raspberry - Cobbler DIY](https://youtu.be/CyNVsgw-t3U?list=PLDxBiw1MlK6SqyPGhhox9WlsximiNrcgK)
+[![Vídeo: Conectando electrónica a Raspberry - Cobbler DIY](https://img.youtube.com/vi/CyNVsgw-t3U/0.jpg)](https://youtu.be/CyNVsgw-t3U)
+
+
+[Vídeo: Conectando electrónica a Raspberry - Cobbler DIY](https://youtu.be/CyNVsgw-t3U)
 
 
 ### PiPlate
@@ -36,7 +42,11 @@ Son simples adaptadores que nos facilitan la vida permitiendo conectar de manera
 
 Se trata de una placa de prototipo especialmente adaptada al tamaño de la Raspberry y que nos permite acceder de forma sencilla a los pines por nombre y funcionalidad.
 
-[Video: Placa de prototipo para Raspberry Pi - Pi Plate](https://youtu.be/AB50mlF0ikU?list=PLDxBiw1MlK6SqyPGhhox9WlsximiNrcgK)
+
+[![Video: Placa de prototipo para Raspberry Pi - Pi Plate](https://img.youtube.com/vi/AB50mlF0ikU/0.jpg)]()
+
+
+[Video: Placa de prototipo para Raspberry Pi - Pi Plate](https://youtu.be/AB50mlF0ikU)
 
 
 ### PiFace
@@ -68,3 +78,4 @@ Es una placa de desarrollo con una enorme cantidad de complementos, como son con
 ![RaspiRobot](./images/raspirobot.png)
 
 Esta placa nos permite controlar un típico robot de 2 motores de manera muy sencillo. 
+
