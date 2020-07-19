@@ -51,7 +51,7 @@ O esta otra versión del gran @pighixxx con los diferentes etiquetados [para des
 * Encender apagar LEDs (no podemos aspirar a encender nada de mayor potencia directamente). Estas son las salidas digitales, capaces de estar en estado alto o bajo.
 * Algunos de estos pines pueden generar PWM (modulación por ancho de pulso) protocolo que usan los servos.
 * Detectar pulsaciones de botones/interruptores. Estas son las entradas digitales.
-• Acceso al puerto serie por los terminales TX/TX
+• Acceso al puerto serie por los terminales TX/RX
 • Acceso al bus I2C, bus de comunicaciones usado por muchos dispositivos
 • Acceso al bus SPI, bus de comunicaciones similar al I2C pero con diferentes especificaciones
 
@@ -75,7 +75,7 @@ Raspberry.
 Para identificar más fácilmente los pines recordad que podemos usar el truco de las etiquetas del que ya hablamos
 
 
-## Manejo basico de los pines
+## Manejo básico de los pines
 
 Vamos a hacer ahora algunos montajes básicos y cómo programarlos.
 
@@ -92,7 +92,7 @@ Extensiones que incluyen bloques para usar GPIO en Scratch. La primera de modo g
 
 ![Bloques Extensión GPIO Scratch](./images/BloquesExtensionGPIOScratch.png)
 
-Nosotros usaremos python, en concreto el módugo **[gpiozero](https://gpiozero.readthedocs.io/en/stable/)** que facilita enormemente el uso. Más adelante veremos que hay otras muchas librerías para usar GPIO.
+Nosotros usaremos Python, en concreto el módulo **[gpiozero](https://gpiozero.readthedocs.io/en/stable/)** que facilita enormemente el uso. Más adelante veremos que hay otras muchas librerías para usar GPIO.
 
 ### Alimentación de los montajes
 
@@ -116,7 +116,7 @@ Vamos conectarlos de la siguiente manera
 El programa es muy sencillo
 
 ```python
-from gpiozero import LED  # importamos los modulos necesarios
+from gpiozero import LED  # importamos los módulos necesarios
 from time import sleep
 
 red = LED(17)  	# declaramos un led conectado al GPIO 17
@@ -141,11 +141,11 @@ Vamos ahora a conectar un botón y a detectar cuando está pulsado
 Y el programa es muy sencillo también
 
 ```python
-from gpiozero import Button # importamos los modulos necesarios
+from gpiozero import Button # importamos los módulos necesarios
 
 button = Button(2) # Declaramos pulsador conectado al GPIO 2
 
-button.wait_for_press() # Espera hasta que se pulse el boton
+button.wait_for_press() # Espera hasta que se pulse el botón
 print('Me has pulsado') # Nos informa de que se ha pulsado
 ```
 
@@ -154,13 +154,13 @@ print('Me has pulsado') # Nos informa de que se ha pulsado
 Fácilmente podemos mezclar los dos ejemplos, haciendo que el led se encienda durante un tiempo cuando pulsemos
 
 ```python
-from gpiozero import LED, Button # importamos modulos necesarios
+from gpiozero import LED, Button # importamos módulos necesarios
 from time import sleep
 
 led = LED(17)  # declaramos un led conectado al GPIO 17
 button = Button(2) # Declaramos un pulsador conectado al GPIO 2
 
-button.wait_for_press()  	# Espera hasta que se pulse el boton
+button.wait_for_press()  	# Espera hasta que se pulse el botón
 led.on()					# Encendemos el led
 sleep(3) 					# Esperamos 3 segundos
 led.off()					# Apagamos el led
@@ -171,7 +171,7 @@ Ya tenemos todo lo necesario para montar un semáforo ¿te animas?
 ### Otras formas de conexión
 
 
-Cómo ya hemos dicho, hay pines que pueden funcionar de un modo especial. Más adelante
+Cómo ya hemos dicho, hay pines que pueden funcionar de un modo especial. 
 
 * PWM (pulse-width modulation)
     * Software PWM available on all pins
@@ -191,7 +191,7 @@ En todo momento podemos ver los nombres de los pines GPIO con el comando
 pinout
 ```
 
-![gpiozero pinout command](./images/gpiozero-pinout.png)
+![Comando pinout ](./images/gpiozero-pinout.png)
 
 ### Brillo variable en un led: PWM
 
