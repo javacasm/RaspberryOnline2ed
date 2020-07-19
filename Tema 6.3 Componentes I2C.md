@@ -6,9 +6,9 @@ Este protocolo I2C funciona en un modo llamado Master/Slave, donde la raspberry 
 
 Antes de utilizar I2C tenemos que activar el driver correspondiente en la pestaña de configuración de interfaces de "raspi-config" (que ejecutaremos con sudo, como siempre)
 
-![raspi-config](http://www.circuitbasics.com/wp-content/uploads/2016/02/Raspberry-Pi-LCD-I2C-Connections-sudo-raspi-config.png)
+![raspi-config](./images/Raspberry-Pi-LCD-I2C-Connections-sudo-raspi-config.png)
 
-![Enable I2C](http://www.circuitbasics.com/wp-content/uploads/2016/02/Raspberry-Pi-LCD-I2C-Connections-sudo-raspi-config-enable-i2c.png)
+![Enable I2C](./images/Raspberry-Pi-LCD-I2C-Connections-sudo-raspi-config-enable-i2c.png)
 
 Tras rearrancar podemos asegurarnos de que el driver I2C está activo viendo los mensajes de arranque
 ```sh
@@ -25,7 +25,7 @@ i2c_bcm2708             4943  0
 regmap_i2c              1661  3 snd_soc_pcm512x,snd_soc_wm8804,snd_soc_core
 ```
 
-Para que un usuario pueda usar i2c debe de estar incluído en el grupo correspondiente 'i2c'. Podemos asegurarnos de ello con
+Para que un usuario pueda usar i2c debe de estar incluido en el grupo correspondiente 'i2c'. Podemos asegurarnos de ello con
 
 ```sh
 sudo adduser pi i2c
@@ -140,7 +140,7 @@ Vamos a usar ahora el sensor atmosférico BME280, capaz de medir temperatura, hu
 
 Conectamos los pines SDA y SCL de los dos dispositivos
 
-![Montaje Rasperry pi Z y bme280](./images/RpiZ_bme280_bb.png)
+![Montaje Raspberry Pi Z y bme280](./images/RpiZ_bme280_bb.png)
 
 Una vez conectado vamos a ver si lo detectamos
 
@@ -157,7 +157,7 @@ $ i2cdetect -y 1
   70: -- -- -- -- -- -- 76 --
 ```
 
-Vamos a usar el paquete python RPi.bme280 y seguiremos [su tutorial](https://pypi.org/project/RPi.bme280/). Instalamos el módulo RPI.bme280
+Vamos a usar el paquete Python RPi.bme280 y seguiremos [su tutorial](https://pypi.org/project/RPi.bme280/). Instalamos el módulo RPI.bme280
 
 ```sh
 pip3 install RPi.bme280
