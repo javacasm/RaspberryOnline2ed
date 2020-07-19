@@ -88,7 +88,13 @@ geany es el editor de ficheros de texto, y al usar "sudo" estamos pidiendo permi
 
 Esto nos sirve para ver que podemos abrir aplicaciones de escritorio desde la consola.
 
-Nos da todo el poder del usuario administrador (**root**)
+Si en un momento dado necesitamos hacer muchas tareas como root podemos abrir una consola con este usuario haciendo
+
+```sh
+sudo su -
+```
+
+Pero mucho cuidado que esto nos da todo el poder del usuario administrador(**root**) y por tanto toda la responsabilidad
 
 ### Interface gráfico
 
