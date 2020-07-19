@@ -2,6 +2,10 @@
 
 ![Robot con Raspberry](./images/RobotTop.jpg)
 
+### Motores y servos
+
+A veces no interesa controlar varios motores y servos desde una misma placa. 
+
 
 ## Controlando motores
 
