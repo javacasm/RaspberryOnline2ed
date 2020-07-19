@@ -2,12 +2,49 @@
 
 ### Usando más potencia
 
-En el caso bastante normal de que necesitemos más potencia de las que nos da un pin (16mA) Podemos utilizar un transistor. Veamos el montaje
+En el caso bastante normal de que necesitemos más potencia de las que nos da un pin (16mA) podemos utilizar un transistor. 
 
-![Conexión con transistor](./images/transistor.png)
+Veamos el montaje de cómo controlar un ventilador con un transistor:
+
+![Conexión con transistor](./images/ControlMotor.jpg)
+
+Se ha incluído un diodo en antiparalelo para evitar corrientes de inducción y una resistencia de 1K para controlar la corriente que  va a la base del transistor 2N2222.
+
+A la salida de este transistor podemos conectar también un relé o unos leds de potencia.
+
+Usando señal PWM podemos controlar la velocidad del ventilador y modular la velocidd de giro en función de la temperatura de la CPU
 
 
-A la salida de este transistor podemos conectar un relé para obtener aún más potencia
+```python
+from gpiozero import PWMLED
+from time import sleep
+import sys
+import os
+from time import sleep
+import signal
+
+maxTMP = 70
+medTMP = 60
+
+fan = PWMLED(21)
+
+def getCPUtemperature():
+    res = os.popen('vcgencmd measure_temp').readline()
+    temp =(res.replace("temp=","").replace("'C\n",""))
+    #print("temp is {0}".format(temp)) #Uncomment here for testing
+    return temp
+
+try:
+    while True:
+    	CPU_temp = float(getCPUtemperature())
+	    if CPU_temp > maxTMP:
+			fan.value = 1.0  # Máxima velocidad
+		elif CPU_temp > medTMP:
+			fan.value = 0.5  # Velocidad media
+		else:
+			fan.value = 0    # Parada
+		sleep(5)
+```
 
 ### Motores
 
@@ -34,6 +71,8 @@ Y ahora conectaremos los pines de control de la siguiente forma
 
 ![Conexión de los pines de control](./images/gpio-board.jpg)
 
+La placa L298 necesita 4 pines para controlar el sentido de giro de los dos motores In1 e In2 para el motor 1, In3 e In4 para el motor 2
+
 Conectaremos 7 -> In1,  8 -> In2,  9 -> In3, 10 -> In4 y  GND -> GND
 
 Veamos ahora un sencillo ejemplo de control
@@ -56,7 +95,7 @@ while True:  # Bucle para siempre
     sleep(5)		  # Esperamos 5 segundos
 ```
 
-[Código](https://github.com/javacasm/RaspberryOnline/blob/master/codigo/Test_motores.py)
+[Código](https://github.com/javacasm/RaspberryOnline2ed/blob/master/codigo/Test_motores.py)
 
 Y nuestros motores deben de moverse hacia adelante y hacia atrás
 
@@ -74,7 +113,7 @@ robby.stop() # paramos
 
 ```
 
-[Código](https://github.com/javacasm/RaspberryOnline/blob/master/codigo/test_robot.py)
+[Código](https://github.com/javacasm/RaspberryOnline3ed/blob/master/codigo/test_robot.py)
 
 Ahora ya podemos hacer robót como estos
 
@@ -93,6 +132,7 @@ Ahora ya podemos hacer robót como estos
 ## Controlando un servomotor
 
 Un servomotor es un tipo de motor que sólo realiza movimientos angulares entre 0 y 180 grados (existen algunos modelos que se llaman trucados o de rotación continua pero no vamos a tratar aquí)
+
 Una de las grandes ventajas de los servos es que incluyen su propio contolador con lo que sólo necesitamos alimentarlos y una señal de control
 
 ![Servomotor](./images/Micro-servo.jpg)
@@ -120,10 +160,7 @@ while True:					# bucle infinito
     sleep(2)				# esperamos 2 segundos
 ```
 
-[Código](https://github.com/javacasm/RaspberryOnline/blob/master/codigo/test_servo.py)
-
-MATERIAL ANTIGUO INTEGRAR LO QUE VALGA
-
+[Código](https://github.com/javacasm/RaspberryOnline2ed/blob/master/codigo/test_servo.py)
 
 
 ### RaspiRobot
@@ -157,30 +194,35 @@ En la [web de RaspiRobot](https://github.com/simonmonk/raspirobotboard/wiki) vem
 
 Descargamos la librería
 
-	wget https://github.com/simonmonk/raspirobotboard/archive/master.zip
+```sh
+wget https://github.com/simonmonk/raspirobotboard/archive/master.zip
+```
 
-La descomprimimos conviene
-
-	unzip master.zip
+La descomprimimos
+```sh
+unzip master.zip
+```
 	
 y la instalamos
-
-	sudo python setup.py install
+```sh
+sudo python3 setup.py install
+```
 
 Un programa sencillo podría ser
 
-		from raspirobotboard import *
-		rr = RaspiRobot() # creamos el objeto
-		rr.set_led1(1) # activamos el led 1
-		rr.set_led2(0) # desactivamos el led 2
-		rr.set_oc1(1) # activamos la salida 1
-		rr.forward() # movemos los dos motores hacia adelante
-		rr.reverse() # movemos los dos motores hacia atrás
-		rr.left() # motor izquierdo hacia adelante, derecho hacia atrás
-		rr.right() # motor izquierdo hacia atrás, derecho hacia adelante
-		rr.stop() # los dos motores hacia atrás
-		rr.sw1_closed() # devuelver True o False según cerrado o abierto
-
+```python
+from raspirobotboard import *
+rr = RaspiRobot() # creamos el objeto
+rr.set_led1(1) # activamos el led 1
+rr.set_led2(0) # desactivamos el led 2
+rr.set_oc1(1) # activamos la salida 1
+rr.forward() # movemos los dos motores hacia adelante
+rr.reverse() # movemos los dos motores hacia atrás
+rr.left() # motor izquierdo hacia adelante, derecho hacia atrás
+rr.right() # motor izquierdo hacia atrás, derecho hacia adelante
+rr.stop() # los dos motores hacia atrás
+rr.sw1_closed() # devuelver True o False según cerrado o abierto
+```
 
 ### Steppers: motores paso a paso
 
@@ -190,97 +232,69 @@ Los motores paso a paso son motores que nos permiten una gran precisión de giro
 
 Vamos a ver cómo usar el motor de la imagen, que tiene 4 bobinas. La placa de control es muy sencilla y necesita de 4 pines para controlarla (en realidad la placa sólo transforma la salida de los pines de raspberry en una señal de la potencia que necesita el motor)
 
-Veamos como conectarla usando 5V y GND y los pines 24,25,8 y 7
+Veamos como conectarla usando 5V y GND y los pines de control 
+```
+IN1 ==> GPIO12
+IN2 ==> GPIO16
+IN3 ==> GPIO20
+IN4 ==> GPIO21
+```
+
+Este [código](https://www.hackster.io/mjrobot/playing-with-electronics-rpi-gpio-zero-library-tutorial-f984c9) nos permite controlar el movimiento del motor
 
 
-Vamos a ver ahora la programación.
+```python
+import time
+import sys
+from gpiozero import OutputDevice as stepper
+IN1 = stepper(12)
+IN2 = stepper(16)
+IN3 = stepper(20)
+IN4 = stepper(21)
+stepPins = [IN1,IN2,IN3,IN4] # Motor GPIO pins
+stepDir = -1        # 1 para sentido horario
+                    # -1 para sentido antihorario
+mode = 1            # mode = 1: Low Speed ==> Higher Power
+                    # mode = 0: High Speed ==> Lower Power
+if mode:            # Low Speed ==> High Power
+  seq = [[1,0,0,1], # Secuencia de medio paso
+        [1,0,0,0], 
+		[1,1,0,0],
+		[0,1,0,0],
+		[0,1,1,0],
+		[0,0,1,0],
+		[0,0,1,1],
+		[0,0,0,1]]
+else:               # High Speed ==> Low Power 
+  seq = [[1,0,0,0], # secuencia estándar
+             [0,1,0,0],
+             [0,0,1,0],
+             [0,0,0,1]]
+stepCount = len(seq)
+if len(sys.argv)>1: # Tiempo de espera como argumento
+  waitTime = int(sys.argv[1])/float(1000)
+else:
+  waitTime = 0.004    # 2 ms para máxima velocidad
+stepCounter = 0
+while True:                     # bucle principal
+  for pin in range(0,4):
+    xPin=stepPins[pin]          # Get GPIO
+    if seq[stepCounter][pin]!=0:
+      xPin.on()
+    else:
+      xPin.off()
+  stepCounter += stepDir
+  if (stepCounter >= stepCount):
+    stepCounter = 0
+  if (stepCounter < 0):
+    stepCounter = stepCount+stepDir
+  time.sleep(waitTime)     # espera antes de cambiar el paso
+			 
+```
 
-		import timeimport RPi.GPIO as GPIO
-		GPIO.setmode(GPIO.BCM)
-		StepPins = [24,25,8,7] # Pines que conectamos a la placa de control
-		for pin in StepPins: # configuramos todos los pines como salida
-			GPIO.setup(pin,GPIO.OUT)
-			GPIO.output(pin, False)
-			StepCounter = 0
-			WaitTime = 0.5
-			StepCount1 = 4
-			Seq1 = []
-			Seq1 = range(0, StepCount1) # Definimos la secuencia de giro
-			Seq1[0] = [1,0,0,0]
-			Seq1[1] = [0,1,0,0]
-			Seq1[2] = [0,0,1,0]
-			Seq1[3] = [0,0,0,1]
-			while 1==1: # realizamos un bucle infinito enviando la secuencia
-				for pin in range(0, 4): #iteramos sobre los pasos de la secuencia
-					xpin = StepPins[pin]
-					if Seq[StepCounter][pin]!=0:
-						GPIO.output(xpin, True)
-					else:
-						GPIO.output(xpin, False)
-					StepCounter += 1
-					time.sleep(WaitTime)
 
-Veamos un ejemplo de su precisión
+Veamos un ejemplo de lo que se puede hacer usando la precisión de los motores stepper
 
 ![Robot polarplot](./images/polarplot.png)		
 
-### Servos
 
-Los servos son motores pensados para mantener una posición concreta, disponen de electrónica de control propia y a la se le indica la posición que deben mantener mediante un pulso que hay que enviar 50 veces por segundo.
-
-El ancho de este pulso determina la posición a mantener, como podemos ver en la imagen adjunta.
-
-![Control de servos](./images/servocontrol.png)
-
-La estabilidad de la posición depende de la precisión con la enviemos la señal de control.
-
-Veamos un método para generar esta señal con python. Está pensada para controlar 2 servos:
-
-		def mover_servo(grados,servo):
-			if servo==1: GPIO_servo=22
-			elif servo==2: GPIO_servo=21
-			# creamos el pulso
-			pos_servo=(0.0000122*grados)+0.0002
-			GPIO.output(GPIO_servo, True) #activamos la salida
-			time.sleep(pos_servo) # esperamos la duración del pulso
-			GPIO.output(GPIO_servo, False) # desativamos la señal porque el pulso ha terminado
-			#esperamos el tiempo necesario hasta enviar el siguiente pulso
-			time.sleep(0.0025-pos_servo)
-
-
-Si lo probamos veremos que el servo vibra debido a la mala calidad de la señal por su falta de estabilidad. Python es un lenguaje interpretado y temporización que hemos hecho dependerá de la carga que tenga nuestra Raspberry
-
-Podemos mejorar la calidad de la señal utilizando un programa escrito en C que producirá una mejor temporización.
-
-
-### Uniéndolo todo
-
-Vamos a utilizar un par de servos para hacer que una cámara [siga una cara](http://www.instructables.com/id/Pan-Tilt-face-tracking-with-the-raspberry-pi/?ALLSTEPS)
-
-![Opencv + Camara](./images/opencvCamara.png)
-
-Estos son los pasos para instalar todo lo necesario
-
-		sudo apt-get update
-		sudo apt-get install git python-opencv python-all-dev libopencv-dev
-		sudo modprobe servoblaster
-		git clone https://github.com/mitchtech/py_servo_facetracker
-
-Y para ejecutarlo
-
-		cd py_servo_facetracker
-		python ./facetracker_servo_gpio.py 0
-
-
-
-### Motores y servos
-
-A veces no interesa controlar varios motores y servos desde una misma placa. 
-
-[Servo desde python](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-8-using-a-servo-motor?view=all)
-
-![Servo desde python](https://learn.adafruit.com/system/assets/assets/000/003/489/medium800/learn_raspberry_pi_overview.jpg?1396797194)
-
-[Varios motores](https://learn.adafruit.com/adafruit-dc-and-stepper-motor-hat-for-raspberry-pi?view=all)
-
-![Controlando varios motores](https://learn.adafruit.com/system/assets/assets/000/022/670/medium800/raspberry_pi_2348_iso_demo_01_ORIG.jpg?1422298425)
