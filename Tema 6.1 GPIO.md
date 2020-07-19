@@ -1,29 +1,26 @@
 
 ## GPIO
 
+
 ![GPIO](./images/GPIORasp.png)
 
+
+![GPIO Raspi4](./images/GPIORaspi4.png)
+
+¿Qué son los GPIO?
+
 * Son los pines que podemos usar como salidas o como entradas, es decir, para activar dispositivos (leds, motores, etc) o para leer el estado de sensores, interruptores etc. Siempre funcionan en modo digital.
-* Podemos configurar cada uno como entrada o como salida
-* Utilizan **3.3V** Por ello tenemos que tener cuidado con lo conectamos. Un dispositivo que use 5V podría dañarla.
+* Podemos configurar cada uno como entrada o como salida.
+* Utilizan **3.3V** Por ello tenemos que tener cuidado con el voltaje que usa el dispositivo que conectamos, Un dispositivo que use 5V podría dañarla.
 * Algunos de ellos se pueden usar como comunicaciones especializadas: SPI, I2C, UART
 
 
 
 ## Pines
 
-Hay que tener cuidado con no equivocarse. Para evitar errores podemos usar una etiqueta
+Las distintas versiones de la Raspberry tienen algunos pines distintos.
 
-![Etiquetas para los pines](./images/etiquetas.png)
-
-O esta otra versión del gran @pighixxx con los diferentes etiquetados
-
-![Etiquetas de @pighixxx](https://pbs.twimg.com/media/DACXWfzXkAE--mT.jpg)
-
-
-[Vídeo sobre etiquetas en los GPIO de Raspberry](https://youtu.be/9UiZ7m6UacM)
-
-Las distintas versiones de la Raspberry tienen algunos pines distintos
+Hasta la Raspberry Pi 2, tenían 20 pines:
 
 ![GPIO para la versión 2](./images/GPIOV2.png)
 	
@@ -35,71 +32,21 @@ Los GPIOs para la Raspberry pi 4
 
 ![GPIOs para la Raspberry pi 4](./images/GPIO4.webp)
 
-## Manejo basico de los pines
+Hay que tener cuidado con no equivocarse al usarlos. Para evitar errores podemos usar una etiqueta
 
-### Encendiendo un led
+![Etiquetas para los pines](./images/etiquetas.png)
 
-Necesitaremos un Led y una resistencia de 220Ohmios (o 330) 
-Vamos conectarlos de la siguiente manera
+O esta otra versión del gran @pighixxx con los diferentes etiquetados [para descargar en la [orginal](https://pbs.twimg.com/media/DACXWfzXkAE--mT.jpg)
 
-![Led](./images/led-gpio17.png)
+![Etiquetas de @pighixxx](./images/etiquestasGPIOpighixx.jpg) 
 
-El programa es muy sencillo
+[![Vídeo sobre etiquetas en los GPIO de Raspberry](https://img.youtube.com/vi/9UiZ7m6UacM/0.jpg)](https://youtu.be/9UiZ7m6UacM)
 
-```python
-from gpiozero import LED  # importamos los modulos necesarios
-from time import sleep
-
-red = LED(17)  	# declaramos un led conectado al GPIO 17
-
-while True:  	# Repetimos en bucle para siempre
-	red.on() 	# Encendemos el led
-	sleep(1)	# Esperamos 1 segundo
-	red.off()	# Apagamos el led
-	sleep(1)	# Esperamos otro segundo
-```
-
-[Código](https://github.com/javacasm/RaspberryOnline/blob/master/codigo/test_led.py)
-
-Podemos utilizar el edito Thonny para ejecutar los siguientes ejemplos 
-
-### Usando botones/pulsadores
-
-Vamos ahora a conectar un botón y a detectar cuando está pulsado
-
-![Botón](./images/button.png)
-
-Y el programa es muy sencillo también
-
-```python
-from gpiozero import Button # importamos los modulos necesarios
-
-button = Button(2) # Declaramos pulsador conectado al GPIO 2
-
-button.wait_for_press() # Espera hasta que se pulse el boton
-print('Me has pulsado') # Nos informa de que se ha pulsado
-```
-
-[Código](https://github.com/javacasm/RaspberryOnline/blob/master/codigo/Test_boton.py)
-
-Fácilmente podemos mezclar los dos ejemplos, haciendo que el led se encienda durante un tiempo cuando pulsemos
-
-```python
-	from gpiozero import LED, Button # importamos modulos necesarios
-	from time import sleep
-
-	led = LED(17)  # declaramos un led conectado al GPIO 17
-	button = Button(2) # Declaramos un pulsador conectado al GPIO 2
-
-	button.wait_for_press()  	# Espera hasta que se pulse el boton
-	led.on()					# Encendemos el led
-	sleep(3) 					# Esperamos 3 segundos
-	led.off()					# Apagamos el led
-	```
-
-Ya tenemos todo lo necesario para montar un semáforo ¿te animas?
+[Vídeo sobre etiquetas en los GPIO de Raspberry](https://youtu.be/9UiZ7m6UacM)
 
 ### Usos de los GPIOs
+
+¿Para qué podemos usar los GPIO?
 
 * Encender apagar LEDs (no podemos aspirar a encender nada de mayor potencia directamente). Estas son las salidas digitales, capaces de estar en estado alto o bajo.
 * Algunos de estos pines pueden generar PWM (modulación por ancho de pulso) protocolo que usan los servos.
@@ -127,8 +74,73 @@ Raspberry.
 
 Para identificar más fácilmente los pines recordad que podemos usar el truco de las etiquetas del que ya hablamos
 
-INTEGRAR LO QUE VALGA
 
+## Manejo basico de los pines
+
+Vamos a hacer ahora algunos montajes básicos
+
+
+### Encendiendo un led
+
+Necesitaremos un Led y una resistencia de 220Ohmios (o 330) 
+Vamos conectarlos de la siguiente manera
+
+![Led](./images/led-gpio17.png)
+
+El programa es muy sencillo
+
+```python
+from gpiozero import LED  # importamos los modulos necesarios
+from time import sleep
+
+red = LED(17)  	# declaramos un led conectado al GPIO 17
+
+while True:  	# Repetimos en bucle para siempre
+	red.on() 	# Encendemos el led
+	sleep(1)	# Esperamos 1 segundo
+	red.off()	# Apagamos el led
+	sleep(1)	# Esperamos otro segundo
+```
+
+[Código](https://github.com/javacasm/RaspberryOnline2ed/blob/master/codigo/test_led.py)
+
+Podemos utilizar el edito Thonny para ejecutar los siguientes ejemplos 
+
+### Usando botones/pulsadores
+
+Vamos ahora a conectar un botón y a detectar cuando está pulsado
+
+![Botón](./images/button.png)
+
+Y el programa es muy sencillo también
+
+```python
+from gpiozero import Button # importamos los modulos necesarios
+
+button = Button(2) # Declaramos pulsador conectado al GPIO 2
+
+button.wait_for_press() # Espera hasta que se pulse el boton
+print('Me has pulsado') # Nos informa de que se ha pulsado
+```
+
+[Código](https://github.com/javacasm/RaspberryOnline2ed/blob/master/codigo/Test_boton.py)
+
+Fácilmente podemos mezclar los dos ejemplos, haciendo que el led se encienda durante un tiempo cuando pulsemos
+
+```python
+from gpiozero import LED, Button # importamos modulos necesarios
+from time import sleep
+
+led = LED(17)  # declaramos un led conectado al GPIO 17
+button = Button(2) # Declaramos un pulsador conectado al GPIO 2
+
+button.wait_for_press()  	# Espera hasta que se pulse el boton
+led.on()					# Encendemos el led
+sleep(3) 					# Esperamos 3 segundos
+led.off()					# Apagamos el led
+```
+
+Ya tenemos todo lo necesario para montar un semáforo ¿te animas?
 
 
 ## GPIO
@@ -171,9 +183,7 @@ pinout
 
 ![gpiozero pinout command](./images/gpiozero-pinout.png)
 
-## Usando sensores analógicos
 
-https://projects.raspberrypi.org/en/projects/physical-computing/13
 
 ## Alimentación
 
