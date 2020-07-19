@@ -133,7 +133,7 @@ Ahora ya podemos hacer robót como estos
 
 Un servomotor es un tipo de motor que sólo realiza movimientos angulares entre 0 y 180 grados (existen algunos modelos que se llaman trucados o de rotación continua pero no vamos a tratar aquí)
 
-Una de las grandes ventajas de los servos es que incluyen su propio contolador con lo que sólo necesitamos alimentarlos y una señal de control
+Una de las grandes ventajas de los servos es que incluyen su propio controlador con lo que sólo necesitamos alimentarlos y una señal de control
 
 ![Servomotor](./images/Micro-servo.jpg)
 
@@ -180,6 +180,9 @@ Esta placa nos permite controlar un típico robot de 2 motores de manera muy sen
 	* El funcionamiento de los motores hace que estos generen al acelerar unas corrientes de inducción de sentido opuesto a las que les aplicamos para funcionar y que de no ser suprimidas podrían dañar la electrónica a la que están conectados.
 
 En la [web de RaspiRobot](https://github.com/simonmonk/raspirobotboard/wiki) vemos instrucciones de montaje
+
+[![Vídeo: Raspirobot - Controlando robots con Raspberry](https://img.youtube.com/vi/FjjP8007DXA/0.jpg)](https://youtu.be/FjjP8007DXA)
+
 
 [Vídeo: Raspirobot - Controlando robots con Raspberry](https://youtu.be/FjjP8007DXA?list=PLDxBiw1MlK6SqyPGhhox9WlsximiNrcgK)
 
