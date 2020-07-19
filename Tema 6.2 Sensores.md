@@ -42,11 +42,13 @@ while True:
     time.sleep(1) 
 ```
 
-[Código](test_ds18x20.py)
+[Código](https://github.com/javacasm/RaspberryOnline2ed/blob/master/codigo/test_ds18x20.py)
 
-### DHT11
+### Sensores de temperatura y humedad DHT: DHT22
 
-Vamos a hacer ahora un montaje con un conocido sensor de humedad y temperatura como es el DHT22.
+Vamos a hacer ahora un montaje con un conocido sensor de humedad y temperatura como es el DHT22. Lo mismo sería aplicable a su hermano pequeño el DHT11
+
+![DHT11 y DHT22](./images/DHT11_DHT22.png)
 
 Vamos a hacerlo usando un módulo específico que existe para [este sensor](https://github.com/adafruit/Adafruit_Python_DHT) 
 
@@ -60,21 +62,24 @@ Instalamos el módulo de Adafruit para sensores DHT
 pip3 install Adafruit_DHT
 ```
 
-El programa no puede ser más sencillo
+El [programa](https://github.com/javacasm/RaspberryOnline2ed/blob/master/codigo/test_dht22.py) no puede ser más sencillo
 
 ```python
-#!/usr/bin/python
+#!/usr/bin/python3
 import sys
 import Adafruit_DHT as dht
 import time
+
 
 sensor = dht.DHT22 # Podría ser tambien un DH11
 pin = 4
 while True:
     humedad, temperatura = dht.read_retry(sensor, pin) # recuperamos los valores del sensor
-    print('Temp={0:0.1f} ºC,  Hum={1:0.1f} %'.format(temperatura, humedad))
-    time.sleep(5) # esperamos 5 segundos
-
+    if humedad != None and temperatura != None:
+        print('Temp={0:0.1f} ºC,  Hum={1:0.1f} %'.format(temperatura, humedad))
+        time.sleep(5) # esperamos 5 segundos
+    else:
+        print('Error de conexión. Verifique la conexiona al pin {}'.format(pin))
 ```
 
 
