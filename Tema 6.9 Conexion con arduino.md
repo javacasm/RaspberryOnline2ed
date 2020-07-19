@@ -1,6 +1,6 @@
 ## Conexión con Arduino
 
-Anteriormente vimos que Arduino y Raspberry Pi son perfecgamente complementarios.
+Anteriormente vimos que Arduino y Raspberry Pi son perfectamente complementarios.
 
 Por tanto el conectarlos de manera que ambos puedan trabajar juntos parece que es la mejor idea.
 
