@@ -7,7 +7,7 @@ Nuestra Raspberry no dispone de módulo ADC por lo que para leer valores analóg
 
 ### ADC con MCP3008
 
-Otro opción es usar un chip que integre ADCs, como es el MCP3008 que nos proporciona 8 channels de 10bits y utiliza conexión SPI (debemos activarla en la configuración de la Raspberry)
+Otro opción es usar un chip que integre ADCs, como es el MCP3008 que nos proporciona 8 canales de 10bits y utiliza conexión SPI (debemos activarla en la configuración de la Raspberry)
 
 La conexión SPI es algo complicada que la I2C, pero tiene la ventaja de una mayor velocidad de transferencia de datos:
 
