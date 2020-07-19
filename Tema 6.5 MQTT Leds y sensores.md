@@ -1,5 +1,6 @@
 ## MQTT y python
 
+
 Usaremos el módulo  **paho-mqtt** que permite tanto publicar como suscribirse a topics.
 
 ```sh
@@ -40,4 +41,6 @@ Podemos probarlo publicando mensajes con el topi adecuado
 ```sh
 mosquitto_pub -h 192.168.1.93 -t "client/led" -m "Blink"
 ```
-TODO: ejemplo de envio de datos de sensores
+
+Con todo lo visto sería sencillo enviar y recibir datos de sensores usando MQTT
+
