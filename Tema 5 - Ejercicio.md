@@ -1,4 +1,7 @@
 # Ejercicio Tema 5
 
-Escribe algún programa sencillo, ya sea con Scratch, python o shell. Si no te atreves a programarlo, puedes copiar alguno de los ejemplos que se ven en el texto.
+Utiliza alguna de las herramientas de programación que hemos utilizado: scratch, python o shell y escribe algún programa sencillo.
+
+No tiene que ser nada complejo pero al menos algo original.
+
 Adjunta una captura de pantalla y el código utilizado.
