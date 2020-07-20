@@ -38,7 +38,7 @@ Vamos a ver cómo hacer todo el proceso manualmente para entender los pasos o po
 * Formatear tarjeta ([Formatter4](http://www.sdcard.org/downloads/formatter_4/))
 * Descargamos la imagen del sistema que queramos desde la [página de descargas (Downloads) de la web de Raspberry.org](http://www.raspberrypi.org/downloads)
 * Si usamos una imagen tipo Noobs, basta con que descomprimamos el contenido del fichero zip en la tarjeta SD
-* Si es una imagen (fichero tipo img o iso) lo grabamos con Imager o por ejemplo con la herramienta multiplataforma Etcher (Windows, OsX y Linux) para instalar imagenes https://www.balena.io/etcher/
+* Si es una imagen (fichero tipo img o iso) lo grabamos con Imager o por ejemplo con la herramienta multiplataforma Etcher (Windows, OsX y Linux) para instalar imágenes https://www.balena.io/etcher/
 
 	![Etcher](./images/etcher.io.png)
 
