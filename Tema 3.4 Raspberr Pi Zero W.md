@@ -68,7 +68,7 @@ PAra ello basta con crear un fichero vacío llamado **"ssh"** en directorio raí
     y añadiendo el siguiente texto
     ```
     network={
-            ssid="ssidDelaRedjazzBajo_plus"
+            ssid="ssidDelaRed"
             psk="contraseña"
     }
     ```
