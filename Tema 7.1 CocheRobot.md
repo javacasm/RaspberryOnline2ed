@@ -13,11 +13,73 @@ A veces no interesa controlar varios motores y servos desde una misma placa.
 
 ## Placa Adafruit
 
+
 [Producto](https://www.adafruit.com/product/2348)
+
+
 
 ![Placa](https://cdn-shop.adafruit.com/970x728/2348-06.jpg)
 
+
+La placa DC+Stepper Motor HAT de Adafruit para  Raspberry Pi es perfecta para proyectos donde se necesita mucho movimiento y pude controlar hasta  4 motores DC o  2 Stepper con control total de velocidad usando PWM.
+
+Utiliza 4 controladores puentes en H TB6612 capaces de manejar hasta 1.2A con voltajes entre 5 y 12V. Se controla por I2C lo que nos permite poner hasta 32 de ellas conectadas entre sí.
+
+### Conexiòn
+
+Conectaremos los 4 motores y la alimentación
 ![adafruit_products_raspi_motor_hat_dc_m1_bb.jpg](./images/adafruit_products_raspi_motor_hat_dc_m1_bb.jpg)
+
+
+![Conexiones de los motores y la batería](./images/ConexionMotoresBat.jpg)
+
+Es muy importante que usemos una alimentación independiente para los motores y para la Raspberry. Los motores piden mucha corriente y podrían dar lugar a que la Raspberry se apagara.
+
+Usaremos para la alimentación de los motores 2 baterías lipo 18650, que además tiene un interruptor y que nos va a permitir apagar los motores cuando queramos que el robot no se mueva.
+
+### Instalación
+
+Necesitamos que el drive I2C esté activado. Si no es así lo haremos desde la configuración.
+
+Instalamos el módulo python de Adafruit para controlar el Motor Hat
+
+```sh
+pip3 install adafruit-circuitpython-motorkit
+```
+
+que instalará todas las dependencias necesarias.
+
+Veamos un ejemplo sencillo que nos va permitir comprobar que el conexionado es correcto y la posición de cada motor:
+
+```python
+
+# https://learn.adafruit.com/adafruit-dc-and-stepper-motor-hat-for-raspberry-pi?view=all
+import time
+from adafruit_motorkit import MotorKit
+kit = MotorKit()
+
+print('motor1')
+kit.motor1.throttle = 1.0
+time.sleep(5)
+kit.motor1.throttle = 0
+
+print('motor2')
+kit.motor2.throttle = 1.0
+time.sleep(5)
+kit.motor2.throttle = 0
+
+print('motor3')
+kit.motor3.throttle = 1.0
+time.sleep(5)
+kit.motor3.throttle = 0
+
+print('motor4')
+kit.motor4.throttle = 1.0
+time.sleep(5)
+kit.motor4.throttle = 0
+
+```
+
 
 ## Sensor de distancia (ultrasonidos)
 
@@ -98,6 +160,9 @@ Ahora conectamos un teclado, ratón y monitor  para una primera configuración:
 * Activamos: SSH. VNC, Cámara, I2C, SPI, UART, OneWire
 * Actualización
  
+ Como tanto la Raspberry como la cámra eran antiguas he hecho una actualización de los firmwares, que han solucionado un problema que tenia con la cámara
+
+ rpi-update
 
 ### Conexion remota
 
@@ -135,6 +200,9 @@ Ya tenemos la IP de raspicar 192.168.43.248 y ya nos podemos conectar con ssh o 
 * instalamos modulos
 pip3 install python-telegram-bot
 
+
+sudo apt install screen
+scre
 
 ## Versiones
 
