@@ -44,7 +44,13 @@ sudo rpi-update
 
 Hay que tener **cuidado con esta comando**: si actualizamos un firmware pero el sistema operativo no lo está y por tanto espera encontrar una versión anterior del firmware, podemos encontrarnos con que nuestra Raspberry se queda completamente bloqueada.
 
-Si tenemos una de las últimas versiones 
+A veces puede ocurrir que nos encontremos con que uncambio nos da algún problema que antes no teníamos. En ese caso podemos volver a la versión anterior estable haciendo lo siguiente
+
+```sh
+sudo apt-get update
+sudo apt-get install --reinstall libraspberrypi0 libraspberrypi-{bin,dev,doc} raspberrypi-bootloader
+sudo reboot
+```
 
 #### Actualización de una versión a la siguiente
 
