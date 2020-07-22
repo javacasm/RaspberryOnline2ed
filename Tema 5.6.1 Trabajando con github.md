@@ -133,5 +133,7 @@ Ahora ejecutamos los scripts que queramos y cuando queramos desconectarnos pulsa
 
 Cuando queremos recuperar esta sesión hacemos **screen -R** y volvemos a conectarnos
 
-Realmente el comando **screen** es mucho más potente y nos permite tener varias sesiones abiertas en una misma ventana de terminal, pudiendo cambiar entre ellos.
+Realmente el comando **screen** es mucho más potente y nos permite tener varias sesiones abiertas en una misma ventana de terminal, pudiendo cambiar entre ellos. Podemos crear una sesión nueva con **Ctrl-A Ctrl-C** pudiendo pasar de una sesión a la siguiente con **Ctrl-A Ctrl-N**
+
+
 
