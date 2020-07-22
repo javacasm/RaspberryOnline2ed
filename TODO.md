@@ -156,6 +156,14 @@ https://www.hackster.io/martin-mander/focus-the-pi-high-quality-camera-with-lego
 
 ¿sigue siendo recomendable?
 
+A veces puede ocurrir que nos encontremos con que uncambio nos da algún problema que antes no teníamos. En ese caso podemos volver a la versión anterior estable haciendo lo siguiente
+
+```sh
+sudo apt-get update
+sudo apt-get install --reinstall libraspberrypi0 libraspberrypi-{bin,dev,doc} raspberrypi-bootloader
+sudo reboot
+```
+
 ## SQLite
 
 [Node-red con sqlite](https://randomnerdtutorials.com/sqlite-with-node-red-and-raspberry-pi/)
@@ -203,3 +211,22 @@ https://github.com/javacasm/RaspberryAvanzado/blob/master/control-fan.md
 https://github.com/javacasm/RaspberryAvanzado/blob/master/Boton_encendido-apagado.md
 
 ## Revisar todos los c'odigos y que tenga fichero descargable
+
+## CAMARA
+Primero actualizar los firmwares con rpi-update
+
+https://raspberrypi.stackexchange.com/questions/13764/what-causes-enospc-error-when-using-the-raspberry-pi-camera-module
+
+The GitHub project page for the camera software mentions
+
+Error : ENOSPC displayed. Camera is probably running out of GPU memory. Check config.txt in the /boot/ folder. The gpu_mem option should be at least 128.
+
+This issue states that this error can occur due to a conflict with the drivers for 1-Wire (W1) modules if the modules are not loaded in the right order.
+
+This post on the RPi forums says the problem can be fixed by switching the pin used for 1-Wire to pin 18:
+
+/boot/cmdline.txt:
+dwc_otg.lpm_enable=0 console=ttyAMA0,115200 kgdboc=ttyAMA0,115200 console=tty1 root=/dev/mmcblk0p2 rootfstype=ext4 elevator=deadline rootwait bcm2708.w1_gpio_pin=18
+As of may 2016, the GPU_MEM=128 is no longer enough. Increasing it from 128 to 144 made the error go away.
+
+[Código app camara](https://github.com/raspberrypi/userland/tree/master/host_applications/linux/apps/raspicam)
