@@ -6,7 +6,7 @@
 ### Robot controlado con Raspberry
 
 Vamos a crear un robot controlado integramente por Raspberry: 
-* cámara con streaming
+* Cámara con streaming
 * sensor ultrasonidos 
 * 4 motores 
 * baterias
@@ -21,10 +21,10 @@ Vamos a crear un robot controlado integramente por Raspberry:
 ## Versiones
 
 V0: robot standar con movimiento normales
-V1: añadimos camara y sensores de ultrasonidos
+V1: sensores de temperatura y sensores de ultrasonidos
 Futuras versiones
 V2: añadimos ruedas onmi
-V3: sensores de temperatura y bateria (I2C)
+V3: añadimos camara y sensor de bateria (I2C)
 
 ### Equipo
 
@@ -176,8 +176,13 @@ Instalamos el módulo python de Adafruit para controlar el Motor Hat
 ```sh
 pip3 install adafruit-circuitpython-motorkit
 ```
-
 Que instalará todas las dependencias necesarias.
+
+### Primeras pruebas
+
+Vamos a hacer unas pruebas de cómo usar los motores usando el módulo de adafruit. Usaremos directamente la shell de python3 para ejecutar los comandos.
+
+Luego utilizaremos estas órdenes para hacer un pequeño script python de prueba.
 
 [![Vídeo: Primeras pruebas de control de motores con Raspicar](https://img.youtube.com/vi/38NAjn5tre0/0.jpg)](https://youtu.be/38NAjn5tre0)
 
@@ -319,9 +324,9 @@ robot.stop()
 
 ## Control remoto
 
-Vamos a crear una sencilla aplicación web que el mismo robot publicará en su web y que nos permitirá controlarlo fácilmente. Para ello usaremos flask, un módulo python que nos permite crear aplicaciones web de manera muy sencilla. La instalación y primeros pasos es muy sencilla y podermos verla en detalle en [este proyecto de Raspberry Pi org](https://projects.raspberrypi.org/en/projects/python-web-server-with-flask)
+Vamos a crear una sencilla aplicación web que el mismo robot publicará en su web y que nos permitirá controlarlo fácilmente. Para ello usaremos flask, un módulo python, que y usamos anteriormente y que nos permite crear aplicaciones web de manera muy sencilla. La instalación y primeros pasos es muy sencilla y podermos verla en detalle en [este proyecto de Raspberry Pi org](https://projects.raspberrypi.org/en/projects/python-web-server-with-flask)
 
-Instalamos
+Instalamos flask
 
 ```sh
 pip3 install flask
@@ -475,7 +480,16 @@ Nos conectamos a raspicar:5000
 
 Si quieres profundizar más, en [este enlace tienes un webApp mucho más sofisticada](http://www.tobias-weis.de/control-a-raspberrypi-robot-using-flask-and-a-mobile-browser/)
 
-## Sensor de distancia (ultrasonidos)
+
+## Añadiendo más electrónica
+
+Hemos soldado unos pines a la placa Motor Hat para poder conectar más componentes que ahora iremos añadiendo.
+
+La placa viene preparada para ello, proporcionando pines de alimentación a 5V y 3.3V y GND sufientes para muchos dispositivos
+
+![MotorHat con Pines](./images/MotorHatPines.jpg)
+
+### Sensor de distancia (ultrasonidos)
 
 Vamos a conectar ahora varios sensores de ultrasonido a raspiCar. Cada sensor tiene 4 pines: GND, Vcc, Echo y Trigger.
 
@@ -514,11 +528,17 @@ while True:
 
 ### Neopixels
 
+![NeoPixel](./images/neoPixel.jpg)
+
 Los neopixels son leds RGB que tienen la gran venaja de que se controlan con un único pin digital. Además podemos conectarlos entre sí de forma que se pueden manejar muchos de ellos con un único pin.
+
+Por ejemplo para controlar los 8 neopixels que vamos a conectar en forma de barra a raspiCar sólo necesitamos 1 pin pudiendo controlar el color RGB de cada uno de ellos.
+
+![Neopixels en acción](./images/neopixels.png)
 
 Se venden en muchos formatos, como las tiras, matrices, etc...
 
-Para usarlo necesitamos instalar la librería de adafruit
+Para usarlo en la Raspberry necesitamos instalar la librería de adafruit
 
 ```sh
 sudo pip3 install adafruit-circuitpython-neopixel
@@ -530,7 +550,7 @@ TODO: Imagen con rainbow
 
 TODO¡: video
 
-Un ejemplo típico que es casi obligatorio hacer cuando uno tiene varios leds es el llamado SCanner Larsson o la luz del coche fantástico o la luz de los Cylons
+Un ejemplo típico que es casi obligatorio hacer cuando uno tiene varios leds es el llamado SCanner Larson o la luz del coche fantástico o la luz de los Cylons
 
 ![knighriderkitt.gif](./images/knighriderkitt.gif)
 
@@ -577,6 +597,41 @@ Tenemos que tener cuidado de no ponerlo cerca de las baterías ni de los motores
 
 Incorporaremos los valores de temperatura, humedad y presión tanto en el bot de telegram como en la webApp para controlar a raspiCar
 
+Para integrar los valores en la webApp con flask tenemos que modificar tanto la plantila HTML index.html, donde añadiremos un lugar donde poner los valores y una referencia a cada uno de ellos en forma de parámetro. Añadiremos este bloque tras el mensaje de tipo H1
+
+```HTML
+<h2>Temp: {{ temperatura }}º </h2>
+<h2>Pres: {{ presion }} mmHg </h2>
+<h2>Humedad: {{ humedad }} % </h2>
+<h2> {{ fechaDatos }}</h2>
+```
+
+Ahora tenemos que hacer que la webApp obtenega estos datos del sensor, para lo que añadiremos este código antes de la creación del objeto app
+
+```python
+import smbus2
+import bme280
+
+port = 1
+address = 0x76 # usaremos la dirección que hemos encontrado
+bus = smbus2.SMBus(port)
+
+calibration_params = bme280.load_calibration_params(bus, address) # parámetros de compensación
+```
+y luego obteniendo los datos y pasándolo al renderizado de la template con estas líneas dentro del método index()
+
+```python
+   data = bme280.sample(bus, address, calibration_params)
+   fechaDatos = data.timestamp
+   temperatura = int(data.temperature)
+   presion = int(data.pressure)
+   humedad = int(data.humidity)
+   return render_template('./index.html', state_msg=state_msg, presion = presion, humedad = humedad, temperatura = tempe
+ratura, fechaDatos = fechaDatos)
+
+```
+De igual manera podríamos incluirlo dentro del bot de Telegram.
+
 ### Montaje final
 
 Nos queda un montaje así:
@@ -585,6 +640,8 @@ Nos queda un montaje así:
 
 Podemos descargar todo el código de raspiCar del [repositorio de github](https://github.com/javacasm/raspiCar)
 
+
+TODO: Vídeo con el resultado
 
 ## Referencias
 
