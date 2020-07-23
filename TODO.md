@@ -230,3 +230,7 @@ dwc_otg.lpm_enable=0 console=ttyAMA0,115200 kgdboc=ttyAMA0,115200 console=tty1 r
 As of may 2016, the GPU_MEM=128 is no longer enough. Increasing it from 128 to 144 made the error go away.
 
 [Código app camara](https://github.com/raspberrypi/userland/tree/master/host_applications/linux/apps/raspicam)
+
+### Flask
+
+### Videos sobre uso de VNC
