@@ -1,22 +1,152 @@
 # Robotica
 
+
 ![Robot con Raspberry](./images/RobotTop.jpg)
+
+### Robot controlado con Raspberry
+
+Vamos a crear un robot controlado integramente por Raspberry: 
+* cámara con streaming
+* sensor ultrasonidos 
+* 4 motores 
+* baterias
+* Sensor atmosférico
+* Publica los datos en su web que tambien permite controlar el movimiento
+* Acceso vía bot de Telegram
+
+[![Vídeo-Descripción de robot controlado por Raspberry Pi: Raspicar](https://img.youtube.com/vi/KNPiYSUemtU/0.jpg)](https://youtu.be/KNPiYSUemtU)
+
+[Vídeo-Descripción de robot controlado por Raspberry Pi: Raspicar](https://youtu.be/KNPiYSUemtU)
+
+## Versiones
+
+V0: robot standar con movimiento normales
+V1: añadimos camara y sensores de ultrasonidos
+Futuras versiones
+V2: añadimos ruedas onmi
+V3: sensores de temperatura y bateria (I2C)
+
+### Equipo
+
+Usaremos el siguiente equipamiento
+
+* Raspberry Pi 2
+* Adaptador wifi usb
+* Battery Shield. La principal característica es que carga mientras funciona. Sorprendemente muchos powerbank no lo hacen
+* Motor shield de Adafruit
+* 4 motores TT
+* 3 sensores ultrasonidos
+* Camara Raspberry v1.3
+* Caja para 2 x 18650 para los motores
+
+
+### Instalación
+
+Instalamos la versión mínima de Raspberry Pi OS, pero con escritorio para poder luego hacer pruebas con la cámara más fácilmente.
+
+Ahora conectamos un teclado, ratón y monitor  para una primera configuración:
+* Idioma
+* Zona horaria
+* Conexión al wifi: 
+    * Configuración del punto móvil del wifi que usaremos
+    * Configuración del wifi local
+* Activamos: SSH. VNC, Cámara, I2C, SPI, UART, OneWire
+* Actualización
+ 
+ Como tanto la Raspberry como la cámra eran antiguas he hecho una actualización de los firmwares, que han solucionado un problema que tenia con la cámara
+```sh
+ rpi-update
+```
+
+### Conexion remota
+
+Como vamos a necesitar conectarnos remotamente al robot, tanto para controlarlo como para hacer cambios en la programación, intentaremos hacer un entorno de desarrollo completo en la propia raspberry del robot, sin necesidad de un ordenadore externo, más que paa conectarnos por VNC o SSH.
+
+* Creamos una red wifi, preferiblemente con el móvil para poder acceder a internet al mismo tiempo
+* Mientras aún tenemos monitor y teclado conectamos a este wifi a  raspicar para que se conecte cuando esté visible.
+* Para encontrar la ip asignada a Raspicar, a partir de la ip del portátil o del móvil, imaginemos que es 192.168.43.134 hacemos
+```sh
+sudo nmap -sP 192.168.43.0-254
+```
+Así veremos las ips de los otros dispositivos conectados
+
+```
+Starting Nmap 7.60 ( https://nmap.org ) at 2020-07-20 16:50 CEST
+Nmap scan report for _gateway (192.168.43.1)
+Host is up (0.049s latency).
+MAC Address: 78:02:F8:24:9C:88 (Xiaomi Communications)
+Nmap scan report for raspicar (192.168.43.248)
+Host is up (0.054s latency).
+MAC Address: 44:33:4C:6E:09:AC (Shenzhen Bilian electronic)
+Nmap scan report for toshibaL (192.168.43.237)
+Host is up.
+Nmap done: 255 IP addresses (3 hosts up) scanned in 3.54 seconds
+```
+
+Ya tenemos la IP de raspicar 192.168.43.248 y ya nos podemos conectar con ssh o con vnc sin problema
+
+### Cambio de resolución del escritorio
+
+
+Cuando arrancamos una Raspberry Pi sin tener monitor conectado y la tenemos configurada para que se cree el escritorio gráfico suele crearse con una resolución pequeña.
+
+En el siguiente vídeo vamos a ver cómo hacer para modificar esa resolución. No hay más que entrar en Configuración de Raspberry -> Display y pulsar en Set Resolution
+
+[![Vídeo: Cambio resolución del escritorio de una Raspberry Pi](https://img.youtube.com/vi/RWX2UWwgP4I/0.jpg)](https://youtu.be/RWX2UWwgP4I)
+
+[Vídeo: Cambio resolución del escritorio de una Raspberry Pi](https://youtu.be/RWX2UWwgP4I)
+
+
+### Preparando el entorno
+
+Para facilitar la conexión hacemos lo siguiente:
+
+* Creamos las claves rsa (ssh-keygen -t rsa -b 4096 -C user@email.com)
+* Puesto  que vamos a trabajar directamente en la raspberry, las incluimos en github como ya vimos
+* Clonamos el repositorio base 
+* Creamos uno nuevo desde el que partir
+* Instalamos modulos y lo necesario para trabajar cómodamente.
+```sh
+pip3 install python-telegram-bot
+sudo apt install screen
+```
+
+### Algunos consejos para trabajar desde consola
+
+#### Editando ficheros de texto desde consola
+
+En muchas ocasiones cuando nos conectamos a nuestra Raspberry por SSH necesitamos editar un fichero de texto.
+
+Son muchos los editores disponibles, pero **nano** es de los más sencillos y potentes.
+
+En todo momento nos muestra en pantalla los comandos que tenemos disponibles, casi todos ellos combinaciones con la tecla Ctrl que se representa en la ayuda como '^` o con Alt que se representa como 'M'
+
+[![Vídeo: Uso de editor de ficheros de texto 'nano' desde consola](https://img.youtube.com/vi/MUJkxexd1LA/0.jpg)](https://youtu.be/MUJkxexd1LA)
+
+[Vídeo: Uso de editor de ficheros de texto 'nano' desde consola](https://youtu.be/MUJkxexd1LA)
+
+#### Trabajando en remoto con ssh en una Raspberry usando Github
+
+Cuando trabajamos directamente en consola en la Raspberry (conectado por ssh)  podemos aprovechar la sincronización con github para varias cosas:
+* Nos viene muy tener una manera de tener nuestros ficheros respaldados en algún otro sitio, además de en local
+* Podemos usar github como intercambio para así poder ediciones más complejas con un editor en un ordenador con entorno gráfico
+* Podemos usarlo para enviar ficheros de manera sencilla
+
+Vídeo: Trabajando en remoto con ssh en una Raspberry usando Github](https://youtu.be/L7VbhMHesZQ)
+
+[![Vídeo: Trabajando en remoto con ssh en una Raspberry usando Github](https://img.youtube.com/vi/L7VbhMHesZQ/0.jpg)](https://youtu.be/L7VbhMHesZQ)
+
+[Vídeo: Trabajando en remoto con ssh en una Raspberry usando Github](https://youtu.be/L7VbhMHesZQ)
+
 
 ### Motores y servos
 
-A veces no interesa controlar varios motores y servos desde una misma placa. 
+A veces no interesa controlar varios motores y servos desde una misma placa por eso vamos a utilizar una placa de Adafruit que nos da todo lo necesario para controlar 4 motores DC o 2 steppers
 
 
-## Controlando motores
-
-[Tutorial básico de motores](https://projects.raspberrypi.org/en/projects/physical-computing/14)
-
-## Placa Adafruit
-
+### Placa Adafruit
 
 [Producto](https://www.adafruit.com/product/2348)
-
-
 
 ![Placa](https://cdn-shop.adafruit.com/970x728/2348-06.jpg)
 
@@ -27,9 +157,9 @@ Utiliza 4 controladores puentes en H TB6612 capaces de manejar hasta 1.2A con vo
 
 ### Conexiòn
 
-Conectaremos los 4 motores y la alimentación
-![adafruit_products_raspi_motor_hat_dc_m1_bb.jpg](./images/adafruit_products_raspi_motor_hat_dc_m1_bb.jpg)
+Conectaremos los 4 motores y la alimentación:
 
+![adafruit_products_raspi_motor_hat_dc_m1_bb.jpg](./images/adafruit_products_raspi_motor_hat_dc_m1_bb.jpg)
 
 ![Conexiones de los motores y la batería](./images/ConexionMotoresBat.jpg)
 
@@ -47,7 +177,12 @@ Instalamos el módulo python de Adafruit para controlar el Motor Hat
 pip3 install adafruit-circuitpython-motorkit
 ```
 
-que instalará todas las dependencias necesarias.
+Que instalará todas las dependencias necesarias.
+
+[![Vídeo: Primeras pruebas de control de motores con Raspicar](https://img.youtube.com/vi/38NAjn5tre0/0.jpg)](https://youtu.be/38NAjn5tre0)
+
+[Vídeo: Primeras pruebas de control de motores con Raspicar](https://youtu.be/38NAjn5tre0)
+
 
 Veamos un ejemplo sencillo que nos va permitir comprobar que el conexionado es correcto y la posición de cada motor:
 
@@ -81,132 +216,386 @@ kit.motor4.throttle = 0
 ```
 
 
+Vamos a construir ahora un sencillo módulo para facilitarnos los movimientos donde tendremos unos métodos para los movimientos básicos:
+
+```python
+
+import time
+from adafruit_motorkit import MotorKit
+import utils
+
+"""
+Posición de los motores en el robot. 
+Las flechas indican el sentido de giro con el cableado actual
+   -------
+^4|       |3^
+  |       |
+  |       |
+v1|       |2v
+   -------
+
+"""
+
+v = '0.3'
+
+# niveles de movimiento, la velocidad depende del voltaje
+throttle_max = 1
+throttle_med = 0.5
+throttle_min = 0.3
+throttle_stop = 0
+
+def backward(speed):
+    global kit
+    utils.myDebug('backward ' + str(speed))
+    kit.motor4.throttle = -1 * speed
+    kit.motor3.throttle = -1 * speed
+    kit.motor2.throttle = speed
+    kit.motor1.throttle = speed
+
+def forward(speed):
+    global kit
+    utils.myDebug('forward ' + str(speed))
+    kit.motor4.throttle = speed
+    kit.motor3.throttle = speed
+    kit.motor2.throttle = -1 * speed
+    kit.motor1.throttle = -1 * speed 
+
+def stop():
+    global kit
+    utils.myDebug('stop')
+    kit.motor4.throttle = 0
+    kit.motor3.throttle = 0
+    kit.motor2.throttle = 0
+    kit.motor1.throttle = 0
+
+def right(speed):
+    global kit
+    utils.myDebug('right ' + str(speed))
+    kit.motor4.throttle = -1 * speed
+    kit.motor3.throttle = speed
+    kit.motor2.throttle = -1 * speed
+    kit.motor1.throttle = speed
+
+def left(speed):
+    global kit
+    utils.myDebug('left ' + str(speed))
+    kit.motor4.throttle =  speed
+    kit.motor3.throttle = -1 * speed
+    kit.motor2.throttle =  speed
+    kit.motor1.throttle = -1 * speed
+
+kit = None
+
+def init():
+    global kit
+    utils.myDebug('Robot.py ' + v)
+    kit  = MotorKit()
+
+```
+
+Ahora hacer un sencillo test en el que el robot se mueve y que podemos hacer con un lenguaje de más alto nivel:
+
+```python
+import robot
+import time
+
+espera = 2 
+
+robot.init()
+for i in range(0,4):
+    robot.forward(robot.throttle_max)
+    time.sleep(espera)
+    robot.right(robot.throttle_max)
+    time.sleep(espera/2)
+robot.stop()
+```
+
+[![Vídeo: Prueba de movimiento de Raspicar](https://img.youtube.com/vi/L6UaJdMvelY/0.jpg)](https://youtu.be/L6UaJdMvelY)
+
+
+[Vídeo: Prueba de movimiento de Raspicar](https://youtu.be/L6UaJdMvelY)
+
+
+
+## Control remoto
+
+Vamos a crear una sencilla aplicación web que el mismo robot publicará en su web y que nos permitirá controlarlo fácilmente. Para ello usaremos flask, un módulo python que nos permite crear aplicaciones web de manera muy sencilla. La instalación y primeros pasos es muy sencilla y podermos verla en detalle en [este proyecto de Raspberry Pi org](https://projects.raspberrypi.org/en/projects/python-web-server-with-flask)
+
+Instalamos
+
+```sh
+pip3 install flask
+```
+creamos la carpeta de aplicación webApp
+
+```sh
+mkdir webApp
+```
+
+y dentro creamos una versión de prueba de la aplicación en el fichero app.py
+
+```python
+from flask import Flask
+
+app = Flask('Primera prueba de flask')
+
+@app.route('/') # la asociamos al directorio raiz del servidor web
+def index():
+    return 'Hola Flask!'
+
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0') # por defecto usará la ip y el puerto 5000
+
+```
+
+La arrancamos con 
+
+```sh
+python3 app.py
+```
+
+Y nos avisa de que está funcionando
+```
+ * Serving Flask app "Primera prueba de flask" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 105-828-726
+```
+
+Probamos desde otro ordenador apuntando un navegador web a http://raspicar:5000
+
+![HelloFlask.png](./images/HelloFlask.png)
+
+Vamos a hacer ahora una sencilla web que nos va a permitir controlar a raspiCar. Tendremos un fichero para app en flask y otro html que mezclará el aspecto con un poco de javascript para hacer que los botones envien las peticiones a la app
+
+Podemos resumirla estructura de la aplicación en lo siguiente:
+* Cada botón/control que usemos tiene 3 partes:
+    * Button o gadget html
+    * Ruta en flask para cada url
+    * Código javascript que enlace la interracción del usuario con el botón y la url correspondiente.
+
+La aplicación flask es esta, hecha a partir del este [excelente tutorial de Sergey Koba de Mobidev](https://mobidev.biz/blog/building-pluto-the-robot-part-iii-web-server)
+
+```python
+from flask import Flask, render_template, request, Response
+
+import robot
+
+import time
+
+app = Flask('Robot control')
+state_msg = 'Hola desde raspiCar '
+robot.init()
+
+@app.route('/')
+def index():  # Por defecto mostramos la página index.html
+   return render_template('index.html', state_msg=state_msg)
+
+@app.route('/move/<direction>') # al acceder a url /move/dirección se dispara este método
+def move(direction):
+    if direction == 'forward':
+       robot.forward(0.5)
+    if direction == 'backward':
+       robot.backward(0.5)
+    if direction == 'left':
+       robot.left(0.5)
+    if direction == 'right':
+       robot.right(0.5)
+    return '{}'
+
+@app.route('/stop')  # direccion para el boton de parada
+def stop():
+    robot.stop()
+    return '{}'
+
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0')
+```
+
+Crearemos un fichero html que mezcla el aspecto con el javascript de los botones. Lo llamaremos index.html y lo pondremos en el dirección templates junto a fichero de la app flask
+
+```HTML
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>raspiCar</title>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" 
+integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" 
+crossorigin="anonymous"></script>
+<head>
+<body>
+<h1>{{ state_msg }}<h1>
+
+<button type="button" class="btn btn-default" id="move-left"> < </button>
+<button type="button" class="btn btn-default" id="move-forward"> ^ </button>
+<button type="button" class="btn btn-default" id="move-backward"> v </button>
+<button type="button" class="btn btn-default" id="move-right"> > </button>
+<button type="button" class="btn btn-danger" id="stop">Stop</button>
+
+<script>
+    $('#stop').on('click', function(){
+        $.get('/stop');
+    });
+    $('#move-forward').on('click', function(){
+        $.get('/move/forward');
+    });
+    $('#move-backward').on('click', function(){
+        $.get('/move/backward');
+    });
+    $('#move-left').on('click', function(){
+        $.get('/move/left');
+    });
+    $('#move-right').on('click', function(){
+        $.get('/move/right');
+    });
+</script>
+</body>
+</html>
+```
+Ejecutamos la app y vamos a probar desde un móvil
+
+```sh
+python3 robotApp.py
+```
+
+Nos conectamos a raspicar:5000
+
+![WebRaspiCArpng](./images/WebRaspiCAr.png)
+
+[![Vídeo: Control remoto desde el móvil de robot con Raspberry raspiCar](https://img.youtube.com/vi/1X9-mXB0-e8/0.jpg)](https://youtu.be/1X9-mXB0-e8)
+
+[Vídeo: Control remoto desde el móvil de robot con Raspberry raspiCar](https://youtu.be/1X9-mXB0-e8)
+
+Si quieres profundizar más, en [este enlace tienes un webApp mucho más sofisticada](http://www.tobias-weis.de/control-a-raspberrypi-robot-using-flask-and-a-mobile-browser/)
+
 ## Sensor de distancia (ultrasonidos)
+
+Vamos a conectar ahora varios sensores de ultrasonido a raspiCar. Cada sensor tiene 4 pines: GND, Vcc, Echo y Trigger.
+
+En este montaje vemos como se recomienda conectarlos a la Raspberry, usando un divisor de tensión para el pin Echo con el fin de no sobrepasar los 3V
 
 ![Montaje sensor ultrasonidos](https://projects-static.raspberrypi.org/projects/physical-computing/225a16929b40a969453040649df87044fc67e670/en/images/wiring-uds.png)
 
+Vamos a conectar 2 sensores en los siguientes pines
+
+||Ultrasonido 1|Ultasonido 2
+|---|---|---
+|Trig|4|5
+|Echo|17|6
 
 
 ```python
-# Test de sensor de distancia con ultrasonidos
-
 from gpiozero import DistanceSensor
-ultrasonic = DistanceSensor(echo=17, trigger=4)
-ultrasonic.max_distance = 2
+import time
+ultrasonic1 = DistanceSensor(echo = 17, trigger = 4)
+ultrasonic1.max_distance = 2
+
+ultrasonic2 = DistanceSensor(echo = 6, trigger = 5)
+ultrasonic2.max_distance = 2
+
+def distance2cm(u):
+    return int(u.distance * 100)
+
 while True:
-    print(ultrasonic.distance)
+    print(distance2cm(ultrasonic1), ' ' , distance2cm(ultrasonic2))
+    time.sleep(0.2)
 
 ```
 
 [Tutorial de sensor de distancia con ultrasonidos](https://projects.raspberrypi.org/en/projects/physical-computing/12)
 
+
+### Neopixels
+
+Los neopixels son leds RGB que tienen la gran venaja de que se controlan con un único pin digital. Además podemos conectarlos entre sí de forma que se pueden manejar muchos de ellos con un único pin.
+
+Se venden en muchos formatos, como las tiras, matrices, etc...
+
+Para usarlo necesitamos instalar la librería de adafruit
+
+```sh
+sudo pip3 install adafruit-circuitpython-neopixel
+```
+
+Para probarlo podemos usar el ejemplo de Adafruit, con solo cambiar el pin al que lo conectamos y el número de leds. En [este ejemplo](https://github.com/javacasm/RaspberryOnline2ed/blob/master/codigo/test_neopixels.py) usamos 8 leds conectados al pin 18 (no se pueden usar cualquier pin)
+
+TODO: Imagen con rainbow
+
+TODO¡: video
+
+Un ejemplo típico que es casi obligatorio hacer cuando uno tiene varios leds es el llamado SCanner Larsson o la luz del coche fantástico o la luz de los Cylons
+
+![knighriderkitt.gif](./images/knighriderkitt.gif)
+
+Este es [un ejemplo](https://github.com/javacasm/RaspberryOnline2ed/blob/master/codigo/test_larsson.py) de cómo hacerlo
+
+```python
+
+import time
+import board
+import neopixel
+
+pixel_pin = board.D18
+
+num_pixels = 8
+
+ORDER = neopixel.GRB
+
+pixels = neopixel.NeoPixel(
+    pixel_pin, num_pixels, brightness=0.2, auto_write=False, pixel_order=ORDER
+)
+
+pausa = 0.05
+while True:
+    for i  in  range(0, num_pixels):
+        pixels.fill((0 , 0, 0))
+        pixels[i] = (255,0,0)
+        pixels.show()
+        time.sleep(pausa)
+    for i  in  range(num_pixels - 1 , -1, -1):
+        pixels.fill((0 , 0, 0))
+        pixels[i] = (255,0,0)
+        pixels.show()
+        time.sleep(pausa)
+
+```
+
+TODO: vídeo scanner larsson
+
+### Sensor atmosférico: BME280
+
+Añadimos un sensor atmosférico I2C bme280 como ya vimos anteriormente.
+
+Tenemos que tener cuidado de no ponerlo cerca de las baterías ni de los motores pues tomaría una temperatura incorrecta
+
+Incorporaremos los valores de temperatura, humedad y presión tanto en el bot de telegram como en la webApp para controlar a raspiCar
+
+### Montaje final
+
+Nos queda un montaje así:
+
+![RaspiCar_bb.png](./images/RaspiCar_bb.png)
+
+Podemos descargar todo el código de raspiCar del [repositorio de github](https://github.com/javacasm/raspiCar)
+
+
 ## Referencias
 
 [Tutorial placa adafruit](https://learn.adafruit.com/adafruit-dc-and-stepper-motor-hat-for-raspberry-pi?view=all)
 
-### Robot con placa adafruit
-
 [Robot sencillo con placa adafruit](https://learn.adafruit.com/simple-raspberry-pi-robot?view=all)
-
-
-### Robot sencillo
 
 ![Robot sencillo con video](https://hackster.imgix.net/uploads/attachments/376456/img_20171108_192721_aAocqmt3yt.jpg?auto=compress%2Cformat&w=900&h=675&fit=min)
 
-
 [Raspberry Pi Web-controlled Robot with video](https://www.hackster.io/jrance/raspberry-pi-web-controlled-robot-with-video-c1b723)
-
-
-### Pi Wars 2018
-
-![](http://www.piandchips.co.uk/wp-content/uploads/2018/04/IMG_66491-300x225.jpg)
 
 [Pi Wars 2018](http://www.piandchips.co.uk/uncategorized/pi-wars-2018-the-evolution-of-x-bot-360/)
 
 
-### Robot controlado con Raspberry
-
-* Elegoo con arduino controlado por comandos
-* robot controlado electricamente: 
-    * cámara con streaming
-    * sensor ultrasonidos 
-    * 4 motores 
-    * baterias
-    * Sensor atmosférico
-    * Publica los datos en su web que tambien permite controlar el movimiento
-
-### Equipo
-
-* Raspberry Pi 2
-* Adaptador wifi usb
-* Battery Shield TODO:Buscar enlace. La principal caracter'isticas es que carga mientras funciona. Sorprendemente muchos powerbank no lo hacen
-* Motor shield de Adafruit
-* 4 motores TT
-* 3 sensores ultrasonidos
-* Camara Raspberry v1.3
-* Caja para 2 x 18650 para los motores
-* ¿USB de almacenamiento?
-
-### Instalación
-
-Instalamos la versión mínima de Raspberry Pi OS, pero con escritorio para poder luego hacer pruebas con la cámara más fácilmente.
-
-Ahora conectamos un teclado, ratón y monitor  para una primera configuración:
-* Idioma
-* Zona horaria
-* Conexión al wifi: 
-    * Configuración del punto móvil del wifi que usaremos
-    * Configuración del wifi local
-* Activamos: SSH. VNC, Cámara, I2C, SPI, UART, OneWire
-* Actualización
- 
- Como tanto la Raspberry como la cámra eran antiguas he hecho una actualización de los firmwares, que han solucionado un problema que tenia con la cámara
-
- rpi-update
-
-### Conexion remota
-
-Creamos una red wifi, preferiblemente con el móvil para poder acceder a internet al mismo tiempo, a la previamente hemos conectado raspicar para que se conecte cuando esté visible
-
-vemos la ip del portátil o del móvil, imaginemos que es 192.168.43.134 y a partir de ella hacemos
-```sh
-sudo nmap -sP 192.168.43.0-254
-```
-Así veremos las ips de los otros dispositivos conectados
-
-```
-
-Starting Nmap 7.60 ( https://nmap.org ) at 2020-07-20 16:50 CEST
-Nmap scan report for _gateway (192.168.43.1)
-Host is up (0.049s latency).
-MAC Address: 78:02:F8:24:9C:88 (Xiaomi Communications)
-Nmap scan report for raspicar (192.168.43.248)
-Host is up (0.054s latency).
-MAC Address: 44:33:4C:6E:09:AC (Shenzhen Bilian electronic)
-Nmap scan report for toshibaL (192.168.43.237)
-Host is up.
-Nmap done: 255 IP addresses (3 hosts up) scanned in 3.54 seconds
-```
-
-Ya tenemos la IP de raspicar 192.168.43.248 y ya nos podemos conectar con ssh o con vnc sin problema
-
-
-### Preparando el entorno
-
-* Creamos las claves rsa
-* Puesto  que vamos a trabajar directamente en la raspberry, las incluimos en github
-* Clonamos el repositorio base 
-* creamos uno nuevo desde el que partir
-* instalamos modulos
-pip3 install python-telegram-bot
-
-
-sudo apt install screen
-scre
-
-## Versiones
-
-V0: robot standar con movimiento normales
-V1: añadimos camara y sensores de ultrasonidos
-V2: añadimos ruedas onmi
-V3: sensores de temperatura y bateria (I2C)
