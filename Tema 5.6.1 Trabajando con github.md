@@ -136,4 +136,6 @@ Cuando queremos recuperar esta sesión hacemos **screen -R** y volvemos a conect
 Realmente el comando **screen** es mucho más potente y nos permite tener varias sesiones abiertas en una misma ventana de terminal, pudiendo cambiar entre ellos. Podemos crear una sesión nueva con **Ctrl-A Ctrl-C** pudiendo pasar de una sesión a la siguiente con **Ctrl-A Ctrl-N**
 
 
+[![Vídeo: Usando el comando 'screen' para dejar un script en ejecución (background)](https://img.youtube.com/vi/_BcIQ1eEFQs/0.jpg)](https://youtu.be/_BcIQ1eEFQs)
 
+[Vídeo: Usando el comando 'screen' para dejar un script en ejecución (background)](https://youtu.be/_BcIQ1eEFQs)
