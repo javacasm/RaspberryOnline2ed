@@ -1,3 +1,10 @@
+"""
+Hacemos un scanner Larson (luz del coche fantástico) con 8 neopixeles
+
+CC by SA @javacasm
+Julio 2020
+"""
+
 import time
 import board
 import neopixel
