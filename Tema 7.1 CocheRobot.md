@@ -630,6 +630,9 @@ y luego obteniendo los datos y pasándolo al renderizado de la template con esta
 ratura, fechaDatos = fechaDatos)
 
 ```
+
+![webApp con datos de atmosféricos](./images/webAppTemperatura.png)
+
 De igual manera podríamos incluirlo dentro del bot de Telegram.
 
 ### Montaje final
