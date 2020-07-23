@@ -202,13 +202,21 @@ Nos permitirá saber cómo de llenos están los discos en el ordenadore raspi4
 ssh pi@raspi4 df -h
 ```
 
-
-
 ### VNC
 
 VNC es un protocolo que nos permite acceder remotamente al escritorio de otra máquina.
 
-En las nuevas versiones de Raspbian podemos activar VNC desde la configuración (o desde raspi-config).
+En las nuevas versiones de Raspbian podemos activar VNC desde la configuración (o desde raspi-config), en el apartado de Interfaces
+
+### Cambio de resolución del escritorio
+
+Cuando arrancamos una Raspberry Pi sin tener monitor conectado y la tenemos configurada para que se cree el escritorio gráfico suele crearse con una resolución pequeña.
+
+En el siguiente vídeo vamos a ver cómo hacer para modificar esa resolución. No hay más que entrar en Configuración de Raspberry -> Display y pulsar en Set Resolution
+
+[![Vídeo: Cambio resolución del escritorio de una Raspberry Pi](https://img.youtube.com/vi/RWX2UWwgP4I/0.jpg)](https://youtu.be/RWX2UWwgP4I)
+
+[Vídeo: Cambio resolución del escritorio de una Raspberry Pi](https://youtu.be/RWX2UWwgP4I)
 
 #### VNC en equipos antiguos
 
