@@ -1,6 +1,7 @@
 ##  Monitoriza de jardín con Raspberry y Arduino
 Vamos a crear un sistema de monitorización y control de riego. Queremos que cuando esté terminado tenga las siguientes funciones:
-* Control de humedad ¿Servos para abrir puertas?
+
+* Control de humedad 
 * Estación meteo
 * Control de riego
 * Streaming de vídeo
