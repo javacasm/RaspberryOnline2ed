@@ -148,18 +148,18 @@ A veces no interesa controlar varios motores y servos desde una misma placa por 
 
 [Producto](https://www.adafruit.com/product/2348)
 
-![Placa](https://cdn-shop.adafruit.com/970x728/2348-06.jpg)
+![Placa Motor Hat de Adafruit](https://cdn-shop.adafruit.com/970x728/2348-06.jpg)
 
 
 La placa DC+Stepper Motor HAT de Adafruit para  Raspberry Pi es perfecta para proyectos donde se necesita mucho movimiento y pude controlar hasta  4 motores DC o  2 Stepper con control total de velocidad usando PWM.
 
 Utiliza 4 controladores puentes en H TB6612 capaces de manejar hasta 1.2A con voltajes entre 5 y 12V. Se controla por I2C lo que nos permite poner hasta 32 de ellas conectadas entre sí.
 
-### Conexiòn
+### Conexión
 
 Conectaremos los 4 motores y la alimentación:
 
-![adafruit_products_raspi_motor_hat_dc_m1_bb.jpg](./images/adafruit_products_raspi_motor_hat_dc_m1_bb.jpg)
+![Conexión de motor y alimentación](./images/adafruit_products_raspi_motor_hat_dc_m1_bb.jpg)
 
 ![Conexiones de los motores y la batería](./images/ConexionMotoresBat.jpg)
 
@@ -472,7 +472,7 @@ python3 robotApp.py
 
 Nos conectamos a raspicar:5000
 
-![WebRaspiCArpng](./images/WebRaspiCAr.png)
+![webApp RaspiCAr](./images/WebRaspiCAr.png)
 
 [![Vídeo: Control remoto desde el móvil de robot con Raspberry raspiCar](https://img.youtube.com/vi/1X9-mXB0-e8/0.jpg)](https://youtu.be/1X9-mXB0-e8)
 
@@ -553,7 +553,7 @@ Para probarlo podemos usar el ejemplo de Adafruit, con solo cambiar el pin al qu
 
 Un ejemplo típico que es casi obligatorio hacer cuando uno tiene varios leds es el llamado SCanner Larson o la luz del coche fantástico o la luz de los Cylons
 
-![knighriderkitt.gif](./images/knighriderkitt.gif)
+![Knight Rider Kitt](./images/knighriderkitt.gif)
 
 Este es [un ejemplo](https://github.com/javacasm/RaspberryOnline2ed/blob/master/codigo/test_larsson.py) de cómo hacerlo
 
