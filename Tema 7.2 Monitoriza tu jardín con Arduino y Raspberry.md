@@ -23,6 +23,11 @@ En futuras versiones haremos
 
 En este apartado vamos a a desarrollar la primera versión v0. Aunque la segunda es aparentemente sencilla el cabledo para los sensores de humedad y el deterioro que esto sufren debido a la corrosión lo hace más complejo
 
+[![Vídeo: Sistema de control riego con Raspberry Pi y Arduino](https://img.youtube.com/vi/4s3qO5JL67E/0.jpg)](https://youtu.be/4s3qO5JL67E)
+
+[Vídeo: Sistema de control riego con Raspberry Pi y Arduino](https://youtu.be/4s3qO5JL67E)
+
+
 ### Sistema de control remoto de riego  V0
 
 Usaremos una Raspberry para el procesamiento y las comunicaciones y un arduino nano que se encargará de controlar los relés y los sensores. Estará conectados por un cable USB.
