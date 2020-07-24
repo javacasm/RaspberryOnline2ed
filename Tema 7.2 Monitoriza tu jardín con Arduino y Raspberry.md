@@ -13,6 +13,7 @@ Como en todo proyecto es buena idea definir varias versiones par ir trabajando p
     * Control de bomba de riego y electroválvulas para la distribución del agua
     * Control remoto mediante bot de telegram
     * Captura de imágenes estáticas (vigilancia y time lapse)
+
 En futuras versiones haremos
 * Versión 1
     * Medida de humdad en distintas partes
@@ -33,7 +34,6 @@ Se establecerá un protocolo de comunicaciones entre el Arduino y la Raspberry p
 * Para alimentar la Raspberry usaremos un transformador microUSB de 5V y 2A
 * Arduino lo alimentamos directamente de la Raspberry por el cable USB
 * Bomba y electroválvulas se alimenta de una fuente ATX de PC
-
 ![Montaje](./images/Montaje2.jpg)
 
 En futuras versiones sacaremos los 5V de la fuente y quedará una única fuente
@@ -86,9 +86,27 @@ Veamos algunos detalles:
 
 El [software de la Raspberry](https://github.com/javacasm/RiegoRaspberryArduino/tree/master/Riego-RA-Raspberry) está basado en el bot de los otros programas al que se le han añadido las funciones de comunicación con Arduino
 
-    
+Necesitamos tener instalado el módulo Telegram-bot  para python
+```sh
+pip3 install python_telegram_bot
+```
+En ese código es muy importante que las caracteres del protocolo de la comunicación con Arduino sean los mismos y estén adecuadamente codificados, como byte porque Arduino no entiende unicode
+
+```python
+separadorDatosArduino = b';'
+endCommand = b'\n'
+helpCommand = b'h'
+getDataCommand = b'#'
+setReleCommand = b'S'
+releOffCommand = b'L'
+releOnCommand = b'H'
+```
+También se ha trabajado bastante el hacer robusta la comunicación con Arduino, incluso reseteándolo automáticamente si hay problemas (arduinoUtils.resetArduino()). Todo ello a través del puerto serie.
+
+Para que esto funcione hay que saber detectar el puerto serie de Arduino, lo que se hace en el método "arduinoUtils.detectarPuertoArduino()", método y técnica tomados del [proyecto miniTierra de @inopya](https://github.com/inopya/mini-tierra)
 
 ### Futuras versiones y mejoras
 
 * Medir la temperatura dentro de la caja y activar si es necesario un ventilador para enfriar el sistema
-* 
+* Guardar los datos de Arduino en una base de datos
+* Crear una webApp para ver los datos en local
