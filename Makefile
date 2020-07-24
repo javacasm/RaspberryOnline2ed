@@ -6,6 +6,7 @@ S3="Tema 3 - Instalación de Raspberry.docx"
 S4="Tema 4 - Uso de Raspberry.docx"
 S5="Tema 5 - Programación con Raspberry.docx"
 S6="Tema 6 - Electrónica con Raspberry.docx"
+S7="Tema 7 - Proyectos con Raspberry.docx"
 
 FMAT="Materiales.md"
 SMAT="Materiales necesarios.docx"
@@ -126,6 +127,7 @@ FAQ:
 					--template=./LaTeX_ES.latex    \
 					-o $(S6)     \
 					Cabecera.md        \
+					Cabecera_latex.md \
 					'Tema 6.0 - Electrónica con Raspberry.md' \
 					'Tema 6.0.5 Cuidados.md' \
 					'Tema 6.1 GPIO.md' \
@@ -138,18 +140,31 @@ FAQ:
 					'Tema 6.7 Hats.md' \
 					'Tema 6.8 Otras librerias.md' \
 					'Tema 6.9 Conexion con arduino.md'
-					
+
+7:
+	pandoc  --latex-engine=xelatex   \
+					-V papersize:a4paper    \
+					--template=./LaTeX_ES.latex    \
+					-o  $(S7)  \
+					Cabecera.md        \
+					Cabecera_latex.md \
+					'Tema 7.0 - Robótica con Raspberry.md' \
+					'Tema 7.1 CocheRobot.md' \
+					'Tema 7.2 Monitoriza tu jardín con Arduino y Raspberry.md'
+
+
 clean:
 	rm $(S5) $(S6) $(S1) $(S2) $(S3) $(S4) $(SFAQ)
 
 publish:
-	cp $(S5) $(S6) $(S1) $(S2) $(S3) $(S4) $(SFAQ) $(SMAT) $(DIR_PUBLICACION)
+	cp $(s7) $(S5) $(S6) $(S1) $(S2) $(S3) $(S4) $(SFAQ) $(SMAT) $(DIR_PUBLICACION)
 	cp *Objetivos*.pdf $(DIR_PUBLICACION)
 	cp *Ejercicio*.pdf $(DIR_PUBLICACION)
 	cp *Test*.pdf $(DIR_PUBLICACION)
 
 
 push:
+	git commit -m "update" $(S7);
 	git commit -m "update" $(S5);
 	git commit -m "update" $(S6);
 	git commit -m "update" $(S3);
