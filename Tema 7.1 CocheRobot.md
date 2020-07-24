@@ -546,9 +546,10 @@ sudo pip3 install adafruit-circuitpython-neopixel
 
 Para probarlo podemos usar el ejemplo de Adafruit, con solo cambiar el pin al que lo conectamos y el número de leds. En [este ejemplo](https://github.com/javacasm/RaspberryOnline2ed/blob/master/codigo/test_neopixels.py) usamos 8 leds conectados al pin 18 (no se pueden usar cualquier pin)
 
-TODO: Imagen con rainbow
+[![Vídeos: Neopixels en acción: 8 neopixels conectados a una Raspberry Pi](https://img.youtube.com/vi/RrPzXzl151A/0.jpg)](https://youtu.be/RrPzXzl151A)
 
-TODO¡: video
+[Vídeos: Neopixels en acción: 8 neopixels conectados a una Raspberry Pi](https://youtu.be/RrPzXzl151A)
+
 
 Un ejemplo típico que es casi obligatorio hacer cuando uno tiene varios leds es el llamado SCanner Larson o la luz del coche fantástico o la luz de los Cylons
 
@@ -587,7 +588,11 @@ while True:
 
 ```
 
-TODO: vídeo scanner larsson
+[![Vídeo: Scanner Larson, el coche fantástico y cylon con neopixels en una Raspberry Pi](https://img.youtube.com/vi/7Q_ds7-Yr_s/0.jpg)](https://youtu.be/7Q_ds7-Yr_s)
+
+[Vídeo: Scanner Larson, el coche fantástico y cylon con neopixels en una Raspberry Pi](https://youtu.be/7Q_ds7-Yr_s)
+
+
 
 ### Sensor atmosférico: BME280
 
