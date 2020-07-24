@@ -644,15 +644,17 @@ Nos queda un montaje así:
 Podemos descargar todo el código de raspiCar del [repositorio de github](https://github.com/javacasm/raspiCar)
 
 
-TODO: Vídeo con el resultado
+[![Vídeo: Montaje final robot móvil controlar con Raspberry Pi:  RasPiCar](https://img.youtube.com/vi/LO433fsFVWU/0.jpg)](https://youtu.be/LO433fsFVWU)
+
+
+[Vídeo: Montaje final robot móvil controlar con Raspberry Pi:  RasPiCar](https://youtu.be/LO433fsFVWU)
+
 
 ## Referencias
 
 [Tutorial placa adafruit](https://learn.adafruit.com/adafruit-dc-and-stepper-motor-hat-for-raspberry-pi?view=all)
 
 [Robot sencillo con placa adafruit](https://learn.adafruit.com/simple-raspberry-pi-robot?view=all)
-
-![Robot sencillo con video](https://hackster.imgix.net/uploads/attachments/376456/img_20171108_192721_aAocqmt3yt.jpg?auto=compress%2Cformat&w=900&h=675&fit=min)
 
 [Raspberry Pi Web-controlled Robot with video](https://www.hackster.io/jrance/raspberry-pi-web-controlled-robot-with-video-c1b723)
 
