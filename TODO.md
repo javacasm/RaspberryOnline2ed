@@ -1,9 +1,18 @@
 
 ORGANIZAR NIVELES DE LOS TITULOS!!!
 
-3.5 TFT
+3.7 TFT
+
+La TFT gpio de 3.95 comprada en electan https://raspberrypi.stackexchange.com/questions/44179/rpi-2-and-3-95-tft-ili9488
 
 4.A VPN
+
+## Emulador ZX Spectrum
+
+Es una imagen que corre directamente encima del hardware, podemos hasta conectar un teclado original
+
+
+https://www-tomshardware-com.cdn.ampproject.org/v/s/www.tomshardware.com/amp/how-to/emulate-zx-spectrum-raspberry-pi?usqp=mq331AQFKAGwASA%3D&amp_js_v=0.1#aoh=16042607069046&referrer=https%3A%2F%2Fwww.google.com&amp_tf=De%20%251%24s&ampshare=https%3A%2F%2Fwww.tomshardware.com%2Fhow-to%2Femulate-zx-spectrum-raspberry-pi
 
 ## Home automation
 
@@ -234,3 +243,51 @@ As of may 2016, the GPU_MEM=128 is no longer enough. Increasing it from 128 to 1
 ### Flask
 
 ### Videos sobre uso de VNC
+
+
+### Microscopio para electronica
+
+https://www.instructables.com/id/RPi-MacroScope/
+
+Camarita microscopio USB
+Pantalla tft de 7 tactil
+aplicacion pygame con zoom y capturas	
+https://gist.github.com/snim2/255151
+https://www.pygame.org/docs/tut/CameraIntro.html
+https://www.raspberrypi.org/forums/viewtopic.php?t=201078
+
+https://github.com/javacasm/RaspberryAvanzado/blob/master/material/camaras.md
+
+### Camara HD
+
+https://arstechnica.com/gadgets/2020/05/raspberry-pi-launches-camera-with-interchangeable-lens-system-for-50/
+
+1. Guías de https://static.raspberrypi.org/files/product/bielas
+
+2 https://static.raspberrypi.org/files/product-briefs/Raspberry_Pi_HQ_Camera_Product_Brief.pdf
+
+3 https://static.raspberrypi.org/files/product-mechanical-drawings/20200428_HQ_Camera_Technical_drawing.pdf
+
+4 https://static.raspberrypi.org/files/product-guides/Typical_C-Mount_Lens_Guide.pdf
+
+5 https://static.raspberrypi.org/files/product-guides/Typical_CS-Mount_Lens_Guide.pdf
+
+https://www.hackster.io/nick-engmann/pidslm-raspberry-pi-dslm-2a86c3
+
+### Bloqueador de anuncios 
+
+https://www.vice.com/en_au/article/ep4bwm/how-to-set-up-a-pi-hole-to-block-ads-and-speed-up-your-internet
+
+### Usando baterías
+
+https://www.makeuseof.com/tag/pi-go-x-ways-powering-raspberry-pi-portable-projects/
+
+
+### Simulador web services
+
+https://github.com/Azure-Samples/raspberry-pi-web-simulator
+https://azure-samples.github.io/raspberry-pi-web-simulator/
+
+### Neopixels
+
+https://github.com/javacasm/RaspberryAvanzado/blob/master/material/neopixels.md
