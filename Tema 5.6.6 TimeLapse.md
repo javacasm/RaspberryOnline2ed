@@ -114,7 +114,10 @@ Después de copiarlas habrá que borrarlas de la Raspberry
 * Se puede utilizar un panel solar para que recargue las baterías, pero tenemos que asegurarnos de que proporciona la energía necesaria
 ![AlimentacionSolar.png](./images/AlimentacionSolar.png)
 
-* Cuidado con llenar el alamecanamiento, debemos tener en cuenta el espacio libre, el tamaño de cada foto y sobre todo el número de imágenes que vamos a tomar. 
+* Cuidado con llenar el almacenamiento, debemos tener en cuenta el espacio libre, el tamaño de cada foto y sobre todo el número de imágenes que vamos a tomar. Por ejemplo:
+    * 1 foto ocupa 3.5Mb
+    * Hacemos 1 foto cada minuto
+    * 3.5Mb x 60 fotos/minuto x 24 horas = 5000 Mb/Día
 
 * Utilizar un almacenamiento externo (pendrive o similar) o una partición distinta para guardar las imágenes. Así si se llena no se impedirá el correcto  funcionamiento del sistema.
 
