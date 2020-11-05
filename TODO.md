@@ -7,6 +7,45 @@ La TFT gpio de 3.95 comprada en electan https://raspberrypi.stackexchange.com/qu
 
 4.A VPN
 
+## Cómo detectar qué cámara tenemos conectada
+
+https://raspberrypi.stackexchange.com/questions/46632/how-do-i-detect-the-type-of-camera-installed/46652
+
+## Comunicaciones Raspberry <> micro:bit
+
+https://micromag.cc/serial-communications-with-micro-bit-raspberry-pi/
+
+## Ubuntu para Raspberry
+
+https://www.hackster.io/news/canonical-launches-ubuntu-20-10-groovy-gorilla-with-micro-clouds-raspberry-pi-desktop-images-7168d48005e5
+
+## Kernel de 64 bits
+
+https://blog.adafruit.com/2020/08/28/make-your-raspberry-pi-4-faster-with-a-64-bit-kernel-piday-raspberrypi-raspberry_pi/
+
+## VSCode para rasbperry
+
+
+https://code.visualstudio.com/#alt-downloads
+
+## robot cubo de basura que se conduce solo
+
+https://www.raspberrypi.org/blog/self-driving-trash-can-controlled-by-raspberry-pi/
+
+## Raspberry Pi compute module 4
+
+https://www.hackster.io/news/hands-on-with-the-raspberry-pi-compute-module-4-and-compute-module-4-lite-827bb3293ee9
+
+## Print server
+
+https://www.tomshardware.com/how-to/raspberry-pi-print-server
+
+## Bloqueo de anuncios con raspberry
+
+https://www.youtube.com/watch?v=xao81tXMBOo&feature=youtu.be
+
+https://lab.bricogeek.com/tutorial/como-instalar-pi-hole-en-raspberry-pi-para-bloquear-publicidad
+
 ## Emulador ZX Spectrum
 
 Es una imagen que corre directamente encima del hardware, podemos hasta conectar un teclado original
