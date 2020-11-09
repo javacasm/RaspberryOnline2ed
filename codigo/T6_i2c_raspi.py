@@ -1,9 +1,9 @@
 import smbus
 import time
-# for RPI version 1, use "bus = smbus.SMBus(0)"
+
 bus = smbus.SMBus(1)
 
-# This is the address we setup in the Arduino Program
+# Dirección del programa arduino
 address = 0x09
 
 def writeNumber(value):
@@ -17,9 +17,9 @@ def readNumber():
        return number
 
 while True:
-       var = input("")
+       var = input("Comando (0 off - 1 On):")
        if not var:
            continue
-
-       writeNumber(var)
+       writeNumber(ord(var))
        number = readNumber()
+       print('Status: ' + str(number))

@@ -41,13 +41,13 @@ void receiveData(int byteCount){
             break;
         default:
             Serial.print("Comando no definido:");
-            Serial.println(comando)
+            Serial.println(comando);
         
         }
     }
 }
 // Cuando nos piden datos enviamos el estado del rele
 void sendData(){ 
-    int relay_status relay_status=digitalRead(PIN_RELE);
+    int relay_status = digitalRead(PIN_RELE);
     Wire.write(relay_status);
 }
