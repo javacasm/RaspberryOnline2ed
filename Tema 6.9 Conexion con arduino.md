@@ -90,6 +90,64 @@ void sendData(){
 
 ```
 
+El programa lee los comandos que le enviamos y siempre que se le piden datos responde con el estado del relé.
+
+
+Programamos nuestro arduino y al ejecutar el comando i2c_detect
+
+```sh
+i2cdetect -y 1
+```
+
+Vemos conectado al bus i2c a nuestro arduino en la dirección **0x09**
+
+
+```
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+00:          -- -- -- -- -- -- 09 -- -- -- -- -- -- 
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+70: -- -- -- -- -- -- -- --   
+```
+
+
+En la Raspberry vamos a usar un programa sencillo que nos permite enviar diferentes comandos: 
+* El comando '0' apagará el relé
+* El comando '1' encenderá el relé
+
+```python
+
+import smbus
+import time
+
+bus = smbus.SMBus(1)
+
+# Dirección del programa arduino
+address = 0x09
+
+def writeNumber(value):
+       bus.write_byte(address, value)
+       # bus.write_byte_data(address, 0, value)
+       return -1
+
+def readNumber():
+       number = bus.read_byte(address)
+       # number = bus.read_byte_data(address, 1)
+       return number
+
+while True:
+       var = input("Comando (0 off - 1 On):")
+       if not var:
+           continue
+       writeNumber(ord(var))
+       number = readNumber()
+       print('Status: ' + str(number))
+```
+
 ### Utilizando placas intermedias
 
 Existen dispositivos pensados para facilitar esta comunicación. Veamos algunos de ellos
