@@ -20,9 +20,75 @@ En cualquiera de los dos casos es necesario que desactivemos la consola serie de
 
 En [este tutorial](https://geekytheory.com/arduino-raspberry-pi-lectura-de-datos/) podemos ver cómo hacerlo.
 
-Otra opción interesante es conectarlos utilizando el protocolo I2C, de esta forma la comunicación puede alcanzar más velocidad y nos serviría para conectar otros dispositivos I2C. En [este otro tutorial](https://oscarliang.com/raspberry-pi-arduino-connected-i2c/) se explica en detalle.
+### Conexión Raspberry Pi - Arduino con I2C
 
-![raspberry arduino i2c](https://raspberrypi4dummies.files.wordpress.com/2013/07/arduino-rpi-i2c-communication_bb.png)
+Otra opción interesante es conectarlos utilizando el protocolo I2C, de esta forma la comunicación puede alcanzar más velocidad y nos serviría para conectar otros dispositivos I2C. 
+
+Para que funcione tenemos que tener activado el interface i2c (como ya vimos antes) y conectamos las dos placas de esta manera
+
+![raspberry arduino i2c](./images/Arduino-Raspi-i2c_bb.png)
+
+
+Vamos a hacer un montaje donde podemos controlar un relé conectado a Arduino desde la Raspberry Pi usando comunicaciones i2c
+
+Vamos a subir a nuestro arduino un programa que actúa como esclavo i2c como este (ejemplo basado en [stackoverflow](https://stackoverrun.com/es/q/9886922))
+
+```C++
+#include <Wire.h>
+
+#define DIRECCION_ESCLAVO 0x09
+
+#define CMD_OFF '0'
+#define CMD_ON  '1'
+
+#define PIN_RELE 2
+
+
+void setup() {
+    pinMode(PIN_RELE, OUTPUT);
+
+    Serial.begin(9600); 
+    // inicializamos i2c como esclavo con la dirección dada
+    Wire.begin(DIRECCION_ESCLAVO);
+
+    // funciones callbacks para la comunicacion i2c 
+    Wire.onReceive(receiveData);
+    Wire.onRequest(sendData);
+
+    Serial.println("Ready!");
+}
+
+void loop() {
+    delay(100);
+}
+
+// callback para datos recibidos
+void receiveData(int byteCount){
+    while(Wire.available()) { // Hay datos disponibles
+        int comando = Wire.read();
+        Serial.print("recibido comando: ");
+        Serial.println(comando);
+        switch(comando){
+        case CMD_ON:
+            digitalWrite(PIN_RELE, HIGH); 
+            break;
+        case CMD_OFF:
+            digitalWrite(PIN_RELE, LOW); 
+            break;
+        default:
+            Serial.print("Comando no definido:");
+            Serial.println(comando)
+        
+        }
+    }
+}
+// Cuando nos piden datos enviamos el estado del rele
+void sendData(){ 
+    int relay_status relay_status=digitalRead(PIN_RELE);
+    Wire.write(relay_status);
+}
+
+```
 
 ### Utilizando placas intermedias
 

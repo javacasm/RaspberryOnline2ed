@@ -60,7 +60,7 @@ Y ejecutamos la herramienta para detectar dispositivos i2C y su correspondiente 
 
 ```sh
 i2cdetect -y 1
- ```
+```
 
 ![Instalacion I2C](./images/Instalacion_I2C.png)
 
