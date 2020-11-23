@@ -34,3 +34,4 @@ También podemos hacer una [instalación manual](https://retropie.org.uk/docs/Ma
 
 [Revista TheMagPi 81 I](https://www.raspberrypi.org/blog/retro-console-with-retropie-raspberry-pi-1/) y [II](https://www.raspberrypi.org/blog/retro-console-with-retropie-raspberry-pi-2/)
 
+[How to download games Rom for retropie](https://raspberrytips.com/download-retropie-roms/)

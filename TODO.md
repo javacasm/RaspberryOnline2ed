@@ -1,6 +1,17 @@
 
 ORGANIZAR NIVELES DE LOS TITULOS!!!
 
+## Revisar libro MasterYourRaspberryPi-Patrick-FROMAGET de raspberrytips
+
+file:///home/javacasm/Descargas/MasterYourRaspberryPi-Patrick-FROMAGET.pdf
+
+## retro gaming con recall box
+
+https://raspberrytips.com/recalbox-beginner-guide/
+
+Como descargar juegos para retropie 
+https://raspberrytips.com/download-retropie-roms/
+
 3.7 TFT
 
 La TFT gpio de 3.95 comprada en electan https://raspberrypi.stackexchange.com/questions/44179/rpi-2-and-3-95-tft-ili9488
