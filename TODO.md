@@ -18,7 +18,29 @@ La TFT gpio de 3.95 comprada en electan https://raspberrypi.stackexchange.com/qu
 
 4.A VPN
 
-## Cómo detectar qué cámara tenemos conectada
+## Cámara
+
+## Astrofotografía
+
+https://www.tomshardware.com/news/raspberry-pi-high-quality-camera-used-for-out-of-this-world-astrophotography#xenforo-comments-3615756
+
+## Enfoque automatico con lego
+
+https://www.instructables.com/Focus-the-Pi-High-Quality-Camera-With-Lego-and-a-S/
+https://hackaday.com/2020/07/22/bringing-the-pi-camera-into-focus-with-lego/
+
+### Detector de mascarilla
+
+https://www.tomshardware.com/amp/how-to/raspberry-pi-face-mask-detector
+
+### Cámra con Raspberry pi
+https://hackaday.com/2020/07/21/a-stylish-raspberry-pi-camera/
+https://hackaday.io/project/173836-turning-your-raspberry-pi-into-a-camera
+### HQ Camera Exposure 
+
+https://www.raspberrypi.org/forums/viewtopic.php?t=277689
+
+### Cómo detectar qué cámara tenemos conectada
 
 https://raspberrypi.stackexchange.com/questions/46632/how-do-i-detect-the-type-of-camera-installed/46652
 
