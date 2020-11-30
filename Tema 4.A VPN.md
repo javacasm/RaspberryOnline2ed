@@ -179,3 +179,8 @@ A new profile is added, and you can connect by clicking on it
 Don’t forget to disconnect from the Wi-Fi if you are on the same network as the Raspberry Pi
 That’s it, you are now connected:
 
+
+
+## Otro tutorial
+
+https://opensource.com/article/19/6/raspberry-pi-vpn-server

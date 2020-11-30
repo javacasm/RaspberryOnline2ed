@@ -5,6 +5,20 @@ ORGANIZAR NIVELES DE LOS TITULOS!!!
 
 file:///home/javacasm/Descargas/MasterYourRaspberryPi-Patrick-FROMAGET.pdf
 
+
+## Tensorflow camara
+
+https://opensource.com/article/20/1/object-tracking-camera-raspberry-pi
+
+
+## Proyectos sencillos
+
+https://opensource.com/article/20/3/raspberry-pi-tutorials
+
+## Aquaponic system
+
+https://www.tomshardware.com/amp/news/this-homemade-aquaponic-irrigation-system-is-powered-by-a-raspberry-pi
+
 ## retro gaming con recall box
 
 https://raspberrytips.com/recalbox-beginner-guide/
@@ -17,6 +31,16 @@ https://raspberrytips.com/download-retropie-roms/
 La TFT gpio de 3.95 comprada en electan https://raspberrypi.stackexchange.com/questions/44179/rpi-2-and-3-95-tft-ili9488
 
 4.A VPN
+
+## PBX in raspberry pi
+
+https://www.youtube.com/watch?v=8QyFidVcoLM
+
+## VMWare
+
+VMWare en raspberry pi
+
+https://www.youtube.com/watch?v=6aLyZisehCU
 
 ## Cámara
 
