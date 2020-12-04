@@ -44,7 +44,7 @@ y = 200
 # velocidad de movimiento
 vel = 1
 
-
+miImagen = pygame.image.load('./images/python-logo.png')
 
 running = True
 
@@ -77,7 +77,7 @@ while running:
 
     screen.fill(black) # ponemos el fondo negro
 
-    pygame.draw.rect(screen, (255, 0, 0), (x, y, width/20, height/20)) # después dibujamos el rectángulo
+    screen.blit(miImagen,(x, y)) # después copiamos la imagen
 
     pygame.display.flip()  # actualizamos la pantalla
 
