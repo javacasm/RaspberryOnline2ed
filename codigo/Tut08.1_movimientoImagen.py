@@ -42,7 +42,9 @@ x = 200
 y = 200
 
 # velocidad de movimiento
-vel = 10
+vel = 1
+
+
 
 running = True
 
@@ -63,7 +65,7 @@ while running:
 
             if event.key == pygame.K_RIGHT:
                 print('Movmiento drcha')                
-                x += veñ
+                x += vel
 
             if event.key == pygame.K_UP:
                 print('Movmiento arriba')
@@ -75,7 +77,7 @@ while running:
 
     screen.fill(black) # ponemos el fondo negro
 
-    pygame.draw.rect(win, (255, 0, 0), (x, y, width, height)) # después dibujamos el rectángulo
+    pygame.draw.rect(screen, (255, 0, 0), (x, y, width/20, height/20)) # después dibujamos el rectángulo
 
     pygame.display.flip()  # actualizamos la pantalla
 
