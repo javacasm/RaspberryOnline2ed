@@ -1,3 +1,5 @@
+import pygame
+
 """
 Tutorial básico de pyGame
 08.2 - Movimiento de formas con teclas:
@@ -9,14 +11,12 @@ Propiedades:
     pygame.K_LEFT ...
 
 Docs: 
-* Eentos https://www.pygame.org/docs/ref/event.html
+* Eventos https://www.pygame.org/docs/ref/event.html
 * Keys https://www.pygame.org/docs/ref/key.html
 
 CC by SA @javacasm
 Junio 2020
 """
-
-import pygame
 
 width = 640
 height = 400
@@ -40,8 +40,8 @@ x = 200
 y = 200
 
 # tamaño del rectángulo
-width = 20
-height = 20
+rect_width = 20
+rect_height = 20
 
 # velocidad de movimiento
 vel = 10
@@ -65,7 +65,7 @@ while running:
 
             if event.key == pygame.K_RIGHT:
                 print('Movmiento drcha')                
-                x += veñ
+                x += vel
 
             if event.key == pygame.K_UP:
                 print('Movmiento arriba')
@@ -77,7 +77,7 @@ while running:
 
     screen.fill(black) # ponemos el fondo negro
 
-    screen.blit(miImagen,x, y) # después copiamos la imagen
+    pygame.draw.rect(screen, (255, 0, 0), (x, y, rect_width, rect_height)) # después dibujamos el rectángulo
 
     pygame.display.flip()  # actualizamos la pantalla
 
