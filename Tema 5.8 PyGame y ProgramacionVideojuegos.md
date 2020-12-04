@@ -85,6 +85,8 @@ El envento QUIT se producirá al pulsar el botón de cerrar la ventana
 Vamos a ver ahora cómo podemos dibujar una forma (un rectángulo) que se moverá al pulsar las teclas del curso. [código](https://github.com/javacasm/RaspberryOnline2ed/raw/master/codigo/Tut08_movimientoRectangulo.py)
 
 ```python
+import pygame
+
 """
 Tutorial básico de pyGame
 08.2 - Movimiento de formas con teclas:
@@ -96,14 +98,12 @@ Propiedades:
     pygame.K_LEFT ...
 
 Docs: 
-* Eentos https://www.pygame.org/docs/ref/event.html
+* Eventos https://www.pygame.org/docs/ref/event.html
 * Keys https://www.pygame.org/docs/ref/key.html
 
 CC by SA @javacasm
 Junio 2020
 """
-
-import pygame
 
 width = 640
 height = 400
@@ -127,8 +127,8 @@ x = 200
 y = 200
 
 # tamaño del rectángulo
-width = 20
-height = 20
+rect_width = 20
+rect_height = 20
 
 # velocidad de movimiento
 vel = 10
@@ -152,7 +152,7 @@ while running:
 
             if event.key == pygame.K_RIGHT:
                 print('Movmiento drcha')                
-                x += veñ
+                x += vel
 
             if event.key == pygame.K_UP:
                 print('Movmiento arriba')
@@ -164,7 +164,7 @@ while running:
 
     screen.fill(black) # ponemos el fondo negro
 
-    pygame.draw.rect(win, (255, 0, 0), (x, y, width, height)) # después dibujamos el rectángulo
+    pygame.draw.rect(screen, (255, 0, 0), (x, y, rect_width, rect_height)) # después dibujamos el rectángulo
 
     pygame.display.flip()  # actualizamos la pantalla
 
@@ -178,7 +178,7 @@ miImagen = pygame.image.load('./images/python-logo.png')
 ```
 2. En lugar de dibujar el rectángulo copiaríamos la imagen en x,y, tras rellenar el fondo
 ```python
-    screen.blit(miImagen,x, y)
+    screen.blit(miImagen,(x, y))
 ```
 [código](https://github.com/javacasm/RaspberryOnline2ed/raw/master/codigo/Tut08.1_movimientoImagen.py)
 
@@ -188,7 +188,7 @@ miFondo = pygame.image.load('./images/fondo.png') # lo cargamos
 ```
 y ahora sustituimos el rellenar el fondo con un color por 
 ```python
-     screen.blit(miFondo,0,0)
+     screen.blit(miFondo,(0,0))
 ```
 
 Nada más fácil que añadir música:
