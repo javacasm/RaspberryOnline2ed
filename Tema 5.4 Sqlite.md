@@ -22,7 +22,7 @@ Vamos a crear nuestra tabla que guardará los valores de los 3 sensores del ejem
 CREATE TABLE sensores(id INTEGER PRIMARY KEY AUTOINCREMENT, sensor1 NUMERIC, sensor2 NUMERIC, sensor3 NUMERIC, fecha DATE, hora TIME);
 ```
 
-Para guardar ahora los datos de los sensores en la base de datos solo tendríamos que añadir una función como esta a nuestro programa
+Para guardar ahora los datos de los sensores en la base de datos solo tendríamos que añadir una función como esta a nuestro programa 
 
 ```python
 
@@ -43,6 +43,8 @@ def guardaDatos(sensor1,sensor2, sensor3):
     conn.close()  # cerramos la conexión
 ```
 
+[Ejemplo SQLite](./codigo/test_sqlite.py)
+
 Ahora para ver los datos podemos usar sqlite
 ```sh
 sqlite3 datosSensores.db
@@ -50,8 +52,9 @@ sqlite3 datosSensores.db
 
 y desde dentro hacemos una consulta SELECT sobre la tabla 'sensores' con
 
+```SQL
 SELECT * from sensores;
-
+```
 
 Para ver el contenido y la estructura de una base de datos sqlite  podemos usar [sqlitebrowser](https://sqlitebrowser.org/), una herramienta visual que nos facilita mucho el trabajo.
 
