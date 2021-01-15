@@ -58,6 +58,7 @@ FAQ:
 					"Tema 2.0 Características de Raspberry.md" \
 					"Tema 2.1 Arquitectura.md" \
 					"Tema 2.2 Versiones.md" \
+					"Tema 2.2.1 Raspberry Pi 400.md" \
 					"Tema 2.3 clones.md"
 					
 3:
