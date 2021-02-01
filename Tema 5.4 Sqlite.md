@@ -10,15 +10,15 @@ sudo apt install sqlite
 
 Las bases de datos de sqlite se usan un único fichero .db
 
-Vamos a empezar creando la base de datos llamadas datosSensores.db. Hacemos
+Vamos a empezar creando la base de datos llamadas datosSensores.db. Ejecutamos en la consola
 
 ```sh
-sqlite3 atosSensores.db
+sqlite3 datosSensores.db
 ```
 
 Ahora estaremos dentro de la herramienta de consola con el prompt **sqlite>**
 Vamos a crear nuestra tabla que guardará los valores de los 3 sensores del ejemplo anterior con
-```
+```sql
 CREATE TABLE sensores(id INTEGER PRIMARY KEY AUTOINCREMENT, sensor1 NUMERIC, sensor2 NUMERIC, sensor3 NUMERIC, fecha DATE, hora TIME);
 ```
 

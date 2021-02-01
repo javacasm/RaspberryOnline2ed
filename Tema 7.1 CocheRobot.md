@@ -24,7 +24,7 @@ V0: robot standar con movimiento normales
 V1: sensores de temperatura y sensores de ultrasonidos
 Futuras versiones
 V2: añadimos ruedas onmi
-V3: añadimos camara y sensor de bateria (I2C)
+V3: añadimos cámara y sensor de bateria (I2C)
 
 ### Equipo
 
@@ -36,7 +36,7 @@ Usaremos el siguiente equipamiento
 * Motor shield de Adafruit
 * 4 motores TT
 * 3 sensores ultrasonidos
-* Camara Raspberry v1.3
+* Cámara Raspberry v1.3
 * Caja para 2 x 18650 para los motores
 
 

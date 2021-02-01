@@ -20,15 +20,17 @@ Para ver que funciona y es compatible instalaremos una instacia del conocido ges
 
 2. Acceso remoto
 
-    Vamos a probar ahora si podemos acceder desde otro ordenador. Para ello vamos a ver cuál es nuestra dirección IP con . Ponemos en la terminal 
+    Vamos a probar ahora si podemos acceder desde otro ordenador. Para ello vamos a ver cuál es nuestra dirección IP. Ponemos en la terminal:
 
     ```sh
     hostname -I
     ```
+   
+    Y el resultado será nuestra IP.
+    
+    Ahora nos conectamos con un navegador desde otro ordenador con la ip resultante http://192.168.1.36
 
-    Ahora nos conctamos con un navegador desde otro ordenadore con la ip resultante http://192.168.1.36
-
-    Si todo va bien veremos la mism página de antes.
+    Si todo va bien veremos la misma página de antes.
 
 3. Cambiar la página inicial
 
@@ -42,7 +44,7 @@ Para ver que funciona y es compatible instalaremos una instacia del conocido ges
     ```
 4. Instalación de PHP
 
-    Una gran parte del código que se ejecuta en el servidor web está escrito en  PHP, con lo que necesitamos instalarlo. Lo hacemo con
+    Una gran parte del código que se ejecuta en el servidor web está escrito en  PHP, con lo que necesitamos instalarlo. Lo hacemos con
     ```sh
     sudo apt install php -y
     ```
@@ -58,11 +60,11 @@ Para ver que funciona y es compatible instalaremos una instacia del conocido ges
     </br>
     <?php phpinfo(); ?>
     ```
-    Para probar que funciona abriremos en un navegador la página http://192.168.1.36/index.php (ahora añadimos el nombre del fichero ya que por defecto se busca el fichero index.html y de esta manera forzamos a se muestre el otro fichero)
+    Para probar que funciona abriremos en un navegador la página http://192.168.1.36/index.php (ahora añadimos el nombre del fichero ya que por defecto se busca el fichero index.html y de esta manera forzamos a se muestre el fichero _index.php_)
 
-    Si todo va bien veremos el mensaje "hola Apache y php", la hora y fecha actual y un montón de información sobre lphp y los módulos instalados en el navegador
+    Si todo va bien veremos el mensaje "hola Apache y php", la hora y fecha actual y un montón de información sobre php y los módulos instalados en el navegador
 
-6. Instalación de la base de datos
+5. Instalación de la base de datos
 
     Vamos a instalar ahora la base de datos con el comando
     ```sh
@@ -76,7 +78,7 @@ Para ver que funciona y es compatible instalaremos una instacia del conocido ges
     ```sh
     sudo service apache2 restart
     ```
-7. Wordpress
+6. Wordpress
 
     Wordpress es uno de los gestores de contenidos de codigo abierto más utilizados. 
     Vamos a descargar un paquete con la 'ultima versión y lo vamos a poner en la carpeta de contenidos de www con
@@ -88,9 +90,9 @@ Para ver que funciona y es compatible instalaremos una instacia del conocido ges
     sudo rm index.*
     ```
     Lo descomprimimos  con
-
+    ```sh
     sudo tar xvf latest.tar.gz
-
+    ```
     Borramos el fichero comprimdo
     ```sh
     sudo rm  latest.tar.gz
@@ -107,7 +109,7 @@ Para ver que funciona y es compatible instalaremos una instacia del conocido ges
     ```sh
     sudo chown -R www-data: .
     ```
-8. Configuración de la base de datos
+7. Configuración de la base de datos
 
     Vamos a ejecutar el asistente para la instalación segura de la base de datos
     ```sh
@@ -115,7 +117,7 @@ Para ver que funciona y es compatible instalaremos una instacia del conocido ges
     ```
     Inicialmente no tiene contraseña pero debemos poner una
 
-    Después contestaremos Y a todas las preguntas para una máxima seguridad
+    Después contestaremos 'Y' a todas las preguntas para una máxima seguridad
 
     Ahora vamos a crear la base de datos que necesita Wordpress
     ```sh
@@ -131,7 +133,7 @@ Para ver que funciona y es compatible instalaremos una instacia del conocido ges
     ```
     ![Crear BD](./images/createDatabase.png)
 
-9. Configuración de Wordpress
+8. Configuración de Wordpress
 
     Volvemos a entrar con un navegador en nuestro servidor con http://localhost
 
@@ -144,7 +146,6 @@ Para ver que funciona y es compatible instalaremos una instacia del conocido ges
     ![Conf DB](./images/wpPerdida.png)
 
     Configuramos los datos del usuario del blog
-
 
     ![Conf Blog](./images/wpConfBloq.png)
 
