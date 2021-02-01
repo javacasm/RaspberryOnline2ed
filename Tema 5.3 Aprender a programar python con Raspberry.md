@@ -36,8 +36,6 @@ Aunque es más sencillo si escribimos nuestro código en un fichero (con cualqui
 python3 fichero.py
 ```
 
-
-
 Aunque éste no pretende ser un curso sobre python, veamos algunos ejemplos:
 
 ## Operaciones numéricas y petición de datos al usuario

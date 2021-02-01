@@ -4,7 +4,7 @@ import time
 import pymysql as mariadb
 
 def insertarDato(id_sensor, valor):
-    db = mariadb.connect(host='localhost',
+    db = mariadb.connect(host='raspi4',
                             user='javacasm',
                             passwd='Patatin5.5',
                             db='datos_db')
@@ -16,7 +16,8 @@ def insertarDato(id_sensor, valor):
     try:
         cursor.execute(insertSql) # Executamos la sentencia insert
         db.commit() # si todo va bien la confirmamos
-    except Exception as else:
+        print('Insertado valor:' + str(valor))
+    except Exception as e:
         print('Error en la sentencia({}):{}'.format(insertSql,str(e)))
         db.rollback() # Si hay un error cancelamos la transacción
 
@@ -26,3 +27,5 @@ def insertarDato(id_sensor, valor):
 
 for i in range (0,50):
     insertarDato(0,i)
+    time.sleep(0.5)
+    

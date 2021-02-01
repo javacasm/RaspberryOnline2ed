@@ -14,6 +14,13 @@ Y para configurarla con un acceso más seguro ejecutamos el siguiente script
 sudo mysql_secure_installation
 ```
 
+La configuración segura por defecto sólo permite nos podamos conectar desde el propio equipo. Si queremos permitirlo sólo tenemos que comentar la línea 'bind-address' del fichero '/etc/mysql/mariadb.conf.d/50-server.cnf' que quedará así:
+
+```
+# bind-address            = 127.0.0.1
+```
+En nuestro ejemplo seguiremos usando todo en local.
+
 Para probar que está funcionando vamos a conectarnos y crear una base de datos de ejemplo
 
 ```sh
@@ -36,6 +43,14 @@ CREATE DATABASE datos_db;
 GRANT ALL PRIVILEGES ON datos_db.* TO 'javacasm'@'localhost';
 FLUSH PRIVILEGES;
 ```
+Si queremos que el usuario acceda desde otro ordenador tendríamos que cambiar 'localhost' por '%' en la sentencia anterior, quedando así:
+
+```SQL
+CREATE DATABASE datos_db;
+GRANT ALL PRIVILEGES ON datos_db.* TO 'javacasm'@'%';
+FLUSH PRIVILEGES;
+```
+
 Y salimos con 'quit;'
 
 
@@ -84,4 +99,37 @@ Veamos ahora un sencillo código python para insertar datos. Antes instalamos el
 pip3 install pymysql
 ```
 
+```python
+# Ejemplo sencillo de acceso a base de datos mariaDB 
+# T5_mariadb
+import time
+import pymysql as mariadb
 
+def insertarDato(id_sensor, valor):
+    db = mariadb.connect(host='raspi4',
+                            user='javacasm',
+                            passwd='Patatin5.5',
+                            db='datos_db')
+
+    cursor = db.cursor() # abrimos el cursor
+
+    insertSql = 'INSERT INTO datos_sensores (id_sensor,fecha,valor) values ({},now(),{});'.format(str(id_sensor),str(valor))
+
+    try:
+        cursor.execute(insertSql) # Executamos la sentencia insert
+        db.commit() # si todo va bien la confirmamos
+        print('Insertado valor:' + str(valor))
+    except Exception as e:
+        print('Error en la sentencia({}):{}'.format(insertSql,str(e)))
+        db.rollback() # Si hay un error cancelamos la transacción
+
+    cursor.close() # Cerramos el cursor
+    db.close() # Cerramos el acceso a la db
+
+
+for i in range (0,50):
+    insertarDato(0,i)
+    time.sleep(0.5)
+    
+```
+[Ejemplo de inserción de datos en mariaDB con python](./codigo/T5_mariadb.py)

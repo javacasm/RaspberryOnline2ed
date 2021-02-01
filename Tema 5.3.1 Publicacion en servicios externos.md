@@ -70,7 +70,7 @@ Si todo ha ido bien podremos ver nuestro mensaje en la pestaña de del navegador
 
 [Documentación](https://www.developerxively.com/docs/raspberry-pi#create-a-device-template)
 
-# Publicación en ThingSpeak
+## Publicación en ThingSpeak
 
 ThingSpeak es una servicio web que nos permite publicar datos de las medidas de nuestros dispositivos IOT (o de cualquier otro).
 
@@ -78,7 +78,7 @@ ThingSpeak es una servicio web que nos permite publicar datos de las medidas de 
 
 Es gratuito para cierto número de datos y nos permite de manera muy sencilla subir datos.
 
-## Creación del canal (Channel)
+### Creación del canal (Channel)
 
 * Nos hacemos una cuenta en ThingSpeak, recibiremos un email y lo verificamos.
 
@@ -106,7 +106,7 @@ Es gratuito para cierto número de datos y nos permite de manera muy sencilla su
 
 ![ThingSpeak Configuración de un gráfico](./images/ThingSpeakConfiguracionGrafico.png)
 
-## Código Raspberry 
+### Código Raspberry 
 
 Éste es el [código de ejemplo para Raspberry Pi](https://iotdesignpro.com/projects/how-to-send-data-to-thingspeak-cloud-using-raspberry-pi) que nos va a enviar datos sobre el uso de CPU de nuestra Raspberry
 
@@ -153,7 +153,49 @@ python cpu.py
 
 ![Check ThingSpeak channel](./images/Check-ThingSpeak-site-for-Data-Logging.png)
 
-#### Tutoriales para otras plataformas
+
+## Instalación y uso de Grafana
+
+[Grafana](https://grafana.com/) es una herramienta open source de representación gráfica y procesado de datos.
+
+![Grafana](./images/redesign-dashboard_home.png)
+
+La instalación es sencilla y vamos a seguir los pasos que nos recomiendan en la [web de Grafana](https://grafana.com/tutorials/install-grafana-on-raspberry-pi/#3)
+
+Añadimos la clave APT del repositorio de Grafana y luego de haber actualizado el sistema, instalamos el paquete grafana:
+
+```sh
+wget -q -O - https://packages.grafana.com/gpg.key | sudo apt-key add -
+echo "deb https://packages.grafana.com/oss/deb stable main" | sudo tee -a /etc/apt/sources.list.d/grafana.list
+sudo apt update
+sudo apt full-upgrade
+sudo apt install grafana
+```
+
+Activamos ahora el servidor de Grafana y lo arrancamos
+
+```sh
+sudo /bin/systemctl enable grafana-server
+sudo /bin/systemctl start grafana-server
+```
+
+Si todo ha ido bien, podremos acceder a la página inicial de desde un navegador poniendo http://ip_raspberry:3000
+
+![Pantalla inicial de Granada](./images/inicioGrafana.png)
+
+Accederemos con el usuario 'admin' y contraseña 'admin', y que nos pedirá que cambiemos al entrar.
+
+Ahora configuramos nuestra fuente de datos, en este ejemplo usarmos una base de datos mysql/mariaDB
+
+![Configuracion DB en Grafana](./images/ConfDBGrafana.png)
+
+Ahora configuramos la consulta que haremos sobre la base de datos y seleccionamos el tipo de gráficos
+
+![Configuración de la consulta y tipo de gráficos](./images/ConfiguracionPanel.png)
+
+Podemos ver [tutoriales más detallados en la web de grafana](https://grafana.com/tutorials/)
+
+### Tutoriales para otras plataformas
 
 La mayoría de las plataformas tienen tutoriales detallados, y muchas de ellas como por ejemplo Blynk incluso generan el código necesario para utilizarlas, con lo que nosotros sólo tenemos que personalizarlo con nuestro sensores y preferencias.
 
