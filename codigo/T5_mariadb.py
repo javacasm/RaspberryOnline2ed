@@ -28,4 +28,5 @@ def insertarDato(id_sensor, valor):
 for i in range (0,50):
     insertarDato(0,i)
     time.sleep(0.5)
-    
+ 
+
