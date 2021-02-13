@@ -16,7 +16,7 @@ def insertarDato(id_sensor, valor):
     try:
         cursor.execute(insertSql) # Executamos la sentencia insert
         db.commit() # si todo va bien la confirmamos
-    except Exception as else:
+    except Exception as e:
         print('Error en la sentencia({}):{}'.format(insertSql,str(e)))
         db.rollback() # Si hay un error cancelamos la transacción
 
