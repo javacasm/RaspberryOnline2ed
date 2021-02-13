@@ -1,5 +1,7 @@
 # Servidor Web
 
+TODO: DESARROLLADO EN 7.1
+
 ## Servidor usando python/flask
 
 [proyecto/tutorial](https://projects.raspberrypi.org/en/projects/python-web-server-with-flask/3)

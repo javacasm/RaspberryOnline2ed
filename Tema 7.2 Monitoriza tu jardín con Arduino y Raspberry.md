@@ -111,6 +111,8 @@ También se ha trabajado bastante el hacer robusta la comunicación con Arduino,
 
 Para que esto funcione hay que saber detectar el puerto serie de Arduino, lo que se hace en el método "arduinoUtils.detectarPuertoArduino()", método y técnica tomados del [proyecto miniTierra de @inopya](https://github.com/inopya/mini-tierra)
 
+Instalamos la [librería BME280 de finiteSpace para arduino](https://github.com/finitespace/BME280) y la "LiquidCrystal I2C" de Frank de Brabander
+
 ### Futuras versiones y mejoras
 
 * Medir la temperatura dentro de la caja y activar si es necesario un ventilador para enfriar el sistema
