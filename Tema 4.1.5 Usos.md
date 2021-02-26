@@ -2,6 +2,34 @@
 
 Como sabes Raspberry es una máquina Linux, con lo que podrás manejarla igual que se maneja cualquier otra equipo Linux.
 
+### Capturas de la pantalla
+
+Podemos hacer capturas del escritorio usando la tecla ImprimirPantalla si nuestro teclado la tiene o bien usando el comando **Scrot**, que pondrá un fichero con la captura en directorio home del usuario (/home/pi por defecto) con un nombre dado por la fecha, hora y resolución. Por ejemplo "2021-02-26-194221_1024x768_scrot.png".
+
+Podemos hacer que la captura se haga después de un determinado retardo usando la opción **-d**. Por ejemplo para hacer la captura a los 10 segundos. 
+
+```sh
+scrot -d 10
+```
+
+También podemos darle un nombre concreto al fichero resultado al usar el comando
+
+```sh
+scrot ficheroCaptura.png
+```
+
+Si necesitamos más opciones podemos instalar un programa como **Gnome Screenshot** que nos dará más opciones. Lo instalaremos como siempre con
+
+```sh
+sudo apt install gnome-screenshot
+```
+Y aparecerá en el menú de "Accesorios"
+
+Nos permitirá capturar todo el escritorio, una ventana, una zona, definiendo un determinado retardo. También nos permite tras hacer la captura seleccionar el nombre y carpeta del fichero o si queremos que se copie la imagen en el clipboard.
+
+![gnome-screenshot](./images/gnome-screenshot.png)
+
+
 ### Consola (línea de comandos)
 
 Podemos hacer casi todo desde el habitual entorno gráfico, pero también desde el terminal o la consola, también llamada líneas de comandos.

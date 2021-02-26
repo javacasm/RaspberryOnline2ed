@@ -203,8 +203,8 @@ Ventajas:
 
 
 	network={
-		ssid="ssid-of-accesspoint"
-		psk="wpa-password"
+		ssid="ssid-punto-de-acceso"
+		psk="contraseña-wpa"
 	}
 	```
 
