@@ -60,8 +60,12 @@ print (suma)  # imprimimos su valor
 
 ```python
 # Programa que determina si un año es o no bisiesto
-year = input('Introduzca el anio: ')
-if ((year%400)==0  or (year % 100) ==0 or (year%4)==0): # la regla para saber si es bisiesto
+# Divisible por 4
+# No divisible por 100 salvo que
+# Sea divisible por 400
+year = int(input('Introduzca el año: '))
+
+if (year%4)==0 and ( (year%400)==0 or  not ((year%100)== 0)):
   print('Es bisiesto!!')
 else:
   print ('No es bisiesto!!')
@@ -71,26 +75,22 @@ else:
 
 ```python
 # Nos da los dias que tiene el mes seleccionado
-mes = input('Introduce el mes:')
-year = input('Introuce el anio:')
-# Comprobamos si es entero
-if type(mes) == int:
-  # Comprobamos si esta entre 1 y 12
-  if (mes >= 1) and (mes <= 12):
+mes = int(input('Introduce el mes:'))
+year = int(input('Introuce el anio:'))
+# Comprobamos si esta entre 1 y 12
+if 1 <= mes <= 12:
     if mes == 2:
-      if(year % 400 == 0) or (year % 100 == 0) or (year % 4 == 0):
-        dias = 29
-      else:
-        dias =28
+        if (year%4)==0 and ( (year%400)==0 or  not ((year%100)== 0)):
+            dias = 29
+        else:
+            dias =28
     elif (mes == 4) or (mes == 6) or (mes == 9) or (mes == 11):
-      dias = 30
+        dias = 30
     else:
-      dias = 31
-    print ('El mes '+str(mes) +' del anio '+str(year)+' tiene '+str(dias)+ ' dias')
-  else:
-    print ('El mes debe ser entre 1 y 12')
+        dias = 31
+    print (f'El mes {mes} del año {year} tiene {dias} dias')
 else:
-  print ('El mes debe ser entero')
+    print ('El mes debe ser entre 1 y 12')
 ```
 
 ### Sentencias de control de repetición
