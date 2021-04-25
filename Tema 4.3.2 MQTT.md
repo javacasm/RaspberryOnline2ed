@@ -28,7 +28,7 @@ Al ser un servicio sencillo actúa como transporte en sistemas más complejos. P
 
 ![Arquitectura MQTT](./images/MQTT_arquitectura.png)
 
-Existen brokers accesibles (y gratuitos para cierto número de peticiones) a través de internet como por ejemplo el de [HiveMQ](https://www.hivemq.com/public-mqtt-broker/) o [el de Adafruit](https://io.adafruit.com/). En [esta página](https://diyprojects.io/8-online-mqtt-brokers-iot-connected-objects-cloud/#.XwoEW9_ni-g) tenemos un listado.
+Existen brokers accesibles (y gratuitos para cierto número de peticiones) a través de internet como por ejemplo el de [HiveMQ](https://www.hivemq.com/public-mqtt-broker/) o [el de Adafruit](https://io.adafruit.com/) o [este mismo de mosquitto org](https://test.mosquitto.org/). En [esta página](https://diyprojects.io/8-online-mqtt-brokers-iot-connected-objects-cloud/#.XwoEW9_ni-g) tenemos un listado.
 
 ## Instalación en Raspberry
 
@@ -67,6 +67,14 @@ mosquitto_pub -h servidorMQTT -t "Topic" -m "Mensaje"
 
 Para depurar el funcionamiento de mosquitto y ver los logs cuando funciona como servicio podemos usar [MQTT-Explorer](https://github.com/thomasnordquist/MQTT-Explorer). En [esta página](https://community.home-assistant.io/t/how-to-debug-mosquitto-mqtt/107709/20) y en [esta otra](http://www.steves-internet-guide.com/mosquitto-logging/) te explican cómo hacerlo.
 
+
+## Configuración de puertos y acceso a ips
+
+TODO: REVISAR
+
+Fichero: /etc/mostquitto/mosquitto.conf
+
+listener port IP 
 
 
 
