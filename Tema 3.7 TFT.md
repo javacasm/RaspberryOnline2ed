@@ -63,6 +63,25 @@ sudo ./rotate.sh 90
 
 También podemos rotarlo a 270, si lo preferimos.
 
+Como hemos dicho, durante la instalación se modifica el fichero /boot/config.txt, añadiendo líneas para configurar el correcto acceso al HDMI, activando SPI y configurando la rotación que hayamos elegido. En mi caso se hicieron estos cambios:
+
+```
+dtparam=spi=on      # activamos SPI
+enable_uart=1
+display_rotate=3    # rotación configurada
+max_usb_current=1
+config_hdmi_boost=7 # nivel de la señal HDMI
+hdmi_group=2        # configuración de hdmi
+hdmi_mode=1         
+hdmi_mode=87        # Modo de vídeo específico que controla el driver
+hdmi_drive=2        # Using HDMI no DVI
+hdmi_cvt 480 800 60 6 0 0 0  # Resolución y frecuencia
+dtoverlay=ads7846,cs=1,penirq=25,penirq_pull=2,speed=50000,keep_vref_on=0,swapxy=0,pmax=255,xohms=150,xmin
+=200,xmax=3900,ymin=200,ymax=3900 # paŕametros del driver
+
+```
+
+
 
 ## Uso
 
