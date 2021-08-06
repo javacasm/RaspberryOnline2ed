@@ -74,7 +74,7 @@ Veamos algunos de los comandos más utilizados:
 
 Algunas características de sistema de fichero de linux
 
-* Usa un formato de partición ext4 (también existen aunque en desuso el ext3 y el ext2), aunque permite usar FAT
+* Usa un formato de partición ext4 (también existen aunque en desuso el ext3 y el ext2), aunque permite usar FAT, el típico sistema de archivos de Windows.
 * El árbol de directorios tiene un único directorio raíz del que cuelga todo. Todos los dispositivos (pen drives, discos externos, discos de red) se integran dentro de este árbol, **montando** su raiz en un directorio determinado (montamos y desmontamos con __mount__ y __unmonut__ )
 
 El usuario sólo acceso a su directorio y el solo el administrador (**root**) puede acceder al resto de directorios

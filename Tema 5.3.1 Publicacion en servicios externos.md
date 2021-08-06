@@ -31,45 +31,6 @@ Además algunas nos permiten establecer disparadores (trigger) para vigilar que 
 * Xively https://www.xively.com/
 
 
-## Plataforma Xively
-
-Uno de los más conocidos servicios que nos permiten gestionar y visualizar nuestros datos es el antes gratuito y conocido como Pachube, luego llamado Cosm y de momento [Xively](https://xively.com/).
-
-Veamos cómo acceder a este servicio:
-
-* Accedemos a la página de desarrolladores https://www.developerxively.com
-* Buscamos los detalles para nuestro hardware, https://www.developerxively.com/docs/raspberry-pi. Vemos que en el listado no aparece ninguna de las placas Arduino, eso se debe a que Google, el actual dueño de Xively considera que ninguna de las placas Arduino puede garantizar comunicaciones seguras.
-
-Aquí nos indica como configurar nuestra placa y descargar un ejemplo en el que cambiaremos nuestro API Key (código que obtenemos al registrarnos).
-
-Instalamos la librería de xively con
-```sh
-pip3 install --user --pre xiP
-```
-
-Creamos un dispositivo en la plataforma 
-
-![Alta del dispositivo en Xively](./images/637e385-XMA-raspberryPi-create-device-001.jpg)
-
-Damos de alta nuestro dispositivo para obtener las credenciales en forma de fichero MQTTCredentials.txt 
-
-![Descargamos las credenciales](./images/6b02bf3-XMA-raspberryPi-device-get-password-001.jpg)
-
-Descargamos la aplicación de ejemplo con
-```sh
-wget https://s3.amazonaws.com/xipy-examples/xively_pub.py
-```
-
-Probamos a publicar contenidos con (tenemos el código python y el fichero MQTTCredentials.txt en la misma carpeta)
-
-```sh
-python xively_pub.py --message 'Hola desde nuestra Raspberry Pi'
-```
-
-Si todo ha ido bien podremos ver nuestro mensaje en la pestaña de del navegador de uestro canal.
-
-[Documentación](https://www.developerxively.com/docs/raspberry-pi#create-a-device-template)
-
 ## Publicación en ThingSpeak
 
 ThingSpeak es una servicio web que nos permite publicar datos de las medidas de nuestros dispositivos IOT (o de cualquier otro).
@@ -108,48 +69,52 @@ Es gratuito para cierto número de datos y nos permite de manera muy sencilla su
 
 ### Código Raspberry 
 
-Éste es el [código de ejemplo para Raspberry Pi](https://iotdesignpro.com/projects/how-to-send-data-to-thingspeak-cloud-using-raspberry-pi) que nos va a enviar datos sobre el uso de CPU de nuestra Raspberry
+Éste es el código de ejemplo para Raspberry Pi que nos va a enviar datos sobre el uso de CPU de nuestra Raspberry
+
+Instalamos el paquete thingspeak con
+
+```sh
+pip3 install thingspeak
+```
+
+En el código cambiaremos las claves de thingspeak escritua y el código de nuestro canal:
 
 
-```py
-import httplib
-import urllib
+```python
+import thingspeak
 import time
-key = "ABCD"  # Put your API Key here
-def thermometer():
-    while True:
-        #Calculate CPU temperature of Raspberry Pi in Degrees C
-        temp = int(open('/sys/class/thermal/thermal_zone0/temp').read()) / 1e3 # Get Raspberry Pi CPU temp
-        params = urllib.urlencode({'field1': temp, 'key':key }) 
-        headers = {"Content-typZZe": "application/x-www-form-urlencoded","Accept": "text/plain"}
-        conn = httplib.HTTPConnection("api.thingspeak.com:80")
-        try:
-            conn.request("POST", "/update", params, headers)
-            response = conn.getresponse()
-            print temp
-            print response.status, response.reason
-            data = response.read()
-            conn.close()
-        except:
-            print "connection failed"
-        break
+ 
+channel_id = 306585 # Ponemos el id de nuestro canal 
+write_key  = '0000CLAVE0000' # Ponemos nuesra clave de escritura (WRITE API KEY)
+ 
+def medirCanal(canal):
+    try:
+        # leemos la temperatura de la Raspberry 
+        temperatura = int(open('/sys/class/thermal/thermal_zone0/temp').read()) / 1000.0 # para leer la temperatura
+        # escritura
+        response = channel.update({1: temperatura})
+        
+        # lectura
+        lectura = channel.get({})
+        print("Leido:", lectura)
+        
+    except:
+        print("Error de conexión")
+ 
+ 
 if __name__ == "__main__":
-        while True:
-                thermometer()
+    canal = channel = thingspeak.Channel(id=channel_id, api_key=write_key)
+    while True:
+        medirCanal(canal)
+        # Las cuentas publicas sólo pueden acceder cada 15 segundos
+        time.sleep(15)
 ```
-
-Para ejecutarlo necestiamos tener instalados los módulos **httplib** y **urllib**
 
 ```sh
-sudo apt-get install httplib
-sudo apt-get install urllib
+python3 test_thingspeak.py
 ```
-Ahora si lo ejecutamos
 
-```sh
-python cpu.py
-```
- podremos ver el gráfico en su correspondiente canal
+Podremos ver el gráfico en su correspondiente canal
 
 ![Check ThingSpeak channel](./images/Check-ThingSpeak-site-for-Data-Logging.png)
 
