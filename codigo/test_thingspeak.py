@@ -2,7 +2,7 @@ import thingspeak
 import time
  
 channel_id = 306585 # Ponemos el id de nuestro canal 
-write_key  = '0000CLAVE0000' # Ponemos nuesra clave de escritura (WRITE API KEY)
+write_key  = '11111-6WTOP32JXRWJJBN0-22222' # Ponemos nuesra clave de escritura (WRITE API KEY)
  
 def medirCanal(canal):
     try:
@@ -15,7 +15,7 @@ def medirCanal(canal):
         lectura = channel.get({})
         print("Leido:", lectura)
     except KeyboardInterrupt:
-        print("No need for this")        
+        print("Interrupcion por teclado")        
     except:
         print("Error de conexión")
  
