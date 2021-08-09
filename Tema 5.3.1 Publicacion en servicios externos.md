@@ -97,7 +97,8 @@ def medirCanal(canal):
         # lectura
         lectura = channel.get({})
         print("Leido:", lectura)
-        
+    except KeyboardInterrupt:
+        print("Salimos")        
     except:
         print("Error de conexión")
  
