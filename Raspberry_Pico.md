@@ -8,9 +8,9 @@
 
 [Detalles en hackter.io](https://www.hackster.io/news/hands-on-with-the-rp2040-and-pico-the-first-in-house-silicon-and-microcontroller-from-raspberry-pi-effc452fc25d)
 
-[Guía para usarla con micropython](https://www.raspberrypi.org/documentation/pico/getting-started/)
+[Guía para usarla con micropython](https://www.raspberrypi.com/documentation/microcontrollers/micropython.html#what-is-micropython)
 
-[Guía para uasrla con C++](https://datasheets.raspberrypi.org/pico/getting_started_with_pico.pdf)
+[Guía para uasrla con C++](https://www.raspberrypi.com/documentation/microcontrollers/c_sdk.html#sdk-setup)
 
 ### Recursos
 

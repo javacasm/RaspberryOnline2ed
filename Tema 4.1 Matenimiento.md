@@ -6,26 +6,35 @@ Una vez instalado el sistema, necesitamos de vez en cuando actualizarlo. Veamos 
 
 Desde un terminal/consola tecleamos lo siguiente
 
-Para buscar cambios
+Para buscar cambios en los respositorios:
+
 ```sh
 sudo apt update
 ```
-Para instalar estos cambios
+
+Para instalar estos cambios:
+
 ```sh
 sudo apt upgrade
 ```
-Para actualizar el sistema
+
+Para actualizar el sistema, no sólo actualizando los paquetes:
+
 ```sh
 sudo apt dist-upgrade
 ```
-Para actualizar a una nueva distribución
+
+Para actualizar a una nueva distribución (si está disponible):
+
 ```sh
 sudo apt full-upgrade
 ```
 
-Para instalar un paquete determinado
+Para instalar un paquete determinado, haremos lo siguiente:
 
-	sudo apt install paquete
+```sh
+sudo apt install paquete
+```
 
 Vemos como en todos los comandos utilizamos la palabra "sudo" esto es debido a que se necesitan privilegios de administrador para todo lo relacionado con la actualización del sistema.
 
@@ -63,6 +72,7 @@ Vamos a ver un ejemplo de cómo actualizar de una versión del SO a la siguiente
 ```sh
 grep -rl stretch /etc/apt/ | sudo xargs sed -i 's/stretch/buster/g'
 ```
+
 2. Actualizamos el sistema completamente:
 
 ```sh
@@ -77,14 +87,14 @@ sudo rpi-update
 ```
 
 4. Quitamos aplicaciones que ya no están en buster
+
 ```sh
 sudo apt purge timidity lxmusic gnome-disk-utility deluge-gtk evince wicd wicd-gtk clipit usermode gucharmap gnome-system-tools pavucontrol
 ```
+
 5. Ahora actualizamos el aspecto con la nueva configuración visual abriendo ‘Appearance Settings’ y en la pestaña ‘Defaults’ pulsamos ‘Set Defaults’ lo que debería ponernos un tamaño de fuente y de iconos acorde a la resolución usada.
 
-
-##### Recursos
-[Fuente](https://www.raspberrypi.org/blog/buster-the-new-version-of-raspbian/)
+Podemos hacer este cambio entre diferentes versión con sólo cambiar los nobmres de las versiones
 
 #### Instalación de programas
 

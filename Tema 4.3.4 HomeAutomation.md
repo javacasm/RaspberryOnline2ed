@@ -28,7 +28,7 @@ Se recomienda el siguiente hardware:
 
 Descargamos la imagen adecuada a nuestro equipo desde su [web](https://www.home-assistant.io/hassio/installation/)
 
-Usaremos [Balena Etcher](https://www.balena.io/etcher/) o el [propio Raspberry Pi Imager](https://www.raspberrypi.org/downloads/) para grabar la imagen en la tarjeta SD
+Usaremos [Balena Etcher](https://www.balena.io/etcher/) o el [propio Raspberry Pi Imager](https://www.raspberrypi.com/software/) para grabar la imagen en la tarjeta SD
 
 Ponemos la SD en la Raspberry y la arrancamos. Se descargará la última versión del software y se actualizará lo que puede tardar unos 15-20 minutos.
 

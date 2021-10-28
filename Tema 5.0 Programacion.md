@@ -31,8 +31,8 @@ Principalmente están pensados para facilitar la instalación de los entornos, q
 
 La fundación Raspberry ha creado muchos recursos para fomentar y facilitar el aprendizaje de la programación como estos:
 
-[Code club with Scratch](https://www.raspberrypi.org/magpi-issues/Code-Club_Book-of-Scratch-DIGITAL.pdf)
+[Code club with Scratch](https://magpi.raspberrypi.com/books/book-of-scratch)
 
-[Make with code (TheMagPi 77)](https://www.raspberrypi.org/magpi-issues/MagPi77.pdf#page=26)
+[Make with code (TheMagPi 77, página 26)](https://magpi.raspberrypi.com/issues/77)
 
-[C & GUI](https://www.raspberrypi.org/magpi-issues/C_GUI_Programming.pdf)
+[C & GUI](https://magpi.raspberrypi.com/books/c-gui-programming)

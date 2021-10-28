@@ -1,9 +1,11 @@
 ## Instalación en Raspberry Pi 4
 
 La instalación en la Raspbery tiene algunos detalles a tener en cuenta:
+
 * De los 2 HDMI, el de más a la izquierda es el 0 y es el que debemos conectar sí sólo se va a usar un monitor.
-* Podemos instalar una versión de 64bits experimental, todavía en estado beta y a la que le faltan todavía algunos drivers esenciales. [Más información](https://www.raspberrypi.org/forums/viewtopic.php?t=275370)   
-* Instalación en un disco USB (o pendrive USB) para usarlo como disco del sistema sin necesidad de tarjeta SD.
+* Podemos hacer la instalación en un disco USB (o pendrive USB) para usarlo como disco del sistema sin necesidad de tarjeta SD.
+
+También podemos instalar una versión de 64bits experimental, todavía en estado beta y a la que le faltan todavía algunos drivers esenciales. [Más información](https://forums.raspberrypi.com/viewtopic.php?t=275370), descargando las imágenes desde la [página de la beta](https://downloads.raspberrypi.org/raspios_arm64/images/)
 
 ### Instalación para arranque con disco USB
 
@@ -19,6 +21,7 @@ Necesitaremos una tarjeta SD para la crear la imagen y copiarla al pen USB.
 sudo apt update
 sudo apt full-upgrade
 ```
+
 3. Copiamos el contenido de nuesra tarjeta SD al disco USB con el programa **SD Card Copier** de nuestra Raspberry Pi
 
 4. Ahora vamos a actualizar la eeprom para activar el arranque desde USB. Editaremos el fichero  /etc/default/rpi-eeprom-update cambiando "critical" por "stable"

@@ -2,7 +2,7 @@
 
 Los scripts son ficheros donde introducimos distintas órdenes que se irán ejecutando de forma consecutiva una tras otra.
 
-Una excelente guía para aprender a usar la shell y sus comandos en Raspberry es el libro [Essentials Bash V2](https://www.raspberrypi.org/magpi-issues/Essentials_Bash_v2.pdf)
+Una excelente guía para aprender a usar la shell y sus comandos en Raspberry es el libro [Command Line V2](https://magpi.raspberrypi.com/books/command-line-second-edition)
 
 Vamos a ver algunos ejemplos de cómo utilizarlos junto con la cámara. Para ellos usaremos algunos de los comandos que tenemos para controlarla.
 

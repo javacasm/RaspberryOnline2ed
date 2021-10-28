@@ -1,4 +1,4 @@
-## Instalación en una Raspberry Pi Zero W 
+## Instalación en una Raspberry Pi Zero W (o Zero 2 W)
 
 Vamos a hacer una instalación ahora en una Raspberry Pi Zero W que vamos a utilizar para tomar fotos remotamente, con lo que normalmente no va a tener ni monitor, ni teclado conectados. Ello unido a su menor potencia nos va a llevar a usar una versión del SO sin escritorio visual, ni las aplicaciones asociadas.
 
@@ -74,3 +74,7 @@ PAra ello basta con crear un fichero vacío llamado **"ssh"** en directorio raí
     ```
 * Para apagar la Raspberry usaremos **sudo halt**
 * Para reiniciar **sudo reboot**
+
+### Convertir una instalación de consola a escritorio
+
+

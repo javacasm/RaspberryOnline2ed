@@ -8,7 +8,7 @@
 
 * Si vas a comprar una nueva te recomiendo Raspberry Pi 4, con al menos 4Gb de RAM aunque el curso se puede hacer perfectamente con cualquiera de los modelos 3 (incluso con el 2)
 * Fuente de alimentación de 5V con conector micro-USB con al menos 2A (mejor si son 2.5A) y 3A con USB-C para la Raspberry 4
-* Tarjeta SD de al menos 16 GB  o más (recomendados 32Gb con un [máximo 128Gb](https://www.raspberrypi.org/help/faqs/#sdMax)). Se recomienda de clase 10 por su velocidad. La calidad de la tarjeta es crítica, en tarjetas baratas con problemas de rendimiento nos vamos a encontrar cuelgues inesperados e incluso puede que no arranque.
+* Tarjeta SD de al menos 16 GB  o más (recomendados 32Gb con un [máximo 128Gb](https://www.raspberrypi.com/help/faqs/#sdMax)). Se recomienda de clase 10 por su velocidad. La calidad de la tarjeta es crítica, en tarjetas baratas con problemas de rendimiento nos vamos a encontrar cuelgues inesperados e incluso puede que no arranque.
 
 
 Y si la vas a usar como un ordenador

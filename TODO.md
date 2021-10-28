@@ -1,4 +1,14 @@
 
+## Configuración  de puertos y acceso a ips en MQTT
+
+TODO: REVISAR
+
+Fichero: /etc/mostquitto/mosquitto.conf
+
+listener port IP 
+
+
+
 ORGANIZAR NIVELES DE LOS TITULOS!!!
 
 

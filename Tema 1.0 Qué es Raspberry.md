@@ -29,6 +29,3 @@ diferentes fines.
 
 ![esquema](./images/esquema.png)
 
-
-
-

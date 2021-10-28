@@ -2,21 +2,13 @@
 
 Existen varios sistemas operativos (SO) disponibles para Raspberry, cada uno de ellos está pensado para un fin concreto.
 
-Piensa que para cambiar entre SO, sólo tienes que apagar tu Raspberry, cambiar la tarjeta SD y volver a arrancar. Yo suelo tener varias SDs con los diferentes SO
+Piensa que para cambiar entre SO, sólo tienes que apagar tu Raspberry, cambiar la tarjeta SD y volver a arrancar. Yo suelo tener varias SDs con los diferentes SOs
 
-Puedes ver algunos de ellos en la página de [descargas de Raspberry.org](https://www.raspberrypi.org/downloads/)
+Puedes ver algunos de ellos en la página de [descargas de Raspberry.org](https://www.raspberrypi.com/software/)
 
-Veamos algunos de los más utilizados
+Veamos algunos de los más utilizados:
 
-### [Noobs](https://www.raspberrypi.org/downloads/noobs/)
-
-Es un SO mínimo pensado para facilitar la instalación. Arranca el sistema y nos permite luego elegir qué sistema operativo instalar, y si tenemos suficiente espacio en la tarjeta, podremos instalar varios en una misma SD
-
-![noobs](./images/noobs.png)
-
-Sin duda es la mejor opción para el principiante. Además nos permite hacer un primera configuración de la red y seleccionar el idioma.
-
-### [Raspberry Pi OS (Raspbian)](https://www.raspberrypi.org/downloads/raspbian/)
+### [Raspberry Pi OS (Raspbian)](https://www.raspberrypi.com/software/operating-systems/)
 
 (Hasta hace muy poco el sistema operativo oficial de Raspberry Pi se llamaba Raspbian, desde hace muy poco lo han renombrado como Raspberry Pi OS, por lo que puede que en alguna parte me siga refiriendo a él con ese nombre.)
 
@@ -24,11 +16,18 @@ Es la versión para Raspberry de Debian (una de las distribuciones de Linux con 
 
 ![Raspbian](./images/Raspbian.jpg)
 
-### [Ubuntu Mate](https://ubuntu-mate.org/raspberry-pi/)
+Podemos elegir entre 3 versiones:
+* Versión **Lite** donde sólo se instala la parte básica del sistema, sin escritorio, sólo podemos usar el modo texto.
+* Versión **Escritorio** (Desktop) donde tenemos es escritorio gráfico y el sistema básico. No se incluye todo el software opcional
+* Versión **Full** que integra el escritorio y todas las herramientas visuales. 
+
+La primera está pensada para ser usada en servidores y sin herramientas gráficas. Si es para probar yo te recomiendo la tercera, para que veas el software disponible. La segunda la usaremos is queremos hacer nuestras propia instalación de software.
+
+### [Ubuntu Desktop](https://ubuntu.com/download/raspberry-pi)
 
 Es una versión de Ubuntu (Linux) para la Raspberry
 
-### [Ubuntu Core](https://ubuntu.com/download/raspberry-pi-2-3-core)
+### [Ubuntu Core](https://ubuntu.com/download/raspberry-pi-core)
 
 Es un Ubuntu (Linux) reducido al mínimo para funcionar en equipos más pequeños optimizado para un mejor rendimiento
 
@@ -50,13 +49,9 @@ Otra distribución especializada en el entretenimiento y que utiliza el conocido
 
 ![OpenElec](./images/openelec-vs-osmc-ft-500x281.jpg)
 
-### [Chrome OS](https://fydeos.com/download/)
-
-Es un port de la parte opensource del sistema operativo Chrome OS de Google para Raspberry
-
 ### [Android](https://emteria.com/)
 
-Se trata de un port de Android para Raspberry. En [este tutorial](https://www.raspberrypi.org/magpi/android-raspberry-pi/) nos dicen cómo instalarla.
+Se trata de un port de Android para Raspberry. En [este tutorial](https://magpi.raspberrypi.com/articles/android-raspberry-pi) nos dicen cómo instalarla.
 
 ### [Retropie](https://retropie.org.uk/)
 
@@ -65,3 +60,13 @@ Es una distribución que contiene varios emuladores de máquinas recreativas y v
 ![Máquina de juegos con RAspberry Pi](./images/800px-Arcade_bartop.jpg)
 
 Una vez elegida la imagen vamos a proceder a instalar
+
+
+## Noobs
+
+Es un SO mínimo pensado para facilitar la instalación. Arranca el sistema y nos permite elegir qué sistema operativo instalar, y si tenemos suficiente espacio en la tarjeta, podremos instalar varios en una misma SD
+
+![noobs](./images/noobs.png)
+
+Durante mucho tiempo fue la opción recomendada, pero ahora es preferible usar Raspberry Pi Imager
+

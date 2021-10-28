@@ -14,7 +14,7 @@ Veamos las diferencias con las versiones anteriores
 El cambio a nivel de rendimiento es brutal.
 
 
-### [Raspberry Pi V3+](https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/	) vs V4
+### [Raspberry Pi V3+](https://www.raspberrypi.com/products/raspberry-pi-3-model-b-plus/) vs V4
 
 ||Raspberry Pi 4	|Raspberry Pi 3 B+
 |---|---|---
@@ -56,33 +56,44 @@ En el siguiente enlace podemos leer en detalle sobre las diferentes [versiones](
 
 Las versiones más actuales son la Raspberry 4 (de la hablamos en detalle poco más adelante) y la Zero.
 
-La [Raspberry Zero](https://www.raspberrypi.org/products/pi-zero/) es una versión superreducida con el mismo procesador pero a 1Ghz y  512Mb de RAM. La gran diferencia es que casi no dispone de conectores, para así reducir su tamaño y precio ¡Cuesta 5-10€!
+La [Raspberry Zero](https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/) es una versión superreducida con el mismo procesador pero a 1Ghz y  512Mb de RAM. La gran diferencia es que casi no dispone de conectores, para así reducir su tamaño y precio ¡Cuesta 5-15€! según queramos una versión sin wifi o con conectividad wifi.
 
 ![Raspberry Pi Zero](./images/RaspiZero.png)
 
+Recientemente ha aparecido una nueva versión: la Raspberry Pi Zero 2 W, con micro de cuatro núcleos, 64bits, 1GHz y 512 Mb de RAM integrados en el propio chip. Según sus pruebas es 5x veces más potente. Sale por 15$ y eso sí, con el mismo mini tamaño . Utiliza el mismo procesador que la Raspberry 3, eso sí, en un espacio más reducido.
+
+El que tenga un CPU quad-core que hace que la ejecución multitarea mejore muchísimo, lo que aumenta mucho su rendimiento
+
+![](./images/Raspberry-Pi-Zero-2-W-Hero-800x535.jpg)
+
+[Referencia sobre la Raspberry Pi Zero 2 W](https://www.raspberrypi.com/news/new-raspberry-pi-zero-2-w-2/)
+
 ¿Para qué elegir un modelo u otro? La Zero tiene la ventaja de un tamaño muy reducido y por tanto es ideal para proyectos móviles o que necesitamos "esconder". Por otro lado tiene menor capacidad de procesamiento y de memoria RAM lo que la inutiliza para proyectos que requieran un mayor rendimiento.
+
 
 ### Versiones antiguas
 
-#### [Raspberry Pi Versión B](https://www.raspberrypi.org/products/raspberry-pi-1-model-b-plus/)
+Por motivos históricos vamos a incluir aquí algunos detalles sobre las versiones anteriores.
+
+#### [Raspberry Pi Versión B](https://www.raspberrypi.com/products/raspberry-pi-1-model-b-plus/)
 
 Tenía 512M de RAM, ethernet y 2 puertos USB
 
 ![modeloB](./images/ModeloB.jpg)
 
-#### [Raspberry Versión A](https://www.raspberrypi.org/products/raspberry-pi-1-model-a-plus/)
+#### [Raspberry Versión A](https://www.raspberrypi.com/products/raspberry-pi-1-model-a-plus/)
 
 Apareció en 2011 y tenía 256MB de RAM, un único USB y no tenía conector Ethernet. Costaba unos 25€
 
 ![Raspberry Versión A](./images/220px-Raspberry_Pi_-_Model_A.jpg)
 
-#### [Versión B+](https://www.raspberrypi.org/documentation/hardware/raspberrypi/models/README.md#modelbplus)
+#### [Versión B+](https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#modelbplus)
 
 
 En 2014 se libera esta versión con algunas mejoras internas, pero sin grandes cambios
 
 
-#### [Versión 2 B](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/)
+#### [Versión 2 B](https://www.raspberrypi.com/products/raspberry-pi-2-model-b/)
 
 El micro quad core va a 900MHz  y tiene 1Gb de RAM, 4 puertos USBs. Incorporan el nuevo formato de los 40 pines GPIO
 
@@ -92,7 +103,7 @@ El micro quad core va a 900MHz  y tiene 1Gb de RAM, 4 puertos USBs. Incorporan e
 
 [Vídeo](https://youtu.be/ZBq6ZPE5r9c) sobre los distintos modelos/versiones de Raspberry Pi
 
-Más detalles en la [página de productos de la fundación Raspberry Pi](https://www.raspberrypi.org/products/)
+Puedes encontrar más detalles en la [página de productos de la fundación Raspberry Pi](https://www.raspberrypi.com/products/)
 
 ## Raspberry Pi 4
 
@@ -134,12 +145,12 @@ La posibilidad de elegir entre varios tamaños de RAM es muy interesante, pero t
 
 ### Referencias
 
-[Página del producto](https://www.raspberrypi.org/products/raspberry-pi-4-model-b/)
+[Página del producto](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/)
 
-[Más detalles sobre las especificaciones y el comportamiento](https://www.raspberrypi.org/magpi/raspberry-pi-specs-benchmarks/)
+[Más detalles sobre las especificaciones y el comportamiento](https://magpi.raspberrypi.com/articles/raspberry-pi-specs-benchmarks)
 
-[Más información sobre los tests de rendimiento](https://www.raspberrypi.org/magpi/raspberry-pi-4-specs-benchmarks/)
+[Más información sobre los tests de rendimiento](https://magpi.raspberrypi.com/articles/raspberry-pi-4-specs-benchmarks)
 
-[Sobre el desarrollo de esta nueva versión](https://www.raspberrypi.org/magpi/eben-upton-engineering-raspberry-pi-4/)
+[Sobre el desarrollo de esta nueva versión](https://eandt.theiet.org/content/articles/2019/06/raspberry-pi-4-unveiled-interview-with-founder-eben-upton/)
 
-(Imágenes oficiales tomadas de Raspberry.org) y [MagPi85](https://www.raspberrypi.org/magpi-issues/MagPi85.pdf)
+(Imágenes oficiales tomadas de Raspberry.org) y [MagPi85](https://magpi.raspberrypi.com/issues/85)

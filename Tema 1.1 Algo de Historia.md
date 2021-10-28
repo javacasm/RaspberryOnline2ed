@@ -21,13 +21,13 @@ Utiliza un diseño avanzado, como podemos ver en la imagen donde se ve que se ha
 
 Actualmente existen varios formatos, vamos a ver los más usados:
 
-* La versión más actual a día de hoy (Julio de 2020) es la [Versión 4](https://www.raspberrypi.org/products/raspberry-pi-4-model-b/) (1.5GHz quad core hasta 8Gb, USB 3.0, 2 HDMI 4K Gigabit, Wifi y bluetooth)
+* La versión más actual a día de hoy (Julio de 2020) es la [Versión 4](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/) (1.5GHz quad core hasta 8Gb, USB 3.0, 2 HDMI 4K Gigabit, Wifi y bluetooth)
 ![Raspberry Pi versión 4](./images/Raspberry-Pi-4.jpg)
 
-* La versión [Raspberry Pi Zero](https://www.raspberrypi.org/products/pi-zero/) (1Ghz 512Mb) con un tamaño muy pequeño y un precio superreducido de 10eu
+* La versión [Raspberry Pi Zero W](https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/) (1Ghz 512Mb) con un tamaño muy pequeño y un precio superreducido de 10€ - 15€, según la queramos con o si wifi.
 ![Raspberry Pi Zero](./images/RaspiZero.png)
 
-* [Raspberry Pi Compute Module 3+](https://www.raspberrypi.org/products/compute-module-3-plus/): es equivalente a una Rasperry pi 3 B+ pero en un formato pensado para construir ordenadores a partir de la Raspberry. Se puede adquirir con un disco interno eMMC de 8GB/16GB/32GB que sustituye a la tarjeta SD
+* [Raspberry Pi Compute Module 3+](https://www.raspberrypi.com/products/compute-module-3-plus/): es equivalente a una Rasperry pi 3 B+ pero en un formato pensado para construir ordenadores a partir de la Raspberry. Se puede adquirir con un disco interno eMMC de 8GB/16GB/32GB que sustituye a la tarjeta SD
 
 ![Raspberry_Pi_Compute_Module.png](./images/Raspberry_Pi_Compute_Module.png)
 

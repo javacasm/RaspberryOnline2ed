@@ -68,14 +68,6 @@ mosquitto_pub -h servidorMQTT -t "Topic" -m "Mensaje"
 Para depurar el funcionamiento de mosquitto y ver los logs cuando funciona como servicio podemos usar [MQTT-Explorer](https://github.com/thomasnordquist/MQTT-Explorer). En [esta página](https://community.home-assistant.io/t/how-to-debug-mosquitto-mqtt/107709/20) y en [esta otra](http://www.steves-internet-guide.com/mosquitto-logging/) te explican cómo hacerlo.
 
 
-## Configuración de puertos y acceso a ips
-
-TODO: REVISAR
-
-Fichero: /etc/mostquitto/mosquitto.conf
-
-listener port IP 
-
 
 
 ## Ejemplos

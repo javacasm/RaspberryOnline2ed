@@ -1,6 +1,6 @@
 ## Instalación
 
-Desde hace poco se ha publicado una aplicación llamada Imager que permite hacer aún más sencilla la instalación del sistema operativo, encargándose de descargar, formatear y escribir la imagen del sistema directamente en la tarjeta SD
+Desde hace poco se ha publicado una aplicación llamada **Raspberry Pi Imager** que permite hacer aún más sencilla la instalación del sistema operativo, encargándose de descargar, formatear y escribir la imagen del sistema directamente en la tarjeta SD
 
 ![Imager](./images/Imager.png)
 
@@ -14,7 +14,7 @@ Al seleccionar el sistema operativo veremos distintas opciones, como por ejemplo
 
 Donde vemos que aparecen opciones de instalar versiones de 32 o de 64 bits
 
-Podemos descargar Imager desde la página de [Descargas de Raspberrypi.org](https://www.raspberrypi.org/downloads/) donde seleccionaremos nuestro sistema operativo
+Podemos descargar Imager desde la página de [Descargas de Raspberry Pi](https://www.raspberrypi.com/software/) donde seleccionaremos nuestro sistema operativo
 
 Una vez descargado seleccionaremos el sistema operativo que queremos usar, luego seleccionaremos la tarjeta SD donde vamos a escribir la imagen (los datos de la tarjeta se borrarán)
 
@@ -33,17 +33,18 @@ También podemos usar Imager para formatear la tarjeta, para crear tarjetas SD c
 
 Vamos a ver cómo hacer todo el proceso manualmente para entender los pasos o por si Imager no nos permite usar esa versión de sistema operativo.
 
+Realmente **NO RECOMIENDO HACERLO ASÍ** salvo que ya lo hayas hecho y controles 100% del tema.	
+
 ¿Qué necesitamos?
 
-* Formatear tarjeta ([Formatter4](http://www.sdcard.org/downloads/formatter_4/))
-* Descargamos la imagen del sistema que queramos desde la [página de descargas (Downloads) de la web de Raspberry.org](http://www.raspberrypi.org/downloads)
+* Formatear tarjeta ([Formatter4](https://www.sdcard.org/downloads/formatter/))
+* Descargamos la imagen del sistema que queramos desde la [página de descargas (Downloads) de la web de Raspberry.org](https://www.raspberrypi.com/software/)
 * Si usamos una imagen tipo Noobs, basta con que descomprimamos el contenido del fichero zip en la tarjeta SD
 * Si es una imagen (fichero tipo img o iso) lo grabamos con Imager o por ejemplo con la herramienta multiplataforma Etcher (Windows, OsX y Linux) para instalar imágenes https://www.balena.io/etcher/
 
 	![Etcher](./images/etcher.io.png)
-
-* ¿Qué imagen usar?
-	* Empecemos con [Noobs](https://www.raspberrypi.org/blog/tag/noobs/) que nos va a permitir instalar otras imágenes.
+* ¿Qué imagen usar?:
+	* Empecemos con [Noobs](https://github.com/raspberrypi/noobs) que nos va a permitir instalar otras imágenes.
     * Tenemos 2 opciones para descargar la imagen de noobs:
         * Una instalación mínima de noobs, que descargará luego todo lo necesario desde la red
         * Una instalación basde de Noobs que incluye todo lo necesiario para instalar el sistema operativo Raspbian, que es el más usado y que una vez copiado en la tarjeta no necesita conexión a la red	
@@ -141,13 +142,13 @@ Esta parte de la configuración es fundamental para configurar la zona horaria, 
 [Vídeo de la primera configuración de Raspberry Pi](https://youtu.be/vHs_3HmI3mc)
 
 
-
 ### Configuración desde consola
 
 Si necesitamos configurar desde consola de texto  podemos lanzar la aplicación de configuración escribiendo:
 
-	sudo raspi-config
-
+```sh
+sudo raspi-config
+```
 
 Y obtendremos las pantallas de configuración. (Puede variar algo según la versión)
 
@@ -161,18 +162,38 @@ Y obtendremos las pantallas de configuración. (Puede variar algo según la vers
 
 Una vez configurado podemos abrir el entorno visual con
 
-	startx
+```sh
+startx
+```
 
 ![Arrancamos el entorno visual con startx](./images/raspX.png)
 
 En cualquier momento podemos volver a reconfigurar con
 
-	sudo raspi-config
+```sh
+sudo raspi-config
+```
 
 [![Vídeo de la configuración desde la consola de texto de Raspberry Pi](https://img.youtube.com/vi/ERFH8AYjWxM/0.jpg)](https://www.youtube.com/embed/ERFH8AYjWxM)
 
 
 [Vídeo de la configuración desde la consola de texto de Raspberry Pi](https://www.youtube.com/embed/ERFH8AYjWxM)
+
+
+### Pasar de Lite a Desktop
+
+Si hemos instalado la versión mínima Lite y queremos pasar a la versión desktop, para tener disponible el escritorio podemos hacer:
+
+```sh
+sudo apt update
+sudo apt upgrade
+sudo apt dist-upgrade
+sudo apt install xserver-xorg
+sudo apt install raspberrypi-ui-mods
+sudo apt install lightdm
+```
+
+Esta opción no nos instala las herramientas de escritorio, que tendremos que ir instalando manualmente.
 
 ### Otros instaladores: BerryBoot
 
@@ -181,6 +202,7 @@ El instalador de Noobs está basado en un desarrollo previo llamado [BerryBoot](
 ![Menú de Berryboot](./images/berryboot-menu.png)
 
 Ventajas:
+
 * Ocupa solo 30Mb, porque sólo es el instalador, y luego se descarga toda la imagen de internet
 * Hay muchas más opciones de SOs disponibles
 * Podemos hacer la instalación en la SD (lo que es lo habitual) o en otro dispositivo USB (para luego clonarlo en una SD) o en un dispositivo de red, para reutilizarlo
@@ -191,22 +213,23 @@ Ventajas:
 * Podemos añadir otros OS a los ya instalados
 * Si no tenemos monitor instalado podemos hacer una instalación vía VNC como [nos explican aquí](https://www.berryterminal.com/doku.php/berryboot/headless_installation) sin más que añadir esta línea al fichero cmdline.txt de la tarjeta SD
 
-	```sh
-	vncinstall ipv4=192.168.88.88/255.255.255.0/192.168.88.1 
-	```
+```sh
+vncinstall ipv4=192.168.88.88/255.255.255.0/192.168.88.1 
+```
 
-	Ahora solo tenemos que arrancar un cliente VNC y apuntar a esa IP
-	Si queremos usar wifi sólo necesitamos añadir al fichero wpa_supplicant.conf de la tarjeta SD la información siguiente:
-	```
-	ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
-	ap_scan=1
+Ahora solo tenemos que arrancar un cliente VNC y apuntar a esa IP
+Si queremos usar wifi sólo necesitamos añadir al fichero wpa_supplicant.conf de la tarjeta SD la información siguiente:
+
+```
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+ap_scan=1
 
 
-	network={
-		ssid="ssid-punto-de-acceso"
-		psk="contraseña-wpa"
-	}
-	```
+network={
+	ssid="ssid-punto-de-acceso"
+	psk="contraseña-wpa"
+}
+```
 
 Podemos descargar BerryBoot de [este enlace para Raspberry Pi 4](https://downloads.sourceforge.net/project/berryboot/berryboot-20200612-pi4.zip) y [de este para las versiones anteriores](https://downloads.sourceforge.net/project/berryboot/berryboot-20190612-pi0-pi1-pi2-pi3.zip)
 
@@ -217,32 +240,36 @@ Podemos descargar BerryBoot de [este enlace para Raspberry Pi 4](https://downloa
 Existen [varios emuladores](https://www.google.es/search?q=raspberry+simulator&oq=raspberry+simulator&aqs=chrome..69i57j69i65l3j69i60l2.3806j0j7&sourceid=chrome&es_sm=93&ie=UTF-8) aunque no esperes que la experiencia sea la misma....
 
 
-### [En windows](http://www.diverteka.com/?p=66)
+### Simulación en windows
+Desde la página [diverteka](http://www.diverteka.com/?p=66) nos explica cómo instalar el emulador de una versión antigua en windows.
 
 ![qemu](./images/qemu.png)
 
 * Descargamos la imagen en  [http://sourceforge.net/projects/rpiqemuwindows/](http://sourceforge.net/projects/rpiqemuwindows/)
 * Emulador qemu
-* Imagen (2012-07-15-wheezy-raspbian.img) o (http://downloads.raspberrypi.org/download.php?file=/images/raspbian/2013-05-25-wheezy-raspbian/2013-05-25-wheezy-raspbian.zip)
+* Imagen (2012-07-15-wheezy-raspbian.img) o (https://downloads.raspberrypi.org/raspbian/images/2012-07-15-wheezy-raspbian/2012-07-15-wheezy-raspbian.zip)
 
 * Ejecutamos
 
-		qemu-system-arm.exe -M versatilepb -cpu arm1176 -hda imagen/2013-09-25-wheezy-raspbian.img -kernel kernel-qemu -m 192 -append "root=/dev/sda2"
+```
+	qemu-system-arm.exe -M versatilepb -cpu arm1176 -hda imagen/2013-09-25-wheezy-raspbian.img -kernel kernel-qemu -m 192 -append "root=/dev/sda2"
+```
 
-[Vídeo del emulador](http://www.youtube.com/watch?feature=player_embedded&v=QvqaNUx7-pU)
+En este [Vídeo del emulador](http://www.youtube.com/watch?feature=player_embedded&v=QvqaNUx7-pU) podemos verlo en funcionamiento
 
 ### Emuladores en otros sistemas
+
+En diferentes foros podemos ver cómo otros usuarios usan diferentes emuladores
 
 * Emulador [en ubuntu](http://www.cnx-software.com/2011/10/18/raspberry-pi-emulator-in-ubuntu-with-qemu/)
 
 * [Simulando en virtualBox](https://www.raspberrypi.org/forums/viewtopic.php?f=9&t=2961)
 
-* [Simulando el Sense Hat](https://www.raspberrypi.org/blog/sense-hat-emulator/)
 
 ### Usando Pixel el entorno de Raspberry Pi en tu PC
 
-![Pixel](https://www.raspberrypi.org/app/uploads/2016/09/newdesk-500x281.jpg)
+![Pixel](./images/newdesk-500x281.jpg)
 
 Puedes usar Pixel el entorno gráfico de Rasperry en tu PC o MAC, solo necesitas descargar la [imagen](http://downloads.raspberrypi.org/pixel_x86/images/pixel_x86-2016-12-13/2016-12-13-pixel-x86-jessie.iso) desde un CD o USB.
 
-Más detalles en [esta página](https://www.raspberrypi.org/blog/pixel-pc-mac/)
+Más detalles en [esta página](https://www.raspberrypi.com/news/pixel-pc-mac/)

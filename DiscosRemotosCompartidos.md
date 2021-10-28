@@ -52,7 +52,7 @@ y le cambiamos los permisos para que sólo sea legible por nosotros con:
 chmod 600 ~/.smbcredentials
 ```
 
-y ahora cambiamos el fichero fstb con
+y ahora cambiamos el fichero fstab con
 
 ```
 //192.168.1.210/discos   /media/discos    cifs   credentials=/home/pi/.smbcredentials  0  0
@@ -62,6 +62,12 @@ y ahora cambiamos el fichero fstb con
 
 Vamos a ver ahora cómo compartir una carpeta local. Necesitamos tener instalado samba, como hicimos en el apartado anterior.
 
+Instalamos Samba y todos sus componentes clientes
+
+```sh
+sudo apt install samba samba-common-bin
+```
+
 Ahora editamos el fichero de configuración smb.conf.
 
 Primero hacemos una copia del original:
@@ -70,7 +76,7 @@ Primero hacemos una copia del original:
 sudo cp /etc/samba/smb.conf /etc/samba/smb.conf.old
 ```
 
-Ahora lo editamos 
+Y lo editamos 
 
 ```
 sudo nano /etc/samba/smb.conf
@@ -89,9 +95,15 @@ Y añadimos un bloque con el directorio que queremos compartir
     force user = pi # ha de ser el usuario "pi"
 ```
 
+Establecemos la contraseña del usuario "pi" para samba con
+
+```sh
+sudo smbpasswd -a pi
+```
+
 Ahora rearrancamos el servicio:
 
-```
+```sh
 sudo systemctl restart smbd
 ```
 

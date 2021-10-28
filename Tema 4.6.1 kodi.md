@@ -52,11 +52,4 @@ Pulsamos instalar y nos dirá si necesitamos instalar algunos complementos de lo
 ![Add-ons de vídeo](./images/MisAddons.jpg)
 
 
-Ahora a disfrutar de nuestro reproductor multimedia
-
-
-### Referencias
-
-https://libreelec.tv/2019/01/libreelec-leia-v8-95-2-beta/
-https://www.raspberrypi.org/magpi/best-raspberry-pi-media-players/
-
+Ahora a disfrutar de nuestro reproductor multimedia.

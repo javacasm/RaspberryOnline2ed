@@ -28,9 +28,9 @@
 
 ## Recursos
 
-[Proyectos para maker en TheMagPi 79](https://www.raspberrypi.org/magpi-issues/MagPi79.pdf)
+[Proyectos para maker en TheMagPi 79](https://magpi.raspberrypi.com/issues/79/pdf)
 
-[Proyectos con IA](https://www.raspberrypi.org/magpi-issues/Essentials_AIY_Projects_Voice_v1.pdf)
+[Proyectos con IA](https://magpi.raspberrypi.com/books/essentials-aiy-v1)
 
 ### FPGA
 

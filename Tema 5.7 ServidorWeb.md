@@ -1,12 +1,10 @@
 # Servidor Web
 
-TODO: DESARROLLADO EN 7.1
+
 
 ## Servidor usando python/flask
 
-[proyecto/tutorial](https://projects.raspberrypi.org/en/projects/python-web-server-with-flask/3)
-
-[Control de gpio desde la web](https://randomnerdtutorials.com/raspberry-pi-web-server-using-flask-to-control-gpios/)
+Seguiremos el siguiente [proyecto/tutorial](https://projects.raspberrypi.org/en/projects/python-web-server-with-flask/3) y los pasos de este otro [Control de gpio desde la web](https://randomnerdtutorials.com/raspberry-pi-web-server-using-flask-to-control-gpios/)
 
 ```python
 @app.route("/<changePin>/<action>")
@@ -46,3 +44,4 @@ if __name__ == "__main__":
 ## Servidor web con wordpress
 
 [Proyecto/tutorial](https://projects.raspberrypi.org/en/projects/lamp-web-server-with-wordpress)
+

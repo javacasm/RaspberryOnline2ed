@@ -17,7 +17,7 @@ Al tratarse de enlaces externos al curso, puede ocurrir que algunos enlaces no e
 * [Aulas informáticas](https://www.raspberrypi.org/blog/bringing-computing-to-rural-cameroon/): Unas Raspberries, unos monitores, teclados y ratones reciclados y una mínima infraestructura de red permite crear unas aulas informáticas perfectas para el día.
 ![Aula con Raspberry Pi](./images/AulaPi.jpg)
 
-* Servidor de contenidos educativos: como este [servidor de aula con los contenidos de (Kahn Academy Offline)](http://www.raspberrypi.org/archives/3829?sf12291563=1). Por unos 100$ tenemos un servidor con todos los contenidos de Kahn Academy (o de wikipedia) descargados y sin necesidad de acceso a internet.
+* Servidor de contenidos educativos: como este [servidor de aula con los contenidos de (Kahn Academy Offline)](https://pi.mujica.org/howto_es.html). Por unos 100$ tenemos un servidor con todos los contenidos de Kahn Academy (o de wikipedia) descargados y sin necesidad de acceso a internet.
 
 ### Instrumentación de Laboratorio
 
@@ -160,7 +160,7 @@ Incluso podemos llegar a lanzarla al espacio, como en el proyecto [astroPi](http
 
 ![Foto hecha desde el espacio con una Raspberry](./images/balloon-shot.jpeg)
 
-O volando en drone usando  [Autopilot](http://erlerobotics.com/blog/meet-the-last-autopilot-for-building-robots-erle-brain-2/)
+O volando en drone usando  [Autopilot](https://ardupilot.org/copter/docs/common-erle-brain-linux-autopilot.html)
 
 ![autopilot](./images/CUAG0x8WoAAeHjp.jpg)
 

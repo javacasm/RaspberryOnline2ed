@@ -32,6 +32,6 @@ También podemos hacer una [instalación manual](https://retropie.org.uk/docs/Ma
 
 [Tutorial de programoergosum](https://www.programoergosum.es/tutoriales/consola-arcade-basada-en-raspberry-pi-con-retropie)
 
-[Revista TheMagPi 81 I](https://www.raspberrypi.org/blog/retro-console-with-retropie-raspberry-pi-1/) y [II](https://www.raspberrypi.org/blog/retro-console-with-retropie-raspberry-pi-2/)
+[Revista TheMagPi 81 I](https://www.raspberrypi.com/news/retro-console-with-retropie-raspberry-pi-1/) y [II](https://www.raspberrypi.com/news/retro-console-with-retropie-raspberry-pi-2/)
 
 [How to download games Rom for retropie](https://raspberrytips.com/download-retropie-roms/)

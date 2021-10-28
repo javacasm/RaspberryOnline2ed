@@ -22,6 +22,6 @@ En estos dibujos esquemáticos podemos ver los distintos conectores:
 * Conector DSI para un monitor específico
 * GPIO, 40 pines accesibles para utilizar como entradas y salidas. Hay que tener mucho cuidado con ellos porque están conectados directamente el microprocesador y podríamos estropearlo fácilmente.
 
-Podemos ver que la [Raspberry Pi 3](https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/) guarda una gran similitud con las versiones originales.
+Podemos ver que la [Raspberry Pi 3](https://www.raspberrypi.com/products/raspberry-pi-3-model-b-plus/) guarda una gran similitud con las versiones originales.
 
 ![Bloques de la Raspberry Pi](./images/Raspberry-Pi-3.jpg)

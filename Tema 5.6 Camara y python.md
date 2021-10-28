@@ -218,9 +218,9 @@ Puedes encontrar más recetas de este estilo [en la documentación de la cámara
 
 ## Recursos
 
-[The camera guide](https://magpi.raspberrypi.org/books/camera-guide/pdf)
+[The camera guide](https://magpi.raspberrypi.com/books/camera-guide)
 
-[The camera module](https://www.raspberrypi.org/magpi-issues/Essentials_Camera_v1.pdf)
+[The camera module](https://magpi.raspberrypi.com/books/camera-guide)
 
 [Documentación de piCamera](https://picamera.readthedocs.io/en/release-1.13/index.html)
 

@@ -22,9 +22,9 @@ Ambas se pueden encontrar en la versión normal con filtro IR y la NOIR sin filt
 
 ![Pi camera NOIR v2.1](./images/52031db0cb54448ba5752f6fc6c4017336bc1154_pi-camera-noir-front-1227x1080.jpg)
 
-La v1.3 ya está descatalogada pero se puede encontrar en versiones compatibles. Podemos comprar la versíon v2 tanto en su [versión IR](https://www.raspberrypi.org/products/camera-module-v2/) como [la NOIR](https://www.raspberrypi.org/products/pi-noir-camera-v2/)
+La v1.3 ya está descatalogada pero se puede encontrar en versiones compatibles. Podemos comprar la versíon v2 tanto en su [versión IR](https://www.raspberrypi.com/products/camera-module-v2/) como [la NOIR](https://www.raspberrypi.com/products/pi-noir-camera-v2/)
 
-Recientemente se ha presentado la nueva [HQ Camera](https://www.raspberrypi.org/products/raspberry-pi-high-quality-camera/) 
+Recientemente se ha presentado la nueva [HQ Camera](https://www.raspberrypi.com/products/raspberry-pi-high-quality-camera/) 
 ![HQ_KIT.jpg](./images/HQ_KIT.jpg)
 
 La cámara HQ amplía la resolución hasta los 12MP, usando además un sensor de mayor tamaño. El sensor incluye soporte compatible con trípode estándard.
@@ -50,7 +50,7 @@ También podemos comprar la cámara y conectarla al módulo directamente:
 ![Mini cámara IMX219 compatible](./images/Mini-c-mara-IMX219-m-dulo-de-c-mara-para-la-placa-oficial-de-c-mara.jpg)
 
 
-[Datos sobre las distintas versiones](https://www.raspberrypi.org/documentation/hardware/camera/). Más detalles sobre el hardware de las cámaras en [este vídeo](https://www.youtube.com/watch?v=MVgr302PNwY) y en [post asociado](https://dronebotworkshop.com/pi-cameras/)
+[Datos sobre las distintas versiones](https://www.raspberrypi.com/documentation/accessories/camera.html). Más detalles sobre el hardware de las cámaras en [post asociado](https://dronebotworkshop.com/pi-cameras/) y en [este vídeo](https://www.youtube.com/watch?v=MVgr302PNwY).
 
 
 ### Conectando la cámara

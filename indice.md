@@ -62,6 +62,7 @@ Redes de sensores
 
 5.6 Camara
 ###  Crea tus propios Time-lapse con Raspberry
+
 https://projects.raspberrypi.org/en/projects/timelapse-setup
 https://projects.raspberrypi.org/en/projects/raspberry-pi-zero-time-lapse-cam/7
 

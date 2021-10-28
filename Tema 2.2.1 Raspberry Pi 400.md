@@ -20,7 +20,7 @@ Se venderá como kit con todo lo necesario para usarse (tarjeta SD, ratón, alim
 
 [Análisis en Hackter IO](https://www.hackster.io/news/hands-on-with-the-raspberry-pi-400-the-first-consumer-product-raspberry-pi-2718c6b45ad3) (de donde hemos tomado la imágenes)
 
-[Descripción del kit Raspberry Pi 400](https://magpi.raspberrypi.org/articles/raspberry-pi-400-specifications-benchmarks-and-personal-computer-kit)
+[Descripción del kit Raspberry Pi 400](https://magpi.raspberrypi.com/articles/raspberry-pi-400-specifications-benchmarks-and-personal-computer-kit)
 
-[Página del producto en raspberrypi.org](https://raspberrypi.org/products/raspberry-pi-400/?resellerType=home)
+[Página del producto](https://www.raspberrypi.com/products/raspberry-pi-400/)
 
