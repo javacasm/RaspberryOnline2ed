@@ -57,17 +57,9 @@ Veamos algunos de ellos:
 
 ¿Conoces algún clon más? No dudes en decirlo.
 
-[Vídeo](https://youtu.be/OX3YdERMgOo) sobre los clones de Raspberry Pi
+[Vídeo](https://drive.google.com/file/d/1AXbB0wSZAc-FnOvhnLwY1ILlbNocvv-5/view?usp=sharing) sobre los clones de Raspberry Pi.
 
-[![Vídeo: Clones de Raspberry Pi](https://img.youtube.com/vi/OX3YdERMgOo/0.jpg)](https://youtu.be/OX3YdERMgOo)
+[![Vídeo: Clones de Raspberry Pi](https://img.youtube.com/vi/OX3YdERMgOo/0.jpg)](https://drive.google.com/file/d/1AXbB0wSZAc-FnOvhnLwY1ILlbNocvv-5/view?usp=sharing)
 
 
-### Referencias
 
-[Alternativas](http://blogthinkbig.com/alternativas-raspberry-pi/)
-
-[Otras placas similares](http://en.wikipedia.org/wiki/Raspberry_Pi#See_also)
-
-[Comparativa entre clones](https://learn.adafruit.com/embedded-linux-board-comparison?view=all)
-
-[Qué modelo compro](https://descubrearduino.com/comprar-raspberry-pi/)

@@ -77,31 +77,31 @@ Por motivos históricos vamos a incluir aquí algunos detalles sobre las version
 
 #### [Raspberry Pi Versión B](https://www.raspberrypi.com/products/raspberry-pi-1-model-b-plus/)
 
-Tenía 512M de RAM, ethernet y 2 puertos USB
+Tenía 512M de RAM, ethernet y 2 puertos USB.
 
 ![modeloB](./images/ModeloB.jpg)
 
 #### [Raspberry Versión A](https://www.raspberrypi.com/products/raspberry-pi-1-model-a-plus/)
 
-Apareció en 2011 y tenía 256MB de RAM, un único USB y no tenía conector Ethernet. Costaba unos 25€
+Apareció en 2011 y tenía 256MB de RAM, un único USB y no tenía conector Ethernet. Costaba unos 25€.
 
 ![Raspberry Versión A](./images/220px-Raspberry_Pi_-_Model_A.jpg)
 
 #### [Versión B+](https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#modelbplus)
 
 
-En 2014 se libera esta versión con algunas mejoras internas, pero sin grandes cambios
+En 2014 se libera esta versión con algunas mejoras internas, pero sin grandes cambios.
 
 
 #### [Versión 2 B](https://www.raspberrypi.com/products/raspberry-pi-2-model-b/)
 
-El micro quad core va a 900MHz  y tiene 1Gb de RAM, 4 puertos USBs. Incorporan el nuevo formato de los 40 pines GPIO
+El micro quad core va a 900MHz  y tiene 1Gb de RAM, 4 puertos USBs. Incorporan el nuevo formato de los 40 pines GPIO.
 
 ![Modelo 2 B](./images/Raspberry_Pi_2_Model_B_v1.1_top_new.jpg)
 
-[![Vídeo: Versiones de Raspberry Pi](https://img.youtube.com/vi/ZBq6ZPE5r9c/0.jpg)](https://youtu.be/ZBq6ZPE5r9c)
+[![Vídeo: Versiones de Raspberry Pi](https://img.youtube.com/vi/ZBq6ZPE5r9c/0.jpg)](https://drive.google.com/file/d/1mtwGpUcBtEkt6OTd9XJhdIc6THwIzxlv/view?usp=sharing)
 
-[Vídeo](https://youtu.be/ZBq6ZPE5r9c) sobre los distintos modelos/versiones de Raspberry Pi
+[Vídeo](https://drive.google.com/file/d/1mtwGpUcBtEkt6OTd9XJhdIc6THwIzxlv/view?usp=sharing) sobre los distintos modelos/versiones de Raspberry Pi.
 
 Puedes encontrar más detalles en la [página de productos de la fundación Raspberry Pi](https://www.raspberrypi.com/products/)
 
