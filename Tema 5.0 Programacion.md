@@ -6,9 +6,9 @@ En este tema veremos como programar con nuestra Raspberry Pi.
 
 Existen distintas alternativas, dependiendo de los conocimientos previos, para programar en la Raspberry Pi.
 
-[![Vídeo: Programación con Raspberry Pi](https://img.youtube.com/vi/vpWt8iOGArM/0.jpg)](https://youtu.be/vpWt8iOGArM)
+[![Vídeo: Programación con Raspberry Pi](https://img.youtube.com/vi/vpWt8iOGArM/0.jpg)](https://drive.google.com/file/d/1j_Rt1BTAKJDhk8guJcFG4VHf6tWiZcXu/view?usp=sharing)
 
-[Vídeo: Programación con Raspberry Pi](https://youtu.be/vpWt8iOGArM)
+[Vídeo: Programación con Raspberry Pi](https://drive.google.com/file/d/1j_Rt1BTAKJDhk8guJcFG4VHf6tWiZcXu/view?usp=sharing)
 
 * Scratch: para gente sin conocimientos previos de programación
 * Python: lenguaje profesional, se necesitan otras habilidades (manejo de editores,...)

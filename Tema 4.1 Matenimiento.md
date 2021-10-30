@@ -38,10 +38,10 @@ sudo apt install paquete
 
 Vemos como en todos los comandos utilizamos la palabra "sudo" esto es debido a que se necesitan privilegios de administrador para todo lo relacionado con la actualización del sistema.
 
-[![Vídeo: Actualizar e instalar software desde terminal en Raspberry Pi](https://img.youtube.com/vi/BaVfTWFUHtU/0.jpg)](https://youtu.be/BaVfTWFUHtU)
+[![Vídeo: Actualizar e instalar software desde terminal en Raspberry Pi](https://img.youtube.com/vi/BaVfTWFUHtU/0.jpg)](https://drive.google.com/file/d/1tWwCM229eJSLx0h_iZxk-3A7VHJu2jYr/view?usp=sharing)
 
 
-[Vídeo: Actualizar e instalar software desde terminal en Raspberry Pi](https://youtu.be/BaVfTWFUHtU)
+[Vídeo: Actualizar e instalar software desde terminal en Raspberry Pi](https://drive.google.com/file/d/1tWwCM229eJSLx0h_iZxk-3A7VHJu2jYr/view?usp=sharing)
 
 #### Actualización de los distintos firmwares
 
@@ -100,10 +100,10 @@ Podemos hacer este cambio entre diferentes versión con sólo cambiar los nobmre
 
 Además de la línea de comandos, siempre podemos instalar desde la herramienta visual "Añadir programas" en el menú Preferencias.
 
-[![Vídeo: Cómo actualizar e instalar software Raspberry Pi](https://img.youtube.com/vi/3eeIHe-NCZs/0.jpg)](https://youtu.be/3eeIHe-NCZs)
+[![Vídeo: Cómo actualizar e instalar software Raspberry Pi](https://img.youtube.com/vi/3eeIHe-NCZs/0.jpg)](https://drive.google.com/file/d/1c_LRoSGBBeoYAdmiOQ91qIT4NKQxBLS-/view?usp=sharing)
 
 
-[Vídeo: Cómo actualizar e instalar software Raspberry Pi](https://youtu.be/3eeIHe-NCZs)
+[Vídeo: Cómo actualizar e instalar software Raspberry Pi](https://drive.google.com/file/d/1c_LRoSGBBeoYAdmiOQ91qIT4NKQxBLS-/view?usp=sharing)
 
 #### Instalación de paquetes a partir del código fuente
 

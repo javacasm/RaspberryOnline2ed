@@ -66,9 +66,9 @@ Veamos algunos de los comandos más utilizados:
 * **man comando**: Para obtener ayuda sobre comando
 * Para hacer fichero script: añadimos los comandos, chmod u+x fichero y para ejecutarlo ./fichero
 
-[![Vídeo: Uso del terminal y comandos Linux en Raspberry Pi](https://img.youtube.com/vi/BF0Kjb4g454/0.jpg)](https://youtu.be/BF0Kjb4g454)
+[![Vídeo: Uso del terminal y comandos Linux en Raspberry Pi](https://img.youtube.com/vi/BF0Kjb4g454/0.jpg)](https://drive.google.com/file/d/1a2UjGmzv0XXMpadJ1iItbat_ibDuG6Sl/view?usp=sharing)
 
-[Vídeo: Uso del terminal y comandos Linux en Raspberry Pi](https://youtu.be/BF0Kjb4g454)
+[Vídeo: Uso del terminal y comandos Linux en Raspberry Pi](https://drive.google.com/file/d/1a2UjGmzv0XXMpadJ1iItbat_ibDuG6Sl/view?usp=sharing)
 
 #### Estructura de directorios y ficheros
 
@@ -165,9 +165,9 @@ ssh pi@192.189.0.123
 
 Si lo vamos a activar se recomienda cambiar la contraseña para evitar que cualquiera pueda acceder a nuestro equipo.
 
-[![Vídeo: Conexión vía SSH a Raspberry Pi](https://img.youtube.com/vi/-BH3spberkc/0.jpg)](https://youtu.be/-BH3spberkc)
+[![Vídeo: Conexión vía SSH a Raspberry Pi](https://img.youtube.com/vi/-BH3spberkc/0.jpg)](https://drive.google.com/file/d/1Eu0yXNhgxUOZj9TjB35dlq-3y1--L4Lq/view?usp=sharing)
 
-[Vídeo: Conexión vía SSH a Raspberry Pi](https://youtu.be/-BH3spberkc)
+[Vídeo: Conexión vía SSH a Raspberry Pi](https://drive.google.com/file/d/1Eu0yXNhgxUOZj9TjB35dlq-3y1--L4Lq/view?usp=sharing)
 
 
 ### Herramientas de conexión ssh
@@ -196,9 +196,9 @@ El uso incluso en un móvil es más cómodo de lo que parece, puesto que permite
 ![juicessh2.png](./images/juicessh3.png)
 
 
-[![Cliente SSH para móviles y tabletas Android: juicceSSH](https://img.youtube.com/vi/LLiZ52ss2DQ/0.jpg)](https://youtu.be/LLiZ52ss2DQ)
+[![Cliente SSH para móviles y tabletas Android: juicceSSH](https://img.youtube.com/vi/LLiZ52ss2DQ/0.jpg)](https://drive.google.com/file/d/1GG4mscjTBS9VqsDxgyXM6n1UopfQzrIB/view?usp=sharing)
 
-[Cliente SSH para móviles y tabletas Android: juicceSSH](https://youtu.be/LLiZ52ss2DQ)
+[Cliente SSH para móviles y tabletas Android: juicceSSH](https://drive.google.com/file/d/1GG4mscjTBS9VqsDxgyXM6n1UopfQzrIB/view?usp=sharing)
 
 ### Automatizar conexiones
 
@@ -242,9 +242,9 @@ Cuando arrancamos una Raspberry Pi sin tener monitor conectado y la tenemos conf
 
 En el siguiente vídeo vamos a ver cómo hacer para modificar esa resolución. No hay más que entrar en Configuración de Raspberry -> Display y pulsar en Set Resolution
 
-[![Vídeo: Cambio resolución del escritorio de una Raspberry Pi](https://img.youtube.com/vi/RWX2UWwgP4I/0.jpg)](https://youtu.be/RWX2UWwgP4I)
+[![Vídeo: Cambio resolución del escritorio de una Raspberry Pi](https://img.youtube.com/vi/RWX2UWwgP4I/0.jpg)](https://drive.google.com/file/d/1o8hYMcc-zDuWLMg7_wBSPXxQGDwuB7Np/view?usp=sharing)
 
-[Vídeo: Cambio resolución del escritorio de una Raspberry Pi](https://youtu.be/RWX2UWwgP4I)
+[Vídeo: Cambio resolución del escritorio de una Raspberry Pi](https://drive.google.com/file/d/1o8hYMcc-zDuWLMg7_wBSPXxQGDwuB7Np/view?usp=sharing)
 
 #### VNC en equipos antiguos
 
@@ -348,10 +348,10 @@ Hay una versión gratuita (para uso no comercial) de Worlfram  Mathematica insta
 
 ![Mathematica en Raspberry Pi](./images/Mathematica.png)
 
-[![Vídeo: Trabajando con Mathematica en Raspberry](https://img.youtube.com/vi/VVHoREZ8Rc4/0.jpg)](https://youtu.be/VVHoREZ8Rc4)
+[![Vídeo: Trabajando con Mathematica en Raspberry](https://img.youtube.com/vi/VVHoREZ8Rc4/0.jpg)](https://drive.google.com/file/d/1oXjMaNmL4gpaTHPePZYbIb6_lRsAGODi/view?usp=sharing)
 
 
-[Vídeo: Trabajando con Mathematica en Raspberry](https://youtu.be/VVHoREZ8Rc4)
+[Vídeo: Trabajando con Mathematica en Raspberry](https://drive.google.com/file/d/1oXjMaNmL4gpaTHPePZYbIb6_lRsAGODi/view?usp=sharing)
 
 
 ### Vigilancia

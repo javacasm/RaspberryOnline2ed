@@ -38,9 +38,9 @@ Y nos queda un equipo muy, muy compacto
 
 ![Alimantacion Raspi Zero](./images/RaspiZeroAlimantacion.jpg)
 
-[![Vídeo: Montaje de una Raspberry Pi Zero W para realizar timeLapses](https://img.youtube.com/vi/rhzX1TbOddY/0.jpg)](https://www.youtube.com/watch?v=rhzX1TbOddY)
+[![Vídeo: Montaje de una Raspberry Pi Zero W para realizar timeLapses](https://img.youtube.com/vi/rhzX1TbOddY/0.jpg)](https://drive.google.com/file/d/1Suec5Q8iQP8J25kktUA8kNM0Muf39usJ/view?usp=sharing)
 
-[Vídeo: Montaje de una Raspberry Pi Zero W para realizar timeLapses](https://www.youtube.com/watch?v=rhzX1TbOddY)
+[Vídeo: Montaje de una Raspberry Pi Zero W para realizar timeLapses](https://drive.google.com/file/d/1Suec5Q8iQP8J25kktUA8kNM0Muf39usJ/view?usp=sharing)
 
 ### Instalación
 
@@ -137,17 +137,17 @@ También hay en el código un ejemplo de como generar gif a partir de las imáge
 
 Todos estos time lapses los he creado con este sistema:
 
-[![Vídeo: TimeLapse de un atardecer de tormenta](https://img.youtube.com/vi/fERbhBKDMPw/0.jpg)](https://youtu.be/fERbhBKDMPw)
+[![Vídeo: TimeLapse de un atardecer de tormenta](https://img.youtube.com/vi/fERbhBKDMPw/0.jpg)](https://drive.google.com/file/d/1IjZ3fFteKNsAt-aaeCcN-R57rGL0_epD/view?usp=sharing)
 
-[![Vídeo: Timelapse de una tarde de tormenta](https://img.youtube.com/vi/RWBErTv-6BY/0.jpg)](https://youtu.be/RWBErTv-6BY)
+[![Vídeo: Timelapse de una tarde de tormenta](https://img.youtube.com/vi/RWBErTv-6BY/0.jpg)](https://drive.google.com/file/d/1hUDYtfYeCW_zxonzhlDIn90BlemF3q72/view?usp=sharing)
 
-[![Vídeo: TimeLapse de una tarde de verano con algunas nubes](https://img.youtube.com/vi/IkCq2M1CAfQ/0.jpg)](https://youtu.be/IkCq2M1CAfQ)
+[![Vídeo: TimeLapse de una tarde de verano con algunas nubes](https://img.youtube.com/vi/IkCq2M1CAfQ/0.jpg)](https://drive.google.com/file/d/1Ssi2ke90wRbvk6NrqMomsYxTwkQrbobV/view?usp=sharing)
 
-[![Vídeo: TimeLapse del crecimiento de una planta de ajo](https://img.youtube.com/vi/e1enNTsTPHM/0.jpg)](https://youtu.be/e1enNTsTPHM)
+[![Vídeo: TimeLapse del crecimiento de una planta de ajo](https://img.youtube.com/vi/e1enNTsTPHM/0.jpg)](https://drive.google.com/file/d/15RoVrNnysunFro-_uv_e_H0I4sCUukYJ/view?usp=sharing)
  
-[![Vídeo: TimeLapse del crecimiento de una planta de ajo II](https://img.youtube.com/vi/L63nfxi4e6E/0.jpg)](https://youtu.be/L63nfxi4e6E)
+[![Vídeo: TimeLapse del crecimiento de una planta de ajo II](https://img.youtube.com/vi/L63nfxi4e6E/0.jpg)](https://drive.google.com/file/d/1Z7ZmsiUjvc7W_r3Nhj5DQTNVcu3QuS4-/view?usp=sharing)
 
-[![Vídeo: Time lapse del crecimiento de una planta de patata](https://img.youtube.com/vi/uhzFmH66MGE/0.jpg)](https://youtu.be/uhzFmH66MGE)
+[![Vídeo: Time lapse del crecimiento de una planta de patata](https://img.youtube.com/vi/uhzFmH66MGE/0.jpg)](https://drive.google.com/file/d/12DVjQd6_sJpJ3xiuO5a6eE7lbZGF-Xps/view?usp=sharing)
 
 ### Recursos 
 

@@ -7,10 +7,10 @@ Se utiliza en la web, en aplicaciones de escritorio, etc... Gran parte del inter
 Existen dos versiones de python ahora mismo: la rama 2.x y la 3.x
 Por sencillez vamos a usar la sintaxis de la rama 2.x
 
-[![Video: Python en Raspberry Pi](https://img.youtube.com/vi/Yy2oad1Xnoo/0.jpg)](https://youtu.be/Yy2oad1Xnoo)
+[![Video: Python en Raspberry Pi](https://img.youtube.com/vi/Yy2oad1Xnoo/0.jpg)](https://drive.google.com/file/d/1YEQDQsg6shE4ePacDk3nL2n_EUgN13ny/view?usp=sharing)
 
 
-[Video: Python en Raspberry Pi](https://youtu.be/Yy2oad1Xnoo)
+[Video: Python en Raspberry Pi](https://drive.google.com/file/d/1YEQDQsg6shE4ePacDk3nL2n_EUgN13ny/view?usp=sharing)
 
 Podemos utilizar varias herramientas para programar con python como Idle, Thonny un simple editor de texto o trabajar directamente sobre el intérprete python y directamente programar con él.
 

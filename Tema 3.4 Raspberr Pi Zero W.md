@@ -49,9 +49,9 @@ ssh pi@NombreRaspiZero
 * Instalamos los paquetes de python necesarios para nuestra aplicación
 
 
-[![Vídeo: Instalación y configuración desde consola de Raspberry Pi Zero W](https://img.youtube.com/vi/YIW2HbepDKg/0.jpg)](https://youtu.be/YIW2HbepDKg)
+[![Vídeo: Instalación y configuración desde consola de Raspberry Pi Zero W](https://img.youtube.com/vi/YIW2HbepDKg/0.jpg)](https://drive.google.com/file/d/1mzqEEelZxZ3ofI_K0_njGzZrkpYRJn5U/view?usp=sharing)
 
-[Vídeo: Instalación y configuración desde consola de Raspberry Pi Zero W](https://youtu.be/YIW2HbepDKg)
+[Vídeo: Instalación y configuración desde consola de Raspberry Pi Zero W](https://drive.google.com/file/d/1mzqEEelZxZ3ofI_K0_njGzZrkpYRJn5U/view?usp=sharing)
 
 En las instalaciones del OS versión "Lite", podemos hacer que por defecto se active el acceso ssh desde el inicio.
 
