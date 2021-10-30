@@ -20,3 +20,7 @@ https://learn.adafruit.com/adafruit-pitft-3-dot-5-touch-screen-for-raspberry-pi
 [Comparativa entre clones](https://learn.adafruit.com/embedded-linux-board-comparison?view=all)
 
 [Qué modelo compro](https://descubrearduino.com/comprar-raspberry-pi/)
+
+### Arranque desde USB
+
+[Vídeo de Andreas Spiess: Quickie: Raspberry Pi official USB Boot now much simpler. How fast is a cheap SSD?](https://www.youtube.com/watch?v=8vC3D19e_Ac)

@@ -24,9 +24,9 @@ Al pulsar **Write** se descargará la imagen desde internet y
 
 También podemos usar Imager para formatear la tarjeta, para crear tarjetas SD capaces de recupear una instalación con problemas, para escribir imágenes que ya hemos descargado, etc.
 
-[![Vídeo: Instalación de Raspberry Pi OS usando Imager](https://img.youtube.com/vi/DDfkkG4-gq8/0.jpg)](https://youtu.be/DDfkkG4-gq8)
+[![Vídeo: Instalación de Raspberry Pi OS usando Imager](https://img.youtube.com/vi/DDfkkG4-gq8/0.jpg)](https://drive.google.com/file/d/1vZCdJa2551mNAdr1cwsOAJMn440eqXMG/view?usp=sharing)
 
-[Vídeo: Instalación de Raspberry Pi OS usando Imager](https://youtu.be/DDfkkG4-gq8)
+[Vídeo: Instalación de Raspberry Pi OS usando Imager](https://drive.google.com/file/d/1vZCdJa2551mNAdr1cwsOAJMn440eqXMG/view?usp=sharing)
 
 
 ### Instalación Manual
@@ -95,10 +95,10 @@ A la izquierda tenemos el menú de aplicaciones y a la derecha podemos pulsar so
 ![Configuración Wifi de Raspberry](./images/wifi2.png)
 
 
-[![Vídeo: uso del escritorio Pixel de Raspberry Pi](https://img.youtube.com/vi/IrjWoxWfewo/0.jpg)](https://www.youtube.com/embed/IrjWoxWfewo)
+[![Vídeo: uso del escritorio Pixel de Raspberry Pi](https://img.youtube.com/vi/IrjWoxWfewo/0.jpg)](https://drive.google.com/file/d/1Xctv-39GG117f1Zm_0QbfQbRZoZd_MKG/view?usp=sharing)
 
 
-En este [vídeo](https://www.youtube.com/embed/IrjWoxWfewo) podéis ver el uso del entorno visual  Pixel de Raspberry Pi
+En este [vídeo](https://drive.google.com/file/d/1Xctv-39GG117f1Zm_0QbfQbRZoZd_MKG/view?usp=sharing) podéis ver el uso del entorno visual  Pixel de Raspberry Pi
 
 ## Configuración
 
@@ -136,10 +136,10 @@ A partir de la versión 3 de Raspberry no se puede cambiar la velocidad del proc
 
 Esta parte de la configuración es fundamental para configurar la zona horaria, el idioma (Local) y el teclado
 
-[![Vídeo de la primera configuración de Raspberry Pi](https://img.youtube.com/vi/vHs_3HmI3mc/0.jpg)](https://youtu.be/vHs_3HmI3mc)
+[![Vídeo de la primera configuración de Raspberry Pi](https://img.youtube.com/vi/vHs_3HmI3mc/0.jpg)](https://drive.google.com/file/d/1TAKfTNZ3QrOeabAnJ4CJK58w5HaJ_vpD/view?usp=sharing)
 
 
-[Vídeo de la primera configuración de Raspberry Pi](https://youtu.be/vHs_3HmI3mc)
+[Vídeo de la primera configuración de Raspberry Pi](https://drive.google.com/file/d/1TAKfTNZ3QrOeabAnJ4CJK58w5HaJ_vpD/view?usp=sharing)
 
 
 ### Configuración desde consola
@@ -174,10 +174,10 @@ En cualquier momento podemos volver a reconfigurar con
 sudo raspi-config
 ```
 
-[![Vídeo de la configuración desde la consola de texto de Raspberry Pi](https://img.youtube.com/vi/ERFH8AYjWxM/0.jpg)](https://www.youtube.com/embed/ERFH8AYjWxM)
+[![Vídeo de la configuración desde la consola de texto de Raspberry Pi](https://img.youtube.com/vi/ERFH8AYjWxM/0.jpg)](https://drive.google.com/file/d/1dP2cdq1loc6QcadgjP1hSeW0a7ovkmeU/view?usp=sharing)
 
 
-[Vídeo de la configuración desde la consola de texto de Raspberry Pi](https://www.youtube.com/embed/ERFH8AYjWxM)
+[Vídeo de la configuración desde la consola de texto de Raspberry Pi](https://drive.google.com/file/d/1dP2cdq1loc6QcadgjP1hSeW0a7ovkmeU/view?usp=sharing)
 
 
 ### Pasar de Lite a Desktop

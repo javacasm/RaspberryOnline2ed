@@ -49,13 +49,11 @@ sudo rpi-eeprom-update  -d -f /lib/firmware/raspberrypi/bootloader/stable/pieepr
 
 7. Si todo ha ido bien, apagamos la Paspberry, quitamos la tarjeta SD probamos a arrancar.
 
-[Vídeo: Cómo arrancar Raspberry Pi 4 desde USB](https://youtu.be/jgCfJbiEbHE)
+[Vídeo: Cómo arrancar Raspberry Pi 4 desde USB](https://drive.google.com/file/d/12cLBP4SUQRcx7pZciu3VnC-YwB73_Jyd/view?usp=sharing)
 
-[![Vídeo: Cómo arrancar Raspberry Pi 4 desde USB](https://img.youtube.com/vi/jgCfJbiEbHE/0.jpg)](https://youtu.be/jgCfJbiEbHE)
+[![Vídeo: Cómo arrancar Raspberry Pi 4 desde USB](https://img.youtube.com/vi/jgCfJbiEbHE/0.jpg)](https://drive.google.com/file/d/12cLBP4SUQRcx7pZciu3VnC-YwB73_Jyd/view?usp=sharing)
 
 En [este enlace](https://www.jeffgeerling.com/blog/2020/im-booting-my-raspberry-pi-4-usb-ssd) se ve que la mejora de rendimiento puede ser realmente importante.
 
-### Recursos
 
-[Vídeo de Andreas Spiess: Quickie: Raspberry Pi official USB Boot now much simpler. How fast is a cheap SSD?](https://www.youtube.com/watch?v=8vC3D19e_Ac)
 
