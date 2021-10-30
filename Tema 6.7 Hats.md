@@ -11,10 +11,10 @@ En [esta página](https://www.tomshardware.com/amp/best-picks/best-raspberry-pi-
 
 Existen muchas de estas placas que facilitan la conexión de electrónica.
 
-[![Vídeo: Cómo conectar hats/shields a RaspBerry Pi](https://img.youtube.com/vi/J9ZolkLrbdg/0.jpg)](https://www.youtube.com/watch?v=J9ZolkLrbdg)
+[![Vídeo: Cómo conectar hats/shields a RaspBerry Pi](https://img.youtube.com/vi/J9ZolkLrbdg/0.jpg)](https://drive.google.com/file/d/1qVIEIs47dEkF7Y0r4qwp4uRRv6R5nxIa/view?usp=sharing)
 
 
-[Vídeo: Cómo conectar hats/shields a RaspBerry Pi](https://www.youtube.com/watch?v=J9ZolkLrbdg)
+[Vídeo: Cómo conectar hats/shields a RaspBerry Pi](https://drive.google.com/file/d/1qVIEIs47dEkF7Y0r4qwp4uRRv6R5nxIa/view?usp=sharing)
 
 ### Clobber
 
@@ -27,13 +27,13 @@ Existen muchas de estas placas que facilitan la conexión de electrónica.
 
 ![Clobber](./images/clobber.jpg)
 
-Son simples adaptadores que nos facilitan la vida permitiendo conectar de manera sencilla con las placas de prototipo
+Son simples adaptadores que nos facilitan la vida permitiendo conectar de manera sencilla con las placas de prototipo.
 
 
-[![Vídeo: Conectando electrónica a Raspberry - Cobbler DIY](https://img.youtube.com/vi/CyNVsgw-t3U/0.jpg)](https://youtu.be/CyNVsgw-t3U)
+[![Vídeo: Conectando electrónica a Raspberry - Cobbler DIY](https://img.youtube.com/vi/CyNVsgw-t3U/0.jpg)](https://drive.google.com/file/d/10JFZ8M7WVF23vrh1gj18Ia3SZ0FwcOF8/view?usp=sharing)
 
 
-[Vídeo: Conectando electrónica a Raspberry - Cobbler DIY](https://youtu.be/CyNVsgw-t3U)
+[Vídeo: Conectando electrónica a Raspberry - Cobbler DIY](https://drive.google.com/file/d/10JFZ8M7WVF23vrh1gj18Ia3SZ0FwcOF8/view?usp=sharing)
 
 
 ### PiPlate
@@ -43,10 +43,10 @@ Son simples adaptadores que nos facilitan la vida permitiendo conectar de manera
 Se trata de una placa de prototipo especialmente adaptada al tamaño de la Raspberry y que nos permite acceder de forma sencilla a los pines por nombre y funcionalidad.
 
 
-[![Video: Placa de prototipo para Raspberry Pi - Pi Plate](https://img.youtube.com/vi/AB50mlF0ikU/0.jpg)]()
+[![Video: Placa de prototipo para Raspberry Pi - Pi Plate](https://img.youtube.com/vi/AB50mlF0ikU/0.jpg)](https://drive.google.com/file/d/12nz53fows1h3KZTM3or7KGpP5TQru44P/view?usp=sharing)
 
 
-[Video: Placa de prototipo para Raspberry Pi - Pi Plate](https://youtu.be/AB50mlF0ikU)
+[Video: Placa de prototipo para Raspberry Pi - Pi Plate](https://drive.google.com/file/d/12nz53fows1h3KZTM3or7KGpP5TQru44P/view?usp=sharing)
 
 
 ### PiFace

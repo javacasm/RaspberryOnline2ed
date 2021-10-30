@@ -181,10 +181,10 @@ Esta placa nos permite controlar un típico robot de 2 motores de manera muy sen
 
 En la [web de RaspiRobot](https://github.com/simonmonk/raspirobotboard/wiki) vemos instrucciones de montaje
 
-[![Vídeo: Raspirobot - Controlando robots con Raspberry](https://img.youtube.com/vi/FjjP8007DXA/0.jpg)](https://youtu.be/FjjP8007DXA)
+[![Vídeo: Raspirobot - Controlando robots con Raspberry](https://img.youtube.com/vi/FjjP8007DXA/0.jpg)](https://drive.google.com/file/d/1hmW5VrmtjhvE2AAG9gwc7dW_INMLPcNJ/view?usp=sharing)
 
 
-[Vídeo: Raspirobot - Controlando robots con Raspberry](https://youtu.be/FjjP8007DXA?list=PLDxBiw1MlK6SqyPGhhox9WlsximiNrcgK)
+[Vídeo: Raspirobot - Controlando robots con Raspberry](https://drive.google.com/file/d/1hmW5VrmtjhvE2AAG9gwc7dW_INMLPcNJ/view?usp=sharing)
 
 ¿Qué podemos hacer con RaspiRobot?
 

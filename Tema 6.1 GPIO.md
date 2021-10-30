@@ -40,9 +40,9 @@ O esta otra versión del gran @pighixxx con los diferentes etiquetados [para des
 
 ![Etiquetas de @pighixxx](./images/etiquestasGPIOpighixx.jpg) 
 
-[![Vídeo sobre etiquetas en los GPIO de Raspberry](https://img.youtube.com/vi/9UiZ7m6UacM/0.jpg)](https://youtu.be/9UiZ7m6UacM)
+[![Vídeo sobre etiquetas en los GPIO de Raspberry](https://img.youtube.com/vi/9UiZ7m6UacM/0.jpg)](https://drive.google.com/file/d/1c09jJO70XUB82sv2kRnc3lWcca_ZzJGX/view?usp=sharing)
 
-[Vídeo sobre etiquetas en los GPIO de Raspberry](https://youtu.be/9UiZ7m6UacM)
+[Vídeo sobre etiquetas en los GPIO de Raspberry](https://drive.google.com/file/d/1c09jJO70XUB82sv2kRnc3lWcca_ZzJGX/view?usp=sharing)
 
 ### Usos de los GPIOs
 

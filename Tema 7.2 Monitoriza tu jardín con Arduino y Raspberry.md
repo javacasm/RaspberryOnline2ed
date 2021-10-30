@@ -1,4 +1,5 @@
 ##  Monitoriza de jardín con Raspberry y Arduino
+
 Vamos a crear un sistema de monitorización y control de riego. Queremos que cuando esté terminado tenga las siguientes funciones:
 
 * Control de humedad 
@@ -22,11 +23,11 @@ En futuras versiones haremos
 * Versión 2
     * Uso de paneles solares y baterías
 
-En este apartado vamos a a desarrollar la primera versión v0. Aunque la segunda es aparentemente sencilla el cabledo para los sensores de humedad y el deterioro que esto sufren debido a la corrosión lo hace más complejo
+En este apartado vamos a desarrollar la primera versión v0. Aunque la segunda es aparentemente sencilla, el cabledo para los sensores de humedad y el deterioro que esto sufren debido a la corrosión lo hace más complejo.
 
-[![Vídeo: Sistema de control riego con Raspberry Pi y Arduino](https://img.youtube.com/vi/4s3qO5JL67E/0.jpg)](https://youtu.be/4s3qO5JL67E)
+[![Vídeo: Sistema de control riego con Raspberry Pi y Arduino](https://img.youtube.com/vi/4s3qO5JL67E/0.jpg)](https://drive.google.com/file/d/13ySo16FPBgtD9eO0f7B6ZGA00ziM3D18/view?usp=sharing)
 
-[Vídeo: Sistema de control riego con Raspberry Pi y Arduino](https://youtu.be/4s3qO5JL67E)
+[Vídeo: Sistema de control riego con Raspberry Pi y Arduino](https://drive.google.com/file/d/13ySo16FPBgtD9eO0f7B6ZGA00ziM3D18/view?usp=sharing)
 
 
 ### Sistema de control remoto de riego  V0
@@ -73,6 +74,7 @@ El software de Arduino tiene que encargarse de:
 El programa de Arduino está disponible en el [repositorio del proyecto](https://github.com/javacasm/RiegoRaspberryArduino/blob/master/Riego-RA-Arduino/Riego-RA-Arduino.ino)
 
 Veamos algunos detalles:
+
 * Definimos los caracteres del protocolo de comunicación a usar:
 ```arduino
 #define END_OF_COMMAND '\n'
@@ -93,10 +95,11 @@ Veamos algunos detalles:
 El [software de la Raspberry](https://github.com/javacasm/RiegoRaspberryArduino/tree/master/Riego-RA-Raspberry) está basado en el bot de los otros programas al que se le han añadido las funciones de comunicación con Arduino
 
 Necesitamos tener instalado el módulo Telegram-bot  para python
+
 ```sh
 pip3 install python_telegram_bot
 ```
-En ese código es muy importante que las caracteres del protocolo de la comunicación con Arduino sean los mismos y estén adecuadamente codificados, como byte porque Arduino no entiende unicode
+En ese código es muy importante que las caracteres del protocolo de la comunicación con Arduino sean los mismos y estén adecuadamente codificados, como byte porque Arduino no entiende unicode:
 
 ```python
 separadorDatosArduino = b';'
@@ -109,9 +112,9 @@ releOnCommand = b'H'
 ```
 También se ha trabajado bastante el hacer robusta la comunicación con Arduino, incluso reseteándolo automáticamente si hay problemas (arduinoUtils.resetArduino()). Todo ello a través del puerto serie.
 
-Para que esto funcione hay que saber detectar el puerto serie de Arduino, lo que se hace en el método "arduinoUtils.detectarPuertoArduino()", método y técnica tomados del [proyecto miniTierra de @inopya](https://github.com/inopya/mini-tierra)
+Para que esto funcione hay que saber detectar el puerto serie de Arduino, lo que se hace en el método "arduinoUtils.detectarPuertoArduino()", método y técnica tomados del [proyecto miniTierra de @inopya](https://github.com/inopya/mini-tierra).
 
-Instalamos la [librería BME280 de finiteSpace para arduino](https://github.com/finitespace/BME280) y la "LiquidCrystal I2C" de Frank de Brabander
+Instalamos la [librería BME280 de finiteSpace para arduino](https://github.com/finitespace/BME280) y la "LiquidCrystal I2C" de Frank de Brabander.
 
 ### Futuras versiones y mejoras
 

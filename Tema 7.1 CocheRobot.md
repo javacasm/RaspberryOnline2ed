@@ -6,6 +6,7 @@
 ### Robot controlado con Raspberry
 
 Vamos a crear un robot controlado integramente por Raspberry: 
+
 * Cámara con streaming
 * sensor ultrasonidos 
 * 4 motores 
@@ -14,9 +15,9 @@ Vamos a crear un robot controlado integramente por Raspberry:
 * Publica los datos en su web que tambien permite controlar el movimiento
 * Acceso vía bot de Telegram
 
-[![Vídeo-Descripción de robot controlado por Raspberry Pi: Raspicar](https://img.youtube.com/vi/KNPiYSUemtU/0.jpg)](https://youtu.be/KNPiYSUemtU)
+[![Vídeo-Descripción de robot controlado por Raspberry Pi: Raspicar](https://img.youtube.com/vi/KNPiYSUemtU/0.jpg)](https://drive.google.com/file/d/1Dl-a4_nf0WqiTFA8fIac8TluXgGer1-_/view?usp=sharing)
 
-[Vídeo-Descripción de robot controlado por Raspberry Pi: Raspicar](https://youtu.be/KNPiYSUemtU)
+[Vídeo-Descripción de robot controlado por Raspberry Pi: Raspicar](https://drive.google.com/file/d/1Dl-a4_nf0WqiTFA8fIac8TluXgGer1-_/view?usp=sharing)
 
 ## Versiones
 
@@ -92,9 +93,9 @@ Cuando arrancamos una Raspberry Pi sin tener monitor conectado y la tenemos conf
 
 En el siguiente vídeo vamos a ver cómo hacer para modificar esa resolución. No hay más que entrar en Configuración de Raspberry -> Display y pulsar en Set Resolution
 
-[![Vídeo: Cambio resolución del escritorio de una Raspberry Pi](https://img.youtube.com/vi/RWX2UWwgP4I/0.jpg)](https://youtu.be/RWX2UWwgP4I)
+[![Vídeo: Cambio resolución del escritorio de una Raspberry Pi](https://img.youtube.com/vi/RWX2UWwgP4I/0.jpg)](https://drive.google.com/file/d/1o8hYMcc-zDuWLMg7_wBSPXxQGDwuB7Np/view?usp=sharing)
 
-[Vídeo: Cambio resolución del escritorio de una Raspberry Pi](https://youtu.be/RWX2UWwgP4I)
+[Vídeo: Cambio resolución del escritorio de una Raspberry Pi](https://drive.google.com/file/d/1o8hYMcc-zDuWLMg7_wBSPXxQGDwuB7Np/view?usp=sharing)
 
 
 ### Preparando el entorno
@@ -121,9 +122,9 @@ Son muchos los editores disponibles, pero **nano** es de los más sencillos y po
 
 En todo momento nos muestra en pantalla los comandos que tenemos disponibles, casi todos ellos combinaciones con la tecla Ctrl que se representa en la ayuda como '^` o con Alt que se representa como 'M'
 
-[![Vídeo: Uso de editor de ficheros de texto 'nano' desde consola](https://img.youtube.com/vi/MUJkxexd1LA/0.jpg)](https://youtu.be/MUJkxexd1LA)
+[![Vídeo: Uso de editor de ficheros de texto 'nano' desde consola](https://img.youtube.com/vi/MUJkxexd1LA/0.jpg)](https://drive.google.com/file/d/15ONBdnvO4_Jg7ogSkhhIQ0xZGVlCyKgU/view?usp=sharing)
 
-[Vídeo: Uso de editor de ficheros de texto 'nano' desde consola](https://youtu.be/MUJkxexd1LA)
+[Vídeo: Uso de editor de ficheros de texto 'nano' desde consola](https://drive.google.com/file/d/15ONBdnvO4_Jg7ogSkhhIQ0xZGVlCyKgU/view?usp=sharing)
 
 #### Trabajando en remoto con ssh en una Raspberry usando Github
 
@@ -134,9 +135,9 @@ Cuando trabajamos directamente en consola en la Raspberry (conectado por ssh)  p
 
 Vídeo: Trabajando en remoto con ssh en una Raspberry usando Github](https://youtu.be/L7VbhMHesZQ)
 
-[![Vídeo: Trabajando en remoto con ssh en una Raspberry usando Github](https://img.youtube.com/vi/L7VbhMHesZQ/0.jpg)](https://youtu.be/L7VbhMHesZQ)
+[![Vídeo: Trabajando en remoto con ssh en una Raspberry usando Github](https://img.youtube.com/vi/L7VbhMHesZQ/0.jpg)](https://drive.google.com/file/d/1czpyLRe8_SAskwU59KKWMRwjMZwLp-np/view?usp=sharing)
 
-[Vídeo: Trabajando en remoto con ssh en una Raspberry usando Github](https://youtu.be/L7VbhMHesZQ)
+[Vídeo: Trabajando en remoto con ssh en una Raspberry usando Github](https://drive.google.com/file/d/1czpyLRe8_SAskwU59KKWMRwjMZwLp-np/view?usp=sharing)
 
 
 ### Motores y servos
@@ -171,11 +172,12 @@ Usaremos para la alimentación de los motores 2 baterías lipo 18650, que ademá
 
 Necesitamos que el drive I2C esté activado. Si no es así lo haremos desde la configuración.
 
-Instalamos el módulo python de Adafruit para controlar el Motor Hat
+Instalamos el módulo python de Adafruit para controlar el Motor Hat:
 
 ```sh
 pip3 install adafruit-circuitpython-motorkit
 ```
+
 Que instalará todas las dependencias necesarias.
 
 ### Primeras pruebas
@@ -184,9 +186,9 @@ Vamos a hacer unas pruebas de cómo usar los motores usando el módulo de adafru
 
 Luego utilizaremos estas órdenes para hacer un pequeño script python de prueba.
 
-[![Vídeo: Primeras pruebas de control de motores con Raspicar](https://img.youtube.com/vi/38NAjn5tre0/0.jpg)](https://youtu.be/38NAjn5tre0)
+[![Vídeo: Primeras pruebas de control de motores con Raspicar](https://img.youtube.com/vi/38NAjn5tre0/0.jpg)](https://drive.google.com/file/d/1jY4DvSMXphyZD8ojQw6G8s8QBk32-hbR/view?usp=sharing)
 
-[Vídeo: Primeras pruebas de control de motores con Raspicar](https://youtu.be/38NAjn5tre0)
+[Vídeo: Primeras pruebas de control de motores con Raspicar](https://drive.google.com/file/d/1jY4DvSMXphyZD8ojQw6G8s8QBk32-hbR/view?usp=sharing)
 
 
 Veamos un ejemplo sencillo que nos va permitir comprobar que el conexionado es correcto y la posición de cada motor:
@@ -315,10 +317,10 @@ for i in range(0,4):
 robot.stop()
 ```
 
-[![Vídeo: Prueba de movimiento de Raspicar](https://img.youtube.com/vi/L6UaJdMvelY/0.jpg)](https://youtu.be/L6UaJdMvelY)
+[![Vídeo: Prueba de movimiento de Raspicar](https://img.youtube.com/vi/L6UaJdMvelY/0.jpg)](https://drive.google.com/file/d/1s9pWm2-ONltuL1Xn8Eolh3bTs-3VYl72/view?usp=sharing)
 
 
-[Vídeo: Prueba de movimiento de Raspicar](https://youtu.be/L6UaJdMvelY)
+[Vídeo: Prueba de movimiento de Raspicar](https://drive.google.com/file/d/1s9pWm2-ONltuL1Xn8Eolh3bTs-3VYl72/view?usp=sharing)
 
 
 
@@ -474,9 +476,9 @@ Nos conectamos a raspicar:5000
 
 ![webApp RaspiCAr](./images/WebRaspiCAr.png)
 
-[![Vídeo: Control remoto desde el móvil de robot con Raspberry raspiCar](https://img.youtube.com/vi/1X9-mXB0-e8/0.jpg)](https://youtu.be/1X9-mXB0-e8)
+[![Vídeo: Control remoto desde el móvil de robot con Raspberry raspiCar](https://img.youtube.com/vi/1X9-mXB0-e8/0.jpg)](https://drive.google.com/file/d/19Mekvp36bAzZujimjHYrWY4Hbu3hnoM9/view?usp=sharing)
 
-[Vídeo: Control remoto desde el móvil de robot con Raspberry raspiCar](https://youtu.be/1X9-mXB0-e8)
+[Vídeo: Control remoto desde el móvil de robot con Raspberry raspiCar](https://drive.google.com/file/d/19Mekvp36bAzZujimjHYrWY4Hbu3hnoM9/view?usp=sharing)
 
 Si quieres profundizar más, en [este enlace tienes un webApp mucho más sofisticada](http://www.tobias-weis.de/control-a-raspberrypi-robot-using-flask-and-a-mobile-browser/)
 
@@ -546,16 +548,16 @@ sudo pip3 install adafruit-circuitpython-neopixel
 
 Para probarlo podemos usar el ejemplo de Adafruit, con solo cambiar el pin al que lo conectamos y el número de leds. En [este ejemplo](https://github.com/javacasm/RaspberryOnline2ed/blob/master/codigo/test_neopixels.py) usamos 8 leds conectados al pin 18 (no se pueden usar cualquier pin)
 
-[![Vídeos: Neopixels en acción: 8 neopixels conectados a una Raspberry Pi](https://img.youtube.com/vi/RrPzXzl151A/0.jpg)](https://youtu.be/RrPzXzl151A)
+[![Vídeos: Neopixels en acción: 8 neopixels conectados a una Raspberry Pi](https://img.youtube.com/vi/RrPzXzl151A/0.jpg)](https://drive.google.com/file/d/1_SPI8lfhXHtHh0wwTiRqKfDILDBxBeQB/view?usp=sharing)
 
-[Vídeos: Neopixels en acción: 8 neopixels conectados a una Raspberry Pi](https://youtu.be/RrPzXzl151A)
+[Vídeos: Neopixels en acción: 8 neopixels conectados a una Raspberry Pi](https://drive.google.com/file/d/1_SPI8lfhXHtHh0wwTiRqKfDILDBxBeQB/view?usp=sharing)
 
 
 Un ejemplo típico que es casi obligatorio hacer cuando uno tiene varios leds es el llamado SCanner Larson o la luz del coche fantástico o la luz de los Cylons
 
 ![Knight Rider Kitt](./images/knighriderkitt.gif)
 
-Este es [un ejemplo](https://github.com/javacasm/RaspberryOnline2ed/blob/master/codigo/test_larsson.py) de cómo hacerlo
+Este es [un ejemplo](https://github.com/javacasm/RaspberryOnline2ed/blob/master/codigo/test_larsson.py) de cómo hacerlo:
 
 ```python
 
@@ -588,10 +590,9 @@ while True:
 
 ```
 
-[![Vídeo: Scanner Larson, el coche fantástico y cylon con neopixels en una Raspberry Pi](https://img.youtube.com/vi/7Q_ds7-Yr_s/0.jpg)](https://youtu.be/7Q_ds7-Yr_s)
+[![Vídeo: Scanner Larson, el coche fantástico y cylon con neopixels en una Raspberry Pi](https://img.youtube.com/vi/7Q_ds7-Yr_s/0.jpg)](https://drive.google.com/file/d/1YDr6lSa-frzR2XQfLunNbJzRwy8Q0IbY/view?usp=sharing)
 
-[Vídeo: Scanner Larson, el coche fantástico y cylon con neopixels en una Raspberry Pi](https://youtu.be/7Q_ds7-Yr_s)
-
+[Vídeo: Scanner Larson, el coche fantástico y cylon con neopixels en una Raspberry Pi](https://drive.google.com/file/d/1YDr6lSa-frzR2XQfLunNbJzRwy8Q0IbY/view?usp=sharing)
 
 
 ### Sensor atmosférico: BME280
@@ -649,10 +650,10 @@ Nos queda un montaje así:
 Podemos descargar todo el código de raspiCar del [repositorio de github](https://github.com/javacasm/raspiCar)
 
 
-[![Vídeo: Montaje final robot móvil controlar con Raspberry Pi:  RasPiCar](https://img.youtube.com/vi/LO433fsFVWU/0.jpg)](https://youtu.be/LO433fsFVWU)
+[![Vídeo: Montaje final robot móvil controlar con Raspberry Pi:  RasPiCar](https://img.youtube.com/vi/LO433fsFVWU/0.jpg)](https://drive.google.com/file/d/1_C3J8c-py1Cm9gB89Ei22LLI6VWr6VeI/view?usp=sharing)
 
 
-[Vídeo: Montaje final robot móvil controlar con Raspberry Pi:  RasPiCar](https://youtu.be/LO433fsFVWU)
+[Vídeo: Montaje final robot móvil controlar con Raspberry Pi:  RasPiCar](https://drive.google.com/file/d/1_C3J8c-py1Cm9gB89Ei22LLI6VWr6VeI/view?usp=sharing)
 
 
 ## Referencias
