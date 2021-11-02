@@ -15,14 +15,14 @@
 
 Y si la vas a usar como un ordenador:
 
-* Monitor y cable HDMI (o VGA con adaptador. Existen muchos tipos de conversores, pero no todos funcionan bien con cables largos) para la 3 o cable mini-HDMI para la versió 4
-* Teclado y raton USB (mejor si es inalámbrico, porque consume menos)
+* Monitor y cable HDMI (o VGA con adaptador. Existen muchos tipos de conversores, pero no todos funcionan bien con cables largos) para la 3 o cable mini-HDMI para la versión 4.
+* Teclado y ratón USB (mejor si es inalámbrico, porque consume menos)
 
 ## ¿Raspberry 3+ o 4? 
 
-Esa es la pregunta del millón: Las primeras unidades del último modelo 4 han salido con algunos problemas de calientamiento y no funcionan con algunas fuentes de alimentación de tipo USB-C. Los problemas de calentamiento se ha resuelto con actualizaciones software y es de suponer que las placas que salen de fábrica ya tienen resueltos los problemas eléctricos.
+Esa es la pregunta del millón: Las primeras unidades del último modelo 4 han salido con algunos problemas de calentamiento y no funcionan con algunas fuentes de alimentación de tipo USB-C. Los problemas de calentamiento se han resuelto con actualizaciones de software y es de suponer que las placas que salen de fábrica ya tienen resueltos los problemas eléctricos.
 
-Por esto, y dada la poca diferencia de precio, salvo que encuentres una buena oferta para la Rasperry Pi 3+ yo me inclinaría por la versión 4. 
+Por esto, y dada la poca diferencia de precio, salvo que encuentres una buena oferta para la Raspberry Pi 3+ yo me inclinaría por la versión 4. 
 
 ### Opcionales
 
@@ -48,22 +48,4 @@ Por esto, y dada la poca diferencia de precio, salvo que encuentres una buena of
 * [www.amazon.es](http://www.amazon.es)
 * [www.bricogeek.com](http://www.bricogeek.com)
 * [www.raspipc.es](http://www.raspipc.es)
-
-#### Veamos algunos kits de Inven
-
-* [Raspberry](http://inven.es/raspberry-pi/557-kit-raspberry-pi-3-tarjeta-16gb-transformador-corriente.html)                      
-* [Raspberry básico](http://inven.es/raspberry-pi/368-inven-pi3-kit-raspberry-pi-3-basico.html)
-* [Raspberry completo](http://inven.es/raspberry-pi/369-inven-pi3-kit-raspberry-pi-3-completo.html)
-* [Raspberry + electrónica](http://inven.es/raspberry-pi/370-inven-pi3-kit-raspberry-pi-3-electronica.html)
-
-#### Otros kits
-
-* [Kit base](http://www.electan.com/kit-raspberry-con-caja-alimentador-microsd-hdmi-usb-p-6584.html)
-* [Shield electronica](http://tinkersphere.com/raspberry-pi-hats/633-starter-raspberry-pi-led-hat.html)
-* [Kit amazon 1](http://www.amazon.es/s/ref=sr_pg_2?rh=i%3Aaps%2Ck%3Araspberry+pi+2+kit+starter&page=2&sort=price-asc-rank&keywords=raspberry+pi+2+kit+starter&ie=UTF8&qid=1449858467)
-* [Kit Amazon 2 1](http://www.amazon.es/Raspberry-Pi-Quad-Core-Starter/dp/B00T7KW3Y0/ref=sr_1_15?ie=UTF8&qid=1449858467&sr=8-15&keywords=raspberry+pi+2+kit+starter)
-* [Kit Amazon 3](http://www.amazon.es/Raspberry-Pi-Quad-Starter-Bundle/dp/B00T7OHE9A/ref=sr_1_18?ie=UTF8&qid=1449858497&sr=8-18&keywords=raspberry+pi+2+kit+starter)
-* [Kit base](http://www.electan.com/kit-raspberry-con-caja-alimentador-microsd-hdmi-usb-p-6584.html)
-* [Shield electronica](http://tinkersphere.com/raspberry-pi-hats/633-starter-raspberry-pi-led-hat.html)
-* [kit amazon](http://www.amazon.es/s/ref=sr_pg_2?rh=i%3Aaps%2Ck%3Araspberry+pi+2+kit+starter&page=2&sort=price-asc-rank&keywords=raspberry+pi+2+kit+starter&ie=UTF8&qid=1449858467)
 

@@ -20,7 +20,7 @@ Una vez descargado seleccionaremos el sistema operativo que queremos usar, luego
 
 A día de hoy Imager no permite instalar varios sistemas operativos en la misma tarjeta
 
-Al pulsar **Write** se descargará la imagen desde internet y 
+Al pulsar **Write** se descargará la imagen desde internet.
 
 También podemos usar Imager para formatear la tarjeta, para crear tarjetas SD capaces de recupear una instalación con problemas, para escribir imágenes que ya hemos descargado, etc.
 
@@ -46,8 +46,8 @@ Realmente **NO RECOMIENDO HACERLO ASÍ** salvo que ya lo hayas hecho y controles
 * ¿Qué imagen usar?:
 	* Empecemos con [Noobs](https://github.com/raspberrypi/noobs) que nos va a permitir instalar otras imágenes.
     * Tenemos 2 opciones para descargar la imagen de noobs:
-        * Una instalación mínima de noobs, que descargará luego todo lo necesario desde la red
-        * Una instalación basde de Noobs que incluye todo lo necesiario para instalar el sistema operativo Raspbian, que es el más usado y que una vez copiado en la tarjeta no necesita conexión a la red	
+        * Una instalación mínima de noobs, que descargará luego todo lo necesario desde la red.
+        * Una instalación base de Noobs que incluye todo lo necesario para instalar el sistema operativo Raspbian, que es el más usado y que una vez copiado en la tarjeta no necesita conexión a la red.
 	
 
 	![noobs](./images/noobs.png)
@@ -120,7 +120,7 @@ Lo más importante es cambiar la contraseña para evitar que cualquiera pudiera 
 
 ![Configuración de las Interfaces](./images/ConfRaspiInterfaces.png)
 
-Aquí veremos qué drivers activamos (porque vayamos a usar esos dispositivos) o que protocolos de comunicación usaremos para acceder.
+Aquí veremos qué drivers activamos (porque vayamos a usar esos dispositivos) o qué protocolos de comunicación usaremos para acceder.
 
 Si vamos a acceder desde otro ordenador deberemos activar SSH en el caso de  acceder vía consola (texto) o VNC para acceder al escritorio.
 
@@ -241,7 +241,7 @@ Existen [varios emuladores](https://www.google.es/search?q=raspberry+simulator&o
 
 
 ### Simulación en windows
-Desde la página [diverteka](http://www.diverteka.com/?p=66) nos explica cómo instalar el emulador de una versión antigua en windows.
+Desde la página [diverteka](http://www.diverteka.com/?p=66) nos explican cómo instalar el emulador de una versión antigua en windows.
 
 ![qemu](./images/qemu.png)
 

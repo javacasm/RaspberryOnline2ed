@@ -2,7 +2,7 @@
 
 La electrónica de las Raspberry están pensada para que se alimenten desde el puerto USB correspondiente, ahí es donde están conectadas las protecciones contra inversión de la polaridad y los fusibles.
 
-En cambio, en el diseño de la Raspberry Pi Zero sí que se contempla la posibilidad de alimenartarla con 5V desde los pines del conector GPIO, pero tenemos que tener mucho cuidado porque no tiene fusibles ni protección de inversión de polaridad con lo que si cometemos un error podemos destruirla.
+En cambio, en el diseño de la Raspberry Pi Zero sí que se contempla la posibilidad de alimentarla con 5V desde los pines del conector GPIO, pero tenemos que tener mucho cuidado porque no tiene fusibles ni protección de inversión de polaridad con lo que si cometemos un error podemos destruirla.
 
 Más detalles sobre el tema en [este foro](https://forums.raspberrypi.com/viewtopic.php?t=127965)
 
@@ -14,7 +14,7 @@ Cuando esto ocurre, si la alimentación es insuficiente, algnos dispositivos se 
 
 ![Indicador de baja alimentación](./images/NESPi_part5_web7.png)
 
-Desde el sistema podemos ver el estado de la alimentación y de la temperatura del sistema monitorizando el valor de **throttle** (traducible por "sofocado")usando el siguiente comando
+Desde el sistema podemos ver el estado de la alimentación y de la temperatura del sistema monitoreando el valor de **throttle** (traducible por "sofocado")usando el siguiente comando
 
 ```sh
 /opt/vc/bin/vcgencmd get_throttled
@@ -26,11 +26,11 @@ Obtenemos un valor de:
 throttled=0x0
 ```
 
-Un valor de 0x0 nos dice que el estado de la alimentación  y la temperatura del sistema son aceptable.
+Un valor de 0x0 nos dice que el estado de la alimentación  y la temperatura del sistema son aceptables.
 
 A medida que se calienta el sistema o baja la alimentación el valor de **throttle** se va incrementando y el rendimiento del sistema baja.
 
-Los distintos bits de **throttle** tiene distinto significado y nos sirven para conocer el estado del sistema. Un valor de 0 en este bit nos indica que no está activado, un valor 1 nos dice que en este momento ocurre.
+Los distintos bits de **throttle** tienen distinto significado y nos sirven para conocer el estado del sistema. Un valor de 0 en este bit nos indica que no está activado, un valor 1 nos dice que en este momento ocurre.
 
 ```
 0: under-voltage

@@ -9,7 +9,7 @@ También podemos instalar una versión de 64bits experimental, todavía en estad
 
 ### Instalación para arranque con disco USB
 
-Vamos a usar un disco USB para instalar y arrancar nuestro SO. Necesitamos un pen drive rápido (o un disco SSD). Debe ser USB 3.0 y de alta velocidad para aprovechar su rendimiento.
+Vamos a usar un disco USB para instalar y arrancar nuestro SO. Necesitamos un pendrive rápido (o un disco SSD). Debe ser USB 3.0 y de alta velocidad para aprovechar su rendimiento.
 
 Necesitaremos una tarjeta SD para la crear la imagen y copiarla al pen USB.
 
@@ -22,7 +22,7 @@ sudo apt update
 sudo apt full-upgrade
 ```
 
-3. Copiamos el contenido de nuesra tarjeta SD al disco USB con el programa **SD Card Copier** de nuestra Raspberry Pi
+3. Copiamos el contenido de nuestra tarjeta SD al disco USB con el programa **SD Card Copier** de nuestra Raspberry Pi
 
 4. Ahora vamos a actualizar la eeprom para activar el arranque desde USB. Editaremos el fichero  /etc/default/rpi-eeprom-update cambiando "critical" por "stable"
 
@@ -47,7 +47,7 @@ sudo rpi-eeprom-update  -d -f /lib/firmware/raspberrypi/bootloader/stable/pieepr
 
 ![](./images/USB4_eeprom_update.png)
 
-7. Si todo ha ido bien, apagamos la Paspberry, quitamos la tarjeta SD probamos a arrancar.
+7. Si todo ha ido bien, apagamos la Raspberry, quitamos la tarjeta SD y probamos a arrancar.
 
 [Vídeo: Cómo arrancar Raspberry Pi 4 desde USB](https://drive.google.com/file/d/12cLBP4SUQRcx7pZciu3VnC-YwB73_Jyd/view?usp=sharing)
 

@@ -14,16 +14,15 @@ Una vez conectada al Wifi, accederemos a ella vía ssh, usando terminal/consola.
 
 Colocamos la Raspberry Pi Zero W en su caja y conectamos la alimentación y queda así de reducido
 
-![Raspi Zero con alimantacion](./images/RaspiZeroAlimantacion.jpg)
+![Raspi Zero con alimentacion](./images/RaspiZeroAlimantacion.jpg)
 
-Ahora ya arracamos para hacer la configuración necesaria desde la consola:
+Ahora ya arrancamos para hacer la configuración necesaria desde la consola, haciendo la configuración inical:
 
-Configuración inical:
-* Cambiamos contraseña
-* Configuramos Wifi
-* Configuración del hostname
-* Activamos ssh
-* Cofiguramos idioma, zona horaria y teclado
+* Cambiamos contraseña.
+* Configuramos Wifi.
+* Configuración del hostname.
+* Activamos ssh.
+* Configuramos idioma, zona horaria y teclado.
 
 Todo ello lo haremos usando la configuración por consola con raspi-config
 
@@ -55,17 +54,19 @@ ssh pi@NombreRaspiZero
 
 En las instalaciones del OS versión "Lite", podemos hacer que por defecto se active el acceso ssh desde el inicio.
 
-PAra ello basta con crear un fichero vacío llamado **"ssh"** en directorio raíz de la tarjeta y vuelve a arrancar.
+Para ello basta con crear un fichero vacío llamado **"ssh"** en directorio raíz de la tarjeta y vuelve a arrancar.
 
 ### "Trucos" desde la consola
 
 * Podemos saber la dirección ip usando el comando **ifconfig**
 * Para saber la red wifi a la que estamos conectados usaremos **iwconfig**
-* Podemos añadir acceso a una red wifi editando el fichero wpa_suplicant con
+* Podemos añadir acceso a una red wifi editando el fichero wpa_suplicant con:
+
     ```sh
     sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
     ```
     y añadiendo el siguiente texto
+
     ```
     network={
             ssid="ssidDelaRed"
@@ -74,7 +75,5 @@ PAra ello basta con crear un fichero vacío llamado **"ssh"** en directorio raí
     ```
 * Para apagar la Raspberry usaremos **sudo halt**
 * Para reiniciar **sudo reboot**
-
-### Convertir una instalación de consola a escritorio
 
 
