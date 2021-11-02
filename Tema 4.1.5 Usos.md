@@ -204,7 +204,7 @@ El uso incluso en un móvil es más cómodo de lo que parece, puesto que permite
 
 Si vamos a conectarnos frecuentemente a un mismo equipo puede resultar pesado tener que poner siempre usuario y contraseña. 
 
-El protocolo ssh permite automatizarlo sin más que añadir nuestra **clave pública ssh** a la lista de host autorizados del servidor al que nos vamos a conectar, haciendo lo siguiente:
+Podemos automatizar el protocolo ssh sin más que añadir nuestra **clave pública ssh** a la lista de host autorizados del servidor al que nos vamos a conectar, haciendo lo siguiente:
 
 1. Generar nuestra **clave pública ssh**, asociada al usuario y la máquina
 ```sh
@@ -214,21 +214,19 @@ ssh-keygen -t rsa -b 4096 -C user@email.com
 ```sh
 cat ~/.ssh/id_rsa.pub | ssh username@server.address.com 'cat >> ~/.ssh/authorized_keys'
 ```
-La siguiente vez que nos conectemos lo haremos sin necesidad de instroducir la clave.
+La siguiente vez que nos conectemos lo haremos sin necesidad de introducir la clave.
 
 Como podemos ver en el último comando que hemos usado, podemos usar ssh de muchas formas diferentes:
-* Para conectarnos de manera interactiva a otro ordenadore
-* Para enviar ficheros entre equipos. En proyecto más adelante lo usaremos bastante.
-* Para enviar contenido entre equipos como hemos hecho con el comando 'cat'
-* Para ejecutar comandos remotamente. Por ejemplo si hacemos
-```sh
-ssh pi@raspi4 df -h
-```
-Nos permitirá saber cómo de llenos están los discos en el ordenadore raspi4
 
+* Para conectarnos de manera interactiva a otro ordenador.
+* Para enviar ficheros entre equipos. En un proyecto más adelante lo usaremos bastante.
+* Para enviar contenido entre equipos como hemos hecho con el comando 'cat'.
+* Para ejecutar comandos remotamente. Por ejemplo si hacemos:
 ```sh
 ssh pi@raspi4 df -h
 ```
+Nos permitirá saber cómo de llenos están los discos en el ordenador raspi4.
+
 
 ### VNC
 
@@ -268,21 +266,21 @@ Ahora accederemos usando un cliente vnc, como por ejemplo [VNC Viewer](https://w
 
 Existen clientes de VNC para teléfonos móviles y tabletas, lo que nos da muchas posibilidades
 
-La conexión por VNC nos permite acceder como si estuvieramos conectados directamente
+La conexión por VNC nos permite acceder como si estuviéramos conectados directamente
 
 ### Conexión y acceso directo
 
 Vamos a configurar nuestra raspberry y un portátil con Ubuntu para facilitar al máximo la conexión y así no tener que utilizar muchos componentes. De esta manera podremos trastear con un kit mínimo, evitando tener que usar un teclado, ratón y sobre todo un monitor.
 
-![Conexión directa entre Raspberry y Portatil](http://blog.elcacharreo.com/wp-content/uploads/2013/05/20130501_003523-150x150.jpg)
+![Conexión directa entre Raspberry y portátil](http://blog.elcacharreo.com/wp-content/uploads/2013/05/20130501_003523-150x150.jpg)
 
-En concreto usaremos símplemente un cable de red (ethernet) y un cable micro-usb para alimentar la raspberry.
+En concreto usaremos simplemente un cable de red (ethernet) y un cable micro-usb para alimentar la raspberry.
 
 Con esta configuración no podemos consumir en total más de los 500mA que proporciona el USB.
 
 Tendremos que modificar ficheros de configuración en el PC y en la raspberry.
 
-Asumiremos que tenemos conexión a internet via Wifi y utilizaremos el cable ethernet para dar conectividad a la raspberry. Crearemos una red entre el portátil y la raspberry creando una subred distinta y haremos que el portátil actúe como gateway de esa red enrutando los paquetes hacia la raspberry y dándole acceso a internet.
+Asumimos que tenemos conexión a internet vía Wifi y utilizaremos el cable ethernet para dar conectividad a la raspberry. Crearemos una red entre el portátil y la raspberry creando una subred distinta y haremos que el portátil actúe como gateway de esa red enrutando los paquetes hacia la raspberry y dándole acceso a internet.
 
 Comencemos editando la configuración del pc, para lo que ejecutaremos en el pc:
 
@@ -344,7 +342,7 @@ Veamos cómo podemos utilizar lo aprendido...
 
 ### Para hacer cálculos con Mathematica
 
-Hay una versión gratuita (para uso no comercial) de Worlfram  Mathematica instalada por defecto en Raspbian
+Hay una versión gratuita (para uso no comercial) de Wolfram  Mathematica instalada por defecto en Raspbian
 
 ![Mathematica en Raspberry Pi](./images/Mathematica.png)
 
@@ -364,7 +362,7 @@ Usaremos un software standard de Linux: **motion**
 sudo apt-get install motion
 ```
 
-Editamos la configuracion
+Editamos la configuración
 
 ```sh
 sudo nano /etc/motion/motion.conf
@@ -374,7 +372,7 @@ sudo nano /etc/motion/motion.conf
 
 Lo arrancamos
 ```sh
-montion -n
+motion -n
 ```
 
 Podremos acceder a la imagen en vivo de la cámara con

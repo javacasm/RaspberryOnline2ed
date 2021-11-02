@@ -11,11 +11,12 @@
 
 ## IOT con Raspberry
 
-Dada la capacidad de procesamiento y la compatibilidad con todo tipo de sistemas, Rasspberry Pi es ideal para ser el centro de las comunicaciones de un sistema IOT. Puede actuar como:
+Dada la capacidad de procesamiento y la compatibilidad con todo tipo de sistemas, Raspberry Pi es ideal para ser el centro de las comunicaciones de un sistema IOT. Puede actuar como:
+
 * Broker de comunicaciones, a donde se conectan todos los otros dispositivos.
 * Base de datos para guardar los datos.
 * Visualizador de datos usando aplicaciones específicas.
-* Hacer datamining sobre los datos guardados
+* Hacer  data minin sobre los datos guardados
 * Publicar contenidos en forma de página web, canal de Telegram, etc
 
 # IOT (Internet de las cosas)
@@ -37,19 +38,19 @@ Dada la capacidad de procesamiento y la compatibilidad con todo tipo de sistemas
 * Conectividad con otros dispositivos como puede ser un teléfono móvil ya sea por medio de Bluetooth y /o WiFi.
 * Medir algo: actividad, temperatura, consumo.
 * Almacenar los datos, que se guardan hasta que se vuelve a sincronizar.
-* Estos datos se suelen subir a páginas web (thingspeak, blynk, adafruit, Cayenne, etc) Dónde se almacenan, y dónde posteriormente podemos construir nuestros graficos e informes.
+* Estos datos se suelen subir a páginas web (thingspeak, blynk, adafruit, Cayenne, etc) Dónde se almacenan, y dónde posteriormente podemos construir nuestros gráficos e informes.
 
 ## Proyectos
 
 Veamos algunos de los proyectos en los que podríamos trabajar:
 
-* Estación meteorológica meditemos las magnitudes Atmosférica, mostrando los datos, guardando los y publicándolos en internet parado su posterior análisis.
+* Estación meteorológica: mediremos las magnitudes atmosféricas, mostrando los datos, guardándose y publicándose en internet para su posterior análisis.
 
-* Medida de consumo y fomento de la eficiencia energética: mediremos el consumo de nuestro propio equipo y veremos como a medida que vamos incluyendo más componentes el consumo se hace mayor. Podríamos podríamos adaptar este sistema aún uso real dentro de la casa y viendo el consumo de los electrodomésticos.
+* Medida de consumo y fomento de la eficiencia energética: mediremos el consumo de nuestro propio equipo y veremos cómo a medida que vamos incluyendo más componentes el consumo se hace mayor. Podríamos adaptar este sistema a un uso real dentro de la casa y viendo el consumo de los electrodomésticos.
 
-* Control remoto de componentes mediante el uso de un relé vamos a poder encender y apagar dispositivo remotamente con nuestro sistema bien por el cambio de alguna tela sistemas que medimos o bien por accionamiento externo.
+* Control remoto de componentes: mediante el uso de un relé vamos a poder encender y apagar dispositivos remotamente con nuestro sistema bien por el cambio de alguna tela sistemas que medimos o bien por accionamiento externo.
 
-* Medida de calidad del aire. Usaremos sensores de medida de partículas para determinar la calidad del aire al mismo tiempo también mediremos en el contenido en gases y los parámetros atmosféricos. Publicaremos todos estos datos en una página web para poder comparar la medida en diferentes lugares.
+* Medida de calidad del aire. Usaremos sensores de medida de partículas para determinar la calidad del aire y al mismo tiempo también mediremos el contenido en gases y los parámetros atmosféricos. Publicaremos todos estos datos en una página web para poder comparar la medida en diferentes lugares.
 
 ## Algunos ejemplos:
 
@@ -80,7 +81,7 @@ Veamos algunos de los proyectos en los que podríamos trabajar:
 
 ¿Qué necesito?
 
-## [Arquitectura de un sistema completo IOT](https://polaridad.es/grafica-sensor-internet-de-las-cosas-iot/)
+[Arquitectura de un sistema completo IOT](https://polaridad.es/grafica-sensor-internet-de-las-cosas-iot/)
 
 ![Arquitectura IOT](./images/ArquitecturaIOT.png)
 

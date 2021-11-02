@@ -36,7 +36,7 @@ Otra herramienta relacionada con los proyectos de robótica y electrónica es Fr
 
 En este caso la versión disponible para Raspberry en los repositorios, aunque no es la última, sí que es bastante reciente y usable.
 
-Podemos instalarla desde la herramienta de installación de software o desde consola:
+Podemos instalarla desde la Herramienta de Instalación de Software o desde consola:
 
 ```sh
 sudo apt install fritzing

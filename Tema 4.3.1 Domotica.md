@@ -11,6 +11,7 @@ En los siguientes capítulos veremos algunos ejemplos de sistemas más profesion
 ### Sistemas comerciales
 
 Existen en el mercado multitud de elementos domóticos comerciales que podemos comprar por muy pocos euros:
+
 * Bombillas que se activan con el móvil, incluso podemos cambiar el color de la luz que emite
 ![bombilla Inteligente](./images/bombillaInteligente.jpg)
 * Relés genéricos para controlar el encendido por wifi
@@ -24,19 +25,20 @@ Existen en el mercado multitud de elementos domóticos comerciales que podemos c
 ![Control Ventilador](./images/ControlVentilador.jpg)
 * ...
 
-Todos ellos utilizan una aplicación en nuestro móvil que tras emparejarlos nos permite controlar su funcioanmiento. 
+Todos ellos utilizan una aplicación en nuestro móvil que tras emparejarlos nos permite controlar su funcionamiento. 
 
 Al usar varios de ellos ya nos encontramos con un primer problema:
+
 * Cada fabricante usa una aplicación diferente
 * Incluso si tenemos equipos de un mismo fabricante pero comprados en diferentes fechas podemos tener que usar diferentes aplicaciones.
 
 La mayoría de estas aplicaciones nos permiten hacer que unos equipos interaccionen con otros, pero siempre que sean del mismo fabricante.
 
-Por otro lado algo que nos queda oculto es que aunque estemos junto a nuestro equipo, en la gran mayoría de los casos los datos viajan hasta los servidores del fabricante y nuestras acciones también han de hacerlo con lo que nuestros datos y el uso de los distintos aparatos está moviéndose a través de internet. 
+Por otro lado, algo que nos queda oculto es que aunque estemos junto a nuestro equipo, en la gran mayoría de los casos, los datos viajan hasta los servidores del fabricante y nuestras acciones también han de hacerlo, con lo que nuestros datos y el uso de los distintos aparatos está moviéndose a través de internet. 
 
 Esto cuando menos debería de preocuparnos.
 
-Esta imagen de Adafruit refleja cláramente el movimiento de nuestros datos:
+Esta imagen de Adafruit refleja claramente el movimiento de nuestros datos:
 
 ![Diferentes APIs en IOT](./images/internet_of_things___iot_Network_APIs.png)
 

@@ -4,15 +4,15 @@ Vamos a ver uno de los protocolos más usados en los sistemas domóticos: el MQT
 
 **MQTT** es un protocolo de comunicaciones entre dispositivos sencillo y ligero. Está pensado para que pueda funcionar en equipos con poca capacidad de cálculo pero sin limitar sus características. Podemos ver todos los detalles del protocolo en [su web](https://mqtt.org/) donde se encuentran las especificaciones y versiones de software que lo implementan.
 
-Es un protocolo seguro que soporta autentificación y cifrado SSL, aunque podemos elegir no usar estas características.
+Es un protocolo seguro que soporta autenticación y cifrado SSL, aunque podemos elegir no usar estas características.
 
 También implementa distintos niveles de QoS (Quality of Service) que van desde un nivel 0 sin garantía de entrega de paquetes/notificaciones hasta un nivel máximo donde se asegura que todos los paquetes se reciben.
 
-Todo ello hacen a este protocolo muy versatil y útil, capaz de funcionar entre grandes servidores y entre sistemas de microcontroladores.
+Todo ello hace que este protocolo sea muy útil y versátil, capaz de funcionar entre grandes servidores y entre sistemas de microcontroladores.
 
-Los equipos conetados por **MQTT** envían y reciben mensajes que está formados por un **Topic**, que es como una etiqueta con estructura arbórea y un mensaje o contenido.
+Los equipos conectados por **MQTT** envían y reciben mensajes que están formados por un **Topic**, que es como una etiqueta con estructura arbórea y un **mensaje** o contenido.
 
-Decimos que los topic tienen estructura arbórea porque podemos estructurarlos y ademas usar comodines ('+' y '#'). 
+Decimos que los topic tienen estructura arbórea porque podemos estructurarlos y además usar comodines ('+' y '#'). 
 
 Por ejemplo si decimos que estamos interesados en el topic "/MeteoSalon/#" diremos que nos interesan todos los mensajes que empiecen por "/MeteoSalon/". 
 
@@ -22,9 +22,9 @@ Todos los participantes pueden **publicar** mensajes y/o también se pueden **su
 
 Utiliza una arquitectura como la que se ve en la imagen, donde el sistema central actúa como **Broker**, recibiendo los mensajes de todos los equipos y notificando a aquellos que se han suscrito a topics.
 
-![Arqutectura MQTT](./images/mqtt-architecture.png)
+![Arquitectura MQTT](./images/mqtt-architecture.png)
 
-Al ser un servicio sencillo actúa como transporte en sistemas más complejos. Por ejemplo podemos hacer que un equipo se susbriba todos los topics y los guarde en una base datos. 
+Al ser un servicio sencillo actúa como transporte en sistemas más complejos. Por ejemplo, podemos hacer que un equipo se suscriba a todos los topics y los guarde en una base de datos. 
 
 ![Arquitectura MQTT](./images/MQTT_arquitectura.png)
 
@@ -106,26 +106,14 @@ MeteoSalon/led On
 
 A medida que vamos añadiendo dispositivos y enviado más mensajes se puede complicar el árbol de topics
 
-Para ellos es mejor usar una arquitectura. Por ejemplo esta [tomada del blog de ricardo veal](https://ricveal.com/blog/sonoff-mqtt/)
+Para ellos es mejor usar una arquitectura. Por ejemplo esta, [tomada del blog de ricardo veal](https://ricveal.com/blog/sonoff-mqtt/)
 
 ```sh
     state_topic: "stat/sonoff/1/POWER"
     command_topic: "cmnd/sonoff/1/POWER"
     availability_topic: "tele/sonoff/1/LWT"
 ```
+_Telemetría_ para que den información, por ejemplo los sensores.
+_Command_ para peticiones 
+_Stat_ para confirmaciones de estados
 
-
-Telemetría para que cuenten sus cosas ¿Por ejemplo los sensores?
-Command para peticiones ¿request?
-Stat para confirmaciones de estados
-
-
-
-
-## Recursos
-
-[Instalación de mosquito en la Raspberry](https://randomnerdtutorials.com/how-to-install-mosquitto-broker-on-raspberry-pi/)
-
-https://randomnerdtutorials.com/micropython-mqtt-esp32-esp8266
-
-https://geekytheory.com/tutorial-raspberry-pi-gpio-y-mqtt-parte-1

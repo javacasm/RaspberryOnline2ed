@@ -1,16 +1,16 @@
 ## Retropie
 
-Una de las aplicaciones más usadas de Raspberry es usarla como una bartop o máquina recreativa donde podmoes jugar a juegos arcade antiguos.
+Una de las aplicaciones más usadas de Raspberry es usarla como una bartop o máquina recreativa donde podemos jugar a juegos arcade antiguos.
 
-![mage](./images/mage.jpg)
+![](./images/mage.jpg)
 
-**Retropie** es un distribución para Raspberry que nos permite ejecutar una gran cantidad de emuladores, configurar los mandos y gestionar las ROMs de los juegos. 
+**Retropie** es una distribución para Raspberry que nos permite ejecutar una gran cantidad de emuladores, configurar los mandos y gestionar las ROMs de los juegos. 
 
 Está basada en Raspbian, a la que añaden [EmulationStation](EmulationStation.org) y [RetroArch](http://retroarch.com/)
 
 
-
 El proceso de instalación no puede ser más sencillo:
+
 1. Descargamos la imagen de [Retropie](https://retropie.org.uk/download)
 2. Tras descomprimilar, la grabamos en una tarjeta SD 
 3. Arrancamos y seguimos el proceso de configuración
@@ -28,10 +28,3 @@ Existen muchas alternativas legales como podemos ver en este [post de los foros 
 
 También podemos hacer una [instalación manual](https://retropie.org.uk/docs/Manual-Installation/)
 
-### Referencias
-
-[Tutorial de programoergosum](https://www.programoergosum.es/tutoriales/consola-arcade-basada-en-raspberry-pi-con-retropie)
-
-[Revista TheMagPi 81 I](https://www.raspberrypi.com/news/retro-console-with-retropie-raspberry-pi-1/) y [II](https://www.raspberrypi.com/news/retro-console-with-retropie-raspberry-pi-2/)
-
-[How to download games Rom for retropie](https://raspberrytips.com/download-retropie-roms/)
