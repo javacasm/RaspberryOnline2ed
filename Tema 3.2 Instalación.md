@@ -70,7 +70,7 @@ Para empezar deberíamos seleccionar Raspbian y se arrancará el proceso de inst
 
 ![Booting Raspbian](./images/Booting-Raspbian.png)
 
-Al arrancar el sistema Raspian aparecerá una pantalla multicolor que nos indica que la imagen está operativa.
+Al arrancar el sistema Raspbian aparecerá una pantalla multicolor que nos indica que la imagen está operativa.
 
 ![Imagen multicolor en el arranque de Raspberry pi](./images/raspberry-pi-boot-rainbow.jpg)
 
@@ -270,6 +270,6 @@ En diferentes foros podemos ver cómo otros usuarios usan diferentes emuladores
 
 ![Pixel](./images/newdesk-500x281.jpg)
 
-Puedes usar Pixel el entorno gráfico de Rasperry en tu PC o MAC, solo necesitas descargar la [imagen](http://downloads.raspberrypi.org/pixel_x86/images/pixel_x86-2016-12-13/2016-12-13-pixel-x86-jessie.iso) desde un CD o USB.
+Puedes usar Pixel el entorno gráfico de Raspberry en tu PC o MAC, solo necesitas descargar la [imagen](http://downloads.raspberrypi.org/pixel_x86/images/pixel_x86-2016-12-13/2016-12-13-pixel-x86-jessie.iso) desde un CD o USB.
 
 Más detalles en [esta página](https://www.raspberrypi.com/news/pixel-pc-mac/)

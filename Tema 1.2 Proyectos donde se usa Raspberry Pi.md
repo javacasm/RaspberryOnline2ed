@@ -1,6 +1,6 @@
 ## Proyectos
 
-Vamos a presentar algunos proyectos donde se usa una (o varias) Raspberry Pi con el objeto de da ideas, en absoluto vamos en este punto  detalles de cómo implementarlos. Antes de eso tenemos que aprender a instalar, programar y constuir la electrónica necesaria.
+Vamos a presentar algunos proyectos donde se usa una (o varias) Raspberry Pi con el objeto de da ideas, en absoluto vamos en este punto  detalles de cómo implementarlos. Antes de eso tenemos que aprender a instalar, programar y construir la electrónica necesaria.
 
 Sí que nos van a mostrar la gran cantidad de usos de la Raspberry Pi.
 
@@ -12,7 +12,7 @@ Al tratarse de enlaces externos al curso, puede ocurrir que algunos enlaces no e
 
 * Occidentalis: Existen [distribuciones  educativas como Occidentalis de Adafruit](https://learn.adafruit.com/adafruit-raspberry-pi-educational-linux-distro) pensadas para aprender electrónica con la Raspberry. Actualmente la distribución oficial de Raspberry ya contiene la mayoría de las herramientas
 
-* [Coder](https://googlecreativelab.github.io/coder/): es una distribución creada por Google para usar la Raspberry como cliente/servidor para aprender programación.
+* [Coder](https://googlecreativelab.github.io/coder/): Es una distribución creada por Google para usar la Raspberry como cliente/servidor para aprender programación.
 
 * [Aulas informáticas](https://www.raspberrypi.org/blog/bringing-computing-to-rural-cameroon/): Unas Raspberries, unos monitores, teclados y ratones reciclados y una mínima infraestructura de red permite crear unas aulas informáticas perfectas para el día.
 ![Aula con Raspberry Pi](./images/AulaPi.jpg)
@@ -25,7 +25,7 @@ Añadiendo algo de hardware externo podemos utilizarlo como equipamiento de labo
 
 * Generadores de onda: [DAC](https://learn.adafruit.com/mcp4725-12-bit-dac-with-raspberry-pi)
 
-  ![Seeñal generada por DAC](./images/DAC_Scope.png)
+  ![Señal generada por DAC](./images/DAC_Scope.png)
 
 * [Analizador de frecuencias](https://learn.adafruit.com/freq-show-raspberry-pi-rtl-sdr-scanner)
 
@@ -62,7 +62,7 @@ En este otro [tutorial explican como conectar la Raspberry con Lego Mindstorm](h
 
 #### Máquina de juegos
 
-Uno de los usos más frecuentas de la Raspberry es para jugar, su pequeño tamaño y su capacidad la hacen ideal. Veremos más adelante que es más fácil de lo que parece montarse una.
+Uno de los usos más frecuentes de la Raspberry es para jugar, su pequeño tamaño y su capacidad la hacen ideal. Veremos más adelante que es más fácil de lo que parece montarse una.
 
 * [Mame](https://learn.adafruit.com/retro-gaming-with-raspberry-pi?view=all) (Emulador de máquinas recreativas antiguas)
 

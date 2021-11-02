@@ -12,7 +12,7 @@ Por dentro
 
 En ese rediseño han eliminado el conector CSI para la cámara, una pena en mi opinión, y ahora mismo sólo existe la versión de 4Gb de RAM.
 
-Se venderá como kit con todo lo necesario para usarse (tarjeta SD, ratón, alimentación, cables, fuente de alimentación y libro traducido) salvo el monitor por 100$ y por 70$ sólo la Raspberry Pi 400, con teclado Inglés, USA, francés, italiano, alemán o español.
+Se vende como kit con todo lo necesario para usarse (tarjeta SD, ratón, alimentación, cables, fuente de alimentación y libro traducido) salvo el monitor por 100$ y por 70$ sólo la Raspberry Pi 400, con teclado Inglés, USA, francés, italiano, alemán o español.
 
 ![Kit de Raspberry pi 400](./images/kit-raspi400.jpg)
 

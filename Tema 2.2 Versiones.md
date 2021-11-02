@@ -8,7 +8,7 @@ Veamos las diferencias con las versiones anteriores
 * 2 USB 3.0 y 2 USB 2.0
 * LAN Gigabit
 * 2 x mini-HDMI
-* Alimentación via USB-C
+* Alimentación vía USB-C
 * 2Gb/4Gb/8Gb de RAM
 
 El cambio a nivel de rendimiento es brutal.
@@ -26,9 +26,9 @@ El cambio a nivel de rendimiento es brutal.
 |USB	|2x USB 3.0 + 2x USB 2.0	|4x USB 2.0
 |Ethernet|	Native Gigabit Ethernet	|300 Mbps Giga Ethernet
 |Video Decoder|	H.265 4Kp60, H.264 1080p60|	H.264 & MPEG-4 1080p30
-|Aimentación|	5V via USB type-C con 3A y GPIO  a 3A| 5V vía micro USB con 2.5A y GPIO a 3A
+|Aimentación|	5V vía USB type-C con 3A y GPIO  a 3A| 5V vía micro USB con 2.5A y GPIO a 3A
 |Expansión|	40-pin GPIO |40-pin GPIO 
-|Wifi	|2.4 GHz y 5 GHz 802.11b/g/n/a wifi LAN	|2.4 GHz and 5 GHz 802.11b/g/n/a wifi LAN
+|Wifi	|2.4 GHz y 5 GHz 802.11b/g/n/a wifi LAN	|2.4 GHz y 5 GHz 802.11b/g/n/a wifi LAN
 |Almacenamiento|	microSD card	|microSD card
 |Precio|	$35 – 2 GB RAM, $45 – 4 GB RAM, $55 – 8 GB RAM	|$35 – 1 GB RAM
 
@@ -60,7 +60,7 @@ La [Raspberry Zero](https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/)
 
 ![Raspberry Pi Zero](./images/RaspiZero.png)
 
-Recientemente ha aparecido una nueva versión: la Raspberry Pi Zero 2 W, con micro de cuatro núcleos, 64bits, 1GHz y 512 Mb de RAM integrados en el propio chip. Según sus pruebas es 5x veces más potente. Sale por 15$ y eso sí, con el mismo mini tamaño . Utiliza el mismo procesador que la Raspberry 3, eso sí, en un espacio más reducido.
+Recientemente ha aparecido una nueva versión: la Raspberry Pi Zero 2 W, con micro de cuatro núcleos, 64 bits, 1GHz y 512 Mb de RAM integrados en el propio chip. Según sus pruebas es 5x veces más potente. Sale por 15$ y eso sí, con el mismo mini tamaño . Utiliza el mismo procesador que la Raspberry 3, eso sí, en un espacio más reducido.
 
 El que tenga un CPU quad-core que hace que la ejecución multitarea mejore muchísimo, lo que aumenta mucho su rendimiento
 
@@ -115,7 +115,7 @@ Es un gran avance en cuanto a prestaciones, pero conservando su esencia: un mism
 
 Veamos algunas de sus características
 
-![Características Raspbery Pi 4](./images/raspi4Descripcion.png)
+![Características Raspberry Pi 4](./images/raspi4Descripcion.png)
 
 * Procesador Quad core ARM A8 de 64 bits a 1.5Ghz. Los primeros tests de velocidad dicen que 2x veces más rápida que la 3+
 ![Test de CPU](./images/TestCPU_r4.png)
@@ -153,4 +153,4 @@ La posibilidad de elegir entre varios tamaños de RAM es muy interesante, pero t
 
 [Sobre el desarrollo de esta nueva versión](https://eandt.theiet.org/content/articles/2019/06/raspberry-pi-4-unveiled-interview-with-founder-eben-upton/)
 
-(Imágenes oficiales tomadas de Raspberry.org) y [MagPi85](https://magpi.raspberrypi.com/issues/85)
+(Imágenes oficiales tomadas de Raspberry.org) y [The Mag Pi 85](https://magpi.raspberrypi.com/issues/85)

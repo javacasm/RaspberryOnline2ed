@@ -1,6 +1,6 @@
 ## Instalación en Raspberry Pi 4
 
-La instalación en la Raspbery tiene algunos detalles a tener en cuenta:
+La instalación en la Raspberry tiene algunos detalles a tener en cuenta:
 
 * De los 2 HDMI, el de más a la izquierda es el 0 y es el que debemos conectar sí sólo se va a usar un monitor.
 * Podemos hacer la instalación en un disco USB (o pendrive USB) para usarlo como disco del sistema sin necesidad de tarjeta SD.

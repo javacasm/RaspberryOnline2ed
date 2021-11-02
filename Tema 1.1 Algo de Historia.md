@@ -4,7 +4,7 @@ La intención de los creadores de Raspberry era crear un sistema barato que nos 
 
 * En 2005, la Universidad de Cambridge notó como cada vez menos estudiantes quería estudiar informática
 
-* Pensaron que la solución podía ser un ordenador superbarato con el que pudieran jugar, aprendiendo en el camino.
+* Pensaron que la solución podría ser un ordenador superbarato con el que pudieran jugar, aprendiendo en el camino.
 
 * Se empezó a construir en 2006, pero era difícil con la electrónica de la época
   ![Prototipo de Raspberry Pi](./images/prototipoRaspi.jpg)
@@ -27,7 +27,7 @@ Actualmente existen varios formatos, vamos a ver los más usados:
 * La versión [Raspberry Pi Zero W](https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/) (1Ghz 512Mb) con un tamaño muy pequeño y un precio superreducido de 10€ - 15€, según la queramos con o si wifi.
 ![Raspberry Pi Zero](./images/RaspiZero.png)
 
-* [Raspberry Pi Compute Module 3+](https://www.raspberrypi.com/products/compute-module-3-plus/): es equivalente a una Rasperry pi 3 B+ pero en un formato pensado para construir ordenadores a partir de la Raspberry. Se puede adquirir con un disco interno eMMC de 8GB/16GB/32GB que sustituye a la tarjeta SD
+* [Raspberry Pi Compute Module 3+](https://www.raspberrypi.com/products/compute-module-3-plus/): es equivalente a una Raspberry pi 3 B+ pero en un formato pensado para construir ordenadores a partir de la Raspberry. Se puede adquirir con un disco interno eMMC de 8GB/16GB/32GB que sustituye a la tarjeta SD
 
 ![Raspberry_Pi_Compute_Module.png](./images/Raspberry_Pi_Compute_Module.png)
 
@@ -45,7 +45,7 @@ Puedes encontrar más detalles en el [Artículo de la wikipedia sobre RaspBerry 
 
 Una pregunta muy frecuente es si para determinado proyecto es mejor usar Arduino o Raspberry Pi: la respuesta es sencilla, son equipos muy distintos con capacidades diferentes y generalmente son complementarios.
 
-Vamos a ver las diferencias en detalle, pero podíamos resumirlas diciendo que Raspberry es el cerebro donde Arduino hace más el papel de músculo (desde el punto de vista eléctrico).
+Vamos a ver las diferencias en detalle, pero podríamos resumirlas diciendo que Raspberry es el cerebro donde Arduino hace más el papel de músculo (desde el punto de vista eléctrico).
 
 Arduino es más robusto eléctricamente: si se produce un cortocircuito entre pines o se comente un error se apagará y reseteará pero las probabilidades de romperlo son bajas. En cambio si hacemos esto mismo con una Raspberry lo más seguro es que la dejemos inservible.
 
@@ -64,7 +64,7 @@ Raspberry Pi tiene una mayor capacidad de procesamiento, lo que la hace más ade
 
 * Raspberry Pi es un entorno completo, no necesita de ningún dispositivo externo para programarse
 
-¿Son incompatibles? en absoluto, lo más frecuente es usarlas conjuntamente, conectándolos y haciendo que la Raspberry actúe como cerebro y Arduino como ejecutor.
+¿Son incompatibles?: En absoluto, lo más frecuente es usarlas conjuntamente, conectándolos y haciendo que la Raspberry actúe como cerebro y Arduino como ejecutor.
 
 Vistas las diferencias entre los dos dispositivos queda claro que son perfectamente complementarios:
 

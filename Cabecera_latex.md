@@ -2,7 +2,8 @@
 title:
   - Crea proyectos con Raspberry Pi
 author:
-   - Vacas Martínez, José Antonio
+   - José Antonio Vacas Martínez
+   
 date: \today
 documentclass:
    - book

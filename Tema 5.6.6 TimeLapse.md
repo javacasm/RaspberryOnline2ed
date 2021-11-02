@@ -7,14 +7,14 @@ Ya hemos visto un par de formas de crear Time Lapse:
 Ahora vamos a crearlos de una forma distinta: con Python. Para ello sólo vamos a tener que juntar algunas de las partes que ya hemos elaborado:
 * Usaremos un bot de Telegram como sistema de control y de comunicaciones
 * Capturaremos imagenes con la cámara controlando los parámetros para poder hacer fotos de día y de noche
-* Como no necesitamos mucho procesamiento utilizaremos una Rasperry Pi Zero W conectada vía wifi y no tendrá conectado ningún períferico, sólo la alimentación que vendrá de adaptador USB (también podemos alimentarlo desde los pines de GPIO como ya vimos)
+* Como no necesitamos mucho procesamiento utilizaremos una Raspberry Pi Zero W conectada vía wifi y no tendrá conectado ningún períferico, sólo la alimentación que vendrá de adaptador USB (también podemos alimentarlo desde los pines de GPIO como ya vimos)
 
 Por ello vamos a instalar Raspberry Pi OS Lite, como vimos en un capítulo anterior
 
 ### Montaje
 
 
-Para conectar la cámara a la Rasperry Zero, necesitamos un cable especial que suele venir incluido con el kit.
+Para conectar la cámara a la Raspberry Zero, necesitamos un cable especial que suele venir incluido con el kit.
 
 ![Cable Camara Zero vs Normal](./images/CableCamaraZeroNormal.jpg)
 

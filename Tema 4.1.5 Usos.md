@@ -380,6 +380,6 @@ montion -n
 Podremos acceder a la imagen en vivo de la cámara con
 
 ```sh
-http://rasperry_ip:8081
+http://raspberry_ip:8081
 ```
  

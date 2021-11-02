@@ -2,7 +2,7 @@
 
 En el mercado han aparecido muchas empresas que sin llegar a copiar directamente la Raspberry, han producido equipos muy similares, en prestaciones y tamaños.
 
-Además algunos de ellos, son treméndamente similares y a un precio sensiblemente inferior.
+Además algunos de ellos, son tremendamente similares y a un precio sensiblemente inferior.
 
 ¿Dónde está el problema? Podemos encontrarnos con un hardware estupendo pero con una base de usuarios pequeña, lo que redundará en que tengamos poco software y pocos desarrollos. Además el soporte en este tipo de hardware muchas veces viene más desde otros usuarios, vía foros, que del propio fabricante, con lo que a más usuarios más fácil es encontrar la solución a nuestros problemas.
 
@@ -36,13 +36,13 @@ Veamos algunos de ellos:
 
 * [Nanode y waspmote](http://blogthinkbig.com/4-alternativas-arduino-beaglebone-raspberrypi-nanode-waspmote/)
 
-* [Banana Pi](http://www.bananapi.org/) Es una de las más parecidas a Raspberry y se puede encontrar en varias versiones y a unos precios muy reducidos.
+* [Banana Pi](http://www.bananapi.org/) es una de las más parecidas a Raspberry y se puede encontrar en varias versiones y a unos precios muy reducidos.
 
 
   ![Banana Pi](./images/BananaPi-A45degree.jpg)
 
 
-  En el esquema vemos que algunos modelos de hecho tienen más conectores que la Raspberry Pi (por ejemplo el conectr SATA)
+  En el esquema vemos que algunos modelos de hecho tienen más conectores que la Raspberry Pi (por ejemplo el conector SATA)
 
   ![Esquema de Banana Pi](./images/Banana-pi.png)
 

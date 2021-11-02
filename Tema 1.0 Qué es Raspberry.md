@@ -27,5 +27,5 @@ diferentes fines.
 * Aprender a realizar programas sencillos usando lenguajes de scripts como Python o Shell
 * Aprender a montar proyectos fáciles con electrónica que se puedan controlar desde la plataforma
 
-![esquema](./images/esquema.png)
+![](./images/esquema.png)
 
