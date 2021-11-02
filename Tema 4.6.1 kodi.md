@@ -11,7 +11,7 @@ Una vez instalada la distribución LibreELEC la seleccionamos en el arranque y e
 ![Selección de idioma en Kodi](./images/KodiIdioma.jpg)
 
 
-Vemos como el interface está perfectamente adaptado a pantallas grandes y no necesitamos un teclado físico, si no que podemos usar un simple puntero/ratón.
+Vemos como la interface está perfectamente adaptada a pantallas grandes y no necesitamos un teclado físico, si no que podemos usar un simple puntero/ratón.
 
 ![Teclado en pantalla de Kodi](./images/TecladoKodi.jpg)
 
@@ -21,7 +21,7 @@ Después de ésto se actualizará y estará listo para usarlo
 
 ![Pantalla de Kodi](./images/Kodi-normal.jpg)
 
-Para añadir las carpetas locales o remotes donde se almacenan los contenidos, entramos en el tipo que queramos (Películas en este ejemplo) y pulsamos sobre "Entrar en la sección de Archivos"
+Para añadir las carpetas locales o remotas donde se almacenan los contenidos, entramos en el tipo que queramos (Películas en este ejemplo) y pulsamos sobre "Entrar en la sección de Archivos"
 
 ![Añadiendo carpetas de contenidos](./images/KodiAnadiendoCarpetas.jpg)
 
@@ -47,7 +47,7 @@ Seleccionamos el tipo (vídeo en nuestro caso) y buscamos el que queramos
 
 ![Addons de youtube](./images/Addons-youtube.jpg)
 
-Pulsamos instalar y nos dirá si necesitamos instalar algunos complementos de los que depende. Aceptamos y los tendremos disponibles como nueva fuentes de contenido multimedia.
+Pulsamos instalar y nos dirá si necesitamos instalar algunos complementos de los que depende. Aceptamos y los tendremos disponibles como nuevas fuentes de contenido multimedia.
 
 ![Add-ons de vídeo](./images/MisAddons.jpg)
 

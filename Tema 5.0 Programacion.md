@@ -1,10 +1,10 @@
 # Tema 5 - Programando con Raspberry Pi
 
-En este tema veremos como programar con nuestra Raspberry Pi.
+En este tema veremos cómo programar con nuestra Raspberry Pi.
 
 ## Programación en la Raspberry Pi
 
-Existen distintas alternativas, dependiendo de los conocimientos previos, para programar en la Raspberry Pi.
+Existen distintas alternativas, dependiendo de los conocimientos previos, para programar en Raspberry Pi.
 
 [![Vídeo: Programación con Raspberry Pi](https://img.youtube.com/vi/vpWt8iOGArM/0.jpg)](https://drive.google.com/file/d/1j_Rt1BTAKJDhk8guJcFG4VHf6tWiZcXu/view?usp=sharing)
 
@@ -14,7 +14,7 @@ Existen distintas alternativas, dependiendo de los conocimientos previos, para p
 * Python: lenguaje profesional, se necesitan otras habilidades (manejo de editores,...)
 * Shell script: creando ficheros scripts podemos automatizar tareas
 
-Hay varias distribuciones destinadas a usar la Raspberry como entorno de programación, algunos de ellos nos permiten aprender de una forma sencilla otros lenguajes.
+Hay varias distribuciones destinadas a usar la Raspberry como entorno de programación, algunas de ellas nos permiten aprender de una forma sencilla otros lenguajes.
 
 Principalmente están pensados para facilitar la instalación de los entornos, que suele ser lo más complicado
 

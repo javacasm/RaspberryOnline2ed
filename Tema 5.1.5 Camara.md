@@ -1,6 +1,6 @@
 ## Cámaras
 
-Vamos a ver los distintas cámaras para Raspberry Pi. Existen varios modelos  creados por la Fundación Raspberry y otros facricantes, pero todos son compatibles con el mismo cable y conector.
+Vamos a ver las distintas cámaras para Raspberry Pi. Existen varios modelos  creados por la Fundación Raspberry y otros facricantes, pero todos son compatibles con el mismo cable y conector.
 
 Para optimizar el rendimiento está conectada directamente a la GPU, así no ocupa tiempo de procesamiento de la CPU.
 
@@ -22,18 +22,18 @@ Ambas se pueden encontrar en la versión normal con filtro IR y la NOIR sin filt
 
 ![Pi camera NOIR v2.1](./images/52031db0cb54448ba5752f6fc6c4017336bc1154_pi-camera-noir-front-1227x1080.jpg)
 
-La v1.3 ya está descatalogada pero se puede encontrar en versiones compatibles. Podemos comprar la versíon v2 tanto en su [versión IR](https://www.raspberrypi.com/products/camera-module-v2/) como [la NOIR](https://www.raspberrypi.com/products/pi-noir-camera-v2/)
+La v1.3 ya está descatalogada pero se puede encontrar en versiones compatibles. Podemos comprar la versíón v2 tanto en su [versión IR](https://www.raspberrypi.com/products/camera-module-v2/) como [la NOIR](https://www.raspberrypi.com/products/pi-noir-camera-v2/)
 
 Recientemente se ha presentado la nueva [HQ Camera](https://www.raspberrypi.com/products/raspberry-pi-high-quality-camera/) 
 ![HQ_KIT.jpg](./images/HQ_KIT.jpg)
 
-La cámara HQ amplía la resolución hasta los 12MP, usando además un sensor de mayor tamaño. El sensor incluye soporte compatible con trípode estándard.
+La cámara HQ amplía la resolución hasta los 12MP, usando además un sensor de mayor tamaño. El sensor incluye soporte compatible con trípode estándar.
 
 ![HQ](./images/CAM+HERO+ALT+2.jpg)
 
-El disponer de una montura de tipo  C y CS añade un mundo de posibilidades al poder usar distintos objetivos. De momento están disponibles de 6mm y 16mm, pero al ser una montura estándard se podrán incorporar otros objetivos.
+El disponer de una montura de tipo  C y CS añade un mundo de posibilidades al poder usar distintos objetivos. De momento están disponibles de 6mm y 16mm, pero al ser una montura estándar se podrán incorporar otros objetivos.
 
-![objetivo 6mm](./images/Raspberry-Pi-HQ-Camera-6mm-Lens.jpg)
+![Objetivo 6mm](./images/Raspberry-Pi-HQ-Camera-6mm-Lens.jpg)
 
 ![Objetivo 16mm](./images/15882390111.png)
 

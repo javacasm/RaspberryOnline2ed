@@ -4,14 +4,14 @@ Es un entorno de programación gráfico que nos permite hacer programas usando b
 
 Podemos probarlo [online](https://scratch.mit.edu/projects/editor/), y además nuestra Raspberry incluye diferentes versiones en forma de aplicaciones para las versiones 1, 2 y 3
 
-![scratch](./images/scratch.png)
+![Scratch](./images/scratch.png)
 
 
 Es un entorno potente y está pensado para enseñar a programar sin la complejidad de la sintaxis del código.
 
 (Sin duda para empezar a programar lo mejor es empezar por [Code.org](Code.org) )
 
-![code](./images/code.png)
+![Code.org](./images/code.png)
 
 ### Scratch en la Raspberry Pi
 

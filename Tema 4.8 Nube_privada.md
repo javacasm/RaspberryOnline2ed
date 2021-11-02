@@ -2,9 +2,9 @@
 
 Vamos a hacer una instalación de un sistema de nube privada usando OwnClowd.
 
-Vamos a instalar un versión lite que usa SQLite como base de datos. Si lo van a usar varios usuarios mejor actualizarlo a la versión con MariaDB
+Vamos a instalar una versión lite que usa SQLite como base de datos. Si lo van a usar varios usuarios mejor actualizarlo a la versión con MariaDB
 
-Como es normal cctualizamos nuestro sistema
+Como es normal actualizamos nuestro sistema
 
 ```sh
 sudo apt update
@@ -13,16 +13,19 @@ sudo apt upgrade
 
 Si nuestro sistema cumple estos [requisitos](https://doc.owncloud.org/server/10.4/admin_manual/installation/manual_installation.html#prerequisites) (básicamente pyp 7.3 y algunas exensiones) lo instalaremos siguiendo las instrucxciones de la propia [owncloud](https://doc.owncloud.org/server/10.4/admin_manual/installation/manual_installation.html#install-the-required-packages)
 
-* Instalamos apache, php5, curl (Se están usando las ultimas versiones de php a día de hoy 7/5/2020)
+* Instalamos apache, php5, curl (Se están usando las últimas versiones de php a día de hoy 7/5/2020)
+
 ```sh
 sudo apt-get install apache2 php7.3   php7.3-json php7.3-xml php7.3-gd php7.3-sqlite3 curl libcurl4  php7.3-curl php7.3-common php7.3-zip php7.3-xml php7.3-intl php7.3-mbstring 
 ```
-* Descargamos la ultima version de owncloud
+* Descargamos la última versión de owncloud
+
 ```sh
 wget https://download.owncloud.org/community/owncloud-10.4.1.tar.bz2
 ```
 
 Descargamos el fichero md5
+
 ```sh
 wget https://download.owncloud.org/community/owncloud-10.4.1.tar.bz2.md5
 ```
@@ -41,12 +44,12 @@ Lo descomprimimos:
 ```sh
 tar xvf owncloud-10.4.1.tar.bz2 
 ```
-y copiamos el contenido en el directorio raiz del servidor apache
+y copiamos el contenido en el directorio raíz del servidor apache
 ```sh
 sudo cp -r owncloud /var/www/
 ```
 
-Creamos el fichero de configuracion del sito en 
+Creamos el fichero de configuración del sitio en 
 
 ```sh
 /etc/apache2/sites-available/owncloud.conf
@@ -145,7 +148,7 @@ Ahora vamos a ver algunos de los [clientes disponibles](https://owncloud.org/dow
 
 ### Acceso remoto desde internet
 
-Podemos configurar nuestros sitema para poder acceder a nuestros equipos desde fuera de nuestra red local. Para ello tenemos que configurar adecuadamente nuestro router
+Podemos configurar nuestro sistema para poder acceder a nuestros equipos desde fuera de nuestra red local. Para ello tenemos que configurar adecuadamente nuestro router
 
 * Configuramos el NAT para abrir los puertos necesarios (el 80 en este caso):
 ![ConfiguracionNAT.png](./images/ConfiguracionNAT.png)
