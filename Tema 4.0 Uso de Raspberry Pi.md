@@ -4,7 +4,7 @@ En este tema vamos a ver los usos normales de Raspberry Pi.
 
 Dado que el uso de los típicos programas de ofimática o similares es idéntico al que se hace en otros ordenadores nos vamos a hablar de ellos.
 
-Nos centraremos en los usos más típicos donde se trabaja con la consola/terminal. Es el típido uso que se hace en los sistemas Linux. La mayoría de los veremos se puede hacer en los sistemas con Linux de las distribuciones [Debian](https://www.debian.org/index.es.html) y [Ubuntu](https://www.ubuntu.com/) en los que está basado Raspbian.
+Nos centraremos en los usos más típicos donde se trabaja con la consola/terminal. Es el típico uso que se hace en los sistemas Linux. La mayoría de los que veremos se puede hacer en los sistemas con Linux de las distribuciones [Debian](https://www.debian.org/index.es.html) y [Ubuntu](https://www.ubuntu.com/) en los que está basado Raspbian.
 
 
 ## Problemas habituales
@@ -17,7 +17,7 @@ Necesitamos un mínimo de 2A (3A para V4), si la alimentación está por debajo 
 
 Cuando la Raspberry detecta que no tiene suficiente alimentación visualiza un rayo amarillo en la pantalla
 
-![Problemas de alimentación. Fuente RasberryParaTorpes](https://i0.wp.com/raspberryparatorpes.net/wp-content/uploads/2018/02/raspberry-pi-under_volt.jpg?resize=500%2C300&ssl=1)
+![Problemas de alimentación. Fuente Raspberry Para Torpes](https://i0.wp.com/raspberryparatorpes.net/wp-content/uploads/2018/02/raspberry-pi-under_volt.jpg?resize=500%2C300&ssl=1)
 
 ### Velocidad de la tarjeta
 

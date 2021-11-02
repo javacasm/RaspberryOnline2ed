@@ -1,10 +1,10 @@
 ## Manejando tu Raspberry Pi
 
-Como sabes Raspberry es una máquina Linux, con lo que podrás manejarla igual que se maneja cualquier otra equipo Linux.
+Como sabes Raspberry es una máquina Linux, con lo que podrás manejarla igual que se maneja cualquier otro equipo Linux.
 
 ### Capturas de la pantalla
 
-Podemos hacer capturas del escritorio usando la tecla ImprimirPantalla si nuestro teclado la tiene o bien usando el comando **Scrot**, que pondrá un fichero con la captura en directorio home del usuario (/home/pi por defecto) con un nombre dado por la fecha, hora y resolución. Por ejemplo "2021-02-26-194221_1024x768_scrot.png".
+Podemos hacer capturas del escritorio usando la tecla Imprimir Pantalla si nuestro teclado la tiene o bien usando el comando **Scrot**, que pondrá un fichero con la captura en directorio home del usuario (/home/pi por defecto) con un nombre dado por la fecha, hora y resolución. Por ejemplo "2021-02-26-194221_1024x768_scrot.png".
 
 Podemos hacer que la captura se haga después de un determinado retardo usando la opción **-d**. Por ejemplo para hacer la captura a los 10 segundos. 
 
@@ -32,7 +32,7 @@ Nos permitirá capturar todo el escritorio, una ventana, una zona, definiendo un
 
 ### Consola (línea de comandos)
 
-Podemos hacer casi todo desde el habitual entorno gráfico, pero también desde el terminal o la consola, también llamada líneas de comandos.
+Podemos hacer casi todo desde el habitual entorno gráfico, pero también desde el terminal o la consola, también llamada línea de comandos.
 
 Si te acostumbras a usarla verás que ganas en productividad y además verás que puedes automatizar muchas tareas. 
 
@@ -40,7 +40,7 @@ Si te acostumbras a usarla verás que ganas en productividad y además verás qu
 
 #### Comandos básicos:
 
-Como ya hemos dicho, Raspbian es una versión de [Linux](https://es.wikipedia.org/wiki/GNU/Linux), que nos más que una versión moderna del sistema operativo [Unix](https://es.wikipedia.org/wiki/Unix). Por esto tenemos acceso a los comandos de esos sistemas operativos.
+Como ya hemos dicho, Raspbian es una versión de [Linux](https://es.wikipedia.org/wiki/GNU/Linux), que no es más que una versión moderna del sistema operativo [Unix](https://es.wikipedia.org/wiki/Unix). Por esto tenemos acceso a los comandos de esos sistemas operativos.
 
 Veamos algunos de los comandos más utilizados:
 
@@ -75,7 +75,7 @@ Veamos algunos de los comandos más utilizados:
 Algunas características de sistema de fichero de linux
 
 * Usa un formato de partición ext4 (también existen aunque en desuso el ext3 y el ext2), aunque permite usar FAT, el típico sistema de archivos de Windows.
-* El árbol de directorios tiene un único directorio raíz del que cuelga todo. Todos los dispositivos (pen drives, discos externos, discos de red) se integran dentro de este árbol, **montando** su raiz en un directorio determinado (montamos y desmontamos con __mount__ y __unmonut__ )
+* El árbol de directorios tiene un único directorio raíz del que cuelga todo. Todos los dispositivos (pendrives, discos externos, discos de red) se integran dentro de este árbol, **montando** su raíz en un directorio determinado (montamos y desmontamos con __mount__ y __unmonut__ )
 
 El usuario sólo acceso a su directorio y el solo el administrador (**root**) puede acceder al resto de directorios
 
@@ -104,7 +104,7 @@ Los usuarios normales pueden hacer muchas cosas, pero las tareas más importante
 
 Esas tareas sólo las puede hacer el usuario administrador, llamado **root**, que puede hacer cualquier cosa. 
 
-Como hay veces que un usuario necesita hacer alguna de estas tareas, por ejemplo editar un fichero de configuración, podemos solicitar permisos para hacer esa tarea anteponiento al comando la palabra "sudo". Algunas acciones nos pedirán que introduzcamos el password de nuestro usuario como medida de seguridad.	
+Como hay veces que un usuario necesita hacer alguna de estas tareas, por ejemplo editar un fichero de configuración, podemos solicitar permisos para hacer esa tarea anteponiendo al comando la palabra "sudo". Algunas acciones nos pedirán que introduzcamos el password de nuestro usuario como medida de seguridad.	
 
 Por ejemplo si queremos editar un fichero de la carpeta de configuración etc llamado ftab, haremos
 
@@ -140,7 +140,7 @@ Algo muy frecuente es que queramos acceder a nuestra Raspberry Pi remotamente, e
 
 ### SSH (vía consola)
 
-SSH es el protocolo de acceso remoto por consola (o terminal). Se suele utilizar cuando no necesitamos (o no tenemos) entorno gráfico. Es una forma de conexión segura (usa encriptación y verificación a ambos lados) utilizada para acceder a router y otros dispositivos remotos
+SSH es el protocolo de acceso remoto por consola (o terminal). Se suele utilizar cuando no necesitamos (o no tenemos) un entorno gráfico. Es una forma de conexión segura (usa encriptación y verificación a ambos lados) utilizada para acceder a router y otros dispositivos remotos
 
 Tenemos que activarlo en la configuración para poder acceder desde fuera.Entramos en la configuración avanzada
 
@@ -172,16 +172,16 @@ Si lo vamos a activar se recomienda cambiar la contraseña para evitar que cualq
 
 ### Herramientas de conexión ssh
 
-Son muchas la herramientas que exiten para poder conectarnos entre equipos usando SSH, vamos a ver un par de ellas.
+Son muchas las herramientas que existen para poder conectarnos entre equipos usando SSH, vamos a ver un par de ellas.
 
 #### Putty 
 
 
-[Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) es una herramienta opensource disponible para muchos sistemas operativos pensada para conectar remotamente con equipos usando distintos protocolos como ssh, telnet, serie, etc
+[Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) es una herramienta open source disponible para muchos sistemas operativos pensada para conectar remotamente con equipos usando distintos protocolos como ssh, telnet, serie, etc
 
 ![Putty](./images/Putty_0.58_on_fvwm.png)
 
-Permite guardar las credenciales de cada sistema, facilitándo la conexión.
+Permite guardar las credenciales de cada sistema, facilitando la conexión.
 
 #### JuiceSSH
 
@@ -189,11 +189,11 @@ Permite guardar las credenciales de cada sistema, facilitándo la conexión.
 
 También nos permite gestionar las credenciales de acceso y los diferentes equipos a los que conectarnos:
 
-![juicessh1.png](./images/juicessh1.png)
+![juicessh](./images/juicessh1.png)
 
 El uso incluso en un móvil es más cómodo de lo que parece, puesto que permite el uso de teclas como TAB, ctrl, cursor, etc.
 
-![juicessh2.png](./images/juicessh3.png)
+![juicessh](./images/juicessh3.png)
 
 
 [![Cliente SSH para móviles y tabletas Android: juicceSSH](https://img.youtube.com/vi/LLiZ52ss2DQ/0.jpg)](https://drive.google.com/file/d/1GG4mscjTBS9VqsDxgyXM6n1UopfQzrIB/view?usp=sharing)
