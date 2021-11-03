@@ -99,8 +99,7 @@ Para establecer nuestro almacenamiento usaremos:
 $ gphoto2 --set-config /main/settings/capturetarget=NuestroDirectorio
 ```
 
-Veamos ahora como hacer un time-lapse, es decir capturar las imágenes cada
-cierto tiempo. Usaremos el siguiente comando.
+Veamos ahora cómo hacer un time-lapse, es decir capturar las imágenes cada cierto tiempo. Usaremos el siguiente comando.
 
 ```sh
 $ gphoto2 --capture-image -F 1440 -I 30

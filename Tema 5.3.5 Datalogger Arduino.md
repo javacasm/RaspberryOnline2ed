@@ -10,9 +10,9 @@ Vamos a ver cómo comunicarlos usando el puerto serie. De esta manera podemos
 
 ## Controlando Arduino
 
-Vamos a hacer un ejemplo muy sencillo en el que vamos a controlar la iluminación del led del pin 13 de un Arduino desde un programa python. Exactamente el mismo programa nos permitiría controlar relés.
+Vamos a hacer un ejemplo muy sencillo en el que vamos a controlar la iluminación del led del pin 13 de una placa Arduino desde un programa Python. Exactamente el mismo programa nos permitiría controlar relés.
 
-Como programa en Arduino usaremos el ejemplo PhysicalPixel que está en el menú Ejemplos->Comunicaciones
+Programaremos la placa Arduino usando el ejemplo PhysicalPixel que está en el menú Ejemplos->Comunicaciones
 
 Una vez subido a nuestro Arduino podemos probarlo desde el monitor serie enviando las letras 'H' para encender y 'L' para apagar el led:
 
@@ -67,7 +67,7 @@ commandLOW = b'L' # Los definimos como bytes, no unicode
 commandQuite = 'Q'
 comandBlink = 'P'
 
-# según el fabricante puee ser también '/dev/ttyACM0'
+# según el fabricante puede ser también '/dev/ttyACM0'
 serial_port = '/dev/ttyUSB0'
 serial_baud = 9600
 
@@ -96,11 +96,11 @@ while bRunning:
 
 ### Leyendo datos de Arduino
 
-Vamos a hacer ahora que Arduino envíe valores de sus sensores que leeremos en la Raspberry para ello sólo tenemos que usar **Serial.print** en Arduino. 
+Vamos a hacer ahora que Arduino envíe los valores que lee de sus sensores a la Raspberry. Para ello sólo tenemos que usar **Serial.print** en Arduino. 
 
 He ampliado el ejemplo anterior para que envíe los valores de 3 sensores analógicos cada cierto tiempo a la Raspberry. Además podemos cambiar el estado del Led 13 igual como en el ejemplo anterior
 
-Este sería el programa Arduino
+Este sería el [programa Arduino](https://github.com/javacasm/RaspberryOnline2ed/blob/master/codigo/sendData2Raspi.ino)
 
 ```C++
 #define VERSION "V:1.0"
@@ -170,6 +170,8 @@ long tiempoActual = millis();
 
 El programa python escuchará lo que llega por el puerto serie y lo muestra en pantalla y lo escribe en un fichero. Lo ejecutaremos con 'python3 ReadArduinoData.py'
 
+[Código de ReadArduinoData](https://github.com/javacasm/RaspberryOnline2ed/blob/master/codigo/ReadArduinoData.py)
+
 ```python
 import serial
 import time
@@ -178,7 +180,7 @@ commandHIGH = b'H' # Los definimos como bytes, no unicode
 commandLOW = b'L' # Los definimos como bytes, no unicode
 
 
-# según el fabricante puee ser también '/dev/ttyACM0'
+# según el fabricante puede ser también '/dev/ttyACM0'
 serial_port = '/dev/ttyUSB0'
 serial_baud = 9600
 
@@ -198,7 +200,7 @@ while bRunning:
         datos = arduinoPort.readline()
         linea = datos.decode("utf-8")   # Convertimos de bytes a unicode
         print(linea)
-        output_file.write(linea)        # escribmos en el fichero
+        output_file.write(linea)        # escribimos en el fichero
         time.sleep(0.1)
 
     time.sleep(0.1)
@@ -225,7 +227,7 @@ Más detalles sobre la configuración de KST en [esta página](https://miscircui
 
 Esta forma de controlar remotamente nuestro arduino es tan potente y está tan extendida que ya existe un estándar de comandos de control. Se llama Firmata y permite controlar totalmente Arduino incluso acceder a dispositivos conectados como sensores y servos.
 
-Para utilizarlo necesitamos que Arduino tenga instalado el firmaware de Firmata. Desde Raspberry lo controlaremos con el módulo [pyFirmata](https://pypi.org/project/pyFirmata/) que instalaremos con 
+Para utilizarlo necesitamos que Arduino tenga instalado el firmware de Firmata. Desde Raspberry lo controlaremos con el módulo [pyFirmata](https://pypi.org/project/pyFirmata/) que instalaremos con 
 ```sh
 pip3 install pyFirmata
 ```
@@ -235,9 +237,9 @@ Una vez instalado podemos controlar arduino con en este ejemplo
 ```python
 from pyfirmata import Arduino, util
 
-board = Arduino('/dev/ttyUSB0') # Conectamos con la placa conectanda al puerto serie
+board = Arduino('/dev/ttyUSB0') # Conectamos con la placa conectada al puerto serie
 
-board.digital[2].write(1)  # accedmos al pin digital 2 y escribimos el valor 1 == digitalWrite(2,HIGH)
+board.digital[2].write(1)  # accedemos al pin digital 2 y escribimos el valor 1 == digitalWrite(2,HIGH)
 print(board.digital[2].read()) # leemos el valor del pin digital 2
 
 # otra forma más sistemática de acceder
@@ -249,7 +251,7 @@ pin2.write(1)                # ahora usamos esa variable
 it = util.Iterator(board)
 it.start()                  # se encarga de actualizar el valor analógico
 board.analog[0].enable_reporting()
-print (board.analog[0].read()) imprimimos el valor
+print (board.analog[0].read()) # imprimimos el valor
 
 # La otra forma de acceder
 analog_0 = board.get_pin('a:0:i') # Leemos el valor analogico de A0
@@ -258,6 +260,7 @@ print(analog_0.read())
 # Acceso a PWM
 pin3PWM = board.get_pin('d:3:p')  # Pin 3 con acceso PWM
 pin3.write(0.6)                 # Ponemos el pin al 60%
+
 ```
 
 Más detalles en la [página de pyFirmata](https://github.com/tino/pyFirmata)

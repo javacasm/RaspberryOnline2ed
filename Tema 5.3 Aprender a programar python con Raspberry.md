@@ -12,17 +12,17 @@ Por sencillez vamos a usar la sintaxis de la rama 2.x
 
 [Video: Python en Raspberry Pi](https://drive.google.com/file/d/1YEQDQsg6shE4ePacDk3nL2n_EUgN13ny/view?usp=sharing)
 
-Podemos utilizar varias herramientas para programar con python como Idle, Thonny un simple editor de texto o trabajar directamente sobre el intérprete python y directamente programar con él.
+Podemos utilizar varias herramientas para programar con python como Idle, **Thonny** un simple editor de texto o trabajar directamente sobre el intérprete python y directamente programar con él.
 
 ![Herramienta idle](./images/idle.png)
 
-En las últimas versiones se incluye el editor Thonny, que nos permite trabajar con pyhton con facilidad
+En las últimas versiones se incluye el editor Thonny, que nos permite trabajar con python con facilidad
 
 ![Editor Thonny](./images/Thonny.png)
 
-También podemos programar python con Geany o incluso podemos [instalar](https://pimylifeup.com/raspberry-pi-visual-studio-code/) Visual Studio Code, el entorno de microsoft.
+También podemos programar Python con Geany o incluso podemos [instalar](https://pimylifeup.com/raspberry-pi-visual-studio-code/) Visual Studio Code, el entorno de Microsoft.
 
-Podemos trabajar en modo interactivo sin más que ejecutar el intérprete:
+También podemos trabajar en modo interactivo sin más que ejecutar el intérprete:
 
 ```
 ~/ $ python3
@@ -71,12 +71,12 @@ else:
   print ('No es bisiesto!!')
 ```
 
-[Código de días por mes](https://github.com/javacasm/RaspberryOnline2ed/raw/master/codigo/diasMes.py
+[Código de días por mes](https://github.com/javacasm/RaspberryOnline2ed/raw/master/codigo/diasMes.py)
 
 ```python
 # Nos da los dias que tiene el mes seleccionado
 mes = int(input('Introduce el mes:'))
-year = int(input('Introuce el anio:'))
+year = int(input('Introuce el año:'))
 # Comprobamos si esta entre 1 y 12
 if 1 <= mes <= 12:
     if mes == 2:
@@ -88,7 +88,7 @@ if 1 <= mes <= 12:
         dias = 30
     else:
         dias = 31
-    print (f'El mes {mes} del año {year} tiene {dias} dias')
+    print (f'El mes {mes} del año {year} tiene {dias} días')
 else:
     print ('El mes debe ser entre 1 y 12')
 ```

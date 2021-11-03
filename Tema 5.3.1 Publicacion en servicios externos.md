@@ -8,7 +8,7 @@ Estos servicios online, o en la nube como ahora se suele decir, exponen una seri
 
 Es lo que se conoce de forma genérica como un API (Application Programming Interface). 
 
-Existen multitud de estos servicios, algunos nos permite publicar contenidos en redes sociales (como Twitter y Facebook) otros nos facilitan el almacenar nuestros datos y mostrarlos como gráficas. Además estos servicios  dan una dimensión social a nuestros datos pudiendo compartirlos con otros usuarios.
+Existen multitud de estos servicios, algunos nos permiten publicar contenidos en redes sociales (como Twitter y Facebook) otros nos facilitan el almacenar nuestros datos y mostrarlos como gráficas. Además estos servicios  dan una dimensión social a nuestros datos pudiendo compartirlos con otros usuarios.
 
 
 ### Plataformas de publicación de datos
@@ -28,7 +28,6 @@ Además algunas nos permiten establecer disparadores (trigger) para vigilar que 
 * Connect2me https://www.c2m.net
 * All Things Talk https://www.allthingstalk.com/
 * Thingspeak https://thingspeak.com/
-* Xively https://www.xively.com/
 
 
 ## Publicación en ThingSpeak
@@ -77,7 +76,7 @@ Instalamos el paquete thingspeak con
 pip3 install thingspeak
 ```
 
-En el código cambiaremos las claves de thingspeak escritua y el código de nuestro canal:
+En el código cambiaremos las claves de thingspeak escritura y el código de nuestro canal:
 
 
 ```python
@@ -85,7 +84,7 @@ import thingspeak
 import time
  
 channel_id = 306585 # Ponemos el id de nuestro canal 
-write_key  = '0000CLAVE0000' # Ponemos nuesra clave de escritura (WRITE API KEY)
+write_key  = '0000CLAVE0000' # Ponemos nuestra clave de escritura (WRITE API KEY)
  
 def medirCanal(canal):
     try:
@@ -96,7 +95,7 @@ def medirCanal(canal):
         
         # lectura
         lectura = channel.get({})
-        print("Leido:", lectura)
+        print("Leído:", lectura)
     except KeyboardInterrupt:
         print("Salimos")        
     except:
@@ -107,9 +106,13 @@ if __name__ == "__main__":
     canal = channel = thingspeak.Channel(id=channel_id, api_key=write_key)
     while True:
         medirCanal(canal)
-        # Las cuentas publicas sólo pueden acceder cada 15 segundos
+        # Las cuentas públicas sólo pueden acceder cada 15 segundos
         time.sleep(15)
 ```
+
+[Código del ejemplo](https://github.com/javacasm/RaspberryOnline2ed/blob/master/codigo/test_thingspeak.py)
+
+Para ejecutarlo:
 
 ```sh
 python3 test_thingspeak.py
@@ -117,7 +120,7 @@ python3 test_thingspeak.py
 
 Podremos ver el gráfico en su correspondiente canal
 
-![Check ThingSpeak channel](./images/Check-ThingSpeak-site-for-Data-Logging.png)
+![ThingSpeak channel](./images/Check-ThingSpeak-site-for-Data-Logging.png)
 
 
 ## Instalación y uso de Grafana
@@ -151,9 +154,9 @@ Si todo ha ido bien, podremos acceder a la página inicial de desde un navegador
 
 Accederemos con el usuario 'admin' y contraseña 'admin', y que nos pedirá que cambiemos al entrar.
 
-Ahora configuramos nuestra fuente de datos, en este ejemplo usarmos una base de datos mysql/mariaDB
+Ahora configuramos nuestra fuente de datos, en este ejemplo usaremos una base de datos mysql/mariaDB
 
-![Configuracion DB en Grafana](./images/ConfDBGrafana.png)
+![Configuración DB en Grafana](./images/ConfDBGrafana.png)
 
 Ahora configuramos la consulta que haremos sobre la base de datos y seleccionamos el tipo de gráficos
 

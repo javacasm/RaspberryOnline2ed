@@ -1,6 +1,6 @@
 # Nos da los dias que tiene el mes seleccionado
 mes = int(input('Introduce el mes:'))
-year = int(input('Introuce el anio:'))
+year = int(input('Introuce el año:'))
 # Comprobamos si esta entre 1 y 12
 if 1 <= mes <= 12:
     if mes == 2:
@@ -12,6 +12,6 @@ if 1 <= mes <= 12:
         dias = 30
     else:
         dias = 31
-    print (f'El mes {mes} del año {year} tiene {dias} dias')
+    print (f'El mes {mes} del año {year} tiene {dias} días')
 else:
     print ('El mes debe ser entre 1 y 12')

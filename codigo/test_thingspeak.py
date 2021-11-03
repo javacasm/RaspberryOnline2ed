@@ -24,6 +24,6 @@ if __name__ == "__main__":
     canal = channel = thingspeak.Channel(id=channel_id, api_key=write_key)
     while True:
         medirCanal(canal)
-        # Las cuentas publicas sólo pueden acceder cada 15 segundos
+        # Las cuentas públicas sólo pueden acceder cada 15 segundos
         time.sleep(15)
         
