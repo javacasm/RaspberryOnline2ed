@@ -80,7 +80,7 @@ pygame.quit()
 
 ```
 
-El envento QUIT se producirá al pulsar el botón de cerrar la ventana
+El evento QUIT se producirá al pulsar el botón de cerrar la ventana
 
 Vamos a ver ahora cómo podemos dibujar una forma (un rectángulo) que se moverá al pulsar las teclas del curso. [código](https://github.com/javacasm/RaspberryOnline2ed/raw/master/codigo/Tut08_movimientoRectangulo.py)
 
@@ -208,7 +208,7 @@ Otro ejemplo sencillo es esta implementación del [Juego de la Vida de J. Conway
 
 El [código](https://github.com/javacasm/RaspberryOnline2ed/raw/master/codigo/pygameOfLife.py) es sencillo y lo hice siguiendo el [tutorial de .dotCSV](https://www.youtube.com/watch?v=qPtKv9fSHZ) "Programando el juego de la vida en 10 minutos"
 
-Puedes "sembrar" organismos con el ratón y verás como evolucionan
+Puedes "sembrar" organismos con el ratón y verás cómo evolucionan
 
 Para ejecutarlo también tienes que instalar numpy
 
@@ -218,10 +218,10 @@ pip3 install numpy
 
 ### pyGame y la cámara
 
-Sin entrar en muchos detalles, vamos a ver un sencillo [ejemplo](https://github.com/javacasm/RaspberryOnline2ed/raw/master/codigo/T5_pygame_camara.py) de cómo integrar la cámara dentro de nuestro programa python usando la librería pygame (más adelante veremos como trabajar con la libreria pyGame)
+Sin entrar en muchos detalles, vamos a ver un sencillo [ejemplo](https://github.com/javacasm/RaspberryOnline2ed/raw/master/codigo/T5_pygame_camara.py) de cómo integrar la cámara dentro de nuestro programa Python usando la librería pyGame (más adelante veremos como trabajar con la librería pyGame)
 
 ```python
-# Ejemplo basico de visualizacion y captura con la camara y pyGame
+# Ejemplo básico de visualizacióon y captura con la cámara y pyGame
 # T5_pygame_captura.py
 # Mas detalles en https://projects.raspberrypi.org/en/projects/getting-started-with-picamera
 
@@ -235,7 +235,7 @@ screen = pygame.display.set_mode((0,0))
 
 # Init camera
 camera = picamera.PiCamera()
-camera.resolution = (1280, 720) # resolución de la camara
+camera.resolution = (1280, 720) # resolución de la cámara
 camera.crop = (0.0, 0.0, 1.0, 1.0) #¿recortamos?
 
 x = (screen.get_width() - camera.resolution[0]) / 2 # centramos en el eje x
@@ -255,11 +255,11 @@ while(exitFlag):
     stream = io.BytesIO()
     camera.capture(stream, use_video_port=True, format='rgb')
     stream.seek(0)
-    stream.readinto(rgb) # leemos la informacion de la camara
+    stream.readinto(rgb) # leemos la información de la cámara
     stream.close()
     img = pygame.image.frombuffer(rgb[0:
           (camera.resolution[0] * camera.resolution[1] * 3)],
-           camera.resolution, 'RGB') # pasamos los datos leidos a una imagen
+           camera.resolution, 'RGB') # pasamos los datos leídos a una imagen
 
     screen.fill(0) # ponemos el fondo de la pantalla en negro
     if img: # si la imagen es valida la pasamos a pantalla
@@ -276,9 +276,9 @@ pygame.display.quit()
 
 ## PiGame Zero
 
-![logo pyGame Zero](./images/logopyGameZero.svg)
+![logo pyGame Zero](./images/logopyGameZero.png)
 
-Desde hace poco ha aparecido otró módulo python, basado en Pigame, pero con el objetivo de hacer más sencillo el proceso de crealos
+Desde hace poco ha aparecido otro módulo python, basado en Pygame, pero con el objetivo de hacer más sencillo el proceso de crearlos
 
 [Pygame Zero](https://pygame-zero.readthedocs.io/en/stable/) pretende crear juegos sin la parte repetitiva.
 
@@ -298,7 +298,7 @@ pip3 install pgzero
 
 * Invaders: [tutorial I](https://www.raspberrypi.org/magpi/pygame-zero-invaders/) y [tutorial II](https://www.raspberrypi.org/magpi/pygame-zero-space-invaders-ii/) para crear un auténtico Space Invaders
 
-* PacMan (mi favorito): [tutorial I](https://www.raspberrypi.org/magpi/code-pac-man-in-python/) y [tutorial II](https://www.raspberrypi.org/magpi/)code-pac-man-python-part-2/
+* PacMan (mi favorito): [tutorial I](https://www.raspberrypi.org/magpi/code-pac-man-in-python/) y [tutorial II](https://www.raspberrypi.org/magpi/code-pac-man-python-part-2/)
 
 * Space shooter [tutorial](https://github.com/joshuawillman/The-Lonely-Shooter)
 

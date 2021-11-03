@@ -20,7 +20,7 @@
 
 [Video portero](https://www.hackster.io/martin-mander/1986-ping-video-doorbell-30b666)
 
-[GPIO,camara contrlados por Telegram](https://www.hackster.io/idreams/control-gpio-and-pi-camera-using-raspberry-pi-telegram-app-3a776a)
+[GPIO,cámara contrlados por Telegram](https://www.hackster.io/idreams/control-gpio-and-pi-camera-using-raspberry-pi-telegram-app-3a776a)
 
 [Camara trasera de coche](http://soloelectronicos.com/2018/09/29/camara-trasera-con-raspeberry-pi-para-coche-basada-en-android/amp/?__twitter_impression=true)
 

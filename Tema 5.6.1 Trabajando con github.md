@@ -4,7 +4,7 @@ En el desarrollo de cualquier proyecto necesitamos hacer muchas pruebas, y a vec
 
 La Raspberry tiene una capacidad suficiente para que trabajemos directamente en ella, con lo que en muchos casos podemos conseguir un ciclo de trabajo Programación->Test->Corrección/Mejoras de una forma ágil.
 
-Vamos a ver cómo prepar un entorno de trabajo en una raspberry pi desde la consola, sin necesidad de escritorio.
+Vamos a ver cómo preparar un entorno de trabajo en una raspberry pi desde la consola, sin necesidad de escritorio.
 
 ### Sincronización remota
 
@@ -20,7 +20,8 @@ Instalamos la herramientas de git
 sudo apt install git
 ``` 
 
-Ahora vamos a ver cómo clonar un repositorio remoto. 
+Ahora vamos a ver cómo clonar un repositorio remoto:
+
 * Si el repositorio no es nuestro, pero queremos modificarlo, crearemos un Fork (copia) pulsando el botón Fork. A partir de este momento trabajaremos con nuestra copia.
 * Obtenemos la url del repositorio en la página de github, pulsando el botón verde "Code". Obtendremos algo parecido a esto:
 ```
@@ -95,9 +96,9 @@ mostramos por consola el fichero con
 
 cat ~/.ssh/id_rsa.pub
 
-y lo añaidmos a nuestra cuanta github pulsando "New SSH key" in https://github.com/settings/keys
+y lo añadimos a nuestra cuenta github pulsando "New SSH key" in https://github.com/settings/keys
 
-Si estuvieramos en un entorno visual haríamos:
+Si estuviéramos en un entorno visual haríamos:
 
 Instalamos xclip (una utilidad para manejar el clipboard)
 
@@ -127,7 +128,7 @@ Lo instalamos con:
 sudo apt install screen
 ```
 
-Tras conectanos la primera vez ejecutamos **screen**, nos mostrará la ayuda y las correspondientes licencias, tras pulsar Space salimos a una shell normal
+Tras conectarnos la primera vez ejecutamos **screen**, nos mostrará la ayuda y las correspondientes licencias, tras pulsar Space salimos a una shell normal
 
 Ahora ejecutamos los scripts que queramos y cuando queramos desconectarnos pulsamos **Ctrl-A Ctrl-D** dejando todo en ejecución
 

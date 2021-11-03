@@ -1,13 +1,15 @@
 ### Grabación de Time Lapse
 
 Ya hemos visto un par de formas de crear Time Lapse:
+
 * Con el comando raspistill y el **-tl**
 * Usando un shell script
 
 Ahora vamos a crearlos de una forma distinta: con Python. Para ello sólo vamos a tener que juntar algunas de las partes que ya hemos elaborado:
+
 * Usaremos un bot de Telegram como sistema de control y de comunicaciones
-* Capturaremos imagenes con la cámara controlando los parámetros para poder hacer fotos de día y de noche
-* Como no necesitamos mucho procesamiento utilizaremos una Raspberry Pi Zero W conectada vía wifi y no tendrá conectado ningún períferico, sólo la alimentación que vendrá de adaptador USB (también podemos alimentarlo desde los pines de GPIO como ya vimos)
+* Capturaremos imágenes con la cámara controlando los parámetros para poder hacer fotos de día y de noche
+* Como no necesitamos mucho procesamiento utilizaremos una Raspberry Pi Zero W conectada vía wifi y no tendrá conectado ningún periférico, sólo la alimentación que vendrá de adaptador USB (también podemos alimentarlo desde los pines de GPIO como ya vimos)
 
 Por ello vamos a instalar Raspberry Pi OS Lite, como vimos en un capítulo anterior
 
@@ -36,7 +38,7 @@ Ahora sólo nos falta conectar la alimentación al usb marcado como "Power"
 
 Y nos queda un equipo muy, muy compacto
 
-![Alimantacion Raspi Zero](./images/RaspiZeroAlimantacion.jpg)
+![Alimentacion Raspi Zero](./images/RaspiZeroAlimantacion.jpg)
 
 [![Vídeo: Montaje de una Raspberry Pi Zero W para realizar timeLapses](https://img.youtube.com/vi/rhzX1TbOddY/0.jpg)](https://drive.google.com/file/d/1Suec5Q8iQP8J25kktUA8kNM0Muf39usJ/view?usp=sharing)
 
@@ -55,6 +57,7 @@ pip3 install python-telegram-bot
 ```
 
 Usaremos un código basado en los anteriores ejemplos al que le hemos añadido:
+
 * Medida de la temperatura de la CPU **/temp**
 * Medida del espacio en disco **/df**
 * Creamos un time lapse con el comando /TTiempoEntreImagenes, con /T0 se termina el time lapse
@@ -65,9 +68,10 @@ Usaremos un código basado en los anteriores ejemplos al que le hemos añadido:
 1. Descargamos el código del ejemplo [RaspiZeroLapse](https://github.com/javacasm/RaspiZeroLapse/archive/master.zip)
 1. Lo descomprimimos
 1. Ponemos el TOKEN que vamos a usar con este Bot en el fichero config.py
-1. Añadimos el chat_id de usario como ADMIN
+1. Añadimos el chat_id de usuario como ADMIN
 1. Cambiamos el directorio donde queremos guardar las imágenes
 1. Ejecutamos el bot con:
+
 ```sh
 python3 timeLapseBot.py
 ```
@@ -78,7 +82,7 @@ Nos conectamos desde cualquier App de Telegram y lo probamos.
 
 Una vez que lo tenemos todo listo llega el momento de conseguir un buen enfoque del objetivo que queremos fotografiar
 
-* Si lo vamos a tener un tiempo largo, hay que conseguir que el sistema esté estable (cuidado con colocarlo en el borde la venana).
+* Si lo vamos a tener un tiempo largo, hay que conseguir que el sistema esté estable (cuidado con colocarlo en el borde la ventana).
 
 ![Montaje timelapse](./images/TimeLapseSetup.jpg)
 
@@ -107,7 +111,7 @@ Después de copiarlas habrá que borrarlas de la Raspberry
 
 ### Cuidados
 
-* Cuidado con la alimentación, al usa una batería que daba poca potencia fallaba al encender/apagar la cámara.
+* Cuidado con la alimentación, al usar una batería que daba poca potencia fallaba al encender/apagar la cámara.
 
 * Si vamos a usar sólo baterías hay que medir el tiempo que estas aguantan.
 
@@ -130,7 +134,7 @@ Ya vimos anteriormente  cómo generar un vídeo a partir de  nuestras imágenes.
 ffmpeg -framerate 30 -r 30 -pattern_type glob -i 'image*.jpg' -c:v libx264 ajo.mp4
 ```
 
-También hay en el código un ejemplo de como generar gif a partir de las imágenes. En un futuro añadiré esa funcionalidad al bot.
+También hay en el código un ejemplo de cómo generar gif a partir de las imágenes. En un futuro añadiré esa funcionalidad al bot.
 
 
 ### Ejemplos de time lapse
@@ -151,5 +155,5 @@ Todos estos time lapses los he creado con este sistema:
 
 ### Recursos 
 
-Este proyecto está insparado por [este otro creado por la Fundación Raspberry](https://projects.raspberrypi.org/en/projects/raspberry-pi-zero-time-lapse-cam/)
+Este proyecto está inspirado por [este otro creado por la Fundación Raspberry](https://projects.raspberrypi.org/en/projects/raspberry-pi-zero-time-lapse-cam/)
 
