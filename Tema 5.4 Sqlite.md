@@ -10,7 +10,7 @@ sudo apt install sqlite
 
 Las bases de datos de sqlite se usan un único fichero .db
 
-Vamos a empezar creando la base de datos llamadas datosSensores.db. Ejecutamos en la consola
+Vamos a empezar creando la base de datos llamadas _datosSensores.db_. Ejecutamos en la consola:
 
 ```sh
 sqlite3 datosSensores.db

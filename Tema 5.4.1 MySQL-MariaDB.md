@@ -14,7 +14,7 @@ Y para configurarla con un acceso más seguro ejecutamos el siguiente script
 sudo mysql_secure_installation
 ```
 
-La configuración segura por defecto sólo permite nos podamos conectar desde el propio equipo. Si queremos permitirlo sólo tenemos que comentar la línea 'bind-address' del fichero '/etc/mysql/mariadb.conf.d/50-server.cnf' que quedará así:
+La configuración segura por defecto sólo permite que nos podamos conectar desde el propio equipo. Si queremos permitirlo sólo tenemos que comentar la línea 'bind-address' del fichero '/etc/mysql/mariadb.conf.d/50-server.cnf' que quedará así:
 
 ```
 # bind-address            = 127.0.0.1
@@ -36,7 +36,7 @@ Una vez dentro, creamos un usuario para no tener que usar siempre el usuario roo
 CREATE USER 'javacasm'@'localhost' IDENTIFIED BY 'my_password';
 ```
 
-Ahora creamos una base de datos y le damos acceso al usario que hemos creado
+Ahora creamos una base de datos y le damos acceso al usuario que hemos creado
 
 ```SQL
 CREATE DATABASE datos_db;
@@ -99,6 +99,8 @@ Veamos ahora un sencillo código python para insertar datos. Antes instalamos el
 pip3 install pymysql
 ```
 
+El código sería:
+
 ```python
 # Ejemplo sencillo de acceso a base de datos mariaDB 
 # T5_mariadb
@@ -133,3 +135,4 @@ for i in range (0,50):
     
 ```
 [Ejemplo de inserción de datos en mariaDB con python](./codigo/T5_mariadb.py)
+

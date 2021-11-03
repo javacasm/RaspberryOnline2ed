@@ -232,7 +232,7 @@ Para utilizarlo necesitamos que Arduino tenga instalado el firmware de Firmata. 
 pip3 install pyFirmata
 ```
 
-Una vez instalado podemos controlar arduino con en este ejemplo
+Una vez instalado podemos controlar arduino con en [este ejemplo](https://github.com/javacasm/RaspberryOnline2ed/blob/master/codigo/test_firmdata.py)
 
 ```python
 from pyfirmata import Arduino, util
