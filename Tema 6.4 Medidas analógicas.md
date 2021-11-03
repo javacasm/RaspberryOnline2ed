@@ -57,7 +57,7 @@ while True:
 
 Un ejemplo más complejo podría ser controlar un led RGB con 3 potenciómetros:
 
-![RGB y 3 potenciómetros](./images/rgbled_pot_bb.svg)
+![RGB y 3 potenciómetros](./images/rgbled_pot_bb.png)
 
 La librería gpiozero permite hacer un código supercompacto
 
@@ -102,7 +102,7 @@ i2c = busio.I2C(board.SCL, board.SDA) # configuramos la conexión I2C
 import adafruit_ads1x15.ads1115 as ADS
 from adafruit_ads1x15.analog_in import AnalogIn
 
-ads = ADS.ADS1115(i2c) # creamos nuesro objeto ads
+ads = ADS.ADS1115(i2c) # creamos nuestro objeto ads
 
 chan = AnalogIn(ads, ADS.P0) # leemos el canal 0
 print(chan.value, chan.voltage)

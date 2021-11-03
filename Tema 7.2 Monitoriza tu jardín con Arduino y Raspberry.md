@@ -18,12 +18,12 @@ Como en todo proyecto es buena idea definir varias versiones par ir trabajando p
 
 En futuras versiones haremos
 * Versión 1
-    * Medida de humdad en distintas partes
+    * Medida de humedad en distintas partes
     * Streaming de vídeo
 * Versión 2
     * Uso de paneles solares y baterías
 
-En este apartado vamos a desarrollar la primera versión v0. Aunque la segunda es aparentemente sencilla, el cabledo para los sensores de humedad y el deterioro que esto sufren debido a la corrosión lo hace más complejo.
+En este apartado vamos a desarrollar la primera versión v0. Aunque la segunda es aparentemente sencilla, el cableado para los sensores de humedad y el deterioro que estos sufren debido a la corrosión lo hace más complejo.
 
 [![Vídeo: Sistema de control riego con Raspberry Pi y Arduino](https://img.youtube.com/vi/4s3qO5JL67E/0.jpg)](https://drive.google.com/file/d/13ySo16FPBgtD9eO0f7B6ZGA00ziM3D18/view?usp=sharing)
 
@@ -32,7 +32,7 @@ En este apartado vamos a desarrollar la primera versión v0. Aunque la segunda e
 
 ### Sistema de control remoto de riego  V0
 
-Usaremos una Raspberry para el procesamiento y las comunicaciones y un arduino nano que se encargará de controlar los relés y los sensores. Estará conectados por un cable USB.
+Usaremos una Raspberry para el procesamiento y las comunicaciones y un arduino nano que se encargará de controlar los relés y los sensores. Están conectados por un cable USB.
 
 Se establecerá un protocolo de comunicaciones entre el Arduino y la Raspberry para intercambiar datos por el puerto serie.
 
@@ -64,6 +64,7 @@ Utilizaremos una pantalla LCD de 20x4 conectada por I2C a Arduino para mostrar e
 ### Programación:
 
 El software de Arduino tiene que encargarse de:
+
 * Control de relés de electroválvulas y relé bomba de riego
 * Medida de condiciones atmosféricas: Temperatura, humedad y presión usando un sensor BME280
 * Mostrar el estado en un lcd 20x4
@@ -90,7 +91,7 @@ Veamos algunos detalles:
 * Se lee constantemente el puerto serie y cuando se detecta un END_OF_COMMAND se manda a ejecutar lo recibido
 * Los comandos son muy cortos y sencillos. Por ejemplo 'S3H' quiere decir activar el 3er relé 
 * Arduino nunca toma la iniciativa para enviar, sólo contesta.
-* Los datos de los sensores y el estado se manda en una única línea separadaos por SEPARADOR_SERIE
+* Los datos de los sensores y el estado se manda en una única línea separados por SEPARADOR_SERIE
 
 El [software de la Raspberry](https://github.com/javacasm/RiegoRaspberryArduino/tree/master/Riego-RA-Raspberry) está basado en el bot de los otros programas al que se le han añadido las funciones de comunicación con Arduino
 

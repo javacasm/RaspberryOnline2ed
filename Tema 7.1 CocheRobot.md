@@ -1,18 +1,18 @@
-# Robotica
+# Robótica
 
 
 ![Robot con Raspberry](./images/RobotTop.jpg)
 
 ### Robot controlado con Raspberry
 
-Vamos a crear un robot controlado integramente por Raspberry: 
+Vamos a crear un robot controlado íntegramente por Raspberry: 
 
 * Cámara con streaming
 * sensor ultrasonidos 
 * 4 motores 
 * baterias
 * Sensor atmosférico
-* Publica los datos en su web que tambien permite controlar el movimiento
+* Publica los datos en su web que también permite controlar el movimiento
 * Acceso vía bot de Telegram
 
 [![Vídeo-Descripción de robot controlado por Raspberry Pi: Raspicar](https://img.youtube.com/vi/KNPiYSUemtU/0.jpg)](https://drive.google.com/file/d/1Dl-a4_nf0WqiTFA8fIac8TluXgGer1-_/view?usp=sharing)
@@ -23,9 +23,8 @@ Vamos a crear un robot controlado integramente por Raspberry:
 
 V0: robot standar con movimiento normales
 V1: sensores de temperatura y sensores de ultrasonidos
-Futuras versiones
 V2: añadimos ruedas onmi
-V3: añadimos cámara y sensor de bateria (I2C)
+V3: añadimos cámara y sensor de batería (I2C)
 
 ### Equipo
 
@@ -54,14 +53,15 @@ Ahora conectamos un teclado, ratón y monitor  para una primera configuración:
 * Activamos: SSH. VNC, Cámara, I2C, SPI, UART, OneWire
 * Actualización
  
- Como tanto la Raspberry como la cámra eran antiguas he hecho una actualización de los firmwares, que han solucionado un problema que tenia con la cámara
+ Como tanto la Raspberry como la cámara eran antiguas he hecho una actualización de los firmwares, que han solucionado un problema que tenía con la cámara
+
 ```sh
  rpi-update
 ```
 
 ### Conexion remota
 
-Como vamos a necesitar conectarnos remotamente al robot, tanto para controlarlo como para hacer cambios en la programación, intentaremos hacer un entorno de desarrollo completo en la propia raspberry del robot, sin necesidad de un ordenadore externo, más que paa conectarnos por VNC o SSH.
+Como vamos a necesitar conectarnos remotamente al robot, tanto para controlarlo como para hacer cambios en la programación, intentaremos hacer un entorno de desarrollo completo en la propia raspberry del robot, sin necesidad de un ordenador externo, más que para conectarnos por VNC o SSH.
 
 * Creamos una red wifi, preferiblemente con el móvil para poder acceder a internet al mismo tiempo
 * Mientras aún tenemos monitor y teclado conectamos a este wifi a  raspicar para que se conecte cuando esté visible.
@@ -106,7 +106,8 @@ Para facilitar la conexión hacemos lo siguiente:
 * Puesto  que vamos a trabajar directamente en la raspberry, las incluimos en github como ya vimos
 * Clonamos el repositorio base 
 * Creamos uno nuevo desde el que partir
-* Instalamos modulos y lo necesario para trabajar cómodamente.
+* Instalamos módulos y lo necesario para trabajar cómodamente.
+
 ```sh
 pip3 install python-telegram-bot
 sudo apt install screen
@@ -132,8 +133,6 @@ Cuando trabajamos directamente en consola en la Raspberry (conectado por ssh)  p
 * Nos viene muy tener una manera de tener nuestros ficheros respaldados en algún otro sitio, además de en local
 * Podemos usar github como intercambio para así poder ediciones más complejas con un editor en un ordenador con entorno gráfico
 * Podemos usarlo para enviar ficheros de manera sencilla
-
-Vídeo: Trabajando en remoto con ssh en una Raspberry usando Github](https://youtu.be/L7VbhMHesZQ)
 
 [![Vídeo: Trabajando en remoto con ssh en una Raspberry usando Github](https://img.youtube.com/vi/L7VbhMHesZQ/0.jpg)](https://drive.google.com/file/d/1czpyLRe8_SAskwU59KKWMRwjMZwLp-np/view?usp=sharing)
 
@@ -164,13 +163,13 @@ Conectaremos los 4 motores y la alimentación:
 
 ![Conexiones de los motores y la batería](./images/ConexionMotoresBat.jpg)
 
-Es muy importante que usemos una alimentación independiente para los motores y para la Raspberry. Los motores piden mucha corriente y podrían dar lugar a que la Raspberry se apagara.
+Es muy importante que usemos una alimentación independiente para los motores y para la Raspberry. Los motores piden mucha corriente y podrían dar lugar a que la Raspberry se apague.
 
 Usaremos para la alimentación de los motores 2 baterías lipo 18650, que además tiene un interruptor y que nos va a permitir apagar los motores cuando queramos que el robot no se mueva.
 
 ### Instalación
 
-Necesitamos que el drive I2C esté activado. Si no es así lo haremos desde la configuración.
+Necesitamos que el driver I2C esté activado. Si no es así lo haremos desde la configuración.
 
 Instalamos el módulo python de Adafruit para controlar el Motor Hat:
 
@@ -300,7 +299,7 @@ def init():
 
 ```
 
-Ahora hacer un sencillo test en el que el robot se mueve y que podemos hacer con un lenguaje de más alto nivel:
+Ahora vamos a hacer un sencillo test en el que el robot se mueve para lo que usaremos  un lenguaje de más alto nivel:
 
 ```python
 import robot
@@ -326,7 +325,7 @@ robot.stop()
 
 ## Control remoto
 
-Vamos a crear una sencilla aplicación web que el mismo robot publicará en su web y que nos permitirá controlarlo fácilmente. Para ello usaremos flask, un módulo python, que y usamos anteriormente y que nos permite crear aplicaciones web de manera muy sencilla. La instalación y primeros pasos es muy sencilla y podermos verla en detalle en [este proyecto de Raspberry Pi org](https://projects.raspberrypi.org/en/projects/python-web-server-with-flask)
+Vamos a crear una sencilla aplicación web que el mismo robot publicará en su web y que nos permitirá controlarlo fácilmente. Para ello usaremos flask, un módulo python, que nos permite crear aplicaciones web de manera muy sencilla. La instalación y primeros pasos es muy sencilla y podremos verla en detalle en [este proyecto de Raspberry Pi org](https://projects.raspberrypi.org/en/projects/python-web-server-with-flask)
 
 Instalamos flask
 
@@ -346,7 +345,7 @@ from flask import Flask
 
 app = Flask('Primera prueba de flask')
 
-@app.route('/') # la asociamos al directorio raiz del servidor web
+@app.route('/') # la asociamos al directorio raíz del servidor web
 def index():
     return 'Hola Flask!'
 
@@ -380,11 +379,12 @@ Probamos desde otro ordenador apuntando un navegador web a http://raspicar:5000
 
 Vamos a hacer ahora una sencilla web que nos va a permitir controlar a raspiCar. Tendremos un fichero para app en flask y otro html que mezclará el aspecto con un poco de javascript para hacer que los botones envien las peticiones a la app
 
-Podemos resumirla estructura de la aplicación en lo siguiente:
+Podemos resumir la estructura de la aplicación en lo siguiente:
+
 * Cada botón/control que usemos tiene 3 partes:
     * Button o gadget html
     * Ruta en flask para cada url
-    * Código javascript que enlace la interracción del usuario con el botón y la url correspondiente.
+    * Código javascript que enlace la interacción del usuario con el botón y la url correspondiente.
 
 La aplicación flask es esta, hecha a partir del este [excelente tutorial de Sergey Koba de Mobidev](https://mobidev.biz/blog/building-pluto-the-robot-part-iii-web-server)
 
@@ -415,7 +415,7 @@ def move(direction):
        robot.right(0.5)
     return '{}'
 
-@app.route('/stop')  # direccion para el boton de parada
+@app.route('/stop')  # dirección para el botón de parada
 def stop():
     robot.stop()
     return '{}'
@@ -487,7 +487,7 @@ Si quieres profundizar más, en [este enlace tienes un webApp mucho más sofisti
 
 Hemos soldado unos pines a la placa Motor Hat para poder conectar más componentes que ahora iremos añadiendo.
 
-La placa viene preparada para ello, proporcionando pines de alimentación a 5V y 3.3V y GND sufientes para muchos dispositivos
+La placa viene preparada para ello, proporcionando pines de alimentación a 5V y 3.3V y GND suficientes para muchos dispositivos
 
 ![MotorHat con Pines](./images/MotorHatPines.jpg)
 
@@ -532,13 +532,13 @@ while True:
 
 ![NeoPixel](./images/neoPixel.jpg)
 
-Los neopixels son leds RGB que tienen la gran venaja de que se controlan con un único pin digital. Además podemos conectarlos entre sí de forma que se pueden manejar muchos de ellos con un único pin.
+Los neopixels son leds RGB que tienen la gran ventaja de que se controlan con un único pin digital. Además podemos conectarlos entre sí de forma que se pueden manejar muchos de ellos con un único pin.
 
 Por ejemplo para controlar los 8 neopixels que vamos a conectar en forma de barra a raspiCar sólo necesitamos 1 pin pudiendo controlar el color RGB de cada uno de ellos.
 
 ![Neopixels en acción](./images/neopixels.png)
 
-Se venden en muchos formatos, como las tiras, matrices, etc...
+Se venden en muchos formatos, como tiras, matrices, etc...
 
 Para usarlo en la Raspberry necesitamos instalar la librería de adafruit
 
@@ -603,7 +603,7 @@ Tenemos que tener cuidado de no ponerlo cerca de las baterías ni de los motores
 
 Incorporaremos los valores de temperatura, humedad y presión tanto en el bot de telegram como en la webApp para controlar a raspiCar
 
-Para integrar los valores en la webApp con flask tenemos que modificar tanto la plantila HTML index.html, donde añadiremos un lugar donde poner los valores y una referencia a cada uno de ellos en forma de parámetro. Añadiremos este bloque tras el mensaje de tipo H1
+Para integrar los valores en la webApp con flask tenemos que modificar tanto la plantilla HTML index.html, donde añadiremos un lugar donde poner los valores y una referencia a cada uno de ellos en forma de parámetro. Añadiremos este bloque tras el mensaje de tipo H1
 
 ```HTML
 <h2>Temp: {{ temperatura }}º </h2>
@@ -612,7 +612,7 @@ Para integrar los valores en la webApp con flask tenemos que modificar tanto la 
 <h2> {{ fechaDatos }}</h2>
 ```
 
-Ahora tenemos que hacer que la webApp obtenega estos datos del sensor, para lo que añadiremos este código antes de la creación del objeto app
+Ahora tenemos que hacer que la webApp obtenga estos datos del sensor, para lo que añadiremos este código antes de la creación del objeto app
 
 ```python
 import smbus2
@@ -654,16 +654,5 @@ Podemos descargar todo el código de raspiCar del [repositorio de github](https:
 
 
 [Vídeo: Montaje final robot móvil controlar con Raspberry Pi:  RasPiCar](https://drive.google.com/file/d/1_C3J8c-py1Cm9gB89Ei22LLI6VWr6VeI/view?usp=sharing)
-
-
-## Referencias
-
-[Tutorial placa adafruit](https://learn.adafruit.com/adafruit-dc-and-stepper-motor-hat-for-raspberry-pi?view=all)
-
-[Robot sencillo con placa adafruit](https://learn.adafruit.com/simple-raspberry-pi-robot?view=all)
-
-[Raspberry Pi Web-controlled Robot with video](https://www.hackster.io/jrance/raspberry-pi-web-controlled-robot-with-video-c1b723)
-
-[Pi Wars 2018](http://www.piandchips.co.uk/uncategorized/pi-wars-2018-the-evolution-of-x-bot-360/)
 
 

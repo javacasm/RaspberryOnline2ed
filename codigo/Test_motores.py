@@ -1,4 +1,4 @@
-from gpiozero import Motor  # Importamos los modulos
+from gpiozero import Motor  # Importamos los módulos
 from time import sleep
 
 #Definimos Motor izquierdo (L) conectando a los pines 7 y 8 a la placa L298
@@ -10,6 +10,6 @@ while True:  # Bucle para siempre
 	motorL.forward()  # Motor L hacia adelante
 	motorR.forward()  # Motor R hacia adelante
 	sleep(5)		  # Esperamos 5 segundos
-	motorL.backward() # Motor L hacia atras
-	motorR.backward() # Motor R hacia atras
+	motorL.backward() # Motor L hacia atrás
+	motorR.backward() # Motor R hacia atrás
 	sleep(5)		  # Esperamos 5 segundos

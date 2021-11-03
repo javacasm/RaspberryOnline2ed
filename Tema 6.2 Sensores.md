@@ -1,6 +1,6 @@
 ## Sensores
 
-Veamos como podemos conectar sensores de temperatura digitales como pueden ser el DS18x20 o el DHT11
+Veamos cómo podemos conectar sensores de temperatura digitales como el DS18x20 o el DHT11
 
 ### DS18x20
 
@@ -8,7 +8,7 @@ Este sensor de aspecto idéntico a un transistor nos permite medir fácilmente l
 
 ![Montaje DS18x20](./images/oneWireDS18x20.png)
 
-Necesitamos una resistencia de 4.7ohmios que actuará como pull-up en el montaje.
+Necesitamos una resistencia de 4.7 ohmios que actuará como pull-up en el montaje.
 
 Por defecto el driver de one-wire us el GPIO04, pero si necesitamos cambiarlo podemos hacerlo modificando en el fichero /boot/config.txt la línea 'dtoverlay=w1-gpio,gpiopin=x'
 
@@ -71,7 +71,7 @@ import Adafruit_DHT as dht
 import time
 
 
-sensor = dht.DHT22 # Podría ser tambien un DH11
+sensor = dht.DHT22 # Podría ser también un DH11
 pin = 4
 while True:
     humedad, temperatura = dht.read_retry(sensor, pin) # recuperamos los valores del sensor

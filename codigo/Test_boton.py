@@ -1,4 +1,4 @@
-from gpiozero import Button # importamos los modulos necesarios
+from gpiozero import Button # importamos los módulos necesarios
 
 button = Button(2) # Declaramos un pulsador conectado al GPIO 2
 

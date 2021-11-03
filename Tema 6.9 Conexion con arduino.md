@@ -16,7 +16,7 @@ Las más sencillas son aquellas que conectan los puertos serie de ambos Esta con
 
 * Utilizando un cable serie entre ambos puertos serie. Hay que tener en cuenta los diferentes voltajes
 
-En cualquiera de los dos casos es necesario que desactivemos la consola serie de la Raspberry e instalemos la librería py-serial.
+En cualquiera de los dos casos es necesario que desactivemos la consola serie de la Raspberry e instalamos la librería py-serial.
 
 En [este tutorial](https://geekytheory.com/arduino-raspberry-pi-lectura-de-datos/) podemos ver cómo hacerlo.
 
@@ -51,7 +51,7 @@ void setup() {
     // inicializamos i2c como esclavo con la dirección dada
     Wire.begin(DIRECCION_ESCLAVO);
 
-    // funciones callbacks para la comunicacion i2c 
+    // funciones callbacks para la comunicación i2c 
     Wire.onReceive(receiveData);
     Wire.onRequest(sendData);
 
@@ -116,6 +116,7 @@ Vemos conectado al bus i2c a nuestro arduino en la dirección **0x09**
 
 
 En la Raspberry vamos a usar un programa sencillo que nos permite enviar diferentes comandos: 
+
 * El comando '0' apagará el relé
 * El comando '1' encenderá el relé
 

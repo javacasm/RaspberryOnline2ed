@@ -2,10 +2,10 @@
 ## GPIO
 
 
-![GPIO](./images/GPIORasp.png)
+![GPIO de 20 pines en las primeras versiones](./images/GPIORasp.png)
 
 
-![GPIO Raspi4](./images/GPIORaspi4.png)
+![GPIO de 40 pines en la Raspi4](./images/GPIORaspi4.png)
 
 ¿Qué son los GPIO?
 
@@ -30,7 +30,7 @@ Las versiones de 40 pines hasta la Raspberry pi 3+
 
 Los GPIOs para la Raspberry pi 4
 
-![GPIOs para la Raspberry pi 4](./images/GPIO4.webp)
+![GPIOs para la Raspberry pi 4](./images/GPIO4.png)
 
 Hay que tener cuidado con no equivocarse al usarlos. Para evitar errores podemos usar una etiqueta
 
@@ -88,7 +88,7 @@ Podríamos trabajar perfectamente con Scratch 3.0 que ya incluye extensiones par
 
 ![Extensiones GPIO en Scratch 3.0](./images/ExtensionesGPIOScratch.png)
 
-Extensiones que incluyen bloques para usar GPIO en Scratch. La primera de modo genera y la tercera simplificada para aprender.
+Extensiones que incluyen bloques para usar GPIO en Scratch. La primera de modo general y la tercera simplificada para aprender.
 
 ![Bloques Extensión GPIO Scratch](./images/BloquesExtensionGPIOScratch.png)
 
@@ -108,7 +108,7 @@ Consumo total de todos los GPIOs: 50mA
 
 ### Encendiendo un led
 
-Necesitaremos un Led y una resistencia de 220Ohmios (o 330) 
+Necesitaremos un Led y una resistencia de 220 Ohmios (o 330) 
 Vamos conectarlos de la siguiente manera
 
 ![Led](./images/led-gpio17.png)
@@ -130,7 +130,7 @@ while True:  	# Repetimos en bucle para siempre
 
 [Código](https://github.com/javacasm/RaspberryOnline2ed/blob/master/codigo/test_led.py)
 
-Podemos utilizar el edito Thonny para ejecutar los siguientes ejemplos 
+Podemos utilizar el editor Thonny para ejecutar los siguientes ejemplos 
 
 ### Usando botones/pulsadores
 
@@ -195,7 +195,7 @@ pinout
 
 ### Brillo variable en un led: PWM
 
-Vamos a usar ahora una característica de algunos pines como es el PWM, que nos va a permitir modular la potencia que se trasmite al pin. El efecto si conectamos un led es que va a cambiar su brillo.
+Vamos a usar ahora una característica de algunos pines como es el PWM, que nos va a permitir modular la potencia que se transmite al pin. El efecto si conectamos un led es que va a cambiar su brillo.
 
 ```python
 from gpiozero import PWMLED

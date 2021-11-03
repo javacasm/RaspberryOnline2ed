@@ -69,3 +69,14 @@ Para aprender más:
 [Documentation](https://python-telegram-bot.readthedocs.io/en/stable/)   
 [Examples](https://github.com/python-telegram-bot/python-telegram-bot/tree/master/examples) 
 
+## Referencias Raspicar
+
+[Tutorial placa adafruit](https://learn.adafruit.com/adafruit-dc-and-stepper-motor-hat-for-raspberry-pi?view=all)
+
+[Robot sencillo con placa adafruit](https://learn.adafruit.com/simple-raspberry-pi-robot?view=all)
+
+[Raspberry Pi Web-controlled Robot with video](https://www.hackster.io/jrance/raspberry-pi-web-controlled-robot-with-video-c1b723)
+
+[Pi Wars 2018](http://www.piandchips.co.uk/uncategorized/pi-wars-2018-the-evolution-of-x-bot-360/)
+
+

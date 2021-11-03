@@ -2,7 +2,7 @@
 
 ## Otras Librerías
 
-Existen otras librerías que nos facilitarán el acceso a los GPIO (todas usan lenguaje Python como base). Nosotros veremos algunas de ellas por motivos históricos y porque muchos proyectos las usan y conviene saber utilizalas.
+Existen otras librerías que nos facilitarán el acceso a los GPIO (todas usan lenguaje Python como base). Nosotros veremos algunas de ellas por motivos históricos y porque muchos proyectos las usan y conviene saber utilizarlas.
 
 Para probarlas re-haremos algunos de los ejemplos ya vistos con estas librerías
 
@@ -118,7 +118,7 @@ import RPi.GPIO as GPIO
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(7, GPIO.IN) # establecemos el GPIO 7 como entrada
 GPIO.setup(8, GPIO.OUT) # establecemos el GPIO 8 como salida
-input_value = GPIO.input(7) # recuperamos el valor de entreda
+input_value = GPIO.input(7) # recuperamos el valor de entrada
 GPIO.output(8, True) # establecemos la salida en alto
 ```
 

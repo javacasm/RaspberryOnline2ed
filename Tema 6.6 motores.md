@@ -78,7 +78,7 @@ Conectaremos 7 -> In1,  8 -> In2,  9 -> In3, 10 -> In4 y  GND -> GND
 Veamos ahora un sencillo ejemplo de control
 
 ```python
-from gpiozero import Motor  # Importamos los modulos
+from gpiozero import Motor  # Importamos los módulos
 from time import sleep
 
 # Motor izquierdo (L) conectando pines 7 y 8 a la placa L298
@@ -90,8 +90,8 @@ while True:  # Bucle para siempre
     motorL.forward()  # Motor L hacia adelante
     motorR.forward()  # Motor R hacia adelante
     sleep(5)		  # Esperamos 5 segundos
-    motorL.backward() # Motor L hacia atras
-    motorR.backward() # Motor R hacia atras
+    motorL.backward() # Motor L hacia atrás
+    motorR.backward() # Motor R hacia atrás
     sleep(5)		  # Esperamos 5 segundos
 ```
 
@@ -102,7 +102,7 @@ Y nuestros motores deben de moverse hacia adelante y hacia atrás
 Si lo que queremos es montar un robot con esos 2 motores podemos hacerlo de una manera más sencilla usando este ejemplo
 
 ```python
-from gpiozero import Robot  # importamos todo lo modulos necesarios
+from gpiozero import Robot  # importamos todos los módulos necesarios
 from time import sleep
 robby = Robot(left=(7,8), right=(9,10))  # definimos las conexiones del robot
 robby.forward(0.4) # nos movemos hacia adelante con 40% de velocidad
@@ -115,7 +115,7 @@ robby.stop() # paramos
 
 [Código](https://github.com/javacasm/RaspberryOnline3ed/blob/master/codigo/test_robot.py)
 
-Ahora ya podemos hacer robót como estos
+Ahora ya podemos hacer robot como estos
 
 [zerobot](https://www.thingiverse.com/thing:2352440)
 
@@ -146,17 +146,17 @@ Conectaremos 18 -> Naranja, 5V -> Rojo, GND -> Marrón
 El código es muy sencillo. Este ejemplo va desde el mínimo, al punto medio y luego al máximo
 
 ```python
-from gpiozero import Servo  # importamos los modulos necesarios
+from gpiozero import Servo  # importamos los módulos necesarios
 from time import sleep
 
 servo = Servo(18)			# definimos el servo conectado al gpio 18
 
 while True:					# bucle infinito
-    servo.min()				# posicion de un extremo
+    servo.min()				# posición de un extremo
     sleep(2)				# esperamos 2 segundos
-    servo.mid()				# posicion central
+    servo.mid()				# posición central
     sleep(2)				# esperamos 2 segundos
-    servo.max()				# posicion del otro extremo
+    servo.max()				# posición del otro extremo
     sleep(2)				# esperamos 2 segundos
 ```
 
@@ -167,7 +167,7 @@ while True:					# bucle infinito
 
 ![RaspiRobot](./images/raspirobot.png)
 
-Esta placa nos permite controlar un típico robot de 2 motores de manera muy sencillo. 
+Esta placa nos permite controlar un típico robot de 2 motores de manera muy sencilla. 
 
 * El manejo de motores es mucho más complejo que el manejo de leds.
 * La programación es exactamente la misma,
@@ -224,18 +224,18 @@ rr.reverse() # movemos los dos motores hacia atrás
 rr.left() # motor izquierdo hacia adelante, derecho hacia atrás
 rr.right() # motor izquierdo hacia atrás, derecho hacia adelante
 rr.stop() # los dos motores hacia atrás
-rr.sw1_closed() # devuelver True o False según cerrado o abierto
+rr.sw1_closed() # devuelve True o False según cerrado o abierto
 ```
 
 ### Steppers: motores paso a paso
 
 ![Stepper](./images/stepper.png)
 
-Los motores paso a paso son motores que nos permiten una gran precisión de giro, pudiendo determinar su moviendo en grados.
+Los motores paso a paso son motores que nos permiten una gran precisión de giro, pudiendo determinar su movimiento en grados.
 
 Vamos a ver cómo usar el motor de la imagen, que tiene 4 bobinas. La placa de control es muy sencilla y necesita de 4 pines para controlarla (en realidad la placa sólo transforma la salida de los pines de raspberry en una señal de la potencia que necesita el motor)
 
-Veamos como conectarla usando 5V y GND y los pines de control 
+Veamos cómo conectarla usando 5V y GND y los pines de control 
 ```
 IN1 ==> GPIO12
 IN2 ==> GPIO16

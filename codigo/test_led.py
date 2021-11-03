@@ -1,4 +1,4 @@
-from gpiozero import LED  # importamos los modulos necesarios
+from gpiozero import LED  # importamos los módulos necesarios
 from time import sleep
 
 red = LED(17)  	# declaramos nuestro led como conectado al GPIO 17

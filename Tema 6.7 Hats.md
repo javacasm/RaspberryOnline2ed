@@ -22,7 +22,7 @@ Existen muchas de estas placas que facilitan la conexión de electrónica.
 * Existen en el mercado una gran variedad de placas que nos facilitan la vida.
 * Algunas sólo nos facilitan la conexión.
 * Otras nos proporcionan mayor funcionalidad.
-* En cualquier caso ganamos en tranquilidad al usarlas.
+* En cualquier caso, ganamos en tranquilidad al usarlas.
 
 
 ![Clobber](./images/clobber.jpg)
