@@ -43,6 +43,25 @@ Vemos como en todos los comandos utilizamos la palabra "sudo" esto es debido a q
 
 [Vídeo: Actualizar e instalar software desde terminal en Raspberry Pi](https://drive.google.com/file/d/1tWwCM229eJSLx0h_iZxk-3A7VHJu2jYr/view?usp=sharing)
 
+
+### Eliminación de paquetes obsoletos
+
+Con la instalación y actualización de los paquetes, a lo largo de tiempo, algunas de las dependencias se quedan obsoletas e incluso algunos de los paquetes puede que ya no sean necesarios. 
+
+Por eso es necesario que cada cierto tiempo eliminemos los paquetes  "huérfanos" que ya no se necesitan por el sistema haciendo:
+
+```sh
+sudo apt autoremove
+```
+
+También podemos hacer:
+
+```sh
+sudo apt autoclean
+```
+
+Para eliminar los paquetes que ya quedaron obsoletos.
+
 #### Actualización de los distintos firmwares
 
 Los diferentes componentes de la Raspberry necesitan de varios firmwares para funcionar, que también conviene tener actualizados. Podemos actualizarlos con:
