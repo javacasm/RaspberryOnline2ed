@@ -13,7 +13,7 @@
 
 ### José Antonio Vacas Martínez
 
-#### Versión 3.1
+#### Versión 3.2
 
 ### http://elCacharreo.com
 

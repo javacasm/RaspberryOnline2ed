@@ -96,6 +96,7 @@ pandoc --pdf-engine=xelatex   \
 		'Tema 4.5 Servidor web - LAMP.md' \
 		'Tema 4.6.0 multimedia.md' \
 		'Tema 4.6.1 kodi.md' \
+		'Tema 4.6.2 DLNA.md' \
 		'Tema 4.7 aulas.md' \
 		'Tema 4.8 Nube_privada.md' \
 		'Tema 4.9 BookServer.md' 
