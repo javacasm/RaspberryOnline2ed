@@ -67,7 +67,7 @@ Para conectarla pondremos el cable de la manera que se ve en la imagen
 ![Cable de la Cámara](./images/Pi-camera-Socket.jpg)
 
 
-Antes de poder utilizarla tenemos que activarla
+Antes de poder utilizarla tenemos que activarla (En futuras versiones no será necesario activarla, con lo que puede ser que no veas esta opción si estás instalando una versión más moderna)
 
 ```sh
 sudo raspi-config
@@ -77,6 +77,13 @@ En el menú de "Interfacing Options"
 ![Configuración para activar la cámara](./images/activaCamara.png)
 
 Necesitamos reiniciar para que arranquen adecuadamente los drivers.
+
+En versiones más modernas tendremos que activar la opción de “Legacy Cámara” en configuración.
+
+![](./images/enable-legacy.png)
+
+### Versión de Raspbian Buster o anterior
+
 
 Podemos probarla con este comando
 
@@ -244,7 +251,68 @@ $raspivid | less
 
 Para una documentación más detallada sobre las opciones del ejecutable se puede consultar el siguiente [enlace](https://www.raspberrypi.org/documentation/raspbian/applications/camera.md)
 
-### Webcam
+### Versión de Raspbian Bullseye o posterior
+
+Para usar la cámara usaremos:
+
+```sh
+libcamera-hello
+```
+
+que nos mostrará una previsualización durante 5 segundos y luego se cerrará
+
+Si hacemos:
+
+```sh
+libcamera-hello -t 0
+```
+
+la pantalla de previsualización se mostrará indefinidamente hasta que pulsemos el botón de cerrar de la ventana.
+
+Para capturar una imagen que guardaremos con el nombre 'imagen.jpg' usaremos:
+
+```sh
+libcamera-jpeg -o imagen.jpg
+``` 
+
+Por ejemplo para capturar una imagen tras esperar 10 segundos con resolución 1920x1080 haremos:
+
+```sh
+libcamera-jpeg -o test_1920x1080.jpg -t 10000 --width 1920 --height 1080
+```
+Existe un comando más avanzado (similar al antiguo raspistill): **libcamera-still**
+
+```sh
+libcamera-still -o test.jpg
+```
+
+También podemos guardarlo en otros formatos como _png_ con la opción '-e png'
+
+```sh
+libcamera-still -e png -o test.png
+```
+
+Este comando tienen multitud de opciones, que podemos consultar [su documentación](https://www.raspberrypi.com/documentation/accessories/camera.html#libcamera-still)
+
+También se puede capturar en formato RAW (el formato más profesional que no comprimir ni modifica la imagen) con la opción '-r' que se guardará en forma DNG (Adobe Digital Negative)
+
+Para capturar vídeo usaremos el comando libcamera-vid:
+
+```sh
+libcamera-vid -t 10000 -o test.h264
+```
+
+Capturará un vídeo en formato h264 (también puede ser formato mjpeg o yuv420) durante 10 segundos y lo guardará en el fichero test.h264
+
+También podemos usarlo para hacer un streaming el vídeo con este comando:
+
+```sh
+libcamera-vid -t 0 --inline --listen -o tcp://0.0.0.0:8888
+```
+
+Podemos ver todas las opciones en [su documentación](https://www.raspberrypi.com/documentation/accessories/camera.html#libcamera-vid)
+
+### Uso de cámaras Webcam
 
 También podemos usar cámaras USB compatibles  como  la PS3 Eye.
 

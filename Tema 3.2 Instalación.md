@@ -14,6 +14,14 @@ Al seleccionar el sistema operativo veremos distintas opciones, como por ejemplo
 
 Donde vemos que aparecen opciones de instalar versiones de 32 o de 64 bits
 
+A día de hoy (diciembre de 2021) existen 2 versiones disponibles de Raspbian:
+
+* La derivada de **Bullseye**, que es la más reciente, pero que hasta ahora mismo no es compatible con las librerías de python para el uso de la cámara (ahora mismo no hay versión alternativa).
+* La versión **Legacy** que es una actualización de la versión anterior **Buster**, que sí es compatible con las librerías de python para usar la cámara.
+
+![](./images/raspi_legacy.png)
+
+
 Podemos descargar Imager desde la página de [Descargas de Raspberry Pi](https://www.raspberrypi.com/software/) donde seleccionaremos nuestro sistema operativo
 
 Una vez descargado seleccionaremos el sistema operativo que queremos usar, luego seleccionaremos la tarjeta SD donde vamos a escribir la imagen (los datos de la tarjeta se borrarán)

@@ -4,6 +4,9 @@ En un capítulo anterior vimos cómo conectar y configurar la cámara
 
 Veamos un par de sencillos ejemplos sobre cómo utilizar la cámara de python
 
+**Sólo funciona en versiones anteriores a Bullseye** A día de hoy (diciembr de 2021) no se puede usar la cámara desde python en la versión Bullseye
+
+
 Empecemos mostrando la previsualización y luego guardando una imagen en [este ejemplo](https://github.com/javacasm/RaspberryOnline2ed/raw/master/codigo/T5_camara_captura_imagen.py)
 
 ```python
