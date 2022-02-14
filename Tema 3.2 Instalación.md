@@ -21,12 +21,20 @@ A día de hoy (diciembre de 2021) existen 2 versiones disponibles de Raspbian:
 
 ![](./images/raspi_legacy.png)
 
+También tenemos disponible las primeras versiones de la versión de 64 bits que promete un mejor rendimiento en las Raspberry Pi 3, 4, 400 y la Zero 2. La parte esencial del sistema operativo ya es de 64, pero algunas aplicaciones todavía funcionan en 32 bits.
 
 Podemos descargar Imager desde la página de [Descargas de Raspberry Pi](https://www.raspberrypi.com/software/) donde seleccionaremos nuestro sistema operativo
 
 Una vez descargado seleccionaremos el sistema operativo que queremos usar, luego seleccionaremos la tarjeta SD donde vamos a escribir la imagen (los datos de la tarjeta se borrarán)
 
-A día de hoy Imager no permite instalar varios sistemas operativos en la misma tarjeta
+A día de hoy Imager no permite instalar varios sistemas operativos en la misma tarjeta, pero sí que nos permite seleccionar entre muchos sistemás, además de los propios de raspberrypi.org como podemos ver en el siguiente vídeo
+
+Desde RPI imager podemos también configurar antes de hacer la instalación el nombre de la raspi, el usuario y contraseña, si queremos acceso ssh, el acceso al wifi, el idioma y el teclado... Este es una gran ventaja, pues al arrancar ya tendremos toda esta configuración realizada
+
+[![Vídeo: Nuevo instalador RPI Imager: 64 bits, configuración y bootloader](https://img.youtube.com/vi/hRkOoSDu6FM/0.jpg)](https://drive.google.com/file/d/15T_fPbQdCdTvPMLpMd4RLAzlFYYnDi-c/view?usp=sharing)
+
+[Vídeo: Nuevo instalador RPI Imager: 64 bits, configuración y bootloader](https://drive.google.com/file/d/15T_fPbQdCdTvPMLpMd4RLAzlFYYnDi-c/view?usp=sharing)
+
 
 Al pulsar **Write** se descargará la imagen desde internet.
 
