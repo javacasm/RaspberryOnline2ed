@@ -6,6 +6,8 @@
 
 while True:
     texto = input("URL del video ó Markdown del enlace al vídeo (Enter para terminar): ")
+    if len(texto) < 1:
+        break
     if texto.count('['): # es markdown
         partes = texto.split(']')
         urlVideo = partes[1].replace('(','').replace(')','')
