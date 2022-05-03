@@ -89,12 +89,15 @@ Para usarlo necesitamos tener instaladas las librerías de circuitpython
 pip3 install RPI.GPIO
 pip3 install adafruit-blinka
 ```
+
 Ahora instalamos la librería del ADS1115
+
 ```sh
 pip3 install adafruit-circuitpython-ads1x15
 ```
 
-Ya podemos probar el ejemplo
+Ya podemos probar el ejemplo:
+
 ```python
 import board
 import busio

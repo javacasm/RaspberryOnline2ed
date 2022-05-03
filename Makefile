@@ -65,6 +65,7 @@ pandoc --pdf-engine=xelatex   \
 	pandoc --pdf-engine=xelatex       \
 		-V papersize:a4paper        \
 		--template=./LaTeX_ES.latex \
+		--reference-doc=plantilla.docx \
 		-o $(S3) \
 		Cabecera.md        \
 		Cabecera_latex.md \

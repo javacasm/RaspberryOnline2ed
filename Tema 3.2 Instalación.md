@@ -23,13 +23,21 @@ A día de hoy (diciembre de 2021) existen 2 versiones disponibles de Raspbian:
 
 También tenemos disponible las primeras versiones de la versión de 64 bits que promete un mejor rendimiento en las Raspberry Pi 3, 4, 400 y la Zero 2. La parte esencial del sistema operativo ya es de 64, pero algunas aplicaciones todavía funcionan en 32 bits.
 
-Podemos descargar Imager desde la página de [Descargas de Raspberry Pi](https://www.raspberrypi.com/software/) donde seleccionaremos nuestro sistema operativo
+Podemos descargar RPI Imager desde la página de [Descargas de Raspberry Pi](https://www.raspberrypi.com/software/) donde seleccionaremos nuestro sistema operativo
 
 Una vez descargado seleccionaremos el sistema operativo que queremos usar, luego seleccionaremos la tarjeta SD donde vamos a escribir la imagen (los datos de la tarjeta se borrarán)
 
-A día de hoy Imager no permite instalar varios sistemas operativos en la misma tarjeta, pero sí que nos permite seleccionar entre muchos sistemás, además de los propios de raspberrypi.org como podemos ver en el siguiente vídeo
+A día de hoy Imager no permite instalar varios sistemas operativos en la misma tarjeta, pero sí que nos permite seleccionar entre muchos sistemas, además de los propios de raspberrypi.org como podemos ver en el siguiente vídeo
 
-Desde RPI imager podemos también configurar antes de hacer la instalación el nombre de la raspi, el usuario y contraseña, si queremos acceso ssh, el acceso al wifi, el idioma y el teclado... Este es una gran ventaja, pues al arrancar ya tendremos toda esta configuración realizada
+Desde RPI Imager podemos configurar también antes de hacer la instalación el **nombre de la raspberry**, el **usuario** y **contraseña**, si queremos acceso ssh, la configuración del wifi, el idioma y el teclado... 
+
+
+![](./images/Config_raspi-imager.png)
+
+
+Este es una gran ventaja, pues al arrancar ya tendremos toda esta configuración realizada
+
+En las versiones actuales ya se permite que el usuario no sea "pi", pudiendo poner cualquier nombre de usuario.
 
 [![Vídeo: Nuevo instalador RPI Imager: 64 bits, configuración y bootloader](https://img.youtube.com/vi/hRkOoSDu6FM/0.jpg)](https://drive.google.com/file/d/15T_fPbQdCdTvPMLpMd4RLAzlFYYnDi-c/view?usp=sharing)
 
@@ -38,7 +46,7 @@ Desde RPI imager podemos también configurar antes de hacer la instalación el n
 
 Al pulsar **Write** se descargará la imagen desde internet.
 
-También podemos usar Imager para formatear la tarjeta, para crear tarjetas SD capaces de recupear una instalación con problemas, para escribir imágenes que ya hemos descargado, etc.
+También podemos usar RPI Imager para formatear la tarjeta, para crear tarjetas SD capaces de recuperar una instalación con problemas, para escribir imágenes que ya hemos descargado, etc.
 
 [![Vídeo: Instalación de Raspberry Pi OS usando Imager](https://img.youtube.com/vi/DDfkkG4-gq8/0.jpg)](https://drive.google.com/file/d/1vZCdJa2551mNAdr1cwsOAJMn440eqXMG/view?usp=sharing)
 
@@ -56,7 +64,7 @@ Realmente **NO RECOMIENDO HACERLO ASÍ** salvo que ya lo hayas hecho y controles
 * Formatear tarjeta ([Formatter4](https://www.sdcard.org/downloads/formatter/))
 * Descargamos la imagen del sistema que queramos desde la [página de descargas (Downloads) de la web de Raspberry.org](https://www.raspberrypi.com/software/)
 * Si usamos una imagen tipo Noobs, basta con que descomprimamos el contenido del fichero zip en la tarjeta SD
-* Si es una imagen (fichero tipo img o iso) lo grabamos con Imager o por ejemplo con la herramienta multiplataforma Etcher (Windows, OsX y Linux) para instalar imágenes https://www.balena.io/etcher/
+* Si es una imagen (fichero tipo img o iso) lo grabamos con RPI Imager o por ejemplo con la herramienta multiplataforma Etcher (Windows, OsX y Linux) para instalar imágenes https://www.balena.io/etcher/
 
 	![Etcher](./images/etcher.io.png)
 * ¿Qué imagen usar?:
@@ -102,7 +110,7 @@ Si todo va bien al cabo de unos segundos veremos el escritorio Pixel, un escrito
 
 ![Escritorio Pixel](./images/PixelMenu.png)
 
-La primera vez que arranquemos tendremos que configura el idioma y la zona horaria, establecer la contraseña del usuario "pi" y el sistema se actualizará.
+La primera vez que arranquemos tendremos que configurar, si no lo hemos hecho ya, el idioma y la zona horaria, establecer la contraseña del usuario por defecto “pi”  y el sistema se actualizará.
 
 Vamos a ver algunos de los menús e iconos más importantes de pixel.
 

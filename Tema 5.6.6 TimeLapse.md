@@ -38,7 +38,7 @@ Ahora sólo nos falta conectar la alimentación al usb marcado como "Power"
 
 Y nos queda un equipo muy, muy compacto
 
-![Alimentacion Raspi Zero](./images/RaspiZeroAlimantacion.jpg)
+![Alimentación Raspi Zero](./images/RaspiZeroAlimantacion.jpg)
 
 [![Vídeo: Montaje de una Raspberry Pi Zero W para realizar timeLapses](https://img.youtube.com/vi/rhzX1TbOddY/0.jpg)](https://drive.google.com/file/d/1Suec5Q8iQP8J25kktUA8kNM0Muf39usJ/view?usp=sharing)
 
@@ -116,7 +116,7 @@ Después de copiarlas habrá que borrarlas de la Raspberry
 * Si vamos a usar sólo baterías hay que medir el tiempo que estas aguantan.
 
 * Se puede utilizar un panel solar para que recargue las baterías, pero tenemos que asegurarnos de que proporciona la energía necesaria
-![AlimentacionSolar.png](./images/AlimentacionSolar.png)
+![Alimentación Solar](./images/AlimentacionSolar.png)
 
 * Cuidado con llenar el almacenamiento, debemos tener en cuenta el espacio libre, el tamaño de cada foto y sobre todo el número de imágenes que vamos a tomar. Por ejemplo:
     * 1 foto ocupa 3.5Mb

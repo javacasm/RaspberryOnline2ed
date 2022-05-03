@@ -12,7 +12,7 @@
   3.2 Instalación en Raspberry Pi 4
   3.3 Instalación en Raspberry Pi Zero W
   3.4 TFT 
-  3.5 Problemas con Baja alimentacion
+  3.5 Problemas con Baja alimentación
 
 
 # Tema 4 - Uso de Raspberry.md

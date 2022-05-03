@@ -540,10 +540,12 @@ Por ejemplo para controlar los 8 neopixels que vamos a conectar en forma de barr
 
 Se venden en muchos formatos, como tiras, matrices, etc...
 
-Para usarlo en la Raspberry necesitamos instalar la librería de adafruit
+Para usarlo en la Raspberry necesitamos instalar la librería de adafruit para los neopixel y nos aseguramos de tener instalado el módulo blinka de adafruit
 
 ```sh
 sudo pip3 install adafruit-circuitpython-neopixel
+sudo python3 -m pip install --force-reinstall adafruit-blinka
+
 ```
 
 Para probarlo podemos usar el ejemplo de Adafruit, con solo cambiar el pin al que lo conectamos y el número de leds. En [este ejemplo](https://github.com/javacasm/RaspberryOnline2ed/blob/master/codigo/test_neopixels.py) usamos 8 leds conectados al pin 18 (no se pueden usar cualquier pin)
