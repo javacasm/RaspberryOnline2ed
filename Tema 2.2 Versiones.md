@@ -1,3 +1,64 @@
+### Raspberry pi 5
+
+![Raspberry Pi 5](./images/raspi5.jpeg)
+
+La Raspberry Pi 5 ofrece un **rendimiento mejorado** y más **flexibilidad** que sus predecesoras. 
+
+**Procesador y memoria:**
+
+* **Chip propio Broadcom BCM2712:** Un procesador Arm Cortex-A76 de cuatro núcleos y 64 bits a 2,4 GHz, que ofrece un aumento del 2-3 veces en el rendimiento de la CPU respecto a la Raspberry Pi 4.
+* **Memoria RAM LPDDR4X:** Disponible en versiones de 4 GB y 8 GB.
+
+**Gráficos:**
+
+* **GPU VideoCore VII:** Compatible con OpenGL ES 3.1 y Vulkan 1.2.
+* **Decodificador HEVC 4Kp60:** Para disfrutar de contenido multimedia en alta definición.
+
+**Conectividad:**
+
+* **2 puertos HDMI:** Permite conectar hasta dos monitores 4K a 60 Hz.
+* **2 puertos USB 3.0:** Ofrecen velocidades de transferencia de hasta 5 Gbps.
+* **2 puertos USB 2.0:** Para mayor compatibilidad con dispositivos periféricos.
+* **Gigabit Ethernet:** Conexión a red de alta velocidad.
+* **Wi-Fi 802.11ac de doble banda:** Conectividad inalámbrica rápida y confiable.
+* **Bluetooth 5.0:** Para conectar auriculares, teclados y otros dispositivos inalámbricos.
+* **Nuevo ISP desarrollado por Raspberry Pi:** Captura imágenes y vídeos de hasta 1 gigapixel por segundo.
+
+### Diferencias principales entre la Raspberry Pi 4 y la Raspberry Pi 5:
+
+**Procesador y rendimiento:**
+
+* **Raspberry Pi 4:** CPU Broadcom BCM2711 de cuatro núcleos Cortex-A72 a 1,5 GHz.
+* **Raspberry Pi 5:** CPU Broadcom BCM2712 de cuatro núcleos Cortex-A76 a 2,4 GHz. **Un 2-3 veces más rápida.**
+
+**Memoria:**
+
+* **Raspberry Pi 4:** LPDDR4 de 2 GB, 4 GB y 8 GB.
+* **Raspberry Pi 5:** LPDDR4X de 4 GB y 8 GB. **Más rápida y eficiente.**
+
+**Gráficos:**
+
+* **Raspberry Pi 4:** GPU VideoCore VI a 500 MHz.
+* **Raspberry Pi 5:** GPU VideoCore VII a 800 MHz. **Mejor rendimiento gráfico, especialmente para juegos y decodificación de video.**
+
+**Conectividad:**
+
+* **Ambas:** 2 puertos HDMI, 2 puertos USB 3.0, 2 puertos USB 2.0, Gigabit Ethernet, Wi-Fi 802.11ac, Bluetooth 5.0.
+* **Raspberry Pi 5:** Añade un **conector PCIe** para mayor flexibilidad.
+
+**Otras características:**
+
+* **Raspberry Pi 5:**
+    * **ISP propio:** Captura imágenes y vídeos de hasta 1 gigapixel por segundo.
+    * **Disipador de calor y ventilador más eficientes:** Para un mejor rendimiento térmico.
+    * **Elimina el conector de audio estéreo.**
+
+La Raspberry Pi 5 ofrece un **rendimiento significativamente superior**, mejor **rendimiento gráfico**, mayor **flexibilidad** y algunas características adicionales en comparación con la Raspberry Pi 4. 
+
+**¿Cuál elegir?**
+
+Depende de tus necesidades y presupuesto. Si necesitas el **máximo rendimiento** y las últimas funciones, la Raspberry Pi 5 es la mejor opción. Sin embargo, si tienes un presupuesto ajustado o tus necesidades no son tan exigentes, la Raspberry Pi 4 sigue siendo una excelente opción.
+
 
 ### Raspberry Pi 4
 

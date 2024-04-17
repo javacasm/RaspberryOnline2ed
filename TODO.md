@@ -12,6 +12,11 @@ listener port IP
 ORGANIZAR NIVELES DE LOS TITULOS!!!
 
 
+## Proyectos para docentes
+
+La página de Raspberry tiene muy buena documentación de proyectos  https://projects.raspberrypi.org/en para aprender
+https://www.raspberrypi.org/learn/ y muy buenos materiales para profes https://www.raspberrypi.org/teach/
+
 
 
 ## Revisar libro MasterYourRaspberryPi-Patrick-FROMAGET de raspberrytips
