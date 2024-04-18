@@ -18,11 +18,9 @@ Y si la vas a usar como un ordenador:
 * Monitor y cable HDMI (o VGA con adaptador. Existen muchos tipos de conversores, pero no todos funcionan bien con cables largos) para la 3 o cable mini-HDMI para la versión 4.
 * Teclado y ratón USB (mejor si es inalámbrico, porque consume menos)
 
-## ¿Raspberry 3+ o 4? 
+## ¿Raspberry  4 ó 5? 
 
-Esa es la pregunta del millón: Las primeras unidades del último modelo 4 han salido con algunos problemas de calentamiento y no funcionan con algunas fuentes de alimentación de tipo USB-C. Los problemas de calentamiento se han resuelto con actualizaciones de software y es de suponer que las placas que salen de fábrica ya tienen resueltos los problemas eléctricos.
-
-Por esto, y dada la poca diferencia de precio, salvo que encuentres una buena oferta para la Raspberry Pi 3+ yo me inclinaría por la versión 4. 
+Esa es la pregunta del millón: Por esto, y dada la poca diferencia de precio, salvo que encuentres una buena oferta para la Raspberry Pi 4 yo me inclinaría por la versión 5. 
 
 ### Opcionales
 
