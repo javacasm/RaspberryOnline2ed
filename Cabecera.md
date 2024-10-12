@@ -5,17 +5,14 @@
 <br/>
 <br/>
 
-![Licencia CC by SA](./images/Licencia_CC_peque.png) 
-
-## by @javacasm
+![Licencia CC by SA](./images/Licencia_CC_peque.png)  by @javacasm
 
 <br/>
 
 ### José Antonio Vacas Martínez
 
-#### Versión 3.3
+#### Versión 4.0
 
 ### http://elCacharreo.com
 
-
-## Mayo 2022
+## Octubre 2024

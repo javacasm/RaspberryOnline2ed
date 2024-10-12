@@ -2,62 +2,57 @@
 
 ## General
 
-* ¿Es openSource?
+* ¿Es openSource? 
+	* Casi sí, pero [lo será](http://hackaday.com/2017/01/14/blob-less-raspberry-pi-linux-is-a-step-closer/), faltan por liberar algunas partes del software del driver de video que sólo están disponibles como fichero binario (sin código fuente).
 
-	Casi sí, pero [lo será](http://hackaday.com/2017/01/14/blob-less-raspberry-pi-linux-is-a-step-closer/), faltan por liberar algunas partes del software del driver de video que sólo están disponibles como fichero binario (sin código fuente)
+* ¿De verdad cuesta 35$? 
+	* Aunque originariamente la idea del proyecto era crear un ordenador barato, desde la versión 3 no existe una placa a ese precio. Todavía podemos encontrar la versión 3+ o la 4 de 1Gb de RAM por algo más de unos 40€. De todas formas ese es el precio de la placa, pero por si misma no es más que un pisapapeles Geek, necesitamos cómo mínimo la tarjeta SD y la alimentación.
 
-* ¿De verdad cuesta 35$?
+* ¿Cómo la alimento? 
+	* La podemos alimentar con una fuente de alimentación de 2A y cable USB Micro para modelos hasta la versión 3+,  con USB-C y 3A para la 4 y USB-C y al menos 5A para la Raspberry Pi 5.
 
-	La placa sí, pero por si misma no es más que un pisapapeles Geek, necesitamos cómo mínimo la tarjeta SD y la alimentación.
+* ¿Puede funcionar con pilas? 
+	* Depende de las pilas, con una batería externa (como las de los móviles), Sí.
 
-* ¿Cómo la alimento?
-
-	Por USB Micro para modelos hasta la 3+ y con USB tipo C (como los móviles) con 5v y al menos 2A, 3A para la 4
-
-* ¿Puede funcionar con pilas?
-
-	Depende de las pilas, con una batería externa (como las de los móviles) Sí
-
-* ¿Qué significan las luces? En las versiones modernas (2 en adelante), hay un led Rojo de alimentación y uno verde de actividad del sistema. En la  V1
-
-		PWR 	5V alimentación ok
+* ¿Qué significan las luces en Raspberry Pi? 
+	* En la Versión 1
+		PWR 5V alimentación ok
 		OK 	Acceso a la SD
-		FDX 	Ethernet Full Duplex conectada
+		FDX 	Ethernet Full Dúplex conectada
 		LNK 	Ethernet conectado
-		10M	Ethernet de 100 Mbps conectada
+		10M	Ethernet de 100 Mbps conectada. 
+	* En versiones posteriores (de la V2 hasta la V4), el color verde significa que está encendido y el rojo, acceso a disco.
+	* en la V5, hay un único led que está en verde indicando el funcionamiento y rojo cuando está apagado.
 
-* ¿Cómo debo apagar mi raspberry?
-
-	La mejor forma de apagarlas es usando el comando  halt
-
+* ¿Cómo debo apagar mi Raspberry Pi? 
+	* La mejor forma de apagarlas (desde la versión 1 a la 4) es usando el comando  halt
 		sudo halt
 	ó
-
-		sudo shutdown -h
-
-* ¿Se rompe si le quito la alimentación?
-
-	No debería romperna nada, pero pudiera ocurrir si se están escribiendo muchos archivos (es un tema de probabilidad) algunos queden corruptos y si son importantes para el sistema no arrancaría
-
-* ¿Qué versión tengo?
-
-	Podemos saber la versión de Raspberry que tenemos usando el siguiente comando en las versiones más modernas
-	
-		cat /sys/firmware/devicetree/base/model;echo
+		sudo shutdown -h 
 		
-	Obtendremos ésto en una Raspi 3
+	* La versión 5, incluye por fin el tan esperado botón de apagado.
 	
-		Raspberry Pi 3 Model B Rev 1.2
-	
-	En un Raspi 4
+* ¿Se puede dañar la Raspberry si le quito la alimentación? 
+	* No debería romperla nada, pero si corromper la información de la tarjeta SD. Pudiera ocurrir si se están escribiendo muchos datos (es un tema de probabilidad) algunos ficheros queden corruptos y si son importantes para el sistema no arrancaría.
+	* En la versión 5, la manera correcta de apagarla es mediante el botón de apagado.
 
-		Raspberry Pi 4 Model B Rev 1.1
+* ¿Qué versión tengo? 
+	* Podemos saber la versión de Raspberry que tenemos usando el siguiente comando en las versiones más modernas:
+			cat /sys/firmware/devicetree/base/model 
+	
+		* Obtendremos ésto en una Raspberry 3:
+			Raspberry Pi 3 Model B Rev 1.2
+			
+		* Obtendremos esto en una versión 4:
+			Raspberry Pi 4 Model B Rev 1.1
+			
+		* Obtendremos esto en una versión 5:
+			Rasberry Pi 5 Model B Rev 1.0
 		
-	También podemos usar ésto, que nos dará información sobre los procesadores
-
-		cat /proc/cpuinfo
-
-	Obtendremos una información similar a esta
+	* También podemos usar ésto, que nos dará información sobre los procesadores:
+		cat /proc/cpuinfo 
+		
+		* Obtendremos una información similar a esta en un Raspberry Pi 3+:
 
 		Processor       : ARMv6-compatible processor rev 7 (v6l)
 		BogoMIPS        : 847.05
@@ -71,14 +66,8 @@
 		Revision        : 0002
 		Serial          : 000000000abc0ab1
 
-	Según el valor que aparezca en el campo Revision tendremos una versión u otra
+	En los modelos más modernos al tener varios núcleos el procesador obtendremos la información de cada uno de ellos
 
-	Existen 3 versiones:
-
-		Modelo y Revision		Hardware Revision Code de cpuinfo
-		Model B Revision 1.0				0002
-		Model B Revision 1.0 + ECN0001 (no fuses, D14 removed)	0003
-		Model B Revision 2.0			0004, 0005, 0006
 
 ## Cacharreo (cables)
 

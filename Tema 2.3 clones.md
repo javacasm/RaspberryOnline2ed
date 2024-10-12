@@ -6,7 +6,7 @@ Además algunos de ellos, son tremendamente similares y a un precio sensiblement
 
 ¿Dónde está el problema? Podemos encontrarnos con un hardware estupendo pero con una base de usuarios pequeña, lo que redundará en que tengamos poco software y pocos desarrollos. Además el soporte en este tipo de hardware muchas veces viene más desde otros usuarios, vía foros, que del propio fabricante, con lo que a más usuarios más fácil es encontrar la solución a nuestros problemas.
 
-Veamos algunos de ellos:
+Veamos algunos de ellos. Los precios son orientativos y para nada ajustados al día de hoy y no incluyen transporte, aranceles ni impuestos, pero los he dejado para que nos hagamos una idea comparativa y son de cuando las Raspberry costaba 30€
 
 * [BeagleBoard](https://beagleboard.org/)  ARM Cortex-A8 256MB 89€
 
@@ -54,6 +54,17 @@ Veamos algunos de ellos:
 
   ![PCDuino](./images/IMG_0242.jpg)
 
+## URVE Board PI
+
+[URVE Board PI - 1.8GHz (2GB)](https://tienda.bricogeek.com/compatibles-raspberry/1787-urve-board-pi-18ghz-2gb.html)
+
+procesador de 1.8GHz, 2GB de RAM, eMMC, conector M.2, Red Gigabit, Wifi y Bluetooth 4.2
+
+![](./images/urve-board-pi-18ghz-2gb-aspecto.jpeg)
+
+![](./images/urve-board-pi-18ghz-2gb.jpeg)
+
+[SO](https://oc.eveo.pl:789/owncloud/s/FcMZ3CpSf6lPMTw/download)
 
 ¿Conoces algún clon más? No dudes en decirlo.
 

@@ -2,7 +2,7 @@
 
 ![Raspberry Pi 400](./images/RPI_400_BACK_2_WHITE.jpg)
 
-Recientemente ha aparecido un nuevo formato de Raspberry, en la todo el hardware se ha incluído dentro de un teclado.
+Existe una versión de Raspberry con un  formato diferene, en la todo el hardware se ha incluído dentro de un teclado, la Raspberry Pi 400.
 
 Se trata de una Raspberry Pi 4 acelerada a 1.8GHz, con un nuevo formato alargado, para que todos los conectores estén del mismo lado (también los 40 GPIOs) y a la que han añadido un bonito teclado blanco y un enorme disipador para no tener que incluir ventilador.
 
