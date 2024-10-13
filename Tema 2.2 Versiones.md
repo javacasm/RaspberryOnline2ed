@@ -119,21 +119,23 @@ La posibilidad de elegir entre varios tamaños de RAM es muy interesante, pero t
 
 ### Raspberry Pi 3+ vs 4 vs 5
 
-||Raspberry Pi 5|Raspberry Pi 4	|Raspberry Pi 3 B+
-|---|---|---|---
-|CPU|Broadcom BCM2712 quad-core 64-bit Arm Cortex-A76 @ 2.4GHz |Broadcom BCM2711, Quad-core Cortex-A72 (ARM v8) 64-bit SoC @ 1.5GHz	|Broadcom BCM2837B0 quad-core A53 (ARMv8) 64-bi @ 1.4GHz
-|GPU|Broadcom VideoCore VII|	Broadcom VideoCore VI|	Broadcom Videocore-IV
-|RAM|2GB, 4GB o 8GB LPDDR4X-4267|	1 GB, 2 GB, o 4 GB LPDDR4 SDRAM	|1 GB LPDDR2 SDRAM
-|Bluetooth|	Bluetooth 5.0, BLE	|	Bluetooth 5.0, BLE	|Bluetooth 4.2, BLE
-|Pantalla y sonido	|2 × micro-HDMI|2 × micro-HDMI 2.0, 3.5 mm audio-vídeo analógico|	HDMI, 3.5 mm audio-vídeo analógico 
-|USB	|2x USB 3.0 + 2x USB 2.0	|2x USB 3.0 + 2x USB 2.0	|4x USB 2.0
-|Ethernet|Gigabit Ethernet, with PoE+ support|	Native Gigabit Ethernet	|300 Mbps Giga Ethernet
-|Video Decoder|4Kp60 HEVC|	H.265 4Kp60, H.264 1080p60|	H.264 & MPEG-4 1080p30
-|Aimentación|5V vía USB type-C con 5A|	5V vía USB type-C con 3A y GPIO  a 3A| 5V vía micro USB con 2.5A y GPIO a 3A
-|Expansión|	40-pin GPIO |	40-pin GPIO |40-pin GPIO 
-|Wifi	|Dual-band 802.11ac Wi-Fi|2.4 GHz y 5 GHz 802.11b/g/n/a wifi LAN	|2.4 GHz y 5 GHz 802.11b/g/n/a wifi LAN
-|Almacenamiento|	microSD card	|	microSD card	|microSD card
-|Precio (octubre de 2024)|59€ - 2GB, 70€ - 4GB, 90€ - 8GB	|46€ - 1GB, 56€ – 2GB, 70€ – 4GB, 90€ – 8GB|43€ – 1 GB RAM
+Vamos a hacer una tabla comparativa entre los 3 modelos en formato placa disponibles a día de hoy
+
+|                          | Raspberry Pi 5                                            | Raspberry Pi 4                                                      | Raspberry Pi 3 B+                                       |
+| ------------------------ | --------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------- |
+| CPU                      | Broadcom BCM2712 quad-core 64-bit Arm Cortex-A76 @ 2.4GHz | Broadcom BCM2711, Quad-core Cortex-A72 (ARM v8) 64-bit SoC @ 1.5GHz | Broadcom BCM2837B0 quad-core A53 (ARMv8) 64-bi @ 1.4GHz |
+| GPU                      | Broadcom VideoCore VII                                    | Broadcom VideoCore VI                                               | Broadcom Videocore-IV                                   |
+| RAM                      | 2GB, 4GB o 8GB LPDDR4X-4267                               | 1 GB, 2 GB, o 4 GB LPDDR4 SDRAM                                     | 1 GB LPDDR2 SDRAM                                       |
+| Bluetooth                | Bluetooth 5.0, BLE                                        | Bluetooth 5.0, BLE                                                  | Bluetooth 4.2, BLE                                      |
+| Pantalla y sonido        | 2 × micro-HDMI                                            | 2 × micro-HDMI 2.0, 3.5 mm audio-vídeo analógico                    | HDMI, 3.5 mm audio-vídeo analógico                      |
+| USB                      | 2x USB 3.0 + 2x USB 2.0                                   | 2x USB 3.0 + 2x USB 2.0                                             | 4x USB 2.0                                              |
+| Ethernet                 | Gigabit Ethernet, with PoE+ support                       | Native Gigabit Ethernet                                             | 300 Mbps Giga Ethernet                                  |
+| Video Decoder            | 4Kp60 HEVC                                                | H.265 4Kp60, H.264 1080p60                                          | H.264 & MPEG-4 1080p30                                  |
+| Aimentación              | 5V vía USB type-C con 5A                                  | 5V vía USB type-C con 3A y GPIO  a 3A                               | 5V vía micro USB con 2.5A y GPIO a 3A                   |
+| Expansión                | 40-pin GPIO                                               | 40-pin GPIO                                                         | 40-pin GPIO                                             |
+| Wifi                     | Dual-band 802.11ac Wi-Fi                                  | 2.4 GHz y 5 GHz 802.11b/g/n/a wifi LAN                              | 2.4 GHz y 5 GHz 802.11b/g/n/a wifi LAN                  |
+| Almacenamiento           | microSD card                                              | microSD card                                                        | microSD card                                            |
+| Precio (octubre de 2024) | 59€ - 2GB, 70€ - 4GB, 90€ - 8GB                           | 46€ - 1GB, 56€ – 2GB, 70€ – 4GB, 90€ – 8GB                          | 43€ – 1 GB RAM                                          |
 
 Cómo podemos ver, la V5 gana en todas las características aunque la versión 4 sigue siendo apta para muchos otros usos. 
 

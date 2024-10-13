@@ -1,3 +1,6 @@
+
+
+
 ## General
 
 * Comprobar que las fotos no son enlaces a páginas web, si no que se han descargado y tienen extensión parecida a jpg, png... en los temas anteriores a 2.2 que no he revisado en ese aspecto.

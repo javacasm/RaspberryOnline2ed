@@ -22,7 +22,7 @@ A día de hoy tenemos disponibles en el mercado al menos 4 modelos de Raspberry 
 
 ## ¿Cuál elegiremos?
 
-Por todo esto te recomiendo, si tu presupuesto te lo permite...
+Por todo esto, si tu presupuesto te lo permite...
 
 * Te recomiendo una Raspberry Pi 5, con al menos 4Gb de RAM aunque el curso se puede hacer perfectamente con cualquiera de los modelos 4.
 * Fuente de alimentación de 5V con conector USB tipo C con al menos 5A (unos 27W) para la Raspberry Pi 5 y 3A con USB-C para la Raspberry 4.
@@ -67,7 +67,7 @@ Estos materiales y los proyectos no son necesarios para superar los test y tarea
 
 ![Kit Raspberry Pi](./images/raspberry-pi-4-kit-basico.jpg)
 
-En la mayoría de estas tiendas, como [en tiendatec](https://www.tiendatec.es/13-kits-raspberry-pi), puedes encontrar kits que incluyen todo lo necesario y te aseguras que son los adecuados.
+En la mayoría de estas tiendas, como en [TiendaTec](https://www.tiendatec.es/13-kits-raspberry-pi), puedes encontrar kits que incluyen todo lo necesario y te aseguras que son los adecuados.
 
-También puedes encontrar kits en amazon o en aliexpress, pero comprueba las opniones de los usuarios antes de comprar...
+También puedes encontrar kits en amazon o en aliexpress, pero comprueba las opiniones de los usuarios antes de comprar...
 
