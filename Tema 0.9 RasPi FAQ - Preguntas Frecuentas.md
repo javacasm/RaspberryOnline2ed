@@ -1,8 +1,11 @@
-# RaspiFAQ
+# Raspi FAQ
 
 ## General
 
-* ¿Es openSource? 
+* ¿La Raspberry Pi Pico es compatible las otras Raspberry?
+	* Aunque comparte nombre, porque está diseñada también por la Fundación Raspberry Pi, la Pico es un micontrolador, no un miniordenador y es más parecido a un Arduino (Realmente más parecido a un ESP32)
+
+* ¿Es Open Source? 
 	* Casi sí, pero [lo será](http://hackaday.com/2017/01/14/blob-less-raspberry-pi-linux-is-a-step-closer/), faltan por liberar algunas partes del software del driver de video que sólo están disponibles como fichero binario (sin código fuente).
 
 * ¿De verdad cuesta 35$? 
@@ -16,20 +19,26 @@
 
 * ¿Qué significan las luces en Raspberry Pi? 
 	* En la Versión 1
-		PWR 5V alimentación ok
-		OK 	Acceso a la SD
-		FDX 	Ethernet Full Dúplex conectada
-		LNK 	Ethernet conectado
-		10M	Ethernet de 100 Mbps conectada. 
-	* En versiones posteriores (de la V2 hasta la V4), el color verde significa que está encendido y el rojo, acceso a disco.
-	* en la V5, hay un único led que está en verde indicando el funcionamiento o rojo cuando está apagado.
+
+		| LED  | Significado                     |
+		| ---- | ------------------------------- |
+		| PWR  | 5V alimentación ok              |
+		| OK   | Acceso correcto a la tarjeta SD |
+		| FDX  | Ethernet Full Dúplex conectada  |
+		| LNK  | Ethernet conectada              |
+		| 100M | Ethernet de 100 Mbps conectada  |
+
+* En versiones posteriores (de la V2 hasta la V4), el color verde significa que está encendido y el rojo, acceso a disco.
+* En la V5, hay un único led que está en verde indicando el funcionamiento o rojo cuando está apagado.
 
 * ¿Cómo debo apagar mi Raspberry Pi? 
 	* Hasta la Raspberry Pi 4, como no tenemos interruptor,  la mejor forma de apagarlas es usando comandos en el terminar. Podemos usar  _halt_  o _shutdown_, que como necesita privilegios de  administrador  tendríamos que ejecutar de la siguiente forma:
 		```sh	
 		sudo halt
 		```
+		
 		ó
+		
 		```sh
 		sudo shutdown -h 
 		```
@@ -41,6 +50,7 @@
 
 * ¿Qué versión tengo? 
 	* Podemos saber la versión de Raspberry que tenemos usando el siguiente comando en las versiones más modernas:
+
 		```sh
 		cat /sys/firmware/devicetree/base/model 
 		```
@@ -59,18 +69,19 @@
 		```
 		* Obtendremos una información similar a esta en un Raspberry Pi 3+:
 
-		Processor       : ARMv6-compatible processor rev 7 (v6l)
-		BogoMIPS      : 847.05
-		Features         : swp half thumb fastmult vfp edsp java tls
-		CPU implementer : 0x41
-		CPU architecture: 7
-		CPU variant     : 0x0
-		CPU part          : 0xb76
-		CPU revision    : 7
-		Hardware         : BCM2708
-		Revision           : 0002
-		Serial                : 000000000abc0ab1
-* En los modelos más modernos al tener varios núcleos el procesador obtendremos la información de cada uno de ellos
+			Processor       : ARMv6-compatible processor rev 7 (v6l)
+			BogoMIPS      : 847.05
+			Features         : swp half thumb fastmult vfp edsp java tls
+			CPU implementer : 0x41
+			CPU architecture: 7
+			CPU variant     : 0x0
+			CPU part          : 0xb76
+			CPU revision    : 7
+			Hardware         : BCM2708
+			Revision           : 0002
+			Serial                : 000000000abc0ab1
+			
+* En los modelos más modernos al tener varios núcleos el procesador, obtendremos la información de cada uno de ellos
 
 
 ## Cacharreo (cables)
@@ -79,39 +90,36 @@
 	* Sí, pero con cuidado, un cortocircuito en la placa puede estropearla definitivamente.
 
 * ¿Puede controlar un motor? 
-	* No directamente, sí con una plaquita que incluya transistores o drivers
+	* No directamente, sí con una plaquita que incluya transistores o drivers.
 
-* ¿Qué necesito para hacer un robot? * Una placa controladora, motores, baterías, sensores ...
+* ¿Qué necesito para hacer un robot?
+	* Una placa controladora, motores, baterías, sensores...
 
 
 ## Administrando (¡es Linux!)
 
-* ¿Cuál es el usuario por defecto?
+* ¿Cuál es el usuario por defecto? 
+	* Es “pi”
 
-	Es “pi”
+* ¿Cuál es la contraseña por defecto del usuario pi? 
+	* Es “raspberry”
 
-* ¿Cuál es la contraseña por defecto del usuario pi?
-
-	Es “raspberry”
-
-* ¿Cuál es la contraseña del usuario root?
-
-	El usuario root no tiene contraseña para evitar acceso indeseados. Para ejecutar algún comando como root podemos usar el comando “sudo”
-
+* ¿Cuál es la contraseña del usuario root?	
+	* El usuario root no tiene contraseña para evitar acceso indeseados. Para ejecutar algún comando como root tenemos que usar el comando “sudo”
+	``` sh
 		sudo comando
-
-	nos solicitará la contraseña del usuario actual
-
-	Si necesitamos por alguna razón permanecer como root (lo cual se desaconseja en todos los Linux) podemos usar
+	``` 
+	* nos solicitará la contraseña del usuario actual.
+	
+	* Si necesitamos por alguna razón permanecer como root (lo cual se desaconseja en todos los Linux) podemos usar
 	```sh
 		sudo su -i
-   ```
+	```
 	ó
 	```sh
 		sudo su -
-	```
-	Cuando acabemos podemos salir con Ctrl-D o con “exit”
+	``` 
+	* Cuando acabemos podemos salir con Ctrl-D o con “exit”.
 
-* Necesito que me de acceso ssh desde el inicio o  el escritorio me ha dado un error y no puedo entrar.
-
-	Crea un fichero vacío llamado **"ssh"** en directorio raíz de la tarjeta y vuelve a arrancar.
+* No puedo acceder a mi escritorio o necesito acceder desde fuera a mi Raspberry.
+	* Necesitamos activar el acceso remoto vía _ssh_, para ello, creamos un fichero vacío llamado *ssh* en el directorio raíz de la tarjeta sd y vuelve a arrancar.

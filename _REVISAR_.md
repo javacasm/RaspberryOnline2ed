@@ -1,8 +1,12 @@
 
 ## Índice curso en Campus Tecnológico
 
-## Unidad 3:  
+### Unidad 3:  
 Instalación en Raspberry Pi 4 (debería actualizarse a Raspberry Pi 5, no sé si sólo el nombre o algo más).
+### apartado Materiales 
+* Qué componentes necesito para realizar las prácticas del curso?
+ * Material necesario:
+	 * Si vas a comprar una nueva placa RP te recomiendo Raspberry Pi 4 (debería actualizarse a Raspberry Pi 5 y comprobar si en el resto del material que relacionas, están actualizadas las características técnicas necesarias).
 
 
 ## General
@@ -57,6 +61,10 @@ Instalación en Raspberry Pi 4 (debería actualizarse a Raspberry Pi 5, no sé s
 * 2.3.1 RockPi incluir
 
 * Actualizar imagen* ![](./images/esquema.png)
+* Tema 2.2.1 Raspberry Pi 400 
+	* El texto está actualizado pero lo he colocado ya tachado para poder localizar una posible actualización del precio si fuera necesario.  ~~Se vende como un kit con todo lo necesario para usarse (tarjeta SD, ratón, alimentación, cables, fuente de alimentación y libro traducido) salvo el monitor por 100$ y por 70$ sólo la Raspberry Pi 400, con teclado Inglés, USA, francés, italiano, alemán o español.*
+	* También añado el enlace  que está vigente en 2024, que hace referencia al precio del kit en la web para tenerlo localizado y por si hubiera que cambiarlo. https://magpi.raspberrypi.com/articles/raspberry-pi-400-specifications-benchmarks-and-personal-computer-kit
+
 
 * Tema 2.2. versiones
 	* Creo que ~~la foto de Raspberry Pi 4 debería actualizarse a la nueva placa Raspberry Pi 5 y~~ traducir si es posible, los nombres de los componentes que hay detallados en la misma* ![Raspberry Pi 4](./images/hardware-overview-1400.jpg)
@@ -67,8 +75,11 @@ Instalación en Raspberry Pi 4 (debería actualizarse a Raspberry Pi 5, no sé s
 	
 	* Características Raspberry Pi 4: si es posible, en algún momento, tal vez deberían traducirse los nombres de los componentes.![Características Raspberry Pi 4](./images/raspi4Descripcion.png)
 
-
+* Tema 2.3 Clones. 
+	* Actualizadas características e imagen hasta el clon BeagleBoard, me pondré con más tiempo a actualizar el resto de los clones. QUEDA PENDIENTE.
+	 
 ## Tema 4
+
 
 * Añadir Octoprint del curso de impresión 3D 7.5.1
 

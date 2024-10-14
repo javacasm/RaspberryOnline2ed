@@ -1,6 +1,6 @@
 ## Instalación
 
-Desde hace poco se ha publicado una aplicación llamada **Raspberry Pi Imager** que permite hacer aún más sencilla la instalación del sistema operativo, encargándose de descargar, formatear y escribir la imagen del sistema directamente en la tarjeta SD
+Desde hace poco se ha publicado una aplicación llamada [**Raspberry Pi Imager**](https://www.raspberrypi.com/software/) que permite hacer aún más sencilla la instalación del sistema operativo, encargándose de descargar, formatear y escribir la imagen del sistema directamente en la tarjeta SD. Lo descargamos desde el apartado de [Software de la página de Raspberry Pi](https://www.raspberrypi.com/software/)
 
 ![Imager](./images/Imager.png)
 
@@ -53,64 +53,33 @@ También podemos usar RPI Imager para formatear la tarjeta, para crear tarjetas 
 [Vídeo: Instalación de Raspberry Pi OS usando Imager](https://drive.google.com/file/d/1vZCdJa2551mNAdr1cwsOAJMn440eqXMG/view?usp=sharing)
 
 
-### Instalación Manual
-
-Vamos a ver cómo hacer todo el proceso manualmente para entender los pasos o por si Imager no nos permite usar esa versión de sistema operativo.
-
-Realmente **NO RECOMIENDO HACERLO ASÍ** salvo que ya lo hayas hecho y controles 100% del tema.	
-
-¿Qué necesitamos?
-
-* Formatear tarjeta ([Formatter4](https://www.sdcard.org/downloads/formatter/))
-* Descargamos la imagen del sistema que queramos desde la [página de descargas (Downloads) de la web de Raspberry.org](https://www.raspberrypi.com/software/)
-* Si usamos una imagen tipo Noobs, basta con que descomprimamos el contenido del fichero zip en la tarjeta SD
-* Si es una imagen (fichero tipo img o iso) lo grabamos con RPI Imager o por ejemplo con la herramienta multiplataforma Etcher (Windows, OsX y Linux) para instalar imágenes https://www.balena.io/etcher/
-
-	![Etcher](./images/etcher.io.png)
-* ¿Qué imagen usar?:
-	* Empecemos con [Noobs](https://github.com/raspberrypi/noobs) que nos va a permitir instalar otras imágenes.
-    * Tenemos 2 opciones para descargar la imagen de noobs:
-        * Una instalación mínima de noobs, que descargará luego todo lo necesario desde la red.
-        * Una instalación base de Noobs que incluye todo lo necesario para instalar el sistema operativo Raspbian, que es el más usado y que una vez copiado en la tarjeta no necesita conexión a la red.
-	
-
-	![noobs](./images/noobs.png)
-
-Vemos que desde la pantalla de arranque de noobs nos permite elegir la imagen que queremos instalar. 
-
-Algunas aparecen directamente (ya están en la tarjeta) y si tenemos conectividad a internet (bien por que tenemos conectado un cable ethernet o porque hemos configurado el wifi) podremos seleccionar más imágenes, que se descargarán durante la instalación.
-
-Podemos instalar varios sistemas operativos y cada vez que arranquemos podremos escoger cuál queremos usar.
-
-![Instalación de varios sistemas](./images/VariosSistemas.jpg)
-
-Según la selección que hagamos hará falta más espacio en la tarjeta y pudiera ocurrir que no quepan todos los que queremos instalar.
-
-Podemos seleccionar el idioma y la configuración de teclado
-
-Para empezar deberíamos seleccionar Raspbian y se arrancará el proceso de instalación, que tarda unos minutos
-
-##  ¡¡¡Arrancar!!!
-
-![Booting Raspbian](./images/Booting-Raspbian.png)
-
-Al arrancar el sistema Raspbian aparecerá una pantalla multicolor que nos indica que la imagen está operativa.
-
-![Imagen multicolor en el arranque de Raspberry pi](./images/raspberry-pi-boot-rainbow.jpg)
-
-Y después se verá en formato texto el arranque
-
-![Arranque de Raspberry Pi](./images/raspi2boot.jpg)
-
-Si hemos instalado varios sistemas podremos elegir entre ellos, si no hacemos nada arrancará el último que usáramos.
-
-![Selección de OS](./images/ArranqueVariosSistemas.jpg)
-
 Si todo va bien al cabo de unos segundos veremos el escritorio Pixel, un escritorio ligero pero con buen aspecto y con la funcionalidad a la que estamos acostumbrados hoy en día
 
 ![Escritorio Pixel](./images/PixelMenu.png)
 
 La primera vez que arranquemos tendremos que configurar, si no lo hemos hecho ya, el idioma y la zona horaria, establecer la contraseña del usuario por defecto “pi”  y el sistema se actualizará.
+
+## ¿Escritorio o línea de comandos?
+
+La Raspberry Pi (y todos los ordenadores que usan Linux/Unix) se puede usar con el ratón o con comandos desde el terminal del sistema: 
+
+* El ratón es más intuitivo, sólo hay que ir mirando por las opciones de menú, que suelen ser bastante descriptivos.
+* La línea de comandos da un control más detallado y una vez que te acostubras es más productiva, sobre todo porque se pueden automatizar tareas con facilidad.
+
+![Ejemplo de uso de consola/terminal](./images/contenidowww.png)
+
+Sobre los comandos de consola, hay libros y libros y en el curso hemos intentado incluir algunas de las "recetas" más habituales, muchos de ellos tampoco los recuerdo de memoria y los tengo que consultar, por eso están en la documentación del curso.  
+
+Por ejemplo, como veremos un poco más adelante, para instalar software, podemos hacerlo usando el ratón desde la opción "Add/Remove software" del menú "Preferencias" o desde el teclado con  
+
+```bash
+sudo apt update
+sudo apt install wolfram-engine
+```
+
+Hay gente que le gusta usar los comandos y otros son más de ratón, puedes hacer casi lo mismo con los dos sistemas. Usa el que más cómodo te sea. 
+
+## Uso del escritorio
 
 Vamos a ver algunos de los menús e iconos más importantes de pixel.
 
@@ -124,9 +93,11 @@ A la izquierda tenemos el menú de aplicaciones y a la derecha podemos pulsar so
 
 En este [vídeo](https://drive.google.com/file/d/1Xctv-39GG117f1Zm_0QbfQbRZoZd_MKG/view?usp=sharing) podéis ver el uso del entorno visual  Pixel de Raspberry Pi
 
-## Configuración
+## Configuración del sistema
 
-Existe un asistente para configurar la manera en la que funcionará nuestra Raspberry. Podemos hacerlo desde el menú de configuración
+Existe una aplicación para configurar la manera en la que funcionará nuestra Raspberry. Podemos hacerlo desde el menú de configuración.
+
+(Esta aplicación cambia con bastante frecuencia y puede ser que las opciones que veas en tu equipo no sean exactamente las mismas que se muestran en las imágenes)
 
 ![Menú de configuración de Raspberry](./images/ConfiguracionRaspberry.png)
 
@@ -168,11 +139,13 @@ Esta parte de la configuración es fundamental para configurar la zona horaria, 
 
 ### Configuración desde consola
 
-Si necesitamos configurar desde consola de texto  podemos lanzar la aplicación de configuración escribiendo:
+Si necesitamos configurar desde consola de texto, también  podemos lanzar la aplicación de configuración escribiendo:
 
 ```sh
 sudo raspi-config
 ```
+
+(Recuerda que usamos _sudo_ para indicar que necesitamos acceder a la aplicación como administrador)
 
 Y obtendremos las pantallas de configuración. (Puede variar algo según la versión)
 
@@ -184,14 +157,7 @@ Y obtendremos las pantallas de configuración. (Puede variar algo según la vers
 
 ![Configuración de overclock (aceleración)](./images/overcock.png)
 
-Una vez configurado podemos abrir el entorno visual con
-
-```sh
-startx
-```
-
-![Arrancamos el entorno visual con startx](./images/raspX.png)
-
+Un
 En cualquier momento podemos volver a reconfigurar con
 
 ```sh

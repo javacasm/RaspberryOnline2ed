@@ -4,7 +4,6 @@ Vamos a hacer una instalación ahora en una Raspberry Pi Zero W que vamos a util
 
 Una vez conectada al Wifi, accederemos a ella vía ssh, usando terminal/consola.
 
-
 1. Instalaremos Raspberry Pi OS Lite usando Imager
 1. Inicialmente conectaremos un teclado y una pantalla HDMI para una primera configuración por consola.
 1. Colocamos la Raspberry Pi Zero W en su caja y la cerramos con cuidado
@@ -16,7 +15,7 @@ Colocamos la Raspberry Pi Zero W en su caja y conectamos la alimentación y qued
 
 ![Raspi Zero con alimentación](./images/RaspiZeroAlimantacion.jpg)
 
-Ahora ya arrancamos para hacer la configuración necesaria desde la consola, haciendo la configuración inical:
+Ahora ya arrancamos para hacer la configuración necesaria desde la consola, haciendo la configuración inicial:
 
 * Cambiamos contraseña.
 * Configuramos Wifi.
@@ -24,7 +23,7 @@ Ahora ya arrancamos para hacer la configuración necesaria desde la consola, hac
 * Activamos ssh.
 * Configuramos idioma, zona horaria y teclado.
 
-Todo ello lo haremos usando la configuración por consola con raspi-config
+Todo ello lo haremos usando la configuración por consola con _raspi-config_
 
 ```sh
 sudo raspi-config

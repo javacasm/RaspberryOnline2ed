@@ -12,7 +12,7 @@ En las últimas versiones de Raspberry Pi OS (antes Raspbian) se incluye una apl
 
 La principal revista (mensual) sobre Raspberry Pi es [The Magpi](https://magpi.raspberrypi.com/). Es una fuente de información extraordinaria, repleta de proyectos y consejos. Se puede descargar gratuitamente pero si compras la edición en papel, suele traer regalos. En el famoso número 40 de la revista ¡regalaban una Raspberry Pi Zero! Ni que decir tiene que se agotó rápidamente.
 
-Puedes descargar gratis [ todos los números](https://magpi.raspberrypi.com/issues) directamente.
+Puedes descargar gratis [todos los números](https://magpi.raspberrypi.com/issues) directamente.
 
 También han creado una colección de [libros](https://magpi.raspberrypi.com/books), algunos temáticos (sobre la cámara, programación en C, Scratch, etc.) o con proyectos.
 

@@ -1,11 +1,8 @@
-## Instalación en Raspberry Pi 4
+## Arranque desde USB
 
-La instalación en la Raspberry tiene algunos detalles a tener en cuenta:
+Podemos hacer la instalación en un disco USB (o pendrive USB) para usarlo como disco del sistema sin necesidad de tarjeta SD.
 
-* De los 2 HDMI, el de más a la izquierda es el 0 y es el que debemos conectar sí sólo se va a usar un monitor.
-* Podemos hacer la instalación en un disco USB (o pendrive USB) para usarlo como disco del sistema sin necesidad de tarjeta SD.
-
-También podemos instalar una versión de 64bits experimental, todavía en estado beta y a la que le faltan todavía algunos drivers esenciales. [Más información](https://forums.raspberrypi.com/viewtopic.php?t=275370), descargando las imágenes desde la [página de la beta](https://downloads.raspberrypi.org/raspios_arm64/images/)
+También podemos instalar una versiones  experimentales, todavía en estado beta y a la que le faltan todavía algunos drivers esenciales. [Más información](https://forums.raspberrypi.com/viewtopic.php?t=275370), descargando las imágenes desde la [página de la beta](https://downloads.raspberrypi.org/raspios_arm64/images/)
 
 ### Instalación para arranque con disco USB
 
@@ -54,6 +51,5 @@ sudo rpi-eeprom-update  -d -f /lib/firmware/raspberrypi/bootloader/stable/pieepr
 [![Vídeo: Cómo arrancar Raspberry Pi 4 desde USB](https://img.youtube.com/vi/jgCfJbiEbHE/0.jpg)](https://drive.google.com/file/d/12cLBP4SUQRcx7pZciu3VnC-YwB73_Jyd/view?usp=sharing)
 
 En [este enlace](https://www.jeffgeerling.com/blog/2020/im-booting-my-raspberry-pi-4-usb-ssd) se ve que la mejora de rendimiento puede ser realmente importante.
-
 
 

@@ -1,39 +1,64 @@
-SFAQ="RasPi FAQ - Preguntas Frecuentas.docx"
-FFAQ="RasPi FAQ - Preguntas Frecuentas.md"
-S1="Tema 1 - Qué es Raspberry.docx"
-S2="Tema 2 - Características de Raspberry.docx"
-S3="Tema 3 - Instalación de Raspberry.docx"
-S4="Tema 4 - Uso de Raspberry.docx"
-S5="Tema 5 - Programación con Raspberry.docx"
-S6="Tema 6 - Electrónica con Raspberry.docx"
-S7="Tema 7 - Proyectos con Raspberry.docx"
 
-FMAT="Materiales.md"
+S1="1 Qué es Raspberry.docx"
+S2="2 Características de Raspberry.docx"
+S3="3 Instalación de Raspberry.docx"
+S4="4 Uso de Raspberry.docx"
+S5="5 Programación con Raspberry.docx"
+S6="6 Electrónica con Raspberry.docx"
+S7="7 Proyectos con Raspberry.docx"
+
+SFAQ="RasPi FAQ - Preguntas Frecuentas.docx"
+FFAQ="Tema 0.9 RasPi FAQ - Preguntas Frecuentas.md"
+
 SMAT="Materiales necesarios.docx"
 
-DIR_PUBLICACION="./publicacion"
+FINDEX="Temario 4ed.md"
+SINDEX="Índice 4ed.docx"
 
+FCV="Tema 0.5 CV javacasm.md"
+SCV="CV javacasm.docx"
 
-all: 1 2 3 4 5 6 7 FAQ MAT
+DIR_PUBLICACION="./publicación/"
 
+CV:
+	pandoc --pdf-engine=xelatex   \
+		-V papersize:a4paper    \
+		--template=./LaTeX_ES.latex    \
+		--reference-doc=plantilla_raspy.docx \
+		-o  $(DIR_PUBLICACION)$(SCV)  \
+		$(FCV)
 MAT:
 	pandoc --pdf-engine=xelatex   \
 		-V papersize:a4paper    \
 		--template=./LaTeX_ES.latex    \
-		-o  $(SMAT)  \
-		Cabecera.md        \
-		Cabecera_latex.md \
-		$(FMAT)
-
+		-o  $(DIR_PUBLICACION)$(SMAT)  \
+		--reference-doc=plantilla_raspy.docx \
+		"Tema 0.1.0 Materiales.md" \
+		"Tema 3.0.1 Qué Raspberry elegir.md" \
+		"Tema 3.0.2 Componentes necesarios.md" \
+		"Tema 0.1.3 Material electrónico.md" \
+		"Tema 3.0.4 Carcasas.md" \
+		"Tema 3.0.5 Dónde encontrarlos.md" \
 
 FAQ:
-pandoc --pdf-engine=xelatex   \
+	pandoc --pdf-engine=xelatex   \
 		-V papersize:a4paper    \
 		--template=./LaTeX_ES.latex    \
-		-o  $(SFAQ)  \
-		Cabecera.md        \
+		-o  $(DIR_PUBLICACION)$(SFAQ)  \
+		--reference-doc=plantilla_raspy.docx \
+		Portada.md        \
 		Cabecera_latex.md \
 		$(FFAQ)
+
+INDEX:
+	pandoc --pdf-engine=xelatex   \
+		-V papersize:a4paper    \
+		--template=./LaTeX_ES.latex    \
+		--reference-doc=plantilla_raspy.docx \
+		-o  $(DIR_PUBLICACION)$(SINDEX)  \
+		Portada.md        \
+		Cabecera_latex.md \
+		$(FINDEX)
 
 
 1:
@@ -41,8 +66,9 @@ pandoc --pdf-engine=xelatex   \
 		--from=markdown \
 		-V papersize:a4paper \
 		--template=./LaTeX_ES.latex \
-		-o $(S1) \
-		Cabecera.md        \
+		--reference-doc=plantilla_raspy.docx \
+		-o $(DIR_PUBLICACION)$(S1) \
+		Portada.md        \
 		Cabecera_latex.md \
 		"Tema 1.0 Qué es Raspberry.md" \
 		"Tema 1.1 Algo de Historia.md" \
@@ -53,8 +79,10 @@ pandoc --pdf-engine=xelatex   \
 	pandoc --pdf-engine=xelatex       \
 		-V papersize:a4paper        \
 		--template=./LaTeX_ES.latex \
-		-o $(S2) \
-		Cabecera.md           \
+		--reference-doc=plantilla_raspy.docx \
+		-o $(DIR_PUBLICACION)$(S2) \
+		Portada.md           \
+		Cabecera_latex.md \
 		"Tema 2.0 Características de Raspberry.md" \
 		"Tema 2.1 Arquitectura.md" \
 		"Tema 2.2 Versiones.md" \
@@ -65,23 +93,31 @@ pandoc --pdf-engine=xelatex   \
 	pandoc --pdf-engine=xelatex       \
 		-V papersize:a4paper        \
 		--template=./LaTeX_ES.latex \
-		--reference-doc=plantilla.docx \
-		-o $(S3) \
-		Cabecera.md        \
+		--reference-doc=plantilla_raspy.docx \
+		-o $(DIR_PUBLICACION)$(S3) \
+		Portada.md        \
 		Cabecera_latex.md \
 		"Tema 3.0 Instalación de Raspberry Pi.md" \
+		"Tema 3.0.1 Qué Raspberry elegir.md" \
+		"Tema 3.0.2 Componentes necesarios.md" \
+		"Tema 3.0.4 Carcasas.md" \
+		"Tema 3.0.5 Dónde encontrarlos.md" \
 		"Tema 3.1 Sistemas operativos disponibles.md" \
 		"Tema 3.2 Instalación.md" \
-		"Tema 3.3 Raspberry Pi i4.md" \
-		"Tema 3.4 Raspberr Pi Zero W.md" \
-		"Tema 3.6 Alimentación.md"
+		"Tema 3.3 Instalación manual.md" \
+		"Tema 3.4 Arranque desde USB.md" \
+		"Tema 3.4.1 Disco SSD.md" \
+		"Tema 3.5 Instalación en Raspberry Pi Zero W.md"  \
+		"Tema 3.6 Alimentación.md" \
+		"Tema 3.7 TFT.md"
 
 4:
 	pandoc --pdf-engine=xelatex       \
 		-V papersize:a4paper        \
 		--template=./LaTeX_ES.latex \
+		--reference-doc=plantilla_raspy.docx \				
 		-o $(S4) \
-		Cabecera.md        \
+		Portada.md        \
 		Cabecera_latex.md \
 		"Tema 4.0 Uso de Raspberry Pi.md" \
 		"Tema 4.1 Matenimiento.md" \
@@ -106,8 +142,9 @@ pandoc --pdf-engine=xelatex   \
 	pandoc  --pdf-engine=xelatex   \
 		-V papersize:a4paper    \
 		--template=./LaTeX_ES.latex    \
+		--reference-doc=plantilla_raspy.docx \				
 		-o  $(S5)  \
-		Cabecera.md        \
+		Portada.md        \
 		Cabecera_latex.md \
 		'Tema 5.0 Programacion.md' \
 		'Tema 5.1.0.Scratch3.md' \
@@ -129,8 +166,9 @@ pandoc --pdf-engine=xelatex   \
 	pandoc --pdf-engine=xelatex   \
 		-V papersize:a4paper    \
 		--template=./LaTeX_ES.latex    \
+		--reference-doc=plantilla_raspy.docx \				
 		-o $(S6)     \
-		Cabecera.md        \
+		Portada.md        \
 		Cabecera_latex.md \
 		'Tema 6.0 - Electrónica con Raspberry.md' \
 		'Tema 6.0.5 Cuidados.md' \
@@ -149,8 +187,9 @@ pandoc --pdf-engine=xelatex   \
 	pandoc  --pdf-engine=xelatex   \
 		-V papersize:a4paper    \
 		--template=./LaTeX_ES.latex    \
+		--reference-doc=plantilla_raspy.docx \				
 		-o  $(S7)  \
-		Cabecera.md        \
+		Portada.md        \
 		Cabecera_latex.md \
 		'Tema 7.0 - Robótica con Raspberry.md' \
 		'Tema 7.1 CocheRobot.md' \
@@ -176,3 +215,6 @@ push:
 	git commit -m "update" $(S2);
 	git commit -m "update" $(S1);
 	git push;
+
+
+
