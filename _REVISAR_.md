@@ -13,22 +13,22 @@ Instalación en Raspberry Pi 4 (debería actualizarse a Raspberry Pi 5, no sé s
 
 * Comprobar que las fotos no son enlaces a páginas web, si no que se han descargado y tienen extensión parecida a jpg, png... en los temas anteriores a 2.2 que no he revisado en ese aspecto.
 * Revisar que siempre se dice que la última es la Raspberry Pi 5
-* hablar de la Pico
+* ~~hablar de la Pico~~
 * VNC/Connect 
 * ~~Materiales~~
 * Hacer lista de materiales para el Robot
-* Raspi FAQ
+* ~~Raspi FAQ~~
 
 
 ## RasPi FAQ
 
-* ¿Eliminar esta pregunta o actualizarla ?¿De verdad cuesta 35$?
-	La placa sí, pero por si misma no es más que un pisapapeles Geek, necesitamos cómo mínimo la tarjeta SD y la alimentación.
+* ~~¿Eliminar esta pregunta o actualizarla ?¿De verdad cuesta 35$?
+	La placa sí, pero por si misma no es más que un pisapapeles Geek, necesitamos cómo mínimo la tarjeta SD y la alimentación.~~
 
-* Lineas de código 36 a 46 debería ser formato de código
-* Líneas de código de 54 a 83, mejor hacer tabla
-* Líneas de código del 109 al 111
-* Líneas de código del 114 al 123
+* ~~Lineas de código 36 a 46 debería ser formato de código~~
+* ~~Líneas de código de 54 a 83, mejor hacer tabla~~
+* ~~Líneas de código del 109 al 111~~
+* ~~Líneas de código del 114 al 1~~23
 ## ~~Tema 1~~
 
 * ~~Raspberry Pi vs Arduino en 1.1~~
