@@ -25,6 +25,10 @@ Instalación en Raspberry Pi 4 (debería actualizarse a Raspberry Pi 5, no sé s
 * ¿Eliminar esta pregunta o actualizarla ?¿De verdad cuesta 35$?
 	La placa sí, pero por si misma no es más que un pisapapeles Geek, necesitamos cómo mínimo la tarjeta SD y la alimentación.
 
+* Lineas de código 36 a 46 debería ser formato de código
+* Líneas de código de 54 a 83, mejor hacer tabla
+* Líneas de código del 109 al 111
+* Líneas de código del 114 al 123
 ## ~~Tema 1~~
 
 * ~~Raspberry Pi vs Arduino en 1.1~~

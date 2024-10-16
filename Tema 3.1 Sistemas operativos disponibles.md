@@ -6,7 +6,7 @@ Piensa que para cambiar entre sistemas operativos, sólo tienes que apagar tu Ra
 
 Puedes ver algunos de ellos en la página de [descargas de Raspberry.org](https://www.raspberrypi.com/software/)
 
-Veamos algunos de los más utilizados:
+Veamos algunos de los más utilizados
 
 ### [Raspberry Pi OS (Raspbian)](https://www.raspberrypi.com/software/operating-systems/)
 
@@ -21,7 +21,9 @@ Podemos elegir entre 3 versiones:
 * Versión **Escritorio** (Desktop) donde tenemos es escritorio gráfico y el sistema básico. No se incluye todo el software opcional
 * Versión **Full** que integra el escritorio y todas las herramientas visuales. 
 
-La primera está pensada para ser usada en servidores y sin herramientas gráficas. Si es para probar yo te recomiendo la tercera, para que veas el software disponible. La segunda la usaremos si queremos hacer nuestra propia instalación de software:
+La primera está pensada para ser usada en servidores y sin herramientas gráficas. Si es para probar yo te recomiendo la tercera, para que veas el software disponible. La segunda la usaremos si queremos hacer nuestra propia instalación de software
+
+### Otras distribuciones
 
 * [Ubuntu Desktop](https://ubuntu.com/download/raspberry-pi): Es una versión de Ubuntu (Linux) para la Raspberry
 
@@ -35,7 +37,7 @@ La primera está pensada para ser usada en servidores y sin herramientas gráfic
 
 * [LibreElec](http://libreelec.tv/): Otra distribución especializada en el entretenimiento y que utiliza el conocido gestor multimedia [Kodi](https://kodi.tv/)
 
-![OpenElec](./images/openelec-vs-osmc-ft-500x281.jpg)
+	![OpenElec](./images/openelec-vs-osmc-ft-500x281.jpg)
 
 * [Android](https://emteria.com/): Se trata de un port de Android para Raspberry. En [este tutorial](https://magpi.raspberrypi.com/articles/android-raspberry-pi) nos dicen cómo instalarla.
 

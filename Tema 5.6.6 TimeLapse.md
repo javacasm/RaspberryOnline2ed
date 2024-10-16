@@ -22,15 +22,15 @@ Para conectar la cámara a la Raspberry Zero, necesitamos un cable especial que 
 
 Lo conectamos de esta forma (ojo a la posición del cable )
 
-![Camara Raspi Zero](./images/CamaraRaspiZero.jpg)
+![Camara Raspberry Pi Zero](./images/CamaraRaspiZero.jpg)
 
 Y lo integramos en la caja con la tapa que tiene el hueco para la cámara.
 
-![Raspi Zero Caja](./images/RaspiZeroCaja.jpg)
+![Raspberry Pi Zero Caja](./images/RaspiZeroCaja.jpg)
 
 Que queda perfectamente integrada y muy compacta
 
-![Raspi Zero Caja Cerrada](./images/RaspiZeroCajaCerrada.jpg)
+![Raspberry Pi Zero Caja Cerrada](./images/RaspiZeroCajaCerrada.jpg)
 
 Ahora sólo nos falta conectar la alimentación al usb marcado como "Power"
 
@@ -38,7 +38,7 @@ Ahora sólo nos falta conectar la alimentación al usb marcado como "Power"
 
 Y nos queda un equipo muy, muy compacto
 
-![Alimentación Raspi Zero](./images/RaspiZeroAlimantacion.jpg)
+![Alimentación Raspberry Pi Zero](./images/RaspiZeroAlimantacion.jpg)
 
 [![Vídeo: Montaje de una Raspberry Pi Zero W para realizar timeLapses](https://img.youtube.com/vi/rhzX1TbOddY/0.jpg)](https://drive.google.com/file/d/1Suec5Q8iQP8J25kktUA8kNM0Muf39usJ/view?usp=sharing)
 

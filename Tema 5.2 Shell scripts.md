@@ -20,10 +20,10 @@ sleep 4;
 done;
 ```
 
-[![Vídeo: Trabajando con Shell  Scripts Raspberry pi](https://img.youtube.com/vi/L5HfjbKyth0/0.jpg)](https://drive.google.com/file/d/1PBeFd8OSPnz6-e5AZa_8DRTYM9F5DKQX/view?usp=sharing)
+[![Vídeo: Trabajando con Shell  Scripts Raspberry Pi](https://img.youtube.com/vi/L5HfjbKyth0/0.jpg)](https://drive.google.com/file/d/1PBeFd8OSPnz6-e5AZa_8DRTYM9F5DKQX/view?usp=sharing)
 
 
-[Vídeo: Trabajando con Shell  Scripts Raspberry pi](https://drive.google.com/file/d/1PBeFd8OSPnz6-e5AZa_8DRTYM9F5DKQX/view?usp=sharing)
+[Vídeo: Trabajando con Shell  Scripts Raspberry Pi](https://drive.google.com/file/d/1PBeFd8OSPnz6-e5AZa_8DRTYM9F5DKQX/view?usp=sharing)
 
 Hagamos ahora un script para hacer un timelapse con una webcam:
 

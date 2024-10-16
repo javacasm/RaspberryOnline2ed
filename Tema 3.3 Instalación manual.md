@@ -42,7 +42,7 @@ Para empezar deberíamos seleccionar Raspbian y se arrancará el proceso de inst
 
 Al arrancar el sistema Raspbian aparecerá una pantalla multicolor que nos indica que la imagen está operativa.
 
-![Imagen multicolor en el arranque de Raspberry pi](./images/raspberry-pi-boot-rainbow.jpg)
+![Imagen multicolor en el arranque de Raspberry Pi](./images/raspberry-pi-boot-rainbow.jpg)
 
 Y después se verá en formato texto el arranque
 

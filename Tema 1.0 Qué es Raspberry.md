@@ -24,5 +24,6 @@ A lo largo del curso veremos los siguientes temas:
 * Familiarizarse con la plataforma Raspberry Pi, aprendiendo a instalar diferentes sistemas operativos y a usarla para diferentes fines.
 * Aprender a realizar programas sencillos usando lenguajes de scripts como Python o Shell.
 * Aprender a montar proyectos fáciles con electrónica que se puedan controlar desde la plataforma.
+
 ![Esquema](./images/esquema-reducido-40.png)
 

@@ -1,10 +1,10 @@
-![JAVacasM](./images/javacasm_2023-transparent.png)
+![](./images/javacasm_2023-transparent.png)
  
 ## José Antonio Vacas Martínez
 
 Licenciado en Ciencias Físicas, con especialidad en Física Teórica, doctorado en _Física Computacional_ por el _Instituto Carlos I_ de la _Universidad de Granada_.  
   
-Actualmente está dedicado a tiempo completo a la formación, especialmente la del profesorado, elaborando y tutorizando cursos presenciales y online, sobre temas relacionados con el mundo Maker: Programación, Impresoras y diseño 3D, robótica, IOT, micro:bit, Arduino, Raspberry Pi ...  impartidos en Centros de Enseñanza del Profesorado (CEP) de Andalucía.
+Actualmente está dedicado a tiempo completo a la formación, especialmente la del profesorado, elaborando y tutorizando cursos presenciales y online sobre temas relacionados con el mundo Maker: Programación, Impresoras y diseño 3D, robótica, IOT, micro:bit, Arduino, Raspberry Pi... impartidos en Centros de Enseñanza del Profesorado (CEP) de Andalucía.
 
 Es coautor, junto con Simon Monk, del libro "Programando la Pico: Aprende programación y electrónica con Raspberry Pi Pico". 
 

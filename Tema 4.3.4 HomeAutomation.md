@@ -22,8 +22,8 @@ Vamos a seguir su propia [guía de instalación](https://www.home-assistant.io/g
 
 Se recomienda el siguiente hardware:
 
-* Raspberry Pi 4 con 2Gb de RAM
-* Tarjeta de 32Gb
+* Raspberry Pi 4 con 2GB de RAM
+* Tarjeta de 32GB
 * Lector de tarjetas SD
 * Conexión directa con cable Ethernet. Aunque funciona con wifi, el rendimiento es mucho mayor con cable.
 

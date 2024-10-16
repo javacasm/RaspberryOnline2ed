@@ -1,6 +1,6 @@
 ## Raspberry como centro multimedia
 
-Otro uso muy extendido de Raspberry es usarla como centro multimedia. En mi caso una Raspberry pi 3 colocada tras la TV ha servido como gestor y reproductor multimedia, con todo lo necesario para poder reproducir tanto vídeo, música o imágenes.
+Otro uso muy extendido de Raspberry es usarla como centro multimedia. En mi caso una Raspberry Pi 3 colocada tras la TV ha servido como gestor y reproductor multimedia, con todo lo necesario para poder reproducir tanto vídeo, música o imágenes.
 
 Existen varias distribuciones como libreElec, openElec, OSMC, xbian,... todas muy similares
 

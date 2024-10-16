@@ -5,7 +5,7 @@
 
 * Familiarizarse con la plataforma Raspberry Pi, aprendiendo a instalarle diversos sistemas operativos y a usarla para diferentes fines.
 * Aprender a ejecutar programas sencillos (shell, Python)
-* Aprender a montar proyectos electrónicos que se puedan controlar desde la Raspberry pi
+* Aprender a montar proyectos electrónicos que se puedan controlar desde la Raspberry Pi
 
 ## Esquema del curso
 

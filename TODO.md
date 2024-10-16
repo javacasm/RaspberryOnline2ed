@@ -75,7 +75,7 @@ https://hackaday.com/2020/07/22/bringing-the-pi-camera-into-focus-with-lego/
 
 https://www.tomshardware.com/amp/how-to/raspberry-pi-face-mask-detector
 
-### Cámra con Raspberry pi
+### Cámra con Raspberry Pi
 https://hackaday.com/2020/07/21/a-stylish-raspberry-pi-camera/
 https://hackaday.io/project/173836-turning-your-raspberry-pi-into-a-camera
 ### HQ Camera Exposure 

@@ -6,7 +6,7 @@ Existe mucha documentación sobre Raspberry Pi, veamos cómo obtener alguna de e
 
 ![](./images/bookself.png)
 
-En las últimas versiones de Raspberry Pi OS (antes Raspbian) se incluye una aplicación llamada Boolshelf que nos permite descargar y ver las publicaciones gratuitas de la Fundación Raspberry, que incluyen las revistas The Mag Pi, Hack Space y Wireframe
+En las últimas versiones de Raspberry Pi OS (antes Raspbian) se incluye una aplicación llamada Boolshelf que nos permite descargar y ver las publicaciones gratuitas de la Fundación Raspberry, que incluyen libros y las revistas The Mag Pi, Hack Space y Wireframe.
 
 ### Revistas
 

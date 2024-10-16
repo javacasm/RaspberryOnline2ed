@@ -6,10 +6,10 @@ A día de hoy tenemos disponibles en el mercado al menos 4 modelos de Raspberry 
 
 * 3 de ellos en el típico formato de placa
     - Raspberry Pi 3+, la más antigua
-    - Rasbperry Pi 4, que podemos encontrar con distintas cantidades de RAM 
-    - Raspberry Pi 5 con 2, 4 u 8Gb de RAM. 
+    - Raspberry Pi 4, que podemos encontrar con distintas cantidades de RAM 
+    - Raspberry Pi 5 con 2, 4 u 8GB de RAM. 
 
-* Rasbperry Pi 400, es equivalente a una Rasapberry Pi 4 con 4GB de RAM, pero en formato teclado, con carcasa incorporada. 
+* Raspberry Pi 400, es equivalente a una Raspberry Pi 4 con 4GB de RAM, pero en formato teclado, con carcasa incorporada. 
 
 ![Raspberry Pi 400](./images/RPI_400_BACK_2_WHITE.jpg)
 
@@ -23,5 +23,5 @@ Esa es la pregunta del millón: ¿Compramos la versión más reciente o la anter
 
 Por todo esto, si tu presupuesto te lo permite...
 
-* Te recomiendo una Raspberry Pi 5, con al menos 4Gb de RAM aunque el curso se puede hacer perfectamente con cualquiera de los modelos 4.
+* Te recomiendo una Raspberry Pi 5, con al menos 4GB de RAM aunque el curso se puede hacer perfectamente con cualquiera de los modelos 4.
 

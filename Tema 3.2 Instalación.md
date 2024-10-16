@@ -2,24 +2,27 @@
 
 Desde hace poco se ha publicado una aplicación llamada [**Raspberry Pi Imager**](https://www.raspberrypi.com/software/) que permite hacer aún más sencilla la instalación del sistema operativo, encargándose de descargar, formatear y escribir la imagen del sistema directamente en la tarjeta SD. Lo descargamos desde el apartado de [Software de la página de Raspberry Pi](https://www.raspberrypi.com/software/)
 
-![Imager](./images/Imager.png)
+![rpi Imager 1.8.5](./images/rpi-imager_1.8.5.png)
 
-La versión actual nos permite instalar los siguientes sistemas operativos:
+En primer lugar selecciona el tipo de Raspberry Pi  que vamos a usar:
 
-![Imager SOs](./images/Imager_SOs.png)
+![](./images/rpi-imager_1.8.5_dispositivo.png)
+
+La versión 1.8.5  nos permite instalar los siguientes sistemas operativos:
+
+![](./images/rpi-imager_1.8.5_sos.png)
 
 Al seleccionar el sistema operativo veremos distintas opciones, como por ejemplo al seleccionar Ubuntu:
+![](./images/rpi-imager_1.8.5_ubuntu_os.png)
 
-![Opciones Ubuntu](./images/Images_Ubuntu.png)
+Donde vemos que aparecen opciones de instalar diferentes versiones de 32 o de 64 bits
 
-Donde vemos que aparecen opciones de instalar versiones de 32 o de 64 bits
+A día de hoy (octubre de 2024) existen 2 versiones disponibles de Raspberry Pi OS:
 
-A día de hoy (diciembre de 2021) existen 2 versiones disponibles de Raspbian:
-
-* La derivada de **Bullseye**, que es la más reciente, pero que hasta ahora mismo no es compatible con las librerías de python para el uso de la cámara (ahora mismo no hay versión alternativa).
+* La derivada de **Bullseye**, que es la más reciente, pero que hasta ahora mismo no es compatible al 100% con algunas librerías de python para el uso de la cámara (ahora mismo no hay versión alternativa).
 * La versión **Legacy** que es una actualización de la versión anterior **Buster**, que sí es compatible con las librerías de python para usar la cámara.
 
-![](./images/raspi_legacy.png)
+![Versiones de Raspberry Pi dispanibles](./images/rpi-imager_1.8.5_sos_raspian.png)
 
 También tenemos disponible las primeras versiones de la versión de 64 bits que promete un mejor rendimiento en las Raspberry Pi 3, 4, 400 y la Zero 2. La parte esencial del sistema operativo ya es de 64, pero algunas aplicaciones todavía funcionan en 32 bits.
 

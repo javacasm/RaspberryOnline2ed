@@ -2,43 +2,46 @@
 
 La intención de los creadores de Raspberry era crear un sistema barato que nos permitiera enseñar a programar a niños y adultos.
 
-* Un estudio de la Universidad de Cambridge en 2005 puso en evidencia  como cada vez menos estudiantes querían estudiar informática.
+* Un estudio de la Universidad de Cambridge en 2005 puso en evidencia cómo cada vez menos estudiantes querían estudiar informática.
 
 * Pensaron que la solución podría ser un ordenador superbarato con el que pudieran jugar, aprendiendo en el camino.
 
 * Los primeros prototipos de Raspberry Pi se empezaron a construir en 2006, pero era difícil con la electrónica disponible en la época.
+
   ![Prototipo Raspberry](./images/prototipo-Raspi-reducida-40.png)
 
-* En 2009, ya existía la tecnología necesaria y se creó "Raspberry Pi Fundation" administrada por Eben Upton.
+* En 2009, ya existía la tecnología necesaria y se creó "Raspberry Pi Foundation" administrada por Eben Upton.
 
 * En 2011, surgen los primeros prototipos disponibles para probar y se ve factible vender modelos de 25$ y 35$. Aparece el modelo B Beta.
-
 
   ![Placa beta Raspberry Pi](./images/betaPi-sin-fondo-reducida-75.jpg)
   
   
 Utiliza un diseño avanzado como podemos observar en la imagen, donde se ha colocado un chip encima de otro.
 
-![Diseño avanzado](./images/EncapsuladoCPU-RAM-reducida-40.jpg)
+![Ejemplo de diseño avanzado, usando 2 chips superpuestos](./images/EncapsuladoCPU-RAM-reducida-40.jpg)
 
 Actualmente existen varios formatos, vamos a ver los más usados:
 
-* La versión más actual a día de hoy (Octubre de 2024) es la [Versión 5](https://www.raspberrypi.com/products/raspberry-pi-5/) 2.4GHz quad core de 64bits hasta 8Gb, USB 3.0, 2 HDMI 4K Gigabit, Wifi y bluetooth)
+* La versión más actual a día de hoy (Octubre de 2024) es la [Versión 5](https://www.raspberrypi.com/products/raspberry-pi-5/) 2.4GHz quad core de 64bits hasta 8GB, USB 3.0, 2 HDMI 4K Gigabit, Wifi y bluetooth.
+
 ![Raspberry Pi 5](./images/raspberry-pi-5-reducida-50.jpg)
 
-* La versión [Raspberry Pi Zero W](https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/) (1Ghz 512Mb) con un tamaño muy pequeño y un precio superreducido de 10€ - 15€, según la queramos con o si wifi.
+* La versión [Raspberry Pi Zero W](https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/) (1Ghz 512Mb) con un tamaño muy pequeño y un precio superreducido de 10€ - 15€, según la queramos con o sin wifi.
+
 ![Raspberry Pi Zero](./images/RaspiZero.png)
 
-* [Módulo Raspberry Pi Compute 3+](https://www.raspberrypi.com/products/compute-module-3-plus/): es equivalente a una Raspberry pi 3 B+ pero en un formato pensado para construir ordenadores a partir de varias Raspberry. Se puede adquirir con un disco interno eMMC de 8GB/16GB/32GB que sustituye a la tarjeta SD.
+* [Módulo Raspberry Pi Compute 3+](https://www.raspberrypi.com/products/compute-module-3-plus/): es equivalente a una Raspberry Pi 3 B+ pero en un formato pensado para construir ordenadores a partir de varias Raspberry. Se puede adquirir con un disco interno eMMC de 8GB/16GB/32GB que sustituye a la tarjeta SD.
 
 ![Módulo Raspberry Pi Compute 3+](./images/Raspberry_Pi_Compute_Module.png)
 
 Se puede integrar en Module Kit 3:
+
 ![Kit para integrar el Módulo Raspberry Pi Compute 3+](./images/Raspberry-Pi-Compute-Module-Kit-3.jpg)
 
 * Raspberry Pi 400, es equivalente a una Raspberry Pi 4, pero en formato teclado, con carcasa incorporada. 
 
-Seguramente hayas oído hablar también de la Raspberry Pi Pico pero aunque comparte nombre, porque está diseñada también por la Fundación Raspberry Pi, la Pico es un micontrolador, no un miniordenador y es más parecido a un Arduino (Realmente más parecido a un ESP32)
+Seguramente hayas oído hablar también de la Raspberry Pi Pico pero aunque comparte nombre, porque está diseñada también por la Fundación Raspberry Pi, la Pico es un microcontrolador, no un miniordenador y es más parecido a un Arduino (Realmente más parecido a un ESP32)
 
 Más adelante veremos muchos más detalles de esta versión y de las anteriores. 
 
@@ -47,7 +50,7 @@ Puedes encontrar más detalles en el [Artículo de la wikipedia sobre RaspBerry 
 
 ## Raspberry Pi vs Arduino
 
-![Tamaño Arduino vs Raspberry](./images/arduinovsRaspberry.jpg)
+![Comparativa de tamaño entre Arduino Mega, Raspberry y Arduino UNO](./images/arduinovsRaspberry.jpg)
 
 Una pregunta muy frecuente es si para determinado proyecto es mejor usar Arduino o Raspberry Pi: la respuesta es sencilla, son equipos muy distintos con capacidades diferentes y generalmente son complementarios.
 
@@ -84,7 +87,7 @@ Han sido muchas las películas y series donde han aparecido últimamente Raspber
 
   ![Imagen película Mr. Robot](./images/hacks-mr-robot-raspberry-reducida-45.jpg)
 
-* CSI Cyber: lo usan como un router que les permite capturar datos de la red donde están (un parque de atracciones) y así descubren como poder controlar las atracciones.
+* CSI Cyber: lo usan como un router que les permite capturar datos de la red donde están (un parque de atracciones) y así descubren cómo poder controlar las atracciones.
 
   ![Imagen Serie CSI](./images/RaspberryPi_on_CSI-Cyber-reducida-50.jpg)
 

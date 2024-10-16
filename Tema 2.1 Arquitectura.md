@@ -4,7 +4,7 @@ En este diagrama puedes ver la arquitectura de una Raspberry Pi original:
 
 ![Arquitectura de la Raspberry Pi](./images/bloques.png)
 
-Vemos que tiene un bloque central con la CPU y GPU, un frontal con conectores USB y Ethernet (LAN), en un lateral las salidas HDMI y en el lateral opuesto un doble fila de pines, llamados GPIO (General porpouse Input/Output o Entradas/Salidas de Propósito General) donde podemos conectar nuestros propios componentes o proyectos electrónicos.
+Vemos que tiene un bloque central con la CPU y GPU, un frontal con conectores USB y Ethernet (LAN), en un lateral las salidas HDMI y en el lateral opuesto un doble fila de pines, llamados GPIO (General purpose Input/Output o Entradas/Salidas de Propósito General) donde podemos conectar nuestros propios componentes o proyectos electrónicos.
 
 Su tamaño es realmente pequeño: 86 x 57 mm, y aunque a lo largo de las distintas versiones ha ido evolucionando, añadiendo y mejorando los componentes, han manteniendo el mismo tamaño. 
 

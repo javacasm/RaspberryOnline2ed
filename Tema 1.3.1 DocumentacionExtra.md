@@ -7,7 +7,7 @@ Algunos tutoriales para aprender rápidamente a manejar tu Raspberry Pi
 
 [Proyectos con Raspberry](http://projects.raspberrypi.org)
 
-[Raspberry pi Class (instructables)](http://www.instructables.com/class/Raspberry-Pi-Class/?utm_source=newsletter&utm_medium=email)
+[Raspberry Pi Class (instructables)](http://www.instructables.com/class/Raspberry-Pi-Class/?utm_source=newsletter&utm_medium=email)
 
 [Vídeo tutorial Raspberry Pi (sparkfun)](https://www.youtube.com/watch?v=b6h95jNWg1g)
 

@@ -24,13 +24,13 @@ Hasta la Raspberry Pi 2, tenían 20 pines:
 
 ![GPIO para la versión 2](./images/GPIOV2.png)
 	
-Las versiones de 40 pines hasta la Raspberry pi 3+
+Las versiones de 40 pines hasta la Raspberry Pi 3+
 
 ![GPIO de 40 pines](./images/pi2GPIO.jpg)
 
-Los GPIOs para la Raspberry pi 4
+Los GPIOs para la Raspberry Pi 4
 
-![GPIOs para la Raspberry pi 4](./images/GPIO4.png)
+![GPIOs para la Raspberry Pi 4](./images/GPIO4.png)
 
 Hay que tener cuidado con no equivocarse al usarlos. Para evitar errores podemos usar una etiqueta
 
@@ -82,7 +82,7 @@ Vamos a hacer ahora algunos montajes básicos y cómo programarlos.
 Vuelvo a poner la descripción de los pines para tenerlos a mano (Recomiendo imprimirla)
 
 
-![Pinout Raspi 4B](./images/GPIO_raspi4b.png)
+![Pinout Raspberry Pi 4](./images/GPIO_raspi4b.png)
 
 Podríamos trabajar perfectamente con Scratch 3.0 que ya incluye extensiones para usar los GPIO: 
 

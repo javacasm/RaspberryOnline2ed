@@ -71,7 +71,7 @@ https://raspberrytips.com/android-tv-on-raspberry-pi
 
 No he probado [PINN](https://github.com/procount/pinn) ni se incluye en el curso, pero voy a investigarlo para intentar incluirlo. De todas formas no lo veo un producto maduro como para usarlo en "producción".  
 
-Yo también tengo mi Raspi5 con un disco M2 de 256Gb, pero de momento sólo uso Raspberry OS y a día de hoy prefiero hacer las pruebas con tarjetas SD y no arriesgar el sistema del M2.
+Yo también tengo mi Raspi5 con un disco M2 de 256GB, pero de momento sólo uso Raspberry OS y a día de hoy prefiero hacer las pruebas con tarjetas SD y no arriesgar el sistema del M2.
  
 ## Disco SSD y shield
 ## Boot USB
@@ -79,7 +79,7 @@ Yo también tengo mi Raspi5 con un disco M2 de 256Gb, pero de momento sólo uso 
 
 ## Python
 
-[Entornos virtuales en Raspberry pi](https://raspberrytips.com/python-virtual-environments/)
+[Entornos virtuales en Raspberry Pi](https://raspberrytips.com/python-virtual-environments/)
 ## Syncthing
 
 Para que arranque automáticamente

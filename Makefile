@@ -1,14 +1,14 @@
 
-S1="1 Qué es Raspberry.docx"
-S2="2 Características de Raspberry.docx"
-S3="3 Instalación de Raspberry.docx"
-S4="4 Uso de Raspberry.docx"
-S5="5 Programación con Raspberry.docx"
-S6="6 Electrónica con Raspberry.docx"
-S7="7 Proyectos con Raspberry.docx"
+S1="Tema 1 Qué es Raspberry.docx"
+S2="Tema 2 Características de Raspberry.docx"
+S3="Tema 3 Instalación de Raspberry.docx"
+S4="Tema 4 Uso de Raspberry.docx"
+S5="Tema 5 Programación con Raspberry.docx"
+S6="Tema 6 Electrónica con Raspberry.docx"
+S7="Tema 7 Proyectos con Raspberry.docx"
 
 SFAQ="RasPi FAQ - Preguntas Frecuentas.docx"
-FFAQ="Tema 0.9 RasPi FAQ - Preguntas Frecuentas.md"
+FFAQ="Tema 0.9 RasPi FAQ - Preguntas Frecuentes.md"
 
 SMAT="Materiales necesarios.docx"
 
@@ -20,11 +20,15 @@ SCV="CV javacasm.docx"
 
 DIR_PUBLICACION="./publicación/"
 
+PLANTILLA_DOC_DADI="Plantilla-Prueba-Raspberry-Dadi.odt"
+
+PLANTILLA_DOC="plantilla_raspy.docx"
+
 CV:
 	pandoc --pdf-engine=xelatex   \
 		-V papersize:a4paper    \
 		--template=./LaTeX_ES.latex    \
-		--reference-doc=plantilla_raspy.docx \
+		--reference-doc=$(PLANTILLA_DOC) \
 		-o  $(DIR_PUBLICACION)$(SCV)  \
 		$(FCV)
 MAT:
@@ -45,31 +49,28 @@ FAQ:
 		-V papersize:a4paper    \
 		--template=./LaTeX_ES.latex    \
 		-o  $(DIR_PUBLICACION)$(SFAQ)  \
-		--reference-doc=plantilla_raspy.docx \
-		Portada.md        \
-		Cabecera_latex.md \
+		--reference-doc=$(PLANTILLA_DOC)  \
+		"Tema 0.9 Portada.md"        \
 		$(FFAQ)
 
 INDEX:
 	pandoc --pdf-engine=xelatex   \
 		-V papersize:a4paper    \
 		--template=./LaTeX_ES.latex    \
-		--reference-doc=plantilla_raspy.docx \
+		--reference-doc=$(PLANTILLA_DOC)  \
 		-o  $(DIR_PUBLICACION)$(SINDEX)  \
 		Portada.md        \
 		Cabecera_latex.md \
 		$(FINDEX)
-
 
 1:
 	pandoc --pdf-engine=xelatex \
 		--from=markdown \
 		-V papersize:a4paper \
 		--template=./LaTeX_ES.latex \
-		--reference-doc=plantilla_raspy.docx \
+		--reference-doc=$(PLANTILLA_DOC)  \
 		-o $(DIR_PUBLICACION)$(S1) \
-		Portada.md        \
-		Cabecera_latex.md \
+		"Tema 1 Portada.md"  \
 		"Tema 1.0 Qué es Raspberry.md" \
 		"Tema 1.1 Algo de Historia.md" \
 		"Tema 1.2 Proyectos donde se usa Raspberry Pi.md" \
@@ -79,10 +80,9 @@ INDEX:
 	pandoc --pdf-engine=xelatex       \
 		-V papersize:a4paper        \
 		--template=./LaTeX_ES.latex \
-		--reference-doc=plantilla_raspy.docx \
+		--reference-doc=$(PLANTILLA_DOC)  \
 		-o $(DIR_PUBLICACION)$(S2) \
-		Portada.md           \
-		Cabecera_latex.md \
+		"Tema 2 Portada.md"  \
 		"Tema 2.0 Características de Raspberry.md" \
 		"Tema 2.1 Arquitectura.md" \
 		"Tema 2.2 Versiones.md" \
@@ -93,10 +93,9 @@ INDEX:
 	pandoc --pdf-engine=xelatex       \
 		-V papersize:a4paper        \
 		--template=./LaTeX_ES.latex \
-		--reference-doc=plantilla_raspy.docx \
+		--reference-doc=$(PLANTILLA_DOC) \
 		-o $(DIR_PUBLICACION)$(S3) \
-		Portada.md        \
-		Cabecera_latex.md \
+		"Tema 3 Portada.md"  \
 		"Tema 3.0 Instalación de Raspberry Pi.md" \
 		"Tema 3.0.1 Qué Raspberry elegir.md" \
 		"Tema 3.0.2 Componentes necesarios.md" \

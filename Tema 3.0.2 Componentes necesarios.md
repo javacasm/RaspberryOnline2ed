@@ -6,7 +6,7 @@
 	* Con conector USB-C y al menos 3A para la Raspberry Pi 4, pero cuidado porque hay algunas fuentes que no funcionan bien.
 	* Con conector USB-C y al menos 5A (27W) para la Raspberry Pi 5.
 
-* Tarjeta SD de al menos 16Gb  o más (recomendados 32Gb). La propia [Raspberry Pi ha creado unas nuevas tarjetas SD de extremada calidad](https://www.raspberrypi.com/products/sd-cards/) y rendimiento. Se recomienda mínimo de clase 10 por su velocidad ya que la elección de una tarjeta de calidad es crítica, con tarjetas baratas nos vamos a encontrar un bajo rendimiento, cuelgues inesperados e incluso puede que tengamos problemas de arranque.
+* Tarjeta SD de al menos 16GB  o más (recomendados 32GB). La propia [Raspberry Pi ha creado unas nuevas tarjetas SD de extremada calidad](https://www.raspberrypi.com/products/sd-cards/) y rendimiento. Se recomienda mínimo de clase 10 por su velocidad ya que la elección de una tarjeta de calidad es crítica, con tarjetas baratas nos vamos a encontrar un bajo rendimiento, cuelgues inesperados e incluso puede que tengamos problemas de arranque.
 
 * Cable de red ethernet (no es necesario si tenemos Wifi, pero facilita la primera conexión que no requiere configuración)
 
