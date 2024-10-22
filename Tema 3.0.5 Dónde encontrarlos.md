@@ -4,9 +4,9 @@
 * [www.tiendatec.es](https://www.tiendatec.es/)
 * [www.bricogeek.com](http://www.bricogeek.com)
 
-![Kit Raspberry Pi](./images/raspberry-pi-4-kit-basico.jpg)
+![Kit Raspberry Pi](./images/raspberry-pi-4-kit-basico_reducida_60.jpg)
 
-En la mayoría de estas tiendas, como en [TiendaTec](https://www.tiendatec.es/13-kits-raspberry-pi), puedes encontrar kits que incluyen todo lo necesario y te aseguras que son los adecuados.
+En la mayoría de estas tiendas, como en [TiendaTec](https://www.tiendatec.es/13-kits-raspberry-pi), puedes encontrar kits que incluyen todo lo necesario y te aseguras que son los adecuados. 
 
-También puedes encontrar kits en amazon o en aliexpress, pero comprueba las opiniones de los usuarios antes de comprar...
+También puedes encontrar kits en Amazon o en Aliexpress, pero comprueba las opiniones de los usuarios antes de comprar...  
 

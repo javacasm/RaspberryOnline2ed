@@ -1,10 +1,10 @@
 ### Versiones de la Raspberry Pi
 
-Ya son muchas las versiones que han aparecido de la Raspberry Pi, y cada vez aparecen más deprisa... (ya hay rumores de un nuevo modelo Raspberry Pi 500 basado en la 5 )
+Ya son muchas las versiones que han aparecido de la Raspberry Pi, y cada vez aparecen más deprisa... (ya hay rumores de un nuevo modelo Raspberry Pi 500 basado en la 5)
 
 ### Raspberry Pi 5 
 
-La versión 5 de Raspberry mejora aún más el rendimiento de las anteriores versiones y añade algunas características:
+La versión 5 de Raspberry Pi, mejora aún más el rendimiento de las anteriores versiones y añade algunas características:
 
 * ¡¡**Botón de apagado/encendido**!! Sí, resulta curioso que hasta ahora no lo hayan incluído.
 * Procesador a 2.4GHz
@@ -34,14 +34,14 @@ La Raspberry Pi 5 ofrece un **rendimiento mejorado** y más **flexibilidad** que
 * **Gigabit Ethernet:** Conexión a red de alta velocidad.
 * **Wi-Fi 802.11ac de doble banda:** Conectividad inalámbrica rápida y confiable.
 * **Bluetooth 5.0:** Para conectar auriculares, teclados y otros dispositivos inalámbricos.
-* **Nuevo ISP desarrollado por Raspberry Pi:** Captura imágenes y vídeos de hasta 1 gigapixel por segundo.
+* **Nuevo ISP desarrollado por Raspberry Pi:** Captura imágenes y vídeos de hasta 1 Gigapixel por segundo.
 
 ### Diferencias principales entre la Raspberry Pi 4 y la Raspberry Pi 5:
 
 **Procesador y rendimiento:**
 
 * **Raspberry Pi 4:** CPU Broadcom BCM2711 de cuatro núcleos Cortex-A72 a 1.5GHz.
-* **Raspberry Pi 5:** CPU Broadcom BCM2712 de cuatro núcleos Cortex-A76 a 2.4GHz. **Un 2-3 veces más rápida.**
+* **Raspberry Pi 5:** CPU Broadcom BCM2712 de cuatro núcleos Cortex-A76 a 2.4GHz. **Unas 2-3 veces más rápida.**
 
 **Memoria:**
 
@@ -61,7 +61,7 @@ La Raspberry Pi 5 ofrece un **rendimiento mejorado** y más **flexibilidad** que
 **Otras características:**
 
 * **Raspberry Pi 5:**
-    * **ISP propio:** Captura imágenes y vídeos de hasta 1 gigapixel por segundo.
+    * **ISP propio:** Captura imágenes y vídeos de hasta 1 Gigapixel por segundo.
     * **Disipador de calor y ventilador más eficientes:** Para un mejor rendimiento térmico.
     * **Elimina el conector de audio estéreo.**
 
@@ -77,8 +77,7 @@ Depende de tus necesidades y presupuesto. Si necesitas el **máximo rendimiento*
 
 Veamos las diferencias con las versiones anteriores
 
-![Características Raspberry Pi 4](./images/raspi4Descripcion.png)
-
+![Características Raspberry Pi 4](./images/raspi4Descripcion_reducida_75.jpg)
 
 * Procesador a 1.5GHz
 * 2 USB 3.0 y 2 USB 2.0
@@ -89,12 +88,12 @@ Veamos las diferencias con las versiones anteriores
 
 El cambio a nivel de rendimiento con las anteriores versiones es brutal.
 
-Veamos sus características y cómo influyen en la mejora de rendimiento respecto a los modelos anteriores. Para ello usaremos los [tests que se realizaron en su lanzamiento](https://magpi.raspberrypi.com/articles/raspberry-pi-specs-benchmarks). 
+Veamos sus características y cómo influyen en la mejora de rendimiento respecto a los modelos anteriores. Para ello usaremos los [test que se realizaron en su lanzamiento](https://magpi.raspberrypi.com/articles/raspberry-pi-specs-benchmarks). 
 
 
 * Procesador Quad-core ARM A8 de 64 bits a 1.5Ghz. Los primeros test de velocidad dicen que es 2x veces más rápida que la 3+
 
-![Test de CPU](./images/TestCPU_r4.png)
+![Test de CPU](./images/TestCPU_r4_reducida_75.jpg)
 
 * Compatible con OpenGL 3, con lo que el rendimiento del software de diseño 3D y los videojuegos, deben mejorar enormemente.
 * 3 Versiones con diferente cantidad de memoria RAM:  1GB, 2GB, 4GB y 8GB. Este significativo aumento debe hacer que el rendimiento mejore mucho en aplicaciones pesadas como son los navegadores web. 
@@ -120,40 +119,40 @@ La posibilidad de elegir entre varios tamaños de RAM es muy interesante, pero t
 
 ### Raspberry Pi 3+ vs 4 vs 5
 
-Vamos a hacer una tabla comparativa entre los 3 modelos en formato placa disponibles a día de hoy
+Vamos a hacer una tabla comparativa con las características más destacadas de los 3 modelos en formato placa, disponibles a día de hoy
 
-|Característica| Raspberry Pi 5                                            | Raspberry Pi 4                                                      | Raspberry Pi 3 B+                                       |
+|                          | Raspberry Pi 5                                            | Raspberry Pi 4                                                      | Raspberry Pi 3 B+                                       |
 | ------------------------ | --------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------- |
 | CPU                      | Broadcom BCM2712 quad-core 64-bit Arm Cortex-A76 @ 2.4GHz | Broadcom BCM2711, Quad-core Cortex-A72 (ARM v8) 64-bit SoC @ 1.5GHz | Broadcom BCM2837B0 quad-core A53 (ARMv8) 64-bi @ 1.4GHz |
 | GPU                      | Broadcom VideoCore VII                                    | Broadcom VideoCore VI                                               | Broadcom Videocore-IV                                   |
-| RAM                      | 2GB, 4GB o 8GB LPDDR4X-4267                               | 1GB, 2GB, o 4GB LPDDR4 SDRAM                                     | 1GB LPDDR2 SDRAM                                       |
+| RAM                      | 2GB, 4GB o 8GB LPDDR4X-4267                               | 1GB, 2GB, o 4GB LPDDR4 SDRAM                                        | 1GB LPDDR2 SDRAM                                        |
 | Bluetooth                | Bluetooth 5.0, BLE                                        | Bluetooth 5.0, BLE                                                  | Bluetooth 4.2, BLE                                      |
 | Pantalla y sonido        | 2 × micro-HDMI                                            | 2 × micro-HDMI 2.0, 3.5 mm audio-vídeo analógico                    | HDMI, 3.5 mm audio-vídeo analógico                      |
-| USB                      | 2 x USB 3.0 + 2 x USB 2.0                                   | 2 x USB 3.0 + 2 x USB 2.0                                             | 4 x USB 2.0                                            |
+| USB                      | 2 x USB 3.0 + 2 x USB 2.0                                 | 2 x USB 3.0 + 2 x USB 2.0                                           | 4 x USB 2.0                                             |
 | Ethernet                 | Gigabit Ethernet, with PoE+ support                       | Native Gigabit Ethernet                                             | 300 Mbps Giga Ethernet                                  |
 | Video Decoder            | 4Kp60 HEVC                                                | H.265 4Kp60, H.264 1080p60                                          | H.264 & MPEG-4 1080p30                                  |
-| Aimentación              | 5V vía USB type-C con 5A                                  | 5V vía USB type-C con 3A y GPIO  a 3A                               | 5V vía micro USB con 2.5A y GPIO a 3A                   |
+| Alimentación              | 5V vía USB type-C con 5A                                  | 5V vía USB type-C con 3A y GPIO  a 3A                               | 5V vía micro USB con 2.5A y GPIO a 3A                   |
 | Expansión                | 40-pin GPIO                                               | 40-pin GPIO                                                         | 40-pin GPIO                                             |
 | Wifi                     | Dual-band 802.11ac Wi-Fi                                  | 2.4 GHz y 5 GHz 802.11b/g/n/a wifi LAN                              | 2.4 GHz y 5 GHz 802.11b/g/n/a wifi LAN                  |
 | Almacenamiento           | microSD card                                              | microSD card                                                        | microSD card                                            |
-| Precio (octubre de 2024) | 59€ - 2GB, 70€ - 4GB, 90€ - 8GB                           | 46€ - 1GB, 56€ – 2GB, 70€ – 4GB, 90€ – 8GB                          | 43€ – 1GB RAM                                          |
+| Precio (octubre de 2024) | 59€ - 2GB, 70€ - 4GB, 90€ - 8GB                           | 46€ - 1GB, 56€ – 2GB, 70€ – 4GB, 90€ – 8GB                          | 43€ – 1GB RAM                                           |
 
 Cómo podemos ver, la V5 gana en todas las características aunque la versión 4 sigue siendo apta para muchos otros usos. 
 
 
 La [Raspberry Zero](https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/) es una versión superreducida con el mismo procesador pero a 1Ghz y  512Mb de RAM. La gran diferencia es que casi no dispone de conectores, para así reducir su tamaño y precio, según queramos una versión sin wifi o con conectividad wifi.
 
-![Raspberry Pi Zero](./images/RaspiZero.png)
+![Raspberry Pi Zero](./images/RaspiZero-fondo_eliminado.png)
 
 Existe una nueva versión : la Raspberry Pi Zero 2 W, con micro de cuatro núcleos, 64 bits, 1GHz y 512 Mb de RAM integrados en el propio chip. Según sus pruebas es 5x veces más potente y con el mismo mini tamaño. Utiliza el mismo procesador que la Raspberry 3, eso sí, en un espacio aún más reducido.
 
 El que tenga una CPU quad-core hace que la ejecución multitarea mejore muchísimo, lo que aumenta mucho su rendimiento.
 
-![](./images/Raspberry-Pi-Zero-2-W-Hero-800x535.jpg)
+![Raspberry Pi Zero 2 W Hero](./images/Raspberry-Pi-Zero-2-W-Hero-800x535_sin_borde.jpg)
 
 [Referencia sobre la Raspberry Pi Zero 2 W](https://www.raspberrypi.com/news/new-raspberry-pi-zero-2-w-2/)
 
-¿Para qué elegir un modelo u otro? La Zero tiene la ventaja de un tamaño muy reducido y por tanto es ideal para proyectos móviles o que necesitamos "esconder o guardar". Por otro lado tiene menor capacidad de procesamiento y de memoria RAM lo que la inutiliza para proyectos que requieran un mayor rendimiento.
+¿Para qué elegir un modelo u otro? La Zero tiene la ventaja de un tamaño muy reducido y por tanto es ideal para proyectos móviles o que la necesitemos "esconder o guardar". Por otro lado, tiene menor capacidad de procesamiento y de memoria RAM lo que la inutiliza para proyectos que requieran un mayor rendimiento.
 
 
 ### Versiones antiguas
@@ -165,7 +164,7 @@ En el siguiente enlace podemos leer en detalle sobre las diferentes [versiones d
 
 ![Diferentes modelos de Raspberry Pi](./images/raspberry-pi-models.jpg)
 
-(En la foto familiar faltan la v4, la 400 y la v5)
+(En la foto familiar faltan las versiones de la Raspberry Pi v4, la 400 y la v5)
 
 Por motivos históricos vamos a incluir aquí algunos detalles sobre las versiones anteriores.
 
@@ -173,12 +172,14 @@ Por motivos históricos vamos a incluir aquí algunos detalles sobre las version
 #### [Raspberry Versión A](https://www.raspberrypi.com/products/raspberry-pi-1-model-a-plus/)
 
 Apareció en 2011 y tenía 256MB de RAM, un único USB y no tenía conector Ethernet. Costaba unos 25€.
+
 ![Raspberry Versión A](./images/220px-Raspberry_Pi_-_Model_A-mas-150.jpg)
+
 #### [Raspberry Pi Versión B](https://www.raspberrypi.com/products/raspberry-pi-1-model-b-plus/)
 
 Tenía 512M de RAM, ethernet y 2 puertos USB.
 
-![Raspberry modelo B](./images/ModeloB.jpg)
+![Raspberry modelo B](./images/ModeloB_sin%20fondo_reducida_75.jpg)
 
 #### [Versión B+](https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#modelbplus)
 
@@ -187,9 +188,9 @@ En 2014 se libera esta versión con algunas mejoras internas, pero sin grandes c
 
 #### [Versión 2 B](https://www.raspberrypi.com/products/raspberry-pi-2-model-b/)
 
-El micro quad-core va a 900MHz  y tiene 1GB de RAM, 4 puertos USB. Incorporan el nuevo formato de los 40 pines GPIO.
+El micro Quad-Core va a 900MHz  y tiene 1GB de RAM, 4 puertos USB. Incorporan el nuevo formato de los 40 pines GPIO.
 
-![Raspberry Pi 2 Versión 2B](./images/Raspberry_Pi_2_Model_B_v1.1_top-mas150.jpg)
+![Raspberry Pi 2 Modelo B v1.1](./images/Raspberry%20Pi%202%20Versión%202B_%20reducida_75_sin%20fondo.jpg)
 
 
 [![Vídeo: Versiones de Raspberry Pi](https://img.youtube.com/vi/ZBq6ZPE5r9c/0.jpg)](https://drive.google.com/file/d/1mtwGpUcBtEkt6OTd9XJhdIc6THwIzxlv/view?usp=sharing)
@@ -199,4 +200,4 @@ El micro quad-core va a 900MHz  y tiene 1GB de RAM, 4 puertos USB. Incorporan el
 Puedes encontrar más detalles de los últimos modelos/versiones actuales en la [página de productos de la fundación Raspberry Pi](https://www.raspberrypi.com/products/)
 
 
-(Imágenes oficiales tomadas de Raspberry.org) y [The MagPi 85](https://magpi.raspberrypi.com/issues/85)
+

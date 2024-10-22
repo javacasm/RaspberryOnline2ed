@@ -4,7 +4,7 @@ Algo que siempre queremos hacer con nuestro sistemas domóticos es integrarlos c
 
 El procedimiento no es demasiado complicado pero sí que necesita hacer que nuestros equipos (normalmente la Raspberry que actúa como el corazón del sistema) sean accesibles desde Internet, de manera que los servidores de Google o de Alexa puedan actuar sobre nuestro sistema al ejecutar comandos sobre ellos.
 
-Para ello configuramos nuestros sistema para que se pueda actuar sobre él vía web con un API REST determinado. Un ejemplo sencillo sería que el acceso  a http://nuestraIPExterna/luces/Salon/On encienda las luces del salón y http://nuestraIPExterna/luces/Salon/Off las apague.
+Para ello configuramos nuestro sistema para que se pueda actuar sobre él vía web con un API REST determinado. Un ejemplo sencillo sería que el acceso  a http://nuestraIPExterna/luces/Salon/On encienda las luces del salón y http://nuestraIPExterna/luces/Salon/Off las apague.
 
 En resumen debemos construir:
 

@@ -29,7 +29,7 @@ Actualmente existen varios formatos, vamos a ver los más usados:
 
 * La versión [Raspberry Pi Zero W](https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/) (1Ghz 512Mb) con un tamaño muy pequeño y un precio superreducido de 10€ - 15€, según la queramos con o sin wifi.
 
-![Raspberry Pi Zero](./images/RaspiZero.png)
+![Raspberry Pi Zero](./images/Raspberry-Pi-Zero-web_reducida%2075.jpg)
 
 * [Módulo Raspberry Pi Compute 3+](https://www.raspberrypi.com/products/compute-module-3-plus/): es equivalente a una Raspberry Pi 3 B+ pero en un formato pensado para construir ordenadores a partir de varias Raspberry. Se puede adquirir con un disco interno eMMC de 8GB/16GB/32GB que sustituye a la tarjeta SD.
 
@@ -37,7 +37,7 @@ Actualmente existen varios formatos, vamos a ver los más usados:
 
 Se puede integrar en Module Kit 3:
 
-![Kit para integrar el Módulo Raspberry Pi Compute 3+](./images/Raspberry-Pi-Compute-Module-Kit-3.jpg)
+![Raspberry Pi Kit 3](./images/Raspberry-Pi-Compute-Module-Kit-3_reducida_75.jpg)
 
 * Raspberry Pi 400, es equivalente a una Raspberry Pi 4, pero en formato teclado, con carcasa incorporada. 
 
@@ -93,6 +93,3 @@ Han sido muchas las películas y series donde han aparecido últimamente Raspber
 
 ¿Conoces alguna aparición más en los medios? No dudes en contárnosla.
 
-### Recursos
-
-Las imágenes de los distintos modelos de Raspberry Pi están tomadas de la Wikipedia.

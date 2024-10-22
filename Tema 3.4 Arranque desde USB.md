@@ -1,8 +1,8 @@
 ## Arranque desde USB
 
-Podemos hacer la instalación en un disco USB (o pendrive USB) para usarlo como disco del sistema sin necesidad de tarjeta SD.
+En las nuevas Raspberry Pi (a partir de la 4) también podemos hacer la instalación en un disco USB (o pendrive USB) para usarlo como disco del sistema sin necesidad de tarjeta SD.
 
-También podemos instalar una versiones  experimentales, todavía en estado beta y a la que le faltan todavía algunos drivers esenciales. [Más información](https://forums.raspberrypi.com/viewtopic.php?t=275370), descargando las imágenes desde la [página de la beta](https://downloads.raspberrypi.org/raspios_arm64/images/)
+ Podemos aprovechar ésto para instalar  versiones  experimentales, todavía en estado beta. [Más información](https://forums.raspberrypi.com/viewtopic.php?t=275370), descargando las imágenes desde la [página de la beta](https://downloads.raspberrypi.org/raspios_arm64/images/)
 
 ### Instalación para arranque con disco USB
 

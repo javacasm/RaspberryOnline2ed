@@ -1,9 +1,7 @@
 ## ¿Qué Raspberry elegir?
 
 A día de hoy tenemos disponibles en el mercado al menos 4 modelos de Raspberry (con diferentes cantidades de memoria RAM):
-
-![](./images/raspberry-pi-5.jpg)
-
+![Raspberry Pi 5](./images/raspberry-pi-5-reducida-50.jpg)
 * 3 de ellos en el típico formato de placa
     - Raspberry Pi 3+, la más antigua
     - Raspberry Pi 4, que podemos encontrar con distintas cantidades de RAM 
@@ -13,9 +11,9 @@ A día de hoy tenemos disponibles en el mercado al menos 4 modelos de Raspberry 
 
 ![Raspberry Pi 400](./images/RPI_400_BACK_2_WHITE.jpg)
 
-Por tanto será nuestra elección si lo que queremos es montar un ordenador de sobremesa a partir de nuestra Raspberry Pi.
+Por tanto será nuestra elección, si lo que queremos es montar un ordenador de sobremesa a partir de nuestra Raspberry Pi.
 
-La Raspberry Pi Zero está pensada para proyectos donde el tamaño debe ser muy reducido o para productos donde la Raspberry está integrado como una parte más, por ejemplo una cámara de fotos.
+La Raspberry Pi Zero está pensada para proyectos donde el tamaño debe ser muy reducido o para productos donde la Raspberry está integrada como una parte más, por ejemplo una cámara de fotos.
 
 ##  ¿Raspberry  4 ó 5? 
 

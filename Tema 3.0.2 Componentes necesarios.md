@@ -14,7 +14,8 @@
 Y si la vas a usar como un ordenador:
 
 * Monitor y cable microHDMI-HDMI o adaptador VGA (existen muchos tipos de conversores, pero no todos funcionan bien con cables largos).
-* Salvo que hayas elegido una Raspberry Pi 400, teclado y ratón USB (mejor si es inalámbrico, porque consume menos).
+* Salvo que hayas elegido una Raspberry Pi 400, teclado y ratón USB (mejor si el ratón es inalámbrico porque necesita menos alimentación procedente de la Raspberry Pi, puesto que toma su energía de las pilas o baterías que incluye y consume menos). 
+* Lo que queremos es que la Raspberry Pi alimente a la menor cantidad posible de periféricos, por eso también se recomienda un hub USB alimentado, para que los dispositivos conectados lleven su propia alimentación.
 
 ### Opcionales
 

@@ -74,5 +74,3 @@ Para ello basta con crear un fichero vacío llamado **"ssh"** en directorio raí
     ```
 * Para apagar la Raspberry usaremos **sudo halt**
 * Para reiniciar **sudo reboot**
-
-

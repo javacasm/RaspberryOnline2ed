@@ -11,7 +11,8 @@ Veamos algunos de ellos. Los precios indicados en algunas de las placas son orie
 ## BeagleBoard
 
 [BeagleBoard](https://beagleboard.org/)  
-* 1GHz ARM Cortex-A8  
+
+* 1GHz ARM Cortex-A8
 * Memoria: 
   * SDRAM: 512MB DDR3L 800MHZ
   * Flash: 4GB, 8bit Embedded MMC (eMMC)
@@ -23,24 +24,21 @@ Veamos algunos de ellos. Los precios indicados en algunas de las placas son orie
 * Precio orientativo: 89$
 
 	![](./images/2.3%20BeagleBoard%20ARM%20Cortex%20A8.jpg)
-
-
-		
+			
 ## Arduino Tre
 [Arduino Tre e Intel Galileo](http://blog.elcacharreo.com/2013/10/04/nuevos-arduino-galileo-y-tre/) 
 
-Características de la placa Arduino Tre: 
+Características de la placa Arduino Tre:	
 
-* Procesador: [Texas Instruments Sitara AM335x ARM Cortex-A8 processor](http://e2e.ti.com/blogs_/b/toolsinsider/archive/2013/10/03/introducing-arduino-tre.aspx "TI")  a 1GHz
+* Procesador: [Texas Instruments Sitara AM335x ARM Cortex-A8 procesador](http://e2e.ti.com/blogs_/b/toolsinsider/archive/2013/10/03/introducing-arduino-tre.aspx "TI")  a 1GHz
 * Memoria: 512Mb de RAM
 * HDMI (HD)
 * Audio: estéreo
 * Conectividad: USB, Ethernet
 * Almacenamiento externo: Tarjeta microSD.
 					 		 
-	![](./images/2.3_ArduinoTre.png)
-					
-	
+	![Arduino Tre](./images/2.3_ArduinoTre.png)
+		
 ## Intel Galileo
 Características placa Intel Galileo:
 
@@ -56,12 +54,11 @@ Características placa Intel Galileo:
 	
 	![](./images/2.3%20Intel%20Galileo.png)
 
-## OlinuXino
-[OLinuXino](https://www.olimex.com/Products/OLinuXino/open-source-hardware)  
+## [OLinuXino](https://www.olimex.com/Products/OLinuXino/open-source-hardware)  
 
 El fabricante Olimex tiene una amplia gama de placas:
 
-* Cortex A8 1GHz  512 MB 55€ *
+* Cortex A8 1GHz  512 MB 55€
 * Procesador Cortex-A7 de doble núcleo Allwinner A20 (T2), cada núcleo normalmente funciona a 1GHz y GPU Mali 400 de doble núcleo.
 * Capaz de reproducir vídeo FullHD (1080p).
 * Memoria RAM DDR3 de 1GB.
@@ -116,26 +113,25 @@ Características:
 * 1x conector jack de audio y TVE de 3,5 mm
 * 1 puerto Ethernet GBE
 
-	![Banana Pi](./images/BananaPi-A45degree-marco-reducido.jpg)
+	![Banana Pi](./images/BananaPi-A45degree%20reducida_ultima.jpg)
 
 En el esquema vemos que algunos modelos de hecho tienen más conectores que la Raspberry Pi (por ejemplo el conector SATA) 
-
-	![Conectores Banana Pi](./images/Banana-pi-reducida-45.jpg)
+![Conectores Banana Pi](./images/Banana-pi-reducida-45.jpg)
 
 
 Los pines del conector GPIO son muy similares
 	![Pines conector GPIO](./images/26pins-header-reducido60.jpg)
 
-## URVE Board Pi
-[URVE Board PI - 1.8GHz (2GB)](https://tienda.bricogeek.com/compatibles-raspberry/1787-urve-board-pi-18ghz-2gb.html)
+## [URVE Board PI - 1.8GHz (2GB)](https://tienda.bricogeek.com/compatibles-raspberry/1787-urve-board-pi-18ghz-2gb.html)
 Características: 
- * CPU: Rockchip RK3566 Quad Core Cortex™ - A55 
- * Velocidad: 1.8GHz Quad Core (4-core)
+
+ * CPU: Rockchip RK3566 Quad-Core Cortex™ - A55 
+ * Velocidad: 1.8GHz Quad-Core (4-core)
  * SO: Android™ 11 y Linux Debian 11
  * Memoria RAM: 2GB LPDDR4
  * Memoria SSD: 8GB eMMC
  * Gráficos: Mali-G52 : HDMI 2.0 con HDCP 1.4/2.2, hasta 4K@60fps
- * Soporta: 4 lineas MIPI DSI hasta 2560x1440@60Hz, LVDS hasta 1920x1080@60Hz
+ * Soporta: 4 líneas MIPI DSI hasta 2560x1440@60Hz, LVDS hasta 1920x1080@60Hz
  * Salida de video: HDMI® V2.0
  * Red ethernet: 1 Gbit/s
  * Red wifi: 2.4G/5G WiFi (802.11 a/b/g/n/ac)
@@ -149,7 +145,6 @@ Características:
 ![UrveBoard](./images/urve-board-18ghz-2gb-reducida50.jpg)
 
 ![UrveBoard](./images/urve-board-Pi-18ghz-2GB-reducida50.jpg)
-
 
 Aquí puedes encontrar, el enlace [SO](https://oc.eveo.pl:789/owncloud/s/FcMZ3CpSf6lPMTw/download) de imagen de Sistema Operativo para descargar.
 

@@ -1,7 +1,6 @@
 ## Instalación manual
 
-
-Vamos a ver cómo hacer todo el proceso manualmente para entender los pasos o por si Imager no nos permite usar esa versión de sistema operativo.
+Vamos a ver cómo hacer todo el proceso manualmente para entender los pasos o por si RPI Imager no nos permite usar la versión de sistema operativo que queremos.
 
 Realmente **NO RECOMIENDO HACERLO ASÍ** salvo que ya lo hayas hecho y controles 100% del tema.	
 

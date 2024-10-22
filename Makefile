@@ -74,7 +74,8 @@ INDEX:
 		"Tema 1.0 Qué es Raspberry.md" \
 		"Tema 1.1 Algo de Historia.md" \
 		"Tema 1.2 Proyectos donde se usa Raspberry Pi.md" \
-		"Tema 1.3 Documentación.md" 
+		"Tema 1.3 Documentación.md" \
+		"Tema 1.9 Atribucion.md"
 
 2:
 	pandoc --pdf-engine=xelatex       \
@@ -87,7 +88,8 @@ INDEX:
 		"Tema 2.1 Arquitectura.md" \
 		"Tema 2.2 Versiones.md" \
 		"Tema 2.2.1 Raspberry Pi 400.md" \
-		"Tema 2.3 clones.md"
+		"Tema 2.3 clones.md" \
+		"Tema 2.9 Atribucion.md"
 		
 3:
 	pandoc --pdf-engine=xelatex       \
@@ -103,12 +105,15 @@ INDEX:
 		"Tema 3.0.5 Dónde encontrarlos.md" \
 		"Tema 3.1 Sistemas operativos disponibles.md" \
 		"Tema 3.2 Instalación.md" \
+		"Tema 3.2.2 Configuración.md" \
+		"Tema 3.2.3 Acceso remoto.md" \
 		"Tema 3.3 Instalación manual.md" \
+		"Tema 3.3.2 Otras instalaciones.md" \
 		"Tema 3.4 Arranque desde USB.md" \
-		"Tema 3.4.1 Disco SSD.md" \
 		"Tema 3.5 Instalación en Raspberry Pi Zero W.md"  \
 		"Tema 3.6 Alimentación.md" \
-		"Tema 3.7 TFT.md"
+		"Tema 3.7 TFT.md" \
+		"Tema 3.9 Atribucion.md"
 
 4:
 	pandoc --pdf-engine=xelatex       \
@@ -214,6 +219,4 @@ push:
 	git commit -m "update" $(S2);
 	git commit -m "update" $(S1);
 	git push;
-
-
 

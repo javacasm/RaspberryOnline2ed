@@ -1,6 +1,6 @@
 # Pantalla TFT táctil
 
-Vamos a conectar una pantalla TFT Táctil de 4"  con una resolución de 800x480. El tamaño de la pantalla es igual al de la Raspberry, lo que lo hace muy adecuado si queremos montar todo en una caja:
+Vamos a ver cómo podemos conectar una pantalla TFT Táctil de 4"  con una resolución de 800x480 que nos sirva para hacer un sistema compacto. El tamaño de la pantalla es igual al de la Raspberry, lo que lo hace muy adecuado si queremos montar todo en una caja:
 
 
 ![TFT táctil](./images/TFT3.jpg)
@@ -82,7 +82,6 @@ dtoverlay=ads7846,cs=1,penirq=25,penirq_pull=2,speed=50000,keep_vref_on=0,swapxy
 ```
 
 
-
 ## Uso
 
 
@@ -104,6 +103,4 @@ La mayoría de las ventanas cabe bien y se ajusta, como la de apagado:
 Si abrimos una aplicación como Thonny, se adapta y se puede utilizar para unos cambios rápidos
 
 ![TFT táctil](./images/TFT8.jpg)
-
-
 

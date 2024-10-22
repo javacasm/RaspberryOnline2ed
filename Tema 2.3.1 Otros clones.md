@@ -1,11 +1,11 @@
 ## Otros clones
 
-* [UDOO](https://www.udoo.org/) = Raspberry+Arduino
-6 ARM Cortex-A9 CPU Dua/Quad core 1GHz
+* [UDOO](https://www.udoo.org/) = Raspberry + Arduino
+6 ARM Cortex-A9 CPU Dua/Quad-core 1GHz
 1GB
 ![udoo](./images/UDOO.png)
 
-* [Cubieboard](http://cubieboard.org/model/) ARM cortex-A8 y 512 MB 49$
+* [Cubieboard](http://cubieboard.org/model/) ARM cortex-A8 y 512 MB 49$ Cubieboard 
 ![Cubieboard](./images/Cubbieboard.png)
 
 
