@@ -6,7 +6,7 @@ Existe una versión de Raspberry con un  formato diferente en todo el hardware q
 
 Se trata de una Raspberry Pi 4 acelerada a 1.8GHz, con un nuevo formato alargado, para que todos los conectores estén del mismo lado (también los 40 pines GPIO) y a la que han añadido un bonito teclado blanco y un enorme disipador en su interior para no tener que incluir ventilador, como podemos observar la imagen inferior.
 
-![](./images/inside_raspi400_recortada.jpg)
+![Raspberry Pi 400](./images/inside_raspi400_recortada_ampliada_125.jpg)
 
 En ese rediseño han eliminado el conector CSI para la cámara, una pena en mi opinión, y ahora mismo sólo existe la versión de 4GB de RAM.
 

@@ -45,7 +45,7 @@ La Raspberry Pi aúna las posibilidades de programación sencilla (usando Python
 
 Es por eso que la hacen ideal para crear Robots. Nosotros veremos en el último tema, cómo hacer un robot tan estupendo como éste desde cero.
 
-![Crear Robot](./images/RobotTop_Reducida_80.jpg)
+![Proyecto para crear un Robot](./images/RobotTop_Reducida_80.jpg)
 
 También podemos crear y programar robots con motores y sensores de Lego usando la [placa Build HAT](https://www.raspberrypi.com/products/build-hat/) 
  
@@ -60,7 +60,7 @@ También podemos crear y programar robots con motores y sensores de Lego usando 
 
 Uno de los usos más frecuentes de la Raspberry es para jugar, su pequeño tamaño y su capacidad la hacen ideal para convertirla en una consola de videojuegos. Veremos más adelante que es más fácil de lo que parece montarse una.
 
-| ![](./images/gaming_joust_reducida_50.jpg)                                                                                      | ![Máquina recreativa](./images/gaming_cover_reducida%2075.jpg)                                                                                 |
+| ![Emulador Mame](./images/gaming_joust_reducida_50.jpg)                                                                | ![Máquina recreativa](./images/gaming_cover_reducida%2075.jpg)                                                                                 |
 | ---------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Mame](https://learn.adafruit.com/retro-gaming-with-raspberry-pi?view=all) (Emulador de máquinas recreativas antiguas) | [Mini máquina recreativa](https://learn.adafruit.com/cupcade-raspberry-pi-micro-mini-arcade-game-cabinet?view=all) aprovechando su mini-tamaño |
 
@@ -68,7 +68,7 @@ Uno de los usos más frecuentes de la Raspberry es para jugar, su pequeño tama�
 
 * Incluso podemos [instalar y jugar al clásico videojuego  Doom](https://learn.sparkfun.com/tutorials/setting-up-raspbian-and-doom?_ga=1.227922267.733603098.1443800444)
 
-![Jugando a Doom en una Raspberry Pi](./images/doom_reducida_75.jpg)
+![Jugando a Doom en una Raspberry Pi](./images/doom.png)
   
 ### Consolas Portátiles
 
@@ -144,7 +144,7 @@ Su bajo peso, los pocos periféricos de los que depende y unas buenas baterías 
 Incluso podemos llegar a lanzarla al espacio, como en el Proyecto Europeo [AstroPi](https://astro-pi.org/)
 
 
-![Montaje llevar Raspberry al espacio](./images/balloon-electronics_reducida_50.jpg)
+![Montaje para llevar Raspberry al espacio](./images/balloon-electronics_reducida_50.jpg)
 
 
 
@@ -160,11 +160,11 @@ O volando en dron usando  [Autopilot](https://ardupilot.org/copter/docs/common-e
 
   ![Light painting](./images/fire.jpg)
 
-* [Iluminación con leds](https://learn.adafruit.com/neopixels-on-raspberry-pi) gracias a la biblioteca Adafruit CircuitPython NeoPixel, ahora podemos controlar NeoPixels o LED directamente desde tu Raspberry Pi.
+* [Iluminación con leds](https://learn.adafruit.com/neopixels-on-raspberry-pi) gracias a la biblioteca Adafruit CircuitPython NeoPixel, ahora podemos controlar NeoPixels o LED directamente desde tu Raspberry Pi.  
 
   ![Control de tiras de leds](./images/leds.jpg)
 
-* [Cortina luminosa](https://learn.adafruit.com/1500-neopixel-led-curtain-with-raspberry-pi-fadecandy?view=all) En este proyecto mostrará cómo se puede construir una pantalla flexible y luminosa de gran tamaño
+* [Cortina luminosa](https://learn.adafruit.com/1500-neopixel-led-curtain-with-raspberry-pi-fadecandy?view=all) En este proyecto mostraremos cómo se puede construir una pantalla flexible y luminosa de gran tamaño.
 
   ![Cortina luminosa](./images/leds_curtain-anim.gif)
 
@@ -176,7 +176,7 @@ O volando en dron usando  [Autopilot](https://ardupilot.org/copter/docs/common-e
 
 [Cuadro diabólico](https://learn.adafruit.com/creepy-face-tracking-portrait?view=all) proyecto creado usando una Raspberry Pi y una cámara ejecutando un código que simula un movimiento.
 
-  ![Cuadro diabólico](./images/raspberry_pi_DSC00316_reducida_50.jpg)
+  ![Cuadro diabólico](./images/raspberry_pi_DSC00316_reducida_75.jpg)
 
 ### Hacking
 

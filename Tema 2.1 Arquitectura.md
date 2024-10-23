@@ -16,14 +16,14 @@ En la siguiente imagen podemos ver los distintos conectores y componentes de  la
 
 
 * USB: podremos conectar cualquier dispositivo USB, pero teniendo en cuenta que no debe consumir demasiado.
-* HDMI: conectamos el monitor HDMI
-* LAN: típico conector RJ45 para cable ethernet
+* HDMI: conectamos el monitor HDMI.
+* LAN: típico conector RJ45 para cable ethernet.
 * Conector Micro-USB en las primeras versiones y USB-C en las recientes por el que la alimentaremos.
-* Conector CSI para la cámara
-* Conector DSI para un monitor específico
+* Conector CSI para la cámara.
+* Conector DSI para un monitor específico.
 * GPIO, 40 pines accesibles para utilizar como entradas y salidas. Hay que tener mucho cuidado con ellos porque están conectados directamente al microprocesador y podríamos estropearlos fácilmente.
 
-Si ahora la comparamos con la versión 5 de la imagen inferior, veremos que guarda gran similitud
+Si ahora la comparamos con la versión 5 de la imagen inferior, veremos que guarda gran similitud.
 
 ![Componentes de un Raspberry Pi 5](./images/RaspberryPi_5B_28-08-2024_reducida_75.jpg)
 

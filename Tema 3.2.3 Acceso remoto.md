@@ -88,6 +88,8 @@ Explicación del diagrama:
 
 Este diagrama ilustra cómo un móvil puede alternar entre dos tipos de conexiones:
 
+![](./images/esquema_acceso_remote_vnc.png)
+
 1. Conexión a la red móvil (4G/5G):
    - El teléfono se conecta directamente a la torre de telefonía móvil.
    - Esta conexión se usa típicamente cuando estás fuera de casa o fuera del alcance de redes Wi-Fi conocidas.
@@ -192,6 +194,9 @@ Tras pulsar connect, podemos acceder al equipo remotamente
 ![[raspi-connect-connected.png]]
 
 El icono aparecerá de color morado cuando hay una conexión remota
+
+En el siguiente [vídeo](https://drive.google.com/file/d/1rpLkifN_uGr0gwP7rjS-iCQQuyp5rhNs/view?usp=sharing) explicamos la instalación y uso de RPI-Connect
+[![](./images/RPI%20Connect%20-%20Crea%20proyectos%20con%20Raspberry%20Pi.png)](https://drive.google.com/file/d/1rpLkifN_uGr0gwP7rjS-iCQQuyp5rhNs/view?usp=sharing)
 
 Más detalles técnicos en la[ página de rpi-connect](https://www.raspberrypi.com/documentation/services/connect.html)
 ### ¿Cómo hace VNC o servicios similares para acceder remotamente a los ordenadores de nuestra red local?
