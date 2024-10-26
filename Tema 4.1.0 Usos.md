@@ -19,6 +19,8 @@ Veamos algunas de las partes:
 5. Directorio que estamos viendo, podemos editar su contenido para movernos a otra carpeta.
 6. Podemos ir a nuestra carpeta personal (carpeta "home"), o al anterior o al directorio que contiene al actual.
 7.  Desde el menú podemos crear directorios, archivos, movernos a las carpetas más frecuentes, copiar y pegar,....
+
+Si conectamos un dispositivo de almacenamiento externo,  un pendrive o un disco duro USB, nos aparecerá en el panel 1 que hemos visto antes. Si pulsamos sobre su nombre accederemos a su contenido. Por defecto los dispositivos se aparecen como si colgaran de la carpeta **/media/pi/DISPOSITIVO**. Para desconectarlos pulsamos en el botón de expulsar que aparece a la derecha del nombre en el panel 1.
 ### Navegador Web
 
 En el menú "Internet" tenemos disponibles el navegador Chromium, la versión de código abierto 100% del navegador Chrome . También podemos instalar Firefox
