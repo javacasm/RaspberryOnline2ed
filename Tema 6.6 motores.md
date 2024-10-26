@@ -233,7 +233,7 @@ rr.sw1_closed() # devuelve True o False según cerrado o abierto
 
 Los motores paso a paso son motores que nos permiten una gran precisión de giro, pudiendo determinar su movimiento en grados.
 
-Vamos a ver cómo usar el motor de la imagen, que tiene 4 bobinas. La placa de control es muy sencilla y necesita de 4 pines para controlarla (en realidad la placa sólo transforma la salida de los pines de raspberry en una señal de la potencia que necesita el motor)
+Vamos a ver cómo usar el motor de la imagen, que tiene 4 bobinas. La placa de control es muy sencilla y necesita de 4 pines para controlarla (en realidad la placa sólo transforma la salida de los pines de Raspberry Pi en una señal de la potencia que necesita el motor)
 
 Veamos cómo conectarla usando 5V y GND y los pines de control 
 ```

@@ -4,7 +4,7 @@ En el desarrollo de cualquier proyecto necesitamos hacer muchas pruebas, y a vec
 
 La Raspberry tiene una capacidad suficiente para que trabajemos directamente en ella, con lo que en muchos casos podemos conseguir un ciclo de trabajo Programación->Test->Corrección/Mejoras de una forma ágil.
 
-Vamos a ver cómo preparar un entorno de trabajo en una raspberry pi desde la consola, sin necesidad de escritorio.
+Vamos a ver cómo preparar un entorno de trabajo en una Raspberry Pi desde la consola, sin necesidad de escritorio.
 
 ### Sincronización remota
 
@@ -65,7 +65,7 @@ Si en alguna ocasión el contenido local se ha quedado retrasado con lo que hay 
 git pull
 ``` 
 
-Si vamos a trabajar durante bastante tiempo con github nos interesa añadir la firma ssh de la raspberry a github
+Si vamos a trabajar durante bastante tiempo con github nos interesa añadir la firma ssh de la Raspberrya github
 
 Para ello necesitamos crear una clave SSH en la raspberry. Siguiendo la [documentación de github](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) hacemos:
 
@@ -80,7 +80,7 @@ y definimos dónde se va a guardar el fichero y si queremos ponerle cable
 > Enter same passphrase again: [Type passphrase again]
 ```
 
-(en la raspberry Zero tarda casi más de 1 minuto)
+(en la RaspberryZero tarda casi más de 1 minuto)
 
 Ejecutamos el ssh-agent con
 

@@ -7,7 +7,7 @@ Usaremos el módulo  **paho-mqtt** que permite tanto publicar como suscribirse a
 sudo pip3 install paho-mqtt
 ```
 
-En este ejemplo en python la raspberry hace parpadear un led conectado al GPIO4 cuando recibe un mensaje con topic "client/led"
+En este ejemplo en python la Raspberry Pi hace parpadear un led conectado al GPIO4 cuando recibe un mensaje con topic "client/led"
 
 ```py
 #! /usr/bin/python3

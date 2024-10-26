@@ -26,7 +26,7 @@ Otra opción interesante es conectarlos utilizando el protocolo I2C, de esta for
 
 Para que funcione tenemos que tener activado el interface i2c (como ya vimos antes) y conectamos las dos placas de esta manera
 
-![raspberry arduino i2c](./images/Arduino-Raspi-i2c_bb.png)
+![Conexión entre Raspberry Pi y arduino usando i2c](./images/Arduino-Raspi-i2c_bb.png)
 
 
 Vamos a hacer un montaje donde podemos controlar un relé conectado a Arduino desde la Raspberry Pi usando comunicaciones i2c

@@ -2,6 +2,17 @@
 
 Una vez instalado el sistema, necesitamos de vez en cuando actualizarlo. Veamos cómo hacerlo.
 
+
+El sistema periódicamente comprueba si hay actualizaciones, y si es así aparecerá un icono arriba a la derecha.  ![[icono-actualizaciones-disponibles.png]]
+
+Si lo pulsamos podemos hacer que estas se instalen 
+![[icono-actualizaciones-instalar.png]]
+
+
+![](icono_updated_available.png)
+
+![](paquetes_disponibles_actualizacion.png)
+
 ### Actualización (update)
 
 Desde un terminal/consola tecleamos lo siguiente
@@ -115,15 +126,6 @@ Vamos a ver un ejemplo de cómo actualizar de una versión del SO a la siguiente
 5. Ahora actualizamos el aspecto con la nueva configuración visual abriendo ‘Appearance Settings’ y en la pestaña ‘Defaults’ pulsamos ‘Set Defaults’ lo que debería ponernos un tamaño de fuente y de iconos acorde a la resolución usada.
 
 Podemos hacer este cambio entre diferentes versión con sólo cambiar los nobmres de las versiones
-
-#### Instalación de programas
-
-Además de la línea de comandos, siempre podemos instalar desde la herramienta visual "Añadir programas" en el menú Preferencias.
-
-[![Vídeo: Cómo actualizar e instalar software Raspberry Pi](https://img.youtube.com/vi/3eeIHe-NCZs/0.jpg)](https://drive.google.com/file/d/1c_LRoSGBBeoYAdmiOQ91qIT4NKQxBLS-/view?usp=sharing)
-
-
-[Vídeo: Cómo actualizar e instalar software Raspberry Pi](https://drive.google.com/file/d/1c_LRoSGBBeoYAdmiOQ91qIT4NKQxBLS-/view?usp=sharing)
 
 #### Instalación de paquetes a partir del código fuente
 

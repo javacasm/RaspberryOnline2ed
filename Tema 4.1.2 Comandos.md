@@ -1,35 +1,3 @@
-## Manejando tu Raspberry Pi
-
-Como sabes Raspberry es una máquina Linux, con lo que podrás manejarla igual que se maneja cualquier otro equipo Linux.
-
-### Capturas de la pantalla
-
-Podemos hacer capturas del escritorio usando la tecla Imprimir Pantalla si nuestro teclado la tiene o bien usando el comando **Scrot**, que pondrá un fichero con la captura en directorio home del usuario (/home/pi por defecto) con un nombre dado por la fecha, hora y resolución. Por ejemplo "2021-02-26-194221_1024x768_scrot.png".
-
-Podemos hacer que la captura se haga después de un determinado retardo usando la opción **-d**. Por ejemplo para hacer la captura a los 10 segundos. 
-
-```sh
-scrot -d 10
-```
-
-También podemos darle un nombre concreto al fichero resultado al usar el comando
-
-```sh
-scrot ficheroCaptura.png
-```
-
-Si necesitamos más opciones podemos instalar un programa como **Gnome Screenshot** que nos dará más opciones. Lo instalaremos como siempre con
-
-```sh
-sudo apt install gnome-screenshot
-```
-Y aparecerá en el menú de "Accesorios"
-
-Nos permitirá capturar todo el escritorio, una ventana, una zona, definiendo un determinado retardo. También nos permite tras hacer la captura seleccionar el nombre y carpeta del fichero o si queremos que se copie la imagen en el clipboard.
-
-![gnome-screenshot](./images/gnome-screenshot.png)
-
-
 ### Consola (línea de comandos)
 
 Podemos hacer casi todo desde el habitual entorno gráfico, pero también desde el terminal o la consola, también llamada línea de comandos.
@@ -65,6 +33,42 @@ Veamos algunos de los comandos más utilizados:
 * **history** : muestra todos los comandos que se han ejecutado antes. Podemos ejecutar el comando de la posición n, con !n . Las teclas abajo/arriba del cursor nos permiten iterar por los comandos usados.
 * **man comando**: Para obtener ayuda sobre comando
 * Para hacer fichero script: añadimos los comandos, chmod u+x fichero y para ejecutarlo ./fichero
+
+
+# REVISAR
+
+### Comandos básicos Linux
+
+Como ya hemos dicho, Raspberry Pi OS es una versión de [Linux](https://es.wikipedia.org/wiki/GNU/Linux), que no es más que una versión moderna del sistema operativo [Unix](https://es.wikipedia.org/wiki/Unix). Por esto tenemos acceso a los comandos de esos sistemas operativos.
+
+Como en todos estos sistemas operativos, está pensado para la seguridad y por defecto un usuario solo puede acceder y controlar sus archivos. Tampoco podrá modificar la configuración
+
+Veamos algunos de los comandos más utilizados:
+
+* La tecla Tabulador nos permite completar el nombre del comando/fichero/directorio
+* **ls** : muestra los archivos y directorios ( **ls -l** para más detalles y **ls -a** para mostrar todos)
+* **cd** : cambia de directorio (**cd ~** nos lleva a nuestro directorio home y **cd ..** sale del directorio actual)
+* **chmod** : cambia los permisos de un fichero/directorio (**chmod ugo-w fichero** quita todos los permisos de escritura)
+* **pwd** : nos dice el directorio actual
+* **mv** : mueve directorios/ficheros a un nuevo destino
+* **rm** : borra directorios/ficheros
+* **mkdir** : crea un directorio
+* **passwd** : cambia la contraseña del usuario actual
+* **ps -ef** : muestra los procesos en ejecución
+* **top** : administrador de tareas
+* **clear** : borra todo el contenido del terminal
+* **df** : muestra el % de disco ocupado
+* **nano** : editor de texto básico
+* **vi** : editor de texto avanzado pero complejo
+* **du** : muestra lo que ocupa un directorio (**du -s *** muestra lo que ocupa un directorio y todo lo que contiene)
+* ifconfig: muestra la configuración actual de la red, con sus IPs y las direcciones MAC
+* **sudo halt** apaga la raspberry
+* **sudo shutdown -h now** apaga la raspberry
+* **history** : muestra todos los comandos que se han ejecutado antes. Podemos ejecutar el comando de la posición n, con !n . 
+* **man comando**: Para obtener ayuda sobre comando
+* Para hacer fichero ejecutable: añadimos los comandos, chmod u+x fichero y para ejecutarlo ./fichero
+* Las teclas Flecha Arriba y Flecha Abajo permiten recuperar los comandos ya utilizados, para volver a ejecutarlos y si es necesario editarlos.
+
 
 [![Vídeo: Uso del terminal y comandos Linux en Raspberry Pi](https://img.youtube.com/vi/BF0Kjb4g454/0.jpg)](https://drive.google.com/file/d/1a2UjGmzv0XXMpadJ1iItbat_ibDuG6Sl/view?usp=sharing)
 
@@ -123,59 +127,3 @@ sudo su -
 ```
 
 Pero mucho cuidado que esto nos da todo el poder del usuario administrador(**root**) y por tanto toda la responsabilidad
-
-### Interface gráfico
-
-Para arrancar el interface gráfico desde consola si no está arrancado usando
-```sh
-startx
-```
-
-
-![startx](./images/raspX.png)
-
-## Usos
-
-Veamos cómo podemos utilizar lo aprendido...
-
-### Para hacer cálculos con Mathematica
-
-Hay una versión gratuita (para uso no comercial) de Wolfram  Mathematica instalada por defecto en Raspbian
-
-![Mathematica en Raspberry Pi](./images/Mathematica.png)
-
-[![Vídeo: Trabajando con Mathematica en Raspberry](https://img.youtube.com/vi/VVHoREZ8Rc4/0.jpg)](https://drive.google.com/file/d/1oXjMaNmL4gpaTHPePZYbIb6_lRsAGODi/view?usp=sharing)
-
-
-[Vídeo: Trabajando con Mathematica en Raspberry](https://drive.google.com/file/d/1oXjMaNmL4gpaTHPePZYbIb6_lRsAGODi/view?usp=sharing)
-
-
-### Vigilancia
-
-Podemos usar su cámara (la original o una USB)
-
-Usaremos un software standard de Linux: **motion**
-
-```sh
-sudo apt-get install motion
-```
-
-Editamos la configuración
-
-```sh
-sudo nano /etc/motion/motion.conf
-```
-
-![usando motion](./images/motion.jpg)
-
-Lo arrancamos
-```sh
-motion -n
-```
-
-Podremos acceder a la imagen en vivo de la cámara con
-
-```sh
-http://raspberry_ip:8081
-```
- 

@@ -81,7 +81,7 @@ Podemos capturar una imagen, que se mantendrá en la cámara con:
 $ gphoto2 --capture-image
 ```
 
-Para tomar una imagen y enviarla a la raspberry usaremos
+Para tomar una imagen y enviarla a la Raspberry Pi usaremos
 
 ```sh
 $ gphoto2 --capture-image-and-download

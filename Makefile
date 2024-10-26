@@ -111,18 +111,18 @@ INDEX:
 		"Tema 3.3.2 Otras instalaciones.md" \
 		"Tema 3.4 Arranque desde USB.md" \
 		"Tema 3.5 Instalación en Raspberry Pi Zero W.md"  \
-		"Tema 3.6 Alimentación.md" \
-		"Tema 3.7 TFT.md" \
+		"Tema 3.6 TFT.md" \
+		"Tema 3.7 Alimentación.md" \
+		"Tema 3.8 Problemas habituales.md" \
 		"Tema 3.9 Atribucion.md"
 
 4:
 	pandoc --pdf-engine=xelatex       \
 		-V papersize:a4paper        \
 		--template=./LaTeX_ES.latex \
-		--reference-doc=plantilla_raspy.docx \				
-		-o $(S4) \
-		Portada.md        \
-		Cabecera_latex.md \
+		--reference-doc=$(PLANTILLA_DOC) \
+		-o $(DIR_PUBLICACION)$(S4) \
+		"Tema 4 Portada.md"  \
 		"Tema 4.0 Uso de Raspberry Pi.md" \
 		"Tema 4.1 Matenimiento.md" \
 		"Tema 4.1.5 Usos.md" \

@@ -50,13 +50,13 @@ La TFT gpio de 3.95 comprada en electan https://raspberrypi.stackexchange.com/qu
 
 4.A VPN
 
-## PBX in raspberry pi
+## PBX in Raspberry pi
 
 https://www.youtube.com/watch?v=8QyFidVcoLM
 
 ## VMWare
 
-VMWare en raspberry pi
+VMWare en Raspberry pi
 
 https://www.youtube.com/watch?v=6aLyZisehCU
 

@@ -83,7 +83,7 @@ Yo también tengo mi Raspi5 con un disco M2 de 256GB, pero de momento sólo uso 
 ## Syncthing
 
 Para que arranque automáticamente
-En raspberry pi sudo systemctl enable syncthing@pi.service ([doc](https://forum.syncthing.net/t/auto-start-syncthing-on-raspberry-pi/14537/8))
+En Raspberry pi sudo systemctl enable syncthing@pi.service ([doc](https://forum.syncthing.net/t/auto-start-syncthing-on-raspberry-pi/14537/8))
 
 ## Ver espacio ocupado
 

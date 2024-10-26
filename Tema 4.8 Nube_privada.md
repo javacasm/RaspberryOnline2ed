@@ -1,4 +1,4 @@
-## Nube privada 
+## Nube privada: Owncloud
 
 Vamos a hacer una instalación de un sistema de nube privada usando OwnClowd.
 

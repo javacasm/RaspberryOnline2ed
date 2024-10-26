@@ -17,7 +17,7 @@ Por tanto será nuestra elección, si lo que queremos es montar un ordenador de 
 
 La Raspberry Pi Zero está pensada para proyectos donde el tamaño debe ser muy reducido o para productos donde la Raspberry está integrada como una parte más, por ejemplo una cámara de fotos.
 
-##  ¿Raspberry  4 ó 5? 
+## ¿Raspberry  4 ó 5?
 
 Esa es la pregunta del millón: ¿Compramos la versión más reciente o la anterior? A día de hoy, dada la poca diferencia de precio, salvo que encuentres una buena oferta para la Raspberry Pi 4, yo me inclinaría por la versión 5. 
 

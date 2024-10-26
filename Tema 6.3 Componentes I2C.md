@@ -2,7 +2,7 @@
 
 I2C es un protocolo de comunicación entre dispositivos, muy usado en el mundo de la electrónica. Al ser un bus, podemos conectar varios dispositivos I2C simultáneamente y además no necesitamos pines independientes para cada uno, sino que usaremos para todos los mismos pines llamados SDA(3) y SCL(5), teniendo cada uno de ellos una dirección (address) en el bus I2C, lo que nos permite dirigirnos a él.
 
-Este protocolo I2C funciona en un modo llamado Master/Slave, donde la raspberry hace el papel de Master, llevando la iniciativa en todas las comunicaciones, mientras que los otros dispositivos responden a sus peticiones.
+Este protocolo I2C funciona en un modo llamado Master/Slave, donde la Raspberry Pi hace el papel de Master, llevando la iniciativa en todas las comunicaciones, mientras que los otros dispositivos responden a sus peticiones.
 
 Antes de utilizar I2C tenemos que activar el driver correspondiente en la pestaña de configuración de interfaces de "raspi-config" (que ejecutaremos con sudo, como siempre)
 

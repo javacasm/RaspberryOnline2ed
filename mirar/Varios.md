@@ -1,6 +1,6 @@
 [15 proyectos con python en Raspberry Pi](https://raspberrytips.com/python-projects-on-raspberry-pi/)
 
-[Robot kit para raspberry Pi](https://raspberrytips.com/best-raspberry-pi-robots-kits/)
+[Robot kit para Raspberry Pi](https://raspberrytips.com/best-raspberry-pi-robots-kits/)
 
 [Domótica con Raspberry Pi - Philips Hue](https://raspberrytips.com/control-lights-raspberry-pi/)
 

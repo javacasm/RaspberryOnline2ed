@@ -4,10 +4,11 @@ Salvo que vayamos a usar nuestra Raspberry Pi como un ordenador de mesa, con su 
 
 Podemos acceder remotamente de 2 formas:
 
-* Accediendo al escritorio visual,  que se nos mostrará como si de un monitor se tratara y lo controlaremos con nuestro teclado y ratón. Este tipo de conexión se conoce como **VNC** por ser el protocolo más empleado a día de hoy. Para conectarnos necesitaremos tener instalado en nuestro ordenador  un cliente de ese protocolo **VNC**
-	![Acceso remoto con VNC](./images/VNC_CuentaUsuario.png)
+* Accediendo al escritorio visual,  que se nos mostrará como si de un monitor se tratara y lo controlaremos con nuestro teclado y ratón. Este tipo de conexión se conoce como **VNC** por ser el protocolo más empleado a día de hoy. Para conectarnos, necesitaremos tener instalado en nuestro ordenador  un cliente de ese protocolo **VNC**.
 
-* Conectando sólo con un interfaz de tipo texto, como un terminal o consola usando el protocolo de acceso remoto **ssh**. Aunque a primera vista puede parecer más limitado, la realidad es que podemos hacer casi lo mismo desde teclado que desde escritorio. Para conectarnos por **ssh** necesitaremos un cliente de este protocolo, que viene incluido en todos los sistemas operativos modernos.
+ ![Acceso remoto con VNC](./images/VNC_CuentaUsuario_recortada.jpg)
+
+* Conectando sólo con un interfaz de tipo texto, como un terminal o consola usando el protocolo de acceso remoto **ssh**. Aunque a primera vista puede parecer más limitado, la realidad es que podemos hacer casi lo mismo desde el teclado que desde el escritorio. Para conectarnos por **ssh** necesitaremos un cliente de este protocolo, que viene incluido en todos los sistemas operativos modernos.
 
 	![Acceso por ssh a la Raspberry Pi](./images/acceso_ssh_rapsberry.png)
 
@@ -15,18 +16,19 @@ Por tema de seguridad, los accesos remotos están cortados y tenemos que activar
 
 Si hemos hecho la instalación con RPI Imager ya habremos configurado el acceso al wifi, y también podemos activar el acceso por ssh desde el  principio.
 
-Antes de ver cómo usar estos métodos de conexión, vamos a ver algunos detalles sobre la forma en la que podemos acceder remotamente o no a nuestra Raspberry Pi.
+Antes de ver cómo usar estos métodos de conexión, vamos a ver algunos detalles sobre la forma en la que podemos acceder remotamente o no, a nuestra Raspberry Pi.
+
 ### Conceptos de redes
 
 Primero, veamos un diagrama simplificado de una red doméstica típica:
 
-![](./images/diagrama_red_domestica.png)
+![Diagrama de red doméstica](./images/diagrama_red_domestica.png)
 
 Ahora, expliquemos los componentes y su funcionamiento:
 
 1. Conexión a Internet:
    - El módem se conecta directamente a la infraestructura de tu Proveedor de Servicios de Internet (ISP).
-   - Recibe una dirección IP pública asignada por el ISP.
+   - Recibe una dirección IP pública, asignada por el ISP.
 
 2. Router:
    - Actúa como el punto central de tu red doméstica.
@@ -39,7 +41,7 @@ Ahora, expliquemos los componentes y su funcionamiento:
 
 4. Network Address Translation (NAT):
    - El router utiliza NAT para traducir entre las direcciones IP privadas de tu red local y la dirección IP pública.
-   - Cuando un dispositivo en tu red local solicita datos de Internet, el router cambia la dirección IP privada del dispositivo por la IP pública antes de enviar la solicitud.
+   - Cuando un dispositivo en tu red local solicita datos de Internet, el router cambia la dirección IP privada del dispositivo por la IP pública, antes de enviar la solicitud.
    - Cuando los datos regresan, el router sabe a qué dispositivo enviarlos dentro de la red local.
 
 Ahora, ¿por qué el router nos conecta a Internet pero no permite conexiones desde fuera?
@@ -53,7 +55,7 @@ Ahora, ¿por qué el router nos conecta a Internet pero no permite conexiones de
    - Sin embargo, no tiene forma de saber a qué dispositivo interno enviar una conexión entrante no solicitada.
 
 3. Firewall integrado:
-   - La mayoría de los routers incluyen un firewall básico que bloquea el tráfico entrante no autorizado.
+   - La mayoría de los routers incluyen un firewall básico, que bloquea el tráfico entrante no autorizado.
 
 4. Ausencia de reenvío de puertos:
    - Para permitir conexiones entrantes específicas, necesitarías configurar el reenvío de puertos, lo cual no está activado por defecto.
@@ -63,7 +65,7 @@ Ahora, ¿por qué el router nos conecta a Internet pero no permite conexiones de
 
 Esta configuración proporciona un buen equilibrio entre facilidad de uso y seguridad para la mayoría de los usuarios domésticos. Permite que todos los dispositivos de la red local accedan a Internet, mientras protege la red de accesos no autorizados desde el exterior.
 
-Para permitir conexiones entrantes (como para SSH, VNC o para alojar un servidor web), necesitarías configurar específicamente tu router para ello, lo que generalmente implica:
+Para permitir conexiones entrantes (como para SSH, VNC o para alojar un servidor web), necesitarás configurar específicamente tu router para ello, lo que generalmente implica:
 
 1. Configurar el reenvío de puertos.
 2. Posiblemente configurar una IP pública estática o usar un servicio de DNS dinámico.
@@ -71,7 +73,7 @@ Para permitir conexiones entrantes (como para SSH, VNC o para alojar un servidor
 
 Vamos a ampliar ahora el diagrama para incluir las operadoras de telefonía. 
 
-![](./images/diagrama_redloca_y_telefonia.png)
+![Diagrama red doméstica que incluye operadoras de telefonía](./images/diagrama_redloca_y_telefonia_reducida_60.jpg)
 
 Explicación del diagrama:
 
@@ -114,20 +116,21 @@ Este escenario dual es lo que permite a los móviles mantener una conexión cons
 
 ### Conexión desde una red externa
 
-Por todo esto podremos acceder a nuestra Raspberry Pi remotamente dentro de nuestra red, pero no podremos acceder cuando está en otra red, por ejemplo si la tenemos en casa y queremos acceder  desde la red del trabajo o si queremos acceder desde el móvil cuando estamos usando datos.
+Por todo esto, podremos acceder a nuestra Raspberry Pi remotamente dentro de nuestra red, pero no podremos acceder cuando está en otra red, por ejemplo, si la tenemos en casa y queremos acceder desde la red del trabajo o si queremos acceder desde el móvil cuando estamos usando datos.
 
 Existen varias soluciones para este problema:
+
 * Usar una VPN que nos permita acceder a la otra red, es una solución típica de muchas empresas para permitir acceder a los ordenadores remotamente. 
-* Algunos software como RealVNC (una versión del protocolo VNC) nos lo permiten hacer con cuentas de pago
+* Algunos software como RealVNC (una versión del protocolo VNC), nos lo permiten hacer con cuentas de pago.
 * Utilizar una herramienta de Raspberry Pi llamada __Raspberry Pi Connect__.
 
-Vamos a ver esta última opción por sencillez
+Vamos a ver esta última opción por sencillez.
 
 ### Raspberry pi Connect
 
-Nos proporciona la misma funcionalidad de acceso remoto de la versión comercial de  RealVNC pero además, de momento, sin límite de dispositivos, se llama Raspberry Pi Connect y puedes leer más información en [esta publicación](https://www.raspberrypi.com/news/raspberry-pi-connect/)
+Nos proporciona la misma funcionalidad de acceso remoto de la versión comercial de RealVNC pero además, de momento, sin límite de dispositivos, se llama Raspberry Pi Connect y puedes leer más información en [esta publicación](https://www.raspberrypi.com/news/raspberry-pi-connect/)
 
-Para instalarlo
+Para instalarlo:
 
 ```sh
 sudo apt update
@@ -141,65 +144,67 @@ Tras instalarlo tenemos que rearrancar, bien con el comando adecuado
 sudo reboot
 ``` 
 
-Pulsando el botón de reset, o con la opción de Apagar del menú.
+pulsando el botón de **reset**, o con la opción de **Apagar** del menú.
 
-Tras rearrancar, aparecerá el icono en la barra de herramientas
+Tras rearrancar, aparecerá el icono en la barra de herramientas:
 
 ![](./images/raspi-connect-icon.png)
 
-Si no saliera lo activamos a mano con:
+Si no saliera, lo activamos a mano con:
 
 ```console
 systemctl --user start rpi-connect
 ```
 
-Que arrancará el servicio.
+que arrancará el servicio.
 
 ![](./images/raspi_connect_icon_signin.png)
 
-Ahora pulsamos "Sign in" para conectar con nuestra cuenta (o crearla si no tenemos).Nos llevará a la siguiente web
+Ahora pulsamos **"Sign in"** para conectar con nuestra cuenta (o crearla si no la tenemos).Nos llevará a la siguiente web:
 
-![[raspi-connect-singin.png]]
+![Pantalla de Inicio de Sesión con ID Raspberry Pi](./images/raspi-connect-singin_reducida_75.jpg)
 
-Si no nos aparece el icono, para conectarnos por primera vez ejecutamos:
+Si no nos aparece el icono para conectarnos por primera vez, ejecutamos:
 
 ```console
 $ rpi-connect signin
 ```
 
-que nos dará un mensaje similar a este
+que nos dará un mensaje similar a este:
 
 ```console
 Complete sign in by visiting https://connect.raspberrypi.com/verify/XXXX-XXXX
 ```
 
-Nos conectamos a esa URL y completamos el registro
+Nos conectamos a esa URL, y completamos el registro.
 
-Si no tenemos cuenta la creamos. Tras crear la cuenta o conectarnos a la que ya teníamos, nos pedirá el nombre del nuevo equipo
+Si no tenemos cuenta la creamos. Tras crear la cuenta o conectarnos a la que ya teníamos, nos pedirá el nombre del nuevo equipo.
 
-![[raspi-connect-device-name.png]]
+![Nombrar a un nuevo dispositivo](./images/raspi-connect-device-name_reducida_75.jpg)
 
-Ahora cuando entremos en [connect.raspberrypi.con]()  desde cualquier ordenador, desde nuestra red o desde internet, veremos nuestros dispositivos
+Ahora cuando entremos en [https:\\connect.raspberrypi.com]  desde cualquier ordenador, desde nuestra red o desde internet, veremos nuestros dispositivos.
 
-![[raspi-connect-devices.png]]
+![Dispositivo conectados con Raspberry Pi](./images/raspi-connect-devices_reducida_75.jpg)
 
-Desde esta página podemos ver los detalles de cada máquina, pudiendo cambiar su nombre 
+Desde esta página, podemos ver los detalles de cada máquina, pudiendo cambiar su nombre 
 
 Podemos elegir si queremos acceder al escritorio del equipo o a una conexión de terminal vía ssh:
 
 ![](./images/raspi-connect_select_ssh-screen.png)
 
-Tras pulsar connect, podemos acceder al equipo remotamente
+Tras pulsar **connect**, podemos acceder al equipo remotamente.
 
-![[raspi-connect-connected.png]]
+![Acceso remoto al equipo](./images/raspi-connect-connected_reducida_50.jpg)
 
-El icono aparecerá de color morado cuando hay una conexión remota
+El icono aparece de color morado cuando hay una conexión remota.
 
 En el siguiente [vídeo](https://drive.google.com/file/d/1rpLkifN_uGr0gwP7rjS-iCQQuyp5rhNs/view?usp=sharing) explicamos la instalación y uso de RPI-Connect
+
 [![](./images/RPI%20Connect%20-%20Crea%20proyectos%20con%20Raspberry%20Pi.png)](https://drive.google.com/file/d/1rpLkifN_uGr0gwP7rjS-iCQQuyp5rhNs/view?usp=sharing)
 
-Más detalles técnicos en la[ página de rpi-connect](https://www.raspberrypi.com/documentation/services/connect.html)
-### ¿Cómo hace VNC o servicios similares para acceder remotamente a los ordenadores de nuestra red local?
+Más detalles técnicos en la [Página de RBP connect](https://www.raspberrypi.com/documentation/services/connect.html)
+
+### ¿Cómo hace VNC o los servicios similares para acceder remotamente a los ordenadores de nuestra red local?
 
 Los servicios como VNC (Virtual Network Computing) utilizan varias técnicas para permitir el acceso remoto a equipos en una red local desde fuera de ella.
 
@@ -251,24 +256,24 @@ Consideraciones importantes:
 
 ### SSH (vía consola)
 
-SSH es el protocolo de acceso remoto por consola (o terminal). Se suele utilizar cuando no necesitamos (o no tenemos) un entorno gráfico. Es una forma de conexión segura (usa encriptación y verificación a ambos lados) utilizada para acceder a router y otros dispositivos remotos
+SSH es el protocolo de acceso remoto por consola (o terminal). Se suele utilizar cuando no necesitamos (o no tenemos) un entorno gráfico. Es una forma de conexión segura (usa encriptación y verificación a ambos lados) utilizada para acceder al router y otros dispositivos remotos.
 
-Tenemos que activarlo en la configuración para poder acceder desde fuera.Entramos en la configuración avanzada
+Tenemos que activarlo en la configuración para poder acceder desde fuera. Entramos en la configuración avanzada:
 
 ```sh
 sudo raspi-config
 ```
 
-![ssh](./images/ssh.png)
+![Activando conexión ssh](./images/ssh_reducida_85.jpg)
 
-Podemos hacerlo también por comandos con
+Podemos hacerlo también por comandos con:
 
 ```sh
 sudo service ssh start
 sudo insserv ssh
 ```
 
-Ahora podremos conectarnos remotamente con ssh, desde Linux con el comando **ssh** o con otras herramientas que veremos a continuación
+Ahora podremos conectarnos remotamente con ssh, desde Linux con el comando **ssh** o con otras herramientas que veremos a continuación:
 
 ```sh
 ssh pi@192.189.0.123
@@ -288,7 +293,7 @@ Son muchas las herramientas que existen para poder conectarnos entre equipos usa
 
 [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) es una herramienta open source disponible para muchos sistemas operativos pensada para conectar remotamente con equipos usando distintos protocolos como ssh, telnet, serie, etc
 
-![Putty](./images/Putty_0.58_on_fvwm.png)
+![Putty](./images/Putty_0.58_on_fvwm_reducida_75.jpg)
 
 Permite guardar las credenciales de cada sistema, facilitando la conexión.
 
@@ -296,30 +301,30 @@ Permite guardar las credenciales de cada sistema, facilitando la conexión.
 
 [JuiceSSH](https://play.google.com/store/apps/details?id=com.sonelli.juicessh) es una herramienta de conexión ssh para móviles y tabletas Android.
 
-También nos permite gestionar las credenciales de acceso y los diferentes equipos a los que conectarnos:
+También nos permite gestionar las credenciales de acceso y los diferentes equipos a los que conectarnos: 
 
-![juicessh](./images/juicessh1.png)
+![JuiceSSH](./images/juicessh1_reducida_40.jpg)
 
-El uso incluso en un móvil es más cómodo de lo que parece, puesto que permite el uso de teclas como TAB, ctrl, cursor, etc.
+El uso en un móvil es incluso más cómodo de lo que parece, puesto que permite el uso de teclas como TAB, Ctrl, cursor, etc...
 
-![juicessh](./images/juicessh3.png)
+![JuiceSSH conexión para móviles](./images/juicessh3_reducida_40.jpg)
 
 
-[![Cliente SSH para móviles y tabletas Android: juicceSSH](https://img.youtube.com/vi/LLiZ52ss2DQ/0.jpg)](https://drive.google.com/file/d/1GG4mscjTBS9VqsDxgyXM6n1UopfQzrIB/view?usp=sharing)
+[Vídeo sobre Cliente SSH para móviles y tabletas Android: JuiceSSH](https://drive.google.com/file/d/1GG4mscjTBS9VqsDxgyXM6n1UopfQzrIB/view?usp=sharing)
 
-[Cliente SSH para móviles y tabletas Android: juicceSSH](https://drive.google.com/file/d/1GG4mscjTBS9VqsDxgyXM6n1UopfQzrIB/view?usp=sharing)
+[![Cliente SSH para móviles y tabletas Android: JuicceSSH](./images/JuiceSSH_carátula_vídeo_reducida_75.jpg)](https://drive.google.com/file/d/1GG4mscjTBS9VqsDxgyXM6n1UopfQzrIB/view?usp=sharing)
 
 ### Automatizar conexiones ssh
 
-Si vamos a conectarnos frecuentemente a un mismo equipo puede resultar pesado tener que poner siempre usuario y contraseña. 
+Si vamos a conectarnos frecuentemente a un mismo equipo, puede resultar pesado tener que poner siempre usuario y contraseña. 
 
 Podemos automatizar el protocolo ssh sin más que añadir nuestra **clave pública ssh** a la lista de host autorizados del servidor al que nos vamos a conectar, haciendo lo siguiente:
 
-1. Generar nuestra **clave pública ssh**, asociada al usuario y la máquina
+1. Generar nuestra **clave pública ssh**, asociada al usuario y la máquina:
 ```sh
 ssh-keygen -t rsa -b 4096 -C user@email.com
 ```
-2. Ahora copiamos nuestra clave pública ssh a 
+2. Ahora copiamos nuestra clave pública ssh a:
 ```sh
 cat ~/.ssh/id_rsa.pub | ssh username@server.address.com 'cat >> ~/.ssh/authorized_keys'
 ```
@@ -343,22 +348,24 @@ VNC es un protocolo que nos permite acceder remotamente al escritorio de otra m�
 
 En las nuevas versiones de Raspbian podemos activar VNC desde la configuración (o desde raspi-config), en el apartado de Interfaces.
 
-Para conectarnos necesitamos instalar un cliente de VNC, como por ejemplo [RealVNC](https://www.realvnc.com/en/connect/download/viewer/). Una vez instalado lo usaremos introduciendo la IP o el nombre de nuestra Raspberry Pi
+Para conectarnos necesitamos instalar un cliente de VNC, como por ejemplo [RealVNC](https://www.realvnc.com/en/connect/download/viewer/). Una vez instalado lo usaremos introduciendo la IP o el nombre de nuestra Raspberry Pi.
 
-![Acceso remoto con VNC](./images/VNC_CuentaUsuario.png)
+![Acceso remoto con VNC](./images/VNC_CuentaUsuario_recortada.jpg)
+
 ### Cambio de resolución del escritorio
 
-Cuando arrancamos una Raspberry Pi sin tener monitor conectado y la tenemos configurada para que se cree el escritorio gráfico suele crearse con una resolución pequeña.
+Cuando arrancamos una Raspberry Pi sin tener el monitor conectado y la tenemos configurada para que se cree el escritorio gráfico, suele crearse con una resolución pequeña.
 
-En el siguiente vídeo vamos a ver cómo hacer para modificar esa resolución. No hay más que entrar en Configuración de Raspberry -> Display y pulsar en Set Resolution
+En el siguiente vídeo, vamos a ver cómo hacer para modificar esa resolución. No hay más que entrar en Configuración de Raspberry Pi -> Display y pulsar en Set Resolution.
 
-[![Vídeo: Cambio resolución del escritorio de una Raspberry Pi](https://img.youtube.com/vi/RWX2UWwgP4I/0.jpg)](https://drive.google.com/file/d/1o8hYMcc-zDuWLMg7_wBSPXxQGDwuB7Np/view?usp=sharing)
+[![Vídeo: Cambio resolución del escritorio de una Raspberry Pi](./Images/Cambio_resolución_escritorio_reducida_65.jpg)]
+(https://drive.google.com/file/d/1o8hYMcc-zDuWLMg7_wBSPXxQGDwuB7Np/view?usp=sharing)
 
-[Vídeo: Cambio resolución del escritorio de una Raspberry Pi](https://drive.google.com/file/d/1o8hYMcc-zDuWLMg7_wBSPXxQGDwuB7Np/view?usp=sharing)
+[Vídeo: Cambio de resolución del escritorio de una Raspberry Pi](https://drive.google.com/file/d/1o8hYMcc-zDuWLMg7_wBSPXxQGDwuB7Np/view?usp=sharing)
 
 #### Instalación de VNC en equipos antiguos
 
-En todas la versiones modernas ya viene instalado VNC y sólo tenemos que activarlo, pero si no está disponible en nuestra instalación podemos instalarlo de manera sencilla con:
+En todas la versiones modernas ya viene instalado VNC y sólo tenemos que activarlo, pero si no está disponible en nuestra instalación, podemos instalarlo de manera sencilla con:
 
 ```sh
 sudo apt-get install tightvncserver
@@ -370,11 +377,11 @@ Este software requiere que un servicio se ejecute al arrancar si queremos accede
 su -c "/usr/bin/tightvncserver :1 -geometry 800x600 -depth 16" pi
 ```
 
-![vnc](./images/vnc.png)
+![[VNC](./images/vnc_reducida_75.jpg)
 
-Ahora accederemos usando un cliente vnc, como por ejemplo [VNC Viewer](https://www.realvnc.com/es/connect/download/viewer/) de RealVNC. Si nos creamos una cuenta en RealVNC podremos acceder desde cualquier parte, incluso desde internet, sorteando nuestro router.
+Ahora accederemos usando un cliente VNC, como por ejemplo [VNC Viewer](https://www.realvnc.com/es/connect/download/viewer/) de RealVNC. Si nos creamos una cuenta en RealVNC podremos acceder desde cualquier parte, incluso desde internet, sorteando nuestro router.
 
-![Acceso con cuenta de usuario VNC](./images/VNC_CuentaUsuario.png)
+![Acceso con cuenta de usuario VNC](./images/VNC_CuentaUsuario_recortada_reducida_75.jpg)
 
 Existen clientes de VNC para teléfonos móviles y tabletas, lo que nos da muchas posibilidades
 
@@ -382,48 +389,50 @@ La conexión por VNC nos permite acceder como si estuviéramos conectados direct
 
 ### Conexión y acceso directo
 
-Vamos a configurar nuestra raspberry y un portátil con Ubuntu para facilitar al máximo la conexión y así no tener que utilizar muchos componentes. De esta manera podremos trastear con un kit mínimo, evitando tener que usar un teclado, ratón y sobre todo un monitor.
+Vamos a configurar nuestra Raspberry Pi y un portátil con Ubuntu, para facilitar al máximo la conexión y así no tener que utilizar muchos componentes. De esta manera, podremos trastear con un kit mínimo, evitando tener que usar un teclado, ratón y sobre todo un monitor.
 
-![Conexión directa entre Raspberry y portátil](http://blog.elcacharreo.com/wp-content/uploads/2013/05/20130501_003523-150x150.jpg)
+![Conexión directa entre Raspberry Pi y portátil](./images/Conexión%20directa%20Raspberry%20portátil.jpg)
 
-En concreto usaremos simplemente un cable de red (ethernet) y un cable micro-usb para alimentar la raspberry.
+En concreto, usaremos simplemente un cable de red (Ethernet) y un cable micro-USB para alimentar la Raspberry Pi.
 
-Con esta configuración no podemos consumir en total más de los 500mA que proporciona el USB.
+Con esta configuración, no podemos consumir en total más de los 500mA que proporciona el USB.
 
-Tendremos que modificar ficheros de configuración en el PC y en la raspberry.
+Tendremos que modificar ficheros de configuración en el PC y en la Raspberry Pi.
 
-Asumimos que tenemos conexión a internet vía Wifi y utilizaremos el cable ethernet para dar conectividad a la raspberry. Crearemos una red entre el portátil y la raspberry creando una subred distinta y haremos que el portátil actúe como gateway de esa red enrutando los paquetes hacia la raspberry y dándole acceso a internet.
+Asumimos que tenemos conexión a internet vía Wifi y utilizaremos el cable Ethernet, para dar conectividad a la Raspberry. Crearemos una red entre el portátil y la Raspberry y a su vez otra subred distinta, y haremos que el portátil actúe como gateway de esa red, enrutando los paquetes hacia la Raspberry y dándole acceso a internet.
 
-Comencemos editando la configuración del pc, para lo que ejecutaremos en el pc:
+Comencemos editando la configuración del pc, para lo que ejecutaremos en el PC:
 
 ```sh
 sudo vi /etc/network/interfaces
 ```
-y dejamos el contenido del fichero (la red que se usa normalmente es las 192.168.1.x de ahí que el gateway sea 192.168.1.1 que es el real)
+y dejamos el contenido del fichero (la red que se usa normalmente es las **192.168.1.x** de ahí, que el gateway sea **192.168.1.1** que es el real)
 
-![Configuración inicial de la red local](http://blog.elcacharreo.com/wp-content/uploads/2013/05/paso1.png)
+![Configuración inicial de la red local](./images/Configuración%20inicial%20de%20la%20red%20local_Paso1.jpg)
 
-Ahora vamos a editar la configuración de la raspberry. La forma más sencilla es editando los ficheros de configuración desde el pc, para lo que insertamos la tarjeta sd de la raspberry (obviamente con esta apagada) en el pc y ejecutamos en este:
+Ahora vamos a editar la configuración de la Raspberry. La forma más sencilla es editando los ficheros de configuración desde el PC, para lo que insertamos la tarjeta sd de la Raspberry (obviamente cuando está apagada) en el PC y ejecutamos en éste:
+
 ```sh
 sudo vi /media/10b4c001-2137-4418-b29e-57b7d15a6cbc/etc/network/interfaces
 ```
 Quedando el mismo:
 
-![Configuración final de la red local](http://blog.elcacharreo.com/wp-content/uploads/2013/05/paso2.png)
+![Configuración final de la red local](./images/Configuración%20final%20de%20la%20red%20local_paso2.jpg)
 
-Ahora, colocamos la tarjeta sd en la raspberry y volvemos a encenderla
+Ahora, colocamos la tarjeta sd en la Raspberry y volvemos a encenderla
 
 
-Conectamos el cable ethernet entre los dos
+Conectamos el cable Ethernet entre los dos.
 
-En el PC hacemos comprobamos que la tarjeta eth0 está ok y con la ip correspondiente, haciendo
+En el PC comprobamos que la tarjeta eth0 está ok y con la IP correspondiente, haciendo:
 
 ```sh
 ifconfig /all
 ```
-Veremos que aparece el interface eth0 con ip 192.168.0.80
 
-Ahora vamos a hacer que el portátil actúe como router. Para ello ejecutamos los siguientes comandos
+Veremos que aparece el interface eth0 con IP **192.168.0.80**
+
+Ahora vamos a hacer que el portátil actúe como router, para ello, ejecutamos los siguientes comandos:
 
 ```sh
 sudo su -
@@ -431,19 +440,19 @@ root@ubuntu-asus:~# echo 1 > /proc/sys/net/ipv4/ip_forward
 root@ubuntu-asus:~# /sbin/iptables -t nat -A POSTROUTING -o wlan0 -j MASQUERADE
 ```
 
-Por último editamos el fichero de configuración de DNS con
+Por último editamos el fichero de configuración de DNS con:
 ```sh
 sudo vi /etc/resolv.conf
 ```
 
-y lo dejamos así
+y lo dejamos así:
 
-![Configuración de servidor de nombres](http://blog.elcacharreo.com/wp-content/uploads/2013/05/paso3.png)
+![Configuración de servidor de nombres](./images/Configuración%20servidor%20de%20nombres_paso3.jpg)
 
 
-Ahora solo falta probar que tenemos conectividad, haciendo un ping
+Ahora solo falta probar que tenemos la conectividad, haciendo un ping:
 ```sh
 ping 192.168.0.90
 ```
 
-Si todo es correcto ya podremos acceder via ssh o  VNC
+Si todo es correcto, ya podremos acceder vía **ssh** o **VNC**.

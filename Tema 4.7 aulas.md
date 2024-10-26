@@ -41,6 +41,13 @@ Algunas ideas para mejorar el funcionamiento:
 
 ## Clonado de tarjetas
 
-Aunque existen herramientas más sofisticadas, la misma herramienta SD Copier nos permite crear un clon de un sistema ya en funcionamiento. 
+Aunque existen herramientas más sofisticadas, la misma herramienta **SD Card Copier** nos permite crear un clon de un sistema ya en funcionamiento. 
+
+El uso es muy sencillo, seleccionando el dispositivo origen y el destino. Para ello necesitamos usar varios dispositivos USB.
+
+![](sd_card_copier.png)
 
 Podemos crear un sistema con todo lo necesario y a partir de él clonar las tarjetas del resto.
+
+Recuerda que para hacer pequeñas modificaciones en una tarjeta la puedes abrir en cualquier ordenador y editar o modificar el fichero que queramos (por ejemplo el nombre del equipo),
+

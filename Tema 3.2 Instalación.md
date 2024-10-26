@@ -44,7 +44,7 @@ Por último seleccionaremos  la tarjeta SD o el dispositivo  donde vamos a escri
 
  Nos preguntará si queremos configurar la instalación, lo que nos permitirá definir usuario, idioma, teclado, nombre de la máquina, conexión wifi y acceso remoto.
 
-  ![Configuración de la Instalación Raspberry Pi Imager](./images/Raspi-imager-config-0_reducida_75.jpg)
+  ![Configuración de la Instalación Raspberry Pi Imager](./images/Raspi-imager-config-0_reducida_60.jpg)
 
 Configuramos nuestra instalación con:
 
@@ -52,11 +52,11 @@ Configuramos nuestra instalación con:
 * Usuario/contraseña (no podemos olvidarlo o no podremos acceder).
 * SSID y contraseña del wifi.
 
-	![Personalización del SO Raspberry Pi Imager](./images/Raspi-imager-Config-1_reducida_75.jpg)
+	![Configuración de la Instalación Raspberry Pi Imager](./images/Raspi-imager-Config-1_reducida_50.jpg)
 	
 * En la pestaña Servicios: activamos acceso ssh para poder conectarnos remotamente:
 
-	![Configuración Servicios Raspberry Imager](./images/Raspi-imager-Config-servicios_reducida_75.jpg)
+	![Configuración Servicios Raspberry Imager](./images/Raspi-imager-Config-servicios_reducida_50.jpg)
 
 Ésta es una gran ventaja, pues al arrancar, ya tendremos toda esta configuración realizada. Además esta configuración se guarda en el instalador y podremos fácilmente reutilizar los datos para posteriores instalaciones.
 
@@ -76,7 +76,7 @@ También podemos usar RPI Imager para formatear la tarjeta, para crear tarjetas 
 
 [Vídeo: Instalación de Raspberry Pi OS usando Imager](https://drive.google.com/file/d/1vZCdJa2551mNAdr1cwsOAJMn440eqXMG/view?usp=sharing)
 
-Si todo va bien al cabo de unos segundos, si tenemos conectado un monitor,  veremos el escritorio, un escritorio ligero pero con buen aspecto y con la funcionalidad a la que estamos acostumbrados hoy en día
+Si todo va bien al cabo de unos segundos y si tenemos conectado un monitor,  veremos el escritorio, un escritorio ligero pero con buen aspecto y con la funcionalidad a la que estamos acostumbrados hoy en día.
 
 ![Menú del Escritorio Pixel](./images/PixelMenu_reducida_75.jpg)
 
@@ -90,7 +90,7 @@ ssh nombre_usuario@nombre_maquina.local
 ```
 * En Windows anteriores a 11 instalamos [Putty](https://putty.org), herramienta open source y, a pesar del  nombre, totalmente confiable. Desde ahí podremos acceder usando el nombre de usuario elegido y el nombre de la máquina. [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html "http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html") es una herramienta open source disponible para muchos sistemas operativos pensada para conectar remotamente con equipos usando distintos protocolos como ssh, telnet, serie, etc. Permite guardar las credenciales de cada sistema, facilitando la conexión.
 
-	![Putty herramienta para conectar equipos remotamente](./images/Putty.png)
+	![Putty herramienta para conectar equipos remotamente](./images/Putty_reducida_60.jpg)
 
 * Introducimos la contraseña (que no se ve al escribirla, tampoco) y accedemos a nuestra Raspberry Pi por línea de comandos.
 
@@ -101,7 +101,7 @@ La Raspberry Pi (y todos los ordenadores que usan Linux/Unix) se puede usar con 
 * El ratón es más intuitivo, sólo hay que ir mirando por las opciones de menú, que suelen ser bastante descriptivas.
 * La línea de comandos da un control más detallado y una vez que te acostumbras, es más productiva, sobre todo porque se pueden automatizar tareas con facilidad.
 
-![Ejemplo de uso de consola/terminal](./images/contenidowww_recortada_75.jpg)
+![Ejemplo de uso de consola/terminal](./images/contenidowww_recortada.jpg)
 
 Sobre los comandos de consola, hay libros y libros, en este curso hemos intentado incluir algunas de las "recetas" más habituales. Muchos de ellos están incluidos en la documentación del curso.  
 
@@ -120,7 +120,7 @@ Vamos a ver algunos de los menús e iconos más importantes de Pixel Raspberry P
 
 A la izquierda tenemos el menú de aplicaciones.
 
-![Menú de configuración de Raspberry](./images/ConfiguracionRaspberry_reducida_75.jpg)
+![Menú de configuración de Raspberry](./images/ConfiguracionRaspberry_reducida_60.jpg)
 
 A la derecha, podemos pulsar sobre el icono del Wifi o de la red para configurarla, si fuera necesario.
 
@@ -128,15 +128,15 @@ A la derecha, podemos pulsar sobre el icono del Wifi o de la red para configurar
 
 Demos un paseo por el interfaz del escritorio.
 
-[![Vídeo: Uso del escritorio Pixel de Raspberry Pi](https://img.youtube.com/vi/IrjWoxWfewo/0.jpg)]
-(https://drive.google.com/file/d/1Xctv-39GG117f1Zm_0QbfQbRZoZd_MKG/view?usp=sharing)
 En este [vídeo](https://drive.google.com/file/d/1Xctv-39GG117f1Zm_0QbfQbRZoZd_MKG/view?usp=sharing) podéis ver el uso del entorno visual  Pixel de Raspberry Pi.
+
+[![](https://img.youtube.com/vi/IrjWoxWfewo/0.jpg)](https://drive.google.com/file/d/1Xctv-39GG117f1Zm_0QbfQbRZoZd_MKG/view?usp=sharing)
 
 ### Usando Pixel el entorno de Raspberry Pi en tu PC
 
-![Pixel entorno gráfico de Raspberry Pil](./images/newdesk-500x281.jpg)
+![Pixel entorno gráfico de Raspberry Pi](./images/newdesk-500x281.jpg)
 
-Puedes usar Pixel el entorno gráfico de Raspberry en tu PC o MAC, solo necesitas descargar la [imagen](http://downloads.raspberrypi.org/pixel_x86/images/pixel_x86-2016-12-13/2016-12-13-pixel-x86-jessie.iso) desde un CD o USB.
+Puedes usar Pixel el entorno gráfico de Raspberry Pi en tu PC o MAC, solo necesitas descargar la [imagen](http://downloads.raspberrypi.org/pixel_x86/images/pixel_x86-2016-12-13/2016-12-13-pixel-x86-jessie.iso) desde un CD o USB.
 
 Más detalles en [esta página](https://www.raspberrypi.com/news/pixel-pc-mac/)
 

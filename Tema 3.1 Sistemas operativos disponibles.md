@@ -10,11 +10,11 @@ Veamos algunos de los más utilizados:
 
 ### [Raspberry Pi OS (Raspbian)](https://www.raspberrypi.com/software/operating-systems/)
 
-(Hasta hace un corto período de tiempo, el sistema operativo oficial de Raspberry Pi se llamaba Raspbian, pero desde hace muy poco, lo han renombrado como Raspberry Pi OS. (Por lo que puede que en algunas ocasiones me siga refiriendo a él, con ese nombre.)
+Hasta hace un corto período de tiempo, el sistema operativo oficial de Raspberry Pi se llamaba Raspbian, pero desde hace muy poco, lo han renombrado como Raspberry Pi OS. (Por lo que puede que en algunas ocasiones me siga refiriendo a él, con ese nombre.)
 
 Es la versión para Raspberry de Debian (una de las distribuciones de Linux con mayor solera). Es el sistema operativo más usado y contiene todo lo necesario.
 
-![Raspbian](./images/Raspbian_reducida_75.jpg)
+![](./images/Raspbian_reducida_75.jpg)
 
 Podemos elegir entre 3 versiones:
 
@@ -46,7 +46,7 @@ La primera está pensada para ser usada en servidores y sin herramientas gráfic
 
 ![Máquina de juegos con Raspberry Pi](./images/800px-Arcade_bartop_reducida_75.jpg)
 
-* Noobs: Es un SO mínimo pensado para facilitar la instalación. Arranca el sistema y nos permite elegir qué sistema operativo instalar, y si tenemos suficiente espacio en la tarjeta, podremos instalar varios en una misma SD. Durante mucho tiempo fue la opción recomendada, pero ahora es preferible usar Raspberry Pi Imager.
+* [Noobs](https://github.com/raspberrypi/noobs) Es un SO mínimo, pensado para facilitar la instalación. Arranca el sistema y nos permite elegir qué sistema operativo instalar, y si tenemos suficiente espacio en la tarjeta, podremos instalar varios en una misma SD. Durante mucho tiempo fue la opción recomendada, pero ahora es preferible usar Raspberry Pi Imager.
 
 ![Noobs SO para facilitar instalación](./images/noobs_reducida_75.jpg)
 

@@ -61,7 +61,7 @@ Ahora conectamos un teclado, ratón y monitor  para una primera configuración:
 
 ### Conexion remota
 
-Como vamos a necesitar conectarnos remotamente al robot, tanto para controlarlo como para hacer cambios en la programación, intentaremos hacer un entorno de desarrollo completo en la propia raspberry del robot, sin necesidad de un ordenador externo, más que para conectarnos por VNC o SSH.
+Como vamos a necesitar conectarnos remotamente al robot, tanto para controlarlo como para hacer cambios en la programación, intentaremos hacer un entorno de desarrollo completo en la propia Raspberry del robot, sin necesidad de un ordenador externo, más que para conectarnos por VNC o SSH.
 
 * Creamos una red wifi, preferiblemente con el móvil para poder acceder a internet al mismo tiempo
 * Mientras aún tenemos monitor y teclado conectamos a este wifi a  raspicar para que se conecte cuando esté visible.
