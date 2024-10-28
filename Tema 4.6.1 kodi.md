@@ -1,6 +1,8 @@
 ##  Kodi 
 
-El centro de la distribución multimedia es  Kodi, un reproductor multimedia muy avanzado y por su naturaleza modular podemos adaptar para todo tipo de contenidos. Además podemos personalizarlo instalando Add-ons (complementos) para reproducir y para obtener nuestros contenidos.
+La aplicación que actúa como centro de la distribución multimedia es  Kodi, un reproductor multimedia muy avanzado y por su naturaleza modular podemos adaptar para todo tipo de contenidos. Además podemos personalizarlo instalando Add-ons (complementos) para reproducir y para obtener nuestros contenidos.
+
+(Disculpa la calidad de las imágenes, son fotos, no capturas que no se pueden hacer con esta distribución)
 
 ![LibreELEC](./images/Kodi1.jpg)
 

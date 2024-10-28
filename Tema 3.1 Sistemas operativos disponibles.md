@@ -44,7 +44,7 @@ La primera está pensada para ser usada en servidores y sin herramientas gráfic
 
 * [Retropie](https://retropie.org.uk/): Es una distribución que contiene varios emuladores de máquinas recreativas y videoconsolas y que convierten a nuestra Raspberry en una máquina de jugar. 
 
-![Máquina de juegos con Raspberry Pi](./images/800px-Arcade_bartop_reducida_75.jpg)
+![Máquina de juegos con Raspberry Pi](./images/800px-Arcade_bartop_reducida_75.png)
 
 * [Noobs](https://github.com/raspberrypi/noobs) Es un SO mínimo, pensado para facilitar la instalación. Arranca el sistema y nos permite elegir qué sistema operativo instalar, y si tenemos suficiente espacio en la tarjeta, podremos instalar varios en una misma SD. Durante mucho tiempo fue la opción recomendada, pero ahora es preferible usar Raspberry Pi Imager.
 

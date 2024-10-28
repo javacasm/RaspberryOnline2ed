@@ -198,6 +198,10 @@ Tras pulsar **connect**, podemos acceder al equipo remotamente.
 
 El icono aparece de color morado cuando hay una conexión remota.
 
+Una vez instalado y operativo, podemos desactivar el acceso e incluso apagar el servicio Rasperry Pi Connect, desde las opciones del icono de la barra de tareas
+
+![Opciones para activar el acceso desde Raspberry Pi Connect](./images/rpi-connect_icon_options_reducida_275.jpg)
+
 En el siguiente [vídeo](https://drive.google.com/file/d/1rpLkifN_uGr0gwP7rjS-iCQQuyp5rhNs/view?usp=sharing) explicamos la instalación y uso de RPI-Connect
 
 [![](./images/RPI%20Connect%20-%20Crea%20proyectos%20con%20Raspberry%20Pi.png)](https://drive.google.com/file/d/1rpLkifN_uGr0gwP7rjS-iCQQuyp5rhNs/view?usp=sharing)
@@ -358,8 +362,7 @@ Cuando arrancamos una Raspberry Pi sin tener el monitor conectado y la tenemos c
 
 En el siguiente vídeo, vamos a ver cómo hacer para modificar esa resolución. No hay más que entrar en Configuración de Raspberry Pi -> Display y pulsar en Set Resolution.
 
-[![Vídeo: Cambio resolución del escritorio de una Raspberry Pi](./Images/Cambio_resolución_escritorio_reducida_65.jpg)]
-(https://drive.google.com/file/d/1o8hYMcc-zDuWLMg7_wBSPXxQGDwuB7Np/view?usp=sharing)
+[![Vídeo: Cambio resolución del escritorio de una Raspberry Pi](https://img.youtube.com/vi/RWX2UWwgP4I/0.jpg)](https://drive.google.com/file/d/1o8hYMcc-zDuWLMg7_wBSPXxQGDwuB7Np/view?usp=sharing)
 
 [Vídeo: Cambio de resolución del escritorio de una Raspberry Pi](https://drive.google.com/file/d/1o8hYMcc-zDuWLMg7_wBSPXxQGDwuB7Np/view?usp=sharing)
 
@@ -377,7 +380,7 @@ Este software requiere que un servicio se ejecute al arrancar si queremos accede
 su -c "/usr/bin/tightvncserver :1 -geometry 800x600 -depth 16" pi
 ```
 
-![[VNC](./images/vnc_reducida_75.jpg)
+![VNC](./images/vnc_reducida_75.jpg)
 
 Ahora accederemos usando un cliente VNC, como por ejemplo [VNC Viewer](https://www.realvnc.com/es/connect/download/viewer/) de RealVNC. Si nos creamos una cuenta en RealVNC podremos acceder desde cualquier parte, incluso desde internet, sorteando nuestro router.
 

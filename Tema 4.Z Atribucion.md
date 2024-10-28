@@ -1,3 +1,3 @@
 ## Atribución
 
-En ese tema se han incluído imágenes de la página de Raspberrypi.org, de  .....
+En ese tema se han incluido imágenes de la página de Raspberrypi.org, y de  flickr

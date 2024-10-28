@@ -169,7 +169,7 @@ Para ver que funciona y es compatible, instalaremos una instancia del conocido g
 
     Veremos una página para seleccionar el idioma
 
-    ![Idioma](RaspberryOnline4ed/images/wpIdioma.png)
+    ![Idioma](./images/wpIdioma.png)
 
     Ahora rellenamos los datos de acceso a la base de datos 
 

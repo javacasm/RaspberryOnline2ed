@@ -4,6 +4,35 @@
 
 (De Drawed by Wilgengebroed on Flickr - Translated by Prades97, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=32745149)
 
+IoT, o "Internet de las Cosas" (del inglés, *Internet of Things*), es un concepto que se refiere a la interconexión de objetos cotidianos a Internet, permitiendo que estos dispositivos recopilen, compartan y, en algunos casos, procesen datos de manera autónoma. Estos "objetos inteligentes" pueden ser desde electrodomésticos, sensores industriales y vehículos, hasta dispositivos de salud, ropa y ciudades enteras. La finalidad del IoT es mejorar la eficiencia, la comodidad y la toma de decisiones mediante el uso de datos en tiempo real.
+
+### ¿Cómo funciona el IoT?
+La arquitectura de IoT generalmente se compone de varios elementos clave:
+1. **Dispositivos o sensores**: Los dispositivos IoT tienen sensores o actuadores que recopilan datos, como la temperatura, la ubicación, o incluso el ritmo cardíaco en dispositivos médicos.
+2. **Conectividad**: Estos dispositivos se conectan a Internet o a redes locales a través de Wi-Fi, Bluetooth, redes móviles, entre otras tecnologías, para transmitir los datos.
+3. **Nube o almacenamiento**: Los datos se almacenan en servidores o plataformas en la nube, donde pueden procesarse y analizarse.
+4. **Procesamiento y análisis**: Los datos recopilados se analizan para proporcionar información útil o activar acciones automáticas, como encender una luz, activar un sistema de seguridad o realizar predicciones basadas en tendencias.
+5. **Interfaz de usuario**: Muchas veces, los datos se muestran en una aplicación o panel, donde los usuarios pueden monitorear y controlar los dispositivos.
+
+### Ejemplos de aplicaciones de IoT
+1. **Hogares inteligentes**: Dispositivos como termostatos, cerraduras y asistentes de voz (ej. Alexa o Google Home) automatizan tareas y permiten controlar el hogar de forma remota.
+2. **Salud y bienestar**: Los dispositivos portátiles como pulseras o relojes inteligentes monitorizan constantes vitales y ayudan en la gestión de la salud.
+3. **Industria 4.0**: En fábricas, los sensores y máquinas conectadas permiten un control detallado y en tiempo real de los procesos productivos, optimizando recursos y reduciendo fallos.
+4. **Ciudades inteligentes**: La iluminación, el tráfico y los sistemas de gestión de residuos en las ciudades pueden automatizarse para mejorar la eficiencia y reducir costos.
+5. **Agricultura**: IoT facilita el monitoreo del clima y el estado del suelo, permitiendo un riego y una gestión de cultivos más precisos.
+
+### Ventajas del IoT
+- **Eficiencia y ahorro de recursos**: Ayuda a reducir costos y optimizar procesos.
+- **Toma de decisiones basada en datos**: Permite decisiones informadas gracias a los datos en tiempo real.
+- **Automatización de tareas**: Mejora la comodidad y reduce la necesidad de intervención humana.
+- **Personalización**: Los dispositivos pueden adaptarse a las preferencias y necesidades del usuario.
+
+### Desafíos y preocupaciones
+- **Seguridad y privacidad**: Al estar conectado a Internet, el IoT es vulnerable a ataques cibernéticos, lo que plantea problemas de privacidad de datos.
+- **Interoperabilidad**: Hay muchos dispositivos y fabricantes distintos, y no siempre son compatibles entre sí.
+- **Estandarización**: Faltan estándares globales para regular y facilitar la conectividad entre dispositivos.
+
+En resumen, el IoT está transformando la manera en que interactuamos con el mundo que nos rodea al conectar el entorno físico al digital.
 
 ¿Qué dispositivos IOT conoces?
 
@@ -84,4 +113,6 @@ Veamos algunos de los proyectos en los que podríamos trabajar:
 [Arquitectura de un sistema completo IOT](https://polaridad.es/grafica-sensor-internet-de-las-cosas-iot/)
 
 ![Arquitectura IOT](./images/ArquitecturaIOT.png)
+
+Vemos que podemos usar la Raspberry Pi prácticamente en todas las  fases de un proyecto IOT. En los siguientes capítulos vamos a ir viendo cómo hacerlo.
 

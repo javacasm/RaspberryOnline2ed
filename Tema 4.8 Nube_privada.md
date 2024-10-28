@@ -1,3 +1,13 @@
+## Nube privada
+
+Con una Raspberry Pi y algún disco USB externo (no es buena idea usar la tarjeta SD para esto porque nos duraría poco...) podemos montar un almacenamiento en la nube.
+
+Existen varias alternativas, unas más sencillas de usar y compatibles con otros tipos de ordenadores.
+
+## Nube privada con SyncThing
+
+TODO
+
 ## Nube privada: Owncloud
 
 Vamos a hacer una instalación de un sistema de nube privada usando OwnClowd.
@@ -38,7 +48,6 @@ md5sum -c owncloud-10.4.1.tar.bz2.md5 <  owncloud-10.4.1.tar.bz2
 
 
 ![Check md5 owncloud](./images/Check_md5_owncloud.png)
-
 
 Lo descomprimimos:
 ```sh

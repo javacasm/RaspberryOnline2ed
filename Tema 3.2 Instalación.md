@@ -36,7 +36,7 @@ A día de hoy (octubre de 2024) existen 2 versiones disponibles de Raspberry Pi 
 * La versión derivada de **Bullseye**, que es la más reciente, pero que hasta ahora mismo no es compatible al 100% con algunas librerías de Python. Cada vez son menos las aplicaciones que no son compatibles.
 * La versión **Legacy** que es una actualización de la versión anterior **Buster**, que sí es compatible con las librerías de Python antiguas, por ejemplo las de usar la cámara.
 
-![[Versiones de Raspberry Pi disponibles](./images/rpi-imager_1.8.5_sos_raspian_reducida_60.jpg)
+![Versiones de Raspberry Pi disponibles](./images/rpi-imager_1.8.5_sos_raspian_reducida_60.jpg)
 
 Elegiremos una u otra, según el tipo de aplicación que queramos usar. Ante la duda, mejor instalar la versión más moderna de 64 bits.
 

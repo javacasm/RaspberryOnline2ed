@@ -12,7 +12,7 @@ Todo ello hace que este protocolo sea muy útil y versátil, capaz de funcionar 
 
 Los equipos conectados por **MQTT** envían y reciben mensajes que están formados por un **Topic**, que es como una etiqueta con estructura arbórea y un **mensaje** o contenido.
 
-Decimos que los topic tienen estructura arbórea porque podemos estructurarlos y además usar comodines ('+' y '#'). 
+Decimos que los topics tienen estructura arbórea porque podemos estructurarlos y además usar comodines ('+' y '#'), como se hace con los ficheros. 
 
 Por ejemplo si decimos que estamos interesados en el topic "/MeteoSalon/#" diremos que nos interesan todos los mensajes que empiecen por "/MeteoSalon/". 
 
@@ -74,7 +74,6 @@ La opción **-v** es para que muestre más detalles sobre los mensajes
 
 ```sh
 mosquitto_sub -h 192.168.1.200 -t "MeteoSalon/#" -v
-
 ```
 
 y la aplicación quedará esperando hasta que se reciban mensajes con un topic compatible
@@ -113,4 +112,3 @@ Para ellos es mejor usar una arquitectura. Por ejemplo esta, [tomada del blog de
 _Telemetría_ para que den información, por ejemplo los sensores.
 _Command_ para peticiones 
 _Stat_ para confirmaciones de estados
-

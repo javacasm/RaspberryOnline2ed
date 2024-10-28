@@ -48,6 +48,5 @@ En un segundo nivel veremos algunas distribuciones con un acabado más profesion
 
 También veremos de pasada un ejemplo con Google Assistant para entender la complejidad y dónde están los problemas.
 
-
 [La serie de vídeos sobre Domótica de Jorge Pascual](https://www.youtube.com/watch?v=IQLFgVg4TjM&list=PLFe_vhJmgS_51XlV_a5Atl1Re4fJA_b-d) son una excelente forma de aprender sobre este apasionante tema.
 
