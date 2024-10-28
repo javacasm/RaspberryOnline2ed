@@ -124,23 +124,29 @@ INDEX:
 		-o $(DIR_PUBLICACION)$(S4) \
 		"Tema 4 Portada.md"  \
 		"Tema 4.0 Uso de Raspberry Pi.md" \
-		"Tema 4.1 Matenimiento.md" \
-		"Tema 4.1.5 Usos.md" \
-		'Tema 4.2 Arduino.md' \
-		'Tema 4.3.0 IOT.md' \
+		"Tema 4.0.2 Instalacion de software.md" \
+		"Tema 4.0.3 Descarga de programas.md" \
+		"Tema 4.0.5 Programas normales.md" \
+		"Tema 4.1.0 Usos.md" \
+		"Tema 4.1.2 Comandos.md" \
+		"Tema 4.1.4 Matenimiento.md" \
+		"Tema 4.1.5 Instalación de tienda de aplicaciones SNAP.md" \
+		'Tema 4.2 Camara.md' \
+		"Tema 4.3.0 IOT.md" \
 		'Tema 4.3.1 Domotica.md' \
 		'Tema 4.3.2 MQTT.md' \
 		'Tema 4.3.3.1 Domotica Casera.md' \
 		'Tema 4.3.4 HomeAutomation.md' \
 		'Tema 4.3.5 google_assistant.md' \
 		'Tema 4.4 retropie.md' \
-		'Tema 4.5 Servidor web - LAMP.md' \
 		'Tema 4.6.0 multimedia.md' \
 		'Tema 4.6.1 kodi.md' \
 		'Tema 4.6.2 DLNA.md' \
 		'Tema 4.7 aulas.md' \
 		'Tema 4.8 Nube_privada.md' \
-		'Tema 4.9 BookServer.md' 
+		'Tema 4.9 BookServer.md' \
+		'Tema 4.B Acceso externo a nuestros servidores.md' \
+		'Tema 4.Z Atribucion.md'
 
 5:
 	pandoc  --pdf-engine=xelatex   \
@@ -160,6 +166,7 @@ INDEX:
 		'Tema 5.3.5 Datalogger Arduino.md' \
 		'Tema 5.4 Sqlite.md' \
 		'Tema 5.4.1 MySQL-MariaDB.md' \
+		'Tema 5.4.5 Servidor web - LAMP.md' \
 		'Tema 5.5 BotTelegram.md' \
 		'Tema 5.6 Camara y python.md' \
 		'Tema 5.6.1 Trabajando con github.md' \
@@ -219,4 +226,5 @@ push:
 	git commit -m "update" $(S2);
 	git commit -m "update" $(S1);
 	git push;
+
 
