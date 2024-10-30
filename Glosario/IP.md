@@ -1,0 +1,1 @@
+Grupo de 4 números que identifica a cualquier dispositivo conectado a una red

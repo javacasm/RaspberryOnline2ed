@@ -7,7 +7,7 @@
 IoT, o "Internet de las Cosas" (del inglés, *Internet of Things*), es un concepto que se refiere a la interconexión de objetos cotidianos a Internet, permitiendo que estos dispositivos recopilen, compartan y, en algunos casos, procesen datos de manera autónoma. Estos "objetos inteligentes" pueden ser desde electrodomésticos, sensores industriales y vehículos, hasta dispositivos de salud, ropa y ciudades enteras. La finalidad del IoT es mejorar la eficiencia, la comodidad y la toma de decisiones mediante el uso de datos en tiempo real.
 
 ### ¿Cómo funciona el IoT?
-La arquitectura de IoT generalmente se compone de varios elementos clave:
+La arquitectura de IoT generalmente, se compone de varios elementos clave:
 1. **Dispositivos o sensores**: Los dispositivos IoT tienen sensores o actuadores que recopilan datos, como la temperatura, la ubicación, o incluso el ritmo cardíaco en dispositivos médicos.
 2. **Conectividad**: Estos dispositivos se conectan a Internet o a redes locales a través de Wi-Fi, Bluetooth, redes móviles, entre otras tecnologías, para transmitir los datos.
 3. **Nube o almacenamiento**: Los datos se almacenan en servidores o plataformas en la nube, donde pueden procesarse y analizarse.
@@ -15,11 +15,11 @@ La arquitectura de IoT generalmente se compone de varios elementos clave:
 5. **Interfaz de usuario**: Muchas veces, los datos se muestran en una aplicación o panel, donde los usuarios pueden monitorear y controlar los dispositivos.
 
 ### Ejemplos de aplicaciones de IoT
-1. **Hogares inteligentes**: Dispositivos como termostatos, cerraduras y asistentes de voz (ej. Alexa o Google Home) automatizan tareas y permiten controlar el hogar de forma remota.
+1. **Hogares inteligentes**: Dispositivos como termostatos, cerraduras y asistentes de voz (ej. Alexa o Google Home), automatizan tareas y permiten controlar el hogar de forma remota.
 2. **Salud y bienestar**: Los dispositivos portátiles como pulseras o relojes inteligentes monitorizan constantes vitales y ayudan en la gestión de la salud.
-3. **Industria 4.0**: En fábricas, los sensores y máquinas conectadas permiten un control detallado y en tiempo real de los procesos productivos, optimizando recursos y reduciendo fallos.
+3. **Industria 4.0**: En las fábricas, los sensores y máquinas conectadas permiten un control detallado y en tiempo real de los procesos productivos, optimizando recursos y reduciendo fallos.
 4. **Ciudades inteligentes**: La iluminación, el tráfico y los sistemas de gestión de residuos en las ciudades pueden automatizarse para mejorar la eficiencia y reducir costos.
-5. **Agricultura**: IoT facilita el monitoreo del clima y el estado del suelo, permitiendo un riego y una gestión de cultivos más precisos.
+5. **Agricultura**: IoT facilita el monitoreo del clima y el estado del suelo, permitiendo un riego y una gestión de cultivos más precisa.
 
 ### Ventajas del IoT
 - **Eficiencia y ahorro de recursos**: Ayuda a reducir costos y optimizar procesos.
@@ -42,11 +42,11 @@ En resumen, el IoT está transformando la manera en que interactuamos con el mun
 
 Dada la capacidad de procesamiento y la compatibilidad con todo tipo de sistemas, Raspberry Pi es ideal para ser el centro de las comunicaciones de un sistema IOT. Puede actuar como:
 
-* Broker de comunicaciones, a donde se conectan todos los otros dispositivos.
-* Base de datos para guardar los datos.
-* Visualizador de datos usando aplicaciones específicas.
-* Hacer  data minin sobre los datos guardados
-* Publicar contenidos en forma de página web, canal de Telegram, etc
+* _Broker de comunicaciones_, a donde se conectan todos los otros dispositivos.
+* _Base de datos_ para guardar los datos.
+* _Visualizador de datos_ usando aplicaciones específicas.
+* _Hacer  data mining_ para analizar y crear patrones de grandes volúmenes de datos guardados.
+* _Publicar contenidos_ en forma de página web, canal de Telegram, etc
 
 # IOT (Internet de las cosas)
 
@@ -59,51 +59,51 @@ Dada la capacidad de procesamiento y la compatibilidad con todo tipo de sistemas
 * Una alarma que nos avise de si hay algún problema cuando no estamos en casa.
 * Poder ver el estado de un familiar remotamente.
 * Controlar el ejercicio que hace durante un día para así motivarte a hacer más.
-* Todas las aplicaciones que si tu curro de la domótica de una casa.
+* Todas las aplicaciones que se te ocurran relacionadas con la domótica de una casa.
 
 ## Características de los dispositivos IOT
 
-* Bajo consumo o mejor autosuficiente (un panel solar y una batería). Si tiene una pulsera de actividad sabrá que es necesario cargarla una vez al mes.
-* Conectividad con otros dispositivos como puede ser un teléfono móvil ya sea por medio de Bluetooth y /o WiFi.
+* Bajo consumo o mejor autosuficiencia (un panel solar y una batería). Si tiene una pulsera de actividad, sabrá que es necesario cargarla una vez al mes.
+* Conectividad con otros dispositivos, como puede ser un teléfono móvil, ya sea por medio de Bluetooth y /o WiFi.
 * Medir algo: actividad, temperatura, consumo.
-* Almacenar los datos, que se guardan hasta que se vuelve a sincronizar.
-* Estos datos se suelen subir a páginas web (thingspeak, blynk, adafruit, Cayenne, etc) Dónde se almacenan, y dónde posteriormente podemos construir nuestros gráficos e informes.
+* Almacenar los datos que se guardan, hasta que se vuelven a sincronizar.
+* Estos datos se suelen subir a páginas web (Thingspeak, Blynk, Adafruit, Cayenne, etc), dónde se almacenan, y dónde posteriormente, podemos construir nuestros gráficos e informes.
 
 ## Proyectos
 
 Veamos algunos de los proyectos en los que podríamos trabajar:
 
-* Estación meteorológica: mediremos las magnitudes atmosféricas, mostrando los datos, guardándose y publicándose en internet para su posterior análisis.
+* _Estación meteorológica_: mediremos las magnitudes atmosféricas, mostrando los datos, guardándose y publicándose en internet para su posterior análisis.
 
-* Medida de consumo y fomento de la eficiencia energética: mediremos el consumo de nuestro propio equipo y veremos cómo a medida que vamos incluyendo más componentes el consumo se hace mayor. Podríamos adaptar este sistema a un uso real dentro de la casa y viendo el consumo de los electrodomésticos.
+* _Medida de consumo y fomento de la eficiencia energética_: mediremos el consumo de nuestro propio equipo y veremos cómo a medida que vamos incluyendo más componentes el consumo se hace mayor. Podríamos adaptar este sistema a un uso real dentro de la casa y viendo el consumo de los electrodomésticos.
 
-* Control remoto de componentes: mediante el uso de un relé vamos a poder encender y apagar dispositivos remotamente con nuestro sistema bien por el cambio de alguna tela sistemas que medimos o bien por accionamiento externo.
+* _Control remoto de componentes_: mediante el uso de un relé, vamos a poder encender y apagar dispositivos remotamente con nuestro sistema, bien por el cambio de algunos de los sistemas con que medimos, o bien por accionamiento externo.
 
-* Medida de calidad del aire. Usaremos sensores de medida de partículas para determinar la calidad del aire y al mismo tiempo también mediremos el contenido en gases y los parámetros atmosféricos. Publicaremos todos estos datos en una página web para poder comparar la medida en diferentes lugares.
+* _Medida de calidad del aire_: Usaremos sensores de medida de partículas para determinar la calidad del aire y al mismo tiempo, también mediremos el contenido en gases y los parámetros atmosféricos. Publicaremos todos estos datos en una página web, para poder comparar la medida en diferentes lugares.
 
 ## Algunos ejemplos:
 
-* Pulsera para medir la actividad física.
+* _Pulsera para medir la actividad física_.
   * Su batería dura unos ¡¡¡30 días!!!
-  * Almacena sus datos (en local) y cuando puede se sincroniza (guardando datos en la nube).
+  * Almacena sus datos (en local) y cuando puede, se sincroniza (guardando datos en la nube).
   * Sólo proporciona información que luego vemos en otros dispositivos.
-* Sistema de riego inteligente.
-  * Un Arduino que mide la humedad y decide si activar o no una bomba de agua es una prueba de concepto.
-  * Sistema de riego para una instalación de gran tamaño:
+* _Sistema de riego inteligente_.
+  * Un Arduino que mide la humedad y decide si activar o no una bomba de agua, es una prueba de concepto.
+  * _Sistema de riego para una instalación de gran tamaño_:
     * Cientos/miles de sensores de humedad.
     * Multitud de puntos de riego (válvulas/bombas).
-    * Hacemos un datamining sobre los datos de humedad y se activan los puntos de riego.
+    * Hacemos un data mining sobre los datos de humedad y se activan los puntos de riego.
 
 ### Qué le pedimos al IOT
 
-* Inteligencia:
-    * [Niveles](http://www.domodesk.com/a-fondo-que-es-el-internet-de-las-cosas): identidad, ubicación, estado, contexto, criterio. Ejemplo: los cientos de sensores de humedad de una gran explotación. Un nivel más de Inteligencia sería incluir predicción (por ejemplo la atmosférica: si sabemos a que va llover, esperamos antes de regar).
-* Arquitectura
-  * [Protocolos](http://www.domodesk.com/a-fondo-que-es-el-internet-de-las-cosas): Cable, Wifi, Zigbee, bluetooth, GSM (y todas sus Gs), ...
-  * M2M: Comunicación Machine To Machine.
-    * Un drone recoge datos del nivel de suciedad de los paneles solares.
+* _Inteligencia_:
+    * [Niveles](http://www.domodesk.com/a-fondo-que-es-el-internet-de-las-cosas): identidad, ubicación, estado, contexto, criterio. Ejemplo: los cientos de sensores de humedad de una gran explotación. Un nivel más de Inteligencia sería incluir predicción (por ejemplo, la atmosférica: si sabemos que va llover, esperamos antes de regar).
+* _Arquitectura_:
+  * [_Protocolos_](http://www.domodesk.com/a-fondo-que-es-el-internet-de-las-cosas): Cable, Wifi, Zigbee, Bluetooth, GSM (y todas sus Gs), ...
+  * _M2M_: Comunicación Machine to Machine.
+    * Un dron recoge datos del nivel de suciedad de los paneles solares.
     * Envía los datos  a la central.
-    * Cuando el nivel es el adecuado se activa el robot de limpieza en determinada zona.
+    * Cuando el nivel es el adecuado, se activa el robot de limpieza en determinada zona.
 
 
 ## ¿Cómo hacerse un IOT?
@@ -114,5 +114,5 @@ Veamos algunos de los proyectos en los que podríamos trabajar:
 
 ![Arquitectura IOT](./images/ArquitecturaIOT.png)
 
-Vemos que podemos usar la Raspberry Pi prácticamente en todas las  fases de un proyecto IOT. En los siguientes capítulos vamos a ir viendo cómo hacerlo.
+Vemos que podemos usar la Raspberry Pi, prácticamente en todas las  fases de un proyecto IOT. En los siguientes capítulos, vamos a ir viendo cómo hacerlo.
 

@@ -1,0 +1,1 @@
+Orden que escribimos en un terminal para ejecutar alguna aplicación en el sistema

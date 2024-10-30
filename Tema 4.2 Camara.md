@@ -1,4 +1,4 @@
-## Cámaras
+    ## Cámaras
 
 Vamos a ver las distintas cámaras para Raspberry Pi. Existen varios modelos  creados por la Fundación Raspberry Pi y otros fabricantes, pero todos son compatibles con el mismo cable y conector.
 
@@ -53,7 +53,7 @@ La cámara Global Shutter es una versión parecida físicamente a la HQ en cuant
 
 Mientras que las cámaras normales van capturando las imágenes línea a línea, esta cámara toma toda la imagen de una vez. Esto evita el que se produzcan "artifacts" (defectos) al capturar imágenes de objetos que se mueven rápidamente, como en el siguiente ejemplo de imagen de la hélice de un avión, generada por la forma de capturar las imágenes en las cámaras normales línea a líneas. La hélice se va moviendo a medida que se van capturando las sucesivas líneas.
 
-![](plane_blade_artifacts.png)
+![Artefactos visuales debidos al movimiento](plane_blade_artifacts.png)
 
 Al tomar la imagen de una sola vez se eliminan estos problemas.
 
@@ -121,13 +121,13 @@ sudo raspi-config
 
 En el menú de "Interfacing Options", seleccionamos
 
-![Configuración para activar la cámara](./images/activaCamara.png)
+![Configuración para activar la cámara](./images/activaCamara_reducida_600.jpg)
 
 Una vez  ejecutada la opción del menú, necesitamos reiniciar para que arranquen adecuadamente los drivers.
 
-En estas versiones antiguas tendremos que activar la opción de “Legacy Cámara” en configuración.
+En estas versiones antiguas, tendremos que activar la opción de “Legacy Cámara” en configuración.
 
-![](./images/enable-legacy.png)
+![Herramienta de configuración para activación de Legacy Cámara](./images/enable-legacy_reducida_450.jpg)
 
 ### Versión de Raspbian Bullseye o posterior
 
@@ -137,13 +137,13 @@ Podemos ver si se detectan las cámaras haciendo:
 libcamera-hello --list-cameras
 ```
 
-Nos dirá las cámaras que ha detectado, si tenemos 2 cámaras conectadas deberíamos verlas, identificadas con el número 0 y 1. Así, para referirnos a una de ellas, usaremos ese número, por ejemplo, para usar la cámara 0, usaremos:
+Éste comando nos dirá las cámaras que ha detectado, si tenemos 2 cámaras conectadas deberíamos verlas, identificadas con el número 0 y 1. Así, para referirnos a una de ellas, usaremos ese número, por ejemplo, para usar la cámara 0, usaremos:
 
 ```sh
 libcamera-hello --camera 0
 ```
 
-que nos mostrará una previsualización durante 5 segundos de la cámara 0 y luego se cerrará. 
+que nos mostrará una previsualización durante 5 segundos de la cámara 0 y luego, se cerrará. 
 
 Si hacemos:
 
@@ -176,9 +176,9 @@ También podemos guardarlo en otros formatos como _png_ con la opción '-e png'
 libcamera-still -e png -o test.png
 ```
 
-Este comando tienen multitud de opciones, que podemos consultar en [su documentación](https://www.raspberrypi.com/documentation/accessories/camera.html#libcamera-still)
+Este comando tiene multitud de opciones, que podemos consultar en [su documentación](https://www.raspberrypi.com/documentation/accessories/camera.html#libcamera-still)
 
-También se puede capturar en formato RAW (el formato más profesional que no comprime ni modifica la imagen) con la opción '-r', que se guardará en forma DNG (Adobe Digital Negative)
+También se puede capturar en formato RAW (el formato más profesional que no comprime ni modifica la imagen), con la opción '-r', que se guardará en forma DNG (Adobe Digital Negative)
 
 Para capturar vídeo usaremos el comando libcamera-vid:
 
@@ -188,7 +188,7 @@ libcamera-vid -t 10000 -o test.h264
 
 Capturará un vídeo en formato h264 (también puede ser formato mjpeg o yuv420) durante 10 segundos y lo guardará en el fichero test.h264
 
-También podemos usarlo para hacer un streaming el vídeo con este comando:
+También podemos usarlo para hacer un streaming de vídeo con este comando:
 
 ```sh
 libcamera-vid -t 0 --inline --listen -o tcp://0.0.0.0:8888
@@ -327,13 +327,13 @@ average,spot,backlit,matrix
 Dynamic Range Compression (DRC) options :
 off,low,med,high
 ```
-Entre estas opciones podemos encontrar **-tl** que nos va a permitir tomar una imagen cada cierto tiempo (time lapse). Con ello podemos generar una secuencia de imágenes con una sola línea de comando
+Entre estas opciones podemos encontrar **-tl** que nos va a permitir tomar una imagen cada cierto tiempo (time lapse). Con ello, podemos generar una secuencia de imágenes con una sola línea de comando
 
 ```sh
 raspistill -o myimage_%d.jpg -tl 2000 -t 25000
 ```
 
-Una imagen cada 2 segundos durante 25 segundos Cada foto tendrá un número de secuencia
+Una imagen cada 2 segundos durante 25 segundos. Cada foto tendrá un número de secuencia:
 
 ```sh
 myimage_1.jpg
@@ -357,7 +357,7 @@ Si queremos capturar 10 segundos usaremos:
 raspivid -o video.h264 -t 10000
 ```
 
-Para ver todas las opciones disponibles podemos hacer
+Para ver todas las opciones disponibles podemos hacer:
 
 ```sh
 $raspivid | less
