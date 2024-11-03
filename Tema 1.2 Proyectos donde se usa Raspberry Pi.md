@@ -56,6 +56,8 @@ También podemos crear y programar robots con motores y sensores de Lego usando 
 
 ![Jugando a Minecraft](./images/minecraft2_ampliada_250.jpg)
 
+![Jugando a Minecraft](./images/minecraft2_ampliada%20500.png)
+
 #### Máquina de juegos
 
 Uno de los usos más frecuentes de la Raspberry es para jugar, su pequeño tamaño y su capacidad la hacen ideal para convertirla en una consola de videojuegos. Veremos más adelante que es más fácil de lo que parece montarse una.

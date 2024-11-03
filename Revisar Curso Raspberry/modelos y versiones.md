@@ -1,0 +1,1 @@
+Revisar la publicación oficial https://www.raspberrypi.com/news/raspberry-pi-product-series-explained/

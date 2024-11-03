@@ -42,7 +42,7 @@ La primera está pensada para ser usada en servidores y sin herramientas gráfic
 
 * [Android](https://emteria.com/): Se trata de un port de Android para Raspberry. En [este tutorial](https://magpi.raspberrypi.com/articles/android-raspberry-pi) nos dicen cómo instalarla.
 
-* [Retropie](https://retropie.org.uk/): Es una distribución que contiene varios emuladores de máquinas recreativas y videoconsolas y que convierten a nuestra Raspberry en una máquina de jugar. 
+* [RetroPie](https://retropie.org.uk/): Es una distribución que contiene varios emuladores de máquinas recreativas y videoconsolas y que convierten a nuestra Raspberry en una máquina de jugar. 
 
 ![Máquina de juegos con Raspberry Pi](./images/800px-Arcade_bartop_reducida_75.png)
 

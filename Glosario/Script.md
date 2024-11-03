@@ -1,1 +1,0 @@
-Conjunto de órdenes que se incluyen en un fichero de texto expecificando una secuencia de [comandos](Comando.md)

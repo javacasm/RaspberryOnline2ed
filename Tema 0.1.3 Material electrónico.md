@@ -1,6 +1,6 @@
 ### Material electrónico básico
 
-A lo largo de los temas donde aprendemos electrónica usaremos componentes electrónicos básicos, **no se necesita para superar las tareas del curso**
+A lo largo de los temas donde aprendemos electrónica usaremos componentes electrónicos básicos, **no se necesita para superar las tareas del curso**:
 
 * Leds de colores
 * Resistencias variadas

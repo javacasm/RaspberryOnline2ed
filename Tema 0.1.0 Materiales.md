@@ -2,7 +2,7 @@
 
 ¿Qué necesito para trabajar con la Raspberry Pi?
 
-![](./images/product_thumb.jpeg)
+![Materiales para trabajar con Raspberry Pi](./images/product_thumb_reducido_400.png)
 
 
 

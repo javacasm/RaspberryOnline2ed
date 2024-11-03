@@ -25,19 +25,24 @@ Actualmente existen varios formatos, vamos a ver los más usados:
 
 * La versión más actual a día de hoy (Octubre de 2024) es la [Versión 5](https://www.raspberrypi.com/products/raspberry-pi-5/) 2.4GHz Quad-Core de 64bits hasta 8GB, USB 3.0, 2 HDMI 4K Gigabit, Wifi y bluetooth.
 
-![Raspberry Pi 5](./images/raspberry-pi-5-reducida-50.jpg)
+![Raspberry Pi 5](./images/raspberry-pi-5_sin_fondo_reducida_500.png)
 
 * La versión [Raspberry Pi Zero W](https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/) (1Ghz 512Mb) con un tamaño muy pequeño y un precio superreducido de 10€ - 15€, según la queramos con o sin wifi.
 
-![Raspberry Pi Zero](./images/Raspberry-Pi-Zero-web_reducida_60.jpg)
+
+![Raspberry Pi Zero](./images/Raspberry-Pi-Zero-web_gimp.png)
+
 
 * [Módulo Raspberry Pi Compute 3+](https://www.raspberrypi.com/products/compute-module-3-plus/): es equivalente a una Raspberry Pi 3 B+ pero en un formato pensado para construir ordenadores a partir de varias Raspberry. Se puede adquirir con un disco interno eMMC de 8GB/16GB/32GB que sustituye a la tarjeta SD.
 
-![Módulo Raspberry Pi Compute 3+](./images/Raspberry_Pi_Compute_Module.png)
+
+
+![Módulo Raspberry Pi Compute 3+](./images/Raspberry_Pi_Compute_Module_300ppp.png)
+
 
 Se puede integrar en Module Kit 3:
 
-![Raspberry Pi Kit 3](./images/Raspberry-Pi-Compute-Module-Kit-3_reducida_60.jpg)
+![Raspberry Pi Kit 3](./images/Raspberry-Pi-Compute-Module-Kit-3.png)
 
 * Raspberry Pi 400, es equivalente a una Raspberry Pi 4, pero en formato teclado, con carcasa incorporada. 
 
@@ -89,7 +94,16 @@ Han sido muchas las películas y series donde han aparecido últimamente Raspber
 
 * CSI Cyber: lo usan como un router que les permite capturar datos de la red donde están (un parque de atracciones) y así descubren cómo poder controlar las atracciones.
 
-  ![Imagen de la Serie CSI](./images/RaspberryPi_on_CSI-Cyber_reducida_75.jpg)
+![Imagen original de la Serie CSI](./images/RaspberryPi_on_CSI-Cyber.jpg)  
+
+![Imagen de la Serie CSI 900x 300ppp](./images/RaspberryPi_on_CSI-Cyber.jpg)  
+
+![Imagen 500 a 300ppp de la Serie CSI](./images/RaspberryPi_on_CSI-Cyber_gimp.jpg)  
+
+![Imagen 500 a 150ppp de la Serie CSI](./images/RaspberryPi_on_CSI-Cyber_gimp_hoy.jpg)  
+
+
+![5x3cmt](./images/RaspberryPi_on_CSI-Cyber_gimp_centimetros.jpg)
 
 ¿Conoces alguna aparición más en los medios? No dudes en contárnosla.
 

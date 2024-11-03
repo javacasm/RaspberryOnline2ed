@@ -108,11 +108,16 @@ Veamos algunos de los proyectos en los que podríamos trabajar:
 
 ## ¿Cómo hacerse un IOT?
 
-¿Qué necesito?
+Veamos las distintas partes de la arquitectura IOT
 
-[Arquitectura de un sistema completo IOT](https://polaridad.es/grafica-sensor-internet-de-las-cosas-iot/)
+![Arquitectura de un sistema IOT](./images/arquitectura_IOT.png)
 
-![Arquitectura IOT](./images/ArquitecturaIOT.png)
+Vemos que podemos usar la Raspberry Pi, prácticamente en todas las  partes de un proyecto IOT:
 
-Vemos que podemos usar la Raspberry Pi, prácticamente en todas las  fases de un proyecto IOT. En los siguientes capítulos, vamos a ir viendo cómo hacerlo.
+* Para visualización podemos usar una sencilla página web o un sistema más profesional como **Grafana**, ambas disponibles fácilmente en la Raspberry Pi
+* Para procesar o filtrar los datos podemos usar un programa creado por nosotros mismos con Python o **NodeRed**, un entorno de programación para control de flujo de datos, también en la Raspberry Pi
+* Para almacenar sólo tenemos que instalar una base de datos, de entre las que tenemos disponibles.
+* Los dispositivos podrán acceder al sistema a través de Internet o de una red privada, tipo Lora
+
+En los siguientes capítulos, vamos a ir viendo cómo hacerlo.
 

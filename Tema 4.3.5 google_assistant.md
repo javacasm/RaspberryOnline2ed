@@ -1,22 +1,22 @@
 # Google Assistant
 
-Algo que siempre queremos hacer con nuestro sistemas domóticos es integrarlos con sistemas tan "molones" como son Google Assistant o Alexa.
+Algo que siempre queremos hacer con nuestros sistemas domóticos es integrarlos con sistemas tan "molones" como son Google Assistant o Alexa.
 
-El procedimiento no es demasiado complicado pero sí que necesita hacer que nuestros equipos (normalmente la Raspberry Pi que actúa como el corazón del sistema) sean accesibles desde Internet, de manera que los servidores de Google o de Alexa puedan actuar sobre nuestro sistema al ejecutar comandos sobre ellos.
+El procedimiento no es demasiado complicado, pero sí que necesita hacer que nuestros equipos (normalmente la Raspberry Pi que actúa como el corazón del sistema), sean accesibles desde Internet, de manera que los servidores de Google o de Alexa, puedan actuar sobre nuestro sistema al ejecutar comandos sobre ellos.
 
-Para ello configuramos nuestro sistema para que se pueda actuar sobre él vía web con un API REST determinado. Un ejemplo sencillo sería que el acceso  a http://nuestraIPExterna/luces/Salon/On encienda las luces del salón y http://nuestraIPExterna/luces/Salon/Off las apague.
+Para ello, configuramos nuestro sistema para que se pueda actuar sobre él, vía web con un API REST determinado. Un ejemplo sencillo sería que el acceso  a http://nuestraIPExterna/luces/Salon/On encienda las luces del salón y http://nuestraIPExterna/luces/Salon/Off las apague.
 
 En resumen debemos construir:
 
-* Un servidor web, existen multitud de maneras de hacerlo 
-* Crear ese API sencillo que actúa directamente sobre nuestros dispositivos 
-* Exponer nuestro servidor desde internet. Podemos hacerlo abriendo puestos, haciendo el servidor como DMZ o usando servicios de internet que se encargan de ello como por ejemplo [dataplicity]( https://www.dataplicity.com)
-* Crear unas reglas que vinculen Google Assistant con nuestro API, por ejemplo usando [IFFT](https://ifttt.com/)
+* Un servidor web, existen multitud de maneras de hacerlo. 
+* Crear ese API sencillo, que actúa directamente sobre nuestros dispositivos.
+* Exponer nuestro servidor desde internet. Podemos hacerlo abriendo puestos, haciendo el servidor como DMZ o usando servicios de internet que se encargan de ello, como por ejemplo [dataplicity]( https://www.dataplicity.com).
+* Crear unas reglas que vinculen Google Assistant con nuestro API, por ejemplo usando [IFFT](https://ifttt.com/).
 
 
 En [este artículo de diyodemag](https://diyodemag.com/projects/part_1_google_assistant_controlled_devices) nos explican como hacer todo el proceso.
 
-1. Instalamos **Node.js**
+1. Instalamos **Node.js**:
 ```sh
 wget  https://nodejs.org/dist/latest-v9.x/node-v9.11.2-linux-armv6l.tar.xz
 tar -xvf node-v9.11.2-linux-armv6l.tar.xz
@@ -24,11 +24,11 @@ sudo cp -R node-v9.11.2-linux-armv6l/ /usr/local/
 sudo ln -s /usr/local/node-v9.11.2-linux-armv6l/bin/node /usr/bin/node
 sudo ln -s /usr/local/node-v9.11.2-linux-armv6l/bin/npm /usr/bin/npm
 ```
-2. Probamos que la instalación va ok haciendo
+2. Probamos que la instalación va ok haciendo:
     ```sh
     node -v
     ```
-    obtendremos 
+    obtendremos
 
     ```sh
     v9.11.2
@@ -43,7 +43,7 @@ sudo ln -s /usr/local/node-v9.11.2-linux-armv6l/bin/npm /usr/bin/npm
     npm install express
     npm install onoff
     ```
-4. Ahora creamos la definición de la aplicación base que nos permitirá encender o apagar un led conectado al GPIO4. Para ello creamos el fichero app.js con el siguiente contenido:
+4. Ahora, creamos la definición de la aplicación base, que nos permitirá encender o apagar un led conectado al GPIO4. Para ello creamos el fichero app.js con el siguiente contenido:
 
 ```js
 const express = require("express");
@@ -65,16 +65,16 @@ res.send("LED is off");
 
 ```
 
-5. Lo ejecutamos con 
+5. Lo ejecutamos con:
 
 ```sh
 node app.js
 ```
 6. Accedemos a la web con http://ipRaspberry:3000/led/on
 
-![](./images/GoogleAssistantLedOn.png)
+![Google Assistant Led Encendido](./images/GoogleAssistantLedOn_reducida_250.png)
 
-7. Ahora nos queda hacer que nuestra web sea accesible desde fuera con un servicio como [dataplicity]( https://www.dataplicity.com).
+7. Ahora, nos queda hacer que nuestra web sea accesible desde fuera con un servicio como [dataplicity]( https://www.dataplicity.com).
 
-8. El siguiente paso es crear en IFTTT una regla que llame a nuestra web al recibir determinado comando de Google Assistant.
+8. El siguiente paso es crear en IFTTT, una regla que llame a nuestra web al recibir determinado comando de Google Assistant.
 

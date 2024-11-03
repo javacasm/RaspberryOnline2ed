@@ -1,5 +1,6 @@
 # Tema 1 - ¿Qué es Raspberry?
-![Logo del proyecto Raspberry Pi](./images/logo-Rasp-%20reducida-50.jpg)
+
+![Logo del proyecto Raspberry Pi](./images/logoRasp_reducida_150.png)
 
 Raspberry Pi se ha convertido, junto con Arduino, en uno de los máximos exponentes del desarrollo con herramientas libres accesible a diferentes niveles de especialización, desde el básico o inicial al profesional, pudiendo usarse como una plataforma hardware de desarrollo, un pequeño ordenador personal sobre el que programar, navegar o editar un documento de texto, un reproductor de música, películas o imágenes, o la base sobre la que construir un sistema de almacenamiento en red para compartir archivos entre los equipos que tengamos conectados.
 

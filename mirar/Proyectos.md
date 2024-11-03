@@ -12,7 +12,7 @@
 
 [Medida y publicación online de calidad del aire con BME680](https://www.hackster.io/chriscw/diy-environment-and-air-quality-monitor-ae37b1)
 
-[Arcade table machine (with [retropie](./retropie.md))](https://www.raspberrypi-spy.co.uk/2017/12/building-my-raspberry-pi-ikea-arcade-table/)
+[Arcade table machine (with [RetroPie](./retropie.md))](https://www.raspberrypi-spy.co.uk/2017/12/building-my-raspberry-pi-ikea-arcade-table/)
 
 [Control de plantas via telegram](https://www.hackster.io/zenofall/community-iot-garden-using-raspberry-pi-and-telegram-bot-ef4989)
 

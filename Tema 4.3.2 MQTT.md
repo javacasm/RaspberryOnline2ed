@@ -100,15 +100,19 @@ MeteoSalon/led On
 
 ### Ejemplo de arquitectura de topics
 
-A medida que vamos añadiendo dispositivos y enviado más mensajes, se puede complicar el árbol de topics.
+A medida que vamos añadiendo dispositivos y enviando más mensajes, se puede complicar el árbol de topics.
 
-Para ello, es mejor usar una arquitectura. Por ejemplo ésta, [tomada del blog de Ricardo Vega](https://ricveal.com/blog/sonoff-mqtt/)
+Por ello es mejor usar una cierta jerarquía en los topics, estableciendo un primer nivel según el tipo de mensaje
+
+* _Telemetría_  (**tele**) para que los dispositivos aporten información, por ejemplo los sensores.
+* _Comandos_ (**cmnd**) para que se ejecuten acciones.
+* _Estados_ (**stat**) para confirmaciones de estados.
+
+Podría ser algo así:
 
 ```sh
-    state_topic: "stat/sonoff/1/POWER"
-    command_topic: "cmnd/sonoff/1/POWER"
-    availability_topic: "tele/sonoff/1/LWT"
+    "cmnd/esp/01/power" # para activar ese estado de activación
+    "stat/esp/01/power" # para confirmar el estado
+    "tele/esp/01/Temp"  # para conocer el valor de la temperatura
 ```
-* _Telemetría_ para que den información, por ejemplo los sensores.
-* _Command_ para peticiones.
-* _Stat_ para confirmaciones de estados.
+

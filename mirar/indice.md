@@ -23,12 +23,12 @@ Tema 4.2 Arduino
 * servidor MQTT
 Redes de sensores
 
-## Domotica sencilla con Raspberry
-4.3.3 Domotica con MQTT
+## Domótica sencilla con Raspberry
+4.3.3 Domótica con MQTT
 4.3.4 Distribuciones Home Assistant y otros
 4.3.5 Google Assistant
 
-4.4 Retropie/Arcada machine
+4.4 RetroPie/Arcada machine
 
 4.6 Multimedia
 4.6.1 Kodi

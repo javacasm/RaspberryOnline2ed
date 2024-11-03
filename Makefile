@@ -131,12 +131,12 @@ INDEX:
 		"Tema 4.1.2 Comandos.md" \
 		"Tema 4.1.4 Matenimiento.md" \
 		"Tema 4.1.5 Instalación de tienda de aplicaciones SNAP.md" \
-		'Tema 4.2 Camara.md' \
+		'Tema 4.2.0 Camara.md' \
 		"Tema 4.3.0 IOT.md" \
 		'Tema 4.3.1 Domotica.md' \
 		'Tema 4.3.2 MQTT.md' \
-		'Tema 4.3.3.1 Domotica Casera.md' \
-		'Tema 4.3.4 HomeAutomation.md' \
+		'Tema 4.3.3 Domotica Casera.md' \
+		'Tema 4.3.4 Domotica Profesional.md' \
 		'Tema 4.3.5 google_assistant.md' \
 		'Tema 4.4 retropie.md' \
 		'Tema 4.6.0 multimedia.md' \
@@ -144,6 +144,7 @@ INDEX:
 		'Tema 4.6.2 DLNA.md' \
 		'Tema 4.7 aulas.md' \
 		'Tema 4.8 Nube_privada.md' \
+		'Tema 4.8.1 Syncthing.md' \
 		'Tema 4.9 BookServer.md' \
 		'Tema 4.B Acceso externo a nuestros servidores.md' \
 		'Tema 4.Z Atribucion.md'

@@ -24,7 +24,7 @@
 * Redes de sensores
 * Domotica sencilla con Raspberry
 * Distribuciones Home Assistant y otros
-* Retropie/Arcade machine
+* RetroPie/Arcade machine
 * Multimedia con Kodi
 * Aulas con Raspberry
 * Nube privada

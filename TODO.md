@@ -41,8 +41,8 @@ https://www.tomshardware.com/amp/news/this-homemade-aquaponic-irrigation-system-
 
 https://raspberrytips.com/recalbox-beginner-guide/
 
-Como descargar juegos para retropie 
-https://raspberrytips.com/download-retropie-roms/
+Como descargar juegos para RetroPie 
+https://raspberrytips.com/download-RetroPie-roms/
 
 3.7 TFT
 
@@ -155,7 +155,7 @@ https://diyodemag.com/projects/part_2_google_assistant_controlled_devices
 
 [Google Home para gobernalos a todos](https://www.youtube.com/watch?v=0i8ROl1KS3Y&list=PLFe_vhJmgS_51XlV_a5Atl1Re4fJA_b-d&index=24)
 
-## Retropie
+## RetroPie
 
 https://blog.bricogeek.com/noticias/raspberry-pi/video-tutorial-recalbox-batocera-para-raspberry-pi/
 
@@ -184,7 +184,7 @@ añadir script al abrir y al cerrar sesión con los ficheros .login .bashrc .bas
 ## Abrir puertos router
 
 
-# Dar acceso innalámbrico a internet
+# Dar acceso inalámbrico a internet
 
 
 
