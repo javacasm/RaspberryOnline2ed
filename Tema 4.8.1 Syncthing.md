@@ -106,7 +106,6 @@ En la pestaña **Compartiendo** marcaremos los dispositivos con los que queremos
 
 ![](./images/syncthing_add_folder_sharing.png)
 
-
 En la pestaña de **Versionado de ficheros** podemos elegir qué tipo de versionado de ficheros queremos para esta carpeta, desde "Sin versionado", en el que sólo se guardará la última versión hasta un versionado profesional con una herramienta externa que tendremos que configurar.
 
 ![](./images/syncthing_versioning_folder_setting.png)
@@ -125,50 +124,14 @@ En la pestaña **Avanzado** vamos a encontrar una gran cantidad de opciones, com
 Si dejamos de compartir una carpeta, lo ficheros seg uirán disponibles localmente, en ningún caso se borrarán.
 ## Conflictos
 
-A veces ocurre que por falta de disponibilidad de alguna de esas carpetas online pues no podemos encontrar que dos ordenadores modifican un mismo fichero en ese caso lo que va a ocurrir cuando vuelvan a estar disponibles online y vuelve a haber conexión entre ellos se van a generar duplicado de los archivos cada uno con las diferentes versiones
+A veces ocurre que por falta de disponibilidad de alguna de esas carpetas online, dos ordenadores modifican un mismo fichero sin tener en cuenta los cambios del otro. Cuando vuelvan a estar disponibles online se van a generar duplicados de los archivos, cada uno con las diferentes versiones, para evitar la pérdida de los cambios. El nombre de estos ficheros duplicados será __fichero_sync-conflict-fecha-IDequipo__. Tendremos que resolver manualmente los cambios.
 
-El formato será nombre de fichero. Sing conflict la fecha y el nombre del fichero del equipo que lo va a utilizar
+### Syncthing para móvil y tablets
 
+Existe una versión de syncthing para dispositivos Android, pero debido a problemas de mantenimiento y a la dificultad de publicar aplicaciones en Google play, [en breve desaparecerá](https://forum.syncthing.net/t/discontinuing-syncthing-android/23002).
 
+En la aplicación Android tenemos que establecer cada carpeta que recibimos para compartir  estableciendo dónde se va a almacenar y también hay que darle permisos de acceso a esa carpeta.
 
-El caso de tener carpetas compartidas entre ellos se visualizarán el estado de las carpetas si hasta sincronizadas y está actualizada si hay si falta o una parte por sincronizar o se mostrarán aquellos ficheros en los que ha habido algún tipo de problema como puede ser que no hay espacio en disco o que haya un conflicto con la sola dispositivo o cuando se fichero
+Por defecto en el móvil solo se sincronizará si estamos conectados a un wifi y podemos seleccionar aquellos wifi en los que queremos que esté activo. Evidentemente el que esté activo implica un mayor consumo de batería .
 
-Como se detectan o como intercambian archivos dos dispositivos que no están en la misma red de hay una forma que hemos visto cuando hay conexiones entre en todo tipo de servidores como era VNC o cuando hablamos del acceso remoto a raspberry de la misma manera van a estar disponibles una conexión a través de un servidor de relay á hospedado por la lo mismo desarrolladores de sitg tenemos disponibles ese servidor que va a ser que se va a encargar de estar permanentemente accesible a través online aquí ese ordenador sí que está en Internet directamente no tiene un routers por la pantalla está en un hosting y al estar publicado en internet todos los ordenadores lo tienen accesible es decir tiene una dirección IP a la que se pueda acceder y se puede encontrar con un nombre eso está en los propios servidores de
-
-Si nosotros quisiéramos hacer un servicio 100% independiente de sin fin de los servidores de sin fin podríamos crear nosotros también nuestro propio servidor esa otra aplicación que también por supuesto es de código abierto y que está disponible y que lo que decíamos que encargarnos de hacer que tu vida accesible a todos los otros pensamos que publicaron en Internet y cuando desde configuración deberíamos de decirle a nuestra aplicación que en lugar de conectar con los servicios y el proxy de simsi post
-
-## Configuración avanzada
-
-Como parte de la configuración en todo momento podamos decidir qué porcentaje de disco será el que ya se califique como disco lleno que ahora intenta es conveniente que no se haga que se vaya oblicua sino que antes de seguir lleno y empezamos a tener problemas de almacenamiento en nuestro ordenador debemos pedir establecer un cierto porcentaje de seguridad podemos establecer a través de dónde se hacen las comunicaciones podemos establecer el próximo live podemos establecer cómo funciona el nivel de descubrimiento
-
-Ejemplo de cómo añadir un servidor por ID
-
-Ejemplo de cómo añadir un servidor por detección
-
-Ejemplo de aplicación en un móvil
-
-Para iPad tenemos que utilizar existe una aplicación de pago mínimo de 7 euros y que personalmente ya lo he amortizado solamente con un par de viaje
-
-Además esta empresa que comercializa la versión para para iPad soporta económicamente el desarrollo de simply y los servidores a los que nos conectamos
-
-Cuando añadimos una carpeta establecemos una etiqueta y un nombre que será con el que ya veamos establecemos con quién queremos compartirla y por supuesto el directorio que se va a compartir
-
-Al equipo al que le hemos compartido la carpeta le aparecerá un aviso en su interfaz indicando que tal equipo quiere compartir con él si lo acepta no os pedirá en que carpeta local se va a almacenar ese contenido
-
-En la configuración básica se puede establecer una carpeta donde por defecto colgarán toda aquella otra que se comparte
-
-En la aplicación Android tenemos que establecer cada carpeta que recibimos para compartir debemos de establecer dónde se va a almacenar y también hay que estarle permisos de acceso a la aplicación a esa carpeta
-
-## En el móvil
-
-Por defecto en el l móvil solo se sincronizará si estamos conectados a un wifi. 
-
-Podemos seleccionar aquellos wifi en los que queremos que esté activo 
-
-Evidentemente el que esté activo implica un mayor consumo de batería 
-
-
-Vemos cómo Syncthing está conectado y actualizados los contenidos 
-
-![](./images/syncthing_icono_status_raspberry.png)
-
+Para iPad  existe una [aplicación de pago](https://mobiussync.com/)  que personalmente ya lo he amortizado solamente con un par de viajes. Además la empresa que comercializa la versión para para iPad soporta económicamente el desarrollo de syncthing.

@@ -88,7 +88,7 @@ sudo reboot
 
 #### Actualización de una versión a la siguiente
 
-Aunque es conveniente que cuando salga una nueva versión hagamos una instalación desde cero, a veces, tenemos muchas aplicaciones instaladas o mucha información del usuario que nos llevaría mucho tiempo extraer y luego volver a copiar/instalar. En ese caso, nos podemos plantear hacer una actualización de una versión a otra.
+Aunque es conveniente que cuando salga una nueva versión hagamos una instalación desde cero, a veces tenemos muchas aplicaciones instaladas o mucha información del usuario que nos llevaría mucho tiempo extraer y luego volver a copiar/instalar. En ese caso, nos podemos plantear hacer una actualización de una versión a otra.
 
 Vamos a ver un ejemplo de cómo actualizar de una versión del SO a la siguiente. En este caso particular, cómo pasar de "Stretch" a "Buster".
 

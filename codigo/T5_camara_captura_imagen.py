@@ -1,13 +1,18 @@
-# Ejemplo básico de previsualización y captura con la camara
+# Ejemplo básico de previsualización y captura de imagen con la camara
 # T5_camara_captura_imagen.py
-# Mas detalles en https://projects.raspberrypi.org/en/projects/getting-started-with-picamera
+# Mas detalles en https://datasheets.raspberrypi.com/camera/picamera2-manual.pdf
 
-from picamera import PiCamera
-from time import sleep
-
-camera = PiCamera() # creamos el objeto camara
-
-camera.start_preview() # muestra la previsualización
-sleep(5) # espera 5 segundos
-camera.capture('/home/pi/Desktop/image.jpg') # guarda la imagen
-camera.stop_preview() # cierra la previsualización
+from picamera2 import Picamera2, Preview # importamos todo lo necesario
+import time
+picam2 = Picamera2() # creamos el objeto para acceder a la cmámara
+# vamos a hacer una configuración por defecto para que se previsualice
+# en el escritorio
+camera_config = picam2.create_preview_configuration() 
+picam2.configure(camera_config)
+# arrancamos la previsualización
+picam2.start_preview(Preview.QTGL)
+picam2.start()
+# mantenemos la previsualización durante 2 segundos
+time.sleep(2)
+# guardamos la captura en el fichero "test.jpg"
+picam2.capture_file("test.jpg")

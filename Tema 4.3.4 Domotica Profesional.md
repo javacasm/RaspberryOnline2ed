@@ -50,13 +50,13 @@ El siguiente paso es crear las **automatizaciones**, que son las distintas inter
 
 Definiremos su nombre, a qué dispositivos afecta, y cuál es el **trigger** o evento que disparará su ejecución. En [esta página](https://www.home-assistant.io/getting-started/automation/) puede leer mucho más sobre automatización.
 
-Como siempre tenemos la alternativa de hacer una [instalación manual](https://www.home-assistant.io/docs/installation/raspberry-pi/) sobre nuestro sistema operativo.
+Como siempre, tenemos la alternativa de hacer una [instalación manual](https://www.home-assistant.io/docs/installation/raspberry-pi/) sobre nuestro sistema operativo.
 
-También podemos definir **Detectores de presencia** que activarán distintas acciones, como puede ser por ejemplo que nuestro móvil se conecte al router.
+También podemos definir **Detectores de presencia** que activarán distintas acciones, como puede ser por ejemplo, que nuestro móvil se conecte al router.
 
-Si queremos personalizar nuestra instalación, por ejemplo usando nuestro propio broker MQTT podemos hacerlo siguiendo la [siguiente guía](https://learn.adafruit.com/set-up-home-assistant-with-a-raspberry-pi/mqtt-setup)
+Si queremos personalizar nuestra instalación, por ejemplo usando nuestro propio broker MQTT, podemos hacerlo siguiendo la [siguiente guía](https://learn.adafruit.com/set-up-home-assistant-with-a-raspberry-pi/mqtt-setup)
 
 ¿Y qué ocurre si nuestro dispositivo no está entre los soportados o se trata de un dispositivo DIY? pues siempre podremos añadir en el [**Configurador** como vemos en este tutorial](https://learn.adafruit.com/set-up-home-assistant-with-a-raspberry-pi/configuration-yaml) donde tendremos que crear un fichero yaml de configuración.
 
-![Configuración dispositivo DIY](./images/internet_of_things___iot_Config7.png)
+![Configuración dispositivo DIY](./images/internet_of_things___iot_Config7_reducida_450.png)
 

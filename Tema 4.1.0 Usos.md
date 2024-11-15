@@ -49,7 +49,7 @@ En el menú "Accesorios", vamos a encontrar muchas aplicaciones útiles:
 * **SD Card Copier**: nos permite realizar copias de tarjetas SD, muy útil para clonar tarjetas una vez que tengamos una instalación operativa.
 * **Visor de documentos**: nos permite ver los ficheros en diferentes formatos, como por ejemplo PDFs.
 
-Por supuesto que podemos instalar, más programas como el "Visor de base de datos" que aparece en la imagen.
+Por supuesto que podemos instalar más programas como el "Visor de base de datos" que aparece en la imagen.
 
 ### Capturas de la pantalla
 

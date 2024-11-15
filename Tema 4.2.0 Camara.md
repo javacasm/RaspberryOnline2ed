@@ -112,25 +112,6 @@ En la Raspberry Pi 5, tenemos la posibilidad de conectar 2 cámaras al mismo tie
 
 ![Conector para la cámara en Raspberry Pi 5](./images/conector_camara_rapi5_reducida_450.jpg)
 
-En versiones anteriores del sistema operativo, antes de poder utilizar la cámara teníamos que activarla, la nueva versión "Bullseye" de Raspberry Pi OS lanzada recientemente, cambió, y ya no es necesario. 
-
-En caso de tener que hacerlo, sería así. Entramos en la configuración:
-
-```sh
-sudo raspi-config
-```
-
-En el menú de "Interfacing Options", seleccionamos
-
-![Configuración para activar la cámara](./images/activaCamara_reducida_600.jpg)
-
-Una vez  ejecutada la opción del menú, necesitamos reiniciar para que arranquen adecuadamente los drivers.
-
-En estas versiones antiguas, tendremos que activar la opción de “Legacy Cámara” en configuración.
-
-![Herramienta de configuración para activación de Legacy Cámara](./images/enable-legacy_reducida_450.jpg)
-
-### Versión de Raspbian Bullseye o posterior
 
 Podemos ver si se detectan las cámaras haciendo:
 
@@ -138,7 +119,13 @@ Podemos ver si se detectan las cámaras haciendo:
 libcamera-hello --list-cameras
 ```
 
-Éste comando nos dirá las cámaras que ha detectado, si tenemos 2 cámaras conectadas deberíamos verlas, identificadas con el número 0 y 1. Así, para referirnos a una de ellas, usaremos ese número, por ejemplo, para usar la cámara 0, usaremos:
+Éste comando nos dirá las cámaras que ha detectado, si tenemos 2 cámaras conectadas deberíamos verlas, identificadas con el número 0 y 1. 
+
+![Salida del comando listcamera_hello --list-cameras](./images/4.2.0_list_cameras.png)
+
+Vemos que la cámara 0 es un modelo v2.1 con el chip imx219 y la cámara 1 es un modelo v3 con el chip imx708. Además vemos que la 1 tiene mayor resolución
+
+Para referirnos a una de ellas, usaremos ese número, por ejemplo, para usar la cámara 0, usaremos:
 
 ```sh
 libcamera-hello --camera 0

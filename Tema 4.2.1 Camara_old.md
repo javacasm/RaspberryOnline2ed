@@ -1,5 +1,22 @@
 ### Versión de Raspbian Buster o anterior
 
+En versiones anteriores del sistema operativo, antes de poder utilizar la cámara teníamos que activarla, la nueva versión "Bullseye" de Raspberry Pi OS lanzada recientemente, cambió, y ya no es necesario. 
+
+En caso de tener que hacerlo, sería así. Entramos en la configuración:
+
+```sh
+sudo raspi-config
+```
+
+En el menú de "Interfacing Options", seleccionamos
+
+![Configuración para activar la cámara](./images/activaCamara_reducida_600.jpg)
+
+Una vez  ejecutada la opción del menú, necesitamos reiniciar para que arranquen adecuadamente los drivers.
+
+En estas versiones antiguas, tendremos que activar la opción de “Legacy Cámara” en configuración.
+
+![Herramienta de configuración para activación de Legacy Cámara](./images/enable-legacy_reducida_450.jpg)
 
 Podemos probarla con este comando:
 

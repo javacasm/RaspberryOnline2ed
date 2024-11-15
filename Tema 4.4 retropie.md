@@ -20,7 +20,7 @@ Ambos son sistemas operativos bastante similares en cuanto a características y 
 
 Podemos instalar recalbox desde RPI Imager. Seleccionamos "Emulation and g./images/ame OS"  como categoría de Sistema operativo:
 
-![Categoría de "Emuladores y juegos OS"](rpi-imager_emulationOS_reducida_350.png)
+![Categoría de "Emuladores y juegos OS"](./images/rpi-imager_emulationOS_reducida_350.png)
 
 Y ya tendremos la opción de elegir recalbox para que se instale en la tarjeta SD:
 

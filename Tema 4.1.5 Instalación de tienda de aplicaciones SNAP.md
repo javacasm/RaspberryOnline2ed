@@ -2,7 +2,7 @@
 
 A veces encontramos que algunos paquetes no están disponibles o al menos, no en su versión más moderna. Para ello, podemos instalar "Tiendas" alternativas a la oficial de RaspberryPi.org, que suele tener los paquetes más actualizados.
 
-Una de estas tiendas es SNAP, de Canonical, la empresa creadora de Ubuntu. Podemos instalarla de forma sencilla (a fin de cuentas es una aplicación que enlaza con los repositorios).
+Una de estas tiendas es SNAP de Canonical, la empresa creadora de Ubuntu. Podemos instalarla de forma sencilla (a fin de cuentas es una aplicación que enlaza con los repositorios).
 
 ![Tienda de aplicaciones Snap](./images/SnapStore_reducida_400.jpg)
 
@@ -104,7 +104,7 @@ sudo snap install snap-store
 ```
 * Abrimos la tienda, desde el menú "Preferencias" y ya podemos instalar el software que queramos:
 
-	![](./images/Snap-RaspberryPi.png)
+	![Tienda de aplicaciones](./images/Snap-RaspberryPi.png)
 	Si buscamos en el apartado de desarrollo, veremos que por ejemplo Arduino es la misma versión.
 
 	

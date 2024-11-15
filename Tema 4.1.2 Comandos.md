@@ -34,9 +34,9 @@ Veamos algunos de los comandos más utilizados:
 * **ifconfig**: muestra la configuración actual de la red, con sus IPs y las direcciones MAC.
 * **history** : muestra todos los comandos que se han ejecutado antes. Podemos ejecutar el comando de la posición **n**, con **!n** . Las teclas abajo/arriba del cursor nos permiten iterar por los comandos usados.
 * **man comando**: Para obtener ayuda sobre comando.
-* Para hacer fichero ejecutable ejecutamos el comando, **chmod u+x fichero** y para ejecutarlo, **./fichero**.
+* Para hacer fichero ejecutable ejecutamos el comando, **chmod u+x fichero** y para ejecutarlo,**./fichero**.
 
-Cuando queremos usar algún comando sobre un archivo que no es nuestro, o el propio comando intenta modificar la configuración del sistema, tendremos que anteponer al comando la palabra **sudo** (que quiere decir que la vamos a ejecutar como si fuéramos administrador). 
+Cuando queremos usar algún comando sobre un archivo que no es nuestro o el propio comando intenta modificar la configuración del sistema, tendremos que anteponer al comando la palabra **sudo** (que quiere decir que la vamos a ejecutar como si fuéramos administrador). 
 
 * **sudo halt** apaga la Raspberry Pi.
 * **sudo shutdown -h now** apaga la Raspberry Pi.
@@ -213,7 +213,7 @@ El usuario sólo tiene acceso a su directorio y solo el administrador (**root**)
 
 #### Usuarios
 
-El usuario por defecto es "**pi**" con contraseña "**raspberry**" por defecto, pero podemos y debemos, cambiarla en la configuración inicial con RPI-Imager.
+El usuario es "**pi**", con contraseña "**raspberry**" por defecto, pero podemos y debemos cambiarla en la configuración inicial con RPI-Imager.
 
 #### Cuidado con sudo
 
@@ -223,17 +223,17 @@ Esas tareas sólo las puede hacer el usuario administrador, llamado **root**, qu
 
 Como hay veces que un usuario necesita hacer alguna de estas tareas, por ejemplo editar un fichero de configuración, podemos solicitar permisos para hacer esa tarea anteponiendo al comando la palabra "sudo". Algunas acciones nos pedirán que introduzcamos el password de nuestro usuario como medida de seguridad.	
 
-Por ejemplo si queremos editar un fichero de la carpeta de configuración **etc** llamado **ftab**, haremos
+Por ejemplo, si queremos editar un fichero de la carpeta de configuración **etc** llamado **ftab**, haremos:
 
 ```sh
 sudo geany /etc/fstab
 ```
 	
-_geany_ es el editor de ficheros de texto, y al usar "sudo" estamos pidiendo permiso para hacer algo como root.
+_geany_ es el editor de ficheros de texto y al usar "sudo", estamos pidiendo permiso para hacer algo como root.
 
 Esto nos sirve para ver que podemos abrir aplicaciones de escritorio desde la consola.
 
-Si en un momento dado necesitamos hacer muchas tareas como root, podemos abrir una consola con este usuario haciendo:
+Si en un momento dado, necesitamos hacer muchas tareas como root, podemos abrir una consola con este usuario haciendo:
 
 ```sh
 sudo su -
