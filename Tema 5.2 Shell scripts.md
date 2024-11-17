@@ -8,22 +8,36 @@ Vamos a ver algunos ejemplos de cómo utilizarlos junto con la cámara. Para ell
 
 ### Usando la cámara
 
-Ya vimos que el comando raspistill nos permitía crear un time lapse. Si deseamos utilizar un formato de nombre más complejo, siempre podemos usar un script como el siguiente que además guardará las imágenes en una carpeta
-
+Ya vimos que el comando raspistill nos permitía crear un time lapse. Si deseamos utilizar un formato de nombre más complejo, siempre podemos usar un script como el siguiente que además guardará las imágenes en una carpeta llamada _timelapse_  que debemos haber creado previamente:
 
 ```sh
-SAVEDIR=/var/tlcam/stills
+SAVEDIR=./timelapse               
 while [ true ]; do
 filename=$(date -u +"%d%m%Y_%H%M-%S").jpg
-/opt/vc/bin/raspistill -o $SAVEDIR/$filename
-sleep 4;
+libcamera-jpeg -o $SAVEDIR/$filename
+sleep 5;
 done;
 ```
 
+Guardamos el script _script_time_lapse.sh_, le damos permiso de ejecución con 
+```sh
+chmod u+x script_timelapse.sh
+```
+
+y ya podemos ejecutarlo con 
+
+```sh
+./script_time_lapse.sh
+```
+
+Resumiendo el proceso:
+
+![](./images/script_time_lapse.sh.png)
+
+En el siguiente  [Vídeo: "Trabajando con Shell  Scripts Raspberry Pi"](https://drive.google.com/file/d/1PBeFd8OSPnz6-e5AZa_8DRTYM9F5DKQX/view?usp=sharing) vemos cómo trabajar con scripts.
+
 [![Vídeo: Trabajando con Shell  Scripts Raspberry Pi](https://img.youtube.com/vi/L5HfjbKyth0/0.jpg)](https://drive.google.com/file/d/1PBeFd8OSPnz6-e5AZa_8DRTYM9F5DKQX/view?usp=sharing)
 
-
-[Vídeo: Trabajando con Shell  Scripts Raspberry Pi](https://drive.google.com/file/d/1PBeFd8OSPnz6-e5AZa_8DRTYM9F5DKQX/view?usp=sharing)
 
 Hagamos ahora un script para hacer un timelapse con una webcam:
 

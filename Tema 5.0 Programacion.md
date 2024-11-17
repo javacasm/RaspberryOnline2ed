@@ -10,22 +10,15 @@ Existen distintas alternativas, dependiendo de los conocimientos previos, para p
 
 [Vídeo: Programación con Raspberry Pi](https://drive.google.com/file/d/1j_Rt1BTAKJDhk8guJcFG4VHf6tWiZcXu/view?usp=sharing)
 
-* Scratch: para gente sin conocimientos previos de programación
-* Python: lenguaje profesional, se necesitan otras habilidades (manejo de editores,...)
-* Shell script: creando ficheros scripts podemos automatizar tareas
+* Scratch: para gente sin conocimientos previos de programación.
+* Python: lenguaje profesional, se necesitan otras habilidades (manejo de editores,...).
+* Shell script: creando ficheros scripts podemos automatizar tareas.
 
-Hay varias distribuciones destinadas a usar la Raspberry como entorno de programación, algunas de ellas nos permiten aprender de una forma sencilla otros lenguajes.
+Hay varias distribuciones destinadas a usar la Raspberry Pi como entorno de programación, algunas de ellas nos permiten aprender de una forma sencilla otros lenguajes.
 
 Principalmente están pensados para facilitar la instalación de los entornos, que suele ser lo más complicado
 
-* [Coder](https://googlecreativelab.github.io/coder/) Instala un servidor con todo lo necesario para montar un aula de aprendizaje de programación web
-
-	Tiene varios [proyectos](https://googlecreativelab.github.io/coder-projects/) de diferente complejidad, con tutoriales
-
-* [WebIDE](https://learn.adafruit.com/webide?view=all) Entorno Web que permite programar en Python, Ruby, Javascript y otros lenguajes
-
-![WebIDE](https://cdn-learn.adafruit.com/assets/assets/000/002/173/medium800/adafruit_products_Using2.jpg)
-
+* [Coder](https://googlecreativelab.github.io/coder/): Es una distribución gratuita y de código abierto, muy útil para la enseñanza de conceptos sencillos de programación, creada por Google para usar la Raspberry Pi como un servidor remoto.  Instala un servidor con todo lo necesario para montar un aula de aprendizaje de programación web. Tiene varios [proyectos](https://googlecreativelab.github.io/coder-projects/) de diferente complejidad, con tutoriales
 
 ## Recursos
 

@@ -1,7 +1,5 @@
 # Servidor Web
 
-
-
 ## Servidor usando python/flask
 
 Seguiremos el siguiente [proyecto/tutorial](https://projects.raspberrypi.org/en/projects/python-web-server-with-flask/3) y los pasos de este otro [Control de gpio desde la web](https://randomnerdtutorials.com/raspberry-pi-web-server-using-flask-to-control-gpios/)

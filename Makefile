@@ -153,15 +153,14 @@ INDEX:
 	pandoc  --pdf-engine=xelatex   \
 		-V papersize:a4paper    \
 		--template=./LaTeX_ES.latex    \
-		--reference-doc=plantilla_raspy.docx \				
+		--reference-doc=$(PLANTILLA_DOC) \
 		-o  $(S5)  \
-		Portada.md        \
-		Cabecera_latex.md \
+		'Tema 5 Portada.md'  \
 		'Tema 5.0 Programacion.md' \
-		'Tema 5.1.0.Scratch3.md' \
-		'Tema 5.1.5 Camara.md' \
+		'Tema 5.1.0 Scratch3.md' \
 		'Tema 5.2 Shell scripts.md' \
-		'Tema 5.3 Aprender a programar python con Raspberry.md' \
+		'Tema 5.2.3 Arduino.md' \
+		'Tema 5.3 Python.md' \
 		'Tema 5.3.1 Publicacion en servicios externos.md' \
 		'Tema 5.3.2 MQTT y python.md' \
 		'Tema 5.3.5 Datalogger Arduino.md' \
@@ -169,8 +168,8 @@ INDEX:
 		'Tema 5.4.1 MySQL-MariaDB.md' \
 		'Tema 5.4.5 Servidor web - LAMP.md' \
 		'Tema 5.5 BotTelegram.md' \
-		'Tema 5.6 Camara y python.md' \
-		'Tema 5.6.1 Trabajando con github.md' \
+		'Tema 5.6.0 Camara y Python.md' \
+		'Tema 5.6.5 Trabajando con github.md' \
 		'Tema 5.6.6 TimeLapse.md' \
 		'Tema 5.8 PyGame y ProgramacionVideojuegos.md' 
 

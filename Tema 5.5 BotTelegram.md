@@ -22,7 +22,7 @@ Nuestro Bot de Telegram con Raspberry podrá hacer lo siguiente:
 
 ### Instalación
 
-Instalamos las librerías de python para trabajar con telegram
+Instalamos las librerías de Python para trabajar con Telegram
 
 
 ```bash

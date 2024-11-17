@@ -1,18 +1,10 @@
 ## Python
 
-Es un lenguaje interpretado moderno de gran productividad, sencillo, potente y con millones de líneas ya desarrolladas que se pueden usar directamente por medio de paquetes instalables
+Python es un lenguaje interpretado moderno de gran productividad, sencillo, potente y con millones de líneas ya desarrolladas que se pueden usar directamente por medio de paquetes instalables.
 
-Se utiliza en la web, en aplicaciones de escritorio, etc... Gran parte del interface de linux lo utiliza
+Se utiliza en la web, en aplicaciones de escritorio, etc... Gran parte del interfaz de Linux lo utiliza.
 
-Existen dos versiones de python ahora mismo: la rama 2.x y la 3.x
-Por sencillez vamos a usar la sintaxis de la rama 2.x
-
-[![Video: Python en Raspberry Pi](https://img.youtube.com/vi/Yy2oad1Xnoo/0.jpg)](https://drive.google.com/file/d/1YEQDQsg6shE4ePacDk3nL2n_EUgN13ny/view?usp=sharing)
-
-
-[Video: Python en Raspberry Pi](https://drive.google.com/file/d/1YEQDQsg6shE4ePacDk3nL2n_EUgN13ny/view?usp=sharing)
-
-Podemos utilizar varias herramientas para programar con python como Idle, **Thonny** un simple editor de texto o trabajar directamente sobre el intérprete python y directamente programar con él.
+Podemos utilizar varias herramientas para programar con Python como **Thonny** un simple editor de texto o trabajar directamente sobre el intérprete python y directamente programar con él.
 
 ![Herramienta idle](./images/idle.png)
 
@@ -36,7 +28,7 @@ Aunque es más sencillo si escribimos nuestro código en un fichero (con cualqui
 python3 fichero.py
 ```
 
-Aunque éste no pretende ser un curso sobre python, veamos algunos ejemplos:
+Aunque éste no pretende ser un curso sobre python, veamos algunos ejemplos.
 
 ## Operaciones numéricas y petición de datos al usuario
 
@@ -55,6 +47,8 @@ print (suma)  # imprimimos su valor
 **Ejercicio**: cambia la operación a realizar
 
 ### Sentencias de control condicionales
+
+En este ejemplo vamos a ver cómo utilizar sentencias condicionales, para ejecutar un código o no según se cumpla la condición establecida:
 
 [Código de Bisiesto](https://github.com/javacasm/RaspberryOnline2ed/raw/master/codigo/bisiesto.py)
 
@@ -94,6 +88,8 @@ else:
 ```
 
 ### Sentencias de control de repetición
+
+Veamos cómo realizar bucles:
 
 [Código de Buscando Caracteres](https://raw.githubusercontent.com/javacasm/RaspberryOnline2ed/master/codigo/buscaCaracter.py)
 

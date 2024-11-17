@@ -110,7 +110,7 @@ import pymysql as mariadb
 def insertarDato(id_sensor, valor):
     db = mariadb.connect(host='raspi4',
                             user='javacasm',
-                            passwd='Patatin5.5',
+                            passwd='mi_contraseña',
                             db='datos_db')
 
     cursor = db.cursor() # abrimos el cursor

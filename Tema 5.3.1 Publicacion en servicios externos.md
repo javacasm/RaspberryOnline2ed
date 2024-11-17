@@ -1,6 +1,6 @@
 ## Publicación de datos de IOT en servicios externos
 
-Vamos a aprovechar nuestros conocimientos de python para trabajar en proyectos IOT.
+Vamos a aprovechar nuestros conocimientos de Python para trabajar en proyectos IOT.
 
 Existen muchos servicios externos donde podemos publicar nuestros datos y representarlos gráficamente.
 
@@ -9,7 +9,6 @@ Estos servicios online, o en la nube como ahora se suele decir, exponen una seri
 Es lo que se conoce de forma genérica como un API (Application Programming Interface). 
 
 Existen multitud de estos servicios, algunos nos permiten publicar contenidos en redes sociales (como Twitter y Facebook) otros nos facilitan el almacenar nuestros datos y mostrarlos como gráficas. Además estos servicios  dan una dimensión social a nuestros datos pudiendo compartirlos con otros usuarios.
-
 
 ### Plataformas de publicación de datos
 
