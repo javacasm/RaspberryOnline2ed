@@ -52,7 +52,7 @@ Vemos como en todos los comandos utilizamos la palabra "sudo", esto es debido a 
 
 ### Eliminación de paquetes obsoletos
 
-Con la instalación y actualización de los paquetes a lo largo del tiempo, algunas de las dependencias se quedan obsoletas e incluso algunos de los paquetes, puede que ya no sean necesarios. 
+Con la instalación y actualización de los paquetes a lo largo del tiempo, algunas de las dependencias se quedan desfasadas e incluso algunos de los paquetes, puede que ya no sean necesarios. 
 
 Por eso es necesario que cada cierto tiempo, eliminemos los paquetes  "huérfanos" que ya no se necesitan por el sistema, haciendo:
 
@@ -70,7 +70,7 @@ Para eliminar los paquetes que ya quedaron obsoletos.
 
 #### Actualización de los distintos firmwares
 
-Los diferentes componentes de la Raspberry Pi necesitan de varios firmwares para funcionar, que también conviene tener actualizados. Podemos actualizarlos con:
+Los diferentes componentes de la Raspberry Pi necesitan de varios firmwares para funcionar, que también conviene tenerlos al día. Podemos actualizarlos con:
 
 ```sh
 sudo rpi-update
@@ -124,7 +124,54 @@ Podemos hacer este cambio entre diferentes versiones con sólo cambiar los nombr
 
 #### Instalación de paquetes a partir del código fuente
 
-* Descargamos el código fuente (normalmente comprimido).
+Hay varias razones para instalar software desde el código fuente:
+
+1. Personalización y control:
+
+- Puedes modificar las opciones de compilación para optimizar el rendimiento.
+- Permite habilitar o deshabilitar características específicas.
+- Puedes aplicar parches o modificaciones personalizadas.
+
+2. Acceso a las últimas versiones:
+
+- Los repositorios oficiales de las distribuciones suelen tener versiones más antiguas por estabilidad.
+- Algunas características nuevas o correcciones de bugs solo están disponibles en las versiones más recientes.
+- Ideal para desarrolladores que necesitan probar las últimas funcionalidades.
+
+3. Compatibilidad y requisitos específicos:
+
+- Cuando necesitas una versión específica que no está en los repositorios.
+- Para resolver incompatibilidades con otro software.
+- Cuando requieres optimizaciones para hardware específico.
+
+4. Aprendizaje:
+
+- Ayuda a entender mejor cómo funciona el software.
+- Proporciona experiencia práctica con el proceso de compilación.
+- Permite aprender sobre las dependencias y la estructura del software.
+
+5. Casos especiales:
+
+- Software que no está disponible en los repositorios oficiales.
+- Cuando necesitas depurar problemas específicos.
+- Para desarrollo y pruebas de software.
+
+Sin embargo, también hay desventajas a considerar:
+
+- Requiere más tiempo y conocimientos técnicos.
+- Las actualizaciones no son automáticas.
+- Puede ser más difícil de desinstalar.
+- Mayor responsabilidad en la gestión de dependencias y seguridad.
+
+Veamos los pasos para instalar un software a partir de su código fuente:
+
+* Antes de instalar nuestro paquete, necesitamos tener instaladas las herramientas básicas de compilación:
+
+```bash
+sudo apt-get install build-essential
+```
+
+* Descargamos el código fuente (normalmente comprimido) desde su página web, generalmente desde github.com
 * Lo descomprimimos con:
 ```sh
 unzip codigo_fuente.zip
@@ -135,9 +182,9 @@ tar xvf codigo_fuente.tgz
 ```
 (según el formato en el que esté comprimido).
 
-Dentro del directorio del código ya descomprimido, normalmente encontramos un fichero README o INSTALL que nos dará las instrucciones, que suelen ser muy parecidas a estas:
+* Dentro del directorio del código ya descomprimido, normalmente encontramos un fichero README.md o INSTALL que nos dará las instrucciones, que suelen ser muy parecidas a estas:
 
-1. Preparan el código para que compile en nuestro sistema y además, comprueban que tengamos las herramientas y librerías necesarias con:
+1. Prepara el código para que compile en nuestro sistema y además, comprueba que tengamos las herramientas y librerías necesarias con:
 	```sh
 	cmake .
 	```
@@ -153,3 +200,11 @@ Dentro del directorio del código ya descomprimido, normalmente encontramos un f
 	```sh
 	sudo make install
 	```
+
+Consejos importantes:
+
+- Siempre lee la documentación (README, INSTALL) antes de comenzar.
+- Verifica las dependencias requeridas.
+- Si hay problemas durante la configuración, revisa el archivo `config.log`
+- Algunos paquetes pueden requerir pasos adicionales o diferentes.
+

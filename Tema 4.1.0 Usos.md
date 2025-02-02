@@ -4,7 +4,7 @@ Vamos a ver cómo manejar alguno de los programas más habituales de Raspberry P
 
 ### Administrando ficheros
 
-Para trabajar con nuestros ficheros usaremos la aplicación "Gestor de archivos PCManFM" en el menú Accesorios.
+Para trabajar con nuestros ficheros usaremos la aplicación "Gestor de archivos PCManFM" en el menú "Accesorios".
 
 ![Gestor de archivos PCManFM](./images/icono_gestor_ficheros_reducido_400.jpg)
 
@@ -20,12 +20,13 @@ Veamos algunas de las partes:
 4. Podemos usar estos iconos para ver gráficamente el contenido de la carpeta o los detalles en forma de lista.
 5. Directorio que estamos viendo, podemos editar su contenido para movernos a otra carpeta.
 6. Podemos ir a nuestra carpeta personal (carpeta "home"), o al anterior o al directorio que contiene al actual.
-7.  Desde el menú podemos crear directorios, archivos, movernos a las carpetas más frecuentes, copiar y pegar,....
+7.  Desde el menú podemos crear directorios, archivos, movernos a las carpetas más frecuentes, copiar y pegar, ...
 
 Si conectamos un dispositivo de almacenamiento externo,  un pendrive o un disco duro USB, nos aparecerá en el panel 1 que hemos visto antes. Si pulsamos sobre su nombre accederemos a su contenido. Por defecto, los dispositivos se aparecen como si colgaran de la carpeta **/media/pi/DISPOSITIVO**. Para desconectarlos, pulsamos en el botón de expulsar que aparece a la derecha del nombre en el panel 1.
+
 ### Navegador Web
 
-En el menú "Internet" tenemos disponible el navegador Chromium, la versión de código abierto 100% del navegador Chrome . También podemos instalar Firefox
+En el menú "Internet" tenemos disponible el Navegador web Chromium, la versión de código abierto 100% del navegador Chrome . También podemos instalar Firefox.
 
 ![Navegador web Chromium](./images/menu_internet_reducida_400.jpg)
 
@@ -74,7 +75,7 @@ sudo apt install gnome-screenshot
 ```
 Y aparecerá en el menú de "Accesorios".
 
-Nos permitirá capturar todo el escritorio, una ventana, una zona, definiendo un determinado retardo. También nos permite tras hacer la captura, seleccionar el nombre y la carpeta del fichero, o si queremos que se copie la imagen en el clipboard.
+Nos permitirá capturar todo el escritorio, una ventana o una zona, definiendo un determinado retardo. También nos permite tras hacer la captura, seleccionar el nombre y la carpeta del fichero, o si queremos que se copie la imagen en el clipboard.
 
 ![Gnome Screenshot](./images/gnome-screenshot_reducida_300.jpg)
 

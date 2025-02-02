@@ -34,7 +34,7 @@ Veamos algunos de los comandos más utilizados:
 * **ifconfig**: muestra la configuración actual de la red, con sus IPs y las direcciones MAC.
 * **history** : muestra todos los comandos que se han ejecutado antes. Podemos ejecutar el comando de la posición **n**, con **!n** . Las teclas abajo/arriba del cursor nos permiten iterar por los comandos usados.
 * **man comando**: Para obtener ayuda sobre comando.
-* Para hacer fichero ejecutable ejecutamos el comando, **chmod u+x fichero** y para ejecutarlo,**./fichero**.
+* Para hacer fichero ejecutable ejecutamos el comando, **chmod u+x fichero** y para ejecutarlo, **./fichero**.
 
 Cuando queremos usar algún comando sobre un archivo que no es nuestro o el propio comando intenta modificar la configuración del sistema, tendremos que anteponer al comando la palabra **sudo** (que quiere decir que la vamos a ejecutar como si fuéramos administrador). 
 
@@ -109,32 +109,32 @@ El comando **chgrp** (Change Group), permite cambiar el grupo al que pertenece e
 
 5. Existen algunos Permisos Especiales :
 
-	SUID (Set User ID) = 4000
+	SUID (Set User ID) = 4000: El archivo se ejecuta con los permisos del propietario.
 ```bash
-	chmod u+s archivo  # El archivo se ejecuta con los permisos del propietario
+	chmod u+s archivo 
 ```
 
-	SGID (Set Group ID) = 2000
+	SGID (Set Group ID) = 2000: Los nuevos archivos heredan el grupo del directorio.
 ```bash
-	chmod g+s directorio  # Los nuevos archivos heredan el grupo del directorio
+	chmod g+s directorio  
 ```
 
-	Sticky Bit = 1000
+	Sticky Bit = 1000: Solo el propietario puede borrar archivos.
 ```bash
-	chmod +t directorio  # Solo el propietario puede borrar archivos
+	chmod +t directorio  
 ```
 
 6. Casos comunes de uso:
 ```bash
-	chmod 755 script.sh  # rwxr-xr-x Hacer un archivos ejecutable
+	chmod 755 script.sh  # rwxr-xr-x Hacer un archivos ejecutable.
 ```
 
 ```bash
-	chmod 644 config.txt  # rw-r--r-- Archivo de configuración
+	chmod 644 config.txt  # rw-r--r-- Archivo de configuración.
 ```
-Los archivos de configuración suelen tener estos permisos (cualquier puede leerlos pero solo los modifica el root):
+Los archivos de configuración suelen tener estos permisos (cualquiera puede leerlos, pero solo los modifica el root):
 ```bash
-	chmod 600 id_rsa  # rw------- Archivos privados, sólo los lee y escribe el propietario
+	chmod 600 id_rsa  # rw------- Archivos privados, sólo los lee y escribe el propietario.
 ```
 
 7. Ejemplos prácticos:
@@ -192,7 +192,7 @@ Los archivos de configuración suelen tener estos permisos (cualquier puede leer
 Algunas características de sistema de fichero de Linux:
 
 * Usa un formato de partición ext4 (también existen aunque en desuso el ext3 y el ext2), aunque permite usar FAT, el típico sistema de archivos de Windows.
-* El árbol de directorios tiene un único directorio raíz del que cuelga todo. Todos los dispositivos (pendrives, discos externos, discos de red) se integran dentro de este árbol, montando su raíz en un directorio determinado (montamos y desmontamos con __mount__ y __umonut__ ).
+* El árbol de directorios tiene un único directorio raíz del que cuelga todo. Todos los dispositivos (pendrives, discos externos, discos de red...) se integran dentro de este árbol, montando su raíz en un directorio determinado (montamos y desmontamos con __mount__ y __umonut__ ).
 
 El usuario sólo tiene acceso a su directorio y solo el administrador (**root**), puede acceder al resto de directorios.
 
@@ -202,7 +202,7 @@ El usuario sólo tiene acceso a su directorio y solo el administrador (**root**)
 * **/etc** configuración.
 * **/home** usuario.
 * **/usr** programas para usuarios.
-* **/usr/share** recursos de programas (imágenes, traducciones).
+* **/usr/share** recursos de programas (imágenes, traducciones...).
 * **/usr/share/doc** documentación.
 * **/bin** ejecutables del sistema.
 * **/lib** librerías.

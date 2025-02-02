@@ -17,7 +17,7 @@ Veamos los distintos modelos:
 
 ### Cámaras v1.3 y v2.1
 
-Las versiones v1.3 y la v2.1 son muy parecidas. Se trata de cámaras con foco fijo cambiando el modelo de sensor y la resolución. 
+Las versiones v1.3 y v2.1 son muy parecidas. Se trata de cámaras con foco fijo en las que se ha cambiado el modelo de sensor y la resolución. 
 
 | ![Cámara v1.3](./images/RaspiCamera_v1.3_reducida_250.jpg) | ![Cámara v2.1](./images/RaspiCamera_v2_reducida_250.jpg) |
 | ---------------------------------------------------------- | -------------------------------------------------------- |

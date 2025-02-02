@@ -42,13 +42,11 @@ En general, la tienda de aplicaciones Snap ofrece una manera conveniente, segura
 
 Aquí hay algunos recursos adicionales donde puedes aprender más sobre Snap:
 
-- [https://shop.snapon.com/](https://shop.snapon.com/)
-- [https://www.youtube.com/watch?v=yGh5XWrSUsI](https://www.youtube.com/watch?v=yGh5XWrSUsI)
 - [https://snapcraft.io/docs/installing-snap-on-ubuntu](https://snapcraft.io/docs/installing-snap-on-ubuntu)
 
 #### Desventajas de usar SNAP
 
-A pesar de las ventajas que mencioné anteriormente, también existen algunas desventajas a considerar al usar la tienda de aplicaciones Snap:
+A pesar de las ventajas mencionadas anteriormente, también existen algunas desventajas a considerar, al usar la tienda de aplicaciones Snap:
 
 **Potencial impacto en el rendimiento:**
 
@@ -104,7 +102,7 @@ sudo snap install snap-store
 ```
 * Abrimos la tienda, desde el menú "Preferencias" y ya podemos instalar el software que queramos:
 
-	![Tienda de aplicaciones](./images/Snap-RaspberryPi.png)
-	Si buscamos en el apartado de desarrollo, veremos que por ejemplo Arduino es la misma versión.
+	![Tienda de Aplicaciones](./images/Snap-RaspberryPi-600.png)
+	Si buscamos en el apartado de desarrollo (Development), veremos que por ejemplo Arduino es la misma versión.
 
 	

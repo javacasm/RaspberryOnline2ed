@@ -2,9 +2,9 @@
 
 Dependiendo de la versión de Raspberry Pi OS que instalemos (Lite o Full), tendremos más o menos aplicaciones disponibles al  empezar a usar nuestra Raspberry Pi. No obstante, siempre podemos añadir o quitar programas.
 
-Como todos los sistemas operativos basados en **Debian**, la Raspberry Pi dispone de  una lista de repositorios donde está organizados los diferentes los paquetes y aplicaciones, cada uno de estos paquetes contiene información sobres las dependencias que existen entre ellos, sus versiones, así como todo lo necesario para instalarlo, configurarlo o desinstalarlo. 
+Como todos los sistemas operativos basados en **Debian**, la Raspberry Pi dispone de  una lista de repositorios donde están organizados los diferentes paquetes y aplicaciones, cada uno de estos paquetes contiene información sobres las dependencias que existen entre ellos, sus versiones, así como todo lo necesario para instalarlo, configurarlo o desinstalarlo. 
 
-Al seleccionar un paquete para su instalación, se consultará si ya se dispone de los paquetes de los que dependen en nuestra máquina y en caso negativo se instalarán. También se comprueba si existe algún tipo de incompatibilidad con el software existente
+Al seleccionar un paquete para su instalación, se consultará si ya se dispone de los paquetes de los que depende su funcionamiento en nuestra máquina y en caso negativo se instalarán. También se comprueba si existe algún tipo de incompatibilidad con el software existente.
 
 Desde el escritorio podemos instalar o desinstalar aplicaciones usando cualquiera de estas dos  herramientas visuales desde el menú Preferencias. Ambas usan el mismo sistema de instalación y son compatibles al 100% entre ellas:
 
@@ -30,4 +30,4 @@ También podemos instalar paquetes desde la consola. Para ello, tenemos que cono
 sudo apt install paquete
 ```
 
-Más adelante, veremos en más detalle esta herramienta y cómo la podemos utilizar para actualizar el sistema.
+Más adelante, veremos con más detalle esta herramienta y cómo la podemos utilizar para actualizar el sistema.

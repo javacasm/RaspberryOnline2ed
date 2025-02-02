@@ -22,7 +22,7 @@ DIR_PUBLICACION="./publicación/"
 
 PLANTILLA_DOC_DADI="Plantilla-Prueba-Raspberry-Dadi.odt"
 
-PLANTILLA_DOC="plantilla_raspy.docx"
+PLANTILLA_DOC="plantilla_raspy_tablas.docx"
 
 CV:
 	pandoc --pdf-engine=xelatex   \
@@ -129,9 +129,9 @@ INDEX:
 		"Tema 4.0.5 Programas normales.md" \
 		"Tema 4.1.0 Usos.md" \
 		"Tema 4.1.2 Comandos.md" \
-		"Tema 4.1.4 Matenimiento.md" \
+		"Tema 4.1.4 Mantenimiento.md" \
 		"Tema 4.1.5 Instalación de tienda de aplicaciones SNAP.md" \
-		'Tema 4.2.0 Camara.md' \
+		'Tema 4.2 Camara_dadi_27enero25.md' \
 		"Tema 4.3.0 IOT.md" \
 		'Tema 4.3.1 Domotica.md' \
 		'Tema 4.3.2 MQTT.md' \
