@@ -4,7 +4,7 @@
 
 from picamera2 import Picamera2, Preview # importamos todo lo necesario
 import time
-picam2 = Picamera2() # creamos el objeto para acceder a la cmámara
+picam2 = Picamera2() # creamos el objeto para acceder a la cámara
 # vamos a hacer una configuración por defecto para que se previsualice
 # en el escritorio
 camera_config = picam2.create_preview_configuration() 

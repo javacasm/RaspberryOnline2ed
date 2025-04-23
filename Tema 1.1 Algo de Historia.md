@@ -23,7 +23,7 @@ Utiliza un diseño avanzado como podemos observar en la imagen, donde se ha colo
 
 Actualmente existen varios formatos, vamos a ver los más usados:
 
-* La versión más actual a día de hoy (Octubre de 2024) es la [Versión 5](https://www.raspberrypi.com/products/raspberry-pi-5/) 2.4GHz Quad-Core de 64bits hasta 8GB, USB 3.0, 2 HDMI 4K Gigabit, Wifi y bluetooth.
+* La versión más actual a día de hoy (Abril de 2025) es la [Versión 5](https://www.raspberrypi.com/products/raspberry-pi-5/) 2.4GHz Quad-Core de 64bits hasta 16GB, USB 3.0, 2 HDMI 4K Gigabit, Wifi y bluetooth.
 
 ![Raspberry Pi 5](./images/raspberry-pi-5_sin_fondo_reducida_500.png)
 

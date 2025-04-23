@@ -46,11 +46,13 @@ Y nos queda un equipo muy, muy compacto
 
 ### Instalación
 
-Ahora vamos a instalar los módulos necesarios de python
+Ahora vamos a instalar los módulos necesarios de Python
 
 ```sh
 sudo apt install python3-picamera
 sudo apt install python3-pip
+
+# Recuerda crear y activar el entorno virtual como vimos anteriormente
 
 pip3 install python-telegram
 pip3 install python-telegram-bot

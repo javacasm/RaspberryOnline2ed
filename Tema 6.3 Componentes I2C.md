@@ -157,7 +157,7 @@ $ i2cdetect -y 1
   70: -- -- -- -- -- -- 76 --
 ```
 
-Vamos a usar el paquete Python RPi.bme280 y seguiremos [su tutorial](https://pypi.org/project/RPi.bme280/). Instalamos el módulo RPI.bme280
+Vamos a usar el paquete Python RPi.bme280 y seguiremos [su tutorial](https://pypi.org/project/RPi.bme280/). Instalamos el módulo RPI.bme280  dentro del correspondiente entorno virtual 
 
 ```sh
 pip3 install RPi.bme280

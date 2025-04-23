@@ -83,14 +83,14 @@ El módulo ADC [ADS1115](http://www.adafruit.com/products/1085) utiliza comunica
 
 Por supuesto, tenemos que tener activo el driver I2C en nuestra Raspberry.
 
-Para usarlo necesitamos tener instaladas las librerías de circuitpython
+Para usarlo necesitamos tener instaladas los módulos de circuitpython dentro del entorno virtual correspondiente
 
 ```sh
 pip3 install RPI.GPIO
 pip3 install adafruit-blinka
 ```
 
-Ahora instalamos la librería del ADS1115
+Ahora instalamos la librería del ADS1115 dentro del entorno virtual correspondiente
 
 ```sh
 pip3 install adafruit-circuitpython-ads1x15

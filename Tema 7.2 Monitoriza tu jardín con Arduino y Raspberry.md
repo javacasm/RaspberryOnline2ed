@@ -95,7 +95,7 @@ Veamos algunos detalles:
 
 El [software de la Raspberry](https://github.com/javacasm/RiegoRaspberryArduino/tree/master/Riego-RA-Raspberry) está basado en el bot de los otros programas al que se le han añadido las funciones de comunicación con Arduino
 
-Necesitamos tener instalado el módulo Telegram-bot  para python
+Necesitamos tener instalado el módulo Telegram-bot  para Python dentro del entorno virtual correspondiente
 
 ```sh
 pip3 install python_telegram_bot

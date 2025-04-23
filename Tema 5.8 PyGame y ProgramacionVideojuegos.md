@@ -10,7 +10,7 @@ Se trata de un desarrollo Open Source, mantenido activamente por la comunidad. S
 
 ### Instalación
 
-Para instalarlo sólo tenemos que hacer 
+Para instalarlo crearemos un entorno virtual y dentro sólo tenemos que hacer 
 ```sh 
 pip3 install pygame
 ```
@@ -210,7 +210,7 @@ El [código](https://github.com/javacasm/RaspberryOnline2ed/raw/master/codigo/py
 
 Puedes "sembrar" organismos con el ratón y verás cómo evolucionan
 
-Para ejecutarlo también tienes que instalar numpy
+Para ejecutarlo también tienes que instalar numpy en el entorno virtual de pygame que creamos anteriormente:
 
 ```sh
 pip3 install numpy
@@ -288,7 +288,7 @@ Existen [tutoriales](https://pygame-zero.readthedocs.io/en/stable/from-scratch.h
 
 ### Instalación 
 
-Desde 2015 ya viene instalado por defecto. En cualquier caso la instalación es tan sencilla como esto:
+Desde 2015 ya viene instalado por defecto. En cualquier caso la instalación es tan sencilla como esto desde dentro del entorno virtual correspondiente:
 
 ```sh
 pip3 install pgzero

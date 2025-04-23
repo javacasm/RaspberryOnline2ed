@@ -27,10 +27,25 @@ Instalamos las librerías de Python para trabajar con Telegram
 
 ```bash
 sudo apt install python3-pip
+```
 
+Creamos nuestro entorno virtual como hemos visto
+
+```sh
+python3 -m venv mi_bot
+```
+
+Lo activamos 
+
+```sh
+source mi_bot/bin/activate
+```
+
+Y ahora instalamos las módulos necesarios
+
+```sh
 pip3 install python-telegram
 pip3 install python-telegram-bot
-
 ```
 ### Creación de nuestro Bot
 
@@ -54,9 +69,10 @@ Necesitaremos un API TOKEN para cada instancia o tipo de bot que queremos tener 
 
 Si queremos podemos entrar en la versión web de telegram [**web.telegram.org**](http://web.telegram.org) en la máquina donde vamos a usar el bot y validamos nuestro inicio de sesión con el código que se nos enviará. De esta manera tenemos acceso al Token para poder usarlo.
 
-Vamos a empezar por el ejemplo [echobot](https://github.com/javacasm/RaspberryOnline2ed/blob/master/codigo/echoBot.py), un ejemplo de Bot de Telegram que repite lo que le decimos. He modificado levemente el código para que en caso de que el mensaje sea "hi" conteste con un mensaje especial usando el nombre del usuario 
+Vamos a empezar por el ejemplo [echobot](https://github.com/javacasm/RaspberryOnline2ed/blob/master/codigo/echoBot.py), un ejemplo de Bot de Telegram que repite lo que le decimos. He modificado levemente el código para que en caso de que el mensaje sea "hi" conteste con un mensaje especial usando el nombre del usuario.
 
-Ahora tenemos que **sustituir nuestro token del canal en el código** de echobot.py y lo ejecutamos con 
+Ahora tenemos que **sustituir nuestro token del canal en el código** de echobot.py y lo ejecutamos con:
+
 ```sh
 python3 echoBot.py
 ```

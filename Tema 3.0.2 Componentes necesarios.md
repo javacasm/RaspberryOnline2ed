@@ -19,7 +19,7 @@ Y si la vas a usar como un ordenador:
 
 ### Opcionales
 
-* Una caja o carcasa (para evitar problemas, es muy fácil hacer un contacto con algo metálico), también te puedes imprimir o montar una. Comprueba que sea la adecuada para tu modelo.
+* Carcasa (para evitar problemas, es muy fácil hacer un contacto con algo metálico), también te puedes imprimir o montar una. Comprueba que sea la adecuada para tu modelo.
 * Ventilador: si vas a utilizarla intensamente, mejor refrigerarla con un ventilador adecuado para tu modelo y caja.
-* Conector Hub USB con alimentación, así podremos añadir más dispositivos y evitaremos cargar la potencia de la Raspberry.
+* Concentrador Hub USB con alimentación, así podremos añadir más dispositivos y evitaremos cargar la potencia de la Raspberry.
 

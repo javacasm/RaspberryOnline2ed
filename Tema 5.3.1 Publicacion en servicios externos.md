@@ -69,7 +69,7 @@ Es gratuito para cierto número de datos y nos permite de manera muy sencilla su
 
 Éste es el código de ejemplo para Raspberry Pi que nos va a enviar datos sobre el uso de CPU de nuestra Raspberry
 
-Instalamos el paquete thingspeak con
+Creamos un interno virtual como vimos anteriormente y dentro instalamos el paquete thingspeak con:
 
 ```sh
 pip3 install thingspeak

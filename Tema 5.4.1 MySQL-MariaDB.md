@@ -93,7 +93,7 @@ select * from datos_sensores
 
 ![Select de datos en MariaDB](./images/Datos_mariaDB.png)
 
-Veamos ahora un sencillo código python para insertar datos. Antes instalamos el módulo pymqsl con
+Veamos ahora un sencillo código python para insertar datos. Antes instalamos el módulo pymqsl con dentro de nuestro entorno virtual:
 
 ```sh
 pip3 install pymysql

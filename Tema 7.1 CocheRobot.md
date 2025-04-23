@@ -106,7 +106,7 @@ Para facilitar la conexión hacemos lo siguiente:
 * Puesto  que vamos a trabajar directamente en la raspberry, las incluimos en github como ya vimos
 * Clonamos el repositorio base 
 * Creamos uno nuevo desde el que partir
-* Instalamos módulos y lo necesario para trabajar cómodamente.
+* Instalamos módulos dentro del entorno virtual correspondiente y lo necesario para trabajar cómodamente.
 
 ```sh
 pip3 install python-telegram-bot
@@ -171,7 +171,7 @@ Usaremos para la alimentación de los motores 2 baterías lipo 18650, que ademá
 
 Necesitamos que el driver I2C esté activado. Si no es así lo haremos desde la configuración.
 
-Instalamos el módulo python de Adafruit para controlar el Motor Hat:
+Instalamos el módulo python de Adafruit para controlar el Motor Hat dentro del entorno virtual correspondiente:
 
 ```sh
 pip3 install adafruit-circuitpython-motorkit
@@ -327,7 +327,7 @@ robot.stop()
 
 Vamos a crear una sencilla aplicación web que el mismo robot publicará en su web y que nos permitirá controlarlo fácilmente. Para ello usaremos flask, un módulo python, que nos permite crear aplicaciones web de manera muy sencilla. La instalación y primeros pasos es muy sencilla y podremos verla en detalle en [este proyecto de Raspberry Pi org](https://projects.raspberrypi.org/en/projects/python-web-server-with-flask)
 
-Instalamos flask
+Instalamos flask dentro del entorno virtual correspondiente
 
 ```sh
 pip3 install flask
@@ -540,11 +540,11 @@ Por ejemplo para controlar los 8 neopixels que vamos a conectar en forma de barr
 
 Se venden en muchos formatos, como tiras, matrices, etc...
 
-Para usarlo en la Raspberry necesitamos instalar la librería de adafruit para los neopixel y nos aseguramos de tener instalado el módulo blinka de adafruit
+Para usarlo en la Raspberry necesitamos instalar la librería de adafruit para los neopixel y nos aseguramos de tener instalado el módulo blinka de adafruit dentro del entorno virtual correspondiente
 
 ```sh
-sudo pip3 install adafruit-circuitpython-neopixel
-sudo python3 -m pip install --force-reinstall adafruit-blinka
+pip3 install adafruit-circuitpython-neopixel
+python3 -m pip install --force-reinstall adafruit-blinka
 
 ```
 

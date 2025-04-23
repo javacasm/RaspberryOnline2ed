@@ -2,10 +2,10 @@
 
 Vamos a ver cómo integrar MQTT en nuestros proyectos
 
-Usaremos el módulo  **paho-mqtt** que permite tanto publicar como suscribirse a topics. Lo instalamos
+Usaremos el módulo  **paho-mqtt** que permite tanto publicar como suscribirse a topics. Creamos nuestro entorno virtual como ya hemos visto y  lo instalamos:
 
 ```sh
-sudo pip3 install paho-mqtt
+pip3 install paho-mqtt
 ```
 
 Y lo podemos probar con [ejemplo sencillo como este](https://github.com/javacasm/RaspberryOnline2ed/raw/master/codigo/testMQTT.py):

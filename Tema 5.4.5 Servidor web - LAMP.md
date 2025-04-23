@@ -92,7 +92,7 @@ Para ver que funciona y es compatible, instalaremos una instancia del conocido g
 
 6. Wordpress
 
-    Wordpress es uno de los gestores de contenidos de codigo abierto más utilizados. 
+    Wordpress es uno de los gestores de contenidos de código abierto más utilizados. 
     Vamos a descargar un paquete con la última versión y lo vamos a poner en la carpeta de contenidos de www con
 
     ```sh
@@ -117,7 +117,7 @@ Para ver que funciona y es compatible, instalaremos una instancia del conocido g
     sudo rm  latest.tar.gz
     ```
 
-    y movemos todo el contenido a la carperta raiz del servidor
+    y movemos todo el contenido a la carpeta raiz del servidor
 
     ```sh
     sudo mv wordpress/* .

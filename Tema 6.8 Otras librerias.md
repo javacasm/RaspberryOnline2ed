@@ -23,10 +23,10 @@ Para instalarlo tenemos que tener instalado parte del entorno de desarrollo de p
 sudo apt-get install python-dev python-pip
 ```
 
-Descargamos el código (también podíamos haber descargado el fichero zip)
+Descargamos el código (también podíamos haber descargado el fichero zip). Instalamos el módulo dentro del entorno virtual correspondiente
 
 ```sh
-sudo pip3 install wiringpi
+pip3 install wiringpi
 ```
 
 

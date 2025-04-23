@@ -1,15 +1,15 @@
 ## MQTT y python
 
 
-Usaremos el módulo  **paho-mqtt** que permite tanto publicar como suscribirse a topics.
+Usaremos el módulo  **paho-mqtt** que permite tanto publicar como suscribirse a topics. Lo instalamos dentro del entorno virtual correspondiente
 
 ```sh
-sudo pip3 install paho-mqtt
+pip3 install paho-mqtt
 ```
 
 En este ejemplo en python la Raspberry Pi hace parpadear un led conectado al GPIO4 cuando recibe un mensaje con topic "client/led"
 
-```py
+```python
 #! /usr/bin/python3
 import paho.mqtt.client as mqtt
 from gpiozero import LED
@@ -35,7 +35,7 @@ client.loop_forever()
 
 ![Montaje Led](./images/5cede883c672e070280861c4,816,544.jpeg)
 
-Podemos probarlo publicando mensajes con el topi adecuado
+Podemos probarlo publicando mensajes con el topic adecuado
 
 
 ```sh

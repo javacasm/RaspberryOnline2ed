@@ -49,7 +49,7 @@ void loop() {
 
 Vamos a hacer ahora el programa Python que nos va a pedir un comando y actuará sobre Arduino.
 
-Necesitamos tener instalado el módulo pySerial en nuestra Raspberry. Podemos instalarla con:
+Necesitamos tener instalado el módulo pySerial en nuestra Raspberry. Podemos instalarla dentro de nuestro entorno virtual con:
 
 ```sh
 pip3 install pySerial
@@ -227,7 +227,7 @@ Más detalles sobre la configuración de KST en [esta página](https://miscircui
 
 Esta forma de controlar remotamente nuestro arduino es tan potente y está tan extendida que ya existe un estándar de comandos de control. Se llama Firmata y permite controlar totalmente Arduino incluso acceder a dispositivos conectados como sensores y servos.
 
-Para utilizarlo necesitamos que Arduino tenga instalado el firmware de Firmata. Desde Raspberry lo controlaremos con el módulo [pyFirmata](https://pypi.org/project/pyFirmata/) que instalaremos con 
+Para utilizarlo necesitamos que Arduino tenga instalado el firmware de Firmata. Desde Raspberry lo controlaremos con el módulo [pyFirmata](https://pypi.org/project/pyFirmata/) que instalaremos  dentro de nuestro entorno virtual con: 
 ```sh
 pip3 install pyFirmata
 ```

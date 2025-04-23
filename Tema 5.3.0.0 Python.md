@@ -70,7 +70,7 @@ else:
 ```python
 # Nos da los dias que tiene el mes seleccionado
 mes = int(input('Introduce el mes:'))
-year = int(input('Introuce el año:'))
+year = int(input('Introduce el año:'))
 # Comprobamos si esta entre 1 y 12
 if 1 <= mes <= 12:
     if mes == 2:
@@ -94,18 +94,18 @@ Veamos cómo realizar bucles:
 [Código de Buscando Caracteres](https://raw.githubusercontent.com/javacasm/RaspberryOnline2ed/master/codigo/buscaCaracter.py)
 
 ```python
-# Cuenta las veces que se repite un caracter en una palabra
+# Cuenta las veces que se repite un carácter en una palabra
 word= 'palabra' 
 caracter = 'a' 
 contador=0
-mensaje = 'No se ha encontrado el caracter :('
+mensaje = 'No se ha encontrado el carácter :('
 for i in range(len(word)):
   if (word[i]==caracter):
-    mensaje='se ha encontrado el caracter!!!'
+    mensaje='se ha encontrado el carácter!!!'
     contador=contador + 1
 
 print (mensaje)
-print ('Se encontrado '+str(contador)+' veces')
+print ('Se ha encontrado '+str(contador)+' veces')
 ```
 
 **Ejercicio**: haz que el usuario pueda introducir la cadena donde buscar y el carácter

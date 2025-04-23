@@ -1,6 +1,6 @@
 # Nos da los dias que tiene el mes seleccionado
 mes = int(input('Introduce el mes:'))
-year = int(input('Introuce el año:'))
+year = int(input('Introduce el año:'))
 # Comprobamos si esta entre 1 y 12
 if 1 <= mes <= 12:
     if mes == 2:

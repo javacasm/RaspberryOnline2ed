@@ -23,10 +23,10 @@ Y en la opción "Interfacing" activamos "one-wire interface"
 
 y reiniciamos para que se activen los cambios.
 
-Instalamos el módulo python **w1thermsensor** con 
+Instalamos el módulo python **w1thermsensor** dentro del correspondiente entorno virtual con 
 
 ```sh
-sudo pip3 install w1thermsensor
+pip3 install w1thermsensor
 ```
 Un sencillo programa nos permite ver el valor de temperatura cada segundo
 
@@ -56,7 +56,7 @@ El montaje es muy sencillo (tomado de la [página de "el atareao"](https://www.a
 
 ![Montaje DHT22](./images/montajeDHT22.png)
 
-Instalamos el módulo de Adafruit para sensores DHT
+Instalamos el módulo de Adafruit para sensores DHT  dentro del correspondiente entorno virtual 
 
 ```sh
 pip3 install Adafruit_DHT

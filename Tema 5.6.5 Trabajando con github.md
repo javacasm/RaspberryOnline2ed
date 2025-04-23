@@ -65,13 +65,14 @@ Si en alguna ocasión el contenido local se ha quedado retrasado con lo que hay 
 git pull
 ``` 
 
-Si vamos a trabajar durante bastante tiempo con github nos interesa añadir la firma ssh de la Raspberrya github
+Si vamos a trabajar durante bastante tiempo con github nos interesa añadir la firma ssh de la Raspberry a github
 
 Para ello necesitamos crear una clave SSH en la raspberry. Siguiendo la [documentación de github](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) hacemos:
 
 ```sh
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 ```
+
 y definimos dónde se va a guardar el fichero y si queremos ponerle cable
 
 ```sh

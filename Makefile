@@ -160,7 +160,8 @@ INDEX:
 		'Tema 5.1.0 Scratch3.md' \
 		'Tema 5.2 Shell scripts.md' \
 		'Tema 5.2.3 Arduino.md' \
-		'Tema 5.3 Python.md' \
+		'Tema 5.3.0.0 Python.md' \
+		'Tema 5.3.0.1 Entornos virtuales.md' \
 		'Tema 5.3.1 Publicacion en servicios externos.md' \
 		'Tema 5.3.2 MQTT y python.md' \
 		'Tema 5.3.5 Datalogger Arduino.md' \
