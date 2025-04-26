@@ -45,8 +45,12 @@ Y ahora instalamos las módulos necesarios
 
 ```sh
 pip3 install python-telegram
-pip3 install python-telegram-bot
+pip3 install python-telegram-bot==13.6
+pip3 install requests
 ```
+
+Estamos usando una versión concreta del API de telegram para la que se creó el código.
+
 ### Creación de nuestro Bot
 
 Para usar un bot tenemos que darlo de alta en la red Telegram. Eso se hace ["hablando" con @botfather](https://www.instructables.com/id/Set-up-Telegram-Bot-on-Raspberry-Pi/) (sí, yo también pienso que los programadores de Telegram son unos cachondos)
@@ -61,11 +65,11 @@ Para usar un bot tenemos que darlo de alta en la red Telegram. Eso se hace ["hab
 /newbot
 ```
 
-Ahora @BotFather nos irá pidiendo datos y damos un nombre (puede ser cualquier cosa pero tiene que estar libre) y un nombre de bot que tiene que terminar en 'bot' y que ha de ser distinto a todos los existentes. 
+Ahora @BotFather nos irá pidiendo datos y damos un nombre (puede ser cualquier cosa pero tiene que estar libre) y un nombre de bot que tiene que terminar en 'bot' y que ha de ser distinto a todos los existentes. (Recuerda que los nombres en telegram empiezan por '@')
 
-Cuando lo tengamos definido nos va a dar token para acceder al API y la dirección para acceder al bot.
+Cuando lo tengamos definido nos va a dar un token para acceder al API y la dirección para acceder al bot.
 
-Necesitaremos un API TOKEN para cada instancia o tipo de bot que queremos tener en ejecución. Yo personalmente tengo uno por cada proyecto que tengo en funcionamiento más un par de TOKENs que uso para pruebas.
+Necesitaremos un API TOKEN para cada instancia de bot que queremos tener en ejecución. Yo personalmente uso  uno por cada proyecto que tengo en funcionamiento más un par de TOKENs que uso para pruebas.
 
 Si queremos podemos entrar en la versión web de telegram [**web.telegram.org**](http://web.telegram.org) en la máquina donde vamos a usar el bot y validamos nuestro inicio de sesión con el código que se nos enviará. De esta manera tenemos acceso al Token para poder usarlo.
 
@@ -133,7 +137,7 @@ def executeCommand(command):
 
 ```python
             elif comando == '/Temp':
-                answer = executeCommand('/opt/vc/bin/vcgencmd measure_temp')
+                answer = executeCommand('vcgencmd measure_temp')
                 utils.myLog(answer)
                 update.message.reply_text(answer,parse_mode=telegram.ParseMode.MARKDOWN,reply_markup = user_keyboard_markup)
             else:

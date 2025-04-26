@@ -55,7 +55,7 @@ sudo apt install python3-pip
 # Recuerda crear y activar el entorno virtual como vimos anteriormente
 
 pip3 install python-telegram
-pip3 install python-telegram-bot
+pip3 install python-telegram-bot==13.6
 ```
 
 Usaremos un código basado en los anteriores ejemplos al que le hemos añadido:

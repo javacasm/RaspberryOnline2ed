@@ -109,7 +109,7 @@ Para facilitar la conexión hacemos lo siguiente:
 * Instalamos módulos dentro del entorno virtual correspondiente y lo necesario para trabajar cómodamente.
 
 ```sh
-pip3 install python-telegram-bot
+pip3 install python-telegram-bot==13.6
 sudo apt install screen
 ```
 
