@@ -178,10 +178,9 @@ INDEX:
 	pandoc --pdf-engine=xelatex   \
 		-V papersize:a4paper    \
 		--template=./LaTeX_ES.latex    \
-		--reference-doc=plantilla_raspy.docx \				
-		-o $(S6)     \
-		Portada.md        \
-		Cabecera_latex.md \
+		--reference-doc=$(PLANTILLA_DOC) \
+		-o  $(S6)  \
+		'Tema 6 Portada.md' \
 		'Tema 6.0 - Electrónica con Raspberry.md' \
 		'Tema 6.0.5 Cuidados.md' \
 		'Tema 6.1 GPIO.md' \

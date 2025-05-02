@@ -56,34 +56,51 @@ El montaje es muy sencillo (tomado de la [página de "el atareao"](https://www.a
 
 ![Montaje DHT22](./images/montajeDHT22.png)
 
-Instalamos el módulo de Adafruit para sensores DHT  dentro del correspondiente entorno virtual 
+Podrías usar las librerías de Adafruit para los sensores DHT, pero desde hace tiempo [desaconseja el uso de estos sensores](https://learn.adafruit.com/modern-replacements-for-dht11-dht22-sensors)
+
+También podíamos haber aprovechado para hacer este montaje usando [CiruitPython](https://learn.adafruit.com/circuitpython-on-raspberrypi-linux/overview) que es una variante de Micropython (la versión de python para microcontroladores), creada por Adafruit, que ha añadido objetos de más alto nivel como motor, sensor, etc.. El problema es que es una instalación bastante pesada donde instalamos mucho más de lo que necesitamos. No obstante si quieres seguir por ahí, puedes seguir [este tutorial](https://learn.adafruit.com/dht-humidity-sensing-on-raspberry-pi-with-gdocs-logging/python-setup)
+
+Nosotros vamos a usar una versión más sencilla con el módulo Python `gpiod`
+
+Para ello necesitamos asegurarnos que tenemos instalado y funcionando el servicio `pigpiod`. Desde una consola hacemos los siguiente
 
 ```sh
-pip3 install Adafruit_DHT
+sudo apt update sudo apt install pigpio python3-pigpio
 ```
 
-El [programa](https://github.com/javacasm/RaspberryOnline2ed/blob/master/codigo/test_dht22.py) no puede ser más sencillo
+Y habilitamos y activamos el servicio `pigpiod` con
+
+```sh
+sudo systemctl enable pigpiod 
+sudo systemctl start pigpiod
+```
+
+Ahora, desde nuestro entorno virtual de python para gpio instalamos el módulo `pigpio-dht`con
+
+```sh
+pip3 install pigpio-dht
+```
+
+El [programa](https://github.com/javacasm/RaspberryOnline2ed/blob/master/codigo/test_dht22_pigpiod) no puede ser más sencillo
 
 ```python
-#!/usr/bin/python3
-import sys
-import Adafruit_DHT as dht
 import time
+from pigpio_dht import DHT22
 
+# Conecta el sensor en GPIO4
+sensor = DHT22(4)
 
-sensor = dht.DHT22 # Podría ser también un DH11
-pin = 4
-while True:
-    humedad, temperatura = dht.read_retry(sensor, pin) # recuperamos los valores del sensor
-    if humedad != None and temperatura != None:
-        print('Temp={0:0.1f} ºC,  Hum={1:0.1f} %'.format(temperatura, humedad))
-        time.sleep(5) # esperamos 5 segundos
-    else:
-        print('Error de conexión. Verifique la conexiona al pin {}'.format(pin))
+try:
+    while True:
+        result = sensor.read()
+        if result['valid']:
+            print(f"Temperatura: {result['temp_c']:.1f}°C")
+            print(f"Humedad: {result['humidity']:.1f}%")
+        else:
+            print("Error al leer el sensor")
+        time.sleep(2)
+except KeyboardInterrupt:
+    print("\nPrograma terminado")
 ```
 
-
-También podíamos haber aprovechado para hacer este montaje usando [CiruitPython](https://learn.adafruit.com/circuitpython-on-raspberrypi-linux/overview) que es una variante de Micropython (la versión de python para microcontroladores), creada por Adafruit, que ha añadido objetos de más alto nivel como motor, sensor, etc.. 
-
-Para ello seguiríamos [este tutorial](https://learn.adafruit.com/dht-humidity-sensing-on-raspberry-pi-with-gdocs-logging/python-setup)
 
