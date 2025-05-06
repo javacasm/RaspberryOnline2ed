@@ -15,17 +15,15 @@ Las versiones primeras tenían 20 GPIO
 ![GPIO de 20 pines en las primeras versiones](./images/GPIORasp.png)
 ## Pines
 
-Las distintas versiones de la Raspberry tienen algunos pines distintos.
-
-Hasta la Raspberry Pi 2, tenían 20 pines:
+Las distintas versiones de la Raspberry tienen configuraciones diferentes de sus pines. Como hemos visto antes, hasta la Raspberry Pi 2, tenían 20 pines:
 
 ![GPIO para la versión 2](./images/GPIOV2.png)
-	
-Las versiones de 40 pines hasta la Raspberry Pi 3+
+ 
+La Raspberry Pi 3 ya tenía  40 pines con esta disposición:
 
 ![GPIO de 40 pines](./images/pi2GPIO.jpg)
 
-Los GPIOs para la Raspberry Pi 4
+Los GPIOs para la Raspberry Pi 4 y 5 (y las correspondientes 400 y 500)
 
 ![GPIOs para la Raspberry Pi 4](./images/GPIO4.png)
 
@@ -52,15 +50,13 @@ O esta otra versión del gran @pighixxx con los diferentes etiquetados [para des
 * Acceso al bus I2C, bus de comunicaciones usado por muchos dispositivos
 * Acceso al bus SPI, bus de comunicaciones similar al I2C pero con diferentes especificaciones
 
-El bus I2C y SPI nos permiten conectar con dispositivos externos que nos
-expanden su funcionalidad. Es como si conectáramos periféricos a nuestra
-Raspberry.
+El bus I2C y SPI nos permiten conectar con dispositivos externos que nos expanden su funcionalidad. Es como si conectáramos periféricos a nuestra Raspberry.
 
 ![GPIO de 40 pines](./images/pi2GPIO.jpg)
 
-* También están disponibles las líneas de alimentación de 5v y 3.3v y por supuesto tierra.
-* Todos los pines se pueden configurar tanto de entrada como de salida.
-* Algunos de los pines tienen una segunda función como por ejemplo los etiquetados como SCL y SDA utilizados para I2C y los MOSI, MISO y SCKL utilizados para conectar con dispositivos SPI.
+* También están disponibles las líneas de alimentación de 5v y 3.3v y por supuesto tierra (GND).
+* Todos los pines GPIO se pueden configurar tanto de entrada como de salida.
+* Algunos de los pines tienen una segunda función, como por ejemplo los etiquetados como SCL y SDA utilizados para I2C y los MOSI, MISO y SCKL utilizados para conectar con dispositivos SPI.
 * Hay que tener muy claro que todos los pines usan niveles lógicos de 3.3V y no es seguro conectarlos directamente a 5V, porque las entradas han de ser menores de 3.3V. Igualmente no podemos esperar salidas superiores a 3.3V.
 * En caso de querer conectar con lógica de 5v tendremos que usar una electrónica para adaptar niveles.
 * Existen dispositivos convertidores de niveles (level shifters) con diferentes tecnologías. Los más antiguos están formados por unas resistencias y unos transistores.
@@ -87,16 +83,16 @@ Extensiones que incluyen bloques para usar GPIO en Scratch. La primera de modo g
 
 ![Bloques Extensión GPIO Scratch](./images/BloquesExtensionGPIOScratch.png)
 
-Nosotros usaremos Python, en concreto el módulo **[gpiozero](https://gpiozero.readthedocs.io/en/stable/)** que facilita enormemente el uso. Más adelante veremos que hay otras muchas librerías para usar GPIO.
+Cuando trabajemos con Python empezaremos usando el módulo **[gpiozero](https://gpiozero.readthedocs.io/en/stable/)** que facilita enormemente el uso. Más adelante veremos que hay otras muchas librerías para usar GPIO y tendremos que instalarlas para poder utilizar otro tipo de sensores. Lamentablemente muchas de estas librerías no siempre cuenta con un mantenimiento activo, y al evolucionar el sistema operativo quedan obsoletas.
 
 ### Alimentación de los montajes
 
-Tenemos varios pines de 3.3V y de 5V, también varios GND
+Tenemos varios pines de 3.3V y de 5V, también varios GND con los que podemos alimentar nuestros montajes más sencillos.
 
 ![Alimentación en GPIO](./images/GPIO.png)
 (Fuente: [raspberrypi.org](https://www.raspberrypi.org/documentation/usage/gpio/))
 
-Siempre que sea posible, y salvo que no usemos más que unos pocos componentes, no deberíamos alimentar nuestros montajes de estos pines de alimentación. Siempre es mejor usar una alimentación exterior.
+Siempre que sea posible, y salvo que no usemos más que unos pocos componentes de bajo consumo, no deberíamos alimentar nuestros montajes de estos pines de alimentación. Siempre es mejor usar una alimentación exterior.
 
 Consumo máximo por pin GPIO: 16mA
 Consumo total de todos los GPIOs: 50mA
@@ -129,7 +125,7 @@ pip3 install gpiozero
 
 ![](./images/pip3_install_gpiozero.png)
 
-El código en Python es bastante similar
+El código en Python es bastante similar al de bloques:
 
 ```python
 from gpiozero import LED  # importamos los módulos necesarios
@@ -219,7 +215,7 @@ pinout
 
 Vamos a usar ahora una característica de algunos pines como es el PWM, que nos va a permitir modular la potencia que se transmite al pin. El efecto si conectamos un led es que va a cambiar su brillo.
 
-Esta característica no está disponible en Scratch.
+Lamentablemente, esta característica no está disponible en la extensión de Scratch.
 
 ```python
 from gpiozero import PWMLED

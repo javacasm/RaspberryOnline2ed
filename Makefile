@@ -174,6 +174,27 @@ INDEX:
 		'Tema 5.6.6 TimeLapse.md' \
 		'Tema 5.8 PyGame y ProgramacionVideojuegos.md' 
 
+
+6B:
+	pandoc --pdf-engine=xelatex   \
+		-V papersize:a4paper    \
+		--template=./LaTeX_ES.latex    \
+		--reference-doc=$(PLANTILLA_DOC) \
+		-o  $(S6)  \
+		'Tema 6 Portada.md' \
+		'Tema 6.0 - Electrónica con Raspberry.md' \
+		'Tema 6.0.5 Cuidados.md' \
+		'Tema 6.1 GPIO.md' \
+		'Tema 6.2 Sensores.md' \
+		'Tema 6.2.5 Neopixels.md' \
+		'Tema 6.3 Componentes I2C.md' \
+		'Tema 6.4 Medidas analógicas.md' \
+		'Tema 6.5 MQTT Leds y sensores.md' \
+		'Tema 6.6 motores.md' \
+		'Tema 6.7 Hats.md' \
+		'Tema 6.8 Otras librerias.md' \
+		'Tema 6.9 Conexion con arduino.md'
+
 6:
 	pandoc --pdf-engine=xelatex   \
 		-V papersize:a4paper    \

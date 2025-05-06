@@ -8,11 +8,11 @@ Veamos el montaje de cómo controlar un ventilador con un transistor:
 
 ![Conexión con transistor](./images/ControlMotor.jpg)
 
-Se ha incluído un diodo en antiparalelo para evitar corrientes de inducción y una resistencia de 1K para controlar la corriente que  va a la base del transistor 2N2222.
+Se ha incluido un diodo en antiparalelo para evitar corrientes de inducción y una resistencia de 1K para controlar la corriente que  va a la base del transistor 2N2222.
 
 A la salida de este transistor podemos conectar también un relé o unos leds de potencia.
 
-Usando señal PWM podemos controlar la velocidad del ventilador y modular la velocidd de giro en función de la temperatura de la CPU
+Usando señal PWM podemos controlar la velocidad del ventilador y modular la velocidad de giro en función de la temperatura de la CPU
 
 
 ```python
@@ -95,7 +95,7 @@ while True:  # Bucle para siempre
     sleep(5)		  # Esperamos 5 segundos
 ```
 
-[Código](https://github.com/javacasm/RaspberryOnline2ed/blob/master/codigo/Test_motores.py)
+[Código](https://github.com/javacasm/RaspberryOnline2ed/blob/master/codigo/T6.6.Test_motores.py)
 
 Y nuestros motores deben de moverse hacia adelante y hacia atrás
 
@@ -113,7 +113,7 @@ robby.stop() # paramos
 
 ```
 
-[Código](https://github.com/javacasm/RaspberryOnline3ed/blob/master/codigo/test_robot.py)
+[Código](https://github.com/javacasm/RaspberryOnline3ed/blob/master/codigo/T6.6.test_robot.py)
 
 Ahora ya podemos hacer robot como estos
 
@@ -160,7 +160,7 @@ while True:					# bucle infinito
     sleep(2)				# esperamos 2 segundos
 ```
 
-[Código](https://github.com/javacasm/RaspberryOnline2ed/blob/master/codigo/test_servo.py)
+[Código](https://github.com/javacasm/RaspberryOnline2ed/blob/master/codigo/T6.6.test_servo.py)
 
 
 ### RaspiRobot

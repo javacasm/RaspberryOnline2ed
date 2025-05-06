@@ -1,6 +1,8 @@
 ## MQTT y python
 
 
+Vamos a publicar ahora los valores de nuestros sensores usando el protocolo MQTT.
+
 Usaremos el módulo  **paho-mqtt** que permite tanto publicar como suscribirse a topics. Lo instalamos dentro del entorno virtual correspondiente
 
 ```sh

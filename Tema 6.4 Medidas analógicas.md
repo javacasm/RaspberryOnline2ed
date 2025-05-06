@@ -13,20 +13,21 @@ La conexión SPI es algo complicada que la I2C, pero tiene la ventaja de una may
 
 ![Conexión MCP3008](./images/pi-and-mcp3008-and-ldr_bb.png)
 
-|MCP3008|Raspberry Pi|
-|---|---
-|VDD|	3.3V
-|VREF|	3.3V
-|AGND|GND
-|CLK|GPIO11
-|DOUT|GPIO9
-|DIN|GPIO10
-|CS|GPIO8
-|DGND|GND
+
+| MCP3008 | Raspberry Pi |
+| ------- | ------------ |
+| VDD     | 3.3V         |
+| VREF    | 3.3V         |
+| AGND    | GND          |
+| CLK     | GPIO11       |
+| DOOUT   | GPIO09       |
+| DIN     | GPIO10       |
+| CS      | GPIO08       |
+| DGND    | GND          |
 
 Tenemos que activar el driver de SPI en la configuración (vía raspi-config con sudo, claro)
 
-El [ejemplo](https://github.com/javacasm/RaspberryOnline2ed/blob/master/codigo/test_mcd3008.py) sería:
+El [ejemplo](https://github.com/javacasm/RaspberryOnline2ed/blob/master/codigo/T6.4_test_mcd3008.py) sería:
 
 ```python
 

@@ -18,7 +18,7 @@ Made available under GNU GENERAL PUBLIC LICENSE
 I2CBUS = 1
 
 # LCD direccion, el fabricante nos da ese dato
-ADDRESS = 0x3f
+ADDRESS = 0x26
 
 import smbus
 from time import sleep
