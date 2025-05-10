@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 
 """
-Ejemplo de lectura de tmperatura y humdad con el sensor DHT22
-Se requiere el módulo adafruit_DHT de circuitpython 
+Ejemplo de lectura de temperatura y humdead con el sensor DHT22
+Se requiere el módulo adafruit-circuitpython-dht de circuitpython y sus dependencias
 
 Instalación:
 
-pip3 install adafruit-circuitpython-dht lgpio
+pip3 install adafruit-circuitpython-dht lgpio RPi.GPIO
 """
 
 import sys

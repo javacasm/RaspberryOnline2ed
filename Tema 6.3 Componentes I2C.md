@@ -8,7 +8,9 @@ Antes de utilizar I2C tenemos que activar el driver correspondiente en la pesta�
 
 ![raspi-config](./images/Raspberry-Pi-LCD-I2C-Connections-sudo-raspi-config.png)
 
-![Enable I2C](./images/Raspberry-Pi-LCD-I2C-Connections-sudo-raspi-config-enable-i2c.png)
+Y activamos el módulo de comunicación I2C
+
+![](./images/Raspberry-Pi-LCD-I2C-Connections-sudo-raspi-config-enable-i2c.png)
 
 Tras rearrancar podemos asegurarnos de que el driver I2C está activo viendo los mensajes de arranque
 ```sh
@@ -115,7 +117,7 @@ Las pantallas LCD son las que suelen tener las máquinas de vending
 
 Conectamos el LCD I2C
 
-![Conexion LCD](./images/2.LCD_I2C_bb.png)
+![Conexión LCD I2C](./images/2.LCD_I2C_bb.png)
 
 Conectaremos SDA(3) -> SDA, SCL(5) -> SCL, 5V o 3.3V -> Vcc y  GND -> GND
 
@@ -171,7 +173,7 @@ while True:
 	time.sleep(1)
 ```
 
-Donde hemos usado `line`para indicar la línea y `pos`para indicar la columna donde mostrar el texto.
+Donde hemos usado `line` para indicar la línea y `pos` para indicar la columna donde mostrar el texto.
 
 Vamos a hacer ahora un [sencillo reloj](https://github.com/javacasm/RaspberryOnline2ed/blob/master/codigo/T6.3.reloj_lcd_i2C.py) que muestra la fecha y la hora
 
@@ -220,7 +222,7 @@ mylcd.lcd_display_string(myIP, line = 1, pos = 3)
 
 Vamos a usar la librería para pantalla OLED de CircuitPython creada por Adafruit. Como hemos dicho antes al instalarla necesita bastantes otras librerías más, pero ya que la hemos usado antes, nos compensa volver a usarla.
 
-En este tipo de pantallas además de mostrar textos, podemos dibujar  y mostrar imágenes. Para incluyen métodos que dibujan rectángulos, elipses, polígonos, líneas,...
+En este tipo de pantallas además de mostrar textos, podemos dibujar  y mostrar imágenes. Para ello incluyen métodos que dibujan rectángulos, elipses, polígonos, líneas,...
 
 Casi todas estas librerías siguen un esquema similar: primero se llaman a las funciones que dibujan, muestran texto y luego hay que llamar a un método `show` que hace que se muestre de golpe la pantalla, es como si se dibujara en otra pantalla y este método cambia una pantalla por otra.
 
@@ -260,7 +262,7 @@ oled = adafruit_ssd1306.SSD1306_I2C(128, 64, i2c)
 # Borramos la pantalla
 oled.fill(0)
 
-# Creamos una imagen en blanco donde dibujaresmo.
+# Creamos una imagen en blanco donde dibujaremos.
 image = Image.new("1", (oled.width, oled.height))
 # accedemos al objeto que dibujará en la imagen
 draw = ImageDraw.Draw(image) 

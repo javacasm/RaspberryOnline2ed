@@ -30,7 +30,7 @@ oled = adafruit_ssd1306.SSD1306_I2C(128, 64, i2c)
 oled.fill(0)
 
 
-# Creamos una imagen en blanco donde dibujaresmo.
+# Creamos una imagen en blanco donde dibujaremos.
 image = Image.new("1", (oled.width, oled.height))
 # accedemos al objeto que dibujará en la imagen
 draw = ImageDraw.Draw(image) 

@@ -1,7 +1,7 @@
 
 ## GPIO
 
-![GPIO de 40 pines en la Raspi4](./images/GPIORaspi4_reducida_600.png)
+![GPIO de 40 pines en la Raspberry Pi 4](./images/GPIORaspi4_reducida_600.png)
 
 ¿Qué son los GPIO?
 
@@ -13,6 +13,7 @@
 Las versiones primeras tenían 20 GPIO
 
 ![GPIO de 20 pines en las primeras versiones](./images/GPIORasp.png)
+
 ## Pines
 
 Las distintas versiones de la Raspberry tienen configuraciones diferentes de sus pines. Como hemos visto antes, hasta la Raspberry Pi 2, tenían 20 pines:

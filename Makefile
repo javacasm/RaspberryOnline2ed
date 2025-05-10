@@ -3,9 +3,9 @@ S1="Tema 1 Qué es Raspberry.docx"
 S2="Tema 2 Características de Raspberry.docx"
 S3="Tema 3 Instalación de Raspberry.docx"
 S4="Tema 4 Uso de Raspberry.docx"
-S5="Tema 5 Programación con Raspberry.docx"
-S6="Tema 6 Electrónica con Raspberry.docx"
-S7="Tema 7 Proyectos con Raspberry.docx"
+S5="Tema 5 Programación con Raspberry v4.1.docx"
+S6="Tema 6 Electrónica con Raspberry v4.1.docx"
+S7="Tema 7 Proyectos con Raspberry v4.1.docx"
 
 SFAQ="RasPi FAQ - Preguntas Frecuentas.docx"
 FFAQ="Tema 0.9 RasPi FAQ - Preguntas Frecuentes.md"
@@ -174,27 +174,6 @@ INDEX:
 		'Tema 5.6.6 TimeLapse.md' \
 		'Tema 5.8 PyGame y ProgramacionVideojuegos.md' 
 
-
-6B:
-	pandoc --pdf-engine=xelatex   \
-		-V papersize:a4paper    \
-		--template=./LaTeX_ES.latex    \
-		--reference-doc=$(PLANTILLA_DOC) \
-		-o  $(S6)  \
-		'Tema 6 Portada.md' \
-		'Tema 6.0 - Electrónica con Raspberry.md' \
-		'Tema 6.0.5 Cuidados.md' \
-		'Tema 6.1 GPIO.md' \
-		'Tema 6.2 Sensores.md' \
-		'Tema 6.2.5 Neopixels.md' \
-		'Tema 6.3 Componentes I2C.md' \
-		'Tema 6.4 Medidas analógicas.md' \
-		'Tema 6.5 MQTT Leds y sensores.md' \
-		'Tema 6.6 motores.md' \
-		'Tema 6.7 Hats.md' \
-		'Tema 6.8 Otras librerias.md' \
-		'Tema 6.9 Conexion con arduino.md'
-
 6:
 	pandoc --pdf-engine=xelatex   \
 		-V papersize:a4paper    \
@@ -216,13 +195,12 @@ INDEX:
 		'Tema 6.9 Conexion con arduino.md'
 
 7:
-	pandoc  --pdf-engine=xelatex   \
+	pandoc --pdf-engine=xelatex   \
 		-V papersize:a4paper    \
 		--template=./LaTeX_ES.latex    \
-		--reference-doc=plantilla_raspy.docx \				
+		--reference-doc=$(PLANTILLA_DOC) \
 		-o  $(S7)  \
-		Portada.md        \
-		Cabecera_latex.md \
+		'Tema 7 Portada.md' \
 		'Tema 7.0 - Robótica con Raspberry.md' \
 		'Tema 7.1 CocheRobot.md' \
 		'Tema 7.2 Monitoriza tu jardín con Arduino y Raspberry.md'

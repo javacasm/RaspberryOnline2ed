@@ -37,7 +37,7 @@ Utilizaremos un entorno virtual para gestionar los paquetes de Python, asegurand
     - Apaga la Pi mientras haces las conexiones.
     - Si usas una fuente externa, asegúrate de que esté aislada del riel de 5V de la Pi.
 
-Para utilizar los neoplixels necesitamos  **habilitar SPI** (necesario para algunas configuraciones de NeoPixels):
+Para utilizar los neopixels necesitamos  **habilitar SPI** (necesario para algunas configuraciones de NeoPixels):
 
 - Ejecuta `sudo raspi-config`.
 - Ve a **Opciones de Interfaz** > **SPI** > Habilita.

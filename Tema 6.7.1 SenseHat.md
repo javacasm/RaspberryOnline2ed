@@ -86,14 +86,3 @@ for color in colores:
 	set_color()
 	sleep(1)
 ```
-### Varios
-
-
-
-Sensores
-
-Ver lo que pone la Guia de la Raspi400
-
-Libro SenseHat
-
-[Usando un cable para conectar Sense Hat a Raspberry 400](https://www.dominicsayers.com/sense-hat/)

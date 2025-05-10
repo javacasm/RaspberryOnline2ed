@@ -97,7 +97,7 @@ Si estas usando un sensor ya montado en un módulo te puedes ahorrar la resisten
 
 ![](./images/DHT22_raspberrry_bb.png)
 
-Si usas el sensor directamente tendrás que hacer un montaje muy sencillo (tomado de la [página de "el atareao"](https://www.atareao.es/podcast/temperatura-con-la-raspberry/)), donde se incluye una resistencia de 10K en modo pull-up, que pondremos si usamos el sensor directamente. En el caso de que utilicemos un módulo con un pcb con el sensor DHT22 soldado en ella no será necesaria la resistencia si este la lleva incorporada.
+Si usas el sensor directamente tendrás que hacer un montaje muy sencillo (tomado de la [página de "el atareao"](https://www.atareao.es/podcast/temperatura-con-la-raspberry/)), donde se incluye una resistencia de 10K en modo pull-up, que pondremos si usamos el sensor directamente. En el caso de que utilicemos un módulo con un pcb con el sensor DHT22 soldado en ella no será necesaria la resistencia si este la lleva incorporada. Adapta el pin de conexión de tu montaje si es necesario, en la imagen hemos usado `GPIO4`.
 
 ![Montaje DHT22](./images/montajeDHT22.png)
 
@@ -106,25 +106,25 @@ Podrías usar las librerías de Adafruit para los sensores DHT, pero desde hace 
 
 Vamos a  usar la librería DHT de Adafruit para su plataforma [CiruitPython](https://learn.adafruit.com/circuitpython-on-raspberrypi-linux/overview) que es una variante de Micropython (la versión de python para microcontroladores), que ha añadido objetos de más alto nivel como motor, sensor, etc.. El problema es que es una instalación bastante pesada donde instalamos mucho más de lo que necesitamos. 
 
-Instalamos en nuestro entorno virtual los módulos `adafruit-circuitpython-dht lgpio` con:
+Instalamos en nuestro entorno virtual los módulos `adafruit-circuitpython-dht, lgpio y RPi.GPIO` con:
 
 ```sh
-pip3 install adafruit-circuitpython-dht lgpio
+pip3 install adafruit-circuitpython-dht lgpio RPi.GPIO
 ```
 
-El código Python es sencillo:
+El código Python es sencillo (adapta el pin de conexión de tu sensor DHT si es necesario, en el ejemplo hemos usado el `GPIO18` como `board.D18`):
 
 ```python
 
 #!/usr/bin/python3
 
 """
-Ejemplo de lectura de tmperatura y humdad con el sensor DHT22
+Ejemplo de lectura de temperatura y humedad con el sensor DHT22
 Se requiere el módulo adafruit_DHT de circuitpython 
 
 Instalación:
 
-pip3 install adafruit-circuitpython-dht lgpio
+pip3 install adafruit-circuitpython-dht lgpio RPi.GPIO
 """
 
 import sys
